@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: apicenter
 ---
-# Azure API Center SDK for .NET - preview
-## Packages - preview
+# Azure API Center SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](api-center-index.md)]
