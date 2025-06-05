@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Core",
-  "Version": "1.46.1",
+  "Version": "1.46.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/core/Azure.Core",
   "ServiceDirectory": "core",
@@ -10,11 +10,10 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Core",
-  "ReleaseStatus": "2025-05-09",
+  "ReleaseStatus": "2025-06-05",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "safeName": "AzureCore",
     "triggeringPaths": [
       "/sdk/resourcemanager",
       "/eng/Versioning.targets",
@@ -24,16 +23,17 @@
       "/eng/service.proj",
       "/sdk/core/ci.yml"
     ],
+    "safeName": "AzureCore",
     "name": "Azure.Core"
   },
   "CIParameters": {
-    "CIMatrixConfigs": [],
     "AOTTestInputs": {
       "ArtifactName": "Azure.Core",
       "ExpectedWarningsFilepath": "/Azure.Core/tests/compatibility/ExpectedAotWarnings.txt"
     },
-    "BuildSnippets": false,
-    "CheckAOTCompat": true
+    "CheckAOTCompat": true,
+    "CIMatrixConfigs": [],
+    "BuildSnippets": false
   },
   "Namespaces": [
     "Azure",
