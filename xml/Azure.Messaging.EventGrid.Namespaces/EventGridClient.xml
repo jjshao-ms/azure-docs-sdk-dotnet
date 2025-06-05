@@ -486,7 +486,9 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyName>Azure.Messaging.EventGrid.Namespaces</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
@@ -511,11 +513,11 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
       </Docs>
     </Member>
     <Member MemberName="PublishCloudEvent">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt; PublishCloudEvent (string topicName, Azure.Messaging.CloudEvent event, bool binaryMode = false, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Messaging.EventGrid.Namespaces.PublishResult&gt; PublishCloudEvent(string topicName, class Azure.Messaging.CloudEvent event, bool binaryMode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response PublishCloudEvent (string topicName, Azure.Messaging.CloudEvent cloudEvent, bool binaryMode = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response PublishCloudEvent(string topicName, class Azure.Messaging.CloudEvent cloudEvent, bool binaryMode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.Namespaces.EventGridClient.PublishCloudEvent(System.String,Azure.Messaging.CloudEvent,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEvent (topicName As String, event As CloudEvent, Optional binaryMode As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PublishResult)" />
-      <MemberSignature Language="F#" Value="abstract member PublishCloudEvent : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&#xA;override this.PublishCloudEvent : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;" Usage="eventGridClient.PublishCloudEvent (topicName, event, binaryMode, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEvent (topicName As String, cloudEvent As CloudEvent, Optional binaryMode As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member PublishCloudEvent : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.PublishCloudEvent : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; Azure.Response" Usage="eventGridClient.PublishCloudEvent (topicName, cloudEvent, binaryMode, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -526,7 +528,7 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;</ReturnType>
+        <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
@@ -559,7 +561,9 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyName>Azure.Messaging.EventGrid.Namespaces</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
@@ -584,11 +588,11 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
       </Docs>
     </Member>
     <Member MemberName="PublishCloudEventAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt; PublishCloudEventAsync (string topicName, Azure.Messaging.CloudEvent event, bool binaryMode = false, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt; PublishCloudEventAsync(string topicName, class Azure.Messaging.CloudEvent event, bool binaryMode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PublishCloudEventAsync (string topicName, Azure.Messaging.CloudEvent cloudEvent, bool binaryMode = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; PublishCloudEventAsync(string topicName, class Azure.Messaging.CloudEvent cloudEvent, bool binaryMode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.Namespaces.EventGridClient.PublishCloudEventAsync(System.String,Azure.Messaging.CloudEvent,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEventAsync (topicName As String, event As CloudEvent, Optional binaryMode As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PublishResult))" />
-      <MemberSignature Language="F#" Value="abstract member PublishCloudEventAsync : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;&#xA;override this.PublishCloudEventAsync : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;" Usage="eventGridClient.PublishCloudEventAsync (topicName, event, binaryMode, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEventAsync (topicName As String, cloudEvent As CloudEvent, Optional binaryMode As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member PublishCloudEventAsync : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.PublishCloudEventAsync : string * Azure.Messaging.CloudEvent * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="eventGridClient.PublishCloudEventAsync (topicName, cloudEvent, binaryMode, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -599,7 +603,7 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
@@ -632,7 +636,9 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyName>Azure.Messaging.EventGrid.Namespaces</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
@@ -657,11 +663,11 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
       </Docs>
     </Member>
     <Member MemberName="PublishCloudEvents">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt; PublishCloudEvents (string topicName, System.Collections.Generic.IEnumerable&lt;Azure.Messaging.CloudEvent&gt; events, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Messaging.EventGrid.Namespaces.PublishResult&gt; PublishCloudEvents(string topicName, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Messaging.CloudEvent&gt; events, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response PublishCloudEvents (string topicName, System.Collections.Generic.IEnumerable&lt;Azure.Messaging.CloudEvent&gt; events, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response PublishCloudEvents(string topicName, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Messaging.CloudEvent&gt; events, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.Namespaces.EventGridClient.PublishCloudEvents(System.String,System.Collections.Generic.IEnumerable{Azure.Messaging.CloudEvent},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEvents (topicName As String, events As IEnumerable(Of CloudEvent), Optional cancellationToken As CancellationToken = Nothing) As Response(Of PublishResult)" />
-      <MemberSignature Language="F#" Value="abstract member PublishCloudEvents : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&#xA;override this.PublishCloudEvents : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;" Usage="eventGridClient.PublishCloudEvents (topicName, events, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEvents (topicName As String, events As IEnumerable(Of CloudEvent), Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member PublishCloudEvents : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.PublishCloudEvents : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; Azure.Response" Usage="eventGridClient.PublishCloudEvents (topicName, events, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -672,7 +678,7 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;</ReturnType>
+        <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
@@ -703,7 +709,9 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyName>Azure.Messaging.EventGrid.Namespaces</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
@@ -728,11 +736,11 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
       </Docs>
     </Member>
     <Member MemberName="PublishCloudEventsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt; PublishCloudEventsAsync (string topicName, System.Collections.Generic.IEnumerable&lt;Azure.Messaging.CloudEvent&gt; events, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt; PublishCloudEventsAsync(string topicName, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Messaging.CloudEvent&gt; events, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PublishCloudEventsAsync (string topicName, System.Collections.Generic.IEnumerable&lt;Azure.Messaging.CloudEvent&gt; events, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; PublishCloudEventsAsync(string topicName, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Messaging.CloudEvent&gt; events, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.Namespaces.EventGridClient.PublishCloudEventsAsync(System.String,System.Collections.Generic.IEnumerable{Azure.Messaging.CloudEvent},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEventsAsync (topicName As String, events As IEnumerable(Of CloudEvent), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PublishResult))" />
-      <MemberSignature Language="F#" Value="abstract member PublishCloudEventsAsync : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;&#xA;override this.PublishCloudEventsAsync : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;" Usage="eventGridClient.PublishCloudEventsAsync (topicName, events, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PublishCloudEventsAsync (topicName As String, events As IEnumerable(Of CloudEvent), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member PublishCloudEventsAsync : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.PublishCloudEventsAsync : string * seq&lt;Azure.Messaging.CloudEvent&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="eventGridClient.PublishCloudEventsAsync (topicName, events, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -743,7 +751,7 @@ Response<AcknowledgeResult> response = await client.AcknowledgeCloudEventsAsync(
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Messaging.EventGrid.Namespaces.PublishResult&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="topicName" Type="System.String" />
