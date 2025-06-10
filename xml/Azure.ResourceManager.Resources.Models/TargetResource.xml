@@ -24,6 +24,7 @@
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.1.0</AssemblyVersion>
+    <AssemblyVersion>1.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -44,6 +45,46 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ApiVersion">
+      <MemberSignature Language="C#" Value="public string ApiVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApiVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.TargetResource.ApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As String" />
+      <MemberSignature Language="F#" Value="member this.ApiVersion : string" Usage="Azure.ResourceManager.Resources.Models.TargetResource.ApiVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The API version the resource was deployed with. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionDefinition Extension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionDefinition Extension" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.TargetResource.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extension As ArmDeploymentExtensionDefinition" />
+      <MemberSignature Language="F#" Value="member this.Extension : Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionDefinition" Usage="Azure.ResourceManager.Resources.Models.TargetResource.Extension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The extension the resource was deployed with. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
@@ -54,13 +95,41 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The ID of the resource. </summary>
+        <summary> The Azure resource ID of the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifiers">
+      <MemberSignature Language="C#" Value="public BinaryData Identifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Identifiers" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.TargetResource.Identifiers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifiers As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Identifiers : BinaryData" Usage="Azure.ResourceManager.Resources.Models.TargetResource.Identifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The extensible resource identifiers.
+            <para>
+            To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />.
+            </para><para>
+            To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />.
+            </para><para>
+            Examples:
+            <list type="bullet"><item><term>BinaryData.FromObjectAsJson("foo")</term><description>Creates a payload of "foo".</description></item><item><term>BinaryData.FromString("\"foo\"")</term><description>Creates a payload of "foo".</description></item><item><term>BinaryData.FromObjectAsJson(new { key = "value" })</term><description>Creates a payload of { "key": "value" }.</description></item><item><term>BinaryData.FromString("{\"key\": \"value\"}")</term><description>Creates a payload of { "key": "value" }.</description></item></list></para></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -74,7 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -100,7 +169,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -121,13 +190,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.Core.ResourceType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The type of the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymbolicName">
+      <MemberSignature Language="C#" Value="public string SymbolicName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SymbolicName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.TargetResource.SymbolicName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SymbolicName As String" />
+      <MemberSignature Language="F#" Value="member this.SymbolicName : string" Usage="Azure.ResourceManager.Resources.Models.TargetResource.SymbolicName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The symbolic name of the resource as defined in the deployment template. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +233,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.TargetResource</ReturnType>
@@ -176,7 +265,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -207,7 +296,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.TargetResource</ReturnType>
@@ -239,7 +328,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -252,7 +341,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +357,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

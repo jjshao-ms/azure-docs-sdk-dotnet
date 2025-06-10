@@ -24,6 +24,7 @@
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.1.0</AssemblyVersion>
+    <AssemblyVersion>1.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -54,7 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mode" Type="Azure.ResourceManager.Resources.Models.ArmDeploymentMode" />
@@ -75,7 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -96,7 +97,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ErrorDeployment</ReturnType>
@@ -117,13 +118,73 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.ExpressionEvaluationScope&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The scope to be used for evaluation of parameters, variables and functions in a nested template. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensionConfigs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionConfigItem&gt;&gt; ExtensionConfigs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionConfigItem&gt;&gt; ExtensionConfigs" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExtensionConfigs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtensionConfigs As IDictionary(Of String, IDictionary(Of String, ArmDeploymentExtensionConfigItem))" />
+      <MemberSignature Language="F#" Value="member this.ExtensionConfigs : System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionConfigItem&gt;&gt;" Usage="Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExtensionConfigs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.Models.ArmDeploymentExtensionConfigItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The configurations to use for deployment extensions. The keys of this object are deployment extension aliases as defined in the deployment template. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalInputDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInputDefinition&gt; ExternalInputDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInputDefinition&gt; ExternalInputDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExternalInputDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalInputDefinitions As IDictionary(Of String, ArmDeploymentExternalInputDefinition)" />
+      <MemberSignature Language="F#" Value="member this.ExternalInputDefinitions : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInputDefinition&gt;" Usage="Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExternalInputDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInputDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> External input definitions, used by external tooling to define expected external input values. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalInputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInput&gt; ExternalInputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInput&gt; ExternalInputs" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExternalInputs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalInputs As IDictionary(Of String, ArmDeploymentExternalInput)" />
+      <MemberSignature Language="F#" Value="member this.ExternalInputs : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInput&gt;" Usage="Azure.ResourceManager.Resources.Models.ArmDeploymentProperties.ExternalInputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.Models.ArmDeploymentExternalInput&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> External input values, used by external tooling for parameter evaluation. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +198,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -163,7 +224,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentMode</ReturnType>
@@ -184,7 +245,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -213,7 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentParametersLink</ReturnType>
@@ -236,7 +297,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentProperties</ReturnType>
@@ -268,7 +329,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -299,7 +360,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentProperties</ReturnType>
@@ -331,7 +392,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -344,7 +405,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +421,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -388,7 +449,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -417,7 +478,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.Models.ArmDeploymentTemplateLink</ReturnType>
@@ -437,7 +498,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
-        <AssemblyVersion>1.9.1.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.ValidationLevel&gt;</ReturnType>
