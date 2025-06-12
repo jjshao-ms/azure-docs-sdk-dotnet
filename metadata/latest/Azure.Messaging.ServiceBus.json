@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Messaging.ServiceBus",
-  "Version": "7.19.0",
+  "Version": "7.20.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/servicebus/Azure.Messaging.ServiceBus",
   "ServiceDirectory": "servicebus",
@@ -10,24 +10,24 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Messaging.ServiceBus",
-  "ReleaseStatus": "2025-04-08",
+  "ReleaseStatus": "2025-06-12",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Azure.Messaging.ServiceBus",
     "triggeringPaths": [
       "/sdk/servicebus/ci.yml"
     ],
-    "safeName": "AzureMessagingServiceBus"
+    "safeName": "AzureMessagingServiceBus",
+    "name": "Azure.Messaging.ServiceBus"
   },
   "CIParameters": {
     "BuildSnippets": true,
-    "CheckAOTCompat": true,
-    "CIMatrixConfigs": [],
     "AOTTestInputs": {
       "ArtifactName": "Azure.Messaging.ServiceBus",
-      "ExpectedWarningsFilepath": "None"
-    }
+      "ExpectedWarningsFilepath": "Azure.Messaging.ServiceBus/tests/aotcompatibility/ExpectedWarnings.txt"
+    },
+    "CIMatrixConfigs": [],
+    "CheckAOTCompat": true
   },
   "Namespaces": [
     "Azure.Messaging.ServiceBus",
