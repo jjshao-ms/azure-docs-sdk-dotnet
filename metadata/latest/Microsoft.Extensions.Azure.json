@@ -1,6 +1,6 @@
 {
   "Name": "Microsoft.Extensions.Azure",
-  "Version": "1.11.0",
+  "Version": "1.12.0",
   "DevVersion": null,
   "DirectoryPath": "sdk/extensions/Microsoft.Extensions.Azure",
   "ServiceDirectory": "extensions",
@@ -10,18 +10,24 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Microsoft.Extensions.Azure",
-  "ReleaseStatus": "2025-03-15",
+  "ReleaseStatus": "2025-06-12",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Microsoft.Extensions.Azure",
+    "safeName": "MicrosoftExtensionsAzure",
     "triggeringPaths": [
       "/sdk/extensions/ci.yml"
     ],
-    "safeName": "MicrosoftExtensionsAzure"
+    "name": "Microsoft.Extensions.Azure"
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "BuildSnippets": true,
+    "CheckAOTCompat": false,
+    "CIMatrixConfigs": [],
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Microsoft.Extensions.Azure"
+    }
   },
   "Namespaces": [
     "Microsoft.Extensions.Azure"
