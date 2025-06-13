@@ -1,19 +1,19 @@
 ---
 title: Azure Cognitive Services Health Insights RadiologyInsights client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Health.Insights.RadiologyInsights, healthinsights
-ms.date: 08/16/2024
+ms.date: 06/13/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: healthinsights
 ---
-# Azure Cognitive Services Health Insights RadiologyInsights client library for .NET - version 1.0.0 
+# Azure Cognitive Services Health Insights RadiologyInsights client library for .NET - version 1.1.0 
 
 
 [Health Insights][health_insights] is an Azure Applied AI Service built with the Azure Cognitive Services Framework, that leverages multiple Cognitive Services, Healthcare API services and other Azure resources.
 
 [Radiology Insights][radiology_insights_docs] is a model that aims to provide quality checks as feedback on errors and inconsistencies (mismatches) and ensures critical findings are identified and communicated using the full context of the report. Follow-up recommendations and clinical findings with measurements (sizes) documented by the radiologist are also identified.
 
-[Source code](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/healthinsights/Azure.Health.Insights.RadiologyInsights/src) | [Package (NuGet)](https://www.nuget.org/packages/Azure.Health.Insights.RadiologyInsights/) | [API reference documentation](https://learn.microsoft.com/en-in/rest/api/cognitiveservices/healthinsights/radiology-insights) | [Product documentation](https://learn.microsoft.com/azure/azure-health-insights/radiology-insights/) | [Samples][sample_folder]
+[Source code](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/healthinsights/Azure.Health.Insights.RadiologyInsights/src) | [Package (NuGet)](https://www.nuget.org/packages/Azure.Health.Insights.RadiologyInsights/) | [API reference documentation](https://learn.microsoft.com/en-in/rest/api/cognitiveservices/healthinsights/radiology-insights) | [Product documentation](https://learn.microsoft.com/azure/azure-health-insights/radiology-insights/) | [Samples][sample_folder]
 ## Getting started
 
 ### Prerequisites
@@ -34,6 +34,7 @@ This table shows the relationship between SDK versions and supported API version
 |SDK version|Supported API version of service |
 |-------------|---------------|
 |1.0.0 | 2024-04-01|
+|1.1.0 | 2024-10-01|
 
 ### Authenticate the client
 
@@ -122,23 +123,23 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
 [nuget]: https://www.nuget.org
 [azure_portal]: https://portal.azure.com
-[azure_cli]: /cli/azure
+[azure_cli]: https://learn.microsoft.com/cli/azure
 [health_insights]: https://learn.microsoft.com/azure/azure-health-insights/overview?branch=main
-[style-guide-msft]: /style-guide/capitalization
+[style-guide-msft]: https://learn.microsoft.com/style-guide/capitalization
 [style-guide-cloud]: https://aka.ms/azsdk/cloud-style-guide
 [radiology_insights_docs]: https://learn.microsoft.com/azure/azure-health-insights/radiology-insights/
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [cla]: https://cla.microsoft.com
-[logging]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/core/Azure.Core/samples/Diagnostics.md
+[logging]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/core/Azure.Core/samples/Diagnostics.md
 [coc_contact]: mailto:opencode@microsoft.com
 [here]: https://learn.microsoft.com/azure/azure-health-insights/radiology-insights/inferences
-[sample_folder]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/healthinsights/Azure.Health.Insights.RadiologyInsights/samples
+[sample_folder]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/healthinsights/Azure.Health.Insights.RadiologyInsights/samples
 [azure_sub]: https://azure.microsoft.com/free
 [nuget]: https://www.nuget.org
 [azure_portal]:https://learn.microsoft.com/azure/search/search-create-service-portal
 [azure_cli]:https://learn.microsoft.com/cli/azure
-[azure_identity]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/identity/Azure.Identity/README.md
-[azure_identity_install]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/identity/Azure.Identity/README.md#install-the-package
-[DefaultAzureCredential]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.0.0/sdk/identity/Azure.Identity/README.md#defaultazurecredential
+[azure_identity]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/identity/Azure.Identity/README.md
+[azure_identity_install]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/identity/Azure.Identity/README.md#install-the-package
+[DefaultAzureCredential]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Health.Insights.RadiologyInsights_1.1.0/sdk/identity/Azure.Identity/README.md#defaultazurecredential
 
