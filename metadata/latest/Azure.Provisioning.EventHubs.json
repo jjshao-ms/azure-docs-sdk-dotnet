@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Provisioning.EventHubs",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "DevVersion": null,
   "DirectoryPath": "sdk/provisioning/Azure.Provisioning.EventHubs",
   "ServiceDirectory": "provisioning",
@@ -10,12 +10,22 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Provisioning.EventHubs",
-  "ReleaseStatus": "2024-10-25",
+  "ReleaseStatus": "2025-06-16",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.Provisioning.EventHubs",
+    "createReleaseStage": "${{ parameters.release_Azure_Provisioning_EventHubs }}",
+    "triggeringPaths": [
+      "/sdk/provisioning/ci.data.yml"
+    ],
     "safeName": "AzureProvisioningEventHubs"
+  },
+  "CIParameters": {
+    "CheckAOTCompat": false,
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true,
+    "AOTTestInputs": []
   },
   "Namespaces": [
     "Azure.Provisioning.EventHubs"
