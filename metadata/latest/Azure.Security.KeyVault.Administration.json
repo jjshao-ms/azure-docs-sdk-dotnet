@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Security.KeyVault.Administration",
-  "Version": "4.5.0",
+  "Version": "4.6.0",
   "DevVersion": null,
   "DirectoryPath": "sdk/keyvault/Azure.Security.KeyVault.Administration",
   "ServiceDirectory": "keyvault",
@@ -10,12 +10,22 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Security.KeyVault.Administration",
-  "ReleaseStatus": "2024-10-14",
+  "ReleaseStatus": "2025-06-16",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "safeName": "AzureSecurityKeyVaultAdministration",
-    "name": "Azure.Security.KeyVault.Administration"
+    "name": "Azure.Security.KeyVault.Administration",
+    "triggeringPaths": [
+      "/sdk/keyvault/Azure.Security.KeyVault.Shared",
+      "/sdk/keyvault/ci.yml"
+    ]
+  },
+  "CIParameters": {
+    "BuildSnippets": true,
+    "CheckAOTCompat": true,
+    "AOTTestInputs": null,
+    "CIMatrixConfigs": []
   },
   "Namespaces": [
     "Azure.Security.KeyVault.Administration"
