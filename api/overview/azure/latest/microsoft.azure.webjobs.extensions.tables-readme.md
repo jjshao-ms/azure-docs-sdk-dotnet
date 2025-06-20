@@ -1,12 +1,12 @@
 ---
 title: Azure WebJobs Tables client library for .NET
 keywords: Azure, dotnet, SDK, API, Microsoft.Azure.WebJobs.Extensions.Tables, tables
-ms.date: 03/14/2025
+ms.date: 06/20/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: tables
 ---
-# Azure WebJobs Tables client library for .NET - version 1.3.3 
+# Azure WebJobs Tables client library for .NET - version 1.4.0 
 
 
 This extension provides functionality for accessing Azure Tables in Azure Functions.
@@ -317,14 +317,14 @@ additional questions or comments.
 [cosmos_tables_create_cli]: https://learn.microsoft.com/azure/cosmos-db/scripts/cli/table/create
 [cosmos_tables_create_portal]: https://learn.microsoft.com/azure/cosmos-db/table/how-to-create-container
 
-[identity_dac]: https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Azure.WebJobs.Extensions.Tables_1.3.3/sdk/identity/Azure.Identity/README.md#defaultazurecredential
+[identity_dac]: https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Azure.WebJobs.Extensions.Tables_1.4.0/sdk/identity/Azure.Identity/README.md#defaultazurecredential
 
 [appsettings_portal]: https://learn.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal
 [local_settings_json]: https://learn.microsoft.com/azure/azure-functions/functions-host-json#override-hostjson-values
 
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
-[RequestFailedException]: https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.WebJobs.Extensions.Tables_1.3.3/sdk/core/Azure.Core/src/RequestFailedException.cs
-[contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Azure.WebJobs.Extensions.Tables_1.3.3/CONTRIBUTING.md
+[RequestFailedException]: https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.WebJobs.Extensions.Tables_1.4.0/sdk/core/Azure.Core/src/RequestFailedException.cs
+[contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Azure.WebJobs.Extensions.Tables_1.4.0/CONTRIBUTING.md
 
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
