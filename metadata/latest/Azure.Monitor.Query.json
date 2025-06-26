@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Monitor.Query",
-  "Version": "1.6.0",
+  "Version": "1.7.0",
   "DevVersion": null,
   "DirectoryPath": "sdk/monitor/Azure.Monitor.Query",
   "ServiceDirectory": "monitor",
@@ -10,19 +10,28 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Monitor.Query",
-  "ReleaseStatus": "2024-12-03",
+  "ReleaseStatus": "2025-06-26",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.Monitor.Query",
-    "safeName": "AzureMonitorQuery"
+    "safeName": "AzureMonitorQuery",
+    "triggeringPaths": [
+      "/sdk/monitor/ci.yml"
+    ]
   },
-  "CIMatrixConfigs": [],
+  "CIParameters": {
+    "AOTTestInputs": null,
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true,
+    "CheckAOTCompat": true
+  },
   "Namespaces": [
     "Azure.Monitor.Query",
     "Azure.Monitor.Query.Models",
     "Microsoft.Extensions.Azure"
   ],
+  "CIMatrixConfigs": [],
   "DependentPackages": null,
   "DocsCiConfigProperties": {
     "tfm": "netstandard2.0"
