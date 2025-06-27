@@ -2616,7 +2616,7 @@ Response<AnalyzeTextOperationState> response = await client.AnalyzeTextOperation
             <list type="bullet"><item><description>
             This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
             </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperation(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
+            Please try the simpler <see cref="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperation(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Nullable{System.Single},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
@@ -2822,11 +2822,11 @@ Operation operation = client.AnalyzeTextSubmitOperation(WaitUntil.Completed, con
       </Docs>
     </Member>
     <Member MemberName="AnalyzeTextSubmitOperation">
-      <MemberSignature Language="C#" Value="public virtual Azure.Operation AnalyzeTextSubmitOperation (Azure.WaitUntil waitUntil, Azure.AI.Language.Text.MultiLanguageTextInput textInput, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName = default, string defaultLanguage = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation AnalyzeTextSubmitOperation(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Text.MultiLanguageTextInput textInput, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName, string defaultLanguage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperation(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AnalyzeTextSubmitOperation (waitUntil As WaitUntil, textInput As MultiLanguageTextInput, actions As IEnumerable(Of AnalyzeTextOperationAction), Optional displayName As String = Nothing, Optional defaultLanguage As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
-      <MemberSignature Language="F#" Value="abstract member AnalyzeTextSubmitOperation : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.AnalyzeTextSubmitOperation : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="textAnalysisClient.AnalyzeTextSubmitOperation (waitUntil, textInput, actions, displayName, defaultLanguage, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Operation AnalyzeTextSubmitOperation (Azure.WaitUntil waitUntil, Azure.AI.Language.Text.MultiLanguageTextInput textInput, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName = default, string defaultLanguage = default, float? cancelAfter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation AnalyzeTextSubmitOperation(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Text.MultiLanguageTextInput textInput, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName, string defaultLanguage, valuetype System.Nullable`1&lt;float32&gt; cancelAfter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperation(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Nullable{System.Single},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AnalyzeTextSubmitOperation (waitUntil As WaitUntil, textInput As MultiLanguageTextInput, actions As IEnumerable(Of AnalyzeTextOperationAction), Optional displayName As String = Nothing, Optional defaultLanguage As String = Nothing, Optional cancelAfter As Nullable(Of Single) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
+      <MemberSignature Language="F#" Value="abstract member AnalyzeTextSubmitOperation : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * Nullable&lt;single&gt; * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.AnalyzeTextSubmitOperation : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * Nullable&lt;single&gt; * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="textAnalysisClient.AnalyzeTextSubmitOperation (waitUntil, textInput, actions, displayName, defaultLanguage, cancelAfter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Text</AssemblyName>
@@ -2841,6 +2841,7 @@ Operation operation = client.AnalyzeTextSubmitOperation(WaitUntil.Completed, con
         <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt;" />
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="defaultLanguage" Type="System.String" />
+        <Parameter Name="cancelAfter" Type="System.Nullable&lt;System.Single&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -2850,6 +2851,7 @@ Operation operation = client.AnalyzeTextSubmitOperation(WaitUntil.Completed, con
         <param name="actions"> List of tasks to be performed as part of the LRO. </param>
         <param name="displayName"> Name for the task. </param>
         <param name="defaultLanguage"> Default language to use for records requesting automatic language detection. </param>
+        <param name="cancelAfter"> Optional duration in seconds after which the job will be canceled if not completed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Submit a collection of text documents for analysis. Specify one or more unique tasks to be executed as a long-running operation. </summary>
         <returns>To be added.</returns>
@@ -3022,7 +3024,7 @@ Operation operation = client.AnalyzeTextSubmitOperation(WaitUntil.Completed, tex
             <list type="bullet"><item><description>
             This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
             </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperationAsync(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
+            Please try the simpler <see cref="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperationAsync(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Nullable{System.Single},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
@@ -3228,11 +3230,11 @@ Operation operation = await client.AnalyzeTextSubmitOperationAsync(WaitUntil.Com
       </Docs>
     </Member>
     <Member MemberName="AnalyzeTextSubmitOperationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; AnalyzeTextSubmitOperationAsync (Azure.WaitUntil waitUntil, Azure.AI.Language.Text.MultiLanguageTextInput textInput, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName = default, string defaultLanguage = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; AnalyzeTextSubmitOperationAsync(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Text.MultiLanguageTextInput textInput, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName, string defaultLanguage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperationAsync(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AnalyzeTextSubmitOperationAsync (waitUntil As WaitUntil, textInput As MultiLanguageTextInput, actions As IEnumerable(Of AnalyzeTextOperationAction), Optional displayName As String = Nothing, Optional defaultLanguage As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
-      <MemberSignature Language="F#" Value="abstract member AnalyzeTextSubmitOperationAsync : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.AnalyzeTextSubmitOperationAsync : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="textAnalysisClient.AnalyzeTextSubmitOperationAsync (waitUntil, textInput, actions, displayName, defaultLanguage, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; AnalyzeTextSubmitOperationAsync (Azure.WaitUntil waitUntil, Azure.AI.Language.Text.MultiLanguageTextInput textInput, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName = default, string defaultLanguage = default, float? cancelAfter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; AnalyzeTextSubmitOperationAsync(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Text.MultiLanguageTextInput textInput, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; actions, string displayName, string defaultLanguage, valuetype System.Nullable`1&lt;float32&gt; cancelAfter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisClient.AnalyzeTextSubmitOperationAsync(Azure.WaitUntil,Azure.AI.Language.Text.MultiLanguageTextInput,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.AnalyzeTextOperationAction},System.String,System.String,System.Nullable{System.Single},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AnalyzeTextSubmitOperationAsync (waitUntil As WaitUntil, textInput As MultiLanguageTextInput, actions As IEnumerable(Of AnalyzeTextOperationAction), Optional displayName As String = Nothing, Optional defaultLanguage As String = Nothing, Optional cancelAfter As Nullable(Of Single) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
+      <MemberSignature Language="F#" Value="abstract member AnalyzeTextSubmitOperationAsync : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * Nullable&lt;single&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.AnalyzeTextSubmitOperationAsync : Azure.WaitUntil * Azure.AI.Language.Text.MultiLanguageTextInput * seq&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt; * string * string * Nullable&lt;single&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="textAnalysisClient.AnalyzeTextSubmitOperationAsync (waitUntil, textInput, actions, displayName, defaultLanguage, cancelAfter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Text</AssemblyName>
@@ -3247,6 +3249,7 @@ Operation operation = await client.AnalyzeTextSubmitOperationAsync(WaitUntil.Com
         <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.AnalyzeTextOperationAction&gt;" />
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="defaultLanguage" Type="System.String" />
+        <Parameter Name="cancelAfter" Type="System.Nullable&lt;System.Single&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -3256,6 +3259,7 @@ Operation operation = await client.AnalyzeTextSubmitOperationAsync(WaitUntil.Com
         <param name="actions"> List of tasks to be performed as part of the LRO. </param>
         <param name="displayName"> Name for the task. </param>
         <param name="defaultLanguage"> Default language to use for records requesting automatic language detection. </param>
+        <param name="cancelAfter"> Optional duration in seconds after which the job will be canceled if not completed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Submit a collection of text documents for analysis. Specify one or more unique tasks to be executed as a long-running operation. </summary>
         <returns>To be added.</returns>

@@ -487,7 +487,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Specifies whether secure boot should be enabled on the nodeType. Can only be used with TrustedLaunch SecurityType. </summary>
+        <summary> Specifies whether secure boot should be enabled on the nodeType. Can only be used with TrustedLaunch and ConfidentialVM SecurityType. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,6 +530,26 @@
       </ReturnValue>
       <Docs>
         <summary> Indicates if the node type can only host Stateless workloads. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZoneBalanceEnabled">
+      <MemberSignature Language="C#" Value="public bool? IsZoneBalanceEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsZoneBalanceEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceFabricManagedClusters.ServiceFabricManagedNodeTypeData.IsZoneBalanceEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsZoneBalanceEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsZoneBalanceEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.ServiceFabricManagedClusters.ServiceFabricManagedNodeTypeData.IsZoneBalanceEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceFabricManagedClusters</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Setting this to true allows stateless node types to scale out without equal distribution across zones. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -664,6 +684,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SecurityEncryptionType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSecurityEncryptionType? SecurityEncryptionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSecurityEncryptionType&gt; SecurityEncryptionType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceFabricManagedClusters.ServiceFabricManagedNodeTypeData.SecurityEncryptionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityEncryptionType As Nullable(Of NodeTypeSecurityEncryptionType)" />
+      <MemberSignature Language="F#" Value="member this.SecurityEncryptionType : Nullable&lt;Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSecurityEncryptionType&gt; with get, set" Usage="Azure.ResourceManager.ServiceFabricManagedClusters.ServiceFabricManagedNodeTypeData.SecurityEncryptionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceFabricManagedClusters</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSecurityEncryptionType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the EncryptionType of the managed disk. It is set to DiskWithVMGuestState for encryption of the managed disk along with VMGuestState blob and VMGuestStateOnly for encryption of just the VMGuestState blob. Note: It can be set for only Confidential VMs. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SecurityType">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceFabricManagedClusters.Models.ServiceFabricManagedClusterSecurityType? SecurityType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ServiceFabricManagedClusters.Models.ServiceFabricManagedClusterSecurityType&gt; SecurityType" />
@@ -680,7 +720,7 @@
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ServiceFabricManagedClusters.Models.ServiceFabricManagedClusterSecurityType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Specifies the security type of the nodeType. Only Standard and TrustedLaunch are currently supported. </summary>
+        <summary> Specifies the security type of the nodeType. Supported values include Standard, TrustedLaunch and ConfidentialVM. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -893,7 +933,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -944,7 +984,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Azure resource tags. </summary>
+        <summary> Resource tags. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1216,7 +1256,7 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The number of nodes in the node type. &lt;br /&gt;&lt;br /&gt;**Values:** &lt;br /&gt;-1 - Use when auto scale rules are configured or sku.capacity is defined &lt;br /&gt; 0 - Not supported &lt;br /&gt; &gt;0 - Use for manual scale. </summary>
+        <summary> The number of nodes in the node type. **Values:** -1 - Use when auto scale rules are configured or sku.capacity is defined 0 - Not supported &gt;0 - Use for manual scale. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

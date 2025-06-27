@@ -43,7 +43,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeForwardingChain>
-    <TypeForwarding From="Azure.Messaging.EventGrid" FromVersion="5.0.0.0" To="Azure.Messaging.EventGrid.SystemEvents" ToVersion="1.0.0.0" FrameworkAlternate="azure-dotnet-preview" />
+    <TypeForwarding From="Azure.Messaging.EventGrid" FromVersion="5.0.0.0" To="Azure.Messaging.EventGrid.SystemEvents" ToVersion="1.0.0.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -104,16 +104,16 @@
         <ReturnType>Azure.Messaging.EventGrid.SystemEvents.AcsCallEndedEventData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startedBy" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallParticipantProperties" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="serverCallId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="group" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallGroupProperties" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="room" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallRoomProperties" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="isTwoParty" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="correlationId" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="isRoomsCall" Type="System.Nullable&lt;System.Boolean&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="endedBy" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallEndedByProperties" Index="7" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="reason" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallEndReasonProperties" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="callDuration" Type="System.Nullable&lt;System.TimeSpan&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="startedBy" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallParticipantProperties" />
+        <Parameter Name="serverCallId" Type="System.String" />
+        <Parameter Name="group" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallGroupProperties" />
+        <Parameter Name="room" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallRoomProperties" />
+        <Parameter Name="isTwoParty" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="correlationId" Type="System.String" />
+        <Parameter Name="isRoomsCall" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="endedBy" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallEndedByProperties" />
+        <Parameter Name="reason" Type="Azure.Messaging.EventGrid.SystemEvents.AcsCallEndReasonProperties" />
+        <Parameter Name="callDuration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
         <param name="startedBy">To be added.</param>
@@ -2220,15 +2220,11 @@
       </Docs>
     </Member>
     <Member MemberName="AcsEmailDeliveryReportStatusDetails">
-      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails (string recipientMailServerHostName = default, string statusMessage = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails(string recipientMailServerHostName, string statusMessage) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails (string statusMessage = default, string recipientMailServerHostName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails(string statusMessage, string recipientMailServerHostName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.EventGridModelFactory.AcsEmailDeliveryReportStatusDetails(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AcsEmailDeliveryReportStatusDetails (Optional recipientMailServerHostName As String = Nothing, Optional statusMessage As String = Nothing) As AcsEmailDeliveryReportStatusDetails" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member AcsEmailDeliveryReportStatusDetails : string * string -&gt; Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.AcsEmailDeliveryReportStatusDetails (recipientMailServerHostName, statusMessage)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails (string statusMessage = default, string recipientMailServerHostName = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails AcsEmailDeliveryReportStatusDetails(string statusMessage, string recipientMailServerHostName) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AcsEmailDeliveryReportStatusDetails (Optional statusMessage As String = Nothing, Optional recipientMailServerHostName As String = Nothing) As AcsEmailDeliveryReportStatusDetails" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="static member AcsEmailDeliveryReportStatusDetails : string * string -&gt; Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.AcsEmailDeliveryReportStatusDetails (statusMessage, recipientMailServerHostName)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AcsEmailDeliveryReportStatusDetails (Optional statusMessage As String = Nothing, Optional recipientMailServerHostName As String = Nothing) As AcsEmailDeliveryReportStatusDetails" />
+      <MemberSignature Language="F#" Value="static member AcsEmailDeliveryReportStatusDetails : string * string -&gt; Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.AcsEmailDeliveryReportStatusDetails (statusMessage, recipientMailServerHostName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -2242,10 +2238,8 @@
         <ReturnType>Azure.Messaging.EventGrid.SystemEvents.AcsEmailDeliveryReportStatusDetails</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="recipientMailServerHostName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="statusMessage" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="statusMessage" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="recipientMailServerHostName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="statusMessage" Type="System.String" />
+        <Parameter Name="recipientMailServerHostName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="statusMessage"> Detailed status message. </param>
@@ -8994,7 +8988,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9078,7 +9072,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9116,7 +9110,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9200,7 +9194,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9236,7 +9230,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9320,7 +9314,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9404,7 +9398,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9446,7 +9440,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9490,7 +9484,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9532,7 +9526,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9574,7 +9568,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9616,7 +9610,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9658,7 +9652,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9700,7 +9694,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9738,7 +9732,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9780,7 +9774,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9822,7 +9816,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9860,7 +9854,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9898,7 +9892,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -9966,7 +9960,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10008,7 +10002,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10048,7 +10042,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10090,7 +10084,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10134,7 +10128,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10184,7 +10178,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10228,7 +10222,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -10384,7 +10378,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -12401,15 +12395,11 @@
       </Docs>
     </Member>
     <Member MemberName="StorageLifecyclePolicyCompletedEventData">
-      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData (string scheduleTime = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData(string scheduleTime, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData (string scheduleTime = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData(string scheduleTime, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventGrid.EventGridModelFactory.StorageLifecyclePolicyCompletedEventData(System.String,Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary,Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail,Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail,Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail,Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageLifecyclePolicyCompletedEventData (Optional scheduleTime As String = Nothing, Optional policyRunSummary As StorageLifecyclePolicyRunSummary = Nothing, Optional deleteSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToCoolSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToColdSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToArchiveSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing) As StorageLifecyclePolicyCompletedEventData" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member StorageLifecyclePolicyCompletedEventData : string * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail -&gt; Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.StorageLifecyclePolicyCompletedEventData (scheduleTime, policyRunSummary, deleteSummary, tierToCoolSummary, tierToColdSummary, tierToArchiveSummary)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public static Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData (string scheduleTime = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary = default, Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData StorageLifecyclePolicyCompletedEventData(string scheduleTime, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary policyRunSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail deleteSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToCoolSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToArchiveSummary, class Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail tierToColdSummary) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageLifecyclePolicyCompletedEventData (Optional scheduleTime As String = Nothing, Optional policyRunSummary As StorageLifecyclePolicyRunSummary = Nothing, Optional deleteSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToCoolSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToArchiveSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToColdSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing) As StorageLifecyclePolicyCompletedEventData" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="static member StorageLifecyclePolicyCompletedEventData : string * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail -&gt; Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.StorageLifecyclePolicyCompletedEventData (scheduleTime, policyRunSummary, deleteSummary, tierToCoolSummary, tierToArchiveSummary, tierToColdSummary)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageLifecyclePolicyCompletedEventData (Optional scheduleTime As String = Nothing, Optional policyRunSummary As StorageLifecyclePolicyRunSummary = Nothing, Optional deleteSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToCoolSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToArchiveSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing, Optional tierToColdSummary As StorageLifecyclePolicyActionSummaryDetail = Nothing) As StorageLifecyclePolicyCompletedEventData" />
+      <MemberSignature Language="F#" Value="static member StorageLifecyclePolicyCompletedEventData : string * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail * Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail -&gt; Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData" Usage="Azure.Messaging.EventGrid.EventGridModelFactory.StorageLifecyclePolicyCompletedEventData (scheduleTime, policyRunSummary, deleteSummary, tierToCoolSummary, tierToArchiveSummary, tierToColdSummary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
@@ -12423,14 +12413,12 @@
         <ReturnType>Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyCompletedEventData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scheduleTime" Type="System.String" Index="0" />
-        <Parameter Name="policyRunSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary" Index="1" />
-        <Parameter Name="deleteSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="2" />
-        <Parameter Name="tierToCoolSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="3" />
-        <Parameter Name="tierToColdSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="tierToArchiveSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="tierToArchiveSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="5" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="tierToColdSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="scheduleTime" Type="System.String" />
+        <Parameter Name="policyRunSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyRunSummary" />
+        <Parameter Name="deleteSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" />
+        <Parameter Name="tierToCoolSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" />
+        <Parameter Name="tierToArchiveSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" />
+        <Parameter Name="tierToColdSummary" Type="Azure.Messaging.EventGrid.SystemEvents.StorageLifecyclePolicyActionSummaryDetail" />
       </Parameters>
       <Docs>
         <param name="scheduleTime"> The time the policy task was scheduled. </param>
