@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: arizeaiobservabilityeval
 ---
-# Azure Arizeaiobservabilityeval SDK for .NET - preview
-## Packages - preview
+# Azure Arizeaiobservabilityeval SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](arizeaiobservabilityeval-index.md)]
