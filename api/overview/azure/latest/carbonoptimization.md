@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: carbonoptimization
 ---
-# Azure Carbonoptimization SDK for .NET - preview
-## Packages - preview
+# Azure Carbonoptimization SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](carbonoptimization-index.md)]
