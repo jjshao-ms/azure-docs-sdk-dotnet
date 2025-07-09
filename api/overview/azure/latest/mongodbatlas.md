@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: mongodbatlas
 ---
-# Azure Mongodbatlas SDK for .NET - preview
-## Packages - preview
+# Azure Mongodbatlas SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](mongodbatlas-index.md)]
