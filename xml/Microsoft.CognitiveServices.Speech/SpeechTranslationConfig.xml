@@ -28,6 +28,7 @@
     <AssemblyVersion>1.42.0.28</AssemblyVersion>
     <AssemblyVersion>1.43.0.28</AssemblyVersion>
     <AssemblyVersion>1.44.0.28</AssemblyVersion>
+    <AssemblyVersion>1.45.0.28</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.CognitiveServices.Speech.SpeechConfig</BaseTypeName>
@@ -49,7 +50,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -77,7 +78,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -109,7 +110,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -143,7 +144,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -179,6 +180,39 @@
       </Docs>
     </Member>
     <Member MemberName="FromEndpoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.CognitiveServices.Speech.SpeechTranslationConfig FromEndpoint (Uri endpoint, System.ClientModel.ApiKeyCredential keyCredential);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.CognitiveServices.Speech.SpeechTranslationConfig FromEndpoint(class System.Uri endpoint, class System.ClientModel.ApiKeyCredential keyCredential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.SpeechTranslationConfig.FromEndpoint(System.Uri,System.ClientModel.ApiKeyCredential)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromEndpoint (endpoint As Uri, keyCredential As ApiKeyCredential) As SpeechTranslationConfig" />
+      <MemberSignature Language="F#" Value="static member FromEndpoint : Uri * System.ClientModel.ApiKeyCredential -&gt; Microsoft.CognitiveServices.Speech.SpeechTranslationConfig" Usage="Microsoft.CognitiveServices.Speech.SpeechTranslationConfig.FromEndpoint (endpoint, keyCredential)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.Uri" />
+        <Parameter Name="keyCredential" Type="System.ClientModel.ApiKeyCredential" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The service endpoint to connect to.</param>
+        <param name="keyCredential">The API key credential used to authenticate the request.</param>
+        <summary>
+            Creates an instance of speech translation config with a custom endpoint and an API key credential.
+            </summary>
+        <returns>A speech translation config instance.</returns>
+        <remarks>
+            * The query parameters specified in the endpoint URI are not changed, even if they are set by any other API call.
+              For example, if the recognition language is defined in the URI query parameter as "language=de-DE", and the property SpeechRecognitionLanguage is set to "en-US", the language set in the URI takes precedence, and "de-DE" remains the expected language.
+              Since parameters included in the endpoint URI take priority, only parameters that are not specified in the endpoint URI can be set by other APIs.
+            * To use an authorization token with FromEndpoint, use FromEndpoint(System.Uri), and then set the AuthorizationToken property on the new SpeechConfig instance.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromEndpoint">
       <MemberSignature Language="C#" Value="public static Microsoft.CognitiveServices.Speech.SpeechTranslationConfig FromEndpoint (Uri endpoint, string subscriptionKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.CognitiveServices.Speech.SpeechTranslationConfig FromEndpoint(class System.Uri endpoint, string subscriptionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.SpeechTranslationConfig.FromEndpoint(System.Uri,System.String)" />
@@ -187,7 +221,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -222,7 +256,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -258,7 +292,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -293,7 +327,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.CognitiveServices.Speech.SpeechTranslationConfig</ReturnType>
@@ -321,7 +355,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -347,7 +381,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -372,7 +406,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
@@ -394,7 +428,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.44.0.28</AssemblyVersion>
+        <AssemblyVersion>1.45.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -215,6 +215,40 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRun">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt; CreateRun (Azure.AI.Agents.Persistent.PersistentAgentThread thread, Azure.AI.Agents.Persistent.PersistentAgent agent, Azure.AI.Agents.Persistent.ToolResources toolResources, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Agents.Persistent.ThreadRun&gt; CreateRun(class Azure.AI.Agents.Persistent.PersistentAgentThread thread, class Azure.AI.Agents.Persistent.PersistentAgent agent, class Azure.AI.Agents.Persistent.ToolResources toolResources, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRun(Azure.AI.Agents.Persistent.PersistentAgentThread,Azure.AI.Agents.Persistent.PersistentAgent,Azure.AI.Agents.Persistent.ToolResources,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRun (thread As PersistentAgentThread, agent As PersistentAgent, toolResources As ToolResources, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ThreadRun)" />
+      <MemberSignature Language="F#" Value="abstract member CreateRun : Azure.AI.Agents.Persistent.PersistentAgentThread * Azure.AI.Agents.Persistent.PersistentAgent * Azure.AI.Agents.Persistent.ToolResources * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&#xA;override this.CreateRun : Azure.AI.Agents.Persistent.PersistentAgentThread * Azure.AI.Agents.Persistent.PersistentAgent * Azure.AI.Agents.Persistent.ToolResources * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;" Usage="threadRuns.CreateRun (thread, agent, toolResources, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thread" Type="Azure.AI.Agents.Persistent.PersistentAgentThread" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="agent" Type="Azure.AI.Agents.Persistent.PersistentAgent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolResources" Type="Azure.AI.Agents.Persistent.ToolResources" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="thread"> The thread that should be run. </param>
+        <param name="agent"> The agent that should run the thread. </param>
+        <param name="toolResources"> The tool resources to use to run the thread. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates a new run of the specified thread using a specified agent.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> instance. </returns>
+        <remarks>
+            This method will create the run with default configuration.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRun">
       <MemberSignature Language="C#" Value="public virtual Azure.Response CreateRun (string threadId, Azure.Core.RequestContent content, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include = default, Azure.RequestContext context = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response CreateRun(string threadId, class Azure.Core.RequestContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.RequestContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRun(System.String,Azure.Core.RequestContent,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.RequestContext)" />
@@ -249,7 +283,7 @@
             <list type="bullet"><item><description>
             This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
             </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRun(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
+            Please try the simpler <see cref="M:Azure.AI.Agents.Persistent.ThreadRuns.InternalCreateRun(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},Azure.AI.Agents.Persistent.ToolResources,System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
@@ -386,6 +420,40 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRunAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt; CreateRunAsync (Azure.AI.Agents.Persistent.PersistentAgentThread thread, Azure.AI.Agents.Persistent.PersistentAgent agent, Azure.AI.Agents.Persistent.ToolResources toolResources, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Agents.Persistent.ThreadRun&gt;&gt; CreateRunAsync(class Azure.AI.Agents.Persistent.PersistentAgentThread thread, class Azure.AI.Agents.Persistent.PersistentAgent agent, class Azure.AI.Agents.Persistent.ToolResources toolResources, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunAsync(Azure.AI.Agents.Persistent.PersistentAgentThread,Azure.AI.Agents.Persistent.PersistentAgent,Azure.AI.Agents.Persistent.ToolResources,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRunAsync (thread As PersistentAgentThread, agent As PersistentAgent, toolResources As ToolResources, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ThreadRun))" />
+      <MemberSignature Language="F#" Value="abstract member CreateRunAsync : Azure.AI.Agents.Persistent.PersistentAgentThread * Azure.AI.Agents.Persistent.PersistentAgent * Azure.AI.Agents.Persistent.ToolResources * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;&#xA;override this.CreateRunAsync : Azure.AI.Agents.Persistent.PersistentAgentThread * Azure.AI.Agents.Persistent.PersistentAgent * Azure.AI.Agents.Persistent.ToolResources * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;" Usage="threadRuns.CreateRunAsync (thread, agent, toolResources, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thread" Type="Azure.AI.Agents.Persistent.PersistentAgentThread" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="agent" Type="Azure.AI.Agents.Persistent.PersistentAgent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolResources" Type="Azure.AI.Agents.Persistent.ToolResources" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="thread"> The thread that should be run. </param>
+        <param name="agent"> The agent that should run the thread. </param>
+        <param name="toolResources"> The tool resources to use to run the thread. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates a new run of the specified thread using a specified agent.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> instance. </returns>
+        <remarks>
+            This method will create the run with default configuration.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRunAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateRunAsync (string threadId, Azure.Core.RequestContent content, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include = default, Azure.RequestContext context = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; CreateRunAsync(string threadId, class Azure.Core.RequestContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.RequestContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunAsync(System.String,Azure.Core.RequestContent,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.RequestContext)" />
@@ -419,9 +487,7 @@
             [Protocol Method] Creates a new run for an agent thread.
             <list type="bullet"><item><description>
             This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunAsync(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            </description></item><item /></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -693,11 +759,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRunStreaming">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreaming (string threadId, string agentId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions = default, string overrideModelName = default, string overrideInstructions = default, string additionalInstructions = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools = default, float? temperature = default, float? topP = default, int? maxPromptTokens = default, int? maxCompletionTokens = default, Azure.AI.Agents.Persistent.Truncation truncationStrategy = default, BinaryData toolChoice = default, BinaryData responseFormat = default, bool? parallelToolCalls = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreaming(string threadId, string agentId, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions, string overrideModelName, string overrideInstructions, string additionalInstructions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype System.Nullable`1&lt;float32&gt; topP, valuetype System.Nullable`1&lt;int32&gt; maxPromptTokens, valuetype System.Nullable`1&lt;int32&gt; maxCompletionTokens, class Azure.AI.Agents.Persistent.Truncation truncationStrategy, class System.BinaryData toolChoice, class System.BinaryData responseFormat, valuetype System.Nullable`1&lt;bool&gt; parallelToolCalls, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunStreaming(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.AI.Agents.Persistent.AutoFunctionCallOptions,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRunStreaming (threadId As String, agentId As String, include As IEnumerable(Of RunAdditionalFieldList), Optional autoFunctionCallOptions As AutoFunctionCallOptions = Nothing, Optional overrideModelName As String = Nothing, Optional overrideInstructions As String = Nothing, Optional additionalInstructions As String = Nothing, Optional additionalMessages As IEnumerable(Of ThreadMessageOptions) = Nothing, Optional overrideTools As IEnumerable(Of ToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional topP As Nullable(Of Single) = Nothing, Optional maxPromptTokens As Nullable(Of Integer) = Nothing, Optional maxCompletionTokens As Nullable(Of Integer) = Nothing, Optional truncationStrategy As Truncation = Nothing, Optional toolChoice As BinaryData = Nothing, Optional responseFormat As BinaryData = Nothing, Optional parallelToolCalls As Nullable(Of Boolean) = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateRunStreaming : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.CreateRunStreaming : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.CreateRunStreaming (threadId, agentId, include, autoFunctionCallOptions, overrideModelName, overrideInstructions, additionalInstructions, additionalMessages, overrideTools, temperature, topP, maxPromptTokens, maxCompletionTokens, truncationStrategy, toolChoice, responseFormat, parallelToolCalls, metadata, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreaming (string threadId, string agentId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions = default, string overrideModelName = default, string overrideInstructions = default, string additionalInstructions = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools = default, Azure.AI.Agents.Persistent.ToolResources toolResources = default, float? temperature = default, float? topP = default, int? maxPromptTokens = default, int? maxCompletionTokens = default, Azure.AI.Agents.Persistent.Truncation truncationStrategy = default, BinaryData toolChoice = default, BinaryData responseFormat = default, bool? parallelToolCalls = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreaming(string threadId, string agentId, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions, string overrideModelName, string overrideInstructions, string additionalInstructions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools, class Azure.AI.Agents.Persistent.ToolResources toolResources, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype System.Nullable`1&lt;float32&gt; topP, valuetype System.Nullable`1&lt;int32&gt; maxPromptTokens, valuetype System.Nullable`1&lt;int32&gt; maxCompletionTokens, class Azure.AI.Agents.Persistent.Truncation truncationStrategy, class System.BinaryData toolChoice, class System.BinaryData responseFormat, valuetype System.Nullable`1&lt;bool&gt; parallelToolCalls, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunStreaming(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.AI.Agents.Persistent.AutoFunctionCallOptions,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},Azure.AI.Agents.Persistent.ToolResources,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRunStreaming (threadId As String, agentId As String, include As IEnumerable(Of RunAdditionalFieldList), Optional autoFunctionCallOptions As AutoFunctionCallOptions = Nothing, Optional overrideModelName As String = Nothing, Optional overrideInstructions As String = Nothing, Optional additionalInstructions As String = Nothing, Optional additionalMessages As IEnumerable(Of ThreadMessageOptions) = Nothing, Optional overrideTools As IEnumerable(Of ToolDefinition) = Nothing, Optional toolResources As ToolResources = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional topP As Nullable(Of Single) = Nothing, Optional maxPromptTokens As Nullable(Of Integer) = Nothing, Optional maxCompletionTokens As Nullable(Of Integer) = Nothing, Optional truncationStrategy As Truncation = Nothing, Optional toolChoice As BinaryData = Nothing, Optional responseFormat As BinaryData = Nothing, Optional parallelToolCalls As Nullable(Of Boolean) = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateRunStreaming : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Azure.AI.Agents.Persistent.ToolResources * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.CreateRunStreaming : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Azure.AI.Agents.Persistent.ToolResources * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.CreateRunStreaming (threadId, agentId, include, autoFunctionCallOptions, overrideModelName, overrideInstructions, additionalInstructions, additionalMessages, overrideTools, toolResources, temperature, topP, maxPromptTokens, maxCompletionTokens, truncationStrategy, toolChoice, responseFormat, parallelToolCalls, metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
@@ -716,16 +782,17 @@
         <Parameter Name="additionalInstructions" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="additionalMessages" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="overrideTools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="topP" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="maxPromptTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="11" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="maxCompletionTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="12" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="truncationStrategy" Type="Azure.AI.Agents.Persistent.Truncation" Index="13" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="toolChoice" Type="System.BinaryData" Index="14" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="responseFormat" Type="System.BinaryData" Index="15" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="parallelToolCalls" Type="System.Nullable&lt;System.Boolean&gt;" Index="16" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="17" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="18" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolResources" Type="Azure.AI.Agents.Persistent.ToolResources" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topP" Type="System.Nullable&lt;System.Single&gt;" Index="11" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxPromptTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="12" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxCompletionTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="truncationStrategy" Type="Azure.AI.Agents.Persistent.Truncation" Index="14" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolChoice" Type="System.BinaryData" Index="15" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="responseFormat" Type="System.BinaryData" Index="16" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="parallelToolCalls" Type="System.Nullable&lt;System.Boolean&gt;" Index="17" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="18" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="19" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="threadId"> Identifier of the thread. </param>
@@ -744,6 +811,7 @@
              </param>
         <param name="additionalMessages"> Adds additional messages to the thread before creating the run. </param>
         <param name="overrideTools"> The overridden list of enabled tools that the agent should use to run the thread. </param>
+        <param name="toolResources"> The overridden  tool resources that the agent should use to run the thread. </param>
         <param name="temperature">
              What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output
              more random, while lower values like 0.2 will make it more focused and deterministic.
@@ -953,11 +1021,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRunStreamingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreamingAsync (string threadId, string agentId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions = default, string overrideModelName = default, string overrideInstructions = default, string additionalInstructions = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools = default, float? temperature = default, float? topP = default, int? maxPromptTokens = default, int? maxCompletionTokens = default, Azure.AI.Agents.Persistent.Truncation truncationStrategy = default, BinaryData toolChoice = default, BinaryData responseFormat = default, bool? parallelToolCalls = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreamingAsync(string threadId, string agentId, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions, string overrideModelName, string overrideInstructions, string additionalInstructions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype System.Nullable`1&lt;float32&gt; topP, valuetype System.Nullable`1&lt;int32&gt; maxPromptTokens, valuetype System.Nullable`1&lt;int32&gt; maxCompletionTokens, class Azure.AI.Agents.Persistent.Truncation truncationStrategy, class System.BinaryData toolChoice, class System.BinaryData responseFormat, valuetype System.Nullable`1&lt;bool&gt; parallelToolCalls, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunStreamingAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.AI.Agents.Persistent.AutoFunctionCallOptions,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRunStreamingAsync (threadId As String, agentId As String, include As IEnumerable(Of RunAdditionalFieldList), Optional autoFunctionCallOptions As AutoFunctionCallOptions = Nothing, Optional overrideModelName As String = Nothing, Optional overrideInstructions As String = Nothing, Optional additionalInstructions As String = Nothing, Optional additionalMessages As IEnumerable(Of ThreadMessageOptions) = Nothing, Optional overrideTools As IEnumerable(Of ToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional topP As Nullable(Of Single) = Nothing, Optional maxPromptTokens As Nullable(Of Integer) = Nothing, Optional maxCompletionTokens As Nullable(Of Integer) = Nothing, Optional truncationStrategy As Truncation = Nothing, Optional toolChoice As BinaryData = Nothing, Optional responseFormat As BinaryData = Nothing, Optional parallelToolCalls As Nullable(Of Boolean) = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateRunStreamingAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.CreateRunStreamingAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.CreateRunStreamingAsync (threadId, agentId, include, autoFunctionCallOptions, overrideModelName, overrideInstructions, additionalInstructions, additionalMessages, overrideTools, temperature, topP, maxPromptTokens, maxCompletionTokens, truncationStrategy, toolChoice, responseFormat, parallelToolCalls, metadata, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreamingAsync (string threadId, string agentId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions = default, string overrideModelName = default, string overrideInstructions = default, string additionalInstructions = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools = default, Azure.AI.Agents.Persistent.ToolResources toolResources = default, float? temperature = default, float? topP = default, int? maxPromptTokens = default, int? maxCompletionTokens = default, Azure.AI.Agents.Persistent.Truncation truncationStrategy = default, BinaryData toolChoice = default, BinaryData responseFormat = default, bool? parallelToolCalls = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; CreateRunStreamingAsync(string threadId, string agentId, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; include, class Azure.AI.Agents.Persistent.AutoFunctionCallOptions autoFunctionCallOptions, string overrideModelName, string overrideInstructions, string additionalInstructions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; additionalMessages, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolDefinition&gt; overrideTools, class Azure.AI.Agents.Persistent.ToolResources toolResources, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype System.Nullable`1&lt;float32&gt; topP, valuetype System.Nullable`1&lt;int32&gt; maxPromptTokens, valuetype System.Nullable`1&lt;int32&gt; maxCompletionTokens, class Azure.AI.Agents.Persistent.Truncation truncationStrategy, class System.BinaryData toolChoice, class System.BinaryData responseFormat, valuetype System.Nullable`1&lt;bool&gt; parallelToolCalls, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.CreateRunStreamingAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunAdditionalFieldList},Azure.AI.Agents.Persistent.AutoFunctionCallOptions,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ThreadMessageOptions},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolDefinition},Azure.AI.Agents.Persistent.ToolResources,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.Agents.Persistent.Truncation,System.BinaryData,System.BinaryData,System.Nullable{System.Boolean},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRunStreamingAsync (threadId As String, agentId As String, include As IEnumerable(Of RunAdditionalFieldList), Optional autoFunctionCallOptions As AutoFunctionCallOptions = Nothing, Optional overrideModelName As String = Nothing, Optional overrideInstructions As String = Nothing, Optional additionalInstructions As String = Nothing, Optional additionalMessages As IEnumerable(Of ThreadMessageOptions) = Nothing, Optional overrideTools As IEnumerable(Of ToolDefinition) = Nothing, Optional toolResources As ToolResources = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional topP As Nullable(Of Single) = Nothing, Optional maxPromptTokens As Nullable(Of Integer) = Nothing, Optional maxCompletionTokens As Nullable(Of Integer) = Nothing, Optional truncationStrategy As Truncation = Nothing, Optional toolChoice As BinaryData = Nothing, Optional responseFormat As BinaryData = Nothing, Optional parallelToolCalls As Nullable(Of Boolean) = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateRunStreamingAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Azure.AI.Agents.Persistent.ToolResources * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.CreateRunStreamingAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.RunAdditionalFieldList&gt; * Azure.AI.Agents.Persistent.AutoFunctionCallOptions * string * string * string * seq&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; * Azure.AI.Agents.Persistent.ToolResources * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.Agents.Persistent.Truncation * BinaryData * BinaryData * Nullable&lt;bool&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.CreateRunStreamingAsync (threadId, agentId, include, autoFunctionCallOptions, overrideModelName, overrideInstructions, additionalInstructions, additionalMessages, overrideTools, toolResources, temperature, topP, maxPromptTokens, maxCompletionTokens, truncationStrategy, toolChoice, responseFormat, parallelToolCalls, metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
@@ -976,16 +1044,17 @@
         <Parameter Name="additionalInstructions" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="additionalMessages" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ThreadMessageOptions&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="overrideTools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="topP" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="maxPromptTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="11" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="maxCompletionTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="12" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="truncationStrategy" Type="Azure.AI.Agents.Persistent.Truncation" Index="13" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="toolChoice" Type="System.BinaryData" Index="14" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="responseFormat" Type="System.BinaryData" Index="15" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="parallelToolCalls" Type="System.Nullable&lt;System.Boolean&gt;" Index="16" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="17" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="18" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolResources" Type="Azure.AI.Agents.Persistent.ToolResources" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topP" Type="System.Nullable&lt;System.Single&gt;" Index="11" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxPromptTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="12" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxCompletionTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="truncationStrategy" Type="Azure.AI.Agents.Persistent.Truncation" Index="14" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolChoice" Type="System.BinaryData" Index="15" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="responseFormat" Type="System.BinaryData" Index="16" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="parallelToolCalls" Type="System.Nullable&lt;System.Boolean&gt;" Index="17" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="18" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="19" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="autoFunctionCallOptions">To be added.</param>
@@ -1005,6 +1074,7 @@
              </param>
         <param name="additionalMessages"> Adds additional messages to the thread before creating the run. </param>
         <param name="overrideTools"> The overridden list of enabled tools that the agent should use to run the thread. </param>
+        <param name="toolResources"> The overridden  tool resources that the agent should use to run the thread. </param>
         <param name="temperature">
              What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output
              more random, while lower values like 0.2 will make it more focused and deterministic.
@@ -1567,6 +1637,38 @@
       </Docs>
     </Member>
     <Member MemberName="SubmitToolOutputsToRun">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt; SubmitToolOutputsToRun (Azure.AI.Agents.Persistent.ThreadRun run, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Agents.Persistent.ThreadRun&gt; SubmitToolOutputsToRun(class Azure.AI.Agents.Persistent.ThreadRun run, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToRun(Azure.AI.Agents.Persistent.ThreadRun,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolOutput},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolApproval},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SubmitToolOutputsToRun (run As ThreadRun, Optional toolOutputs As IEnumerable(Of ToolOutput) = Nothing, Optional toolApprovals As IEnumerable(Of ToolApproval) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ThreadRun)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToolOutputsToRun : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&#xA;override this.SubmitToolOutputsToRun : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;" Usage="threadRuns.SubmitToolOutputsToRun (run, toolOutputs, toolApprovals, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="run" Type="Azure.AI.Agents.Persistent.ThreadRun" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolOutputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolApprovals" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="run"> The <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> that the tool outputs should be submitted to. </param>
+        <param name="toolOutputs"> The list of tool call outputs to provide as part of an output submission to an agent thread run. </param>
+        <param name="toolApprovals"> The list of tool approvals to provide as part of an submission to an agent thread run. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Submits outputs from tool calls as requested by a run with a status of 'requires_action' with required_action.type of 'submit_tool_outputs'. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="run" />  is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitToolOutputsToRun">
       <MemberSignature Language="C#" Value="public virtual Azure.Response SubmitToolOutputsToRun (string threadId, string runId, Azure.Core.RequestContent content, Azure.RequestContext context = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response SubmitToolOutputsToRun(string threadId, string runId, class Azure.Core.RequestContent content, class Azure.RequestContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToRun(System.String,System.String,Azure.Core.RequestContent,Azure.RequestContext)" />
@@ -1597,6 +1699,44 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="threadId" />, <paramref name="runId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="threadId" /> or <paramref name="runId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitToolOutputsToRun">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt; SubmitToolOutputsToRun (string threadId, string runId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals = default, bool? stream = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Agents.Persistent.ThreadRun&gt; SubmitToolOutputsToRun(string threadId, string runId, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, valuetype System.Nullable`1&lt;bool&gt; stream, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToRun(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolOutput},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolApproval},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SubmitToolOutputsToRun (threadId As String, runId As String, Optional toolOutputs As IEnumerable(Of ToolOutput) = Nothing, Optional toolApprovals As IEnumerable(Of ToolApproval) = Nothing, Optional stream As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ThreadRun)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToolOutputsToRun : string * string * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&#xA;override this.SubmitToolOutputsToRun : string * string * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;" Usage="threadRuns.SubmitToolOutputsToRun (threadId, runId, toolOutputs, toolApprovals, stream, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolOutputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolApprovals" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="stream" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="threadId"> Identifier of the thread. </param>
+        <param name="runId"> Identifier of the run. </param>
+        <param name="toolOutputs"> A list of tools for which the outputs are being submitted. </param>
+        <param name="toolApprovals"> A list of tool approvals allowing data to be sent to tools. </param>
+        <param name="stream"> If true, returns a stream of events that happen during the Run as SSE, terminating at `[DONE]`. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Submits outputs from tools as requested by tool calls in a run. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="threadId" /> or <paramref name="runId" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="threadId" /> or <paramref name="runId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
@@ -1663,6 +1803,44 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="threadId" />, <paramref name="runId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="threadId" /> or <paramref name="runId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitToolOutputsToRunAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt; SubmitToolOutputsToRunAsync (string threadId, string runId, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals = default, bool? stream = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Agents.Persistent.ThreadRun&gt;&gt; SubmitToolOutputsToRunAsync(string threadId, string runId, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, valuetype System.Nullable`1&lt;bool&gt; stream, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolOutput},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolApproval},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SubmitToolOutputsToRunAsync (threadId As String, runId As String, Optional toolOutputs As IEnumerable(Of ToolOutput) = Nothing, Optional toolApprovals As IEnumerable(Of ToolApproval) = Nothing, Optional stream As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ThreadRun))" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToolOutputsToRunAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;&#xA;override this.SubmitToolOutputsToRunAsync : string * string * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;" Usage="threadRuns.SubmitToolOutputsToRunAsync (threadId, runId, toolOutputs, toolApprovals, stream, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Agents.Persistent.ThreadRun&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolOutputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolApprovals" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="stream" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="threadId"> Identifier of the thread. </param>
+        <param name="runId"> Identifier of the run. </param>
+        <param name="toolOutputs"> A list of tools for which the outputs are being submitted. </param>
+        <param name="toolApprovals"> A list of tool approvals allowing data to be sent to tools. </param>
+        <param name="stream"> If true, returns a stream of events that happen during the Run as SSE, terminating at `[DONE]`. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Submits outputs from tools as requested by tool calls in a run. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="threadId" /> or <paramref name="runId" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="threadId" /> or <paramref name="runId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
