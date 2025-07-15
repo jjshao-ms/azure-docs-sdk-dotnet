@@ -123,6 +123,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AIDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIDeployment AIDeployment (string type = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIDeployment AIDeployment(string type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.AIDeployment(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIDeployment (Optional type As String = Nothing, Optional name As String = Nothing) As AIDeployment" />
+      <MemberSignature Language="F#" Value="static member AIDeployment : string * string -&gt; Azure.AI.Projects.AIDeployment" Usage="Azure.AI.Projects.AIProjectsModelFactory.AIDeployment (type, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIDeployment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of the deployment. </param>
+        <param name="name"> Name of the deployment. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.AIDeployment" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIDeployment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ApiKeyCredentials">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ApiKeyCredentials ApiKeyCredentials (string apiKey = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ApiKeyCredentials ApiKeyCredentials(string apiKey) cil managed" />
@@ -210,11 +236,11 @@
       </Docs>
     </Member>
     <Member MemberName="BlobReference">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReference BlobReference (string blobUri = default, string storageAccountArmId = default, Azure.AI.Projects.SasCredential credential = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.BlobReference BlobReference(string blobUri, string storageAccountArmId, class Azure.AI.Projects.SasCredential credential) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.BlobReference(System.String,System.String,Azure.AI.Projects.SasCredential)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReference (Optional blobUri As String = Nothing, Optional storageAccountArmId As String = Nothing, Optional credential As SasCredential = Nothing) As BlobReference" />
-      <MemberSignature Language="F#" Value="static member BlobReference : string * string * Azure.AI.Projects.SasCredential -&gt; Azure.AI.Projects.BlobReference" Usage="Azure.AI.Projects.AIProjectsModelFactory.BlobReference (blobUri, storageAccountArmId, credential)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReference BlobReference (Uri blobUri = default, string storageAccountArmId = default, Azure.AI.Projects.BlobReferenceSasCredential credential = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.BlobReference BlobReference(class System.Uri blobUri, string storageAccountArmId, class Azure.AI.Projects.BlobReferenceSasCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.BlobReference(System.Uri,System.String,Azure.AI.Projects.BlobReferenceSasCredential)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReference (Optional blobUri As Uri = Nothing, Optional storageAccountArmId As String = Nothing, Optional credential As BlobReferenceSasCredential = Nothing) As BlobReference" />
+      <MemberSignature Language="F#" Value="static member BlobReference : Uri * string * Azure.AI.Projects.BlobReferenceSasCredential -&gt; Azure.AI.Projects.BlobReference" Usage="Azure.AI.Projects.AIProjectsModelFactory.BlobReference (blobUri, storageAccountArmId, credential)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -224,9 +250,9 @@
         <ReturnType>Azure.AI.Projects.BlobReference</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobUri" Type="System.String" />
+        <Parameter Name="blobUri" Type="System.Uri" />
         <Parameter Name="storageAccountArmId" Type="System.String" />
-        <Parameter Name="credential" Type="Azure.AI.Projects.SasCredential" />
+        <Parameter Name="credential" Type="Azure.AI.Projects.BlobReferenceSasCredential" />
       </Parameters>
       <Docs>
         <param name="blobUri"> Blob URI path for client to upload data. Example: https://blob.windows.core.net/Container/Path. </param>
@@ -237,19 +263,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Connection">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Connection Connection (string name = default, string id = default, Azure.AI.Projects.ConnectionType type = default, string target = default, bool isDefault = false, Azure.AI.Projects.BaseCredentials credentials = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Connection Connection(string name, string id, valuetype Azure.AI.Projects.ConnectionType type, string target, bool isDefault, class Azure.AI.Projects.BaseCredentials credentials, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.Connection(System.String,System.String,Azure.AI.Projects.ConnectionType,System.String,System.Boolean,Azure.AI.Projects.BaseCredentials,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Connection (Optional name As String = Nothing, Optional id As String = Nothing, Optional type As ConnectionType = Nothing, Optional target As String = Nothing, Optional isDefault As Boolean = false, Optional credentials As BaseCredentials = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing) As Connection" />
-      <MemberSignature Language="F#" Value="static member Connection : string * string * Azure.AI.Projects.ConnectionType * string * bool * Azure.AI.Projects.BaseCredentials * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.Connection" Usage="Azure.AI.Projects.AIProjectsModelFactory.Connection (name, id, type, target, isDefault, credentials, metadata)" />
+    <Member MemberName="BlobReferenceSasCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential (Uri sasUri = default, Azure.AI.Projects.BlobReferenceSasCredentialType type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential(class System.Uri sasUri, valuetype Azure.AI.Projects.BlobReferenceSasCredentialType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.BlobReferenceSasCredential(System.Uri,Azure.AI.Projects.BlobReferenceSasCredentialType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReferenceSasCredential (Optional sasUri As Uri = Nothing, Optional type As BlobReferenceSasCredentialType = Nothing) As BlobReferenceSasCredential" />
+      <MemberSignature Language="F#" Value="static member BlobReferenceSasCredential : Uri * Azure.AI.Projects.BlobReferenceSasCredentialType -&gt; Azure.AI.Projects.BlobReferenceSasCredential" Usage="Azure.AI.Projects.AIProjectsModelFactory.BlobReferenceSasCredential (sasUri, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.Connection</ReturnType>
+        <ReturnType>Azure.AI.Projects.BlobReferenceSasCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sasUri" Type="System.Uri" />
+        <Parameter Name="type" Type="Azure.AI.Projects.BlobReferenceSasCredentialType" />
+      </Parameters>
+      <Docs>
+        <param name="sasUri"> SAS uri. </param>
+        <param name="type"> Type of credential. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.BlobReferenceSasCredential" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.BlobReferenceSasCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionProperties">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ConnectionProperties ConnectionProperties (string name = default, string id = default, Azure.AI.Projects.ConnectionType type = default, string target = default, bool isDefault = false, Azure.AI.Projects.BaseCredentials credentials = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ConnectionProperties ConnectionProperties(string name, string id, valuetype Azure.AI.Projects.ConnectionType type, string target, bool isDefault, class Azure.AI.Projects.BaseCredentials credentials, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.ConnectionProperties(System.String,System.String,Azure.AI.Projects.ConnectionType,System.String,System.Boolean,Azure.AI.Projects.BaseCredentials,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConnectionProperties (Optional name As String = Nothing, Optional id As String = Nothing, Optional type As ConnectionType = Nothing, Optional target As String = Nothing, Optional isDefault As Boolean = false, Optional credentials As BaseCredentials = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing) As ConnectionProperties" />
+      <MemberSignature Language="F#" Value="static member ConnectionProperties : string * string * Azure.AI.Projects.ConnectionType * string * bool * Azure.AI.Projects.BaseCredentials * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.ConnectionProperties" Usage="Azure.AI.Projects.AIProjectsModelFactory.ConnectionProperties (name, id, type, target, isDefault, credentials, metadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ConnectionProperties</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -272,8 +324,8 @@
             The available derived classes include <see cref="T:Azure.AI.Projects.EntraIDCredentials" />, <see cref="T:Azure.AI.Projects.ApiKeyCredentials" />, <see cref="T:Azure.AI.Projects.CustomCredential" />, <see cref="T:Azure.AI.Projects.NoAuthenticationCredentials" /> and <see cref="T:Azure.AI.Projects.SASCredentials" />.
             </param>
         <param name="metadata"> Metadata of the connection. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.Connection" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.Connection" /> instance for mocking. </returns>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.ConnectionProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ConnectionProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,12 +395,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DatasetIndex">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.DatasetIndex DatasetIndex (string type = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.DatasetIndex DatasetIndex(string type, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.DatasetIndex(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DatasetIndex (Optional type As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DatasetIndex" />
+      <MemberSignature Language="F#" Value="static member DatasetIndex : string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.DatasetIndex" Usage="Azure.AI.Projects.AIProjectsModelFactory.DatasetIndex (type, id, name, version, description, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.DatasetIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Type of index. </param>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.DatasetIndex" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.DatasetIndex" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DatasetVersion">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.DatasetVersion DatasetVersion (string dataUri = default, string type = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.DatasetVersion DatasetVersion(string dataUri, string type, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.DatasetVersion(System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DatasetVersion (Optional dataUri As String = Nothing, Optional type As String = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DatasetVersion" />
-      <MemberSignature Language="F#" Value="static member DatasetVersion : string * string * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.DatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.DatasetVersion (dataUri, type, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.DatasetVersion DatasetVersion (Uri dataUri = default, string type = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.DatasetVersion DatasetVersion(class System.Uri dataUri, string type, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.DatasetVersion(System.Uri,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DatasetVersion (Optional dataUri As Uri = Nothing, Optional type As String = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DatasetVersion" />
+      <MemberSignature Language="F#" Value="static member DatasetVersion : Uri * string * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.DatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.DatasetVersion (dataUri, type, isReference, connectionName, id, name, version, description, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -358,7 +444,7 @@
         <ReturnType>Azure.AI.Projects.DatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.String" />
+        <Parameter Name="dataUri" Type="System.Uri" />
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="connectionName" Type="System.String" />
@@ -380,32 +466,6 @@
         <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.DatasetVersion" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.DatasetVersion" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Deployment">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Deployment Deployment (string type = default, string name = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Deployment Deployment(string type, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.Deployment(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Deployment (Optional type As String = Nothing, Optional name As String = Nothing) As Deployment" />
-      <MemberSignature Language="F#" Value="static member Deployment : string * string -&gt; Azure.AI.Projects.Deployment" Usage="Azure.AI.Projects.AIProjectsModelFactory.Deployment (type, name)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.Deployment</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="type"> The type of the deployment. </param>
-        <param name="name"> Name of the deployment. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.Deployment" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.Deployment" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,11 +512,11 @@
       </Docs>
     </Member>
     <Member MemberName="FileDatasetVersion">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FileDatasetVersion FileDatasetVersion (string dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FileDatasetVersion FileDatasetVersion(string dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.FileDatasetVersion(System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FileDatasetVersion (Optional dataUri As String = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FileDatasetVersion" />
-      <MemberSignature Language="F#" Value="static member FileDatasetVersion : string * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FileDatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.FileDatasetVersion (dataUri, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FileDatasetVersion FileDatasetVersion (Uri dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FileDatasetVersion FileDatasetVersion(class System.Uri dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.FileDatasetVersion(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileDatasetVersion (Optional dataUri As Uri = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FileDatasetVersion" />
+      <MemberSignature Language="F#" Value="static member FileDatasetVersion : Uri * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FileDatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.FileDatasetVersion (dataUri, isReference, connectionName, id, name, version, description, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -466,7 +526,7 @@
         <ReturnType>Azure.AI.Projects.FileDatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.String" />
+        <Parameter Name="dataUri" Type="System.Uri" />
         <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
@@ -490,11 +550,11 @@
       </Docs>
     </Member>
     <Member MemberName="FolderDatasetVersion">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FolderDatasetVersion FolderDatasetVersion (string dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FolderDatasetVersion FolderDatasetVersion(string dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.FolderDatasetVersion(System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FolderDatasetVersion (Optional dataUri As String = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FolderDatasetVersion" />
-      <MemberSignature Language="F#" Value="static member FolderDatasetVersion : string * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FolderDatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.FolderDatasetVersion (dataUri, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FolderDatasetVersion FolderDatasetVersion (Uri dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FolderDatasetVersion FolderDatasetVersion(class System.Uri dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.FolderDatasetVersion(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FolderDatasetVersion (Optional dataUri As Uri = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FolderDatasetVersion" />
+      <MemberSignature Language="F#" Value="static member FolderDatasetVersion : Uri * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FolderDatasetVersion" Usage="Azure.AI.Projects.AIProjectsModelFactory.FolderDatasetVersion (dataUri, isReference, connectionName, id, name, version, description, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -504,7 +564,7 @@
         <ReturnType>Azure.AI.Projects.FolderDatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.String" />
+        <Parameter Name="dataUri" Type="System.Uri" />
         <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
@@ -524,40 +584,6 @@
         <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.FolderDatasetVersion" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.FolderDatasetVersion" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Index">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Index Index (string type = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Index Index(string type, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.Index(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Index (Optional type As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As Index" />
-      <MemberSignature Language="F#" Value="static member Index : string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.Index" Usage="Azure.AI.Projects.AIProjectsModelFactory.Index (type, id, name, version, description, tags)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.Index</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="type"> Type of index. </param>
-        <param name="id"> Asset ID, a unique identifier for the asset. </param>
-        <param name="name"> The name of the resource. </param>
-        <param name="version"> The version of the resource. </param>
-        <param name="description"> The asset description text. </param>
-        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.Index" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.Index" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,11 +622,11 @@
       </Docs>
     </Member>
     <Member MemberName="ModelDeployment">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ModelDeployment ModelDeployment (string name = default, string modelName = default, string modelVersion = default, string modelPublisher = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; capabilities = default, Azure.AI.Projects.Sku sku = default, string connectionName = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ModelDeployment ModelDeployment(string name, string modelName, string modelVersion, string modelPublisher, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; capabilities, class Azure.AI.Projects.Sku sku, string connectionName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.ModelDeployment(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},Azure.AI.Projects.Sku,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ModelDeployment (Optional name As String = Nothing, Optional modelName As String = Nothing, Optional modelVersion As String = Nothing, Optional modelPublisher As String = Nothing, Optional capabilities As IReadOnlyDictionary(Of String, String) = Nothing, Optional sku As Sku = Nothing, Optional connectionName As String = Nothing) As ModelDeployment" />
-      <MemberSignature Language="F#" Value="static member ModelDeployment : string * string * string * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Azure.AI.Projects.Sku * string -&gt; Azure.AI.Projects.ModelDeployment" Usage="Azure.AI.Projects.AIProjectsModelFactory.ModelDeployment (name, modelName, modelVersion, modelPublisher, capabilities, sku, connectionName)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ModelDeployment ModelDeployment (string name = default, string modelName = default, string modelVersion = default, string modelPublisher = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; capabilities = default, Azure.AI.Projects.ModelDeploymentSku sku = default, string connectionName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ModelDeployment ModelDeployment(string name, string modelName, string modelVersion, string modelPublisher, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; capabilities, class Azure.AI.Projects.ModelDeploymentSku sku, string connectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.ModelDeployment(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},Azure.AI.Projects.ModelDeploymentSku,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ModelDeployment (Optional name As String = Nothing, Optional modelName As String = Nothing, Optional modelVersion As String = Nothing, Optional modelPublisher As String = Nothing, Optional capabilities As IReadOnlyDictionary(Of String, String) = Nothing, Optional sku As ModelDeploymentSku = Nothing, Optional connectionName As String = Nothing) As ModelDeployment" />
+      <MemberSignature Language="F#" Value="static member ModelDeployment : string * string * string * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Azure.AI.Projects.ModelDeploymentSku * string -&gt; Azure.AI.Projects.ModelDeployment" Usage="Azure.AI.Projects.AIProjectsModelFactory.ModelDeployment (name, modelName, modelVersion, modelPublisher, capabilities, sku, connectionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -615,7 +641,7 @@
         <Parameter Name="modelVersion" Type="System.String" />
         <Parameter Name="modelPublisher" Type="System.String" />
         <Parameter Name="capabilities" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="sku" Type="Azure.AI.Projects.Sku" />
+        <Parameter Name="sku" Type="Azure.AI.Projects.ModelDeploymentSku" />
         <Parameter Name="connectionName" Type="System.String" />
       </Parameters>
       <Docs>
@@ -628,6 +654,38 @@
         <param name="connectionName"> Name of the connection the deployment comes from. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.ModelDeployment" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.ModelDeployment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelDeploymentSku">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ModelDeploymentSku ModelDeploymentSku (long capacity = 0, string family = default, string name = default, string size = default, string tier = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ModelDeploymentSku ModelDeploymentSku(int64 capacity, string family, string name, string size, string tier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.ModelDeploymentSku(System.Int64,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ModelDeploymentSku (Optional capacity As Long = 0, Optional family As String = Nothing, Optional name As String = Nothing, Optional size As String = Nothing, Optional tier As String = Nothing) As ModelDeploymentSku" />
+      <MemberSignature Language="F#" Value="static member ModelDeploymentSku : int64 * string * string * string * string -&gt; Azure.AI.Projects.ModelDeploymentSku" Usage="Azure.AI.Projects.AIProjectsModelFactory.ModelDeploymentSku (capacity, family, name, size, tier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ModelDeploymentSku</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int64" />
+        <Parameter Name="family" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="size" Type="System.String" />
+        <Parameter Name="tier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="capacity"> Sku capacity. </param>
+        <param name="family"> Sku family. </param>
+        <param name="name"> Sku name. </param>
+        <param name="size"> Sku size. </param>
+        <param name="tier"> Sku tier. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.ModelDeploymentSku" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ModelDeploymentSku" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,32 +795,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SasCredential">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.SasCredential SasCredential (string sasUri = default, Azure.AI.Projects.SasCredentialType type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.SasCredential SasCredential(string sasUri, valuetype Azure.AI.Projects.SasCredentialType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.SasCredential(System.String,Azure.AI.Projects.SasCredentialType)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SasCredential (Optional sasUri As String = Nothing, Optional type As SasCredentialType = Nothing) As SasCredential" />
-      <MemberSignature Language="F#" Value="static member SasCredential : string * Azure.AI.Projects.SasCredentialType -&gt; Azure.AI.Projects.SasCredential" Usage="Azure.AI.Projects.AIProjectsModelFactory.SasCredential (sasUri, type)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.SasCredential</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sasUri" Type="System.String" />
-        <Parameter Name="type" Type="Azure.AI.Projects.SasCredentialType" />
-      </Parameters>
-      <Docs>
-        <param name="sasUri"> SAS uri. </param>
-        <param name="type"> Type of credential. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.SasCredential" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.SasCredential" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SASCredentials">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.SASCredentials SASCredentials (string sasToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.SASCredentials SASCredentials(string sasToken) cil managed" />
@@ -784,38 +816,6 @@
         <param name="sasToken"> SAS token. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.SASCredentials" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.SASCredentials" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Sku Sku (long capacity = 0, string family = default, string name = default, string size = default, string tier = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Sku Sku(int64 capacity, string family, string name, string size, string tier) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectsModelFactory.Sku(System.Int64,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Sku (Optional capacity As Long = 0, Optional family As String = Nothing, Optional name As String = Nothing, Optional size As String = Nothing, Optional tier As String = Nothing) As Sku" />
-      <MemberSignature Language="F#" Value="static member Sku : int64 * string * string * string * string -&gt; Azure.AI.Projects.Sku" Usage="Azure.AI.Projects.AIProjectsModelFactory.Sku (capacity, family, name, size, tier)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.Sku</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="family" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="size" Type="System.String" />
-        <Parameter Name="tier" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="capacity"> Sku capacity. </param>
-        <param name="family"> Sku family. </param>
-        <param name="name"> Sku name. </param>
-        <param name="size"> Sku size. </param>
-        <param name="tier"> Sku tier. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.Sku" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.Sku" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

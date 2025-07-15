@@ -55,7 +55,7 @@
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
-        <param name="version"> The specific version id of the DatasetVersion to create or replace. </param>
+        <param name="version"> The specific version id of the DatasetVersion to create or update. </param>
         <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
@@ -65,11 +65,6 @@
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call CreateOrUpdate and parse the result.
 <code><![CDATA[
@@ -120,6 +115,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
@@ -144,7 +144,7 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
-        <param name="version"> The specific version id of the DatasetVersion to create or replace. </param>
+        <param name="version"> The specific version id of the DatasetVersion to create or update. </param>
         <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
@@ -154,11 +154,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call CreateOrUpdateAsync and parse the result.
 <code><![CDATA[
@@ -209,6 +204,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -241,11 +241,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call Delete.
 <code><![CDATA[
@@ -267,6 +262,11 @@ Response response = client.Delete("<name>", "<version>");
 
 Console.WriteLine(response.Status);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
@@ -299,11 +299,6 @@ Console.WriteLine(response.Status);
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call DeleteAsync.
 <code><![CDATA[
@@ -325,6 +320,11 @@ Response response = await client.DeleteAsync("<name>", "<version>");
 
 Console.WriteLine(response.Status);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCredentials">
@@ -359,11 +359,6 @@ Console.WriteLine(response.Status);
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetCredentials and parse the result.
 <code><![CDATA[
@@ -393,6 +388,11 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("storageAccoun
 Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").GetProperty("sasUri").ToString());
 Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").GetProperty("type").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCredentials">
@@ -421,10 +421,6 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").
         <summary> Get the SAS credential to access the storage account associated with a Dataset version. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetCredentials.
 <code><![CDATA[
@@ -442,6 +438,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 
 Response<AssetCredentialResponse> response = client.GetCredentials("sbblxkyqnfvdiqacezyygvts", "ikak");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCredentialsAsync">
@@ -476,11 +476,6 @@ Response<AssetCredentialResponse> response = client.GetCredentials("sbblxkyqnfvd
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetCredentialsAsync and parse the result.
 <code><![CDATA[
@@ -510,6 +505,11 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("storageAccoun
 Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").GetProperty("sasUri").ToString());
 Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").GetProperty("type").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCredentialsAsync">
@@ -538,10 +538,6 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").
         <summary> Get the SAS credential to access the storage account associated with a Dataset version. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetCredentialsAsync.
 <code><![CDATA[
@@ -559,6 +555,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 
 Response<AssetCredentialResponse> response = await client.GetCredentialsAsync("sbblxkyqnfvdiqacezyygvts", "ikak");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataset">
@@ -593,11 +593,6 @@ Response<AssetCredentialResponse> response = await client.GetCredentialsAsync("s
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDataset and parse the result.
 <code><![CDATA[
@@ -632,6 +627,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataset">
@@ -660,10 +660,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
         <summary> Get the specific version of the DatasetVersion. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetDataset.
 <code><![CDATA[
@@ -681,6 +677,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 
 Response<DatasetVersion> response = client.GetDataset("<name>", "<version>");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatasetAsync">
@@ -715,11 +715,6 @@ Response<DatasetVersion> response = client.GetDataset("<name>", "<version>");
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDatasetAsync and parse the result.
 <code><![CDATA[
@@ -754,6 +749,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatasetAsync">
@@ -782,10 +782,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
         <summary> Get the specific version of the DatasetVersion. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetDatasetAsync.
 <code><![CDATA[
@@ -803,6 +799,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 
 Response<DatasetVersion> response = await client.GetDatasetAsync("<name>", "<version>");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatasetVersions">
@@ -833,7 +833,6 @@ Response<DatasetVersion> response = await client.GetDatasetAsync("<name>", "<ver
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDatasetVersions and parse the result.
 <code><![CDATA[
@@ -870,6 +869,7 @@ foreach (BinaryData item in client.GetDatasetVersions(null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatasetVersions">
@@ -945,7 +945,6 @@ foreach (DatasetVersion item in client.GetDatasetVersions())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDatasetVersionsAsync and parse the result.
 <code><![CDATA[
@@ -982,6 +981,7 @@ await foreach (BinaryData item in client.GetDatasetVersionsAsync(null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatasetVersionsAsync">
@@ -1029,32 +1029,6 @@ await foreach (DatasetVersion item in client.GetDatasetVersionsAsync())
 ]]></code></example>
       </Docs>
     </Member>
-    <Member MemberName="GetRelativePath">
-      <MemberSignature Language="C#" Value="public static string GetRelativePath (string folderPath, string filePath);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRelativePath(string folderPath, string filePath) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.GetRelativePath(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelativePath (folderPath As String, filePath As String) As String" />
-      <MemberSignature Language="F#" Value="static member GetRelativePath : string * string -&gt; string" Usage="Azure.AI.Projects.Datasets.GetRelativePath (folderPath, filePath)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="folderPath" Type="System.String" />
-        <Parameter Name="filePath" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="folderPath">To be added.</param>
-        <param name="filePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetVersions">
       <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;BinaryData&gt; GetVersions (string name, Azure.RequestContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class System.BinaryData&gt; GetVersions(string name, class Azure.RequestContext context) cil managed" />
@@ -1085,11 +1059,6 @@ await foreach (DatasetVersion item in client.GetDatasetVersionsAsync())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetVersions and parse the result.
 <code><![CDATA[
@@ -1126,6 +1095,11 @@ foreach (BinaryData item in client.GetVersions("<name>", null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersions">
@@ -1152,10 +1126,6 @@ foreach (BinaryData item in client.GetVersions("<name>", null))
         <summary> List all versions of the given DatasetVersion. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetVersions.
 <code><![CDATA[
@@ -1177,6 +1147,10 @@ foreach (DatasetVersion item in client.GetVersions("<name>"))
 {
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersionsAsync">
@@ -1209,11 +1183,6 @@ foreach (DatasetVersion item in client.GetVersions("<name>"))
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetVersionsAsync and parse the result.
 <code><![CDATA[
@@ -1250,6 +1219,11 @@ await foreach (BinaryData item in client.GetVersionsAsync("<name>", null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersionsAsync">
@@ -1276,10 +1250,6 @@ await foreach (BinaryData item in client.GetVersionsAsync("<name>", null))
         <summary> List all versions of the given DatasetVersion. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetVersionsAsync.
 <code><![CDATA[
@@ -1301,14 +1271,18 @@ await foreach (DatasetVersion item in client.GetVersionsAsync("<name>"))
 {
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="PendingUpload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt; PendingUpload (string name, string version, Azure.AI.Projects.PendingUploadRequest body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.PendingUploadResponse&gt; PendingUpload(string name, string version, class Azure.AI.Projects.PendingUploadRequest body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt; PendingUpload (string name, string version, Azure.AI.Projects.PendingUploadRequest pendingUploadRequest, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.PendingUploadResponse&gt; PendingUpload(string name, string version, class Azure.AI.Projects.PendingUploadRequest pendingUploadRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.PendingUpload(System.String,System.String,Azure.AI.Projects.PendingUploadRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PendingUpload (name As String, version As String, body As PendingUploadRequest, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PendingUploadResponse)" />
-      <MemberSignature Language="F#" Value="abstract member PendingUpload : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&#xA;override this.PendingUpload : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;" Usage="datasets.PendingUpload (name, version, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PendingUpload (name As String, version As String, pendingUploadRequest As PendingUploadRequest, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PendingUploadResponse)" />
+      <MemberSignature Language="F#" Value="abstract member PendingUpload : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&#xA;override this.PendingUpload : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;" Usage="datasets.PendingUpload (name, version, pendingUploadRequest, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -1320,21 +1294,17 @@ await foreach (DatasetVersion item in client.GetVersionsAsync("<name>"))
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="version" Type="System.String" />
-        <Parameter Name="body" Type="Azure.AI.Projects.PendingUploadRequest" />
+        <Parameter Name="pendingUploadRequest" Type="Azure.AI.Projects.PendingUploadRequest" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
         <param name="version"> The specific version id of the DatasetVersion to operate on. </param>
-        <param name="body"> Parameters for the action. </param>
+        <param name="pendingUploadRequest"> The pending upload request parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Start a new or get an existing pending upload of a dataset for a specific version. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="body" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call PendingUpload.
 <code><![CDATA[
@@ -1358,6 +1328,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 PendingUploadRequest body = new PendingUploadRequest();
 Response<PendingUploadResponse> response = client.PendingUpload("duxoiaywfik", "yzzzt", body);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="pendingUploadRequest" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="PendingUpload">
@@ -1394,11 +1368,6 @@ Response<PendingUploadResponse> response = client.PendingUpload("duxoiaywfik", "
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call PendingUpload and parse the result.
 <code><![CDATA[
@@ -1442,14 +1411,19 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").
 Console.WriteLine(result.GetProperty("pendingUploadId").ToString());
 Console.WriteLine(result.GetProperty("pendingUploadType").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="PendingUploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt; PendingUploadAsync (string name, string version, Azure.AI.Projects.PendingUploadRequest body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.PendingUploadResponse&gt;&gt; PendingUploadAsync(string name, string version, class Azure.AI.Projects.PendingUploadRequest body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt; PendingUploadAsync (string name, string version, Azure.AI.Projects.PendingUploadRequest pendingUploadRequest, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.PendingUploadResponse&gt;&gt; PendingUploadAsync(string name, string version, class Azure.AI.Projects.PendingUploadRequest pendingUploadRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.PendingUploadAsync(System.String,System.String,Azure.AI.Projects.PendingUploadRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PendingUploadAsync (name As String, version As String, body As PendingUploadRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PendingUploadResponse))" />
-      <MemberSignature Language="F#" Value="abstract member PendingUploadAsync : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt;&#xA;override this.PendingUploadAsync : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt;" Usage="datasets.PendingUploadAsync (name, version, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PendingUploadAsync (name As String, version As String, pendingUploadRequest As PendingUploadRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PendingUploadResponse))" />
+      <MemberSignature Language="F#" Value="abstract member PendingUploadAsync : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt;&#xA;override this.PendingUploadAsync : string * string * Azure.AI.Projects.PendingUploadRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.PendingUploadResponse&gt;&gt;" Usage="datasets.PendingUploadAsync (name, version, pendingUploadRequest, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -1461,21 +1435,17 @@ Console.WriteLine(result.GetProperty("pendingUploadType").ToString());
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="version" Type="System.String" />
-        <Parameter Name="body" Type="Azure.AI.Projects.PendingUploadRequest" />
+        <Parameter Name="pendingUploadRequest" Type="Azure.AI.Projects.PendingUploadRequest" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
         <param name="version"> The specific version id of the DatasetVersion to operate on. </param>
-        <param name="body"> Parameters for the action. </param>
+        <param name="pendingUploadRequest"> The pending upload request parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Start a new or get an existing pending upload of a dataset for a specific version. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="body" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call PendingUploadAsync.
 <code><![CDATA[
@@ -1499,6 +1469,10 @@ Datasets client = new AIProjectClient(endpoint, credential).GetDatasetsClient(ap
 PendingUploadRequest body = new PendingUploadRequest();
 Response<PendingUploadResponse> response = await client.PendingUploadAsync("duxoiaywfik", "yzzzt", body);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="pendingUploadRequest" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="PendingUploadAsync">
@@ -1535,11 +1509,6 @@ Response<PendingUploadResponse> response = await client.PendingUploadAsync("duxo
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call PendingUploadAsync and parse the result.
 <code><![CDATA[
@@ -1583,6 +1552,11 @@ Console.WriteLine(result.GetProperty("blobReference").GetProperty("credential").
 Console.WriteLine(result.GetProperty("pendingUploadId").ToString());
 Console.WriteLine(result.GetProperty("pendingUploadType").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
@@ -1606,28 +1580,62 @@ Console.WriteLine(result.GetProperty("pendingUploadType").ToString());
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
-      <MemberSignature Language="C#" Value="public Azure.Response UploadFile (string name, string version, string filePath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response UploadFile(string name, string version, string filePath) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFile(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function UploadFile (name As String, version As String, filePath As String) As Response" />
-      <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string -&gt; Azure.Response" Usage="datasets.UploadFile (name, version, filePath)" />
+      <MemberSignature Language="C#" Value="public Azure.Response&lt;Azure.AI.Projects.FileDatasetVersion&gt; UploadFile (string name, string version, string filePath, string? connectionName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response`1&lt;class Azure.AI.Projects.FileDatasetVersion&gt; UploadFile(string name, string version, string filePath, string connectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFile(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadFile (name As String, version As String, filePath As String, Optional connectionName As String = Nothing) As Response(Of FileDatasetVersion)" />
+      <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string * string -&gt; Azure.Response&lt;Azure.AI.Projects.FileDatasetVersion&gt;" Usage="datasets.UploadFile (name, version, filePath, connectionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.AI.Projects.FileDatasetVersion&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="version" Type="System.String" />
         <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
         <param name="version">To be added.</param>
         <param name="filePath">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <summary>
+            Uploads a file to blob storage and creates a dataset that references this file.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Azure.AI.Projects.FileDatasetVersion&gt; UploadFileAsync (string name, string version, string filePath, string? connectionName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.Projects.FileDatasetVersion&gt; UploadFileAsync(string name, string version, string filePath, string connectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFileAsync(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadFileAsync (name As String, version As String, filePath As String, Optional connectionName As String = Nothing) As Task(Of FileDatasetVersion)" />
+      <MemberSignature Language="F#" Value="member this.UploadFileAsync : string * string * string * string -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.FileDatasetVersion&gt;" Usage="datasets.UploadFileAsync (name, version, filePath, connectionName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.Projects.FileDatasetVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="filePath">To be added.</param>
+        <param name="connectionName">To be added.</param>
         <summary>
             Uploads a file to blob storage and creates a dataset that references this file.
             </summary>
@@ -1636,28 +1644,66 @@ Console.WriteLine(result.GetProperty("pendingUploadType").ToString());
       </Docs>
     </Member>
     <Member MemberName="UploadFolder">
-      <MemberSignature Language="C#" Value="public Azure.Response UploadFolder (string name, string version, string folderPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response UploadFolder(string name, string version, string folderPath) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFolder(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function UploadFolder (name As String, version As String, folderPath As String) As Response" />
-      <MemberSignature Language="F#" Value="member this.UploadFolder : string * string * string -&gt; Azure.Response" Usage="datasets.UploadFolder (name, version, folderPath)" />
+      <MemberSignature Language="C#" Value="public Azure.Response&lt;Azure.AI.Projects.FolderDatasetVersion&gt; UploadFolder (string name, string version, string folderPath, string? connectionName = default, System.Text.RegularExpressions.Regex? filePattern = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response`1&lt;class Azure.AI.Projects.FolderDatasetVersion&gt; UploadFolder(string name, string version, string folderPath, string connectionName, class System.Text.RegularExpressions.Regex filePattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFolder(System.String,System.String,System.String,System.String,System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadFolder (name As String, version As String, folderPath As String, Optional connectionName As String = Nothing, Optional filePattern As Regex = Nothing) As Response(Of FolderDatasetVersion)" />
+      <MemberSignature Language="F#" Value="member this.UploadFolder : string * string * string * string * System.Text.RegularExpressions.Regex -&gt; Azure.Response&lt;Azure.AI.Projects.FolderDatasetVersion&gt;" Usage="datasets.UploadFolder (name, version, folderPath, connectionName, filePattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.AI.Projects.FolderDatasetVersion&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="version" Type="System.String" />
         <Parameter Name="folderPath" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="filePattern" Type="System.Text.RegularExpressions.Regex" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
         <param name="version">To be added.</param>
         <param name="folderPath">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="filePattern">To be added.</param>
+        <summary>
+            Uploads all files in a folder to blob storage and creates a dataset that references this folder.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Azure.AI.Projects.FolderDatasetVersion&gt; UploadFolderAsync (string name, string version, string folderPath, string? connectionName = default, System.Text.RegularExpressions.Regex? filePattern = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.Projects.FolderDatasetVersion&gt; UploadFolderAsync(string name, string version, string folderPath, string connectionName, class System.Text.RegularExpressions.Regex filePattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Datasets.UploadFolderAsync(System.String,System.String,System.String,System.String,System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadFolderAsync (name As String, version As String, folderPath As String, Optional connectionName As String = Nothing, Optional filePattern As Regex = Nothing) As Task(Of FolderDatasetVersion)" />
+      <MemberSignature Language="F#" Value="member this.UploadFolderAsync : string * string * string * string * System.Text.RegularExpressions.Regex -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.FolderDatasetVersion&gt;" Usage="datasets.UploadFolderAsync (name, version, folderPath, connectionName, filePattern)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.Projects.FolderDatasetVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="folderPath" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="filePattern" Type="System.Text.RegularExpressions.Regex" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="folderPath">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="filePattern">To be added.</param>
         <summary>
             Uploads all files in a folder to blob storage and creates a dataset that references this folder.
             </summary>

@@ -55,7 +55,7 @@
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
-        <param name="version"> The specific version id of the Index to create or replace. </param>
+        <param name="version"> The specific version id of the Index to create or update. </param>
         <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
@@ -65,11 +65,6 @@
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call CreateOrUpdate and parse the result.
 <code><![CDATA[
@@ -135,6 +130,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
@@ -159,7 +159,7 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
       </Parameters>
       <Docs>
         <param name="name"> The name of the resource. </param>
-        <param name="version"> The specific version id of the Index to create or replace. </param>
+        <param name="version"> The specific version id of the Index to create or update. </param>
         <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
@@ -169,11 +169,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call CreateOrUpdateAsync and parse the result.
 <code><![CDATA[
@@ -239,6 +234,11 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="version" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -271,11 +271,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call Delete.
 <code><![CDATA[
@@ -297,6 +292,11 @@ Response response = client.Delete("<name>", "<version>");
 
 Console.WriteLine(response.Status);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
@@ -329,11 +329,6 @@ Console.WriteLine(response.Status);
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call DeleteAsync.
 <code><![CDATA[
@@ -355,6 +350,11 @@ Response response = await client.DeleteAsync("<name>", "<version>");
 
 Console.WriteLine(response.Status);
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndex">
@@ -389,11 +389,6 @@ Console.WriteLine(response.Status);
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetIndex and parse the result.
 <code><![CDATA[
@@ -424,21 +419,26 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndex">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.Index&gt; GetIndex (string name, string version, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.Index&gt; GetIndex(string name, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt; GetIndex (string name, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.DatasetIndex&gt; GetIndex(string name, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetIndex(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndex (name As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Index)" />
-      <MemberSignature Language="F#" Value="abstract member GetIndex : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.Index&gt;&#xA;override this.GetIndex : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.Index&gt;" Usage="indexes.GetIndex (name, version, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndex (name As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatasetIndex)" />
+      <MemberSignature Language="F#" Value="abstract member GetIndex : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;&#xA;override this.GetIndex : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;" Usage="indexes.GetIndex (name, version, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.AI.Projects.Index&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -452,10 +452,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
         <summary> Get the specific version of the Index. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetIndex.
 <code><![CDATA[
@@ -473,6 +469,10 @@ Indexes client = new AIProjectClient(endpoint, credential).GetIndexesClient(apiV
 
 Response<Index> response = client.GetIndex("<name>", "<version>");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndexAsync">
@@ -507,11 +507,6 @@ Response<Index> response = client.GetIndex("<name>", "<version>");
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetIndexAsync and parse the result.
 <code><![CDATA[
@@ -542,21 +537,26 @@ Console.WriteLine(result.GetProperty("version").ToString());
 Console.WriteLine(result.GetProperty("description").ToString());
 Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndexAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Index&gt;&gt; GetIndexAsync (string name, string version, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.Index&gt;&gt; GetIndexAsync(string name, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;&gt; GetIndexAsync (string name, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.DatasetIndex&gt;&gt; GetIndexAsync(string name, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetIndexAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndexAsync (name As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Index))" />
-      <MemberSignature Language="F#" Value="abstract member GetIndexAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Index&gt;&gt;&#xA;override this.GetIndexAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Index&gt;&gt;" Usage="indexes.GetIndexAsync (name, version, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndexAsync (name As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatasetIndex))" />
+      <MemberSignature Language="F#" Value="abstract member GetIndexAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;&gt;&#xA;override this.GetIndexAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;&gt;" Usage="indexes.GetIndexAsync (name, version, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Index&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.DatasetIndex&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -570,10 +570,6 @@ Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
         <summary> Get the specific version of the Index. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetIndexAsync.
 <code><![CDATA[
@@ -591,6 +587,10 @@ Indexes client = new AIProjectClient(endpoint, credential).GetIndexesClient(apiV
 
 Response<Index> response = await client.GetIndexAsync("<name>", "<version>");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndices">
@@ -621,7 +621,6 @@ Response<Index> response = await client.GetIndexAsync("<name>", "<version>");
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetIndices and parse the result.
 <code><![CDATA[
@@ -654,21 +653,22 @@ foreach (BinaryData item in client.GetIndices(null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndices">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.Index&gt; GetIndices (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.Index&gt; GetIndices(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt; GetIndices (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.DatasetIndex&gt; GetIndices(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetIndices(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndices (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Index)" />
-      <MemberSignature Language="F#" Value="abstract member GetIndices : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Index&gt;&#xA;override this.GetIndices : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Index&gt;" Usage="indexes.GetIndices cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndices (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatasetIndex)" />
+      <MemberSignature Language="F#" Value="abstract member GetIndices : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;&#xA;override this.GetIndices : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;" Usage="indexes.GetIndices cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.Index&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -729,7 +729,6 @@ foreach (Index item in client.GetIndices())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetIndicesAsync and parse the result.
 <code><![CDATA[
@@ -762,21 +761,22 @@ await foreach (BinaryData item in client.GetIndicesAsync(null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIndicesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt; GetIndicesAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.Index&gt; GetIndicesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt; GetIndicesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.DatasetIndex&gt; GetIndicesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetIndicesAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndicesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Index)" />
-      <MemberSignature Language="F#" Value="abstract member GetIndicesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;&#xA;override this.GetIndicesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;" Usage="indexes.GetIndicesAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIndicesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatasetIndex)" />
+      <MemberSignature Language="F#" Value="abstract member GetIndicesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;&#xA;override this.GetIndicesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;" Usage="indexes.GetIndicesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -839,11 +839,6 @@ await foreach (Index item in client.GetIndicesAsync())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetVersions and parse the result.
 <code><![CDATA[
@@ -876,21 +871,26 @@ foreach (BinaryData item in client.GetVersions("<name>", null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersions">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.Index&gt; GetVersions (string name, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.Index&gt; GetVersions(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt; GetVersions (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.DatasetIndex&gt; GetVersions(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetVersions(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVersions (name As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Index)" />
-      <MemberSignature Language="F#" Value="abstract member GetVersions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Index&gt;&#xA;override this.GetVersions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Index&gt;" Usage="indexes.GetVersions (name, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVersions (name As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatasetIndex)" />
+      <MemberSignature Language="F#" Value="abstract member GetVersions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;&#xA;override this.GetVersions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;" Usage="indexes.GetVersions (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.Index&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.DatasetIndex&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -902,10 +902,6 @@ foreach (BinaryData item in client.GetVersions("<name>", null))
         <summary> List all versions of the given Index. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetVersions.
 <code><![CDATA[
@@ -927,6 +923,10 @@ foreach (Index item in client.GetVersions("<name>"))
 {
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersionsAsync">
@@ -959,11 +959,6 @@ foreach (Index item in client.GetVersions("<name>"))
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetVersionsAsync and parse the result.
 <code><![CDATA[
@@ -996,21 +991,26 @@ await foreach (BinaryData item in client.GetVersionsAsync("<name>", null))
     Console.WriteLine(result.GetProperty("tags").GetProperty("<key>").ToString());
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersionsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt; GetVersionsAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.Index&gt; GetVersionsAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt; GetVersionsAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.DatasetIndex&gt; GetVersionsAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Indexes.GetVersionsAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVersionsAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Index)" />
-      <MemberSignature Language="F#" Value="abstract member GetVersionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;&#xA;override this.GetVersionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;" Usage="indexes.GetVersionsAsync (name, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVersionsAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatasetIndex)" />
+      <MemberSignature Language="F#" Value="abstract member GetVersionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;&#xA;override this.GetVersionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;" Usage="indexes.GetVersionsAsync (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.Index&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.DatasetIndex&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -1022,10 +1022,6 @@ await foreach (BinaryData item in client.GetVersionsAsync("<name>", null))
         <summary> List all versions of the given Index. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetVersionsAsync.
 <code><![CDATA[
@@ -1047,6 +1043,10 @@ await foreach (Index item in client.GetVersionsAsync("<name>"))
 {
 }
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

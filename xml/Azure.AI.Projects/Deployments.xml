@@ -63,11 +63,6 @@
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDeployment and parse the result.
 <code><![CDATA[
@@ -81,21 +76,26 @@ JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("type").ToString());
 Console.WriteLine(result.GetProperty("name").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployment">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.Deployment&gt; GetDeployment (string name, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.Deployment&gt; GetDeployment(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt; GetDeployment (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.Projects.AIDeployment&gt; GetDeployment(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetDeployment(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Deployment)" />
-      <MemberSignature Language="F#" Value="abstract member GetDeployment : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.Deployment&gt;&#xA;override this.GetDeployment : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.Deployment&gt;" Usage="deployments.GetDeployment (name, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AIDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployment : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;&#xA;override this.GetDeployment : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;" Usage="deployments.GetDeployment (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.AI.Projects.Deployment&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -107,10 +107,6 @@ Console.WriteLine(result.GetProperty("name").ToString());
         <summary> Get a deployed model. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetDeployment.
 <code><![CDATA[
@@ -120,6 +116,10 @@ Deployments client = new AIProjectClient(endpoint, credential).GetDeploymentsCli
 
 Response<Deployment> response = client.GetDeployment("qqvacpzjfk");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentAsync">
@@ -152,11 +152,6 @@ Response<Deployment> response = client.GetDeployment("qqvacpzjfk");
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDeploymentAsync and parse the result.
 <code><![CDATA[
@@ -170,21 +165,26 @@ JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("type").ToString());
 Console.WriteLine(result.GetProperty("name").ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Deployment&gt;&gt; GetDeploymentAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.Deployment&gt;&gt; GetDeploymentAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;&gt; GetDeploymentAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.Projects.AIDeployment&gt;&gt; GetDeploymentAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetDeploymentAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Deployment))" />
-      <MemberSignature Language="F#" Value="abstract member GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Deployment&gt;&gt;&#xA;override this.GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Deployment&gt;&gt;" Usage="deployments.GetDeploymentAsync (name, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AIDeployment))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;&gt;&#xA;override this.GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;&gt;" Usage="deployments.GetDeploymentAsync (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.Deployment&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.Projects.AIDeployment&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -196,10 +196,6 @@ Console.WriteLine(result.GetProperty("name").ToString());
         <summary> Get a deployed model. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetDeploymentAsync.
 <code><![CDATA[
@@ -209,21 +205,25 @@ Deployments client = new AIProjectClient(endpoint, credential).GetDeploymentsCli
 
 Response<Deployment> response = await client.GetDeploymentAsync("qqvacpzjfk");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployments">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.Deployment&gt; GetDeployments (string modelPublisher = default, string modelName = default, Azure.AI.Projects.DeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.Deployment&gt; GetDeployments(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.DeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.Projects.AIDeployment&gt; GetDeployments (string modelPublisher = default, string modelName = default, Azure.AI.Projects.DeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.Projects.AIDeployment&gt; GetDeployments(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.DeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetDeployments(System.String,System.String,System.Nullable{Azure.AI.Projects.DeploymentType},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of DeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Deployment)" />
-      <MemberSignature Language="F#" Value="abstract member GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Deployment&gt;&#xA;override this.GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.Deployment&gt;" Usage="deployments.GetDeployments (modelPublisher, modelName, deploymentType, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of DeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of AIDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.AIDeployment&gt;&#xA;override this.GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.Projects.AIDeployment&gt;" Usage="deployments.GetDeployments (modelPublisher, modelName, deploymentType, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.Deployment&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.AI.Projects.AIDeployment&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="modelPublisher" Type="System.String" />
@@ -286,7 +286,6 @@ foreach (Deployment item in client.GetDeployments())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDeployments and parse the result.
 <code><![CDATA[
@@ -301,21 +300,22 @@ foreach (BinaryData item in client.GetDeployments("kznreojrvlwdq", "gplerszsuyis
     Console.WriteLine(result.GetProperty("name").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.Deployment&gt; GetDeploymentsAsync (string modelPublisher = default, string modelName = default, Azure.AI.Projects.DeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.Deployment&gt; GetDeploymentsAsync(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.DeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.Projects.AIDeployment&gt; GetDeploymentsAsync (string modelPublisher = default, string modelName = default, Azure.AI.Projects.DeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.Projects.AIDeployment&gt; GetDeploymentsAsync(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.DeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetDeploymentsAsync(System.String,System.String,System.Nullable{Azure.AI.Projects.DeploymentType},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of DeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Deployment)" />
-      <MemberSignature Language="F#" Value="abstract member GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Deployment&gt;&#xA;override this.GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.Deployment&gt;" Usage="deployments.GetDeploymentsAsync (modelPublisher, modelName, deploymentType, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of DeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of AIDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.AIDeployment&gt;&#xA;override this.GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.DeploymentType&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.Projects.AIDeployment&gt;" Usage="deployments.GetDeploymentsAsync (modelPublisher, modelName, deploymentType, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.Deployment&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.Projects.AIDeployment&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="modelPublisher" Type="System.String" />
@@ -378,7 +378,6 @@ await foreach (Deployment item in client.GetDeploymentsAsync())
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetDeploymentsAsync and parse the result.
 <code><![CDATA[
@@ -393,6 +392,111 @@ await foreach (BinaryData item in client.GetDeploymentsAsync("kznreojrvlwdq", "g
     Console.WriteLine(result.GetProperty("name").ToString());
 }
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelDeployment">
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.ModelDeployment GetModelDeployment (string name, Azure.RequestContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.Projects.ModelDeployment GetModelDeployment(string name, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetModelDeployment(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelDeployment (name As String, context As RequestContext) As ModelDeployment" />
+      <MemberSignature Language="F#" Value="abstract member GetModelDeployment : string * Azure.RequestContext -&gt; Azure.AI.Projects.ModelDeployment&#xA;override this.GetModelDeployment : string * Azure.RequestContext -&gt; Azure.AI.Projects.ModelDeployment" Usage="deployments.GetModelDeployment (name, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ModelDeployment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelDeployment">
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.ModelDeployment GetModelDeployment (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.Projects.ModelDeployment GetModelDeployment(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetModelDeployment(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelDeployment (name As String, Optional cancellationToken As CancellationToken = Nothing) As ModelDeployment" />
+      <MemberSignature Language="F#" Value="abstract member GetModelDeployment : string * System.Threading.CancellationToken -&gt; Azure.AI.Projects.ModelDeployment&#xA;override this.GetModelDeployment : string * System.Threading.CancellationToken -&gt; Azure.AI.Projects.ModelDeployment" Usage="deployments.GetModelDeployment (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ModelDeployment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelDeploymentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt; GetModelDeploymentAsync (string name, Azure.RequestContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.Projects.ModelDeployment&gt; GetModelDeploymentAsync(string name, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetModelDeploymentAsync(System.String,Azure.RequestContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelDeploymentAsync (name As String, context As RequestContext) As Task(Of ModelDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetModelDeploymentAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;&#xA;override this.GetModelDeploymentAsync : string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;" Usage="deployments.GetModelDeploymentAsync (name, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="context" Type="Azure.RequestContext" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelDeploymentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt; GetModelDeploymentAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.Projects.ModelDeployment&gt; GetModelDeploymentAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Deployments.GetModelDeploymentAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelDeploymentAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ModelDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetModelDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;&#xA;override this.GetModelDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;" Usage="deployments.GetModelDeploymentAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.Projects.ModelDeployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

@@ -333,6 +333,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetEvaluationClient">
+      <MemberSignature Language="C#" Value="public override OpenAI.Evals.EvaluationClient GetEvaluationClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.Evals.EvaluationClient GetEvaluationClient() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.AzureOpenAIClient.GetEvaluationClient" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEvaluationClient () As EvaluationClient" />
+      <MemberSignature Language="F#" Value="abstract member GetEvaluationClient : unit -&gt; OpenAI.Evals.EvaluationClient&#xA;override this.GetEvaluationClient : unit -&gt; OpenAI.Evals.EvaluationClient" Usage="azureOpenAIClient.GetEvaluationClient " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.OpenAI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>OpenAI.Evals.EvaluationClient</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets a new <see cref="T:OpenAI.Evals.EvaluationClient" /> instance configured for batch operation use with the Azure OpenAI service.
+            </summary>
+        <returns> A new <see cref="T:OpenAI.Evals.EvaluationClient" /> instance. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetFineTuningClient">
       <MemberSignature Language="C#" Value="public override OpenAI.FineTuning.FineTuningClient GetFineTuningClient ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.FineTuning.FineTuningClient GetFineTuningClient() cil managed" />
@@ -478,27 +501,6 @@
       </Docs>
     </Member>
     <Member MemberName="GetOpenAIResponseClient">
-      <MemberSignature Language="C#" Value="public override OpenAI.Responses.OpenAIResponseClient GetOpenAIResponseClient ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.Responses.OpenAIResponseClient GetOpenAIResponseClient() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.AzureOpenAIClient.GetOpenAIResponseClient" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOpenAIResponseClient () As OpenAIResponseClient" />
-      <MemberSignature Language="F#" Value="abstract member GetOpenAIResponseClient : unit -&gt; OpenAI.Responses.OpenAIResponseClient&#xA;override this.GetOpenAIResponseClient : unit -&gt; OpenAI.Responses.OpenAIResponseClient" Usage="azureOpenAIClient.GetOpenAIResponseClient " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>OpenAI.Responses.OpenAIResponseClient</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetOpenAIResponseClient">
       <MemberSignature Language="C#" Value="public override OpenAI.Responses.OpenAIResponseClient GetOpenAIResponseClient (string deploymentName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.Responses.OpenAIResponseClient GetOpenAIResponseClient(string deploymentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.AzureOpenAIClient.GetOpenAIResponseClient(System.String)" />
@@ -522,25 +524,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetRealtimeConversationClient">
-      <MemberSignature Language="C#" Value="public override OpenAI.RealtimeConversation.RealtimeConversationClient GetRealtimeConversationClient (string deploymentName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.RealtimeConversation.RealtimeConversationClient GetRealtimeConversationClient(string deploymentName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.AzureOpenAIClient.GetRealtimeConversationClient(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRealtimeConversationClient (deploymentName As String) As RealtimeConversationClient" />
-      <MemberSignature Language="F#" Value="abstract member GetRealtimeConversationClient : string -&gt; OpenAI.RealtimeConversation.RealtimeConversationClient&#xA;override this.GetRealtimeConversationClient : string -&gt; OpenAI.RealtimeConversation.RealtimeConversationClient" Usage="azureOpenAIClient.GetRealtimeConversationClient deploymentName" />
+    <Member MemberName="GetRealtimeClient">
+      <MemberSignature Language="C#" Value="public override OpenAI.Realtime.RealtimeClient GetRealtimeClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class OpenAI.Realtime.RealtimeClient GetRealtimeClient() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.AzureOpenAIClient.GetRealtimeClient" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRealtimeClient () As RealtimeClient" />
+      <MemberSignature Language="F#" Value="abstract member GetRealtimeClient : unit -&gt; OpenAI.Realtime.RealtimeClient&#xA;override this.GetRealtimeClient : unit -&gt; OpenAI.Realtime.RealtimeClient" Usage="azureOpenAIClient.GetRealtimeClient " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>OpenAI.RealtimeConversation.RealtimeConversationClient</ReturnType>
+        <ReturnType>OpenAI.Realtime.RealtimeClient</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="deploymentName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="deploymentName">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

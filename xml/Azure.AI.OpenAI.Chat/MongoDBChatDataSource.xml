@@ -46,12 +46,6 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName Language="C#">[System.Obsolete("Constructors of types with required members are not supported in this version of your compiler.", true)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Obsolete("Constructors of types with required members are not supported in this version of your compiler.", true)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>
@@ -281,54 +275,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static explicit operator Azure.AI.OpenAI.Chat.MongoDBChatDataSource (System.ClientModel.ClientResult result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Azure.AI.OpenAI.Chat.MongoDBChatDataSource op_Explicit(class System.ClientModel.ClientResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.Chat.MongoDBChatDataSource.op_Explicit(System.ClientModel.ClientResult)~Azure.AI.OpenAI.Chat.MongoDBChatDataSource" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (result As ClientResult) As MongoDBChatDataSource" />
-      <MemberSignature Language="F#" Value="static member op_Explicit : System.ClientModel.ClientResult -&gt; Azure.AI.OpenAI.Chat.MongoDBChatDataSource" Usage="Azure.AI.OpenAI.Chat.MongoDBChatDataSource.op_Explicit result" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.OpenAI.Chat.MongoDBChatDataSource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="result" Type="System.ClientModel.ClientResult" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="result"> The <see cref="T:System.ClientModel.ClientResult" /> to deserialize the <see cref="T:Azure.AI.OpenAI.Chat.MongoDBChatDataSource" /> from. </param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.ClientModel.BinaryContent (Azure.AI.OpenAI.Chat.MongoDBChatDataSource mongoDBChatDataSource);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ClientModel.BinaryContent op_Implicit(class Azure.AI.OpenAI.Chat.MongoDBChatDataSource mongoDBChatDataSource) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.OpenAI.Chat.MongoDBChatDataSource.op_Implicit(Azure.AI.OpenAI.Chat.MongoDBChatDataSource)~System.ClientModel.BinaryContent" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (mongoDBChatDataSource As MongoDBChatDataSource) As BinaryContent" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : Azure.AI.OpenAI.Chat.MongoDBChatDataSource -&gt; System.ClientModel.BinaryContent" Usage="Azure.AI.OpenAI.Chat.MongoDBChatDataSource.op_Implicit mongoDBChatDataSource" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ClientModel.BinaryContent</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="mongoDBChatDataSource" Type="Azure.AI.OpenAI.Chat.MongoDBChatDataSource" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="mongoDBChatDataSource"> The <see cref="T:Azure.AI.OpenAI.Chat.MongoDBChatDataSource" /> to serialize into <see cref="T:System.ClientModel.BinaryContent" />. </param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OutputContexts">
       <MemberSignature Language="C#" Value="public Azure.AI.OpenAI.Chat.DataSourceOutputContexts? OutputContexts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.OpenAI.Chat.DataSourceOutputContexts&gt; OutputContexts" />
@@ -454,8 +400,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Reads one JSON value (including objects or arrays) from the provided reader and converts it to a model.
             </summary>
@@ -487,8 +433,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model to the provided <see cref="T:System.Text.Json.Utf8JsonWriter" />.
             </summary>
@@ -519,8 +465,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Converts the provided <see cref="T:System.BinaryData" /> into a model.
             </summary>
@@ -551,7 +497,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
@@ -581,7 +527,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model into a <see cref="T:System.BinaryData" />.
             </summary>
