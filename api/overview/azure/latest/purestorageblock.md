@@ -1,7 +1,7 @@
 ---
 title: Azure Purestorageblock SDK for .NET
 description: Reference for Azure Purestorageblock SDK for .NET
-ms.date: 07/15/2025
+ms.date: 07/16/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: purestorageblock
