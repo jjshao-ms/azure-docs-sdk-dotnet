@@ -27,6 +27,50 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationAuthoringDeploymentResource (string resourceId, string region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string resourceId, string region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceId As String, region As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource : string * string -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource" Usage="new Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource (resourceId, region)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceId" Type="System.String" />
+        <Parameter Name="region" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceId"> Represents the Azure resource Id. </param>
+        <param name="region"> Represents the resource region. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceId" /> or <paramref name="region" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignedAoaiResource">
+      <MemberSignature Language="C#" Value="public Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationConnectionInfo AssignedAoaiResource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationConnectionInfo AssignedAoaiResource" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.AssignedAoaiResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssignedAoaiResource As AnalyzeConversationAuthoringDataGenerationConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.AssignedAoaiResource : Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationConnectionInfo with get, set" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.AssignedAoaiResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationConnectionInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Represents the AOAI resource assigned for data generation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JsonModelWriteCore">
       <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
@@ -53,11 +97,11 @@
       </Docs>
     </Member>
     <Member MemberName="Region">
-      <MemberSignature Language="C#" Value="public string Region { get; }" />
+      <MemberSignature Language="C#" Value="public string Region { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Region" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.Region" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Region As String" />
-      <MemberSignature Language="F#" Value="member this.Region : string" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.Region" />
+      <MemberSignature Language="VB.NET" Value="Public Property Region As String" />
+      <MemberSignature Language="F#" Value="member this.Region : string with get, set" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.Region" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -73,11 +117,11 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceId">
-      <MemberSignature Language="C#" Value="public string ResourceId { get; }" />
+      <MemberSignature Language="C#" Value="public string ResourceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.ResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.ResourceId : string" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : string with get, set" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -212,7 +256,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

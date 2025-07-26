@@ -2003,11 +2003,11 @@
       </Docs>
     </Member>
     <Member MemberName="Import">
-      <MemberSignature Language="C#" Value="public virtual Azure.Operation Import (Azure.WaitUntil waitUntil, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? exportedProjectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation Import(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; exportedProjectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Operation Import (Azure.WaitUntil waitUntil, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? projectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation Import(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; projectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.Import(Azure.WaitUntil,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Import (waitUntil As WaitUntil, exportedProject As ConversationAuthoringExportedProject, Optional exportedProjectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
-      <MemberSignature Language="F#" Value="abstract member Import : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.Import : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="conversationAuthoringProject.Import (waitUntil, exportedProject, exportedProjectFormat, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Import (waitUntil As WaitUntil, exportedProject As ConversationAuthoringExportedProject, Optional projectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
+      <MemberSignature Language="F#" Value="abstract member Import : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.Import : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="conversationAuthoringProject.Import (waitUntil, exportedProject, projectFormat, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -2019,14 +2019,14 @@
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="exportedProject" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject" />
-        <Parameter Name="exportedProjectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
+        <Parameter Name="projectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="exportedProject"> The project data to import. </param>
-        <param name="exportedProjectFormat"> The format of the exported project file to use. </param>
+        <param name="projectFormat"> The format of the exported project file to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Triggers a job to import a project. If a project with the same name already exists, the data of that project is replaced. </summary>
         <returns>To be added.</returns>
@@ -2034,11 +2034,11 @@
       </Docs>
     </Member>
     <Member MemberName="Import">
-      <MemberSignature Language="C#" Value="public virtual Azure.Operation Import (Azure.WaitUntil waitUntil, Azure.Core.RequestContent content, string exportedProjectFormat = default, Azure.RequestContext context = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation Import(valuetype Azure.WaitUntil waitUntil, class Azure.Core.RequestContent content, string exportedProjectFormat, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Operation Import (Azure.WaitUntil waitUntil, Azure.Core.RequestContent content, string projectFormat = default, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation Import(valuetype Azure.WaitUntil waitUntil, class Azure.Core.RequestContent content, string projectFormat, class Azure.RequestContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.Import(Azure.WaitUntil,Azure.Core.RequestContent,System.String,Azure.RequestContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Import (waitUntil As WaitUntil, content As RequestContent, Optional exportedProjectFormat As String = Nothing, Optional context As RequestContext = Nothing) As Operation" />
-      <MemberSignature Language="F#" Value="abstract member Import : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; Azure.Operation&#xA;override this.Import : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; Azure.Operation" Usage="conversationAuthoringProject.Import (waitUntil, content, exportedProjectFormat, context)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Import (waitUntil As WaitUntil, content As RequestContent, Optional projectFormat As String = Nothing, Optional context As RequestContext = Nothing) As Operation" />
+      <MemberSignature Language="F#" Value="abstract member Import : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; Azure.Operation&#xA;override this.Import : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; Azure.Operation" Usage="conversationAuthoringProject.Import (waitUntil, content, projectFormat, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -2050,14 +2050,14 @@
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="exportedProjectFormat" Type="System.String" />
+        <Parameter Name="projectFormat" Type="System.String" />
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="exportedProjectFormat"> The format of the exported project file to use. Allowed values: "Conversation" | "Luis". </param>
+        <param name="projectFormat"> The format of the exported project file to use. Allowed values: "Conversation" | "Luis". </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Triggers a job to import a project. If a project with the same name already exists, the data of that project is replaced.
@@ -2071,12 +2071,49 @@
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public virtual Azure.Operation Import (Azure.WaitUntil waitUntil, string projectJson, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? projectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation Import(valuetype Azure.WaitUntil waitUntil, string projectJson, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; projectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.Import(Azure.WaitUntil,System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Import (waitUntil As WaitUntil, projectJson As String, Optional projectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
+      <MemberSignature Language="F#" Value="abstract member Import : Azure.WaitUntil * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.Import : Azure.WaitUntil * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="conversationAuthoringProject.Import (waitUntil, projectJson, projectFormat, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Operation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="projectJson" Type="System.String" />
+        <Parameter Name="projectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="projectJson">
+            A raw JSON string representing the entire project to import.
+            This string should match the format of an exported Analyze Conversations project.
+            </param>
+        <param name="projectFormat"> The format of the exported project file to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Triggers a job to import a project using raw JSON string input.
+            This is an alternative to the structured import method, and is useful when importing directly from exported project files.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ImportAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; ImportAsync (Azure.WaitUntil waitUntil, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? exportedProjectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; ImportAsync(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; exportedProjectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; ImportAsync (Azure.WaitUntil waitUntil, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? projectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; ImportAsync(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject exportedProject, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; projectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.ImportAsync(Azure.WaitUntil,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAsync (waitUntil As WaitUntil, exportedProject As ConversationAuthoringExportedProject, Optional exportedProjectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
-      <MemberSignature Language="F#" Value="abstract member ImportAsync : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.ImportAsync : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringProject.ImportAsync (waitUntil, exportedProject, exportedProjectFormat, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAsync (waitUntil As WaitUntil, exportedProject As ConversationAuthoringExportedProject, Optional projectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
+      <MemberSignature Language="F#" Value="abstract member ImportAsync : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.ImportAsync : Azure.WaitUntil * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringProject.ImportAsync (waitUntil, exportedProject, projectFormat, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -2088,14 +2125,14 @@
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="exportedProject" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProject" />
-        <Parameter Name="exportedProjectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
+        <Parameter Name="projectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="exportedProject"> The project data to import. </param>
-        <param name="exportedProjectFormat"> The format of the exported project file to use. </param>
+        <param name="projectFormat"> The format of the exported project file to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Triggers a job to import a project. If a project with the same name already exists, the data of that project is replaced. </summary>
         <returns>To be added.</returns>
@@ -2103,11 +2140,11 @@
       </Docs>
     </Member>
     <Member MemberName="ImportAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; ImportAsync (Azure.WaitUntil waitUntil, Azure.Core.RequestContent content, string exportedProjectFormat = default, Azure.RequestContext context = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; ImportAsync(valuetype Azure.WaitUntil waitUntil, class Azure.Core.RequestContent content, string exportedProjectFormat, class Azure.RequestContext context) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; ImportAsync (Azure.WaitUntil waitUntil, Azure.Core.RequestContent content, string projectFormat = default, Azure.RequestContext context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; ImportAsync(valuetype Azure.WaitUntil waitUntil, class Azure.Core.RequestContent content, string projectFormat, class Azure.RequestContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.ImportAsync(Azure.WaitUntil,Azure.Core.RequestContent,System.String,Azure.RequestContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAsync (waitUntil As WaitUntil, content As RequestContent, Optional exportedProjectFormat As String = Nothing, Optional context As RequestContext = Nothing) As Task(Of Operation)" />
-      <MemberSignature Language="F#" Value="abstract member ImportAsync : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.ImportAsync : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringProject.ImportAsync (waitUntil, content, exportedProjectFormat, context)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAsync (waitUntil As WaitUntil, content As RequestContent, Optional projectFormat As String = Nothing, Optional context As RequestContext = Nothing) As Task(Of Operation)" />
+      <MemberSignature Language="F#" Value="abstract member ImportAsync : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.ImportAsync : Azure.WaitUntil * Azure.Core.RequestContent * string * Azure.RequestContext -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringProject.ImportAsync (waitUntil, content, projectFormat, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -2119,14 +2156,14 @@
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="content" Type="Azure.Core.RequestContent" />
-        <Parameter Name="exportedProjectFormat" Type="System.String" />
+        <Parameter Name="projectFormat" Type="System.String" />
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content to send as the body of the request. </param>
-        <param name="exportedProjectFormat"> The format of the exported project file to use. Allowed values: "Conversation" | "Luis". </param>
+        <param name="projectFormat"> The format of the exported project file to use. Allowed values: "Conversation" | "Luis". </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Triggers a job to import a project. If a project with the same name already exists, the data of that project is replaced.
@@ -2138,6 +2175,43 @@
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; ImportAsync (Azure.WaitUntil waitUntil, string projectJson, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat? projectFormat = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; ImportAsync(valuetype Azure.WaitUntil waitUntil, string projectJson, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; projectFormat, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringProject.ImportAsync(Azure.WaitUntil,System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportAsync (waitUntil As WaitUntil, projectJson As String, Optional projectFormat As Nullable(Of ConversationAuthoringExportedProjectFormat) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
+      <MemberSignature Language="F#" Value="abstract member ImportAsync : Azure.WaitUntil * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.ImportAsync : Azure.WaitUntil * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringProject.ImportAsync (waitUntil, projectJson, projectFormat, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Operation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="projectJson" Type="System.String" />
+        <Parameter Name="projectFormat" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedProjectFormat&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="projectJson">
+            A raw JSON string representing the entire project to import.
+            This string should match the format of an exported Analyze Conversations project.
+            </param>
+        <param name="projectFormat"> The format of the exported project file to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Triggers a job to import a project using raw JSON string input.
+            This is an alternative to the structured import method, and is useful when importing directly from exported project files.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

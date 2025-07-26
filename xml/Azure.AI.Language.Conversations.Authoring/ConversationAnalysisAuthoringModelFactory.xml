@@ -184,11 +184,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConversationAuthoringCreateDeploymentDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails ConversationAuthoringCreateDeploymentDetails (string trainedModelLabel = default, System.Collections.Generic.IEnumerable&lt;string&gt; assignedResourceIds = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails ConversationAuthoringCreateDeploymentDetails(string trainedModelLabel, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assignedResourceIds) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringCreateDeploymentDetails(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringCreateDeploymentDetails (Optional trainedModelLabel As String = Nothing, Optional assignedResourceIds As IEnumerable(Of String) = Nothing) As ConversationAuthoringCreateDeploymentDetails" />
-      <MemberSignature Language="F#" Value="static member ConversationAuthoringCreateDeploymentDetails : string * seq&lt;string&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringCreateDeploymentDetails (trainedModelLabel, assignedResourceIds)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails ConversationAuthoringCreateDeploymentDetails (string trainedModelLabel = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt; assignedResources = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails ConversationAuthoringCreateDeploymentDetails(string trainedModelLabel, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt; assignedResources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringCreateDeploymentDetails(System.String,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringCreateDeploymentDetails (Optional trainedModelLabel As String = Nothing, Optional assignedResources As IEnumerable(Of ConversationAuthoringDeploymentResource) = Nothing) As ConversationAuthoringCreateDeploymentDetails" />
+      <MemberSignature Language="F#" Value="static member ConversationAuthoringCreateDeploymentDetails : string * seq&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringCreateDeploymentDetails (trainedModelLabel, assignedResources)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -199,11 +199,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="trainedModelLabel" Type="System.String" />
-        <Parameter Name="assignedResourceIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="assignedResources" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt;" />
       </Parameters>
       <Docs>
         <param name="trainedModelLabel"> Represents the trained model label. </param>
-        <param name="assignedResourceIds"> Represents the resource IDs to be assigned to the deployment. If provided, the deployment will be rolled out to the resources provided here as well as the original resource in which the project is created. </param>
+        <param name="assignedResources"> Represents the resources to be assigned to the deployment. If provided, the deployment will be rolled out to the resources provided here as well as the original resource in which the project is created. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -278,32 +278,6 @@
         <param name="errors"> The errors encountered while executing the job. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentDeleteFromResourcesState" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentDeleteFromResourcesState" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConversationAuthoringDeploymentResource">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource ConversationAuthoringDeploymentResource (string resourceId = default, string region = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource ConversationAuthoringDeploymentResource(string resourceId, string region) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringDeploymentResource(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringDeploymentResource (Optional resourceId As String = Nothing, Optional region As String = Nothing) As ConversationAuthoringDeploymentResource" />
-      <MemberSignature Language="F#" Value="static member ConversationAuthoringDeploymentResource : string * string -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringDeploymentResource (resourceId, region)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="resourceId" Type="System.String" />
-        <Parameter Name="region" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="resourceId"> Represents the Azure resource Id. </param>
-        <param name="region"> Represents the resource region. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,11 +998,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConversationAuthoringTrainingJobDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails ConversationAuthoringTrainingJobDetails (string modelLabel = default, string trainingConfigVersion = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode trainingMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails evaluationOptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails ConversationAuthoringTrainingJobDetails(string modelLabel, string trainingConfigVersion, valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode trainingMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails evaluationOptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobDetails(System.String,System.String,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringTrainingJobDetails (Optional modelLabel As String = Nothing, Optional trainingConfigVersion As String = Nothing, Optional trainingMode As ConversationAuthoringTrainingMode = Nothing, Optional evaluationOptions As ConversationAuthoringEvaluationDetails = Nothing) As ConversationAuthoringTrainingJobDetails" />
-      <MemberSignature Language="F#" Value="static member ConversationAuthoringTrainingJobDetails : string * string * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobDetails (modelLabel, trainingConfigVersion, trainingMode, evaluationOptions)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails ConversationAuthoringTrainingJobDetails (string modelLabel = default, string trainingConfigVersion = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode trainingMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails evaluationOptions = default, Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationSettings dataGenerationSettings = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails ConversationAuthoringTrainingJobDetails(string modelLabel, string trainingConfigVersion, valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode trainingMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails evaluationOptions, class Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationSettings dataGenerationSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobDetails(System.String,System.String,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails,Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringTrainingJobDetails (Optional modelLabel As String = Nothing, Optional trainingConfigVersion As String = Nothing, Optional trainingMode As ConversationAuthoringTrainingMode = Nothing, Optional evaluationOptions As ConversationAuthoringEvaluationDetails = Nothing, Optional dataGenerationSettings As AnalyzeConversationAuthoringDataGenerationSettings = Nothing) As ConversationAuthoringTrainingJobDetails" />
+      <MemberSignature Language="F#" Value="static member ConversationAuthoringTrainingJobDetails : string * string * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails * Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationSettings -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobDetails (modelLabel, trainingConfigVersion, trainingMode, evaluationOptions, dataGenerationSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -1042,23 +1016,25 @@
         <Parameter Name="trainingConfigVersion" Type="System.String" />
         <Parameter Name="trainingMode" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode" />
         <Parameter Name="evaluationOptions" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringEvaluationDetails" />
+        <Parameter Name="dataGenerationSettings" Type="Azure.AI.Language.Conversations.Authoring.AnalyzeConversationAuthoringDataGenerationSettings" />
       </Parameters>
       <Docs>
         <param name="modelLabel"> Represents the output model label. </param>
         <param name="trainingConfigVersion"> Represents training config version. By default, "latest" value is used which uses the latest released training config version. </param>
         <param name="trainingMode"> Represents the mode of the training operation. </param>
         <param name="evaluationOptions"> Represents the evaluation options. By default, the evaluation kind is percentage, with training split percentage as 80, and testing split percentage as 20. </param>
+        <param name="dataGenerationSettings"> For customers to populate if they wish to use data generation for their model training job. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationAuthoringTrainingJobResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult ConversationAuthoringTrainingJobResult (string modelLabel = default, string trainingConfigVersion = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode? trainingMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState trainingStatus = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState evaluationStatus = default, DateTimeOffset? estimatedEndOn = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult ConversationAuthoringTrainingJobResult(string modelLabel, string trainingConfigVersion, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode&gt; trainingMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState trainingStatus, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState evaluationStatus, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; estimatedEndOn) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobResult(System.String,System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode},Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState,System.Nullable{System.DateTimeOffset})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringTrainingJobResult (Optional modelLabel As String = Nothing, Optional trainingConfigVersion As String = Nothing, Optional trainingMode As Nullable(Of ConversationAuthoringTrainingMode) = Nothing, Optional trainingStatus As ConversationAuthoringSubTrainingState = Nothing, Optional evaluationStatus As ConversationAuthoringSubTrainingState = Nothing, Optional estimatedEndOn As Nullable(Of DateTimeOffset) = Nothing) As ConversationAuthoringTrainingJobResult" />
-      <MemberSignature Language="F#" Value="static member ConversationAuthoringTrainingJobResult : string * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode&gt; * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobResult (modelLabel, trainingConfigVersion, trainingMode, trainingStatus, evaluationStatus, estimatedEndOn)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult ConversationAuthoringTrainingJobResult (string modelLabel = default, string trainingConfigVersion = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode? trainingMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState trainingStatus = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState dataGenerationStatus = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState evaluationStatus = default, DateTimeOffset? estimatedEndOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult ConversationAuthoringTrainingJobResult(string modelLabel, string trainingConfigVersion, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode&gt; trainingMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState trainingStatus, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState dataGenerationStatus, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState evaluationStatus, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; estimatedEndOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobResult(System.String,System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode},Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState,Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationAuthoringTrainingJobResult (Optional modelLabel As String = Nothing, Optional trainingConfigVersion As String = Nothing, Optional trainingMode As Nullable(Of ConversationAuthoringTrainingMode) = Nothing, Optional trainingStatus As ConversationAuthoringSubTrainingState = Nothing, Optional dataGenerationStatus As ConversationAuthoringSubTrainingState = Nothing, Optional evaluationStatus As ConversationAuthoringSubTrainingState = Nothing, Optional estimatedEndOn As Nullable(Of DateTimeOffset) = Nothing) As ConversationAuthoringTrainingJobResult" />
+      <MemberSignature Language="F#" Value="static member ConversationAuthoringTrainingJobResult : string * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode&gt; * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationAuthoringTrainingJobResult (modelLabel, trainingConfigVersion, trainingMode, trainingStatus, dataGenerationStatus, evaluationStatus, estimatedEndOn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -1072,6 +1048,7 @@
         <Parameter Name="trainingConfigVersion" Type="System.String" />
         <Parameter Name="trainingMode" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingMode&gt;" />
         <Parameter Name="trainingStatus" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState" />
+        <Parameter Name="dataGenerationStatus" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState" />
         <Parameter Name="evaluationStatus" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringSubTrainingState" />
         <Parameter Name="estimatedEndOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
@@ -1080,6 +1057,7 @@
         <param name="trainingConfigVersion"> Represents training config version. </param>
         <param name="trainingMode"> Represents the mode of the training operation. </param>
         <param name="trainingStatus"> Represents the model training status. </param>
+        <param name="dataGenerationStatus"> Represents the model data generation status. </param>
         <param name="evaluationStatus"> Represents model evaluation status. </param>
         <param name="estimatedEndOn"> Represents the estimated end date time for training and evaluation. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringTrainingJobResult" />. </summary>
@@ -1126,11 +1104,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConversationExportedEntity">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity ConversationExportedEntity (string category = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode? compositionMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList entities = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; prebuilts = default, Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex regex = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredComponents = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity ConversationExportedEntity(string category, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode&gt; compositionMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList entities, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; prebuilts, class Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex regex, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredComponents) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedEntity(System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode},Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity},Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex,System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationExportedEntity (Optional category As String = Nothing, Optional compositionMode As Nullable(Of ConversationAuthoringCompositionMode) = Nothing, Optional entities As ConversationAuthoringExportedEntityList = Nothing, Optional prebuilts As IEnumerable(Of ConversationAuthoringExportedPrebuiltEntity) = Nothing, Optional regex As ExportedEntityRegex = Nothing, Optional requiredComponents As IEnumerable(Of String) = Nothing) As ConversationExportedEntity" />
-      <MemberSignature Language="F#" Value="static member ConversationExportedEntity : string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode&gt; * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList * seq&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; * Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex * seq&lt;string&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedEntity (category, compositionMode, entities, prebuilts, regex, requiredComponents)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity ConversationExportedEntity (string category = default, string description = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode? compositionMode = default, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList entities = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; prebuilts = default, Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex regex = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredComponents = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity ConversationExportedEntity(string category, string description, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode&gt; compositionMode, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList entities, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; prebuilts, class Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex regex, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredComponents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedEntity(System.String,System.String,System.Nullable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode},Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity},Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationExportedEntity (Optional category As String = Nothing, Optional description As String = Nothing, Optional compositionMode As Nullable(Of ConversationAuthoringCompositionMode) = Nothing, Optional entities As ConversationAuthoringExportedEntityList = Nothing, Optional prebuilts As IEnumerable(Of ConversationAuthoringExportedPrebuiltEntity) = Nothing, Optional regex As ExportedEntityRegex = Nothing, Optional requiredComponents As IEnumerable(Of String) = Nothing) As ConversationExportedEntity" />
+      <MemberSignature Language="F#" Value="static member ConversationExportedEntity : string * string * Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode&gt; * Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList * seq&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt; * Azure.AI.Language.Conversations.Authoring.ExportedEntityRegex * seq&lt;string&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedEntity (category, description, compositionMode, entities, prebuilts, regex, requiredComponents)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -1141,6 +1119,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
         <Parameter Name="compositionMode" Type="System.Nullable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCompositionMode&gt;" />
         <Parameter Name="entities" Type="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedEntityList" />
         <Parameter Name="prebuilts" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedPrebuiltEntity&gt;" />
@@ -1149,6 +1128,7 @@
       </Parameters>
       <Docs>
         <param name="category"> The category of the entity. </param>
+        <param name="description"> The entity description. </param>
         <param name="compositionMode"> The behavior to follow when the entity's components overlap with each other. </param>
         <param name="entities"> The list component of the entity. </param>
         <param name="prebuilts"> The prebuilt entities components. </param>
@@ -1156,6 +1136,34 @@
         <param name="requiredComponents"> The required components. Allowed values are 'learned', 'list', 'prebuilts' and 'regex'. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationExportedEntity" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationExportedIntent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent ConversationExportedIntent (string category = default, string description = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationExportedAssociatedEntityLabel&gt; associatedEntities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent ConversationExportedIntent(string category, string description, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationExportedAssociatedEntityLabel&gt; associatedEntities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedIntent(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Language.Conversations.Authoring.ConversationExportedAssociatedEntityLabel})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationExportedIntent (Optional category As String = Nothing, Optional description As String = Nothing, Optional associatedEntities As IEnumerable(Of ConversationExportedAssociatedEntityLabel) = Nothing) As ConversationExportedIntent" />
+      <MemberSignature Language="F#" Value="static member ConversationExportedIntent : string * string * seq&lt;Azure.AI.Language.Conversations.Authoring.ConversationExportedAssociatedEntityLabel&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.ConversationExportedIntent (category, description, associatedEntities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="associatedEntities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Conversations.Authoring.ConversationExportedAssociatedEntityLabel&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="category"> The intent category. </param>
+        <param name="description"> The intent description. </param>
+        <param name="associatedEntities"> The list of associated entities. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationExportedIntent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1404,11 +1412,11 @@
       </Docs>
     </Member>
     <Member MemberName="OrchestrationExportedIntent">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent OrchestrationExportedIntent (Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails orchestration = default, string category = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent OrchestrationExportedIntent(class Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails orchestration, string category) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.OrchestrationExportedIntent(Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function OrchestrationExportedIntent (Optional orchestration As ExportedOrchestrationDetails = Nothing, Optional category As String = Nothing) As OrchestrationExportedIntent" />
-      <MemberSignature Language="F#" Value="static member OrchestrationExportedIntent : Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails * string -&gt; Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.OrchestrationExportedIntent (orchestration, category)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent OrchestrationExportedIntent (Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails orchestration = default, string category = default, string description = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent OrchestrationExportedIntent(class Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails orchestration, string category, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.OrchestrationExportedIntent(Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OrchestrationExportedIntent (Optional orchestration As ExportedOrchestrationDetails = Nothing, Optional category As String = Nothing, Optional description As String = Nothing) As OrchestrationExportedIntent" />
+      <MemberSignature Language="F#" Value="static member OrchestrationExportedIntent : Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails * string * string -&gt; Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAnalysisAuthoringModelFactory.OrchestrationExportedIntent (orchestration, category, description)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
@@ -1420,6 +1428,7 @@
       <Parameters>
         <Parameter Name="orchestration" Type="Azure.AI.Language.Conversations.Authoring.ExportedOrchestrationDetails" />
         <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="orchestration">
@@ -1428,6 +1437,7 @@
             The available derived classes include <see cref="T:Azure.AI.Language.Conversations.Authoring.ExportedConversationOrchestrationDetails" />, <see cref="T:Azure.AI.Language.Conversations.Authoring.ExportedLuisOrchestrationDetails" /> and <see cref="T:Azure.AI.Language.Conversations.Authoring.ExportedQuestionAnsweringOrchestrationDetails" />.
             </param>
         <param name="category"> The intent category. </param>
+        <param name="description"> The intent description. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Conversations.Authoring.OrchestrationExportedIntent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
