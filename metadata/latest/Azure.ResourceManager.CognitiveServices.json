@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.CognitiveServices",
-  "Version": "1.5.0",
+  "Version": "1.5.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/cognitiveservices/Azure.ResourceManager.CognitiveServices",
   "ServiceDirectory": "cognitiveservices",
@@ -10,22 +10,25 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.CognitiveServices",
-  "ReleaseStatus": "2025-06-15",
+  "ReleaseStatus": "2025-07-28",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
+    "safeName": "AzureResourceManagerCognitiveServices",
     "triggeringPaths": [
       "/sdk/cognitiveservices/ci.mgmt.yml"
     ],
-    "safeName": "AzureResourceManagerCognitiveServices",
-    "directoryName": "Azure.ResourceManager.CognitiveServices",
-    "name": "Azure.ResourceManager.CognitiveServices"
+    "name": "Azure.ResourceManager.CognitiveServices",
+    "directoryName": "Azure.ResourceManager.CognitiveServices"
   },
   "CIParameters": {
-    "BuildSnippets": true,
+    "CheckAOTCompat": true,
     "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
-    "AOTTestInputs": []
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.CognitiveServices"
+    },
+    "BuildSnippets": true
   },
   "Namespaces": [
     "Azure.ResourceManager.CognitiveServices",
