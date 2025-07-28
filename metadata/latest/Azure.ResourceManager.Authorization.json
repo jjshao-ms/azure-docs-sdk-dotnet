@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Authorization",
-  "Version": "1.1.4",
+  "Version": "1.1.5",
   "DevVersion": null,
   "DirectoryPath": "sdk/authorization/Azure.ResourceManager.Authorization",
   "ServiceDirectory": "authorization",
@@ -10,18 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Authorization",
-  "ReleaseStatus": "2025-03-11",
+  "ReleaseStatus": "2025-07-28",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "safeName": "AzureResourceManagerAuthorization",
+    "name": "Azure.ResourceManager.Authorization",
     "triggeringPaths": [
       "/sdk/authorization/ci.mgmt.yml"
-    ],
-    "name": "Azure.ResourceManager.Authorization"
+    ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.Authorization"
+    },
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true,
+    "CheckAOTCompat": true
   },
   "Namespaces": [
     "Azure.ResourceManager.Authorization",
