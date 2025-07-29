@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.LoadTesting",
-  "Version": "1.1.1",
+  "Version": "1.1.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/loadtestservice/Azure.ResourceManager.LoadTesting",
   "ServiceDirectory": "loadtestservice",
@@ -10,18 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.LoadTesting",
-  "ReleaseStatus": "2025-03-11",
+  "ReleaseStatus": "2025-07-28",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.ResourceManager.LoadTesting",
+    "safeName": "AzureResourceManagerLoadTesting",
     "triggeringPaths": [
       "/sdk/loadtestservice/ci.mgmt.yml"
-    ],
-    "safeName": "AzureResourceManagerLoadTesting"
+    ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.LoadTesting"
+    },
+    "CheckAOTCompat": true,
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true
   },
   "Namespaces": [
     "Azure.ResourceManager.LoadTesting",
