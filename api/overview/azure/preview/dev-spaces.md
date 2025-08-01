@@ -1,7 +1,7 @@
 ---
 title: Azure Dev Spaces SDK for .NET
 description: Reference for Azure Dev Spaces SDK for .NET
-ms.date: 07/31/2025
+ms.date: 08/01/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: devspaces
