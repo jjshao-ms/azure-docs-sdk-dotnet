@@ -140,6 +140,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DeleteDomain">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteDomain (string fqdn, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteDomain(string fqdn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.DeleteDomain(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteDomain (fqdn As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member DeleteDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.DeleteDomain : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="sipRoutingClient.DeleteDomain (fqdn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fqdn" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fqdn">FQDN of a <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> to be deleted.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Delete <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteDomainAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteDomainAsync (string fqdn, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteDomainAsync(string fqdn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.DeleteDomainAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteDomainAsync (fqdn As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="sipRoutingClient.DeleteDomainAsync (fqdn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fqdn" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fqdn">FQDN of a <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> to be deleted.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Delete <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DeleteTrunk">
       <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteTrunk (string fqdn, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteTrunk(string fqdn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -198,6 +254,114 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetDomain">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; GetDomain (string fqdn, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; GetDomain(string fqdn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetDomain(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDomain (fqdn As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SipDomain)" />
+      <MemberSignature Language="F#" Value="abstract member GetDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&#xA;override this.GetDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;" Usage="sipRoutingClient.GetDomain (fqdn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fqdn" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fqdn">Domain name.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Get a single <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> object.
+            </summary>
+        <returns>Sip domain configuration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomainAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt; GetDomainAsync (string fqdn, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt; GetDomainAsync(string fqdn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetDomainAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDomainAsync (fqdn As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SipDomain))" />
+      <MemberSignature Language="F#" Value="abstract member GetDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&#xA;override this.GetDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;" Usage="sipRoutingClient.GetDomainAsync (fqdn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fqdn" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fqdn">Domain name.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Get a single <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> object.
+            </summary>
+        <returns>Sip domain configuration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomains">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt; GetDomains (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt; GetDomains(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetDomains(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDomains (Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of SipDomain))" />
+      <MemberSignature Language="F#" Value="abstract member GetDomains : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&#xA;override this.GetDomains : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;" Usage="sipRoutingClient.GetDomains cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Get List of configured <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.
+            </summary>
+        <returns>List of configured domains.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomainsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&gt; GetDomainsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&gt; GetDomainsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetDomainsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDomainsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of SipDomain)))" />
+      <MemberSignature Language="F#" Value="abstract member GetDomainsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&gt;&#xA;override this.GetDomainsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&gt;" Usage="sipRoutingClient.GetDomainsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Get List of configured <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.
+            </summary>
+        <returns>List of configured domains.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetRoutes">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt; GetRoutes (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt; GetRoutes(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -249,6 +413,66 @@
             Get List of configured <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute" />.
             </summary>
         <returns>List of configured routes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRoutesForNumber">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt; GetRoutesForNumber (string targetPhoneNumber, System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; routes, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt; GetRoutesForNumber(string targetPhoneNumber, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; routes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetRoutesForNumber(System.String,System.Collections.Generic.IEnumerable{Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesForNumber (targetPhoneNumber As String, routes As IEnumerable(Of SipTrunkRoute), Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of SipTrunkRoute))" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesForNumber : string * seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&#xA;override this.GetRoutesForNumber : string * seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;" Usage="sipRoutingClient.GetRoutesForNumber (targetPhoneNumber, routes, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPhoneNumber" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="routes" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="targetPhoneNumber"> Phone number to test routing patterns against. </param>
+        <param name="routes">New list of <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute" />.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Gets the list of routes matching the target phone number, ordered by priority.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRoutesForNumberAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&gt; GetRoutesForNumberAsync (string targetPhoneNumber, System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; routes, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&gt; GetRoutesForNumberAsync(string targetPhoneNumber, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; routes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.GetRoutesForNumberAsync(System.String,System.Collections.Generic.IEnumerable{Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesForNumberAsync (targetPhoneNumber As String, routes As IEnumerable(Of SipTrunkRoute), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of SipTrunkRoute)))" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesForNumberAsync : string * seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&gt;&#xA;override this.GetRoutesForNumberAsync : string * seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&gt;" Usage="sipRoutingClient.GetRoutesForNumberAsync (targetPhoneNumber, routes, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPhoneNumber" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="routes" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="targetPhoneNumber"> Phone number to test routing patterns against. </param>
+        <param name="routes">New list of <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipTrunkRoute" />.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Gets the list of routes matching the target phone number, ordered by priority.
+            </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,6 +587,118 @@
             Get List of configured <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipTrunk" />.
             </summary>
         <returns>List of configured trunks.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDomain">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response SetDomain (Azure.Communication.PhoneNumbers.SipRouting.SipDomain domain, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response SetDomain(class Azure.Communication.PhoneNumbers.SipRouting.SipDomain domain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.SetDomain(Azure.Communication.PhoneNumbers.SipRouting.SipDomain,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetDomain (domain As SipDomain, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member SetDomain : Azure.Communication.PhoneNumbers.SipRouting.SipDomain * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.SetDomain : Azure.Communication.PhoneNumbers.SipRouting.SipDomain * System.Threading.CancellationToken -&gt; Azure.Response" Usage="sipRoutingClient.SetDomain (domain, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="Azure.Communication.PhoneNumbers.SipRouting.SipDomain" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="domain">SIP domain configuration.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Set <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> for resource. Other configuration settings are not affected.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDomainAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetDomainAsync (Azure.Communication.PhoneNumbers.SipRouting.SipDomain domain, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; SetDomainAsync(class Azure.Communication.PhoneNumbers.SipRouting.SipDomain domain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.SetDomainAsync(Azure.Communication.PhoneNumbers.SipRouting.SipDomain,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetDomainAsync (domain As SipDomain, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member SetDomainAsync : Azure.Communication.PhoneNumbers.SipRouting.SipDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.SetDomainAsync : Azure.Communication.PhoneNumbers.SipRouting.SipDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="sipRoutingClient.SetDomainAsync (domain, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="Azure.Communication.PhoneNumbers.SipRouting.SipDomain" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="domain">SIP domain configuration.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Set <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" /> for resource. Other configuration settings are not affected.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDomains">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response SetDomains (System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; domains, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response SetDomains(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; domains, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.SetDomains(System.Collections.Generic.IEnumerable{Azure.Communication.PhoneNumbers.SipRouting.SipDomain},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetDomains (domains As IEnumerable(Of SipDomain), Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member SetDomains : seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.SetDomains : seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; * System.Threading.CancellationToken -&gt; Azure.Response" Usage="sipRoutingClient.SetDomains (domains, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domains" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="domains">New collection of <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Set SIP domains configuration for resource. Other configuration settings are not affected.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDomainsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetDomainsAsync (System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; domains, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; SetDomainsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; domains, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.PhoneNumbers.SipRouting.SipRoutingClient.SetDomainsAsync(System.Collections.Generic.IEnumerable{Azure.Communication.PhoneNumbers.SipRouting.SipDomain},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetDomainsAsync (domains As IEnumerable(Of SipDomain), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member SetDomainsAsync : seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.SetDomainsAsync : seq&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="sipRoutingClient.SetDomainsAsync (domains, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.PhoneNumbers</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domains" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.PhoneNumbers.SipRouting.SipDomain&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="domains">New collection of <see cref="T:Azure.Communication.PhoneNumbers.SipRouting.SipDomain" />.</param>
+        <param name="cancellationToken">Optional cancellation token.</param>
+        <summary>
+            Set SIP domains configuration for resource. Other configuration settings are not affected.
+            </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
