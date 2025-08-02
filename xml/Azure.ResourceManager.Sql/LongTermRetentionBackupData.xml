@@ -225,6 +225,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="LegalHoldImmutability">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.SetLegalHoldImmutability? LegalHoldImmutability { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.SetLegalHoldImmutability&gt; LegalHoldImmutability" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LongTermRetentionBackupData.LegalHoldImmutability" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegalHoldImmutability As Nullable(Of SetLegalHoldImmutability)" />
+      <MemberSignature Language="F#" Value="member this.LegalHoldImmutability : Nullable&lt;Azure.ResourceManager.Sql.Models.SetLegalHoldImmutability&gt; with get, set" Usage="Azure.ResourceManager.Sql.LongTermRetentionBackupData.LegalHoldImmutability" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.SetLegalHoldImmutability&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The setting for whether LegalHold is enabled or disabled on the LTR backup. When LegalHold is enabled, the backup cannot be deleted until the LegalHold is removed. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RequestedBackupStorageRedundancy">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.SqlBackupStorageRedundancy? RequestedBackupStorageRedundancy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.SqlBackupStorageRedundancy&gt; RequestedBackupStorageRedundancy" />
@@ -445,6 +465,46 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeBasedImmutability">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.TimeBasedImmutability? TimeBasedImmutability { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.TimeBasedImmutability&gt; TimeBasedImmutability" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LongTermRetentionBackupData.TimeBasedImmutability" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeBasedImmutability As Nullable(Of TimeBasedImmutability)" />
+      <MemberSignature Language="F#" Value="member this.TimeBasedImmutability : Nullable&lt;Azure.ResourceManager.Sql.Models.TimeBasedImmutability&gt; with get, set" Usage="Azure.ResourceManager.Sql.LongTermRetentionBackupData.TimeBasedImmutability" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.TimeBasedImmutability&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The setting for whether or not time-based immutability is enabled for the LTR backup. When time-based immutability is enabled and locked, the backup cannot be deleted until BackupExpirationTime. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeBasedImmutabilityMode">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.TimeBasedImmutabilityMode? TimeBasedImmutabilityMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.TimeBasedImmutabilityMode&gt; TimeBasedImmutabilityMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LongTermRetentionBackupData.TimeBasedImmutabilityMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeBasedImmutabilityMode As Nullable(Of TimeBasedImmutabilityMode)" />
+      <MemberSignature Language="F#" Value="member this.TimeBasedImmutabilityMode : Nullable&lt;Azure.ResourceManager.Sql.Models.TimeBasedImmutabilityMode&gt; with get, set" Usage="Azure.ResourceManager.Sql.LongTermRetentionBackupData.TimeBasedImmutabilityMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.TimeBasedImmutabilityMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The time-based immutability mode. Only applicable if time-based immutability is enabled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

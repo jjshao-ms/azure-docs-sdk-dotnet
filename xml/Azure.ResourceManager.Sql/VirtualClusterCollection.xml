@@ -53,6 +53,80 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string virtualClusterName, Azure.ResourceManager.Sql.VirtualClusterData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.VirtualClusterResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string virtualClusterName, class Azure.ResourceManager.Sql.VirtualClusterData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClusterCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.Sql.VirtualClusterData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, virtualClusterName As String, data As VirtualClusterData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualClusterResource)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Sql.VirtualClusterData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Sql.VirtualClusterData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;" Usage="virtualClusterCollection.CreateOrUpdate (waitUntil, virtualClusterName, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="virtualClusterName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Sql.VirtualClusterData" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="data"> The requested virtual cluster resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates virtual cluster.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualClusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualClusterName" /> or <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string virtualClusterName, Azure.ResourceManager.Sql.VirtualClusterData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.VirtualClusterResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string virtualClusterName, class Azure.ResourceManager.Sql.VirtualClusterData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.VirtualClusterCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.Sql.VirtualClusterData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, virtualClusterName As String, data As VirtualClusterData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualClusterResource))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Sql.VirtualClusterData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Sql.VirtualClusterData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;&gt;" Usage="virtualClusterCollection.CreateOrUpdateAsync (waitUntil, virtualClusterName, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.VirtualClusterResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="virtualClusterName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Sql.VirtualClusterData" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="virtualClusterName"> The name of the virtual cluster. </param>
+        <param name="data"> The requested virtual cluster resource state. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates virtual cluster.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualClusterName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualClusterName" /> or <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="Exists">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; Exists (string virtualClusterName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; Exists(string virtualClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -77,7 +151,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -110,7 +184,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -143,7 +217,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a virtual cluster.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -174,7 +248,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of virtual clusters in a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters</description></item><item><term>Operation Id</term><description>VirtualClusters_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters</description></item><item><term>Operation Id</term><description>VirtualClusters_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +275,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of virtual clusters in a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters</description></item><item><term>Operation Id</term><description>VirtualClusters_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters</description></item><item><term>Operation Id</term><description>VirtualClusters_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +304,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a virtual cluster.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -263,7 +337,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -296,7 +370,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/virtualClusters/{virtualClusterName}</description></item><item><term>Operation Id</term><description>VirtualClusters_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.VirtualClusterResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

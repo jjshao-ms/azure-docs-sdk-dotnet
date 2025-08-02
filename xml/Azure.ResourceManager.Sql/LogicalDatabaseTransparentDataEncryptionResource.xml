@@ -131,7 +131,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a logical database's transparent data encryption.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,7 +158,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a logical database's transparent data encryption.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Get</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,6 +201,122 @@
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt; Resume (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt; Resume(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.Resume(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Resume (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of LogicalDatabaseTransparentDataEncryptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member Resume : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&#xA;override this.Resume : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;" Usage="logicalDatabaseTransparentDataEncryptionResource.Resume (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Resume ongoing logical database's Transparent Data Encryption scan configuration.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}/resume</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Resume</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt; ResumeAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt; ResumeAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.ResumeAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResumeAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of LogicalDatabaseTransparentDataEncryptionResource))" />
+      <MemberSignature Language="F#" Value="abstract member ResumeAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;&#xA;override this.ResumeAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;" Usage="logicalDatabaseTransparentDataEncryptionResource.ResumeAsync (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Resume ongoing logical database's Transparent Data Encryption scan configuration.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}/resume</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Resume</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt; Suspend (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt; Suspend(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.Suspend(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Suspend (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of LogicalDatabaseTransparentDataEncryptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member Suspend : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&#xA;override this.Suspend : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;" Usage="logicalDatabaseTransparentDataEncryptionResource.Suspend (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Suspend ongoing logical database's Transparent Data Encryption scan configuration.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}/suspend</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Suspend</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt; SuspendAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt; SuspendAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.SuspendAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SuspendAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of LogicalDatabaseTransparentDataEncryptionResource))" />
+      <MemberSignature Language="F#" Value="abstract member SuspendAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;&#xA;override this.SuspendAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;" Usage="logicalDatabaseTransparentDataEncryptionResource.SuspendAsync (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Suspend ongoing logical database's Transparent Data Encryption scan configuration.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}/suspend</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_Suspend</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,7 +506,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Updates a logical database's transparent data encryption configuration.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -424,7 +540,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Updates a logical database's transparent data encryption configuration.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/transparentDataEncryption/{tdeName}</description></item><item><term>Operation Id</term><description>TransparentDataEncryptions_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

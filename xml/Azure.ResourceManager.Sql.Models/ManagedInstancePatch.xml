@@ -107,7 +107,7 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.ManagedInstanceExternalAdministrator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The Azure Active Directory administrator of the instance. This can only be used at instance create time. If used for instance update, it will be ignored or it will result in an error. For updates individual APIs will need to be used. </summary>
+        <summary> The Azure Active Directory administrator can be utilized during instance creation and for instance updates, except for the azureADOnlyAuthentication property. To update the azureADOnlyAuthentication property, individual API must be used. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -443,7 +443,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Whether or not the multi-az is enabled. </summary>
+        <summary> Whether or not the zone-redundancy is enabled. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -581,6 +581,26 @@
             
              Restore: Creates an instance by restoring a set of backups to specific point in time. RestorePointInTime and SourceManagedInstanceId must be specified.
              </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemorySizeInGB">
+      <MemberSignature Language="C#" Value="public int? MemorySizeInGB { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MemorySizeInGB" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ManagedInstancePatch.MemorySizeInGB" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemorySizeInGB As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MemorySizeInGB : Nullable&lt;int&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.ManagedInstancePatch.MemorySizeInGB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Memory size in GB. Minimum value: 28. Maximum value: 870. Minimum and maximum value depend on the number of vCores and service tier. Read more about resource limits: https://aka.ms/mi-resource-limits-api. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -732,6 +752,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RequestedLogicalAvailabilityZone">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.SqlAvailabilityZoneType? RequestedLogicalAvailabilityZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.SqlAvailabilityZoneType&gt; RequestedLogicalAvailabilityZone" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ManagedInstancePatch.RequestedLogicalAvailabilityZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestedLogicalAvailabilityZone As Nullable(Of SqlAvailabilityZoneType)" />
+      <MemberSignature Language="F#" Value="member this.RequestedLogicalAvailabilityZone : Nullable&lt;Azure.ResourceManager.Sql.Models.SqlAvailabilityZoneType&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.ManagedInstancePatch.RequestedLogicalAvailabilityZone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.SqlAvailabilityZoneType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the logical availability zone Managed Instance is pinned to. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RestorePointInTime">
       <MemberSignature Language="C#" Value="public DateTimeOffset? RestorePointInTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; RestorePointInTime" />
@@ -874,7 +914,7 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Storage size in GB. Minimum value: 32. Maximum value: 16384. Increments of 32 GB allowed only. Maximum value depends on the selected hardware family and number of vCores. </summary>
+        <summary> Storage size in GB. Minimum value: 32. Maximum value: 32768. Increments of 32 GB allowed only. Maximum value depends on the selected hardware family and number of vCores. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1129,26 +1169,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TotalMemoryInMB">
-      <MemberSignature Language="C#" Value="public int? TotalMemoryInMB { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TotalMemoryInMB" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ManagedInstancePatch.TotalMemoryInMB" />
-      <MemberSignature Language="VB.NET" Value="Public Property TotalMemoryInMB As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.TotalMemoryInMB : Nullable&lt;int&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.ManagedInstancePatch.TotalMemoryInMB" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Total memory in MB. Minimum value: 7168. Maximum value: 891328. Increments of 1 MB allowed only. Maximum value depends on the selected hardware family and number of vCores. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="VCores">
       <MemberSignature Language="C#" Value="public int? VCores { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; VCores" />
@@ -1165,7 +1185,7 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The number of vCores. Allowed values: 8, 16, 24, 32, 40, 64, 80. </summary>
+        <summary> The number of vCores. Allowed values: 4, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96, 128. Supported vCores depends on the selected hardware family and service tier. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
