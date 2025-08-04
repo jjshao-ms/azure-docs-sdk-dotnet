@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.CosmosDB",
-  "Version": "1.4.0-beta.12",
+  "Version": "1.4.0-beta.13",
   "DevVersion": null,
   "DirectoryPath": "sdk/cosmosdb/Azure.ResourceManager.CosmosDB",
   "ServiceDirectory": "cosmosdb",
@@ -10,19 +10,31 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.CosmosDB",
-  "ReleaseStatus": "2024-12-20",
+  "ReleaseStatus": "2025-08-04",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Azure.ResourceManager.CosmosDB",
-    "safeName": "AzureResourceManagerCosmosDB"
+    "safeName": "AzureResourceManagerCosmosDB",
+    "triggeringPaths": [
+      "/sdk/cosmosdb/ci.mgmt.yml"
+    ],
+    "name": "Azure.ResourceManager.CosmosDB"
   },
-  "CIMatrixConfigs": [],
+  "CIParameters": {
+    "BuildSnippets": true,
+    "CIMatrixConfigs": [],
+    "AOTTestInputs": {
+      "ArtifactName": "Azure.ResourceManager.CosmosDB",
+      "ExpectedWarningsFilepath": "None"
+    },
+    "CheckAOTCompat": true
+  },
   "Namespaces": [
     "Azure.ResourceManager.CosmosDB",
     "Azure.ResourceManager.CosmosDB.Mocking",
     "Azure.ResourceManager.CosmosDB.Models"
   ],
+  "CIMatrixConfigs": [],
   "DocsCiConfigProperties": {
     "isPrerelease": "true",
     "tfm": "netstandard2.0"
