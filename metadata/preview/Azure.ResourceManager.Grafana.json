@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Grafana",
-  "Version": "1.2.0-beta.1",
+  "Version": "1.2.0-beta.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/grafana/Azure.ResourceManager.Grafana",
   "ServiceDirectory": "grafana",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Grafana",
-  "ReleaseStatus": "2025-06-24",
+  "ReleaseStatus": "2025-08-04",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Azure.ResourceManager.Grafana",
     "safeName": "AzureResourceManagerGrafana",
+    "name": "Azure.ResourceManager.Grafana",
     "triggeringPaths": [
       "/sdk/grafana/ci.mgmt.yml"
     ]
   },
   "CIParameters": {
-    "BuildSnippets": true,
     "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
-    "AOTTestInputs": []
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.Grafana"
+    },
+    "BuildSnippets": true,
+    "CheckAOTCompat": true
   },
   "Namespaces": [
     "Azure.ResourceManager.Grafana",
