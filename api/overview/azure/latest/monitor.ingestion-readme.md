@@ -1,12 +1,12 @@
 ---
 title: Azure Monitor Ingestion client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Monitor.Ingestion, monitor
-ms.date: 04/03/2024
+ms.date: 08/05/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: monitor
 ---
-# Azure Monitor Ingestion client library for .NET - version 1.1.2 
+# Azure Monitor Ingestion client library for .NET - version 1.2.0 
 
 
 The Azure Monitor Ingestion client library is used to send custom logs to [Azure Monitor][azure_monitor_overview].
@@ -15,10 +15,10 @@ This library allows you to send data from virtually any source to supported buil
 
 **Resources:**
 
-- [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/monitor/Azure.Monitor.Ingestion/src)
+- [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/monitor/Azure.Monitor.Ingestion/src)
 - [NuGet package](https://www.nuget.org/packages/Azure.Monitor.Ingestion)
 - [Service documentation][azure_monitor_overview]
-- [Change log](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/monitor/Azure.Monitor.Ingestion/CHANGELOG.md)
+- [Change log](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/monitor/Azure.Monitor.Ingestion/CHANGELOG.md)
 
 ## Getting started
 
@@ -98,11 +98,11 @@ We guarantee that all client instance methods are thread-safe and independent of
 ### Additional concepts
 
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/core/Azure.Core/samples/Diagnostics.md) |
 [Mocking](https://learn.microsoft.com/dotnet/azure/sdk/unit-testing-mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
@@ -115,7 +115,7 @@ We guarantee that all client instance methods are thread-safe and independent of
 - [Upload custom logs as IEnumerable with EventHandler](#upload-custom-logs-as-ienumerable-with-eventhandler)
 - [Verify logs](#verify-logs)
 
-You can familiarize yourself with different APIs using [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.Ingestion_1.1.2/sdk/monitor/Azure.Monitor.Ingestion/samples).
+You can familiarize yourself with different APIs using [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.Ingestion_1.2.0/sdk/monitor/Azure.Monitor.Ingestion/samples).
 
 ### Register the client with dependency injection
 
@@ -176,6 +176,8 @@ Response response = await client.UploadAsync(
 
 You can also upload logs using either the `LogsIngestionClient.Upload` or the `LogsIngestionClient.UploadAsync` method in which  logs are passed in a generic `IEnumerable` type along with an optional `LogsUploadOptions` parameter. The `LogsUploadOptions` parameter includes a serializer, concurrency, and an EventHandler.
 
+When uploading custom logs as an `IEnumerable` of an application model type, the `LogsIngestionClient` will perform serialization on your behalf, using either the [ObjectSerializer](https://learn.microsoft.com/dotnet/api/azure.core.serialization.objectserializer?view=azure-dotnet) registered with your `LogsUploadOptions` or the serializer used by [BinaryData.FromObjectAsJson](https://learn.microsoft.com/dotnet/api/system.binarydata.fromobjectasjson). Both approaches use a serialization path that is not compatible with [ahead-of-time compilation (AOT)](https://learn.microsoft.com/dotnet/core/deploying/native-aot).
+
 ```C# Snippet:UploadLogDataIEnumerableAsync
 var endpoint = new Uri("<data_collection_endpoint_uri>");
 var ruleId = "<data_collection_rule_id>";
@@ -196,6 +198,42 @@ for (int i = 0; i < 100; i++)
             AdditionalContext = i
         }
     );
+}
+
+// Upload our logs
+Response response = await client.UploadAsync(ruleId, streamName, entries).ConfigureAwait(false);
+```
+
+To upload custom logs in an AOT environment, your application must take ownership of serialization and use the `LogsIngestionClient.Upload` or `LogsIngestionClient.UploadAsync` overload that accepts an `IEnumerable<BinaryData>`.   
+
+For example, if you have the following custom type and AOT serialization context:
+```C# Snippet:IngestionAotSerializationTypes
+public record Person(string Name, string Department, int EmployeeNumber)
+{
+}
+
+[JsonSerializable(typeof(Person))]
+public partial class ExampleDeserializationContext : JsonSerializerContext
+{
+}
+```
+
+The Ingestion upload is identical, other than serializing prior to the call:
+```C# Snippet:UploadLogDataIEnumerableAsyncAot
+var endpoint = new Uri("<data_collection_endpoint_uri>");
+var ruleId = "<data_collection_rule_id>";
+var streamName = "<stream_name>";
+
+var credential = new DefaultAzureCredential();
+LogsIngestionClient client = new(endpoint, credential);
+
+DateTimeOffset currentTime = DateTimeOffset.UtcNow;
+
+var entries = new List<BinaryData>();
+for (int i = 0; i < 100; i++)
+{
+    entries.Add(BinaryData.FromBytes(
+        JsonSerializer.SerializeToUtf8Bytes(new Person($"Person{i}", "Department{i}", i))));
 }
 
 // Upload our logs
@@ -249,7 +287,7 @@ Task Options_UploadFailed(LogsUploadFailedEventArgs e)
 
 ### Verify logs
 
-You can verify that your data has been uploaded correctly by using the [Azure Monitor Query](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.1.2/sdk/monitor/Azure.Monitor.Query/README.md#install-the-package) library. Run the [Upload custom logs](#upload-custom-logs) sample first before verifying the logs.
+You can verify that your data has been uploaded correctly by using the [Azure Monitor Query](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Monitor.Ingestion_1.2.0/sdk/monitor/Azure.Monitor.Query/README.md#install-the-package) library. Run the [Upload custom logs](#upload-custom-logs) sample first before verifying the logs.
 
 ```C# Snippet:VerifyLogsAsync
 var workspaceId = "<log_analytics_workspace_id>";
@@ -274,7 +312,7 @@ Console.WriteLine("Table entry count: " +
 
 ## Troubleshooting
 
-For details on diagnosing various failure scenarios, see our [troubleshooting guide](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.Ingestion_1.1.2/sdk/monitor/Azure.Monitor.Ingestion/TROUBLESHOOTING.md).
+For details on diagnosing various failure scenarios, see our [troubleshooting guide](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.Ingestion_1.2.0/sdk/monitor/Azure.Monitor.Ingestion/TROUBLESHOOTING.md).
 
 ## Next steps
 
@@ -293,6 +331,4 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 [data_collection_endpoint]: https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-endpoint-overview
 [data_collection_rule]: https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview
 [logging]: https://learn.microsoft.com/dotnet/azure/sdk/logging
-
-
 
