@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Network",
-  "Version": "1.11.1",
+  "Version": "1.11.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/network/Azure.ResourceManager.Network",
   "ServiceDirectory": "network",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Network",
-  "ReleaseStatus": "2025-07-01",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
+    "name": "Azure.ResourceManager.Network",
     "safeName": "AzureResourceManagerNetwork",
     "triggeringPaths": [
       "/sdk/network/ci.mgmt.yml"
-    ],
-    "name": "Azure.ResourceManager.Network"
+    ]
   },
   "CIParameters": {
-    "BuildSnippets": false,
-    "AOTTestInputs": [],
+    "AOTTestInputs": {
+      "ArtifactName": "Azure.ResourceManager.Network",
+      "ExpectedWarningsFilepath": "None"
+    },
     "CIMatrixConfigs": [],
-    "CheckAOTCompat": false
+    "CheckAOTCompat": true,
+    "BuildSnippets": false
   },
   "Namespaces": [
     "Azure.ResourceManager.Network",
