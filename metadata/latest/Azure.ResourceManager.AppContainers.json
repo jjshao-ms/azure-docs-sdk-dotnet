@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.AppContainers",
-  "Version": "1.4.0",
+  "Version": "1.4.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/containerapps/Azure.ResourceManager.AppContainers",
   "ServiceDirectory": "containerapps",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.AppContainers",
-  "ReleaseStatus": "2025-05-22",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Azure.ResourceManager.AppContainers",
     "triggeringPaths": [
       "/sdk/containerapps/ci.mgmt.yml"
     ],
+    "name": "Azure.ResourceManager.AppContainers",
     "safeName": "AzureResourceManagerAppContainers"
   },
   "CIParameters": {
-    "AOTTestInputs": [],
     "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
-    "BuildSnippets": true
+    "CheckAOTCompat": true,
+    "BuildSnippets": true,
+    "AOTTestInputs": {
+      "ArtifactName": "Azure.ResourceManager.AppContainers",
+      "ExpectedWarningsFilepath": "None"
+    }
   },
   "Namespaces": [
     "Azure.ResourceManager.AppContainers",
