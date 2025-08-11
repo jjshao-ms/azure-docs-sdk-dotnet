@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.AppService",
-  "Version": "1.4.0",
+  "Version": "1.4.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/websites/Azure.ResourceManager.AppService",
   "ServiceDirectory": "websites",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.AppService",
-  "ReleaseStatus": "2025-05-23",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.ResourceManager.AppService",
-    "safeName": "AzureResourceManagerAppService",
     "triggeringPaths": [
       "/sdk/websites/ci.mgmt.yml"
-    ]
+    ],
+    "safeName": "AzureResourceManagerAppService"
   },
   "CIParameters": {
-    "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
+    "CheckAOTCompat": true,
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.AppService"
+    },
     "BuildSnippets": true,
-    "AOTTestInputs": []
+    "CIMatrixConfigs": []
   },
   "Namespaces": [
     "Azure.ResourceManager.AppService",
