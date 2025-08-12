@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.ContainerRegistry",
-  "Version": "1.3.0",
+  "Version": "1.3.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/containerregistry/Azure.ResourceManager.ContainerRegistry",
   "ServiceDirectory": "containerregistry",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.ContainerRegistry",
-  "ReleaseStatus": "2025-04-22",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "safeName": "AzureResourceManagerContainerRegistry",
     "triggeringPaths": [
       "/sdk/containerregistry/ci.mgmt.yml"
     ],
-    "name": "Azure.ResourceManager.ContainerRegistry"
+    "name": "Azure.ResourceManager.ContainerRegistry",
+    "safeName": "AzureResourceManagerContainerRegistry"
   },
   "CIParameters": {
-    "CheckAOTCompat": false,
-    "AOTTestInputs": [],
     "BuildSnippets": true,
-    "CIMatrixConfigs": []
+    "CIMatrixConfigs": [],
+    "CheckAOTCompat": true,
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.ContainerRegistry"
+    }
   },
   "Namespaces": [
     "Azure.ResourceManager.ContainerRegistry",
