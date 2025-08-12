@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.DesktopVirtualization",
-  "Version": "1.3.1",
+  "Version": "1.3.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/desktopvirtualization/Azure.ResourceManager.DesktopVirtualization",
   "ServiceDirectory": "desktopvirtualization",
@@ -10,18 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.DesktopVirtualization",
-  "ReleaseStatus": "2025-03-11",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.ResourceManager.DesktopVirtualization",
+    "safeName": "AzureResourceManagerDesktopVirtualization",
     "triggeringPaths": [
       "/sdk/desktopvirtualization/ci.mgmt.yml"
-    ],
-    "safeName": "AzureResourceManagerDesktopVirtualization"
+    ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "CIMatrixConfigs": [],
+    "CheckAOTCompat": true,
+    "BuildSnippets": true,
+    "AOTTestInputs": {
+      "ArtifactName": "Azure.ResourceManager.DesktopVirtualization",
+      "ExpectedWarningsFilepath": "None"
+    }
   },
   "Namespaces": [
     "Azure.ResourceManager.DesktopVirtualization",
