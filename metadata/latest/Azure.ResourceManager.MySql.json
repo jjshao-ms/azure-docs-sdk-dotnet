@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.MySql",
-  "Version": "1.1.1",
+  "Version": "1.1.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/mysql/Azure.ResourceManager.MySql",
   "ServiceDirectory": "mysql",
@@ -10,7 +10,7 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.MySql",
-  "ReleaseStatus": "2025-03-11",
+  "ReleaseStatus": "2025-08-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
@@ -21,7 +21,13 @@
     ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "CheckAOTCompat": true,
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.MySql"
+    },
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true
   },
   "Namespaces": [
     "Azure.ResourceManager.MySql",
