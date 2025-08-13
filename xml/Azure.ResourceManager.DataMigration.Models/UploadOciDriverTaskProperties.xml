@@ -1,15 +1,15 @@
 <Type Name="UploadOciDriverTaskProperties" FullName="Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties">
-  <TypeSignature Language="C#" Value="public class UploadOciDriverTaskProperties : Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UploadOciDriverTaskProperties extends Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;" />
+  <TypeSignature Language="C#" Value="public class UploadOciDriverTaskProperties : Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UploadOciDriverTaskProperties extends Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class UploadOciDriverTaskProperties&#xA;Inherits ProjectTaskProperties&#xA;Implements IJsonModel(Of UploadOciDriverTaskProperties), IPersistableModel(Of UploadOciDriverTaskProperties)" />
-  <TypeSignature Language="F#" Value="type UploadOciDriverTaskProperties = class&#xA;    inherit ProjectTaskProperties&#xA;    interface IJsonModel&lt;UploadOciDriverTaskProperties&gt;&#xA;    interface IPersistableModel&lt;UploadOciDriverTaskProperties&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class UploadOciDriverTaskProperties&#xA;Inherits DataMigrationProjectTaskProperties&#xA;Implements IJsonModel(Of UploadOciDriverTaskProperties), IPersistableModel(Of UploadOciDriverTaskProperties)" />
+  <TypeSignature Language="F#" Value="type UploadOciDriverTaskProperties = class&#xA;    inherit DataMigrationProjectTaskProperties&#xA;    interface IJsonModel&lt;UploadOciDriverTaskProperties&gt;&#xA;    interface IPersistableModel&lt;UploadOciDriverTaskProperties&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="InputDriverShare">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.FileShare InputDriverShare { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.FileShare InputDriverShare" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo InputDriverShare { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo InputDriverShare" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties.InputDriverShare" />
-      <MemberSignature Language="VB.NET" Value="Public Property InputDriverShare As FileShare" />
-      <MemberSignature Language="F#" Value="member this.InputDriverShare : Azure.ResourceManager.DataMigration.Models.FileShare with get, set" Usage="Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties.InputDriverShare" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputDriverShare As DataMigrationFileShareInfo" />
+      <MemberSignature Language="F#" Value="member this.InputDriverShare : Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.UploadOciDriverTaskProperties.InputDriverShare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.FileShare</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> File share information for the OCI driver archive. </summary>
@@ -228,7 +228,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -43,6 +43,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOfflineMigration">
+      <MemberSignature Language="C#" Value="public bool? IsOfflineMigration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsOfflineMigration" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.IsOfflineMigration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOfflineMigration As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsOfflineMigration : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.IsOfflineMigration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Offline migration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JsonModelWriteCore">
       <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
@@ -69,41 +89,21 @@
       </Docs>
     </Member>
     <Member MemberName="MigrationStatusDetails">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlDBMigrationStatusDetails MigrationStatusDetails { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlDBMigrationStatusDetails MigrationStatusDetails" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlDBMigrationStatusDetails MigrationStatusDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlDBMigrationStatusDetails MigrationStatusDetails" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.MigrationStatusDetails" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MigrationStatusDetails As SqlDBMigrationStatusDetails" />
-      <MemberSignature Language="F#" Value="member this.MigrationStatusDetails : Azure.ResourceManager.DataMigration.Models.SqlDBMigrationStatusDetails" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.MigrationStatusDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MigrationStatusDetails As DataMigrationSqlDBMigrationStatusDetails" />
+      <MemberSignature Language="F#" Value="member this.MigrationStatusDetails : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlDBMigrationStatusDetails" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.MigrationStatusDetails" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlDBMigrationStatusDetails</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlDBMigrationStatusDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Detailed migration status. Not included by default. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Offline">
-      <MemberSignature Language="C#" Value="public bool? Offline { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Offline" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.Offline" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offline As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.Offline : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.Offline" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Offline migration. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +228,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,18 +283,18 @@
       </Docs>
     </Member>
     <Member MemberName="TargetSqlConnection">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation TargetSqlConnection { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation TargetSqlConnection" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation TargetSqlConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation TargetSqlConnection" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.TargetSqlConnection" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetSqlConnection As SqlConnectionInformation" />
-      <MemberSignature Language="F#" Value="member this.TargetSqlConnection : Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.TargetSqlConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetSqlConnection As DataMigrationSqlConnectionInformation" />
+      <MemberSignature Language="F#" Value="member this.TargetSqlConnection : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationSqlDBProperties.TargetSqlConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Target SQL DB connection details. </summary>

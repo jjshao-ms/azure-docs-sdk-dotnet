@@ -28,19 +28,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConnectToTargetSqlDBSyncTaskInput (Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo targetConnectionInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo targetConnectionInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As SqlConnectionInfo, targetConnectionInfo As SqlConnectionInfo)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput : Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo -&gt; Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput (sourceConnectionInfo, targetConnectionInfo)" />
+      <MemberSignature Language="C#" Value="public ConnectToTargetSqlDBSyncTaskInput (Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo targetConnectionInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo targetConnectionInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As DataMigrationSqlConnectionInfo, targetConnectionInfo As DataMigrationSqlConnectionInfo)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo -&gt; Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput (sourceConnectionInfo, targetConnectionInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo" />
-        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo" />
+        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo" />
+        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo" />
       </Parameters>
       <Docs>
         <param name="sourceConnectionInfo"> Connection information for source SQL Server. </param>
@@ -77,18 +77,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo SourceConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo SourceConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo SourceConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo SourceConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.SourceConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As SqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.SourceConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As DataMigrationSqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.SourceConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for source SQL Server. </summary>
@@ -216,7 +216,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,18 +251,18 @@
       </Docs>
     </Member>
     <Member MemberName="TargetConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo TargetConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo TargetConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo TargetConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo TargetConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.TargetConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As SqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.TargetConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As DataMigrationSqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetSqlDBSyncTaskInput.TargetConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for target SQL DB. </summary>

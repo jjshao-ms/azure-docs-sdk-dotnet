@@ -1,15 +1,15 @@
 <Type Name="DatabaseMigrationProperties" FullName="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties">
-  <TypeSignature Language="C#" Value="public abstract class DatabaseMigrationProperties : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DatabaseMigrationProperties extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;" />
+  <TypeSignature Language="C#" Value="public class DatabaseMigrationProperties : Azure.ResourceManager.DataMigration.Models.DatabaseMigrationBaseProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatabaseMigrationProperties extends Azure.ResourceManager.DataMigration.Models.DatabaseMigrationBaseProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DatabaseMigrationProperties&#xA;Implements IJsonModel(Of DatabaseMigrationProperties), IPersistableModel(Of DatabaseMigrationProperties)" />
-  <TypeSignature Language="F#" Value="type DatabaseMigrationProperties = class&#xA;    interface IJsonModel&lt;DatabaseMigrationProperties&gt;&#xA;    interface IPersistableModel&lt;DatabaseMigrationProperties&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class DatabaseMigrationProperties&#xA;Inherits DatabaseMigrationBaseProperties&#xA;Implements IJsonModel(Of DatabaseMigrationProperties), IPersistableModel(Of DatabaseMigrationProperties)" />
+  <TypeSignature Language="F#" Value="type DatabaseMigrationProperties = class&#xA;    inherit DatabaseMigrationBaseProperties&#xA;    interface IJsonModel&lt;DatabaseMigrationProperties&gt;&#xA;    interface IPersistableModel&lt;DatabaseMigrationProperties&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.DatabaseMigrationBaseProperties</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -22,12 +22,6 @@
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.PersistableModelProxy(typeof(Azure.ResourceManager.DataMigration.Models.UnknownDatabaseMigrationProperties))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.PersistableModelProxy(typeof(Azure.ResourceManager.DataMigration.Models.UnknownDatabaseMigrationProperties))&gt;]</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>
             Database Migration Resource properties.
@@ -38,10 +32,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DatabaseMigrationProperties ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="C#" Value="public DatabaseMigrationProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -53,32 +47,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EndedOn">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? EndedOn { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; EndedOn" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.EndedOn" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndedOn As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.EndedOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.EndedOn" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Database migration end time. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="JsonModelWriteCore">
-      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
-      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="databaseMigrationProperties.JsonModelWriteCore (writer, options)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="databaseMigrationProperties.JsonModelWriteCore (writer, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -95,146 +69,6 @@
         <param name="writer"> The JSON writer. </param>
         <param name="options"> The client options for reading and writing models. </param>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MigrationFailureError">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.ErrorInfo MigrationFailureError { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.ErrorInfo MigrationFailureError" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationFailureError" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MigrationFailureError As ErrorInfo" />
-      <MemberSignature Language="F#" Value="member this.MigrationFailureError : Azure.ResourceManager.DataMigration.Models.ErrorInfo" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationFailureError" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.ErrorInfo</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Error details in case of migration failure. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MigrationOperationId">
-      <MemberSignature Language="C#" Value="public string MigrationOperationId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MigrationOperationId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationOperationId" />
-      <MemberSignature Language="VB.NET" Value="Public Property MigrationOperationId As String" />
-      <MemberSignature Language="F#" Value="member this.MigrationOperationId : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationOperationId" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> ID tracking current migration operation. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MigrationService">
-      <MemberSignature Language="C#" Value="public string MigrationService { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MigrationService" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationService" />
-      <MemberSignature Language="VB.NET" Value="Public Property MigrationService As String" />
-      <MemberSignature Language="F#" Value="member this.MigrationService : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationService" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Resource Id of the Migration Service. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MigrationStatus">
-      <MemberSignature Language="C#" Value="public string MigrationStatus { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MigrationStatus" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationStatus" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MigrationStatus As String" />
-      <MemberSignature Language="F#" Value="member this.MigrationStatus : string" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.MigrationStatus" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Migration status. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ProvisioningError">
-      <MemberSignature Language="C#" Value="public string ProvisioningError { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningError" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.ProvisioningError" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProvisioningError As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningError : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.ProvisioningError" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Error message for migration provisioning failure, if any. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.ProvisioningState" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Provisioning State of migration. ProvisioningState as Succeeded implies that validations have been performed and migration has started. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Scope">
-      <MemberSignature Language="C#" Value="public string Scope { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.Scope" />
-      <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
-      <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.Scope" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Resource Id of the target resource (SQL VM or SQL Managed Instance). </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,41 +113,21 @@
       </Docs>
     </Member>
     <Member MemberName="SourceSqlConnection">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation SourceSqlConnection { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation SourceSqlConnection" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation SourceSqlConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation SourceSqlConnection" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.SourceSqlConnection" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceSqlConnection As SqlConnectionInformation" />
-      <MemberSignature Language="F#" Value="member this.SourceSqlConnection : Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.SourceSqlConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceSqlConnection As DataMigrationSqlConnectionInformation" />
+      <MemberSignature Language="F#" Value="member this.SourceSqlConnection : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation with get, set" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.SourceSqlConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlConnectionInformation</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInformation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Source SQL Server connection details. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StartedOn">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? StartedOn { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StartedOn" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.StartedOn" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartedOn As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.StartedOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.DataMigration.Models.DatabaseMigrationProperties.StartedOn" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Database migration start time. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +252,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

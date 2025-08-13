@@ -1,15 +1,15 @@
 <Type Name="MigrateSqlServerSqlMITaskProperties" FullName="Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties">
-  <TypeSignature Language="C#" Value="public class MigrateSqlServerSqlMITaskProperties : Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MigrateSqlServerSqlMITaskProperties extends Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;" />
+  <TypeSignature Language="C#" Value="public class MigrateSqlServerSqlMITaskProperties : Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MigrateSqlServerSqlMITaskProperties extends Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class MigrateSqlServerSqlMITaskProperties&#xA;Inherits ProjectTaskProperties&#xA;Implements IJsonModel(Of MigrateSqlServerSqlMITaskProperties), IPersistableModel(Of MigrateSqlServerSqlMITaskProperties)" />
-  <TypeSignature Language="F#" Value="type MigrateSqlServerSqlMITaskProperties = class&#xA;    inherit ProjectTaskProperties&#xA;    interface IJsonModel&lt;MigrateSqlServerSqlMITaskProperties&gt;&#xA;    interface IPersistableModel&lt;MigrateSqlServerSqlMITaskProperties&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class MigrateSqlServerSqlMITaskProperties&#xA;Inherits DataMigrationProjectTaskProperties&#xA;Implements IJsonModel(Of MigrateSqlServerSqlMITaskProperties), IPersistableModel(Of MigrateSqlServerSqlMITaskProperties)" />
+  <TypeSignature Language="F#" Value="type MigrateSqlServerSqlMITaskProperties = class&#xA;    inherit DataMigrationProjectTaskProperties&#xA;    interface IJsonModel&lt;MigrateSqlServerSqlMITaskProperties&gt;&#xA;    interface IPersistableModel&lt;MigrateSqlServerSqlMITaskProperties&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.ProjectTaskProperties</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.DataMigrationProjectTaskProperties</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedOn">
-      <MemberSignature Language="C#" Value="public string CreatedOn { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string CreatedOn" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? CreatedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedOn" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties.CreatedOn" />
-      <MemberSignature Language="VB.NET" Value="Public Property CreatedOn As String" />
-      <MemberSignature Language="F#" Value="member this.CreatedOn : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties.CreatedOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.CreatedOn : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMITaskProperties.CreatedOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> DateTime in UTC when the task was created. </summary>
@@ -292,7 +292,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

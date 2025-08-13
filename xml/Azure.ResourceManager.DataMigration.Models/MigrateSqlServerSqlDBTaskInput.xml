@@ -28,19 +28,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MigrateSqlServerSqlDBTaskInput (Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo targetConnectionInfo, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; selectedDatabases);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo targetConnectionInfo, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; selectedDatabases) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo,System.Collections.Generic.IEnumerable{Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As SqlConnectionInfo, targetConnectionInfo As SqlConnectionInfo, selectedDatabases As IEnumerable(Of MigrateSqlServerSqlDBDatabaseInput))" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput : Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo * seq&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; -&gt; Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput (sourceConnectionInfo, targetConnectionInfo, selectedDatabases)" />
+      <MemberSignature Language="C#" Value="public MigrateSqlServerSqlDBTaskInput (Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo targetConnectionInfo, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; selectedDatabases);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo targetConnectionInfo, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; selectedDatabases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo,System.Collections.Generic.IEnumerable{Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As DataMigrationSqlConnectionInfo, targetConnectionInfo As DataMigrationSqlConnectionInfo, selectedDatabases As IEnumerable(Of MigrateSqlServerSqlDBDatabaseInput))" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo * seq&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt; -&gt; Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput (sourceConnectionInfo, targetConnectionInfo, selectedDatabases)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo" />
-        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo" />
+        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo" />
+        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo" />
         <Parameter Name="selectedDatabases" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBDatabaseInput&gt;" />
       </Parameters>
       <Docs>
@@ -119,18 +119,18 @@
       </Docs>
     </Member>
     <Member MemberName="StartedOn">
-      <MemberSignature Language="C#" Value="public string StartedOn { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string StartedOn" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? StartedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StartedOn" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput.StartedOn" />
-      <MemberSignature Language="VB.NET" Value="Public Property StartedOn As String" />
-      <MemberSignature Language="F#" Value="member this.StartedOn : string with get, set" Usage="Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput.StartedOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.StartedOn : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlDBTaskInput.StartedOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Date and time relative to UTC when the migration was started on. </summary>
@@ -258,7 +258,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

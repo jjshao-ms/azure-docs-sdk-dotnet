@@ -17,72 +17,72 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="CheckNameAvailabilityService">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt; CheckNameAvailabilityService (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest nameAvailabilityRequest, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt; CheckNameAvailabilityService(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest nameAvailabilityRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckNameAvailabilityService(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameAvailabilityService (subscriptionResource As SubscriptionResource, location As AzureLocation, nameAvailabilityRequest As NameAvailabilityRequest, Optional cancellationToken As CancellationToken = Nothing) As Response(Of NameAvailabilityResponse)" />
-      <MemberSignature Language="F#" Value="static member CheckNameAvailabilityService : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckNameAvailabilityService (subscriptionResource, location, nameAvailabilityRequest, cancellationToken)" />
+    <Member MemberName="CheckDataMigrationNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt; CheckDataMigrationNameAvailability (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt; CheckDataMigrationNameAvailability(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckDataMigrationNameAvailability(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckDataMigrationNameAvailability (subscriptionResource As SubscriptionResource, location As AzureLocation, content As DataMigrationServiceNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DataMigrationServiceNameAvailabilityResult)" />
+      <MemberSignature Language="F#" Value="static member CheckDataMigrationNameAvailability : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckDataMigrationNameAvailability (subscriptionResource, location, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
         <Parameter Name="location" Type="Azure.Core.AzureLocation" />
-        <Parameter Name="nameAvailabilityRequest" Type="Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest" />
+        <Parameter Name="content" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="location"> The Azure region of the operation. </param>
-        <param name="nameAvailabilityRequest"> Requested name to validate. </param>
+        <param name="content"> Requested name to validate. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This method checks whether a proposed top-level resource name is valid and available.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>Services_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.CheckNameAvailabilityService(Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>Services_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.CheckDataMigrationNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="nameAvailabilityRequest" /> is null. </exception>
+          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="CheckNameAvailabilityServiceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;&gt; CheckNameAvailabilityServiceAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest nameAvailabilityRequest, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;&gt; CheckNameAvailabilityServiceAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest nameAvailabilityRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckNameAvailabilityServiceAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameAvailabilityServiceAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, nameAvailabilityRequest As NameAvailabilityRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of NameAvailabilityResponse))" />
-      <MemberSignature Language="F#" Value="static member CheckNameAvailabilityServiceAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckNameAvailabilityServiceAsync (subscriptionResource, location, nameAvailabilityRequest, cancellationToken)" />
+    <Member MemberName="CheckDataMigrationNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;&gt; CheckDataMigrationNameAvailabilityAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;&gt; CheckDataMigrationNameAvailabilityAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckDataMigrationNameAvailabilityAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckDataMigrationNameAvailabilityAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, content As DataMigrationServiceNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DataMigrationServiceNameAvailabilityResult))" />
+      <MemberSignature Language="F#" Value="static member CheckDataMigrationNameAvailabilityAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.CheckDataMigrationNameAvailabilityAsync (subscriptionResource, location, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.NameAvailabilityResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
         <Parameter Name="location" Type="Azure.Core.AzureLocation" />
-        <Parameter Name="nameAvailabilityRequest" Type="Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest" />
+        <Parameter Name="content" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="location"> The Azure region of the operation. </param>
-        <param name="nameAvailabilityRequest"> Requested name to validate. </param>
+        <param name="content"> Requested name to validate. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This method checks whether a proposed top-level resource name is valid and available.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>Services_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.CheckNameAvailabilityService(Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.NameAvailabilityRequest,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>Services_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.CheckDataMigrationNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.DataMigration.Models.DataMigrationServiceNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="nameAvailabilityRequest" /> is null. </exception>
+          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatabaseMigrationSqlDB">
@@ -116,7 +116,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the Database Migration resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{sqlDbInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlDb_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlDBResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlDB(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{sqlDbInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlDb_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlDBResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlDB(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -156,7 +156,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the Database Migration resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{sqlDbInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlDb_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlDBResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlDBAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{sqlDbInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlDb_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlDBResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlDBAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -255,7 +255,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the specified database migration for a given SQL Managed Instance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlMi_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlMIResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlMI(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlMi_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlMIResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlMI(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -295,7 +295,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the specified database migration for a given SQL Managed Instance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlMi_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlMIResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlMIAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlMi_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlMIResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlMIAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -394,7 +394,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the specified database migration for a given SQL VM.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/{sqlVirtualMachineName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlVm_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlVmResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlVm(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/{sqlVirtualMachineName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlVm_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlVmResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlVm(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -434,7 +434,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the specified database migration for a given SQL VM.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/{sqlVirtualMachineName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlVm_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlVmResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlVmAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/{sqlVirtualMachineName}/providers/Microsoft.DataMigration/databaseMigrations/{targetDbName}</description></item><item><term>Operation Id</term><description>DatabaseMigrationsSqlVm_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DatabaseMigrationSqlVmResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDatabaseMigrationSqlVmAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -502,6 +502,68 @@
           <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetDataMigrationProjectFileResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource GetDataMigrationProjectFileResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource GetDataMigrationProjectFileResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationProjectFileResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataMigrationProjectFileResource (client As ArmClient, id As ResourceIdentifier) As DataMigrationProjectFileResource" />
+      <MemberSignature Language="F#" Value="static member GetDataMigrationProjectFileResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationProjectFileResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetDataMigrationProjectFileResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectFileResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataMigrationProjectResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.DataMigrationProjectResource GetDataMigrationProjectResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.DataMigrationProjectResource GetDataMigrationProjectResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationProjectResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataMigrationProjectResource (client As ArmClient, id As ResourceIdentifier) As DataMigrationProjectResource" />
+      <MemberSignature Language="F#" Value="static member GetDataMigrationProjectResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationProjectResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationProjectResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DataMigration.DataMigrationProjectResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetDataMigrationProjectResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationProjectResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetDataMigrationService">
       <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DataMigration.DataMigrationServiceResource&gt; GetDataMigrationService (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string serviceName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.DataMigrationServiceResource&gt; GetDataMigrationService(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string serviceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -526,8 +588,8 @@
         <param name="serviceName"> Name of the service. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The services resource is the top-level resource that represents the Database Migration Service. The GET method retrieves information about a service instance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}</description></item><item><term>Operation Id</term><description>Services_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDataMigrationService(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            The services resource is the top-level resource that represents the Azure Database Migration Service (classic). The GET method retrieves information about a service instance.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}</description></item><item><term>Operation Id</term><description>Services_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDataMigrationService(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -560,8 +622,8 @@
         <param name="serviceName"> Name of the service. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The services resource is the top-level resource that represents the Database Migration Service. The GET method retrieves information about a service instance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}</description></item><item><term>Operation Id</term><description>Services_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDataMigrationServiceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            The services resource is the top-level resource that represents the Azure Database Migration Service (classic). The GET method retrieves information about a service instance.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}</description></item><item><term>Operation Id</term><description>Services_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetDataMigrationServiceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -651,8 +713,8 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The services resource is the top-level resource that represents the Database Migration Service. This method returns a list of service resources in a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/services</description></item><item><term>Operation Id</term><description>Services_List</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetDataMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            The services resource is the top-level resource that represents the Azure Database Migration Service (classic). This method returns a list of service resources in a subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/services</description></item><item><term>Operation Id</term><description>Services_List</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetDataMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -681,27 +743,27 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The services resource is the top-level resource that represents the Database Migration Service. This method returns a list of service resources in a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/services</description></item><item><term>Operation Id</term><description>Services_List</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetDataMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            The services resource is the top-level resource that represents the Azure Database Migration Service (classic). This method returns a list of service resources in a subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/services</description></item><item><term>Operation Id</term><description>Services_List</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetDataMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetProjectFileResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.ProjectFileResource GetProjectFileResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.ProjectFileResource GetProjectFileResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetProjectFileResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProjectFileResource (client As ArmClient, id As ResourceIdentifier) As ProjectFileResource" />
-      <MemberSignature Language="F#" Value="static member GetProjectFileResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.ProjectFileResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetProjectFileResource (client, id)" />
+    <Member MemberName="GetDataMigrationServiceTaskResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource GetDataMigrationServiceTaskResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource GetDataMigrationServiceTaskResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationServiceTaskResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataMigrationServiceTaskResource (client As ArmClient, id As ResourceIdentifier) As DataMigrationServiceTaskResource" />
+      <MemberSignature Language="F#" Value="static member GetDataMigrationServiceTaskResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetDataMigrationServiceTaskResource (client, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ProjectFileResource</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
@@ -711,72 +773,10 @@
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.ProjectFileResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataMigration.ProjectFileResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.ProjectFileResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetProjectFileResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.ProjectFileResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="client" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetProjectResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.ProjectResource GetProjectResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.ProjectResource GetProjectResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetProjectResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProjectResource (client As ArmClient, id As ResourceIdentifier) As ProjectResource" />
-      <MemberSignature Language="F#" Value="static member GetProjectResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.ProjectResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetProjectResource (client, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ProjectResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
-      </Parameters>
-      <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.ProjectResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataMigration.ProjectResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.ProjectResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetProjectResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.ProjectResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="client" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetServiceProjectTaskResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataMigration.ServiceProjectTaskResource GetServiceProjectTaskResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataMigration.ServiceProjectTaskResource GetServiceProjectTaskResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetServiceProjectTaskResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceProjectTaskResource (client As ArmClient, id As ResourceIdentifier) As ServiceProjectTaskResource" />
-      <MemberSignature Language="F#" Value="static member GetServiceProjectTaskResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataMigration.ServiceProjectTaskResource" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetServiceProjectTaskResource (client, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ServiceProjectTaskResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
-      </Parameters>
-      <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.ServiceProjectTaskResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataMigration.ServiceProjectTaskResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.ServiceProjectTaskResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetServiceProjectTaskResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.ServiceProjectTaskResource" /> object. </returns>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationArmClient.GetDataMigrationServiceTaskResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DataMigration.DataMigrationServiceTaskResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
@@ -814,18 +814,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetSkusResourceSkus">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt; GetSkusResourceSkus (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DataMigration.Models.ResourceSku&gt; GetSkusResourceSkus(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt; GetSkusResourceSkus (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt; GetSkusResourceSkus(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkus(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkusResourceSkus (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ResourceSku)" />
-      <MemberSignature Language="F#" Value="static member GetSkusResourceSkus : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkus (subscriptionResource, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkusResourceSkus (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DataMigrationSku)" />
+      <MemberSignature Language="F#" Value="static member GetSkusResourceSkus : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkus (subscriptionResource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -835,27 +835,27 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The skus action returns the list of SKUs that DMS supports.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/skus</description></item><item><term>Operation Id</term><description>ResourceSkus_ListSkus</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSkusResourceSkus(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.ResourceSku" /> that may take multiple service requests to iterate over. </returns>
+            The skus action returns the list of SKUs that DMS (classic) supports.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/skus</description></item><item><term>Operation Id</term><description>ResourceSkus_ListSkus</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSkusResourceSkus(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.DataMigrationSku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSkusResourceSkusAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt; GetSkusResourceSkusAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataMigration.Models.ResourceSku&gt; GetSkusResourceSkusAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt; GetSkusResourceSkusAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt; GetSkusResourceSkusAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkusAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkusResourceSkusAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ResourceSku)" />
-      <MemberSignature Language="F#" Value="static member GetSkusResourceSkusAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkusAsync (subscriptionResource, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSkusResourceSkusAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DataMigrationSku)" />
+      <MemberSignature Language="F#" Value="static member GetSkusResourceSkusAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetSkusResourceSkusAsync (subscriptionResource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.ResourceSku&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationSku&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -865,9 +865,9 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The skus action returns the list of SKUs that DMS supports.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/skus</description></item><item><term>Operation Id</term><description>ResourceSkus_ListSkus</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSkusResourceSkus(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.ResourceSku" /> that may take multiple service requests to iterate over. </returns>
+            The skus action returns the list of SKUs that DMS (classic) supports.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/skus</description></item><item><term>Operation Id</term><description>ResourceSkus_ListSkus</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSkusResourceSkus(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.DataMigrationSku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -898,7 +898,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the Database Migration Service
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataMigration/sqlMigrationServices/{sqlMigrationServiceName}</description></item><item><term>Operation Id</term><description>SqlMigrationServices_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetSqlMigrationService(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataMigration/sqlMigrationServices/{sqlMigrationServiceName}</description></item><item><term>Operation Id</term><description>SqlMigrationServices_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetSqlMigrationService(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -932,7 +932,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve the Database Migration Service
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataMigration/sqlMigrationServices/{sqlMigrationServiceName}</description></item><item><term>Operation Id</term><description>SqlMigrationServices_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetSqlMigrationServiceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataMigration/sqlMigrationServices/{sqlMigrationServiceName}</description></item><item><term>Operation Id</term><description>SqlMigrationServices_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationResourceGroupResource.GetSqlMigrationServiceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1023,7 +1023,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve all SQL migration services in the subscriptions.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/sqlMigrationServices</description></item><item><term>Operation Id</term><description>SqlMigrationServices_ListBySubscription</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSqlMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/sqlMigrationServices</description></item><item><term>Operation Id</term><description>SqlMigrationServices_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSqlMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1053,7 +1053,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve all SQL migration services in the subscriptions.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/sqlMigrationServices</description></item><item><term>Operation Id</term><description>SqlMigrationServices_ListBySubscription</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSqlMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/sqlMigrationServices</description></item><item><term>Operation Id</term><description>SqlMigrationServices_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetSqlMigrationServices(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.SqlMigrationServiceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1061,18 +1061,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUsages">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt; GetUsages (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DataMigration.Models.Quota&gt; GetUsages(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt; GetUsages (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt; GetUsages(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsages(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsages (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Quota)" />
-      <MemberSignature Language="F#" Value="static member GetUsages : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsages (subscriptionResource, location, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsages (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DataMigrationQuota)" />
+      <MemberSignature Language="F#" Value="static member GetUsages : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsages (subscriptionResource, location, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -1084,27 +1084,27 @@
         <param name="location"> The Azure region of the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            This method returns region-specific quotas and resource usage information for the Database Migration Service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/usages</description></item><item><term>Operation Id</term><description>Usages_List</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetUsages(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.Quota" /> that may take multiple service requests to iterate over. </returns>
+            This method returns region-specific quotas and resource usage information for the Azure Database Migration Service (classic).
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/usages</description></item><item><term>Operation Id</term><description>Usages_List</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetUsages(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.DataMigrationQuota" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUsagesAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt; GetUsagesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataMigration.Models.Quota&gt; GetUsagesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt; GetUsagesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt; GetUsagesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsagesAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsagesAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Quota)" />
-      <MemberSignature Language="F#" Value="static member GetUsagesAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsagesAsync (subscriptionResource, location, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsagesAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DataMigrationQuota)" />
+      <MemberSignature Language="F#" Value="static member GetUsagesAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationExtensions.GetUsagesAsync (subscriptionResource, location, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.Quota&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationQuota&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -1116,9 +1116,9 @@
         <param name="location"> The Azure region of the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            This method returns region-specific quotas and resource usage information for the Database Migration Service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/usages</description></item><item><term>Operation Id</term><description>Usages_List</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetUsages(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.Quota" /> that may take multiple service requests to iterate over. </returns>
+            This method returns region-specific quotas and resource usage information for the Azure Database Migration Service (classic).
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataMigration/locations/{location}/usages</description></item><item><term>Operation Id</term><description>Usages_List</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataMigration.Mocking.MockableDataMigrationSubscriptionResource.GetUsages(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataMigration.Models.DataMigrationQuota" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>

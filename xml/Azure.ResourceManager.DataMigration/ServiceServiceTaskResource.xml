@@ -1,9 +1,9 @@
 <Type Name="ServiceServiceTaskResource" FullName="Azure.ResourceManager.DataMigration.ServiceServiceTaskResource">
-  <TypeSignature Language="C#" Value="public class ServiceServiceTaskResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceServiceTaskResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.ProjectTaskData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.ProjectTaskData&gt;" />
+  <TypeSignature Language="C#" Value="public class ServiceServiceTaskResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceServiceTaskResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" />
-  <TypeSignature Language="VB.NET" Value="Public Class ServiceServiceTaskResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of ProjectTaskData), IPersistableModel(Of ProjectTaskData)" />
-  <TypeSignature Language="F#" Value="type ServiceServiceTaskResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;ProjectTaskData&gt;&#xA;    interface IPersistableModel&lt;ProjectTaskData&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceServiceTaskResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of DataMigrationProjectTaskData), IPersistableModel(Of DataMigrationProjectTaskData)" />
+  <TypeSignature Language="F#" Value="type ServiceServiceTaskResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;DataMigrationProjectTaskData&gt;&#xA;    interface IPersistableModel&lt;DataMigrationProjectTaskData&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -13,10 +13,10 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;</InterfaceName>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;</InterfaceName>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
@@ -68,8 +68,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. This method cancels a service task if it's currently queued or running.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}/cancel</description></item><item><term>Operation Id</term><description>ServiceTasks_Cancel</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. This method cancels a service task if it's currently queued or running.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}/cancel</description></item><item><term>Operation Id</term><description>ServiceTasks_Cancel</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,8 +94,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. This method cancels a service task if it's currently queued or running.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}/cancel</description></item><item><term>Operation Id</term><description>ServiceTasks_Cancel</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. This method cancels a service task if it's currently queued or running.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}/cancel</description></item><item><term>Operation Id</term><description>ServiceTasks_Cancel</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,18 +131,18 @@
       </Docs>
     </Member>
     <Member MemberName="Data">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DataMigration.ProjectTaskData Data { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.ProjectTaskData Data" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData Data" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.Data" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As ProjectTaskData" />
-      <MemberSignature Language="F#" Value="member this.Data : Azure.ResourceManager.DataMigration.ProjectTaskData" Usage="Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As DataMigrationProjectTaskData" />
+      <MemberSignature Language="F#" Value="member this.Data : Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData" Usage="Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ProjectTaskData</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the data representing this Feature. </summary>
@@ -176,8 +176,8 @@
         <param name="deleteRunningTasks"> Delete the resource even if it contains running tasks. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The DELETE method deletes a service task, canceling it first if it's running.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Delete</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The DELETE method deletes a service task, canceling it first if it's running.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Delete</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,8 +207,8 @@
         <param name="deleteRunningTasks"> Delete the resource even if it contains running tasks. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The DELETE method deletes a service task, canceling it first if it's running.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Delete</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The DELETE method deletes a service task, canceling it first if it's running.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Delete</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,8 +235,8 @@
         <param name="expand"> Expand the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The GET method retrieves information about a service task.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The GET method retrieves information about a service task.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,8 +263,8 @@
         <param name="expand"> Expand the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The GET method retrieves information about a service task.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Get</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The GET method retrieves information about a service task.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Get</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,12 +308,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create">
-      <MemberSignature Language="C#" Value="Azure.ResourceManager.DataMigration.ProjectTaskData IJsonModel&lt;ProjectTaskData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DataMigration.ProjectTaskData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DataMigration#ProjectTaskData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ProjectTaskData Implements IJsonModel(Of ProjectTaskData).Create" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.ProjectTaskData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.ProjectTaskData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create (reader, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData IJsonModel&lt;DataMigrationProjectTaskData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DataMigration#DataMigrationProjectTaskData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DataMigrationProjectTaskData Implements IJsonModel(Of DataMigrationProjectTaskData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create (reader, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
@@ -323,7 +323,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ProjectTaskData</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
@@ -340,12 +340,12 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write">
-      <MemberSignature Language="C#" Value="void IJsonModel&lt;ProjectTaskData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DataMigration#ProjectTaskData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ProjectTaskData).Write" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write (writer, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;DataMigrationProjectTaskData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DataMigration#DataMigrationProjectTaskData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of DataMigrationProjectTaskData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write (writer, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
@@ -371,12 +371,12 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create">
-      <MemberSignature Language="C#" Value="Azure.ResourceManager.DataMigration.ProjectTaskData IPersistableModel&lt;ProjectTaskData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DataMigration.ProjectTaskData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#ProjectTaskData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ProjectTaskData Implements IPersistableModel(Of ProjectTaskData).Create" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.ProjectTaskData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.ProjectTaskData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Create (data, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData IPersistableModel&lt;DataMigrationProjectTaskData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#DataMigrationProjectTaskData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As DataMigrationProjectTaskData Implements IPersistableModel(Of DataMigrationProjectTaskData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Create (data, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
@@ -386,7 +386,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.ProjectTaskData</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="data" Type="System.BinaryData" />
@@ -403,12 +403,12 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.GetFormatFromOptions">
-      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ProjectTaskData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#ProjectTaskData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ProjectTaskData).GetFormatFromOptions" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.GetFormatFromOptions options" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;DataMigrationProjectTaskData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#DataMigrationProjectTaskData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of DataMigrationProjectTaskData).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.GetFormatFromOptions options" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
@@ -428,16 +428,16 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write">
-      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ProjectTaskData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#ProjectTaskData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ProjectTaskData).Write" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.ProjectTaskData&gt;.Write options" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;DataMigrationProjectTaskData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DataMigration#DataMigrationProjectTaskData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of DataMigrationProjectTaskData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="serviceServiceTaskResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData&gt;.Write options" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
@@ -463,11 +463,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt; Update (Azure.ResourceManager.DataMigration.ProjectTaskData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt; Update(class Azure.ResourceManager.DataMigration.ProjectTaskData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.Update(Azure.ResourceManager.DataMigration.ProjectTaskData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (data As ProjectTaskData, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServiceServiceTaskResource)" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.DataMigration.ProjectTaskData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&#xA;override this.Update : Azure.ResourceManager.DataMigration.ProjectTaskData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;" Usage="serviceServiceTaskResource.Update (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt; Update (Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt; Update(class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.Update(Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (data As DataMigrationProjectTaskData, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServiceServiceTaskResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&#xA;override this.Update : Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;" Usage="serviceServiceTaskResource.Update (data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -477,15 +477,15 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.DataMigration.ProjectTaskData" />
+        <Parameter Name="data" Type="Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="data"> Information about the task. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The PATCH method updates an existing service task, but since service tasks have no mutable custom properties, there is little reason to do so.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Update</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The PATCH method updates an existing service task, but since service tasks have no mutable custom properties, there is little reason to do so.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Update</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -493,11 +493,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt; UpdateAsync (Azure.ResourceManager.DataMigration.ProjectTaskData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.DataMigration.ProjectTaskData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.UpdateAsync(Azure.ResourceManager.DataMigration.ProjectTaskData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (data As ProjectTaskData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServiceServiceTaskResource))" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.DataMigration.ProjectTaskData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.DataMigration.ProjectTaskData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt;" Usage="serviceServiceTaskResource.UpdateAsync (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt; UpdateAsync (Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource.UpdateAsync(Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (data As DataMigrationProjectTaskData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServiceServiceTaskResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt;" Usage="serviceServiceTaskResource.UpdateAsync (data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -507,15 +507,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataMigration.ServiceServiceTaskResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.DataMigration.ProjectTaskData" />
+        <Parameter Name="data" Type="Azure.ResourceManager.DataMigration.DataMigrationProjectTaskData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="data"> Information about the task. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS instance. The PATCH method updates an existing service task, but since service tasks have no mutable custom properties, there is little reason to do so.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Update</description></item><item><term>Default Api Version</term><description>2022-03-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
+            The service tasks resource is a nested, proxy-only resource representing work performed by a DMS (classic) instance. The PATCH method updates an existing service task, but since service tasks have no mutable custom properties, there is little reason to do so.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.DataMigration/services/{serviceName}/serviceTasks/{taskName}</description></item><item><term>Operation Id</term><description>ServiceTasks_Update</description></item><item><term>Default Api Version</term><description>2025-03-15-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataMigration.ServiceServiceTaskResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

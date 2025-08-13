@@ -25,7 +25,7 @@
   <Docs>
     <summary>
             A class representing the DataMigrationService data model.
-            A Database Migration Service resource
+            An Azure Database Migration Service (classic) resource
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -66,26 +66,6 @@
       </ReturnValue>
       <Docs>
         <summary> The time delay before the service is auto-stopped when idle. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DeleteResourcesOnStop">
-      <MemberSignature Language="C#" Value="public bool? DeleteResourcesOnStop { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DeleteResourcesOnStop" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.DataMigrationServiceData.DeleteResourcesOnStop" />
-      <MemberSignature Language="VB.NET" Value="Public Property DeleteResourcesOnStop As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.DeleteResourcesOnStop : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.DeleteResourcesOnStop" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Whether service resources should be deleted when stopped. (Turned on by default). </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,18 +136,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.ServiceProvisioningState? ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DataMigration.Models.ServiceProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationServiceProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DataMigration.Models.DataMigrationServiceProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.DataMigrationServiceData.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of ServiceProvisioningState)" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.DataMigration.Models.ServiceProvisioningState&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of DataMigrationServiceProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceProvisioningState&gt;" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.DataMigration.Models.ServiceProvisioningState&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationServiceProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource's provisioning state. </summary>
@@ -195,19 +175,39 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.ServiceSku Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.ServiceSku Sku" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.DataMigrationServiceData.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As ServiceSku" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.DataMigration.Models.ServiceSku with get, set" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.Sku" />
+    <Member MemberName="ShouldDeleteResourcesOnStop">
+      <MemberSignature Language="C#" Value="public bool? ShouldDeleteResourcesOnStop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ShouldDeleteResourcesOnStop" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.DataMigrationServiceData.ShouldDeleteResourcesOnStop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShouldDeleteResourcesOnStop As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ShouldDeleteResourcesOnStop : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.ShouldDeleteResourcesOnStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.ServiceSku</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Whether service resources should be deleted when stopped. (Turned on by default). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sku">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationServiceSku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationServiceSku Sku" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.DataMigrationServiceData.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As DataMigrationServiceSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.DataMigration.Models.DataMigrationServiceSku with get, set" Usage="Azure.ResourceManager.DataMigration.DataMigrationServiceData.Sku" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationServiceSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Service SKU. </summary>
@@ -335,7 +335,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

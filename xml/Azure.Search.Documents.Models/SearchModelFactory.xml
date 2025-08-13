@@ -56,6 +56,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AnalyzeTextOptions">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions AnalyzeTextOptions (string text = default, Azure.Search.Documents.Indexes.Models.LexicalAnalyzerName? analyzerName = default, Azure.Search.Documents.Indexes.Models.LexicalTokenizerName? tokenizerName = default, Azure.Search.Documents.Indexes.Models.LexicalNormalizerName? normalizerName = default, System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.TokenFilterName&gt; tokenFilters = default, System.Collections.Generic.IEnumerable&lt;string&gt; charFilters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions AnalyzeTextOptions(string text, valuetype System.Nullable`1&lt;valuetype Azure.Search.Documents.Indexes.Models.LexicalAnalyzerName&gt; analyzerName, valuetype System.Nullable`1&lt;valuetype Azure.Search.Documents.Indexes.Models.LexicalTokenizerName&gt; tokenizerName, valuetype System.Nullable`1&lt;valuetype Azure.Search.Documents.Indexes.Models.LexicalNormalizerName&gt; normalizerName, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Search.Documents.Indexes.Models.TokenFilterName&gt; tokenFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; charFilters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.AnalyzeTextOptions(System.String,System.Nullable{Azure.Search.Documents.Indexes.Models.LexicalAnalyzerName},System.Nullable{Azure.Search.Documents.Indexes.Models.LexicalTokenizerName},System.Nullable{Azure.Search.Documents.Indexes.Models.LexicalNormalizerName},System.Collections.Generic.IEnumerable{Azure.Search.Documents.Indexes.Models.TokenFilterName},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AnalyzeTextOptions (Optional text As String = Nothing, Optional analyzerName As Nullable(Of LexicalAnalyzerName) = Nothing, Optional tokenizerName As Nullable(Of LexicalTokenizerName) = Nothing, Optional normalizerName As Nullable(Of LexicalNormalizerName) = Nothing, Optional tokenFilters As IEnumerable(Of TokenFilterName) = Nothing, Optional charFilters As IEnumerable(Of String) = Nothing) As AnalyzeTextOptions" />
+      <MemberSignature Language="F#" Value="static member AnalyzeTextOptions : string * Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalAnalyzerName&gt; * Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalTokenizerName&gt; * Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalNormalizerName&gt; * seq&lt;Azure.Search.Documents.Indexes.Models.TokenFilterName&gt; * seq&lt;string&gt; -&gt; Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions" Usage="Azure.Search.Documents.Models.SearchModelFactory.AnalyzeTextOptions (text, analyzerName, tokenizerName, normalizerName, tokenFilters, charFilters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="analyzerName" Type="System.Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalAnalyzerName&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tokenizerName" Type="System.Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalTokenizerName&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="normalizerName" Type="System.Nullable&lt;Azure.Search.Documents.Indexes.Models.LexicalNormalizerName&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tokenFilters" Type="System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.TokenFilterName&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="charFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="text"> The text to break into tokens. </param>
+        <param name="analyzerName"> The name of the analyzer to use to break the given text. If this parameter is not specified, you must specify a tokenizer instead. The tokenizer and analyzer parameters are mutually exclusive. </param>
+        <param name="tokenizerName"> The name of the tokenizer to use to break the given text. If this parameter is not specified, you must specify an analyzer instead. The tokenizer and analyzer parameters are mutually exclusive. </param>
+        <param name="normalizerName"> The name of the normalizer to use to normalize the given text. </param>
+        <param name="tokenFilters"> An optional list of token filters to use when breaking the given text. This parameter can only be set when using the tokenizer parameter. </param>
+        <param name="charFilters"> An optional list of character filters to use when breaking the given text. This parameter can only be set when using the tokenizer parameter. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Indexes.Models.AnalyzeTextOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AutocompleteItem">
       <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Models.AutocompleteItem AutocompleteItem (string text, string queryPlusText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Models.AutocompleteItem AutocompleteItem(string text, string queryPlusText) cil managed" />

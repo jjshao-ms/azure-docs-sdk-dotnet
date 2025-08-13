@@ -27,12 +27,12 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="CpuTimeMs">
-      <MemberSignature Language="C#" Value="public float? CpuTimeMs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; CpuTimeMs" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.CpuTimeMs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CpuTimeMs As Nullable(Of Single)" />
-      <MemberSignature Language="F#" Value="member this.CpuTimeMs : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.CpuTimeMs" />
+    <Member MemberName="CpuTimeInMilliseconds">
+      <MemberSignature Language="C#" Value="public float? CpuTimeInMilliseconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; CpuTimeInMilliseconds" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.CpuTimeInMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CpuTimeInMilliseconds As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.CpuTimeInMilliseconds : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.CpuTimeInMilliseconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -47,12 +47,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ElapsedTimeMs">
-      <MemberSignature Language="C#" Value="public float? ElapsedTimeMs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; ElapsedTimeMs" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.ElapsedTimeMs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedTimeMs As Nullable(Of Single)" />
-      <MemberSignature Language="F#" Value="member this.ElapsedTimeMs : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.ElapsedTimeMs" />
+    <Member MemberName="ElapsedTimeInMilliseconds">
+      <MemberSignature Language="C#" Value="public float? ElapsedTimeInMilliseconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; ElapsedTimeInMilliseconds" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.ElapsedTimeInMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedTimeInMilliseconds As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.ElapsedTimeInMilliseconds : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.ElapsedTimeInMilliseconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -272,7 +272,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,18 +307,18 @@
       </Docs>
     </Member>
     <Member MemberName="WaitStats">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.ResourceManager.DataMigration.Models.WaitStatistics&gt; WaitStats { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.ResourceManager.DataMigration.Models.WaitStatistics&gt; WaitStats" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.ResourceManager.DataMigration.Models.MigrationValidationWaitStatistics&gt; WaitStats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.ResourceManager.DataMigration.Models.MigrationValidationWaitStatistics&gt; WaitStats" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.WaitStats" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitStats As IReadOnlyDictionary(Of String, WaitStatistics)" />
-      <MemberSignature Language="F#" Value="member this.WaitStats : System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.ResourceManager.DataMigration.Models.WaitStatistics&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.WaitStats" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitStats As IReadOnlyDictionary(Of String, MigrationValidationWaitStatistics)" />
+      <MemberSignature Language="F#" Value="member this.WaitStats : System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.ResourceManager.DataMigration.Models.MigrationValidationWaitStatistics&gt;" Usage="Azure.ResourceManager.DataMigration.Models.ExecutionStatistics.WaitStats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.ResourceManager.DataMigration.Models.WaitStatistics&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.ResourceManager.DataMigration.Models.MigrationValidationWaitStatistics&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Dictionary of sql query execution wait types and the respective statistics. </summary>

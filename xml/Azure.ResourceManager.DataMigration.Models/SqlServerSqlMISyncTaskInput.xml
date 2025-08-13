@@ -28,11 +28,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlServerSqlMISyncTaskInput (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; selectedDatabases, string storageResourceId, Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo targetConnectionInfo, Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp azureApp);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; selectedDatabases, string storageResourceId, class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo targetConnectionInfo, class Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp azureApp) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.#ctor(System.Collections.Generic.IEnumerable{Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput},System.String,Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (selectedDatabases As IEnumerable(Of MigrateSqlServerSqlMIDatabaseInput), storageResourceId As String, sourceConnectionInfo As SqlConnectionInfo, targetConnectionInfo As MISqlConnectionInfo, azureApp As AzureActiveDirectoryApp)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput : seq&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; * string * Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp -&gt; Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput (selectedDatabases, storageResourceId, sourceConnectionInfo, targetConnectionInfo, azureApp)" />
+      <MemberSignature Language="C#" Value="public SqlServerSqlMISyncTaskInput (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; selectedDatabases, string storageResourceId, Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo targetConnectionInfo, Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp azureApp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; selectedDatabases, string storageResourceId, class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo targetConnectionInfo, class Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp azureApp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.#ctor(System.Collections.Generic.IEnumerable{Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput},System.String,Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selectedDatabases As IEnumerable(Of MigrateSqlServerSqlMIDatabaseInput), storageResourceId As String, sourceConnectionInfo As DataMigrationSqlConnectionInfo, targetConnectionInfo As DataMigrationMISqlConnectionInfo, azureApp As DataMigrationAadApp)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput : seq&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt; * string * Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp -&gt; Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput (selectedDatabases, storageResourceId, sourceConnectionInfo, targetConnectionInfo, azureApp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
@@ -41,16 +41,16 @@
       <Parameters>
         <Parameter Name="selectedDatabases" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DataMigration.Models.MigrateSqlServerSqlMIDatabaseInput&gt;" />
         <Parameter Name="storageResourceId" Type="System.String" />
-        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo" />
-        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo" />
-        <Parameter Name="azureApp" Type="Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp" />
+        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo" />
+        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo" />
+        <Parameter Name="azureApp" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp" />
       </Parameters>
       <Docs>
         <param name="selectedDatabases"> Databases to migrate. </param>
         <param name="storageResourceId"> Fully qualified resourceId of storage. </param>
         <param name="sourceConnectionInfo"> Connection information for source SQL Server. </param>
         <param name="targetConnectionInfo"> Connection information for Azure SQL Database Managed Instance. </param>
-        <param name="azureApp"> Azure Active Directory Application the DMS instance will use to connect to the target instance of Azure SQL Database Managed Instance and the Azure Storage Account. </param>
+        <param name="azureApp"> Azure Active Directory Application the DMS (classic) instance will use to connect to the target instance of Azure SQL Database Managed Instance and the Azure Storage Account. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -58,38 +58,38 @@
       </Docs>
     </Member>
     <Member MemberName="AzureApp">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp AzureApp { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp AzureApp" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp AzureApp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp AzureApp" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.AzureApp" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureApp As AzureActiveDirectoryApp" />
-      <MemberSignature Language="F#" Value="member this.AzureApp : Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.AzureApp" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureApp As DataMigrationAadApp" />
+      <MemberSignature Language="F#" Value="member this.AzureApp : Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.AzureApp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.AzureActiveDirectoryApp</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationAadApp</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Azure Active Directory Application the DMS instance will use to connect to the target instance of Azure SQL Database Managed Instance and the Azure Storage Account. </summary>
+        <summary> Azure Active Directory Application the DMS (classic) instance will use to connect to the target instance of Azure SQL Database Managed Instance and the Azure Storage Account. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackupFileShare">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.FileShare BackupFileShare { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.FileShare BackupFileShare" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo BackupFileShare { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo BackupFileShare" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.BackupFileShare" />
-      <MemberSignature Language="VB.NET" Value="Public Property BackupFileShare As FileShare" />
-      <MemberSignature Language="F#" Value="member this.BackupFileShare : Azure.ResourceManager.DataMigration.Models.FileShare with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.BackupFileShare" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackupFileShare As DataMigrationFileShareInfo" />
+      <MemberSignature Language="F#" Value="member this.BackupFileShare : Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.BackupFileShare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.FileShare</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationFileShareInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Backup file share information for all selected databases. </summary>
@@ -143,18 +143,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo SourceConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo SourceConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo SourceConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo SourceConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.SourceConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As SqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.SourceConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As DataMigrationSqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.SourceConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.SqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationSqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for source SQL Server. </summary>
@@ -302,7 +302,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,18 +337,18 @@
       </Docs>
     </Member>
     <Member MemberName="TargetConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo TargetConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo TargetConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo TargetConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo TargetConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.TargetConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As MISqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.TargetConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As DataMigrationMISqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.SqlServerSqlMISyncTaskInput.TargetConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.MISqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationMISqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for Azure SQL Database Managed Instance. </summary>

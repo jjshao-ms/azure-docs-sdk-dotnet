@@ -1,15 +1,15 @@
 <Type Name="MigrateMISyncCompleteCommandProperties" FullName="Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties">
-  <TypeSignature Language="C#" Value="public class MigrateMISyncCompleteCommandProperties : Azure.ResourceManager.DataMigration.Models.CommandProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MigrateMISyncCompleteCommandProperties extends Azure.ResourceManager.DataMigration.Models.CommandProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;" />
+  <TypeSignature Language="C#" Value="public class MigrateMISyncCompleteCommandProperties : Azure.ResourceManager.DataMigration.Models.DataMigrationCommandProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MigrateMISyncCompleteCommandProperties extends Azure.ResourceManager.DataMigration.Models.DataMigrationCommandProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class MigrateMISyncCompleteCommandProperties&#xA;Inherits CommandProperties&#xA;Implements IJsonModel(Of MigrateMISyncCompleteCommandProperties), IPersistableModel(Of MigrateMISyncCompleteCommandProperties)" />
-  <TypeSignature Language="F#" Value="type MigrateMISyncCompleteCommandProperties = class&#xA;    inherit CommandProperties&#xA;    interface IJsonModel&lt;MigrateMISyncCompleteCommandProperties&gt;&#xA;    interface IPersistableModel&lt;MigrateMISyncCompleteCommandProperties&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class MigrateMISyncCompleteCommandProperties&#xA;Inherits DataMigrationCommandProperties&#xA;Implements IJsonModel(Of MigrateMISyncCompleteCommandProperties), IPersistableModel(Of MigrateMISyncCompleteCommandProperties)" />
+  <TypeSignature Language="F#" Value="type MigrateMISyncCompleteCommandProperties = class&#xA;    inherit DataMigrationCommandProperties&#xA;    interface IJsonModel&lt;MigrateMISyncCompleteCommandProperties&gt;&#xA;    interface IPersistableModel&lt;MigrateMISyncCompleteCommandProperties&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.CommandProperties</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.DataMigration.Models.DataMigrationCommandProperties</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -89,18 +89,18 @@
       </Docs>
     </Member>
     <Member MemberName="OutputErrors">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.ReportableException&gt; OutputErrors { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.DataMigration.Models.ReportableException&gt; OutputErrors" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationReportableException&gt; OutputErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.DataMigration.Models.DataMigrationReportableException&gt; OutputErrors" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties.OutputErrors" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputErrors As IReadOnlyList(Of ReportableException)" />
-      <MemberSignature Language="F#" Value="member this.OutputErrors : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.ReportableException&gt;" Usage="Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties.OutputErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputErrors As IReadOnlyList(Of DataMigrationReportableException)" />
+      <MemberSignature Language="F#" Value="member this.OutputErrors : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationReportableException&gt;" Usage="Azure.ResourceManager.DataMigration.Models.MigrateMISyncCompleteCommandProperties.OutputErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.ReportableException&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.DataMigration.Models.DataMigrationReportableException&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> List of errors that happened during the command execution. </summary>
@@ -228,7 +228,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

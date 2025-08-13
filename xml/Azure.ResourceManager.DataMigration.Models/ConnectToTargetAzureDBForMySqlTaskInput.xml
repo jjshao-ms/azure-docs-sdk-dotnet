@@ -28,19 +28,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConnectToTargetAzureDBForMySqlTaskInput (Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo targetConnectionInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo targetConnectionInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As MySqlConnectionInfo, targetConnectionInfo As MySqlConnectionInfo)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput : Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo -&gt; Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput (sourceConnectionInfo, targetConnectionInfo)" />
+      <MemberSignature Language="C#" Value="public ConnectToTargetAzureDBForMySqlTaskInput (Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo sourceConnectionInfo, Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo targetConnectionInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo sourceConnectionInfo, class Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo targetConnectionInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.#ctor(Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo,Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceConnectionInfo As DataMigrationMySqlConnectionInfo, targetConnectionInfo As DataMigrationMySqlConnectionInfo)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput : Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo * Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo -&gt; Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput" Usage="new Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput (sourceConnectionInfo, targetConnectionInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo" />
-        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo" />
+        <Parameter Name="sourceConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo" />
+        <Parameter Name="targetConnectionInfo" Type="Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo" />
       </Parameters>
       <Docs>
         <param name="sourceConnectionInfo"> Connection information for source MySQL server. </param>
@@ -97,18 +97,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo SourceConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo SourceConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo SourceConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo SourceConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.SourceConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As MySqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.SourceConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionInfo As DataMigrationMySqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.SourceConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.SourceConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for source MySQL server. </summary>
@@ -236,7 +236,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,18 +271,18 @@
       </Docs>
     </Member>
     <Member MemberName="TargetConnectionInfo">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo TargetConnectionInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo TargetConnectionInfo" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo TargetConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo TargetConnectionInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.TargetConnectionInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As MySqlConnectionInfo" />
-      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.TargetConnectionInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetConnectionInfo As DataMigrationMySqlConnectionInfo" />
+      <MemberSignature Language="F#" Value="member this.TargetConnectionInfo : Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo with get, set" Usage="Azure.ResourceManager.DataMigration.Models.ConnectToTargetAzureDBForMySqlTaskInput.TargetConnectionInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataMigration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DataMigration.Models.MySqlConnectionInfo</ReturnType>
+        <ReturnType>Azure.ResourceManager.DataMigration.Models.DataMigrationMySqlConnectionInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Connection information for target Azure Database for MySQL server. </summary>
