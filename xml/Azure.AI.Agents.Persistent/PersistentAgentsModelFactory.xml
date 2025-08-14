@@ -19,6 +19,62 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ActivityFunctionDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ActivityFunctionDefinition ActivityFunctionDefinition (string description = default, Azure.AI.Agents.Persistent.ActivityFunctionParameters parameters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ActivityFunctionDefinition ActivityFunctionDefinition(string description, class Azure.AI.Agents.Persistent.ActivityFunctionParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ActivityFunctionDefinition(System.String,Azure.AI.Agents.Persistent.ActivityFunctionParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ActivityFunctionDefinition (Optional description As String = Nothing, Optional parameters As ActivityFunctionParameters = Nothing) As ActivityFunctionDefinition" />
+      <MemberSignature Language="F#" Value="static member ActivityFunctionDefinition : string * Azure.AI.Agents.Persistent.ActivityFunctionParameters -&gt; Azure.AI.Agents.Persistent.ActivityFunctionDefinition" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ActivityFunctionDefinition (description, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ActivityFunctionDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="parameters" Type="Azure.AI.Agents.Persistent.ActivityFunctionParameters" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="description"> A description of what the function does, used by the model to choose when and how to call the function. </param>
+        <param name="parameters"> The parameters the functions accepts, described as a JSON Schema object. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ActivityFunctionDefinition" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ActivityFunctionDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityFunctionParameters">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ActivityFunctionParameters ActivityFunctionParameters (Azure.AI.Agents.Persistent.ActivityFunctionParametersType type = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.AI.Agents.Persistent.FunctionArgument&gt; properties = default, System.Collections.Generic.IEnumerable&lt;string&gt; required = default, bool? additionalProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ActivityFunctionParameters ActivityFunctionParameters(valuetype Azure.AI.Agents.Persistent.ActivityFunctionParametersType type, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.AI.Agents.Persistent.FunctionArgument&gt; properties, class System.Collections.Generic.IEnumerable`1&lt;string&gt; required, valuetype System.Nullable`1&lt;bool&gt; additionalProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ActivityFunctionParameters(Azure.AI.Agents.Persistent.ActivityFunctionParametersType,System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.AI.Agents.Persistent.FunctionArgument},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ActivityFunctionParameters (Optional type As ActivityFunctionParametersType = Nothing, Optional properties As IReadOnlyDictionary(Of String, FunctionArgument) = Nothing, Optional required As IEnumerable(Of String) = Nothing, Optional additionalProperties As Nullable(Of Boolean) = Nothing) As ActivityFunctionParameters" />
+      <MemberSignature Language="F#" Value="static member ActivityFunctionParameters : Azure.AI.Agents.Persistent.ActivityFunctionParametersType * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.AI.Agents.Persistent.FunctionArgument&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.Agents.Persistent.ActivityFunctionParameters" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ActivityFunctionParameters (type, properties, required, additionalProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ActivityFunctionParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Azure.AI.Agents.Persistent.ActivityFunctionParametersType" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.AI.Agents.Persistent.FunctionArgument&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="required" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="additionalProperties" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The parameter type, it is always object. </param>
+        <param name="properties"> The dictionary of function arguments. </param>
+        <param name="required"> The list of the required parameters. </param>
+        <param name="additionalProperties"> If true the function has additional parameters. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ActivityFunctionParameters" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ActivityFunctionParameters" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AISearchIndexResource">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.AISearchIndexResource AISearchIndexResource (string indexConnectionId = default, string indexName = default, Azure.AI.Agents.Persistent.AzureAISearchQueryType? queryType = default, int? topK = default, string filter = default, string indexAssetId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.AISearchIndexResource AISearchIndexResource(string indexConnectionId, string indexName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Agents.Persistent.AzureAISearchQueryType&gt; queryType, valuetype System.Nullable`1&lt;int32&gt; topK, string filter, string indexAssetId) cil managed" />
@@ -81,6 +137,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BrowserAutomationToolCallDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails BrowserAutomationToolCallDetails (string input = default, string output = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep&gt; steps = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails BrowserAutomationToolCallDetails(string input, string output, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.BrowserAutomationToolCallDetails(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BrowserAutomationToolCallDetails (Optional input As String = Nothing, Optional output As String = Nothing, Optional steps As IEnumerable(Of BrowserAutomationToolCallStep) = Nothing) As BrowserAutomationToolCallDetails" />
+      <MemberSignature Language="F#" Value="static member BrowserAutomationToolCallDetails : string * string * seq&lt;Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep&gt; -&gt; Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.BrowserAutomationToolCallDetails (input, output, steps)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="input"> The input provided to the Browser Automation tool. </param>
+        <param name="output"> The output returned by the Browser Automation tool. </param>
+        <param name="steps"> The steps the Browser Automation tool executed. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserAutomationToolCallStep">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep BrowserAutomationToolCallStep (string lastStepResult = default, string currentState = default, string nextStep = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep BrowserAutomationToolCallStep(string lastStepResult, string currentState, string nextStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.BrowserAutomationToolCallStep(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BrowserAutomationToolCallStep (Optional lastStepResult As String = Nothing, Optional currentState As String = Nothing, Optional nextStep As String = Nothing) As BrowserAutomationToolCallStep" />
+      <MemberSignature Language="F#" Value="static member BrowserAutomationToolCallStep : string * string * string -&gt; Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.BrowserAutomationToolCallStep (lastStepResult, currentState, nextStep)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lastStepResult" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="currentState" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="nextStep" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="lastStepResult"> The result of the last step executed with the Browser. </param>
+        <param name="currentState"> The current state of execution with the Browser. </param>
+        <param name="nextStep"> The next step to execute with the Browser. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.BrowserAutomationToolCallStep" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FileSearchToolCallContent">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.FileSearchToolCallContent FileSearchToolCallContent (Azure.AI.Agents.Persistent.FileSearchToolCallContentType type = default, string text = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.FileSearchToolCallContent FileSearchToolCallContent(valuetype Azure.AI.Agents.Persistent.FileSearchToolCallContentType type, string text) cil managed" />
@@ -105,6 +217,32 @@
         <param name="text"> The text content of the file. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.FileSearchToolCallContent" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.FileSearchToolCallContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionArgument">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.FunctionArgument FunctionArgument (string type = default, string description = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.FunctionArgument FunctionArgument(string type, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.FunctionArgument(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FunctionArgument (Optional type As String = Nothing, Optional description As String = Nothing) As FunctionArgument" />
+      <MemberSignature Language="F#" Value="static member FunctionArgument : string * string -&gt; Azure.AI.Agents.Persistent.FunctionArgument" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.FunctionArgument (type, description)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.FunctionArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of an argument, for example 'string' or 'number'. </param>
+        <param name="description"> The argument description. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.FunctionArgument" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.FunctionArgument" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1285,6 +1423,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunStepActivityDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepActivityDetails RunStepActivityDetails (System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDetailsActivity&gt; activities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepActivityDetails RunStepActivityDetails(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.RunStepDetailsActivity&gt; activities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepActivityDetails(System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunStepDetailsActivity})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepActivityDetails (Optional activities As IEnumerable(Of RunStepDetailsActivity) = Nothing) As RunStepActivityDetails" />
+      <MemberSignature Language="F#" Value="static member RunStepActivityDetails : seq&lt;Azure.AI.Agents.Persistent.RunStepDetailsActivity&gt; -&gt; Azure.AI.Agents.Persistent.RunStepActivityDetails" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepActivityDetails activities" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepActivityDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDetailsActivity&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="activities"> A list of activities for this run step. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepActivityDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepActivityDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunStepAzureAISearchToolCall">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall RunStepAzureAISearchToolCall (string id = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; azureAISearch = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall RunStepAzureAISearchToolCall(string id, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; azureAISearch) cil managed" />
@@ -1362,6 +1524,32 @@
         <param name="bingGrounding"> Reserved for future use. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepBrowserAutomationToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall RunStepBrowserAutomationToolCall (string id = default, Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails browserAutomation = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall RunStepBrowserAutomationToolCall(string id, class Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails browserAutomation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepBrowserAutomationToolCall(System.String,Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepBrowserAutomationToolCall (Optional id As String = Nothing, Optional browserAutomation As BrowserAutomationToolCallDetails = Nothing) As RunStepBrowserAutomationToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepBrowserAutomationToolCall : string * Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails -&gt; Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepBrowserAutomationToolCall (id, browserAutomation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="browserAutomation" Type="Azure.AI.Agents.Persistent.BrowserAutomationToolCallDetails" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the tool call. This ID must be referenced when you submit tool outputs. </param>
+        <param name="browserAutomation"> Details of the browser automation tool call. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1498,6 +1686,66 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunStepConnectedAgent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepConnectedAgent RunStepConnectedAgent (string name = default, string arguments = default, string output = default, string runId = default, string threadId = default, string agentId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepConnectedAgent RunStepConnectedAgent(string name, string arguments, string output, string runId, string threadId, string agentId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepConnectedAgent(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepConnectedAgent (Optional name As String = Nothing, Optional arguments As String = Nothing, Optional output As String = Nothing, Optional runId As String = Nothing, Optional threadId As String = Nothing, Optional agentId As String = Nothing) As RunStepConnectedAgent" />
+      <MemberSignature Language="F#" Value="static member RunStepConnectedAgent : string * string * string * string * string * string -&gt; Azure.AI.Agents.Persistent.RunStepConnectedAgent" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepConnectedAgent (name, arguments, output, runId, threadId, agentId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepConnectedAgent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="arguments" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="threadId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="agentId" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of connected agent. </param>
+        <param name="arguments"> The JSON serialized query to the connected agent. </param>
+        <param name="output"> The tool output. </param>
+        <param name="runId"> The run ID used by the connected agent. </param>
+        <param name="threadId"> The thread ID used by the connected agent. </param>
+        <param name="agentId"> The ID of a connected agent. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgent" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepConnectedAgentToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall RunStepConnectedAgentToolCall (string id = default, Azure.AI.Agents.Persistent.RunStepConnectedAgent connectedAgent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall RunStepConnectedAgentToolCall(string id, class Azure.AI.Agents.Persistent.RunStepConnectedAgent connectedAgent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepConnectedAgentToolCall(System.String,Azure.AI.Agents.Persistent.RunStepConnectedAgent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepConnectedAgentToolCall (Optional id As String = Nothing, Optional connectedAgent As RunStepConnectedAgent = Nothing) As RunStepConnectedAgentToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepConnectedAgentToolCall : string * Azure.AI.Agents.Persistent.RunStepConnectedAgent -&gt; Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepConnectedAgentToolCall (id, connectedAgent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectedAgent" Type="Azure.AI.Agents.Persistent.RunStepConnectedAgent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the tool call. This ID must be referenced when you submit tool outputs. </param>
+        <param name="connectedAgent"> The connected agent step information. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunStepDeepResearchToolCall">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall RunStepDeepResearchToolCall (string id = default, Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails deepResearch = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall RunStepDeepResearchToolCall(string id, class Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails deepResearch) cil managed" />
@@ -1572,10 +1820,66 @@
         <param name="stepDetails">
             The details of the run step.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDetail" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMessageCreation" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMCPObject" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMessageCreation" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDelta" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDelta" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaAzureAISearchToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall RunStepDeltaAzureAISearchToolCall (int index = 0, string id = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; azureAISearch = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall RunStepDeltaAzureAISearchToolCall(int32 index, string id, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; azureAISearch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaAzureAISearchToolCall(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaAzureAISearchToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional azureAISearch As IReadOnlyDictionary(Of String, String) = Nothing) As RunStepDeltaAzureAISearchToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaAzureAISearchToolCall : int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaAzureAISearchToolCall (index, id, azureAISearch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="azureAISearch" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="azureAISearch"> Reserved for future use. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaBingGroundingToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall RunStepDeltaBingGroundingToolCall (int index = 0, string id = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; bingGrounding = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall RunStepDeltaBingGroundingToolCall(int32 index, string id, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; bingGrounding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaBingGroundingToolCall(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaBingGroundingToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional bingGrounding As IReadOnlyDictionary(Of String, String) = Nothing) As RunStepDeltaBingGroundingToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaBingGroundingToolCall : int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaBingGroundingToolCall (index, id, bingGrounding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="bingGrounding" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="bingGrounding"> Reserved for future use. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1776,6 +2080,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunStepDeltaConnectedAgentToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall RunStepDeltaConnectedAgentToolCall (int index = 0, string id = default, Azure.AI.Agents.Persistent.RunStepConnectedAgent connectedAgent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall RunStepDeltaConnectedAgentToolCall(int32 index, string id, class Azure.AI.Agents.Persistent.RunStepConnectedAgent connectedAgent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaConnectedAgentToolCall(System.Int32,System.String,Azure.AI.Agents.Persistent.RunStepConnectedAgent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaConnectedAgentToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional connectedAgent As RunStepConnectedAgent = Nothing) As RunStepDeltaConnectedAgentToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaConnectedAgentToolCall : int * string * Azure.AI.Agents.Persistent.RunStepConnectedAgent -&gt; Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaConnectedAgentToolCall (index, id, connectedAgent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectedAgent" Type="Azure.AI.Agents.Persistent.RunStepConnectedAgent" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="connectedAgent"> The collection of tool calls for the tool call detail item. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaDeepResearchToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall RunStepDeltaDeepResearchToolCall (int index = 0, string id = default, Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails deepResearch = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall RunStepDeltaDeepResearchToolCall(int32 index, string id, class Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails deepResearch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaDeepResearchToolCall(System.Int32,System.String,Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaDeepResearchToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional deepResearch As RunStepDeepResearchToolCallDetails = Nothing) As RunStepDeltaDeepResearchToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaDeepResearchToolCall : int * string * Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails -&gt; Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaDeepResearchToolCall (index, id, deepResearch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="deepResearch" Type="Azure.AI.Agents.Persistent.RunStepDeepResearchToolCallDetails" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="deepResearch"> The details of DeepResearch tool call. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunStepDeltaFileSearchToolCall">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall RunStepDeltaFileSearchToolCall (int index = 0, string id = default, Azure.AI.Agents.Persistent.RunStepFileSearchToolCallResults fileSearch = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall RunStepDeltaFileSearchToolCall(int32 index, string id, class Azure.AI.Agents.Persistent.RunStepFileSearchToolCallResults fileSearch) cil managed" />
@@ -1863,6 +2223,58 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunStepDeltaMCPObject">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaMCPObject RunStepDeltaMCPObject (System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall&gt; toolCalls = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaMCPObject RunStepDeltaMCPObject(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall&gt; toolCalls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaMCPObject(System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaMCPObject (Optional toolCalls As IEnumerable(Of RunStepDeltaMcpToolCall) = Nothing) As RunStepDeltaMCPObject" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaMCPObject : seq&lt;Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaMCPObject" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaMCPObject toolCalls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaMCPObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolCalls" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="toolCalls"> The collection of tool calls for the tool call detail item. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMCPObject" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMCPObject" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaMcpToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall RunStepDeltaMcpToolCall (int index = 0, string id = default, string arguments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall RunStepDeltaMcpToolCall(int32 index, string id, string arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaMcpToolCall(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaMcpToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional arguments As String = Nothing) As RunStepDeltaMcpToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaMcpToolCall : int * string * string -&gt; Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaMcpToolCall (index, id, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="arguments" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="arguments"> The arguments for MCP call. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunStepDeltaMessageCreation">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaMessageCreation RunStepDeltaMessageCreation (Azure.AI.Agents.Persistent.RunStepDeltaMessageCreationObject messageCreation = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaMessageCreation RunStepDeltaMessageCreation(class Azure.AI.Agents.Persistent.RunStepDeltaMessageCreationObject messageCreation) cil managed" />
@@ -1910,6 +2322,58 @@
         <param name="messageId"> The ID of the newly-created message. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMessageCreationObject" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMessageCreationObject" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaOpenAPIObject">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject RunStepDeltaOpenAPIObject (System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall&gt; toolCalls = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject RunStepDeltaOpenAPIObject(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall&gt; toolCalls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaOpenAPIObject(System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaOpenAPIObject (Optional toolCalls As IEnumerable(Of RunStepDeltaOpenAPIToolCall) = Nothing) As RunStepDeltaOpenAPIObject" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaOpenAPIObject : seq&lt;Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaOpenAPIObject toolCalls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolCalls" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="toolCalls"> The collection of tool calls for the tool call detail item. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIObject" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaOpenAPIToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall RunStepDeltaOpenAPIToolCall (int index = 0, string id = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; openAPI = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall RunStepDeltaOpenAPIToolCall(int32 index, string id, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; openAPI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaOpenAPIToolCall(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaOpenAPIToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional openAPI As IReadOnlyDictionary(Of String, String) = Nothing) As RunStepDeltaOpenAPIToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaOpenAPIToolCall : int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaOpenAPIToolCall (index, id, openAPI)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="openAPI" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="openAPI"> Reserved for future use. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1964,10 +2428,40 @@
         <param name="toolCalls">
             The collection of tool calls for the tool call detail item.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCall" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFunctionToolCall" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDetailsActivity">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDetailsActivity RunStepDetailsActivity (Azure.AI.Agents.Persistent.RunStepDetailsActivityType type = default, string id = default, string serverLabel = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.AI.Agents.Persistent.ActivityFunctionDefinition&gt; tools = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDetailsActivity RunStepDetailsActivity(valuetype Azure.AI.Agents.Persistent.RunStepDetailsActivityType type, string id, string serverLabel, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.AI.Agents.Persistent.ActivityFunctionDefinition&gt; tools) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDetailsActivity(Azure.AI.Agents.Persistent.RunStepDetailsActivityType,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.AI.Agents.Persistent.ActivityFunctionDefinition})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDetailsActivity (Optional type As RunStepDetailsActivityType = Nothing, Optional id As String = Nothing, Optional serverLabel As String = Nothing, Optional tools As IReadOnlyDictionary(Of String, ActivityFunctionDefinition) = Nothing) As RunStepDetailsActivity" />
+      <MemberSignature Language="F#" Value="static member RunStepDetailsActivity : Azure.AI.Agents.Persistent.RunStepDetailsActivityType * string * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.AI.Agents.Persistent.ActivityFunctionDefinition&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDetailsActivity" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDetailsActivity (type, id, serverLabel, tools)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDetailsActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Azure.AI.Agents.Persistent.RunStepDetailsActivityType" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serverLabel" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tools" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.AI.Agents.Persistent.ActivityFunctionDefinition&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The activity type, which is always 'mcp_list_tools'. </param>
+        <param name="id"> The activity ID. </param>
+        <param name="serverLabel"> Server label. </param>
+        <param name="tools"> The supported function list. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDetailsActivity" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDetailsActivity" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2322,7 +2816,7 @@
         <param name="toolCalls">
             A list of tool call details for this run step.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCall" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingCustomSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepSharepointToolCall" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingCustomSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepSharepointToolCall" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCallDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCallDetails" /> instance for mocking. </returns>

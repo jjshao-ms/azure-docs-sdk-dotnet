@@ -1598,6 +1598,38 @@
           <paramref name="run" /> or <paramref name="toolOutputs" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="SubmitToolOutputsToStream">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStream (Azure.AI.Agents.Persistent.ThreadRun run, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStream(class Azure.AI.Agents.Persistent.ThreadRun run, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToStream(Azure.AI.Agents.Persistent.ThreadRun,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolOutput},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolApproval},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SubmitToolOutputsToStream (run As ThreadRun, toolOutputs As IEnumerable(Of ToolOutput), toolApprovals As IEnumerable(Of ToolApproval), Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToolOutputsToStream : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.SubmitToolOutputsToStream : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.SubmitToolOutputsToStream (run, toolOutputs, toolApprovals, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="run" Type="Azure.AI.Agents.Persistent.ThreadRun" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolOutputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolApprovals" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="run"> The <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> that the tool outputs should be submitted to. </param>
+        <param name="toolOutputs"> A list of tools for which the outputs are being submitted. </param>
+        <param name="toolApprovals">A list of tool approvals for the MCP call.</param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Submits outputs from tools as requested by tool calls in a stream. Stream updates that need submitted tool outputs will have a status of 'RunStatus.RequiresAction'. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="run" /> or <paramref name="toolOutputs" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="SubmitToolOutputsToStreamAsync">
       <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStreamAsync (Azure.AI.Agents.Persistent.ThreadRun run, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStreamAsync(class Azure.AI.Agents.Persistent.ThreadRun run, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1621,6 +1653,38 @@
       <Docs>
         <param name="run"> The <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> that the tool outputs should be submitted to. </param>
         <param name="toolOutputs"> A list of tools for which the outputs are being submitted. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Submits outputs from tools as requested by tool calls in a stream. Stream updates that need submitted tool outputs will have a status of 'RunStatus.RequiresAction'. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="run" /> or <paramref name="toolOutputs" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitToolOutputsToStreamAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStreamAsync (Azure.AI.Agents.Persistent.ThreadRun run, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Agents.Persistent.StreamingUpdate&gt; SubmitToolOutputsToStreamAsync(class Azure.AI.Agents.Persistent.ThreadRun run, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt; toolOutputs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolApproval&gt; toolApprovals, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadRuns.SubmitToolOutputsToStreamAsync(Azure.AI.Agents.Persistent.ThreadRun,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolOutput},System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.ToolApproval},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SubmitToolOutputsToStreamAsync (run As ThreadRun, toolOutputs As IEnumerable(Of ToolOutput), toolApprovals As IEnumerable(Of ToolApproval), Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToolOutputsToStreamAsync : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;&#xA;override this.SubmitToolOutputsToStreamAsync : Azure.AI.Agents.Persistent.ThreadRun * seq&lt;Azure.AI.Agents.Persistent.ToolOutput&gt; * seq&lt;Azure.AI.Agents.Persistent.ToolApproval&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;" Usage="threadRuns.SubmitToolOutputsToStreamAsync (run, toolOutputs, toolApprovals, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Agents.Persistent.StreamingUpdate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="run" Type="Azure.AI.Agents.Persistent.ThreadRun" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolOutputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="toolApprovals" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolApproval&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="run"> The <see cref="T:Azure.AI.Agents.Persistent.ThreadRun" /> that the tool outputs should be submitted to. </param>
+        <param name="toolOutputs"> A list of tools for which the outputs are being submitted. </param>
+        <param name="toolApprovals">A list of tool approvals for the MCP call.</param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Submits outputs from tools as requested by tool calls in a stream. Stream updates that need submitted tool outputs will have a status of 'RunStatus.RequiresAction'. </summary>
         <returns>To be added.</returns>
