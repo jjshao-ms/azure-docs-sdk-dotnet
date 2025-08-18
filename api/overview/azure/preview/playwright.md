@@ -1,7 +1,7 @@
 ---
 title: Azure Playwright SDK for .NET
 description: Reference for Azure Playwright SDK for .NET
-ms.date: 08/15/2025
+ms.date: 08/18/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: playwright
