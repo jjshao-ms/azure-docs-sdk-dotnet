@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Resources",
-  "Version": "1.11.0",
+  "Version": "1.11.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/resources/Azure.ResourceManager.Resources",
   "ServiceDirectory": "resources",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Resources",
-  "ReleaseStatus": "2025-06-23",
+  "ReleaseStatus": "2025-08-20",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "name": "Azure.ResourceManager.Resources",
     "safeName": "AzureResourceManagerResources",
+    "name": "Azure.ResourceManager.Resources",
     "triggeringPaths": [
       "/sdk/resources/ci.mgmt.yml"
     ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
+    "CheckAOTCompat": true,
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.Resources"
+    },
     "BuildSnippets": true,
-    "AOTTestInputs": []
+    "CIMatrixConfigs": []
   },
   "Namespaces": [
     "Azure.ResourceManager.Resources",
