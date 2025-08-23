@@ -399,6 +399,70 @@
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="threadId" /> is empty.</exception>
       </Docs>
     </Member>
+    <Member MemberName="DeleteMessage">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; DeleteMessage (string threadId, string messageId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; DeleteMessage(string threadId, string messageId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadMessages.DeleteMessage(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteMessage (threadId As String, messageId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMessage : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.DeleteMessage : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="threadMessages.DeleteMessage (threadId, messageId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="messageId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="threadId"> The ID of the thread to delete. </param>
+        <param name="messageId">The ID of the message to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a thread message. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="threadId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="threadId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; DeleteMessageAsync (string threadId, string messageId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; DeleteMessageAsync(string threadId, string messageId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ThreadMessages.DeleteMessageAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteMessageAsync (threadId As String, messageId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMessageAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.DeleteMessageAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="threadMessages.DeleteMessageAsync (threadId, messageId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="messageId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="threadId"> The ID of the thread to delete. </param>
+        <param name="messageId">The ID of the message to delete. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Deletes a thread message. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="threadId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="threadId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetMessage">
       <MemberSignature Language="C#" Value="public virtual Azure.Response GetMessage (string threadId, string messageId, Azure.RequestContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetMessage(string threadId, string messageId, class Azure.RequestContext context) cil managed" />
