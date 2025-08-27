@@ -13,6 +13,7 @@
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -53,12 +55,61 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Detail message that describes the current result. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Q850Details">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.SipDiagnosticInfo Q850Details { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.SipDiagnosticInfo Q850Details" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.ResultInformation.Q850Details" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Q850Details As SipDiagnosticInfo" />
+      <MemberSignature Language="F#" Value="member this.Q850Details : Azure.Communication.CallAutomation.SipDiagnosticInfo" Usage="Azure.Communication.CallAutomation.ResultInformation.Q850Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallAutomation.SipDiagnosticInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Q850 cause from SBC. This can be helpful to troubleshoot call issues if this result was unexpected.
+            This is only applicable for PSTN calls and will be null if SBC/Carrier does not provide this information.
+            Do not solely rely on this information for troubleshooting, as it may not always be available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SipDetails">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.SipDiagnosticInfo SipDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.SipDiagnosticInfo SipDetails" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.ResultInformation.SipDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SipDetails As SipDiagnosticInfo" />
+      <MemberSignature Language="F#" Value="member this.SipDetails : Azure.Communication.CallAutomation.SipDiagnosticInfo" Usage="Azure.Communication.CallAutomation.ResultInformation.SipDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallAutomation.SipDiagnosticInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sip response from SBC. This can be helpful to troubleshoot PSTN call if this result was unexpected.
+            This is only applicable for PSTN calls and will be null if SBC/Carrier does not provide this information.
+            Do not solely rely on this information for troubleshooting, as it may not always be available.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,6 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>

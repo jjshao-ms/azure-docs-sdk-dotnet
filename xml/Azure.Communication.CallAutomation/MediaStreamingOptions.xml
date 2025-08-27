@@ -10,6 +10,7 @@
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,43 +31,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="audioChannelType" Type="Azure.Communication.CallAutomation.MediaStreamingAudioChannel" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="streamingTransport" Type="Azure.Communication.CallAutomation.StreamingTransport" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="audioChannelType" Type="Azure.Communication.CallAutomation.MediaStreamingAudioChannel" />
+        <Parameter Name="streamingTransport" Type="Azure.Communication.CallAutomation.StreamingTransport" />
       </Parameters>
       <Docs>
         <param name="audioChannelType"> The audio channel type to stream, e.g., unmixed audio, mixed audio. </param>
         <param name="streamingTransport">Media streaming transport.</param>
         <summary> Initializes a new instance of <see cref="T:Azure.Communication.CallAutomation.MediaStreamingOptions" />. </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MediaStreamingOptions (Uri transportUri, Azure.Communication.CallAutomation.MediaStreamingContent contentType, Azure.Communication.CallAutomation.MediaStreamingAudioChannel audioChannelType, Azure.Communication.CallAutomation.MediaStreamingTransport transportType = default, bool? startMediaStreaming = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri transportUri, valuetype Azure.Communication.CallAutomation.MediaStreamingContent contentType, valuetype Azure.Communication.CallAutomation.MediaStreamingAudioChannel audioChannelType, valuetype Azure.Communication.CallAutomation.MediaStreamingTransport transportType, valuetype System.Nullable`1&lt;bool&gt; startMediaStreaming) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.MediaStreamingOptions.#ctor(System.Uri,Azure.Communication.CallAutomation.MediaStreamingContent,Azure.Communication.CallAutomation.MediaStreamingAudioChannel,Azure.Communication.CallAutomation.MediaStreamingTransport,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (transportUri As Uri, contentType As MediaStreamingContent, audioChannelType As MediaStreamingAudioChannel, Optional transportType As MediaStreamingTransport = Nothing, Optional startMediaStreaming As Nullable(Of Boolean) = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.MediaStreamingOptions : Uri * Azure.Communication.CallAutomation.MediaStreamingContent * Azure.Communication.CallAutomation.MediaStreamingAudioChannel * Azure.Communication.CallAutomation.MediaStreamingTransport * Nullable&lt;bool&gt; -&gt; Azure.Communication.CallAutomation.MediaStreamingOptions" Usage="new Azure.Communication.CallAutomation.MediaStreamingOptions (transportUri, contentType, audioChannelType, transportType, startMediaStreaming)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="transportUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="contentType" Type="Azure.Communication.CallAutomation.MediaStreamingContent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="audioChannelType" Type="Azure.Communication.CallAutomation.MediaStreamingAudioChannel" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="transportType" Type="Azure.Communication.CallAutomation.MediaStreamingTransport" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="startMediaStreaming" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="transportUri">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="audioChannelType">To be added.</param>
-        <param name="transportType">To be added.</param>
-        <param name="startMediaStreaming">To be added.</param>
-        <summary> Initializes a new instance of MediaStreamingOptions. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,6 +54,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.Communication.CallAutomation.AudioFormat&gt;</ReturnType>
@@ -100,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -120,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -140,6 +117,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Communication.CallAutomation.MediaStreamingAudioChannel</ReturnType>
@@ -151,18 +129,16 @@
       </Docs>
     </Member>
     <Member MemberName="MediaStreamingContent">
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.MediaStreamingContent MediaStreamingContent { get; set; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.MediaStreamingContent MediaStreamingContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallAutomation.MediaStreamingContent MediaStreamingContent" />
       <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingContent" />
-      <MemberSignature Language="VB.NET" Value="Public Property MediaStreamingContent As MediaStreamingContent" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.MediaStreamingContent : Azure.Communication.CallAutomation.MediaStreamingContent with get, set" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingContent" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.MediaStreamingContent MediaStreamingContent { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaStreamingContent As MediaStreamingContent" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.MediaStreamingContent : Azure.Communication.CallAutomation.MediaStreamingContent" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingContent" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaStreamingContent As MediaStreamingContent" />
+      <MemberSignature Language="F#" Value="member this.MediaStreamingContent : Azure.Communication.CallAutomation.MediaStreamingContent with get, set" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Communication.CallAutomation.MediaStreamingContent</ReturnType>
@@ -174,23 +150,19 @@
       </Docs>
     </Member>
     <Member MemberName="MediaStreamingTransport">
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.StreamingTransport MediaStreamingTransport { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallAutomation.StreamingTransport MediaStreamingTransport" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.StreamingTransport MediaStreamingTransport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallAutomation.StreamingTransport MediaStreamingTransport" />
       <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingTransport" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaStreamingTransport As StreamingTransport" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.MediaStreamingTransport : Azure.Communication.CallAutomation.StreamingTransport" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingTransport" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.MediaStreamingTransport MediaStreamingTransport { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallAutomation.MediaStreamingTransport MediaStreamingTransport" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaStreamingTransport As MediaStreamingTransport" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.MediaStreamingTransport : Azure.Communication.CallAutomation.MediaStreamingTransport" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingTransport" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaStreamingTransport As StreamingTransport" />
+      <MemberSignature Language="F#" Value="member this.MediaStreamingTransport : Azure.Communication.CallAutomation.StreamingTransport" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.MediaStreamingTransport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Communication.CallAutomation.StreamingTransport</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Communication.CallAutomation.MediaStreamingTransport</ReturnType>
+        <ReturnType>Azure.Communication.CallAutomation.StreamingTransport</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The type of tranport to be used for media streaming, eg. Websocket. </summary>
@@ -208,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -219,18 +192,16 @@
       </Docs>
     </Member>
     <Member MemberName="TransportUri">
-      <MemberSignature Language="C#" Value="public Uri TransportUri { get; set; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Uri TransportUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri TransportUri" />
       <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.MediaStreamingOptions.TransportUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property TransportUri As Uri" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.TransportUri : Uri with get, set" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.TransportUri" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Uri TransportUri { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportUri As Uri" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.TransportUri : Uri" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.TransportUri" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransportUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.TransportUri : Uri with get, set" Usage="Azure.Communication.CallAutomation.MediaStreamingOptions.TransportUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
