@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: redisenterprise
 ---
-# Azure Redisenterprise SDK for .NET - preview
-## Packages - preview
+# Azure Redisenterprise SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](redisenterprise-index.md)]
