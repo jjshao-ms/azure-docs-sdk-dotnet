@@ -1,12 +1,12 @@
 ---
 title: Azure Communication Phone Numbers client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Communication.PhoneNumbers, communication
-ms.date: 06/20/2025
+ms.date: 08/28/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication Phone Numbers client library for .NET - version 1.4.0 
+# Azure Communication Phone Numbers client library for .NET - version 1.5.0 
 
 
 Azure Communication Phone Numbers is managing phone numbers for Azure Communication Services.
@@ -41,7 +41,7 @@ Here's an example using the Azure CLI:
 
 This SDK provides functionality to easily manage `direct offer` and `direct routing` numbers.
 
-The `direct offer` numbers come in two types: Geographic and Toll-Free. Geographic phone plans are phone plans associated with a location, whose phone numbers' area codes are associated with the area code of a geographic location. Toll-Free phone plans are phone plans not associated location. For example, in the US, toll-free numbers can come with area codes such as 800 or 888.
+The `direct offer` numbers come in three types: Geographic, Toll-Free and Mobile. Geographic and Mobile phone plans are phone plans associated with a location, whose phone numbers' area codes are associated with the area code of a geographic location. Toll-Free phone plans are phone plans not associated location. For example, in the US, toll-free numbers can come with area codes such as 800 or 888.
 They are managed using the `PhoneNumbersClient`
 
 The `direct routing` feature enables connecting your existing telephony infrastructure to ACS.
@@ -82,9 +82,9 @@ client = new SipRoutingClient(endpoint, tokenCredential);
 ### Phone numbers client
 
 #### Phone number types overview
-Phone numbers come in two types: Geographic and Toll-Free. Geographic phone plans are phone plans associated with a location, whose phone numbers' area codes are associated with the area code of a geographic location. Toll-Free phone plans are phone plans not associated location. For example, in the US, toll-free numbers can come with area codes such as 800 or 888.
-
-All geographic phone plans within the same country are grouped into a phone plan group with a Geographic phone number type. All Toll-Free phone plans within the same country are grouped into a phone plan group.
+Phone numbers come in three types; Geographic, Toll-Free and Mobile. Toll-Free numbers are not associated with a location. For example, in the US, toll-free numbers can come with area codes such as 800 or 888. Geographic and Mobile phone numbers are phone numbers associated with a location.
+ 
+Phone number types with the same country are grouped into a phone plan group with that phone number type. For example all Toll-Free phone numbers within the same country are grouped into a phone plan group.
 
 #### Searching, purchasing and releasing phone numbers
 
@@ -112,11 +112,11 @@ We guarantee that all client instance methods are thread-safe and independent of
 
 ### Additional concepts
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/core/Azure.Core/samples/Diagnostics.md) |
 [Mocking](https://learn.microsoft.com/dotnet/azure/sdk/unit-testing-mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
@@ -299,8 +299,8 @@ This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For m
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
 [azure_portal]: https://portal.azure.com
 [azure_identity]: https://learn.microsoft.com/dotnet/api/azure.identity?view=azure-dotnet
-[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.PhoneNumbers_1.4.0/sdk/communication/Azure.Communication.PhoneNumbers/src
-[source_samples]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.4.0/sdk/communication/Azure.Communication.PhoneNumbers/samples
+[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.PhoneNumbers_1.5.0/sdk/communication/Azure.Communication.PhoneNumbers/src
+[source_samples]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Communication.PhoneNumbers_1.5.0/sdk/communication/Azure.Communication.PhoneNumbers/samples
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
