@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.EventGrid",
-  "Version": "1.2.0-beta.1",
+  "Version": "1.2.0-beta.2",
   "DevVersion": null,
   "DirectoryPath": "sdk/eventgrid/Azure.ResourceManager.EventGrid",
   "ServiceDirectory": "eventgrid",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.EventGrid",
-  "ReleaseStatus": "2025-06-05",
+  "ReleaseStatus": "2025-09-03",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
+    "safeName": "AzureResourceManagerEventGrid",
     "triggeringPaths": [
       "/sdk/eventgrid/ci.mgmt.yml"
     ],
-    "safeName": "AzureResourceManagerEventGrid",
     "name": "Azure.ResourceManager.EventGrid"
   },
   "CIParameters": {
+    "CheckAOTCompat": true,
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.EventGrid"
+    },
     "CIMatrixConfigs": [],
-    "CheckAOTCompat": false,
-    "BuildSnippets": true,
-    "AOTTestInputs": []
+    "BuildSnippets": true
   },
   "Namespaces": [
     "Azure.ResourceManager.EventGrid",
