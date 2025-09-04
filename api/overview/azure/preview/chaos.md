@@ -1,7 +1,7 @@
 ---
 title: Azure Chaos SDK for .NET
 description: Reference for Azure Chaos SDK for .NET
-ms.date: 09/03/2025
+ms.date: 09/04/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: chaos
