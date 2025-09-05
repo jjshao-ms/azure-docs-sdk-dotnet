@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: playwright
 ---
-# Azure Playwright SDK for .NET - preview
-## Packages - preview
+# Azure Playwright SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](playwright-index.md)]
