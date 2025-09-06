@@ -177,6 +177,58 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AzureBlobKnowledgeSourceParameters">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters AzureBlobKnowledgeSourceParameters (Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity identity = default, string connectionString = default, string containerName = default, string folderPath = default, Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer embeddingModel = default, Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel chatCompletionModel = default, Azure.Search.Documents.Indexes.Models.IndexingSchedule ingestionSchedule = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; createdResources = default, bool? disableImageVerbalization = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters AzureBlobKnowledgeSourceParameters(class Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity identity, string connectionString, string containerName, string folderPath, class Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer embeddingModel, class Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel chatCompletionModel, class Azure.Search.Documents.Indexes.Models.IndexingSchedule ingestionSchedule, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; createdResources, valuetype System.Nullable`1&lt;bool&gt; disableImageVerbalization) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.AzureBlobKnowledgeSourceParameters(Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity,System.String,System.String,System.String,Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer,Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel,Azure.Search.Documents.Indexes.Models.IndexingSchedule,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureBlobKnowledgeSourceParameters (Optional identity As SearchIndexerDataIdentity = Nothing, Optional connectionString As String = Nothing, Optional containerName As String = Nothing, Optional folderPath As String = Nothing, Optional embeddingModel As VectorSearchVectorizer = Nothing, Optional chatCompletionModel As KnowledgeAgentModel = Nothing, Optional ingestionSchedule As IndexingSchedule = Nothing, Optional createdResources As IReadOnlyDictionary(Of String, String) = Nothing, Optional disableImageVerbalization As Nullable(Of Boolean) = Nothing) As AzureBlobKnowledgeSourceParameters" />
+      <MemberSignature Language="F#" Value="static member AzureBlobKnowledgeSourceParameters : Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity * string * string * string * Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer * Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel * Azure.Search.Documents.Indexes.Models.IndexingSchedule * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Nullable&lt;bool&gt; -&gt; Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters" Usage="Azure.Search.Documents.Models.SearchModelFactory.AzureBlobKnowledgeSourceParameters (identity, connectionString, containerName, folderPath, embeddingModel, chatCompletionModel, ingestionSchedule, createdResources, disableImageVerbalization)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionString" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="containerName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="folderPath" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="embeddingModel" Type="Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="chatCompletionModel" Type="Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="ingestionSchedule" Type="Azure.Search.Documents.Indexes.Models.IndexingSchedule" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="createdResources" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="disableImageVerbalization" Type="System.Nullable&lt;System.Boolean&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="identity">
+            An explicit identity to use for this knowledge source.
+            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataNoneIdentity" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataUserAssignedIdentity" />.
+            </param>
+        <param name="connectionString"> Key-based connection string or the ResourceId format if using a managed identity. </param>
+        <param name="containerName"> The name of the blob storage container. </param>
+        <param name="folderPath"> Optional folder path within the container. </param>
+        <param name="embeddingModel">
+            Optional vectorizer configuration for vectorizing content.
+            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.AIServicesVisionVectorizer" />, <see cref="T:Azure.Search.Documents.Indexes.Models.AzureMachineLearningVectorizer" />, <see cref="T:Azure.Search.Documents.Indexes.Models.AzureOpenAIVectorizer" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.WebApiVectorizer" />.
+            </param>
+        <param name="chatCompletionModel">
+            Optional chat completion model for image verbalization or context extraction.
+            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.KnowledgeAgentAzureOpenAIModel" />.
+            </param>
+        <param name="ingestionSchedule"> Optional schedule for data ingestion. </param>
+        <param name="createdResources"> Resources created by the knowledge source. </param>
+        <param name="disableImageVerbalization"> Indicates whether image verbalization should be disabled. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CharFilter">
       <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Indexes.Models.CharFilter CharFilter (string oDataType, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Indexes.Models.CharFilter CharFilter(string oDataType, string name) cil managed" />
@@ -751,11 +803,11 @@
       </Docs>
     </Member>
     <Member MemberName="KnowledgeAgentActivityRecord">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord KnowledgeAgentActivityRecord (int id = 0, string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord KnowledgeAgentActivityRecord(int32 id, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentActivityRecord(System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentActivityRecord (Optional id As Integer = 0, Optional type As String = Nothing) As KnowledgeAgentActivityRecord" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentActivityRecord : int * string -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentActivityRecord (id, type)" />
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord KnowledgeAgentActivityRecord (int id = 0, string type = default, int? elapsedMs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord KnowledgeAgentActivityRecord(int32 id, string type, valuetype System.Nullable`1&lt;int32&gt; elapsedMs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentActivityRecord(System.Int32,System.String,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentActivityRecord (Optional id As Integer = 0, Optional type As String = Nothing, Optional elapsedMs As Nullable(Of Integer) = Nothing) As KnowledgeAgentActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentActivityRecord : int * string * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentActivityRecord (id, type, elapsedMs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
@@ -767,51 +819,143 @@
       <Parameters>
         <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The ID of the activity record. </param>
         <param name="type"> The type of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord" />. </summary>
         <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KnowledgeAgentAzureSearchDocReference">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference KnowledgeAgentAzureSearchDocReference (string id = default, int activitySource = 0, string docKey = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; sourceData = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference KnowledgeAgentAzureSearchDocReference(string id, int32 activitySource, string docKey, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; sourceData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureSearchDocReference(System.String,System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentAzureSearchDocReference (Optional id As String = Nothing, Optional activitySource As Integer = 0, Optional docKey As String = Nothing, Optional sourceData As IReadOnlyDictionary(Of String, Object) = Nothing) As KnowledgeAgentAzureSearchDocReference" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentAzureSearchDocReference : string * int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureSearchDocReference (id, activitySource, docKey, sourceData)" />
+    <Member MemberName="KnowledgeAgentAzureBlobActivityArguments">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments KnowledgeAgentAzureBlobActivityArguments (string search = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments KnowledgeAgentAzureBlobActivityArguments(string search) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobActivityArguments(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentAzureBlobActivityArguments (Optional search As String = Nothing) As KnowledgeAgentAzureBlobActivityArguments" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentAzureBlobActivityArguments : string -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobActivityArguments search" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference</ReturnType>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="search" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="search"> The search string used to query blob contents. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentAzureBlobActivityRecord">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord KnowledgeAgentAzureBlobActivityRecord (int id = 0, int? elapsedMs = default, string knowledgeSourceName = default, DateTimeOffset? queryTime = default, int? count = default, Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments azureBlobArguments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord KnowledgeAgentAzureBlobActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, string knowledgeSourceName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; queryTime, valuetype System.Nullable`1&lt;int32&gt; count, class Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments azureBlobArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobActivityRecord(System.Int32,System.Nullable{System.Int32},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32},Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentAzureBlobActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional knowledgeSourceName As String = Nothing, Optional queryTime As Nullable(Of DateTimeOffset) = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional azureBlobArguments As KnowledgeAgentAzureBlobActivityArguments = Nothing) As KnowledgeAgentAzureBlobActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentAzureBlobActivityRecord : int * Nullable&lt;int&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobActivityRecord (id, elapsedMs, knowledgeSourceName, queryTime, count, azureBlobArguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="knowledgeSourceName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="queryTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="azureBlobArguments" Type="Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityArguments" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
+        <param name="knowledgeSourceName"> The knowledge source for the retrieval activity. </param>
+        <param name="queryTime"> The query time for this retrieval activity. </param>
+        <param name="count"> The count of documents retrieved that were sufficiently relevant to pass the reranker threshold. </param>
+        <param name="azureBlobArguments"> The azure blob arguments for the retrieval activity. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentAzureBlobReference">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference KnowledgeAgentAzureBlobReference (string id = default, int activitySource = 0, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; sourceData = default, float? rerankerScore = default, string blobUrl = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference KnowledgeAgentAzureBlobReference(string id, int32 activitySource, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; sourceData, valuetype System.Nullable`1&lt;float32&gt; rerankerScore, string blobUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobReference(System.String,System.Int32,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Nullable{System.Single},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentAzureBlobReference (Optional id As String = Nothing, Optional activitySource As Integer = 0, Optional sourceData As IReadOnlyDictionary(Of String, Object) = Nothing, Optional rerankerScore As Nullable(Of Single) = Nothing, Optional blobUrl As String = Nothing) As KnowledgeAgentAzureBlobReference" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentAzureBlobReference : string * int * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * Nullable&lt;single&gt; * string -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentAzureBlobReference (id, activitySource, sourceData, rerankerScore, blobUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="activitySource" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="docKey" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="sourceData" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sourceData" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="rerankerScore" Type="System.Nullable&lt;System.Single&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="blobUrl" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The ID of the reference. </param>
         <param name="activitySource"> The source activity ID for the reference. </param>
-        <param name="docKey"> The document key for the reference. </param>
         <param name="sourceData"> Dictionary of &lt;any&gt;. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference" />. </summary>
-        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference" /> instance for mocking. </returns>
+        <param name="rerankerScore"> The reranker score for the document reference. </param>
+        <param name="blobUrl"> The blob URL for the reference. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentModelAnswerSynthesisActivityRecord">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord KnowledgeAgentModelAnswerSynthesisActivityRecord (int id = 0, int? elapsedMs = default, int? inputTokens = default, int? outputTokens = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord KnowledgeAgentModelAnswerSynthesisActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, valuetype System.Nullable`1&lt;int32&gt; inputTokens, valuetype System.Nullable`1&lt;int32&gt; outputTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentModelAnswerSynthesisActivityRecord(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentModelAnswerSynthesisActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional inputTokens As Nullable(Of Integer) = Nothing, Optional outputTokens As Nullable(Of Integer) = Nothing) As KnowledgeAgentModelAnswerSynthesisActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentModelAnswerSynthesisActivityRecord : int * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentModelAnswerSynthesisActivityRecord (id, elapsedMs, inputTokens, outputTokens)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
+        <param name="inputTokens"> The number of input tokens for the LLM answer synthesis activity. </param>
+        <param name="outputTokens"> The number of output tokens for the LLM answer synthesis activity. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KnowledgeAgentModelQueryPlanningActivityRecord">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord KnowledgeAgentModelQueryPlanningActivityRecord (int id = 0, int? inputTokens = default, int? outputTokens = default, int? elapsedMs = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord KnowledgeAgentModelQueryPlanningActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; inputTokens, valuetype System.Nullable`1&lt;int32&gt; outputTokens, valuetype System.Nullable`1&lt;int32&gt; elapsedMs) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord KnowledgeAgentModelQueryPlanningActivityRecord (int id = 0, int? elapsedMs = default, int? inputTokens = default, int? outputTokens = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord KnowledgeAgentModelQueryPlanningActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, valuetype System.Nullable`1&lt;int32&gt; inputTokens, valuetype System.Nullable`1&lt;int32&gt; outputTokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentModelQueryPlanningActivityRecord(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentModelQueryPlanningActivityRecord (Optional id As Integer = 0, Optional inputTokens As Nullable(Of Integer) = Nothing, Optional outputTokens As Nullable(Of Integer) = Nothing, Optional elapsedMs As Nullable(Of Integer) = Nothing) As KnowledgeAgentModelQueryPlanningActivityRecord" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentModelQueryPlanningActivityRecord : int * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentModelQueryPlanningActivityRecord (id, inputTokens, outputTokens, elapsedMs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentModelQueryPlanningActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional inputTokens As Nullable(Of Integer) = Nothing, Optional outputTokens As Nullable(Of Integer) = Nothing) As KnowledgeAgentModelQueryPlanningActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentModelQueryPlanningActivityRecord : int * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentModelQueryPlanningActivityRecord (id, elapsedMs, inputTokens, outputTokens)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
@@ -823,25 +967,28 @@
       <Parameters>
         <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="inputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="outputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
         <param name="inputTokens"> The number of input tokens for the LLM query planning activity. </param>
         <param name="outputTokens"> The number of output tokens for the LLM query planning activity. </param>
-        <param name="elapsedMs"> The elapsed time in milliseconds for the model activity. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" />. </summary>
         <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KnowledgeAgentReference">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentReference KnowledgeAgentReference (string type = default, string id = default, int activitySource = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentReference KnowledgeAgentReference(string type, string id, int32 activitySource) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentReference(System.String,System.String,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentReference (Optional type As String = Nothing, Optional id As String = Nothing, Optional activitySource As Integer = 0) As KnowledgeAgentReference" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentReference : string * string * int -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentReference" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentReference (type, id, activitySource)" />
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentReference KnowledgeAgentReference (string type = default, string id = default, int activitySource = 0, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; sourceData = default, float? rerankerScore = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentReference KnowledgeAgentReference(string type, string id, int32 activitySource, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; sourceData, valuetype System.Nullable`1&lt;float32&gt; rerankerScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentReference(System.String,System.String,System.Int32,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentReference (Optional type As String = Nothing, Optional id As String = Nothing, Optional activitySource As Integer = 0, Optional sourceData As IReadOnlyDictionary(Of String, Object) = Nothing, Optional rerankerScore As Nullable(Of Single) = Nothing) As KnowledgeAgentReference" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentReference : string * string * int * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * Nullable&lt;single&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentReference" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentReference (type, id, activitySource, sourceData, rerankerScore)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
@@ -854,13 +1001,49 @@
         <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="activitySource" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sourceData" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="rerankerScore" Type="System.Nullable&lt;System.Single&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> The type of the reference. </param>
         <param name="id"> The ID of the reference. </param>
         <param name="activitySource"> The source activity ID for the reference. </param>
+        <param name="sourceData"> Dictionary of &lt;any&gt;. </param>
+        <param name="rerankerScore"> The reranker score for the document reference. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentReference" />. </summary>
         <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentRetrievalActivityRecord">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord KnowledgeAgentRetrievalActivityRecord (int id = 0, int? elapsedMs = default, string knowledgeSourceName = default, DateTimeOffset? queryTime = default, int? count = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord KnowledgeAgentRetrievalActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, string knowledgeSourceName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; queryTime, valuetype System.Nullable`1&lt;int32&gt; count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentRetrievalActivityRecord(System.Int32,System.Nullable{System.Int32},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentRetrievalActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional knowledgeSourceName As String = Nothing, Optional queryTime As Nullable(Of DateTimeOffset) = Nothing, Optional count As Nullable(Of Integer) = Nothing) As KnowledgeAgentRetrievalActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentRetrievalActivityRecord : int * Nullable&lt;int&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentRetrievalActivityRecord (id, elapsedMs, knowledgeSourceName, queryTime, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="knowledgeSourceName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="queryTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
+        <param name="knowledgeSourceName"> The knowledge source for the retrieval activity. </param>
+        <param name="queryTime"> The query time for this retrieval activity. </param>
+        <param name="count"> The count of documents retrieved that were sufficiently relevant to pass the reranker threshold. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -888,103 +1071,135 @@
         <param name="activity">
             The activity records for tracking progress and billing implications.
             Please note <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentActivityRecord" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord" />, <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord" /> and <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" />.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobActivityRecord" />, <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalActivityRecord" />, <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelAnswerSynthesisActivityRecord" />, <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentModelQueryPlanningActivityRecord" />, <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord" /> and <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord" />.
             </param>
         <param name="references">
             The references for the retrieval data used in the response.
             Please note <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentReference" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureSearchDocReference" />.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentAzureBlobReference" /> and <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalResponse" />. </summary>
         <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentRetrievalResponse" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KnowledgeAgentSearchActivityRecord">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord KnowledgeAgentSearchActivityRecord (int id = 0, string targetIndex = default, Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery query = default, DateTimeOffset? queryTime = default, int? count = default, int? elapsedMs = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord KnowledgeAgentSearchActivityRecord(int32 id, string targetIndex, class Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery query, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; queryTime, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; elapsedMs) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchActivityRecord(System.Int32,System.String,Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery,System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSearchActivityRecord (Optional id As Integer = 0, Optional targetIndex As String = Nothing, Optional query As KnowledgeAgentSearchActivityRecordQuery = Nothing, Optional queryTime As Nullable(Of DateTimeOffset) = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional elapsedMs As Nullable(Of Integer) = Nothing) As KnowledgeAgentSearchActivityRecord" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentSearchActivityRecord : int * string * Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchActivityRecord (id, targetIndex, query, queryTime, count, elapsedMs)" />
+    <Member MemberName="KnowledgeAgentSearchIndexActivityArguments">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments KnowledgeAgentSearchIndexActivityArguments (string search = default, string filter = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments KnowledgeAgentSearchIndexActivityArguments(string search, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexActivityArguments(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSearchIndexActivityArguments (Optional search As String = Nothing, Optional filter As String = Nothing) As KnowledgeAgentSearchIndexActivityArguments" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentSearchIndexActivityArguments : string * string -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexActivityArguments (search, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="targetIndex" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="query" Type="Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="queryTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The ID of the activity record. </param>
-        <param name="targetIndex"> The target index for the retrieval activity. </param>
-        <param name="query"> The query details for the retrieval activity. </param>
-        <param name="queryTime"> The query time for this retrieval activity. </param>
-        <param name="count"> The count of documents retrieved. </param>
-        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord" />. </summary>
-        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchActivityRecord" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="KnowledgeAgentSearchActivityRecordQuery">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery KnowledgeAgentSearchActivityRecordQuery (string search = default, string filter = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery KnowledgeAgentSearchActivityRecordQuery(string search, string filter) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchActivityRecordQuery(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSearchActivityRecordQuery (Optional search As String = Nothing, Optional filter As String = Nothing) As KnowledgeAgentSearchActivityRecordQuery" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentSearchActivityRecordQuery : string * string -&gt; Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchActivityRecordQuery (search, filter)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery</ReturnType>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="search" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="filter" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="search"> The search string. </param>
+        <param name="search"> The search string used to query the search index. </param>
         <param name="filter"> The filter string. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery" />. </summary>
-        <returns> A new <see cref="T:Azure.Search.Documents.Models.KnowledgeAgentSearchActivityRecordQuery" /> instance for mocking. </returns>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KnowledgeAgentSemanticRankerActivityRecord">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord KnowledgeAgentSemanticRankerActivityRecord (int id = 0, int? inputTokens = default, int? elapsedMs = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord KnowledgeAgentSemanticRankerActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; inputTokens, valuetype System.Nullable`1&lt;int32&gt; elapsedMs) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSemanticRankerActivityRecord(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSemanticRankerActivityRecord (Optional id As Integer = 0, Optional inputTokens As Nullable(Of Integer) = Nothing, Optional elapsedMs As Nullable(Of Integer) = Nothing) As KnowledgeAgentSemanticRankerActivityRecord" />
-      <MemberSignature Language="F#" Value="static member KnowledgeAgentSemanticRankerActivityRecord : int * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSemanticRankerActivityRecord (id, inputTokens, elapsedMs)" />
+    <Member MemberName="KnowledgeAgentSearchIndexActivityRecord">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord KnowledgeAgentSearchIndexActivityRecord (int id = 0, int? elapsedMs = default, string knowledgeSourceName = default, DateTimeOffset? queryTime = default, int? count = default, Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments searchIndexArguments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord KnowledgeAgentSearchIndexActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, string knowledgeSourceName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; queryTime, valuetype System.Nullable`1&lt;int32&gt; count, class Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments searchIndexArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexActivityRecord(System.Int32,System.Nullable{System.Int32},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.Int32},Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSearchIndexActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional knowledgeSourceName As String = Nothing, Optional queryTime As Nullable(Of DateTimeOffset) = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional searchIndexArguments As KnowledgeAgentSearchIndexActivityArguments = Nothing) As KnowledgeAgentSearchIndexActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentSearchIndexActivityRecord : int * Nullable&lt;int&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;int&gt; * Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexActivityRecord (id, elapsedMs, knowledgeSourceName, queryTime, count, searchIndexArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord</ReturnType>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="inputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="knowledgeSourceName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="queryTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="searchIndexArguments" Type="Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityArguments" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
+        <param name="knowledgeSourceName"> The knowledge source for the retrieval activity. </param>
+        <param name="queryTime"> The query time for this retrieval activity. </param>
+        <param name="count"> The count of documents retrieved that were sufficiently relevant to pass the reranker threshold. </param>
+        <param name="searchIndexArguments"> The search index arguments for the retrieval activity. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexActivityRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentSearchIndexReference">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference KnowledgeAgentSearchIndexReference (string id = default, int activitySource = 0, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; sourceData = default, float? rerankerScore = default, string docKey = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference KnowledgeAgentSearchIndexReference(string id, int32 activitySource, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; sourceData, valuetype System.Nullable`1&lt;float32&gt; rerankerScore, string docKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexReference(System.String,System.Int32,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Nullable{System.Single},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSearchIndexReference (Optional id As String = Nothing, Optional activitySource As Integer = 0, Optional sourceData As IReadOnlyDictionary(Of String, Object) = Nothing, Optional rerankerScore As Nullable(Of Single) = Nothing, Optional docKey As String = Nothing) As KnowledgeAgentSearchIndexReference" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentSearchIndexReference : string * int * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * Nullable&lt;single&gt; * string -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSearchIndexReference (id, activitySource, sourceData, rerankerScore, docKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="activitySource" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sourceData" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="rerankerScore" Type="System.Nullable&lt;System.Single&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="docKey" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the reference. </param>
+        <param name="activitySource"> The source activity ID for the reference. </param>
+        <param name="sourceData"> Dictionary of &lt;any&gt;. </param>
+        <param name="rerankerScore"> The reranker score for the document reference. </param>
+        <param name="docKey"> The document key for the reference. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSearchIndexReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeAgentSemanticRerankerActivityRecord">
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord KnowledgeAgentSemanticRerankerActivityRecord (int id = 0, int? elapsedMs = default, int? inputTokens = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord KnowledgeAgentSemanticRerankerActivityRecord(int32 id, valuetype System.Nullable`1&lt;int32&gt; elapsedMs, valuetype System.Nullable`1&lt;int32&gt; inputTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSemanticRerankerActivityRecord(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeAgentSemanticRerankerActivityRecord (Optional id As Integer = 0, Optional elapsedMs As Nullable(Of Integer) = Nothing, Optional inputTokens As Nullable(Of Integer) = Nothing) As KnowledgeAgentSemanticRerankerActivityRecord" />
+      <MemberSignature Language="F#" Value="static member KnowledgeAgentSemanticRerankerActivityRecord : int * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord" Usage="Azure.Search.Documents.Models.SearchModelFactory.KnowledgeAgentSemanticRerankerActivityRecord (id, elapsedMs, inputTokens)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="elapsedMs" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputTokens" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the activity record. </param>
+        <param name="elapsedMs"> The elapsed time in milliseconds for the retrieval activity. </param>
         <param name="inputTokens"> The number of input tokens for the semantic ranker activity. </param>
-        <param name="elapsedMs"> The elapsed time in milliseconds for the model activity. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord" />. </summary>
-        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRankerActivityRecord" /> instance for mocking. </returns>
+        <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentSemanticRerankerActivityRecord" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1493,11 +1708,11 @@
       </Docs>
     </Member>
     <Member MemberName="SearchIndexerStatus">
-      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Indexes.Models.SearchIndexerStatus SearchIndexerStatus (Azure.Search.Documents.Indexes.Models.IndexerStatus status = Azure.Search.Documents.Indexes.Models.IndexerStatus.Unknown, Azure.Search.Documents.Indexes.Models.IndexerExecutionResult lastResult = default, System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; executionHistory = default, Azure.Search.Documents.Indexes.Models.SearchIndexerLimits limits = default, Azure.Search.Documents.Indexes.Models.IndexerState currentState = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Indexes.Models.SearchIndexerStatus SearchIndexerStatus(valuetype Azure.Search.Documents.Indexes.Models.IndexerStatus status, class Azure.Search.Documents.Indexes.Models.IndexerExecutionResult lastResult, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; executionHistory, class Azure.Search.Documents.Indexes.Models.SearchIndexerLimits limits, class Azure.Search.Documents.Indexes.Models.IndexerState currentState) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.SearchIndexerStatus(Azure.Search.Documents.Indexes.Models.IndexerStatus,Azure.Search.Documents.Indexes.Models.IndexerExecutionResult,System.Collections.Generic.IEnumerable{Azure.Search.Documents.Indexes.Models.IndexerExecutionResult},Azure.Search.Documents.Indexes.Models.SearchIndexerLimits,Azure.Search.Documents.Indexes.Models.IndexerState)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SearchIndexerStatus (Optional status As IndexerStatus = Azure.Search.Documents.Indexes.Models.IndexerStatus.Unknown, Optional lastResult As IndexerExecutionResult = Nothing, Optional executionHistory As IEnumerable(Of IndexerExecutionResult) = Nothing, Optional limits As SearchIndexerLimits = Nothing, Optional currentState As IndexerState = Nothing) As SearchIndexerStatus" />
-      <MemberSignature Language="F#" Value="static member SearchIndexerStatus : Azure.Search.Documents.Indexes.Models.IndexerStatus * Azure.Search.Documents.Indexes.Models.IndexerExecutionResult * seq&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; * Azure.Search.Documents.Indexes.Models.SearchIndexerLimits * Azure.Search.Documents.Indexes.Models.IndexerState -&gt; Azure.Search.Documents.Indexes.Models.SearchIndexerStatus" Usage="Azure.Search.Documents.Models.SearchModelFactory.SearchIndexerStatus (status, lastResult, executionHistory, limits, currentState)" />
+      <MemberSignature Language="C#" Value="public static Azure.Search.Documents.Indexes.Models.SearchIndexerStatus SearchIndexerStatus (string name = default, Azure.Search.Documents.Indexes.Models.IndexerStatus status = Azure.Search.Documents.Indexes.Models.IndexerStatus.Unknown, Azure.Search.Documents.Indexes.Models.IndexerExecutionResult lastResult = default, System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; executionHistory = default, Azure.Search.Documents.Indexes.Models.SearchIndexerLimits limits = default, Azure.Search.Documents.Indexes.Models.IndexerState currentState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Search.Documents.Indexes.Models.SearchIndexerStatus SearchIndexerStatus(string name, valuetype Azure.Search.Documents.Indexes.Models.IndexerStatus status, class Azure.Search.Documents.Indexes.Models.IndexerExecutionResult lastResult, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; executionHistory, class Azure.Search.Documents.Indexes.Models.SearchIndexerLimits limits, class Azure.Search.Documents.Indexes.Models.IndexerState currentState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Models.SearchModelFactory.SearchIndexerStatus(System.String,Azure.Search.Documents.Indexes.Models.IndexerStatus,Azure.Search.Documents.Indexes.Models.IndexerExecutionResult,System.Collections.Generic.IEnumerable{Azure.Search.Documents.Indexes.Models.IndexerExecutionResult},Azure.Search.Documents.Indexes.Models.SearchIndexerLimits,Azure.Search.Documents.Indexes.Models.IndexerState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SearchIndexerStatus (Optional name As String = Nothing, Optional status As IndexerStatus = Azure.Search.Documents.Indexes.Models.IndexerStatus.Unknown, Optional lastResult As IndexerExecutionResult = Nothing, Optional executionHistory As IEnumerable(Of IndexerExecutionResult) = Nothing, Optional limits As SearchIndexerLimits = Nothing, Optional currentState As IndexerState = Nothing) As SearchIndexerStatus" />
+      <MemberSignature Language="F#" Value="static member SearchIndexerStatus : string * Azure.Search.Documents.Indexes.Models.IndexerStatus * Azure.Search.Documents.Indexes.Models.IndexerExecutionResult * seq&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt; * Azure.Search.Documents.Indexes.Models.SearchIndexerLimits * Azure.Search.Documents.Indexes.Models.IndexerState -&gt; Azure.Search.Documents.Indexes.Models.SearchIndexerStatus" Usage="Azure.Search.Documents.Models.SearchModelFactory.SearchIndexerStatus (name, status, lastResult, executionHistory, limits, currentState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
@@ -1507,13 +1722,15 @@
         <ReturnType>Azure.Search.Documents.Indexes.Models.SearchIndexerStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="status" Type="Azure.Search.Documents.Indexes.Models.IndexerStatus" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="lastResult" Type="Azure.Search.Documents.Indexes.Models.IndexerExecutionResult" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="executionHistory" Type="System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="limits" Type="Azure.Search.Documents.Indexes.Models.SearchIndexerLimits" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="currentState" Type="Azure.Search.Documents.Indexes.Models.IndexerState" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="Azure.Search.Documents.Indexes.Models.IndexerStatus" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="lastResult" Type="Azure.Search.Documents.Indexes.Models.IndexerExecutionResult" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="executionHistory" Type="System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Indexes.Models.IndexerExecutionResult&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="limits" Type="Azure.Search.Documents.Indexes.Models.SearchIndexerLimits" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="currentState" Type="Azure.Search.Documents.Indexes.Models.IndexerState" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="name"> The name of the indexer. </param>
         <param name="status"> Overall indexer status. </param>
         <param name="lastResult"> The result of the most recent or an in-progress indexer execution. </param>
         <param name="executionHistory"> History of the recent indexer executions, sorted in reverse chronological order. </param>

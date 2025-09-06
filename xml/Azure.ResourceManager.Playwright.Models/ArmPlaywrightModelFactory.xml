@@ -36,8 +36,8 @@
         <Parameter Name="state" Type="Azure.ResourceManager.Playwright.Models.PlaywrightFreeTrialState" />
       </Parameters>
       <Docs>
-        <param name="workspaceId"> Playwright workspace-id that has free-trial in the subscription. </param>
-        <param name="state"> The free-trial state. </param>
+        <param name="workspaceId"> The workspace ID in GUID format that has free trial enabled in the subscription. </param>
+        <param name="state"> The free trial state. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightFreeTrialProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightFreeTrialProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -122,7 +122,7 @@
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt;" />
       </Parameters>
       <Docs>
-        <param name="freeTrial"> The subscription-level location-based Playwright quota resource free-trial properties. </param>
+        <param name="freeTrial"> The subscription-level location-based Playwright quota free trial properties. </param>
         <param name="provisioningState"> The status of the last resource operation. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightQuotaProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightQuotaProperties" /> instance for mocking. </returns>
@@ -187,11 +187,11 @@
         <Parameter Name="percentageUsed" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="createdOn"> The free-trial createdAt utcDateTime. </param>
-        <param name="expiryOn"> The free-trial expiryAt utcDateTime. </param>
-        <param name="allocatedValue"> The free-trial allocated limit value eg. allocated free execution minutes. </param>
-        <param name="usedValue"> The free-trial used value eg. used free execution minutes. </param>
-        <param name="percentageUsed"> The free-trial percentage used. </param>
+        <param name="createdOn"> The free trial creation timestamp in UTC. </param>
+        <param name="expiryOn"> The free trial expiration timestamp in UTC. </param>
+        <param name="allocatedValue"> The allocated limit value (e.g., allocated free execution minutes). </param>
+        <param name="usedValue"> The used value (e.g., used free execution minutes). </param>
+        <param name="percentageUsed"> The percentage of the free trial quota used. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceFreeTrialProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceFreeTrialProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -212,16 +212,48 @@
         <ReturnType>Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt;" />
-        <Parameter Name="dataplaneUri" Type="System.Uri" />
-        <Parameter Name="regionalAffinity" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" />
-        <Parameter Name="localAuth" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="dataplaneUri" Type="System.Uri" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="regionalAffinity" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="localAuth" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="provisioningState"> The status of the last resource operation. </param>
         <param name="dataplaneUri"> The workspace data plane URI. </param>
         <param name="regionalAffinity"> This property sets the connection region for client workers to cloud-hosted browsers. If enabled, workers connect to browsers in the closest Azure region, ensuring lower latency. If disabled, workers connect to browsers in the Azure region in which the workspace was initially created. </param>
         <param name="localAuth"> When enabled, this feature allows the workspace to use local auth (through service access token) for executing operations. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaywrightWorkspaceProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties PlaywrightWorkspaceProperties (Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState? provisioningState = default, Uri dataplaneUri = default, Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus? regionalAffinity = default, Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus? localAuth = default, string workspaceId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties PlaywrightWorkspaceProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt; provisioningState, class System.Uri dataplaneUri, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt; regionalAffinity, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt; localAuth, string workspaceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Playwright.Models.ArmPlaywrightModelFactory.PlaywrightWorkspaceProperties(System.Nullable{Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState},System.Uri,System.Nullable{Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus},System.Nullable{Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PlaywrightWorkspaceProperties (Optional provisioningState As Nullable(Of PlaywrightProvisioningState) = Nothing, Optional dataplaneUri As Uri = Nothing, Optional regionalAffinity As Nullable(Of PlaywrightEnablementStatus) = Nothing, Optional localAuth As Nullable(Of PlaywrightEnablementStatus) = Nothing, Optional workspaceId As String = Nothing) As PlaywrightWorkspaceProperties" />
+      <MemberSignature Language="F#" Value="static member PlaywrightWorkspaceProperties : Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt; * Uri * Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt; * Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt; * string -&gt; Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties" Usage="Azure.ResourceManager.Playwright.Models.ArmPlaywrightModelFactory.PlaywrightWorkspaceProperties (provisioningState, dataplaneUri, regionalAffinity, localAuth, workspaceId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Playwright</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="dataplaneUri" Type="System.Uri" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="regionalAffinity" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="localAuth" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightEnablementStatus&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="workspaceId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The status of the last resource operation. </param>
+        <param name="dataplaneUri"> The workspace data plane service API URI. </param>
+        <param name="regionalAffinity"> Controls the connection region for client workers to cloud-hosted browsers. When enabled, workers connect to browsers in the closest Azure region for lower latency. When disabled, workers connect to browsers in the Azure region where the workspace was created. </param>
+        <param name="localAuth"> Enables the workspace to use local authentication through service access tokens for operations. </param>
+        <param name="workspaceId"> The workspace ID in GUID format. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -278,7 +310,7 @@
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Playwright.Models.PlaywrightProvisioningState&gt;" />
       </Parameters>
       <Docs>
-        <param name="freeTrial"> The Playwright workspace quota resource free-trial properties. </param>
+        <param name="freeTrial"> The Playwright workspace quota free trial properties. </param>
         <param name="provisioningState"> The status of the last resource operation. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceQuotaProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Playwright.Models.PlaywrightWorkspaceQuotaProperties" /> instance for mocking. </returns>

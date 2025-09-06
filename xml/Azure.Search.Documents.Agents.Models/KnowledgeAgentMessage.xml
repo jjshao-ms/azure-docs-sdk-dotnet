@@ -28,22 +28,20 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public KnowledgeAgentMessage (string role, System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; content);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string role, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; content) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage.#ctor(System.String,System.Collections.Generic.IEnumerable{Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (role As String, content As IEnumerable(Of KnowledgeAgentMessageContent))" />
-      <MemberSignature Language="F#" Value="new Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage : string * seq&lt;Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage" Usage="new Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage (role, content)" />
+      <MemberSignature Language="C#" Value="public KnowledgeAgentMessage (System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage.#ctor(System.Collections.Generic.IEnumerable{Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As IEnumerable(Of KnowledgeAgentMessageContent))" />
+      <MemberSignature Language="F#" Value="new Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage : seq&lt;Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt; -&gt; Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage" Usage="new Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="role" Type="System.String" />
         <Parameter Name="content" Type="System.Collections.Generic.IEnumerable&lt;Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent&gt;" />
       </Parameters>
       <Docs>
-        <param name="role"> The role of the tool response. </param>
         <param name="content">
             Please note <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageContent" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
             The available derived classes include <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageImageContent" /> and <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessageTextContent" />.
@@ -51,7 +49,7 @@
         <summary> Initializes a new instance of <see cref="T:Azure.Search.Documents.Agents.Models.KnowledgeAgentMessage" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="role" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Content">
