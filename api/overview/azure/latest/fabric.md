@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: fabric
 ---
-# Azure Fabric SDK for .NET - preview
-## Packages - preview
+# Azure Fabric SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](fabric-index.md)]
