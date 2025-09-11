@@ -4,7 +4,7 @@ description: Reference for Azure App Configuration SDK for .NET
 ms.date: 09/11/2025
 ms.topic: reference
 ms.devlang: dotnet
-ms.service: appconfiguration
+ms.service: azure-app-configuration
 ---
 # Azure App Configuration SDK for .NET - preview
 ## Packages - preview
