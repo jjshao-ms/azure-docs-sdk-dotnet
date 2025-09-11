@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Services SDK for .NET
 description: Reference for Azure Lab Services SDK for .NET
-ms.date: 09/10/2025
+ms.date: 09/11/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: lab-services
