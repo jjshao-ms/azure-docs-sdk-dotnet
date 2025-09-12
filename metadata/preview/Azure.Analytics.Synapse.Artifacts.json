@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Analytics.Synapse.Artifacts",
-  "Version": "1.0.0-preview.21",
+  "Version": "1.0.0-preview.22",
   "DevVersion": null,
   "DirectoryPath": "sdk/synapse/Azure.Analytics.Synapse.Artifacts",
   "ServiceDirectory": "synapse",
@@ -10,15 +10,22 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Analytics.Synapse.Artifacts",
-  "ReleaseStatus": "2025-03-07",
+  "ReleaseStatus": "2025-09-05",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "name": "Azure.Analytics.Synapse.Artifacts",
-    "safeName": "AzureAnalyticsSynapseArtifacts"
+    "safeName": "AzureAnalyticsSynapseArtifacts",
+    "triggeringPaths": [
+      "/sdk/synapse/Azure.Analytics.Synapse.Shared",
+      "/sdk/synapse/ci.yml"
+    ]
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "CIMatrixConfigs": [],
+    "CheckAOTCompat": false,
+    "BuildSnippets": true,
+    "AOTTestInputs": []
   },
   "Namespaces": [
     "Azure.Analytics.Synapse.Artifacts",
