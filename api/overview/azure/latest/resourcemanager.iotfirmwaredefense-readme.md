@@ -1,20 +1,15 @@
 ---
-title: 
+title: Azure firmware analysis client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.ResourceManager.IotFirmwareDefense, iot
-ms.date: 03/13/2025
+ms.date: 09/17/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: iot
 ---
-# Microsoft Azure IotFirmwareDefense management client library for .NET
+# Azure firmware analysis client library for .NET - version 1.1.0 
 
-The Defender for Iot Firmware Analysis SDK is your comprehensive, feature-rich toolkit for firmware analysis.
 
-This SDK is your definitive guide through the amalgamation of firmware SBOM (Software Bill of Materials), the known threat vectors of CVE (Common Vulnerabilities and Exposures) weaknesses, and the last bastion of firmware security: binary hardening. Whether you're wrestling with web apps, desktop applications, or the intricate world of CI/CD pipelines, this dynamic kit has you covered.
-
-This powerhouse SDK also can extract password hashes and perform cryptographic analysis. Think of it as cheat codes for developers, a treasure map to the hidden intricacies of secure firmware analysis.
-
-Be warned, though, this isn't an easy ride. Sometimes the right tool might seem elusive, or the instructions might appear as an IKEA manual penned in ancient hieroglyphs. But, armed with this powerful and versatile SDK, you're ready to brave the uncharted frontiers of firmware analysis for your projects!
+Firmware analysis is a tool that analyzes firmware images and provides an understanding of security vulnerabilities in the firmware images. The analysis results include SBOM (Software Bill of Materials), CVE (Common Vulnerabilities and Exposures), binary hardening, password hashes, and weak or expired certificates.
 
 This library follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), and provides many core capabilities:
 
@@ -40,7 +35,7 @@ dotnet add package Azure.ResourceManager.IotFirmwareDefense
 
 ### Authenticate the Client
 
-To create an authenticated client and start interacting with Microsoft Azure resources, see the [quickstart guide here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.0.1/doc/dev/mgmt_quickstart.md).
+To create an authenticated client and start interacting with Microsoft Azure resources, see the [quickstart guide here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.1.0/doc/dev/mgmt_quickstart.md).
 
 ## Key concepts
 
@@ -50,9 +45,9 @@ Key concepts of the Microsoft Azure SDK for .NET can be found [here](https://azu
 
 Documentation is available to help you learn how to use this package:
 
-- [Quickstart](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.0.1/doc/dev/mgmt_quickstart.md).
+- [Quickstart](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.1.0/doc/dev/mgmt_quickstart.md).
 - [API References](https://learn.microsoft.com/dotnet/api/?view=azure-dotnet).
-- [Authentication](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.0.1/sdk/identity/Azure.Identity/README.md).
+- [Authentication](https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.1.0/sdk/identity/Azure.Identity/README.md).
 
 ## Examples
 
@@ -89,7 +84,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.0.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.ResourceManager.IotFirmwareDefense_1.1.0/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
