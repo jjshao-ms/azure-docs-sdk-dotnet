@@ -11,6 +11,7 @@
     <AssemblyVersion>12.2.0.0</AssemblyVersion>
     <AssemblyVersion>12.2.1.0</AssemblyVersion>
     <AssemblyVersion>12.2.2.0</AssemblyVersion>
+    <AssemblyVersion>12.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Storage.DataMovement.StorageResource</BaseTypeName>
@@ -31,14 +32,50 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
             For mocking.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAsync">
+      <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task CreateAsync (bool overwrite, Azure.Storage.DataMovement.StorageResourceContainerProperties sourceProperties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task CreateAsync(bool overwrite, class Azure.Storage.DataMovement.StorageResourceContainerProperties sourceProperties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.DataMovement.StorageResourceContainer.CreateAsync(System.Boolean,Azure.Storage.DataMovement.StorageResourceContainerProperties,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateAsync (overwrite As Boolean, sourceProperties As StorageResourceContainerProperties, Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateAsync : bool * Azure.Storage.DataMovement.StorageResourceContainerProperties * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.CreateAsync : bool * Azure.Storage.DataMovement.StorageResourceContainerProperties * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="storageResourceContainer.CreateAsync (overwrite, sourceProperties, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="overwrite" Type="System.Boolean" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sourceProperties" Type="Azure.Storage.DataMovement.StorageResourceContainerProperties" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="overwrite">To be added.</param>
+        <param name="sourceProperties">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            Creates storage resource container using the source's properties. Supports overwriting the existing container.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +88,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -69,6 +106,7 @@
       <Docs>
         <param name="cancellationToken">To be added.</param>
         <summary>
+            This has been deprecated. See <see cref="M:Azure.Storage.DataMovement.StorageResourceContainer.CreateAsync(System.Boolean,Azure.Storage.DataMovement.StorageResourceContainerProperties,System.Threading.CancellationToken)" />.
             Creates storage resource container if it does not already exists.
             </summary>
         <returns />
@@ -84,8 +122,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +142,7 @@
         <param name="sourceProperties">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>
+            This has been deprecated. See <see cref="M:Azure.Storage.DataMovement.StorageResourceContainer.CreateAsync(System.Boolean,Azure.Storage.DataMovement.StorageResourceContainerProperties,System.Threading.CancellationToken)" />.
             Creates storage resource container using the source's properties if it does not already exists.
             </summary>
         <returns />
@@ -119,8 +158,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,8 +193,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -189,8 +228,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,8 +263,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -259,8 +298,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -288,8 +327,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.DataMovement</AssemblyName>
-        <AssemblyVersion>12.2.0.0</AssemblyVersion>
         <AssemblyVersion>12.2.2.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
