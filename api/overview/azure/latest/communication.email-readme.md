@@ -1,12 +1,12 @@
 ---
 title: Azure Communication Email client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Communication.Email, communication
-ms.date: 08/18/2023
+ms.date: 09/19/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication Email client library for .NET - version 1.0.1 
+# Azure Communication Email client library for .NET - version 1.0.2 
 
 
 This package contains a C# SDK for Azure Communication Services for Email.
@@ -47,8 +47,7 @@ Alternatively, Email clients can also be authenticated using a valid token crede
 
 ```C# Snippet:Azure_Communication_Email_CreateEmailClientWithToken
 string endpoint = "<endpoint_url>";
-TokenCredential tokenCredential = new DefaultAzureCredential();
-tokenCredential = new DefaultAzureCredential();
+var tokenCredential = new DefaultAzureCredential();
 EmailClient emailClient = new EmailClient(new Uri(endpoint), tokenCredential);
 ```
 ## Examples
@@ -270,15 +269,15 @@ This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For m
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [coc_contact]: mailto:opencode@microsoft.com
-[communication_resource_docs]: /azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
+[communication_resource_docs]: https://learn.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
 [email_resource_docs]: https://aka.ms/acsemail/createemailresource
-[communication_resource_create_portal]:  /azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
-[communication_resource_create_power_shell]: /powershell/module/az.communication/new-azcommunicationservice
-[communication_resource_create_net]: /azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-net
+[communication_resource_create_portal]:  https://learn.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
+[communication_resource_create_power_shell]: https://learn.microsoft.com/powershell/module/az.communication/new-azcommunicationservice
+[communication_resource_create_net]: https://learn.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-net
 [package]: https://www.nuget.org/packages/Azure.Communication.Email
 [product_docs]: https://aka.ms/acsemail/overview
 [nextsteps]:https://aka.ms/acsemail/qs-sendmail?pivots=programming-language-csharp
 [nuget]: https://www.nuget.org/
-[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Email_1.0.1/sdk/communication/Azure.Communication.Email/src
+[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Email_1.0.2/sdk/communication/Azure.Communication.Email/src
 [domain_overview]: https://aka.ms/acsemail/domainsoverview
 
