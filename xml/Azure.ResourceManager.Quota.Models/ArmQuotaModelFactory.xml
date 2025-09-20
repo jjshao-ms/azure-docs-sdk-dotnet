@@ -8,6 +8,7 @@
     <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.CurrentQuotaLimitBaseData</ReturnType>
@@ -60,6 +62,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.CurrentUsagesBaseData</ReturnType>
@@ -83,16 +86,25 @@
       </Docs>
     </Member>
     <Member MemberName="GroupQuotaDetails">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails (string resourceName = default, long? limit = default, string comment = default, string unit = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails (string resourceName = default, long? limit = default, string comment = default, string unit = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails(string resourceName, valuetype System.Nullable`1&lt;int64&gt; limit, string comment, string unit, valuetype System.Nullable`1&lt;int64&gt; availableLimit, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue, string value, string localizedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaDetails(System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaDetails (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaDetails (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaDetails" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member GroupQuotaDetails : string * Nullable&lt;int64&gt; * string * string * Nullable&lt;int64&gt; * seq&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; * string * string -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaDetails" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaDetails (resourceName, limit, comment, unit, availableLimit, allocatedToSubscriptionsValue, value, localizedValue)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails (string resourceName, long? limit, string comment, string unit, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaDetails (resourceName As String, limit As Nullable(Of Long), comment As String, unit As String, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaDetails" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaDetails</ReturnType>
       </ReturnValue>
@@ -111,26 +123,73 @@
         <param name="limit"> The current Group Quota Limit at the parentId level. </param>
         <param name="comment"> Any comment related to quota request. </param>
         <param name="unit"> The usages units, such as Count and Bytes. When requesting quota, use the **unit** value returned in the GET response in the request body of your PUT operation. </param>
-        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
-        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
         <param name="value"> Resource name. </param>
         <param name="localizedValue"> Resource display name. </param>
+        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
+        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotaDetails">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails (string resourceName = default, long? limit = default, string comment = default, string unit = default, string value = default, string localizedValue = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaDetails GroupQuotaDetails(string resourceName, valuetype System.Nullable`1&lt;int64&gt; limit, string comment, string unit, string value, string localizedValue, valuetype System.Nullable`1&lt;int64&gt; availableLimit, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaDetails(System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaDetails (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing) As GroupQuotaDetails" />
+      <MemberSignature Language="F#" Value="static member GroupQuotaDetails : string * Nullable&lt;int64&gt; * string * string * string * string * Nullable&lt;int64&gt; * seq&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaDetails" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaDetails (resourceName, limit, comment, unit, value, localizedValue, availableLimit, allocatedToSubscriptionsValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int64&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="comment" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="unit" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="value" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="localizedValue" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="availableLimit" Type="System.Nullable&lt;System.Int64&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="allocatedToSubscriptionsValue" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="resourceName"> The resource name, such as SKU name. </param>
+        <param name="limit"> The current Group Quota Limit at the parentId level. </param>
+        <param name="comment"> Any comment related to quota request. </param>
+        <param name="unit"> The usages units, such as Count and Bytes. When requesting quota, use the **unit** value returned in the GET response in the request body of your PUT operation. </param>
+        <param name="value"> Resource name. </param>
+        <param name="localizedValue"> Resource display name. </param>
+        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
+        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaDetails" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupQuotaEntityBase">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase (string displayName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase (string displayName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase(string displayName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaEntityBase(System.String,System.Nullable{Azure.ResourceManager.Quota.Models.QuotaRequestStatus})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaEntityBase (Optional displayName As String = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotaEntityBase" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaEntityBase (Optional displayName As String = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotaEntityBase" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member GroupQuotaEntityBase : string * Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaEntityBase (displayName, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase (string displayName, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaEntityBase (displayName As String, provisioningState As Nullable(Of QuotaRequestStatus)) As GroupQuotaEntityBase" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase</ReturnType>
       </ReturnValue>
@@ -140,6 +199,34 @@
       </Parameters>
       <Docs>
         <param name="displayName"> Display name of the GroupQuota entity. </param>
+        <param name="provisioningState"> Provisioning state of the operation. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotaEntityBase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase (string displayName = default, Azure.ResourceManager.Quota.Models.GroupType? groupType = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase GroupQuotaEntityBase(string displayName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.GroupType&gt; groupType, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaEntityBase(System.String,System.Nullable{Azure.ResourceManager.Quota.Models.GroupType},System.Nullable{Azure.ResourceManager.Quota.Models.QuotaRequestStatus})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaEntityBase (Optional displayName As String = Nothing, Optional groupType As Nullable(Of GroupType) = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotaEntityBase" />
+      <MemberSignature Language="F#" Value="static member GroupQuotaEntityBase : string * Nullable&lt;Azure.ResourceManager.Quota.Models.GroupType&gt; * Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaEntityBase (displayName, groupType, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="groupType" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.GroupType&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="displayName"> Display name of the GroupQuota entity. </param>
+        <param name="groupType"> Type of the group. </param>
         <param name="provisioningState"> Provisioning state of the operation. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaEntityBase" /> instance for mocking. </returns>
@@ -156,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.GroupQuotaEntityData</ReturnType>
@@ -188,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaEntityPatch</ReturnType>
@@ -220,6 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.GroupQuotaLimitListData</ReturnType>
@@ -252,6 +342,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaLimitListProperties</ReturnType>
@@ -271,16 +362,25 @@
       </Docs>
     </Member>
     <Member MemberName="GroupQuotaLimitProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties (string resourceName = default, long? limit = default, string comment = default, string unit = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties (string resourceName = default, long? limit = default, string comment = default, string unit = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties(string resourceName, valuetype System.Nullable`1&lt;int64&gt; limit, string comment, string unit, valuetype System.Nullable`1&lt;int64&gt; availableLimit, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue, string value, string localizedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaLimitProperties(System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaLimitProperties (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaLimitProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaLimitProperties (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaLimitProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member GroupQuotaLimitProperties : string * Nullable&lt;int64&gt; * string * string * Nullable&lt;int64&gt; * seq&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; * string * string -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaLimitProperties (resourceName, limit, comment, unit, availableLimit, allocatedToSubscriptionsValue, value, localizedValue)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties (string resourceName, long? limit, string comment, string unit, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default, string value = default, string localizedValue = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaLimitProperties (resourceName As String, limit As Nullable(Of Long), comment As String, unit As String, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As GroupQuotaLimitProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties</ReturnType>
       </ReturnValue>
@@ -299,10 +399,48 @@
         <param name="limit"> The current Group Quota Limit at the parentId level. </param>
         <param name="comment"> Any comment related to quota request. </param>
         <param name="unit"> The usages units, such as Count and Bytes. When requesting quota, use the **unit** value returned in the GET response in the request body of your PUT operation. </param>
-        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
-        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
         <param name="value"> Resource name. </param>
         <param name="localizedValue"> Resource display name. </param>
+        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
+        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotaLimitProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties (string resourceName = default, long? limit = default, string comment = default, string unit = default, string value = default, string localizedValue = default, long? availableLimit = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties GroupQuotaLimitProperties(string resourceName, valuetype System.Nullable`1&lt;int64&gt; limit, string comment, string unit, string value, string localizedValue, valuetype System.Nullable`1&lt;int64&gt; availableLimit, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; allocatedToSubscriptionsValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaLimitProperties(System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaLimitProperties (Optional resourceName As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional comment As String = Nothing, Optional unit As String = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing, Optional availableLimit As Nullable(Of Long) = Nothing, Optional allocatedToSubscriptionsValue As IEnumerable(Of SubscriptionAllocatedQuota) = Nothing) As GroupQuotaLimitProperties" />
+      <MemberSignature Language="F#" Value="static member GroupQuotaLimitProperties : string * Nullable&lt;int64&gt; * string * string * string * string * Nullable&lt;int64&gt; * seq&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaLimitProperties (resourceName, limit, comment, unit, value, localizedValue, availableLimit, allocatedToSubscriptionsValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int64&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="comment" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="unit" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="value" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="localizedValue" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="availableLimit" Type="System.Nullable&lt;System.Int64&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="allocatedToSubscriptionsValue" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="resourceName"> The resource name, such as SKU name. </param>
+        <param name="limit"> The current Group Quota Limit at the parentId level. </param>
+        <param name="comment"> Any comment related to quota request. </param>
+        <param name="unit"> The usages units, such as Count and Bytes. When requesting quota, use the **unit** value returned in the GET response in the request body of your PUT operation. </param>
+        <param name="value"> Resource name. </param>
+        <param name="localizedValue"> Resource display name. </param>
+        <param name="availableLimit"> The available Group Quota Limit at the MG level. This Group quota can be allocated to subscription(s). </param>
+        <param name="allocatedToSubscriptionsValue"> Quota allocated to subscriptions. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaLimitProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -318,7 +456,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaRequestBase</ReturnType>
       </ReturnValue>
@@ -331,10 +476,10 @@
       </Parameters>
       <Docs>
         <param name="limit"> The new quota limit for the subscription. The incremental quota will be allocated from pre-approved group quota. </param>
-        <param name="region"> Location/Azure region for the quota requested for resource. </param>
-        <param name="comments"> GroupQuota Request comments and details for request. This is optional paramter to provide more details related to the requested resource. </param>
         <param name="value"> Resource name. </param>
         <param name="localizedValue"> Resource display name. </param>
+        <param name="region"> Location/Azure region for the quota requested for resource. </param>
+        <param name="comments"> GroupQuota Request comments and details for request. This is optional paramter to provide more details related to the requested resource. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaRequestBase" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaRequestBase" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -350,6 +495,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.GroupQuotaRequestStatusData</ReturnType>
@@ -382,6 +528,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaRequestStatusProperties</ReturnType>
@@ -402,6 +549,100 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GroupQuotaResourceUsages">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages GroupQuotaResourceUsages (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages GroupQuotaResourceUsages(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaResourceUsages(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaResourceUsages (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As GroupQuotaUsagesBase = Nothing) As GroupQuotaResourceUsages" />
+      <MemberSignature Language="F#" Value="static member GroupQuotaResourceUsages : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaResourceUsages (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="properties"> Resource details with usages and GroupQuota. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaResourceUsages" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotasEnforcementStatusData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData GroupQuotasEnforcementStatusData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData GroupQuotasEnforcementStatusData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEnforcementStatusData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEnforcementStatusData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As GroupQuotasEnforcementStatusProperties = Nothing) As GroupQuotasEnforcementStatusData" />
+      <MemberSignature Language="F#" Value="static member GroupQuotasEnforcementStatusData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties -&gt; Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEnforcementStatusData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="properties" />
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.GroupQuotasEnforcementStatusData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotasEnforcementStatusProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties GroupQuotasEnforcementStatusProperties (Azure.ResourceManager.Quota.Models.EnforcementState? enforcementEnabled = default, string enforcedGroupName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default, string faultCode = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties GroupQuotasEnforcementStatusProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.EnforcementState&gt; enforcementEnabled, string enforcedGroupName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState, string faultCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEnforcementStatusProperties(System.Nullable{Azure.ResourceManager.Quota.Models.EnforcementState},System.String,System.Nullable{Azure.ResourceManager.Quota.Models.QuotaRequestStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEnforcementStatusProperties (Optional enforcementEnabled As Nullable(Of EnforcementState) = Nothing, Optional enforcedGroupName As String = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing, Optional faultCode As String = Nothing) As GroupQuotasEnforcementStatusProperties" />
+      <MemberSignature Language="F#" Value="static member GroupQuotasEnforcementStatusProperties : Nullable&lt;Azure.ResourceManager.Quota.Models.EnforcementState&gt; * string * Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; * string -&gt; Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEnforcementStatusProperties (enforcementEnabled, enforcedGroupName, provisioningState, faultCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enforcementEnabled" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.EnforcementState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="enforcedGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="faultCode" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="enforcementEnabled"> Is the GroupQuota Enforcement enabled for the Azure region. </param>
+        <param name="enforcedGroupName"> The name of the group that is enforced. </param>
+        <param name="provisioningState"> Request status. </param>
+        <param name="faultCode"> Details of the failure. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEnforcementStatusProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GroupQuotasEntityBasePatch">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEntityBasePatch GroupQuotasEntityBasePatch (string displayName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotasEntityBasePatch GroupQuotasEntityBasePatch(string displayName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState) cil managed" />
@@ -412,6 +653,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotasEntityBasePatch</ReturnType>
@@ -438,6 +680,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotasEntityPatchProperties</ReturnType>
@@ -455,16 +698,25 @@
       </Docs>
     </Member>
     <Member MemberName="GroupQuotasEntityProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties (string displayName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties (string displayName = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties(string displayName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEntityProperties(System.String,System.Nullable{Azure.ResourceManager.Quota.Models.QuotaRequestStatus})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEntityProperties (Optional displayName As String = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotasEntityProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEntityProperties (Optional displayName As String = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotasEntityProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member GroupQuotasEntityProperties : string * Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEntityProperties (displayName, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties (string displayName, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEntityProperties (displayName As String, provisioningState As Nullable(Of QuotaRequestStatus)) As GroupQuotasEntityProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties</ReturnType>
       </ReturnValue>
@@ -474,6 +726,34 @@
       </Parameters>
       <Docs>
         <param name="displayName"> Display name of the GroupQuota entity. </param>
+        <param name="provisioningState"> Provisioning state of the operation. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupQuotasEntityProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties (string displayName = default, Azure.ResourceManager.Quota.Models.GroupType? groupType = default, Azure.ResourceManager.Quota.Models.QuotaRequestStatus? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties GroupQuotasEntityProperties(string displayName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.GroupType&gt; groupType, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEntityProperties(System.String,System.Nullable{Azure.ResourceManager.Quota.Models.GroupType},System.Nullable{Azure.ResourceManager.Quota.Models.QuotaRequestStatus})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotasEntityProperties (Optional displayName As String = Nothing, Optional groupType As Nullable(Of GroupType) = Nothing, Optional provisioningState As Nullable(Of QuotaRequestStatus) = Nothing) As GroupQuotasEntityProperties" />
+      <MemberSignature Language="F#" Value="static member GroupQuotasEntityProperties : string * Nullable&lt;Azure.ResourceManager.Quota.Models.GroupType&gt; * Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt; -&gt; Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotasEntityProperties (displayName, groupType, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="groupType" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.GroupType&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Quota.Models.QuotaRequestStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="displayName"> Display name of the GroupQuota entity. </param>
+        <param name="groupType"> Type of the group. </param>
         <param name="provisioningState"> Provisioning state of the operation. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotasEntityProperties" /> instance for mocking. </returns>
@@ -490,6 +770,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.GroupQuotaSubscriptionData</ReturnType>
@@ -522,6 +803,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaSubscriptionProperties</ReturnType>
@@ -548,6 +830,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.GroupQuotaSubscriptionRequestStatusData</ReturnType>
@@ -580,6 +863,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaSubscriptionRequestStatusProperties</ReturnType>
@@ -598,31 +882,71 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GroupQuotaUsagesBase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase GroupQuotaUsagesBase (string value = default, string localizedValue = default, long? limit = default, long? usages = default, string unit = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase GroupQuotaUsagesBase(string value, string localizedValue, valuetype System.Nullable`1&lt;int64&gt; limit, valuetype System.Nullable`1&lt;int64&gt; usages, string unit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaUsagesBase(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupQuotaUsagesBase (Optional value As String = Nothing, Optional localizedValue As String = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional usages As Nullable(Of Long) = Nothing, Optional unit As String = Nothing) As GroupQuotaUsagesBase" />
+      <MemberSignature Language="F#" Value="static member GroupQuotaUsagesBase : string * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * string -&gt; Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.GroupQuotaUsagesBase (value, localizedValue, limit, usages, unit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="localizedValue" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int64&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="usages" Type="System.Nullable&lt;System.Int64&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="unit" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="value"> Resource name. </param>
+        <param name="localizedValue"> Resource display name. </param>
+        <param name="limit"> Quota/limits for the resource. </param>
+        <param name="usages"> Usages for the resource. </param>
+        <param name="unit"> Representing the units of the usage quota. Possible values are: Count, Bytes, Seconds, Percent, CountPerSecond, BytesPerSecond. Based on - https://armwiki.azurewebsites.net/api_contracts/UsagesAPIContract.html?q=usages . Different RPs may have different units, Count, type as int64 should work for most of the integer values. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.GroupQuotaUsagesBase" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="QuotaAllocationRequestBase">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase (long? limit = default, string region = default, string value = default, string localizedValue = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase(valuetype System.Nullable`1&lt;int64&gt; limit, string region, string value, string localizedValue) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase (long? limit = default, string region = default, string value = default, string localizedValue = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase(valuetype System.Nullable`1&lt;int64&gt; limit, string region, string value, string localizedValue) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.QuotaAllocationRequestBase(System.Nullable{System.Int64},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function QuotaAllocationRequestBase (Optional limit As Nullable(Of Long) = Nothing, Optional region As String = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As QuotaAllocationRequestBase" />
-      <MemberSignature Language="F#" Value="static member QuotaAllocationRequestBase : Nullable&lt;int64&gt; * string * string * string -&gt; Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.QuotaAllocationRequestBase (limit, region, value, localizedValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuotaAllocationRequestBase (Optional limit As Nullable(Of Long) = Nothing, Optional region As String = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing) As QuotaAllocationRequestBase" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member QuotaAllocationRequestBase : Nullable&lt;int64&gt; * string * string * string -&gt; Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.QuotaAllocationRequestBase (limit, region, value, localizedValue)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase (long? limit = default, string value = default, string localizedValue = default, string region = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase QuotaAllocationRequestBase(valuetype System.Nullable`1&lt;int64&gt; limit, string value, string localizedValue, string region) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuotaAllocationRequestBase (Optional limit As Nullable(Of Long) = Nothing, Optional value As String = Nothing, Optional localizedValue As String = Nothing, Optional region As String = Nothing) As QuotaAllocationRequestBase" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member QuotaAllocationRequestBase : Nullable&lt;int64&gt; * string * string * string -&gt; Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase" Usage="Azure.ResourceManager.Quota.Models.ArmQuotaModelFactory.QuotaAllocationRequestBase (limit, value, localizedValue, region)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="limit" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="region" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="localizedValue" Type="System.String" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int64&gt;" Index="0" />
+        <Parameter Name="region" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="value" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="localizedValue" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="localizedValue" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="region" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="limit"> The new quota limit for the subscription. The incremental quota will be allocated from pre-approved group quota. </param>
-        <param name="region"> The location for which the subscription is allocated. </param>
         <param name="value"> Resource name. </param>
         <param name="localizedValue"> Resource display name. </param>
+        <param name="region"> The location for which the subscription is allocated. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Quota.Models.QuotaAllocationRequestBase" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -638,6 +962,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.QuotaAllocationRequestStatusData</ReturnType>
@@ -676,6 +1001,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaOperationDisplay</ReturnType>
@@ -706,6 +1032,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaOperationResult</ReturnType>
@@ -734,6 +1061,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaProperties</ReturnType>
@@ -780,6 +1108,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.QuotaRequestDetailData</ReturnType>
@@ -820,6 +1149,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaRequestResourceName</ReturnType>
@@ -846,6 +1176,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaSubRequestDetail</ReturnType>
@@ -886,6 +1217,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaUsagesObject</ReturnType>
@@ -912,6 +1244,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.QuotaUsagesProperties</ReturnType>
@@ -954,6 +1287,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.ServiceErrorDetail</ReturnType>
@@ -980,6 +1314,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.SubscriptionAllocatedQuota</ReturnType>
@@ -1006,6 +1341,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.SubscriptionQuotaAllocationsListData</ReturnType>
@@ -1038,6 +1374,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.SubscriptionQuotaAllocationsListProperties</ReturnType>
@@ -1066,6 +1403,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.SubscriptionQuotaAllocationsProperties</ReturnType>
@@ -1098,6 +1436,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Quota.Models.SubscriptionQuotaDetails</ReturnType>

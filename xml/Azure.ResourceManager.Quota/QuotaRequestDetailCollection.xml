@@ -8,6 +8,7 @@
     <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
@@ -41,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,6 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -71,7 +74,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -90,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -103,7 +107,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -122,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -135,7 +140,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the quota request details and status by quota request ID for the resources of the resource provider at a specific location. The quota request ID **id** is returned in the response of the PUT operation.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -154,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -170,16 +176,15 @@
              |---------------------|------------------------
             
              |requestSubmitTime | ge, le, eq, gt, lt
-              |provisioningState eq {QuotaRequestState}
-              |resourceName eq {resourceName}
-            
+             |provisioningState eq {QuotaRequestState}
+             |resourceName eq {resourceName}
              </param>
         <param name="top"> Number of records to return. </param>
         <param name="skiptoken"> The **Skiptoken** parameter is used only if a previous operation returned a partial result. If a previous response contains a **nextLink** element, its value includes a **skiptoken** parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
              For the specified scope, get the current quota requests for a one year period ending at the time is made. Use the **oData** filter to select quota requests.
-             <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_List</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+             <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_List</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,6 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -210,16 +216,15 @@
              |---------------------|------------------------
             
              |requestSubmitTime | ge, le, eq, gt, lt
-              |provisioningState eq {QuotaRequestState}
-              |resourceName eq {resourceName}
-            
+             |provisioningState eq {QuotaRequestState}
+             |resourceName eq {resourceName}
              </param>
         <param name="top"> Number of records to return. </param>
         <param name="skiptoken"> The **Skiptoken** parameter is used only if a previous operation returned a partial result. If a previous response contains a **nextLink** element, its value includes a **skiptoken** parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
              For the specified scope, get the current quota requests for a one year period ending at the time is made. Use the **oData** filter to select quota requests.
-             <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_List</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+             <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_List</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,6 +239,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;&gt;</ReturnType>
@@ -247,7 +253,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the quota request details and status by quota request ID for the resources of the resource provider at a specific location. The quota request ID **id** is returned in the response of the PUT operation.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -266,6 +272,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.NullableResponse&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -279,7 +286,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -298,6 +305,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;&gt;</ReturnType>
@@ -311,7 +319,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestStatus_Get</description></item><item><term>Default Api Version</term><description>2025-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/{scope}/providers/Microsoft.Quota/quotaRequests/{id}</description></item><item><term>Operation Id</term><description>QuotaRequestDetails_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Quota.QuotaRequestDetailResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -333,6 +341,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -360,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.Quota.QuotaRequestDetailResource&gt;</ReturnType>
@@ -384,6 +394,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Quota</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
