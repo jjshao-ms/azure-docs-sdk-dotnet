@@ -1,12 +1,12 @@
 ---
 title: Azure VoiceLive client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.VoiceLive, ai
-ms.date: 09/17/2025
+ms.date: 09/22/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure VoiceLive client library for .NET - version 1.0.0-beta.1 
+# Azure VoiceLive client library for .NET - version 1.0.0-beta.2 
 
 
 Azure VoiceLive is a managed service that enables low-latency, high-quality speech-to-speech interactions for voice agents. The API consolidates speech recognition, generative AI, and text-to-speech functionalities into a single, unified interface, providing an end-to-end solution for creating seamless voice-driven experiences.
@@ -129,18 +129,18 @@ We guarantee that all client instance methods are thread-safe and independent of
 
 ### Additional concepts
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
 ## Examples
 
-You can familiarize yourself with different APIs using [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/ai/Azure.AI.VoiceLive/samples).
+You can familiarize yourself with different APIs using [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/ai/Azure.AI.VoiceLive/samples).
 
 ### Basic voice assistant
 
@@ -160,14 +160,14 @@ VoiceLiveSessionOptions sessionOptions = new()
     Model = model,
     Instructions = "You are a helpful AI assistant. Respond naturally and conversationally.",
     Voice = new AzureStandardVoice("en-US-AvaNeural"),
-    TurnDetection = new ServerVad()
+    TurnDetection = new AzureSemanticVadTurnDetection()
     {
         Threshold = 0.5f,
-        PrefixPaddingMs = 300,
-        SilenceDurationMs = 500
+        PrefixPadding = TimeSpan.FromMilliseconds(300),
+        SilenceDuration = TimeSpan.FromMilliseconds(500)
     },
-    InputAudioFormat = AudioFormat.Pcm16,
-    OutputAudioFormat = AudioFormat.Pcm16
+    InputAudioFormat = InputAudioFormat.Pcm16,
+    OutputAudioFormat = OutputAudioFormat.Pcm16
 };
 
 // Ensure modalities include audio
@@ -175,7 +175,7 @@ sessionOptions.Modalities.Clear();
 sessionOptions.Modalities.Add(InputModality.Text);
 sessionOptions.Modalities.Add(InputModality.Audio);
 
-await session.ConfigureConversationSessionAsync(sessionOptions).ConfigureAwait(false);
+await session.ConfigureSessionAsync(sessionOptions).ConfigureAwait(false);
 
 // Process events from the session
 await foreach (SessionUpdate serverEvent in session.GetUpdatesAsync().ConfigureAwait(false))
@@ -205,14 +205,12 @@ VoiceLiveSessionOptions sessionOptions = new()
     {
         Temperature = 0.8f
     },
-    TurnDetection = new AzureSemanticVad()
+    TurnDetection = new AzureSemanticVadTurnDetection()
     {
-        NegThreshold = 0.3f,
-        WindowSize = 300,
         RemoveFillerWords = true
     },
-    InputAudioFormat = AudioFormat.Pcm16,
-    OutputAudioFormat = AudioFormat.Pcm16
+    InputAudioFormat = InputAudioFormat.Pcm16,
+    OutputAudioFormat = OutputAudioFormat.Pcm16
 };
 
 // Ensure modalities include audio
@@ -220,7 +218,7 @@ sessionOptions.Modalities.Clear();
 sessionOptions.Modalities.Add(InputModality.Text);
 sessionOptions.Modalities.Add(InputModality.Audio);
 
-await session.ConfigureConversationSessionAsync(sessionOptions).ConfigureAwait(false);
+await session.ConfigureSessionAsync(sessionOptions).ConfigureAwait(false);
 ```
 
 ### Function calling example
@@ -249,8 +247,8 @@ VoiceLiveSessionOptions sessionOptions = new()
     Model = model,
     Instructions = "You are a weather assistant. Use the get_current_weather function to help users with weather information.",
     Voice = new AzureStandardVoice("en-US-AvaNeural"),
-    InputAudioFormat = AudioFormat.Pcm16,
-    OutputAudioFormat = AudioFormat.Pcm16
+    InputAudioFormat = InputAudioFormat.Pcm16,
+    OutputAudioFormat = OutputAudioFormat.Pcm16
 };
 
 // Add the function tool
@@ -261,7 +259,7 @@ sessionOptions.Modalities.Clear();
 sessionOptions.Modalities.Add(InputModality.Text);
 sessionOptions.Modalities.Add(InputModality.Audio);
 
-await session.ConfigureConversationSessionAsync(sessionOptions).ConfigureAwait(false);
+await session.ConfigureSessionAsync(sessionOptions).ConfigureAwait(false);
 ```
 
 ## Troubleshooting
@@ -305,7 +303,7 @@ Implement appropriate retry logic and connection management to handle throttling
 
 ## Next steps
 
-* Explore the comprehensive [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/ai/Azure.AI.VoiceLive/samples) including basic voice assistants and customer service bots
+* Explore the comprehensive [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/ai/Azure.AI.VoiceLive/samples) including basic voice assistants and customer service bots
 * Learn about [voice customization](https://learn.microsoft.com/azure/ai-services/speech-service/custom-neural-voice) to create unique brand voices
 * Understand [avatar integration](https://learn.microsoft.com/azure/ai-services/speech-service/text-to-speech-avatar/what-is-text-to-speech-avatar) for visual voice experiences
 * Review the [VoiceLive API documentation](/azure/ai-services/) for advanced configuration options
@@ -319,8 +317,8 @@ When you submit a pull request, a CLA bot will automatically determine whether y
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 <!-- LINKS -->
-[source_root]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/ai/Azure.AI.VoiceLive/src
-[source_samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.1/sdk/ai/Azure.AI.VoiceLive/samples
+[source_root]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/ai/Azure.AI.VoiceLive/src
+[source_samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.2/sdk/ai/Azure.AI.VoiceLive/samples
 [package]: https://www.nuget.org/
 [reference_docs]: https://azure.github.io/azure-sdk-for-net/
 [voicelive_docs]: /azure/ai-services/
