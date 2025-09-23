@@ -18,11 +18,11 @@
   </Docs>
   <Members>
     <Member MemberName="AnimationOptions">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AnimationOptions AnimationOptions (string modelName = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AnimationOutputType&gt; outputs = default, int? emotionDetectionIntervalMs = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AnimationOptions AnimationOptions(string modelName, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AnimationOutputType&gt; outputs, valuetype System.Nullable`1&lt;int32&gt; emotionDetectionIntervalMs) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AnimationOptions(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AnimationOutputType},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AnimationOptions (Optional modelName As String = Nothing, Optional outputs As IEnumerable(Of AnimationOutputType) = Nothing, Optional emotionDetectionIntervalMs As Nullable(Of Integer) = Nothing) As AnimationOptions" />
-      <MemberSignature Language="F#" Value="static member AnimationOptions : string * seq&lt;Azure.AI.VoiceLive.AnimationOutputType&gt; * Nullable&lt;int&gt; -&gt; Azure.AI.VoiceLive.AnimationOptions" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AnimationOptions (modelName, outputs, emotionDetectionIntervalMs)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AnimationOptions AnimationOptions (string modelName = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AnimationOutputType&gt; outputs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AnimationOptions AnimationOptions(string modelName, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AnimationOutputType&gt; outputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AnimationOptions(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AnimationOutputType})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AnimationOptions (Optional modelName As String = Nothing, Optional outputs As IEnumerable(Of AnimationOutputType) = Nothing) As AnimationOptions" />
+      <MemberSignature Language="F#" Value="static member AnimationOptions : string * seq&lt;Azure.AI.VoiceLive.AnimationOutputType&gt; -&gt; Azure.AI.VoiceLive.AnimationOptions" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AnimationOptions (modelName, outputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -34,13 +34,11 @@
       <Parameters>
         <Parameter Name="modelName" Type="System.String" />
         <Parameter Name="outputs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AnimationOutputType&gt;" />
-        <Parameter Name="emotionDetectionIntervalMs" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
         <param name="modelName"> The name of the animation model to use. </param>
         <param name="outputs"> Set of output data types requested from the animation system. </param>
-        <param name="emotionDetectionIntervalMs"> Interval for emotion detection in milliseconds. If not set, emotion detection is disabled. </param>
-        <summary> Configuration for animation outputs including blendshapes, visemes, and emotion metadata. </summary>
+        <summary> Configuration for animation outputs including blendshapes and visemes metadata. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.AnimationOptions" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +119,9 @@
         <param name="model">
             The transcription model to use. Supported values:
             'whisper-1', 'gpt-4o-transcribe', 'gpt-4o-mini-transcribe',
-            'azure-fast-transcription', 'azure-speech'.
+            'azure-speech'.
             </param>
-        <param name="language"> Optional BCP-47 language code (e.g., 'en-US'). </param>
+        <param name="language"> Optional language code in BCP-47 (e.g., 'en-US'), or ISO-639-1 (e.g., 'en'), or multi languages with auto detection, (e.g., 'en,zh'). </param>
         <param name="customSpeech"> Optional configuration for custom speech models. </param>
         <param name="phraseList"> Optional list of phrase hints to bias recognition. </param>
         <summary> Configuration for input audio transcription. </summary>
@@ -132,11 +130,11 @@
       </Docs>
     </Member>
     <Member MemberName="AudioNoiseReduction">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AudioNoiseReduction AudioNoiseReduction (string type = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AudioNoiseReduction AudioNoiseReduction(string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AudioNoiseReduction(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AudioNoiseReduction (Optional type As String = Nothing) As AudioNoiseReduction" />
-      <MemberSignature Language="F#" Value="static member AudioNoiseReduction : string -&gt; Azure.AI.VoiceLive.AudioNoiseReduction" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AudioNoiseReduction type" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AudioNoiseReduction AudioNoiseReduction (Azure.AI.VoiceLive.AudioNoiseReductionType type = Azure.AI.VoiceLive.AudioNoiseReductionType.AzureDeepNoiseSuppression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AudioNoiseReduction AudioNoiseReduction(valuetype Azure.AI.VoiceLive.AudioNoiseReductionType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AudioNoiseReduction(Azure.AI.VoiceLive.AudioNoiseReductionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AudioNoiseReduction (Optional type As AudioNoiseReductionType = Azure.AI.VoiceLive.AudioNoiseReductionType.AzureDeepNoiseSuppression) As AudioNoiseReduction" />
+      <MemberSignature Language="F#" Value="static member AudioNoiseReduction : Azure.AI.VoiceLive.AudioNoiseReductionType -&gt; Azure.AI.VoiceLive.AudioNoiseReduction" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AudioNoiseReduction type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -146,7 +144,7 @@
         <ReturnType>Azure.AI.VoiceLive.AudioNoiseReduction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="type" Type="Azure.AI.VoiceLive.AudioNoiseReductionType" />
       </Parameters>
       <Docs>
         <param name="type"> The type of noise reduction model. </param>
@@ -224,63 +222,17 @@
         <param name="pitch" />
         <param name="rate" />
         <param name="volume" />
-        <summary> Azure custom voice configuration (preferred). </summary>
+        <summary> Azure custom voice configuration. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureCustomVoice" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzureMultilingualSemanticVad">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureMultilingualSemanticVad AzureMultilingualSemanticVad (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, float? negThreshold = default, int? speechDurationMs = default, int? windowSize = default, int? distinctCiPhones = default, bool? requireVowel = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureMultilingualSemanticVad AzureMultilingualSemanticVad(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;float32&gt; negThreshold, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;int32&gt; windowSize, valuetype System.Nullable`1&lt;int32&gt; distinctCiPhones, valuetype System.Nullable`1&lt;bool&gt; requireVowel, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureMultilingualSemanticVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureMultilingualSemanticVad (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional negThreshold As Nullable(Of Single) = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional windowSize As Nullable(Of Integer) = Nothing, Optional distinctCiPhones As Nullable(Of Integer) = Nothing, Optional requireVowel As Nullable(Of Boolean) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureMultilingualSemanticVad" />
-      <MemberSignature Language="F#" Value="static member AzureMultilingualSemanticVad : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureMultilingualSemanticVad" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureMultilingualSemanticVad (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, negThreshold, speechDurationMs, windowSize, distinctCiPhones, requireVowel, removeFillerWords, languages, autoTruncate)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureMultilingualSemanticVad</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
-        <Parameter Name="negThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="windowSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="distinctCiPhones" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="requireVowel" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="languages" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="threshold" />
-        <param name="prefixPaddingMs" />
-        <param name="silenceDurationMs" />
-        <param name="endOfUtteranceDetection" />
-        <param name="negThreshold" />
-        <param name="speechDurationMs" />
-        <param name="windowSize" />
-        <param name="distinctCiPhones" />
-        <param name="requireVowel" />
-        <param name="removeFillerWords" />
-        <param name="languages" />
-        <param name="autoTruncate" />
-        <summary> Server Speech Detection (Azure semantic VAD). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureMultilingualSemanticVad" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="AzurePersonalVoice">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name = default, float? temperature = default, Azure.AI.VoiceLive.AzurePersonalVoiceModel model = Azure.AI.VoiceLive.AzurePersonalVoiceModel.DragonLatestNeural);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice(string name, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype Azure.AI.VoiceLive.AzurePersonalVoiceModel model) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.AzurePersonalVoiceModel)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional model As AzurePersonalVoiceModel = Azure.AI.VoiceLive.AzurePersonalVoiceModel.DragonLatestNeural) As AzurePersonalVoice" />
-      <MemberSignature Language="F#" Value="static member AzurePersonalVoice : string * Nullable&lt;single&gt; * Azure.AI.VoiceLive.AzurePersonalVoiceModel -&gt; Azure.AI.VoiceLive.AzurePersonalVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice (name, temperature, model)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name = default, float? temperature = default, Azure.AI.VoiceLive.PersonalVoiceModels model = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice(string name, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype Azure.AI.VoiceLive.PersonalVoiceModels model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.PersonalVoiceModels)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional model As PersonalVoiceModels = Nothing) As AzurePersonalVoice" />
+      <MemberSignature Language="F#" Value="static member AzurePersonalVoice : string * Nullable&lt;single&gt; * Azure.AI.VoiceLive.PersonalVoiceModels -&gt; Azure.AI.VoiceLive.AzurePersonalVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice (name, temperature, model)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -292,7 +244,7 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="model" Type="Azure.AI.VoiceLive.AzurePersonalVoiceModel" />
+        <Parameter Name="model" Type="Azure.AI.VoiceLive.PersonalVoiceModels" />
       </Parameters>
       <Docs>
         <param name="name"> Voice name cannot be empty. </param>
@@ -303,289 +255,193 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzurePlatformVoice">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePlatformVoice AzurePlatformVoice (string name = default, float? temperature = default, string customLexiconUrl = default, System.Collections.Generic.IEnumerable&lt;string&gt; preferLocales = default, string locale = default, string style = default, string pitch = default, string rate = default, string volume = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzurePlatformVoice AzurePlatformVoice(string name, valuetype System.Nullable`1&lt;float32&gt; temperature, string customLexiconUrl, class System.Collections.Generic.IEnumerable`1&lt;string&gt; preferLocales, string locale, string style, string pitch, string rate, string volume) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePlatformVoice(System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePlatformVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional customLexiconUrl As String = Nothing, Optional preferLocales As IEnumerable(Of String) = Nothing, Optional locale As String = Nothing, Optional style As String = Nothing, Optional pitch As String = Nothing, Optional rate As String = Nothing, Optional volume As String = Nothing) As AzurePlatformVoice" />
-      <MemberSignature Language="F#" Value="static member AzurePlatformVoice : string * Nullable&lt;single&gt; * string * seq&lt;string&gt; * string * string * string * string * string -&gt; Azure.AI.VoiceLive.AzurePlatformVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePlatformVoice (name, temperature, customLexiconUrl, preferLocales, locale, style, pitch, rate, volume)" />
+    <Member MemberName="AzureSemanticEnEouDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticEnEouDetection AzureSemanticEnEouDetection (float? threshold = default, float? timeoutMs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticEnEouDetection AzureSemanticEnEouDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeoutMs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEnEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticEnEouDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional timeoutMs As Nullable(Of Single) = Nothing) As AzureSemanticEnEouDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticEnEouDetection : Nullable&lt;single&gt; * Nullable&lt;single&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticEnEouDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEnEouDetection (threshold, timeoutMs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzurePlatformVoice</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="customLexiconUrl" Type="System.String" />
-        <Parameter Name="preferLocales" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="locale" Type="System.String" />
-        <Parameter Name="style" Type="System.String" />
-        <Parameter Name="pitch" Type="System.String" />
-        <Parameter Name="rate" Type="System.String" />
-        <Parameter Name="volume" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="name"> Voice name cannot be empty. </param>
-        <param name="temperature"> Temperature must be between 0.0 and 1.0. </param>
-        <param name="customLexiconUrl" />
-        <param name="preferLocales" />
-        <param name="locale" />
-        <param name="style" />
-        <param name="pitch" />
-        <param name="rate" />
-        <param name="volume" />
-        <summary> Azure platform voice configuration (variant of standard). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzurePlatformVoice" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AzureSemanticDetection">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticDetection AzureSemanticDetection (float? threshold = default, float? timeout = default, float? secondaryThreshold = default, float? secondaryTimeout = default, bool? disableRules = default, float? srBoost = default, bool? extraImendCheck = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticDetection AzureSemanticDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeout, valuetype System.Nullable`1&lt;float32&gt; secondaryThreshold, valuetype System.Nullable`1&lt;float32&gt; secondaryTimeout, valuetype System.Nullable`1&lt;bool&gt; disableRules, valuetype System.Nullable`1&lt;float32&gt; srBoost, valuetype System.Nullable`1&lt;bool&gt; extraImendCheck) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetection(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional timeout As Nullable(Of Single) = Nothing, Optional secondaryThreshold As Nullable(Of Single) = Nothing, Optional secondaryTimeout As Nullable(Of Single) = Nothing, Optional disableRules As Nullable(Of Boolean) = Nothing, Optional srBoost As Nullable(Of Single) = Nothing, Optional extraImendCheck As Nullable(Of Boolean) = Nothing) As AzureSemanticDetection" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticDetection : Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetection (threshold, timeout, secondaryThreshold, secondaryTimeout, disableRules, srBoost, extraImendCheck)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticDetection</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticEnEouDetection</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="timeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryTimeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="disableRules" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="srBoost" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="extraImendCheck" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="timeoutMs" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
         <param name="threshold" />
-        <param name="timeout" />
-        <param name="secondaryThreshold" />
-        <param name="secondaryTimeout" />
-        <param name="disableRules" />
-        <param name="srBoost" />
-        <param name="extraImendCheck" />
-        <summary> Azure semantic end-of-utterance detection (default). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticDetection" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AzureSemanticDetectionEn">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticDetectionEn AzureSemanticDetectionEn (float? threshold = default, float? timeout = default, float? secondaryThreshold = default, float? secondaryTimeout = default, bool? disableRules = default, float? srBoost = default, bool? extraImendCheck = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticDetectionEn AzureSemanticDetectionEn(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeout, valuetype System.Nullable`1&lt;float32&gt; secondaryThreshold, valuetype System.Nullable`1&lt;float32&gt; secondaryTimeout, valuetype System.Nullable`1&lt;bool&gt; disableRules, valuetype System.Nullable`1&lt;float32&gt; srBoost, valuetype System.Nullable`1&lt;bool&gt; extraImendCheck) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionEn(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticDetectionEn (Optional threshold As Nullable(Of Single) = Nothing, Optional timeout As Nullable(Of Single) = Nothing, Optional secondaryThreshold As Nullable(Of Single) = Nothing, Optional secondaryTimeout As Nullable(Of Single) = Nothing, Optional disableRules As Nullable(Of Boolean) = Nothing, Optional srBoost As Nullable(Of Single) = Nothing, Optional extraImendCheck As Nullable(Of Boolean) = Nothing) As AzureSemanticDetectionEn" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticDetectionEn : Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticDetectionEn" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionEn (threshold, timeout, secondaryThreshold, secondaryTimeout, disableRules, srBoost, extraImendCheck)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticDetectionEn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="timeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryTimeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="disableRules" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="srBoost" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="extraImendCheck" Type="System.Nullable&lt;System.Boolean&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="threshold" />
-        <param name="timeout" />
-        <param name="secondaryThreshold" />
-        <param name="secondaryTimeout" />
-        <param name="disableRules" />
-        <param name="srBoost" />
-        <param name="extraImendCheck" />
+        <param name="timeoutMs" />
         <summary> Azure semantic end-of-utterance detection (English-optimized). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticDetectionEn" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticEnEouDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzureSemanticDetectionMultilingual">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticDetectionMultilingual AzureSemanticDetectionMultilingual (float? threshold = default, float? timeout = default, float? secondaryThreshold = default, float? secondaryTimeout = default, bool? disableRules = default, float? srBoost = default, bool? extraImendCheck = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticDetectionMultilingual AzureSemanticDetectionMultilingual(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeout, valuetype System.Nullable`1&lt;float32&gt; secondaryThreshold, valuetype System.Nullable`1&lt;float32&gt; secondaryTimeout, valuetype System.Nullable`1&lt;bool&gt; disableRules, valuetype System.Nullable`1&lt;float32&gt; srBoost, valuetype System.Nullable`1&lt;bool&gt; extraImendCheck) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionMultilingual(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticDetectionMultilingual (Optional threshold As Nullable(Of Single) = Nothing, Optional timeout As Nullable(Of Single) = Nothing, Optional secondaryThreshold As Nullable(Of Single) = Nothing, Optional secondaryTimeout As Nullable(Of Single) = Nothing, Optional disableRules As Nullable(Of Boolean) = Nothing, Optional srBoost As Nullable(Of Single) = Nothing, Optional extraImendCheck As Nullable(Of Boolean) = Nothing) As AzureSemanticDetectionMultilingual" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticDetectionMultilingual : Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; * Nullable&lt;single&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticDetectionMultilingual" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionMultilingual (threshold, timeout, secondaryThreshold, secondaryTimeout, disableRules, srBoost, extraImendCheck)" />
+    <Member MemberName="AzureSemanticEouDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticEouDetection AzureSemanticEouDetection (float? threshold = default, float? timeoutMs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticEouDetection AzureSemanticEouDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeoutMs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticEouDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional timeoutMs As Nullable(Of Single) = Nothing) As AzureSemanticEouDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticEouDetection : Nullable&lt;single&gt; * Nullable&lt;single&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticEouDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEouDetection (threshold, timeoutMs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticDetectionMultilingual</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticEouDetection</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="timeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="secondaryTimeout" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="disableRules" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="srBoost" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="extraImendCheck" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="timeoutMs" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
         <param name="threshold" />
-        <param name="timeout" />
-        <param name="secondaryThreshold" />
-        <param name="secondaryTimeout" />
-        <param name="disableRules" />
-        <param name="srBoost" />
-        <param name="extraImendCheck" />
-        <summary> Azure semantic end-of-utterance detection (multilingual). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticDetectionMultilingual" /> instance for mocking. </returns>
+        <param name="timeoutMs"> Gets or sets the Timeout. </param>
+        <summary> Azure semantic end-of-utterance detection (default). </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticEouDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzureSemanticVad">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVad AzureSemanticVad (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, float? negThreshold = default, int? speechDurationMs = default, int? windowSize = default, int? distinctCiPhones = default, bool? requireVowel = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVad AzureSemanticVad(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;float32&gt; negThreshold, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;int32&gt; windowSize, valuetype System.Nullable`1&lt;int32&gt; distinctCiPhones, valuetype System.Nullable`1&lt;bool&gt; requireVowel, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVad (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional negThreshold As Nullable(Of Single) = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional windowSize As Nullable(Of Integer) = Nothing, Optional distinctCiPhones As Nullable(Of Integer) = Nothing, Optional requireVowel As Nullable(Of Boolean) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVad" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticVad : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVad" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVad (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, negThreshold, speechDurationMs, windowSize, distinctCiPhones, requireVowel, removeFillerWords, languages, autoTruncate)" />
+    <Member MemberName="AzureSemanticMultilingualEouDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticMultilingualEouDetection AzureSemanticMultilingualEouDetection (float? threshold = default, float? timeoutMs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticMultilingualEouDetection AzureSemanticMultilingualEouDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;float32&gt; timeoutMs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticMultilingualEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticMultilingualEouDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional timeoutMs As Nullable(Of Single) = Nothing) As AzureSemanticMultilingualEouDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticMultilingualEouDetection : Nullable&lt;single&gt; * Nullable&lt;single&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticMultilingualEouDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticMultilingualEouDetection (threshold, timeoutMs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVad</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticMultilingualEouDetection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="timeoutMs" Type="System.Nullable&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="threshold" />
+        <param name="timeoutMs" />
+        <summary> Azure semantic end-of-utterance detection (multilingual). </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticMultilingualEouDetection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureSemanticVadEnTurnDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVadEnTurnDetection AzureSemanticVadEnTurnDetection (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, int? speechDurationMs = default, bool? removeFillerWords = default, bool? autoTruncate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVadEnTurnDetection AzureSemanticVadEnTurnDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEnTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVadEnTurnDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVadEnTurnDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticVadEnTurnDetection : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVadEnTurnDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEnTurnDetection (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, speechDurationMs, removeFillerWords, autoTruncate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVadEnTurnDetection</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
         <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
-        <Parameter Name="negThreshold" Type="System.Nullable&lt;System.Single&gt;" />
         <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="windowSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="distinctCiPhones" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="requireVowel" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="threshold" />
+        <param name="prefixPaddingMs"> Gets or sets the PrefixPaddingMs. </param>
+        <param name="silenceDurationMs"> Gets or sets the SilenceDurationMs. </param>
+        <param name="endOfUtteranceDetection" />
+        <param name="speechDurationMs"> Gets or sets the SpeechDurationMs. </param>
+        <param name="removeFillerWords" />
+        <param name="autoTruncate" />
+        <summary> Server Speech Detection (Azure semantic VAD, English-only). </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVadEnTurnDetection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureSemanticVadMultilingualTurnDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVadMultilingualTurnDetection AzureSemanticVadMultilingualTurnDetection (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, int? speechDurationMs = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVadMultilingualTurnDetection AzureSemanticVadMultilingualTurnDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadMultilingualTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVadMultilingualTurnDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVadMultilingualTurnDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticVadMultilingualTurnDetection : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVadMultilingualTurnDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadMultilingualTurnDetection (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, speechDurationMs, removeFillerWords, languages, autoTruncate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVadMultilingualTurnDetection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
+        <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="languages" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
         <param name="threshold" />
-        <param name="prefixPaddingMs" />
-        <param name="silenceDurationMs" />
+        <param name="prefixPaddingMs"> Gets or sets the PrefixPaddingMs. </param>
+        <param name="silenceDurationMs"> Gets or sets the SilenceDurationMs. </param>
         <param name="endOfUtteranceDetection" />
-        <param name="negThreshold" />
-        <param name="speechDurationMs" />
-        <param name="windowSize" />
-        <param name="distinctCiPhones" />
-        <param name="requireVowel" />
+        <param name="speechDurationMs"> Gets or sets the SpeechDurationMs. </param>
+        <param name="removeFillerWords" />
+        <param name="languages" />
+        <param name="autoTruncate" />
+        <summary> Server Speech Detection (Azure semantic VAD). </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVadMultilingualTurnDetection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureSemanticVadTurnDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVadTurnDetection AzureSemanticVadTurnDetection (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, int? speechDurationMs = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVadTurnDetection AzureSemanticVadTurnDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVadTurnDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVadTurnDetection" />
+      <MemberSignature Language="F#" Value="static member AzureSemanticVadTurnDetection : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVadTurnDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadTurnDetection (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, speechDurationMs, removeFillerWords, languages, autoTruncate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVadTurnDetection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
+        <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="languages" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="threshold" />
+        <param name="prefixPaddingMs"> Gets or sets the PrefixPaddingMs. </param>
+        <param name="silenceDurationMs"> Gets or sets the SilenceDurationMs. </param>
+        <param name="endOfUtteranceDetection" />
+        <param name="speechDurationMs"> Gets or sets the SpeechDurationMs. </param>
         <param name="removeFillerWords" />
         <param name="languages" />
         <param name="autoTruncate" />
         <summary> Server Speech Detection (Azure semantic VAD, default variant). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVad" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AzureSemanticVadEn">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVadEn AzureSemanticVadEn (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, float? negThreshold = default, int? speechDurationMs = default, int? windowSize = default, int? distinctCiPhones = default, bool? requireVowel = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVadEn AzureSemanticVadEn(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;float32&gt; negThreshold, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;int32&gt; windowSize, valuetype System.Nullable`1&lt;int32&gt; distinctCiPhones, valuetype System.Nullable`1&lt;bool&gt; requireVowel, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEn(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVadEn (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional negThreshold As Nullable(Of Single) = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional windowSize As Nullable(Of Integer) = Nothing, Optional distinctCiPhones As Nullable(Of Integer) = Nothing, Optional requireVowel As Nullable(Of Boolean) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVadEn" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticVadEn : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVadEn" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEn (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, negThreshold, speechDurationMs, windowSize, distinctCiPhones, requireVowel, removeFillerWords, languages, autoTruncate)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVadEn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
-        <Parameter Name="negThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="windowSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="distinctCiPhones" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="requireVowel" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="languages" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="threshold" />
-        <param name="prefixPaddingMs" />
-        <param name="silenceDurationMs" />
-        <param name="endOfUtteranceDetection" />
-        <param name="negThreshold" />
-        <param name="speechDurationMs" />
-        <param name="windowSize" />
-        <param name="distinctCiPhones" />
-        <param name="requireVowel" />
-        <param name="removeFillerWords" />
-        <param name="languages" />
-        <param name="autoTruncate" />
-        <summary> Server Speech Detection (Azure semantic VAD, English-only). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVadEn" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AzureSemanticVadServer">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzureSemanticVadServer AzureSemanticVadServer (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, float? negThreshold = default, int? speechDurationMs = default, int? windowSize = default, int? distinctCiPhones = default, bool? requireVowel = default, bool? removeFillerWords = default, System.Collections.Generic.IEnumerable&lt;string&gt; languages = default, bool? autoTruncate = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzureSemanticVadServer AzureSemanticVadServer(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;float32&gt; negThreshold, valuetype System.Nullable`1&lt;int32&gt; speechDurationMs, valuetype System.Nullable`1&lt;int32&gt; windowSize, valuetype System.Nullable`1&lt;int32&gt; distinctCiPhones, valuetype System.Nullable`1&lt;bool&gt; requireVowel, valuetype System.Nullable`1&lt;bool&gt; removeFillerWords, class System.Collections.Generic.IEnumerable`1&lt;string&gt; languages, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadServer(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureSemanticVadServer (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional negThreshold As Nullable(Of Single) = Nothing, Optional speechDurationMs As Nullable(Of Integer) = Nothing, Optional windowSize As Nullable(Of Integer) = Nothing, Optional distinctCiPhones As Nullable(Of Integer) = Nothing, Optional requireVowel As Nullable(Of Boolean) = Nothing, Optional removeFillerWords As Nullable(Of Boolean) = Nothing, Optional languages As IEnumerable(Of String) = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As AzureSemanticVadServer" />
-      <MemberSignature Language="F#" Value="static member AzureSemanticVadServer : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.AzureSemanticVadServer" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadServer (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, negThreshold, speechDurationMs, windowSize, distinctCiPhones, requireVowel, removeFillerWords, languages, autoTruncate)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AzureSemanticVadServer</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="prefixPaddingMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="silenceDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="endOfUtteranceDetection" Type="Azure.AI.VoiceLive.EouDetection" />
-        <Parameter Name="negThreshold" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="speechDurationMs" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="windowSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="distinctCiPhones" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="requireVowel" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="removeFillerWords" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="languages" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="autoTruncate" Type="System.Nullable&lt;System.Boolean&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="threshold" />
-        <param name="prefixPaddingMs" />
-        <param name="silenceDurationMs" />
-        <param name="endOfUtteranceDetection" />
-        <param name="negThreshold" />
-        <param name="speechDurationMs" />
-        <param name="windowSize" />
-        <param name="distinctCiPhones" />
-        <param name="requireVowel" />
-        <param name="removeFillerWords" />
-        <param name="languages" />
-        <param name="autoTruncate" />
-        <summary> Server Speech Detection (legacy `server_sd` alias). </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVadServer" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureSemanticVadTurnDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,7 +506,7 @@
         <param name="type" />
         <summary>
             Base for Azure voice configurations.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureCustomVoice(System.String,System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureStandardVoice(System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePlatformVoice(System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.AzurePersonalVoiceModel)" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureCustomVoice(System.String,System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureStandardVoice(System.String,System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.PersonalVoiceModels)" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.AzureVoice" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -711,32 +567,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EmotionCandidate">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.EmotionCandidate EmotionCandidate (string emotion = default, float confidence = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.EmotionCandidate EmotionCandidate(string emotion, float32 confidence) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.EmotionCandidate(System.String,System.Single)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EmotionCandidate (Optional emotion As String = Nothing, Optional confidence As Single = 0) As EmotionCandidate" />
-      <MemberSignature Language="F#" Value="static member EmotionCandidate : string * single -&gt; Azure.AI.VoiceLive.EmotionCandidate" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.EmotionCandidate (emotion, confidence)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.EmotionCandidate</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="emotion" Type="System.String" />
-        <Parameter Name="confidence" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="emotion" />
-        <param name="confidence" />
-        <summary> The EmotionCandidate. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.EmotionCandidate" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="EouDetection">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.EouDetection EouDetection (string model = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.EouDetection EouDetection(string model) cil managed" />
@@ -758,7 +588,7 @@
         <param name="model" />
         <summary>
             Top-level union for end-of-utterance (EOU) semantic detection configuration.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetection(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionEn(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticDetectionMultilingual(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.Boolean})" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticEnEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticMultilingualEouDetection(System.Nullable{System.Single},System.Nullable{System.Single})" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.EouDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -854,32 +684,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="InputAudio">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputAudio InputAudio (string model = default, System.Collections.Generic.IEnumerable&lt;string&gt; phraseList = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.InputAudio InputAudio(string model, class System.Collections.Generic.IEnumerable`1&lt;string&gt; phraseList) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.InputAudio(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function InputAudio (Optional model As String = Nothing, Optional phraseList As IEnumerable(Of String) = Nothing) As InputAudio" />
-      <MemberSignature Language="F#" Value="static member InputAudio : string * seq&lt;string&gt; -&gt; Azure.AI.VoiceLive.InputAudio" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.InputAudio (model, phraseList)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.InputAudio</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="model" Type="System.String" />
-        <Parameter Name="phraseList" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="model"> The name of the model to use for input audio (currently only 'azure-standard' is supported). </param>
-        <param name="phraseList"> Optional list of phrases to bias the speech recognition engine. </param>
-        <summary> Configuration for client audio input. Used to specify the audio model and optional phrase list. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.InputAudio" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="InputAudioContentPart">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputAudioContentPart InputAudioContentPart (string audio = default, string transcript = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.InputAudioContentPart InputAudioContentPart(string audio, string transcript) cil managed" />
@@ -960,32 +764,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LlmVoice">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.LlmVoice LlmVoice (string type = default, Azure.AI.VoiceLive.LlmVoiceName name = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.LlmVoice LlmVoice(string type, valuetype Azure.AI.VoiceLive.LlmVoiceName name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.LlmVoice(System.String,Azure.AI.VoiceLive.LlmVoiceName)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LlmVoice (Optional type As String = Nothing, Optional name As LlmVoiceName = Nothing) As LlmVoice" />
-      <MemberSignature Language="F#" Value="static member LlmVoice : string * Azure.AI.VoiceLive.LlmVoiceName -&gt; Azure.AI.VoiceLive.LlmVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.LlmVoice (type, name)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.LlmVoice</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="name" Type="Azure.AI.VoiceLive.LlmVoiceName" />
-      </Parameters>
-      <Docs>
-        <param name="type" />
-        <param name="name" />
-        <summary> Voice configuration for LLM (Large Language Model) voices. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.LlmVoice" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="LogProbProperties">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.LogProbProperties LogProbProperties (string token = default, float logprob = 0, BinaryData bytes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.LogProbProperties LogProbProperties(string token, float32 logprob, class System.BinaryData bytes) cil managed" />
@@ -1037,27 +815,6 @@
         <param name="status" />
         <summary> The MessageItem. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.MessageItem" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NoTurnDetection">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.NoTurnDetection NoTurnDetection ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.NoTurnDetection NoTurnDetection() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.NoTurnDetection" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NoTurnDetection () As NoTurnDetection" />
-      <MemberSignature Language="F#" Value="static member NoTurnDetection : unit -&gt; Azure.AI.VoiceLive.NoTurnDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.NoTurnDetection " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.NoTurnDetection</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary> Disables turn detection. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.NoTurnDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1530,19 +1287,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ServerVad">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ServerVad ServerVad (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, bool? autoTruncate = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.ServerVad ServerVad(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ServerVad (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As ServerVad" />
-      <MemberSignature Language="F#" Value="static member ServerVad : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.ServerVad" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVad (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, autoTruncate)" />
+    <Member MemberName="ServerVadTurnDetection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ServerVadTurnDetection ServerVadTurnDetection (float? threshold = default, int? prefixPaddingMs = default, int? silenceDurationMs = default, Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection = default, bool? autoTruncate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.ServerVadTurnDetection ServerVadTurnDetection(valuetype System.Nullable`1&lt;float32&gt; threshold, valuetype System.Nullable`1&lt;int32&gt; prefixPaddingMs, valuetype System.Nullable`1&lt;int32&gt; silenceDurationMs, class Azure.AI.VoiceLive.EouDetection endOfUtteranceDetection, valuetype System.Nullable`1&lt;bool&gt; autoTruncate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVadTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ServerVadTurnDetection (Optional threshold As Nullable(Of Single) = Nothing, Optional prefixPaddingMs As Nullable(Of Integer) = Nothing, Optional silenceDurationMs As Nullable(Of Integer) = Nothing, Optional endOfUtteranceDetection As EouDetection = Nothing, Optional autoTruncate As Nullable(Of Boolean) = Nothing) As ServerVadTurnDetection" />
+      <MemberSignature Language="F#" Value="static member ServerVadTurnDetection : Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.AI.VoiceLive.EouDetection * Nullable&lt;bool&gt; -&gt; Azure.AI.VoiceLive.ServerVadTurnDetection" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVadTurnDetection (threshold, prefixPaddingMs, silenceDurationMs, endOfUtteranceDetection, autoTruncate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.ServerVad</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.ServerVadTurnDetection</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="threshold" Type="System.Nullable&lt;System.Single&gt;" />
@@ -1553,12 +1310,12 @@
       </Parameters>
       <Docs>
         <param name="threshold" />
-        <param name="prefixPaddingMs" />
-        <param name="silenceDurationMs" />
+        <param name="prefixPaddingMs"> Gets or sets the PrefixPaddingMs. </param>
+        <param name="silenceDurationMs"> Gets or sets the SilenceDurationMs. </param>
         <param name="endOfUtteranceDetection" />
         <param name="autoTruncate" />
         <summary> Base model for VAD-based turn detection. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.ServerVad" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.ServerVadTurnDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1585,9 +1342,35 @@
         <param name="eventId" />
         <summary>
             A voicelive server event.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionAvatarConnecting(System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionCreated(System.String,Azure.AI.VoiceLive.VoiceLiveSessionResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionUpdated(System.String,Azure.AI.VoiceLive.VoiceLiveSessionResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateError(System.String,Azure.AI.VoiceLive.SessionUpdateErrorDetails)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseTextDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.BinaryData)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemCreated(System.String,System.String,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted(System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemRetrieved(Azure.AI.VoiceLive.ResponseItem,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemTruncated(System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionCompleted(System.String,System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.LogProbProperties})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionFailed(System.String,System.String,System.Int32,Azure.AI.VoiceLive.VoiceLiveErrorDetails)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferCommitted(System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferCleared(System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferSpeechStarted(System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferSpeechStopped(System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseCreated(System.String,Azure.AI.VoiceLive.VoiceLiveResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseDone(System.String,Azure.AI.VoiceLive.VoiceLiveResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseOutputItemAdded(System.String,System.String,System.Int32,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseOutputItemDone(System.String,System.String,System.Int32,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseContentPartAdded(System.String,System.String,System.String,System.Int32,System.Int32,Azure.AI.VoiceLive.VoiceLiveContentPart)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseContentPartDone(System.String,System.String,System.String,System.Int32,System.Int32,Azure.AI.VoiceLive.VoiceLiveContentPart)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseTextDone(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTranscriptDone(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioDone(System.String,System.String,System.String,System.Int32,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Int32,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationBlendshapeDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.BinaryData,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationBlendshapeDone(System.String,System.String,System.String,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseEmotionHypothesis(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.EmotionCandidate},System.Int32,System.Int32,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTimestampDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTimestampDone(System.String,System.String,System.String,System.Int32,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationVisemeDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationVisemeDone(System.String,System.String,System.String,System.Int32,System.Int32)" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateAvatarConnecting(System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionCreated(System.String,Azure.AI.VoiceLive.VoiceLiveSessionResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionUpdated(System.String,Azure.AI.VoiceLive.VoiceLiveSessionResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateError(System.String,Azure.AI.VoiceLive.SessionUpdateErrorDetails)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseTextDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.BinaryData)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemCreated(System.String,System.String,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted(System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemRetrieved(Azure.AI.VoiceLive.ResponseItem,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemTruncated(System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionCompleted(System.String,System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionDelta(System.String,System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.LogProbProperties})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemInputAudioTranscriptionFailed(System.String,System.String,System.Int32,Azure.AI.VoiceLive.VoiceLiveErrorDetails)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferCommitted(System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferCleared(System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferSpeechStarted(System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateInputAudioBufferSpeechStopped(System.String,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseCreated(System.String,Azure.AI.VoiceLive.VoiceLiveResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseDone(System.String,Azure.AI.VoiceLive.VoiceLiveResponse)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseOutputItemAdded(System.String,System.String,System.Int32,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseOutputItemDone(System.String,System.String,System.Int32,Azure.AI.VoiceLive.ResponseItem)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseContentPartAdded(System.String,System.String,System.String,System.Int32,System.Int32,Azure.AI.VoiceLive.VoiceLiveContentPart)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseContentPartDone(System.String,System.String,System.String,System.Int32,System.Int32,Azure.AI.VoiceLive.VoiceLiveContentPart)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseTextDone(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTranscriptDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTranscriptDone(System.String,System.String,System.String,System.Int32,System.Int32,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioDone(System.String,System.String,System.String,System.Int32,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseFunctionCallArgumentsDelta(System.String,System.String,System.String,System.Int32,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseFunctionCallArgumentsDone(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationBlendshapeDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.BinaryData,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationBlendshapeDone(System.String,System.String,System.String,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTimestampDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAudioTimestampDone(System.String,System.String,System.String,System.Int32,System.Int32)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationVisemeDelta(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseAnimationVisemeDone(System.String,System.String,System.String,System.Int32,System.Int32)" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdate" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateAvatarConnecting">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateAvatarConnecting SessionUpdateAvatarConnecting (string eventId = default, string serverSdp = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateAvatarConnecting SessionUpdateAvatarConnecting(string eventId, string serverSdp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateAvatarConnecting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateAvatarConnecting (Optional eventId As String = Nothing, Optional serverSdp As String = Nothing) As SessionUpdateAvatarConnecting" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateAvatarConnecting : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateAvatarConnecting" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateAvatarConnecting (eventId, serverSdp)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateAvatarConnecting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" />
+        <Parameter Name="serverSdp" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="serverSdp"> The server's SDP answer for the avatar connection. </param>
+        <summary> Sent when the server is in the process of establishing an avatar media connection and provides its SDP answer. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateAvatarConnecting" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2014,11 +1797,7 @@
       </Parameters>
       <Docs>
         <param name="eventId" />
-        <param name="audioEndMs">
-            Milliseconds since the session started when speech stopped. This will
-            correspond to the end of audio sent to the model, and thus includes the
-            `min_silence_duration_ms` configured in the Session.
-            </param>
+        <param name="audioEndMs" />
         <param name="itemId"> The ID of the user message item that will be created. </param>
         <summary>
             Returned in `server_vad` mode when the server detects the end of speech in
@@ -2124,7 +1903,7 @@
         <param name="itemId" />
         <param name="outputIndex" />
         <param name="contentIndex" />
-        <param name="audioOffsetMs" />
+        <param name="audioOffsetMs"> Gets the AudioOffsetMs. </param>
         <param name="visemeId" />
         <summary> Represents a viseme ID delta update for animation based on audio. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationVisemeDelta" /> instance for mocking. </returns>
@@ -2263,8 +2042,8 @@
         <param name="itemId" />
         <param name="outputIndex" />
         <param name="contentIndex" />
-        <param name="audioOffsetMs" />
-        <param name="audioDurationMs" />
+        <param name="audioOffsetMs"> Gets the AudioOffsetMs. </param>
+        <param name="audioDurationMs"> Gets the AudioDurationMs. </param>
         <param name="text" />
         <param name="timestampType" />
         <summary> Represents a word-level audio timestamp delta for a response. </summary>
@@ -2509,42 +2288,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SessionUpdateResponseEmotionHypothesis">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseEmotionHypothesis SessionUpdateResponseEmotionHypothesis (string eventId = default, string emotion = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.EmotionCandidate&gt; candidates = default, int audioOffsetMs = 0, int audioDurationMs = 0, string responseId = default, string itemId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseEmotionHypothesis SessionUpdateResponseEmotionHypothesis(string eventId, string emotion, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.EmotionCandidate&gt; candidates, int32 audioOffsetMs, int32 audioDurationMs, string responseId, string itemId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseEmotionHypothesis(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.EmotionCandidate},System.Int32,System.Int32,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseEmotionHypothesis (Optional eventId As String = Nothing, Optional emotion As String = Nothing, Optional candidates As IEnumerable(Of EmotionCandidate) = Nothing, Optional audioOffsetMs As Integer = 0, Optional audioDurationMs As Integer = 0, Optional responseId As String = Nothing, Optional itemId As String = Nothing) As SessionUpdateResponseEmotionHypothesis" />
-      <MemberSignature Language="F#" Value="static member SessionUpdateResponseEmotionHypothesis : string * string * seq&lt;Azure.AI.VoiceLive.EmotionCandidate&gt; * int * int * string * string -&gt; Azure.AI.VoiceLive.SessionUpdateResponseEmotionHypothesis" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseEmotionHypothesis (eventId, emotion, candidates, audioOffsetMs, audioDurationMs, responseId, itemId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseEmotionHypothesis</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="eventId" Type="System.String" />
-        <Parameter Name="emotion" Type="System.String" />
-        <Parameter Name="candidates" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.EmotionCandidate&gt;" />
-        <Parameter Name="audioOffsetMs" Type="System.Int32" />
-        <Parameter Name="audioDurationMs" Type="System.Int32" />
-        <Parameter Name="responseId" Type="System.String" />
-        <Parameter Name="itemId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="eventId" />
-        <param name="emotion" />
-        <param name="candidates" />
-        <param name="audioOffsetMs" />
-        <param name="audioDurationMs" />
-        <param name="responseId" />
-        <param name="itemId" />
-        <summary> Represents an emotion hypothesis detected from response audio with multiple candidates. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseEmotionHypothesis" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SessionUpdateResponseFunctionCallArgumentsDelta">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDelta SessionUpdateResponseFunctionCallArgumentsDelta (string eventId = default, string responseId = default, string itemId = default, int outputIndex = 0, string callId = default, string delta = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDelta SessionUpdateResponseFunctionCallArgumentsDelta(string eventId, string responseId, string itemId, int32 outputIndex, string callId, string delta) cil managed" />
@@ -2752,32 +2495,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SessionUpdateSessionAvatarConnecting">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateSessionAvatarConnecting SessionUpdateSessionAvatarConnecting (string eventId = default, string serverSdp = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateSessionAvatarConnecting SessionUpdateSessionAvatarConnecting(string eventId, string serverSdp) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionAvatarConnecting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateSessionAvatarConnecting (Optional eventId As String = Nothing, Optional serverSdp As String = Nothing) As SessionUpdateSessionAvatarConnecting" />
-      <MemberSignature Language="F#" Value="static member SessionUpdateSessionAvatarConnecting : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateSessionAvatarConnecting" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateSessionAvatarConnecting (eventId, serverSdp)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.SessionUpdateSessionAvatarConnecting</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="eventId" Type="System.String" />
-        <Parameter Name="serverSdp" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="eventId" />
-        <param name="serverSdp"> The server's SDP answer for the avatar connection. </param>
-        <summary> Sent when the server is in the process of establishing an avatar media connection and provides its SDP answer. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateSessionAvatarConnecting" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SessionUpdateSessionCreated">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateSessionCreated SessionUpdateSessionCreated (string eventId = default, Azure.AI.VoiceLive.VoiceLiveSessionResponse session = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateSessionCreated SessionUpdateSessionCreated(string eventId, class Azure.AI.VoiceLive.VoiceLiveSessionResponse session) cil managed" />
@@ -2886,7 +2603,7 @@
         <param name="type" />
         <summary>
             Top-level union for turn detection configuration.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.NoTurnDetection" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEn(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadServer(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureMultilingualSemanticVad(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ServerVadTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadEnTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzureSemanticVadMultilingualTurnDetection(System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.AI.VoiceLive.EouDetection,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.TurnDetection" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -3117,11 +2834,11 @@
       </Docs>
     </Member>
     <Member MemberName="VoiceLiveSessionOptions">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, string instructions = default, Azure.AI.VoiceLive.InputAudio inputAudio = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.AudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.AudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.TurnDetection turnDetection = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, float? temperature = default, Azure.AI.VoiceLive.RespondingAgentOptions agent = default, BinaryData voiceInternal = default, BinaryData maxResponseOutputTokens = default, BinaryData toolChoice = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InputModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, string instructions, class Azure.AI.VoiceLive.InputAudio inputAudio, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.TurnDetection turnDetection, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, valuetype System.Nullable`1&lt;float32&gt; temperature, class Azure.AI.VoiceLive.RespondingAgentOptions agent, class System.BinaryData voiceInternal, class System.BinaryData maxResponseOutputTokens, class System.BinaryData toolChoice) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionOptions(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InputModality},Azure.AI.VoiceLive.AnimationOptions,System.String,Azure.AI.VoiceLive.InputAudio,System.Nullable{System.Int32},System.Nullable{Azure.AI.VoiceLive.AudioFormat},System.Nullable{Azure.AI.VoiceLive.AudioFormat},Azure.AI.VoiceLive.TurnDetection,Azure.AI.VoiceLive.AudioNoiseReduction,Azure.AI.VoiceLive.AudioEchoCancellation,Azure.AI.VoiceLive.AvatarConfiguration,Azure.AI.VoiceLive.AudioInputTranscriptionSettings,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AudioTimestampType},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveToolDefinition},System.Nullable{System.Single},Azure.AI.VoiceLive.RespondingAgentOptions,System.BinaryData,System.BinaryData,System.BinaryData)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveSessionOptions (Optional model As String = Nothing, Optional modalities As IEnumerable(Of InputModality) = Nothing, Optional animation As AnimationOptions = Nothing, Optional instructions As String = Nothing, Optional inputAudio As InputAudio = Nothing, Optional inputAudioSamplingRate As Nullable(Of Integer) = Nothing, Optional inputAudioFormat As Nullable(Of AudioFormat) = Nothing, Optional outputAudioFormat As Nullable(Of AudioFormat) = Nothing, Optional turnDetection As TurnDetection = Nothing, Optional inputAudioNoiseReduction As AudioNoiseReduction = Nothing, Optional inputAudioEchoCancellation As AudioEchoCancellation = Nothing, Optional avatar As AvatarConfiguration = Nothing, Optional inputAudioTranscription As AudioInputTranscriptionSettings = Nothing, Optional outputAudioTimestampTypes As IEnumerable(Of AudioTimestampType) = Nothing, Optional tools As IEnumerable(Of VoiceLiveToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional agent As RespondingAgentOptions = Nothing, Optional voiceInternal As BinaryData = Nothing, Optional maxResponseOutputTokens As BinaryData = Nothing, Optional toolChoice As BinaryData = Nothing) As VoiceLiveSessionOptions" />
-      <MemberSignature Language="F#" Value="static member VoiceLiveSessionOptions : string * seq&lt;Azure.AI.VoiceLive.InputModality&gt; * Azure.AI.VoiceLive.AnimationOptions * string * Azure.AI.VoiceLive.InputAudio * Nullable&lt;int&gt; * Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt; * Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt; * Azure.AI.VoiceLive.TurnDetection * Azure.AI.VoiceLive.AudioNoiseReduction * Azure.AI.VoiceLive.AudioEchoCancellation * Azure.AI.VoiceLive.AvatarConfiguration * Azure.AI.VoiceLive.AudioInputTranscriptionSettings * seq&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; * seq&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; * Nullable&lt;single&gt; * Azure.AI.VoiceLive.RespondingAgentOptions * BinaryData * BinaryData * BinaryData -&gt; Azure.AI.VoiceLive.VoiceLiveSessionOptions" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionOptions (model, modalities, animation, instructions, inputAudio, inputAudioSamplingRate, inputAudioFormat, outputAudioFormat, turnDetection, inputAudioNoiseReduction, inputAudioEchoCancellation, avatar, inputAudioTranscription, outputAudioTimestampTypes, tools, temperature, agent, voiceInternal, maxResponseOutputTokens, toolChoice)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, string instructions = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.InputAudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, float? temperature = default, BinaryData voiceInternal = default, BinaryData maxResponseOutputTokens = default, BinaryData toolChoice = default, BinaryData turnDetection = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InputModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, string instructions, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.InputAudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, valuetype System.Nullable`1&lt;float32&gt; temperature, class System.BinaryData voiceInternal, class System.BinaryData maxResponseOutputTokens, class System.BinaryData toolChoice, class System.BinaryData turnDetection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionOptions(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InputModality},Azure.AI.VoiceLive.AnimationOptions,System.String,System.Nullable{System.Int32},System.Nullable{Azure.AI.VoiceLive.InputAudioFormat},System.Nullable{Azure.AI.VoiceLive.OutputAudioFormat},Azure.AI.VoiceLive.AudioNoiseReduction,Azure.AI.VoiceLive.AudioEchoCancellation,Azure.AI.VoiceLive.AvatarConfiguration,Azure.AI.VoiceLive.AudioInputTranscriptionSettings,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AudioTimestampType},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveToolDefinition},System.Nullable{System.Single},System.BinaryData,System.BinaryData,System.BinaryData,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveSessionOptions (Optional model As String = Nothing, Optional modalities As IEnumerable(Of InputModality) = Nothing, Optional animation As AnimationOptions = Nothing, Optional instructions As String = Nothing, Optional inputAudioSamplingRate As Nullable(Of Integer) = Nothing, Optional inputAudioFormat As Nullable(Of InputAudioFormat) = Nothing, Optional outputAudioFormat As Nullable(Of OutputAudioFormat) = Nothing, Optional inputAudioNoiseReduction As AudioNoiseReduction = Nothing, Optional inputAudioEchoCancellation As AudioEchoCancellation = Nothing, Optional avatar As AvatarConfiguration = Nothing, Optional inputAudioTranscription As AudioInputTranscriptionSettings = Nothing, Optional outputAudioTimestampTypes As IEnumerable(Of AudioTimestampType) = Nothing, Optional tools As IEnumerable(Of VoiceLiveToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional voiceInternal As BinaryData = Nothing, Optional maxResponseOutputTokens As BinaryData = Nothing, Optional toolChoice As BinaryData = Nothing, Optional turnDetection As BinaryData = Nothing) As VoiceLiveSessionOptions" />
+      <MemberSignature Language="F#" Value="static member VoiceLiveSessionOptions : string * seq&lt;Azure.AI.VoiceLive.InputModality&gt; * Azure.AI.VoiceLive.AnimationOptions * string * Nullable&lt;int&gt; * Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt; * Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt; * Azure.AI.VoiceLive.AudioNoiseReduction * Azure.AI.VoiceLive.AudioEchoCancellation * Azure.AI.VoiceLive.AvatarConfiguration * Azure.AI.VoiceLive.AudioInputTranscriptionSettings * seq&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; * seq&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; * Nullable&lt;single&gt; * BinaryData * BinaryData * BinaryData * BinaryData -&gt; Azure.AI.VoiceLive.VoiceLiveSessionOptions" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionOptions (model, modalities, animation, instructions, inputAudioSamplingRate, inputAudioFormat, outputAudioFormat, inputAudioNoiseReduction, inputAudioEchoCancellation, avatar, inputAudioTranscription, outputAudioTimestampTypes, tools, temperature, voiceInternal, maxResponseOutputTokens, toolChoice, turnDetection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -3135,11 +2852,9 @@
         <Parameter Name="modalities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt;" />
         <Parameter Name="animation" Type="Azure.AI.VoiceLive.AnimationOptions" />
         <Parameter Name="instructions" Type="System.String" />
-        <Parameter Name="inputAudio" Type="Azure.AI.VoiceLive.InputAudio" />
         <Parameter Name="inputAudioSamplingRate" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="inputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt;" />
-        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt;" />
-        <Parameter Name="turnDetection" Type="Azure.AI.VoiceLive.TurnDetection" />
+        <Parameter Name="inputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt;" />
+        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" />
         <Parameter Name="inputAudioNoiseReduction" Type="Azure.AI.VoiceLive.AudioNoiseReduction" />
         <Parameter Name="inputAudioEchoCancellation" Type="Azure.AI.VoiceLive.AudioEchoCancellation" />
         <Parameter Name="avatar" Type="Azure.AI.VoiceLive.AvatarConfiguration" />
@@ -3147,21 +2862,23 @@
         <Parameter Name="outputAudioTimestampTypes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt;" />
         <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt;" />
         <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="agent" Type="Azure.AI.VoiceLive.RespondingAgentOptions" />
         <Parameter Name="voiceInternal" Type="System.BinaryData" />
         <Parameter Name="maxResponseOutputTokens" Type="System.BinaryData" />
         <Parameter Name="toolChoice" Type="System.BinaryData" />
+        <Parameter Name="turnDetection" Type="System.BinaryData" />
       </Parameters>
       <Docs>
         <param name="model" />
         <param name="modalities" />
         <param name="animation" />
         <param name="instructions" />
-        <param name="inputAudio" />
-        <param name="inputAudioSamplingRate" />
+        <param name="inputAudioSamplingRate">
+            Input audio sampling rate in Hz. Available values:
+            - For pcm16: 8000, 16000, 24000
+            - For g711_alaw/g711_ulaw: 8000
+            </param>
         <param name="inputAudioFormat" />
         <param name="outputAudioFormat" />
-        <param name="turnDetection" />
         <param name="inputAudioNoiseReduction" />
         <param name="inputAudioEchoCancellation" />
         <param name="avatar" />
@@ -3169,21 +2886,21 @@
         <param name="outputAudioTimestampTypes" />
         <param name="tools" />
         <param name="temperature" />
-        <param name="agent" />
         <param name="voiceInternal" />
         <param name="maxResponseOutputTokens" />
         <param name="toolChoice" />
+        <param name="turnDetection" />
         <summary> The VoiceLiveSessionOptions. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveSessionOptions" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VoiceLiveSessionResponse">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, string instructions = default, Azure.AI.VoiceLive.InputAudio inputAudio = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.AudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.AudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.TurnDetection turnDetection = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, float? temperature = default, Azure.AI.VoiceLive.RespondingAgentOptions agent = default, BinaryData voiceInternal = default, BinaryData maxResponseOutputTokens = default, BinaryData toolChoice = default, string id = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InputModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, string instructions, class Azure.AI.VoiceLive.InputAudio inputAudio, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.TurnDetection turnDetection, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, valuetype System.Nullable`1&lt;float32&gt; temperature, class Azure.AI.VoiceLive.RespondingAgentOptions agent, class System.BinaryData voiceInternal, class System.BinaryData maxResponseOutputTokens, class System.BinaryData toolChoice, string id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InputModality},Azure.AI.VoiceLive.AnimationOptions,System.String,Azure.AI.VoiceLive.InputAudio,System.Nullable{System.Int32},System.Nullable{Azure.AI.VoiceLive.AudioFormat},System.Nullable{Azure.AI.VoiceLive.AudioFormat},Azure.AI.VoiceLive.TurnDetection,Azure.AI.VoiceLive.AudioNoiseReduction,Azure.AI.VoiceLive.AudioEchoCancellation,Azure.AI.VoiceLive.AvatarConfiguration,Azure.AI.VoiceLive.AudioInputTranscriptionSettings,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AudioTimestampType},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveToolDefinition},System.Nullable{System.Single},Azure.AI.VoiceLive.RespondingAgentOptions,System.BinaryData,System.BinaryData,System.BinaryData,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveSessionResponse (Optional model As String = Nothing, Optional modalities As IEnumerable(Of InputModality) = Nothing, Optional animation As AnimationOptions = Nothing, Optional instructions As String = Nothing, Optional inputAudio As InputAudio = Nothing, Optional inputAudioSamplingRate As Nullable(Of Integer) = Nothing, Optional inputAudioFormat As Nullable(Of AudioFormat) = Nothing, Optional outputAudioFormat As Nullable(Of AudioFormat) = Nothing, Optional turnDetection As TurnDetection = Nothing, Optional inputAudioNoiseReduction As AudioNoiseReduction = Nothing, Optional inputAudioEchoCancellation As AudioEchoCancellation = Nothing, Optional avatar As AvatarConfiguration = Nothing, Optional inputAudioTranscription As AudioInputTranscriptionSettings = Nothing, Optional outputAudioTimestampTypes As IEnumerable(Of AudioTimestampType) = Nothing, Optional tools As IEnumerable(Of VoiceLiveToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional agent As RespondingAgentOptions = Nothing, Optional voiceInternal As BinaryData = Nothing, Optional maxResponseOutputTokens As BinaryData = Nothing, Optional toolChoice As BinaryData = Nothing, Optional id As String = Nothing) As VoiceLiveSessionResponse" />
-      <MemberSignature Language="F#" Value="static member VoiceLiveSessionResponse : string * seq&lt;Azure.AI.VoiceLive.InputModality&gt; * Azure.AI.VoiceLive.AnimationOptions * string * Azure.AI.VoiceLive.InputAudio * Nullable&lt;int&gt; * Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt; * Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt; * Azure.AI.VoiceLive.TurnDetection * Azure.AI.VoiceLive.AudioNoiseReduction * Azure.AI.VoiceLive.AudioEchoCancellation * Azure.AI.VoiceLive.AvatarConfiguration * Azure.AI.VoiceLive.AudioInputTranscriptionSettings * seq&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; * seq&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; * Nullable&lt;single&gt; * Azure.AI.VoiceLive.RespondingAgentOptions * BinaryData * BinaryData * BinaryData * string -&gt; Azure.AI.VoiceLive.VoiceLiveSessionResponse" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse (model, modalities, animation, instructions, inputAudio, inputAudioSamplingRate, inputAudioFormat, outputAudioFormat, turnDetection, inputAudioNoiseReduction, inputAudioEchoCancellation, avatar, inputAudioTranscription, outputAudioTimestampTypes, tools, temperature, agent, voiceInternal, maxResponseOutputTokens, toolChoice, id)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, string instructions = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.InputAudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, float? temperature = default, BinaryData voiceInternal = default, BinaryData maxResponseOutputTokens = default, BinaryData toolChoice = default, BinaryData turnDetection = default, Azure.AI.VoiceLive.RespondingAgentOptions agent = default, string id = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InputModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, string instructions, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.InputAudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionSettings inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, valuetype System.Nullable`1&lt;float32&gt; temperature, class System.BinaryData voiceInternal, class System.BinaryData maxResponseOutputTokens, class System.BinaryData toolChoice, class System.BinaryData turnDetection, class Azure.AI.VoiceLive.RespondingAgentOptions agent, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InputModality},Azure.AI.VoiceLive.AnimationOptions,System.String,System.Nullable{System.Int32},System.Nullable{Azure.AI.VoiceLive.InputAudioFormat},System.Nullable{Azure.AI.VoiceLive.OutputAudioFormat},Azure.AI.VoiceLive.AudioNoiseReduction,Azure.AI.VoiceLive.AudioEchoCancellation,Azure.AI.VoiceLive.AvatarConfiguration,Azure.AI.VoiceLive.AudioInputTranscriptionSettings,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AudioTimestampType},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveToolDefinition},System.Nullable{System.Single},System.BinaryData,System.BinaryData,System.BinaryData,System.BinaryData,Azure.AI.VoiceLive.RespondingAgentOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveSessionResponse (Optional model As String = Nothing, Optional modalities As IEnumerable(Of InputModality) = Nothing, Optional animation As AnimationOptions = Nothing, Optional instructions As String = Nothing, Optional inputAudioSamplingRate As Nullable(Of Integer) = Nothing, Optional inputAudioFormat As Nullable(Of InputAudioFormat) = Nothing, Optional outputAudioFormat As Nullable(Of OutputAudioFormat) = Nothing, Optional inputAudioNoiseReduction As AudioNoiseReduction = Nothing, Optional inputAudioEchoCancellation As AudioEchoCancellation = Nothing, Optional avatar As AvatarConfiguration = Nothing, Optional inputAudioTranscription As AudioInputTranscriptionSettings = Nothing, Optional outputAudioTimestampTypes As IEnumerable(Of AudioTimestampType) = Nothing, Optional tools As IEnumerable(Of VoiceLiveToolDefinition) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional voiceInternal As BinaryData = Nothing, Optional maxResponseOutputTokens As BinaryData = Nothing, Optional toolChoice As BinaryData = Nothing, Optional turnDetection As BinaryData = Nothing, Optional agent As RespondingAgentOptions = Nothing, Optional id As String = Nothing) As VoiceLiveSessionResponse" />
+      <MemberSignature Language="F#" Value="static member VoiceLiveSessionResponse : string * seq&lt;Azure.AI.VoiceLive.InputModality&gt; * Azure.AI.VoiceLive.AnimationOptions * string * Nullable&lt;int&gt; * Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt; * Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt; * Azure.AI.VoiceLive.AudioNoiseReduction * Azure.AI.VoiceLive.AudioEchoCancellation * Azure.AI.VoiceLive.AvatarConfiguration * Azure.AI.VoiceLive.AudioInputTranscriptionSettings * seq&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; * seq&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; * Nullable&lt;single&gt; * BinaryData * BinaryData * BinaryData * BinaryData * Azure.AI.VoiceLive.RespondingAgentOptions * string -&gt; Azure.AI.VoiceLive.VoiceLiveSessionResponse" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse (model, modalities, animation, instructions, inputAudioSamplingRate, inputAudioFormat, outputAudioFormat, inputAudioNoiseReduction, inputAudioEchoCancellation, avatar, inputAudioTranscription, outputAudioTimestampTypes, tools, temperature, voiceInternal, maxResponseOutputTokens, toolChoice, turnDetection, agent, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -3197,11 +2914,9 @@
         <Parameter Name="modalities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InputModality&gt;" />
         <Parameter Name="animation" Type="Azure.AI.VoiceLive.AnimationOptions" />
         <Parameter Name="instructions" Type="System.String" />
-        <Parameter Name="inputAudio" Type="Azure.AI.VoiceLive.InputAudio" />
         <Parameter Name="inputAudioSamplingRate" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="inputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt;" />
-        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.AudioFormat&gt;" />
-        <Parameter Name="turnDetection" Type="Azure.AI.VoiceLive.TurnDetection" />
+        <Parameter Name="inputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt;" />
+        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" />
         <Parameter Name="inputAudioNoiseReduction" Type="Azure.AI.VoiceLive.AudioNoiseReduction" />
         <Parameter Name="inputAudioEchoCancellation" Type="Azure.AI.VoiceLive.AudioEchoCancellation" />
         <Parameter Name="avatar" Type="Azure.AI.VoiceLive.AvatarConfiguration" />
@@ -3209,10 +2924,11 @@
         <Parameter Name="outputAudioTimestampTypes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt;" />
         <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt;" />
         <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="agent" Type="Azure.AI.VoiceLive.RespondingAgentOptions" />
         <Parameter Name="voiceInternal" Type="System.BinaryData" />
         <Parameter Name="maxResponseOutputTokens" Type="System.BinaryData" />
         <Parameter Name="toolChoice" Type="System.BinaryData" />
+        <Parameter Name="turnDetection" Type="System.BinaryData" />
+        <Parameter Name="agent" Type="Azure.AI.VoiceLive.RespondingAgentOptions" />
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
@@ -3220,11 +2936,13 @@
         <param name="modalities" />
         <param name="animation" />
         <param name="instructions" />
-        <param name="inputAudio" />
-        <param name="inputAudioSamplingRate" />
+        <param name="inputAudioSamplingRate">
+            Input audio sampling rate in Hz. Available values:
+            - For pcm16: 8000, 16000, 24000
+            - For g711_alaw/g711_ulaw: 8000
+            </param>
         <param name="inputAudioFormat" />
         <param name="outputAudioFormat" />
-        <param name="turnDetection" />
         <param name="inputAudioNoiseReduction" />
         <param name="inputAudioEchoCancellation" />
         <param name="avatar" />
@@ -3232,10 +2950,11 @@
         <param name="outputAudioTimestampTypes" />
         <param name="tools" />
         <param name="temperature" />
-        <param name="agent" />
         <param name="voiceInternal" />
         <param name="maxResponseOutputTokens" />
         <param name="toolChoice" />
+        <param name="turnDetection" />
+        <param name="agent" />
         <param name="id" />
         <summary> The VoiceLiveSessionResponse. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveSessionResponse" /> instance for mocking. </returns>

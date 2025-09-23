@@ -1,0 +1,36 @@
+<Type Name="JsonPatch+PropagatorGetter" FullName="System.ClientModel.Primitives.JsonPatch+PropagatorGetter">
+  <TypeSignature Language="C#" Value="public delegate bool JsonPatch.PropagatorGetter(ReadOnlySpan&lt;byte&gt; jsonPath, out JsonPatch.EncodedValue value);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed JsonPatch/PropagatorGetter extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ClientModel.Primitives.JsonPatch.PropagatorGetter" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function JsonPatch.PropagatorGetter(jsonPath As ReadOnlySpan(Of Byte), ByRef value As JsonPatch.EncodedValue) As Boolean " />
+  <TypeSignature Language="F#" Value="type JsonPatch.PropagatorGetter = delegate of ReadOnlySpan&lt;byte&gt; * EncodedValue -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>System.ClientModel</AssemblyName>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="jsonPath" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+    <Parameter Name="value" Type="System.ClientModel.Primitives.JsonPatch+EncodedValue" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="jsonPath">The JSON path of the value to be set.</param>
+    <param name="value">The value to set.</param>
+    <summary>
+            Delegate for propagating get operations from child properties of the containing model.
+            </summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>
