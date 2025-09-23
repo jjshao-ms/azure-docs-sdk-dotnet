@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.EventHubs",
-  "Version": "1.2.0",
+  "Version": "1.2.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/eventhub/Azure.ResourceManager.EventHubs",
   "ServiceDirectory": "eventhub",
@@ -10,21 +10,24 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.EventHubs",
-  "ReleaseStatus": "2025-06-13",
+  "ReleaseStatus": "2025-09-23",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
+    "name": "Azure.ResourceManager.EventHubs",
     "triggeringPaths": [
       "/sdk/eventhub/ci.mgmt.yml"
     ],
-    "name": "Azure.ResourceManager.EventHubs",
     "safeName": "AzureResourceManagerEventHubs"
   },
   "CIParameters": {
-    "CheckAOTCompat": false,
-    "AOTTestInputs": [],
-    "CIMatrixConfigs": [],
-    "BuildSnippets": true
+    "AOTTestInputs": {
+      "ExpectedWarningsFilepath": "None",
+      "ArtifactName": "Azure.ResourceManager.EventHubs"
+    },
+    "CheckAOTCompat": true,
+    "BuildSnippets": true,
+    "CIMatrixConfigs": []
   },
   "Namespaces": [
     "Azure.ResourceManager.EventHubs",
