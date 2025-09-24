@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Quota",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "DevVersion": null,
   "DirectoryPath": "sdk/quota/Azure.ResourceManager.Quota",
   "ServiceDirectory": "quota",
@@ -10,17 +10,23 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Quota",
-  "ReleaseStatus": "2025-02-28",
+  "ReleaseStatus": "2025-09-25",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
     "triggeringPaths": [
       "/sdk/quota/ci.mgmt.yml"
     ],
-    "safeName": "AzureResourceManagerQuota",
-    "name": "Azure.ResourceManager.Quota"
+    "name": "Azure.ResourceManager.Quota",
+    "safeName": "AzureResourceManagerQuota"
   },
   "CIParameters": {
+    "BuildSnippets": true,
+    "AOTTestInputs": {
+      "ArtifactName": "Azure.ResourceManager.Quota",
+      "ExpectedWarningsFilepath": "None"
+    },
+    "CheckAOTCompat": true,
     "CIMatrixConfigs": []
   },
   "Namespaces": [
