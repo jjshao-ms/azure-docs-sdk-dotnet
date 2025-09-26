@@ -1,0 +1,270 @@
+<Type Name="DisconnectedOperationsExtensions" FullName="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions">
+  <TypeSignature Language="C#" Value="public static class DisconnectedOperationsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DisconnectedOperationsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DisconnectedOperationsExtensions" />
+  <TypeSignature Language="F#" Value="type DisconnectedOperationsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.DisconnectedOperations. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDisconnectedOperation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperation (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperation(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperation(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperation (resourceGroupResource As ResourceGroupResource, name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DisconnectedOperationResource)" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperation : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperation (resourceGroupResource, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="name"> Name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a DisconnectedOperation
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsResourceGroupResource.GetDisconnectedOperation(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;&gt; GetDisconnectedOperationAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;&gt; GetDisconnectedOperationAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperationAsync (resourceGroupResource As ResourceGroupResource, name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DisconnectedOperationResource))" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperationAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;&gt;" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationAsync (resourceGroupResource, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="name"> Name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a DisconnectedOperation
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsResourceGroupResource.GetDisconnectedOperationAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource GetDisconnectedOperationResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource GetDisconnectedOperationResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperationResource (client As ArmClient, id As ResourceIdentifier) As DisconnectedOperationResource" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperationResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsArmClient.GetDisconnectedOperationResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperations">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationCollection GetDisconnectedOperations (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationCollection GetDisconnectedOperations(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperations(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperations (resourceGroupResource As ResourceGroupResource) As DisconnectedOperationCollection" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperations : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationCollection" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperations resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <summary>
+            Gets a collection of DisconnectedOperationResources in the ResourceGroupResource.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsResourceGroupResource.GetDisconnectedOperations" /> instead.</description></item></summary>
+        <returns> An object representing collection of DisconnectedOperationResources and their operations over a DisconnectedOperationResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperations">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperations (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperations(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperations(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperations (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DisconnectedOperationResource)" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperations : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperations (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List DisconnectedOperation resources by subscription ID
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Edge/disconnectedOperations</description></item><item><term>Operation Id</term><description>DisconnectedOperation_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsSubscriptionResource.GetDisconnectedOperations(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsArtifactResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource GetDisconnectedOperationsArtifactResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource GetDisconnectedOperationsArtifactResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsArtifactResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperationsArtifactResource (client As ArmClient, id As ResourceIdentifier) As DisconnectedOperationsArtifactResource" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperationsArtifactResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsArtifactResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsArmClient.GetDisconnectedOperationsArtifactResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperationsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt; GetDisconnectedOperationsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperationsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DisconnectedOperationResource)" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperationsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsAsync (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List DisconnectedOperation resources by subscription ID
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Edge/disconnectedOperations</description></item><item><term>Operation Id</term><description>DisconnectedOperation_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsSubscriptionResource.GetDisconnectedOperations(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsImageResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource GetDisconnectedOperationsImageResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource GetDisconnectedOperationsImageResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsImageResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisconnectedOperationsImageResource (client As ArmClient, id As ResourceIdentifier) As DisconnectedOperationsImageResource" />
+      <MemberSignature Language="F#" Value="static member GetDisconnectedOperationsImageResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" Usage="Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsExtensions.GetDisconnectedOperationsImageResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DisconnectedOperations.Mocking.MockableDisconnectedOperationsArmClient.GetDisconnectedOperationsImageResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
