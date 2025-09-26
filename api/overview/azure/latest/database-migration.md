@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: databasemigration
 ---
-# Azure Database Migration SDK for .NET - preview
-## Packages - preview
+# Azure Database Migration SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](database-migration-index.md)]
