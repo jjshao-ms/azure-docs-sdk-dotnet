@@ -1,28 +1,55 @@
 <Type Name="ResponseCancelledDetailsReason" FullName="Azure.AI.VoiceLive.ResponseCancelledDetailsReason">
-  <TypeSignature Language="C#" Value="public enum ResponseCancelledDetailsReason" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResponseCancelledDetailsReason extends System.Enum" />
+  <TypeSignature Language="C#" Value="public readonly struct ResponseCancelledDetailsReason : IEquatable&lt;Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ResponseCancelledDetailsReason extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
-  <TypeSignature Language="VB.NET" Value="Public Enum ResponseCancelledDetailsReason" />
-  <TypeSignature Language="F#" Value="type ResponseCancelledDetailsReason = " />
+  <TypeSignature Language="VB.NET" Value="Public Structure ResponseCancelledDetailsReason&#xA;Implements IEquatable(Of ResponseCancelledDetailsReason)" />
+  <TypeSignature Language="F#" Value="type ResponseCancelledDetailsReason = struct" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Enum</BaseTypeName>
+    <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary />
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResponseCancelledDetailsReason (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.VoiceLive.ResponseCancelledDetailsReason : string -&gt; Azure.AI.VoiceLive.ResponseCancelledDetailsReason" Usage="new Azure.AI.VoiceLive.ResponseCancelledDetailsReason value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="ClientCancelled">
-      <MemberSignature Language="C#" Value="ClientCancelled" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason ClientCancelled = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.ClientCancelled" />
-      <MemberSignature Language="VB.NET" Value="ClientCancelled" />
-      <MemberSignature Language="F#" Value="ClientCancelled = 1" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.ClientCancelled" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ResponseCancelledDetailsReason ClientCancelled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason ClientCancelled" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.ClientCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClientCancelled As ResponseCancelledDetailsReason" />
+      <MemberSignature Language="F#" Value="static member ClientCancelled : Azure.AI.VoiceLive.ResponseCancelledDetailsReason" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.ClientCancelled" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -30,18 +57,226 @@
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.ResponseCancelledDetailsReason</ReturnType>
       </ReturnValue>
-      <MemberValue>1</MemberValue>
       <Docs>
-        <summary> ClientCancelled. </summary>
+        <summary> Gets the ClientCancelled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.AI.VoiceLive.ResponseCancelledDetailsReason other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.Equals(Azure.AI.VoiceLive.ResponseCancelledDetailsReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ResponseCancelledDetailsReason) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.AI.VoiceLive.ResponseCancelledDetailsReason -&gt; bool" Usage="responseCancelledDetailsReason.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="responseCancelledDetailsReason.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="responseCancelledDetailsReason.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.AI.VoiceLive.ResponseCancelledDetailsReason left, Azure.AI.VoiceLive.ResponseCancelledDetailsReason right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason left, valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Equality(Azure.AI.VoiceLive.ResponseCancelledDetailsReason,Azure.AI.VoiceLive.ResponseCancelledDetailsReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ResponseCancelledDetailsReason, right As ResponseCancelledDetailsReason) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.AI.VoiceLive.ResponseCancelledDetailsReason * Azure.AI.VoiceLive.ResponseCancelledDetailsReason -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+        <Parameter Name="right" Type="Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.ResponseCancelledDetailsReason" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.ResponseCancelledDetailsReason (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Implicit(System.String)~Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ResponseCancelledDetailsReason" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.AI.VoiceLive.ResponseCancelledDetailsReason" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.ResponseCancelledDetailsReason</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Converts a string to a <see cref="T:Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.ResponseCancelledDetailsReason? (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt; op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Implicit(System.String)~System.Nullable{Azure.AI.VoiceLive.ResponseCancelledDetailsReason}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As Nullable(Of ResponseCancelledDetailsReason)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Nullable&lt;Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt;" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.ResponseCancelledDetailsReason&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.AI.VoiceLive.ResponseCancelledDetailsReason left, Azure.AI.VoiceLive.ResponseCancelledDetailsReason right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason left, valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Inequality(Azure.AI.VoiceLive.ResponseCancelledDetailsReason,Azure.AI.VoiceLive.ResponseCancelledDetailsReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ResponseCancelledDetailsReason, right As ResponseCancelledDetailsReason) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.AI.VoiceLive.ResponseCancelledDetailsReason * Azure.AI.VoiceLive.ResponseCancelledDetailsReason -&gt; bool" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+        <Parameter Name="right" Type="Azure.AI.VoiceLive.ResponseCancelledDetailsReason" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.ResponseCancelledDetailsReason" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="responseCancelledDetailsReason.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TurnDetected">
-      <MemberSignature Language="C#" Value="TurnDetected" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason TurnDetected = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.TurnDetected" />
-      <MemberSignature Language="VB.NET" Value="TurnDetected" />
-      <MemberSignature Language="F#" Value="TurnDetected = 0" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.TurnDetected" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ResponseCancelledDetailsReason TurnDetected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.AI.VoiceLive.ResponseCancelledDetailsReason TurnDetected" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.ResponseCancelledDetailsReason.TurnDetected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TurnDetected As ResponseCancelledDetailsReason" />
+      <MemberSignature Language="F#" Value="static member TurnDetected : Azure.AI.VoiceLive.ResponseCancelledDetailsReason" Usage="Azure.AI.VoiceLive.ResponseCancelledDetailsReason.TurnDetected" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -49,9 +284,10 @@
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.ResponseCancelledDetailsReason</ReturnType>
       </ReturnValue>
-      <MemberValue>0</MemberValue>
       <Docs>
-        <summary> TurnDetected. </summary>
+        <summary> Gets the TurnDetected. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

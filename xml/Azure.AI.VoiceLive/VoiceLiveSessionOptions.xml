@@ -58,7 +58,7 @@
         <ReturnType>Azure.AI.VoiceLive.AnimationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Animation. </summary>
+        <summary> The animation configuration for the session. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>Azure.AI.VoiceLive.AvatarConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Avatar. </summary>
+        <summary> Configuration for avatar streaming and behavior during the session. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +98,7 @@
         <ReturnType>Azure.AI.VoiceLive.AudioEchoCancellation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the InputAudioEchoCancellation. </summary>
+        <summary> Configuration for echo cancellation during server-side audio processing. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +118,7 @@
         <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the InputAudioFormat. </summary>
+        <summary> Input audio format. Default is 'pcm16'. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +138,7 @@
         <ReturnType>Azure.AI.VoiceLive.AudioNoiseReduction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the InputAudioNoiseReduction. </summary>
+        <summary> Configuration for input audio noise reduction. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,21 +168,21 @@
       </Docs>
     </Member>
     <Member MemberName="InputAudioTranscription">
-      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.AudioInputTranscriptionSettings InputAudioTranscription { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.AudioInputTranscriptionSettings InputAudioTranscription" />
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.AudioInputTranscriptionOptions InputAudioTranscription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.AudioInputTranscriptionOptions InputAudioTranscription" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.VoiceLiveSessionOptions.InputAudioTranscription" />
-      <MemberSignature Language="VB.NET" Value="Public Property InputAudioTranscription As AudioInputTranscriptionSettings" />
-      <MemberSignature Language="F#" Value="member this.InputAudioTranscription : Azure.AI.VoiceLive.AudioInputTranscriptionSettings with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.InputAudioTranscription" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputAudioTranscription As AudioInputTranscriptionOptions" />
+      <MemberSignature Language="F#" Value="member this.InputAudioTranscription : Azure.AI.VoiceLive.AudioInputTranscriptionOptions with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.InputAudioTranscription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.AudioInputTranscriptionSettings</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.AudioInputTranscriptionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the InputAudioTranscription. </summary>
+        <summary> Configuration for input audio transcription. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +202,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Instructions. </summary>
+        <summary> Optional instructions to guide the model's behavior throughout the session. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,18 +259,18 @@
       </Docs>
     </Member>
     <Member MemberName="MaxResponseOutputTokens">
-      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.ResponseMaxOutputTokensOption MaxResponseOutputTokens { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.ResponseMaxOutputTokensOption MaxResponseOutputTokens" />
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.MaxResponseOutputTokensOption MaxResponseOutputTokens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.MaxResponseOutputTokensOption MaxResponseOutputTokens" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.VoiceLiveSessionOptions.MaxResponseOutputTokens" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaxResponseOutputTokens As ResponseMaxOutputTokensOption" />
-      <MemberSignature Language="F#" Value="member this.MaxResponseOutputTokens : Azure.AI.VoiceLive.ResponseMaxOutputTokensOption with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.MaxResponseOutputTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxResponseOutputTokens As MaxResponseOutputTokensOption" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseOutputTokens : Azure.AI.VoiceLive.MaxResponseOutputTokensOption with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.MaxResponseOutputTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.ResponseMaxOutputTokensOption</ReturnType>
+        <ReturnType>Azure.AI.VoiceLive.MaxResponseOutputTokensOption</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -281,21 +281,21 @@
       </Docs>
     </Member>
     <Member MemberName="Modalities">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InputModality&gt; Modalities { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.AI.VoiceLive.InputModality&gt; Modalities" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt; Modalities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; Modalities" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.VoiceLiveSessionOptions.Modalities" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modalities As IList(Of InputModality)" />
-      <MemberSignature Language="F#" Value="member this.Modalities : System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InputModality&gt;" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.Modalities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modalities As IList(Of InteractionModality)" />
+      <MemberSignature Language="F#" Value="member this.Modalities : System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt;" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.Modalities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InputModality&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the Modalities. </summary>
+        <summary> The modalities to be used in the session. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +315,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Model. </summary>
+        <summary> The model for the session. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,7 +335,7 @@
         <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the OutputAudioFormat. </summary>
+        <summary> Output audio format. Default is 'pcm16'. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -355,7 +355,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.AudioTimestampType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the OutputAudioTimestampTypes. </summary>
+        <summary> Types of timestamps to include in audio response content. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,7 +565,7 @@
         <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Temperature. </summary>
+        <summary> Controls the randomness of the model's output. Range: 0.0 to 1.0. Default is 0.7. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,7 +607,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the Tools. </summary>
+        <summary> Configuration for tools to be used during the session, if applicable. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

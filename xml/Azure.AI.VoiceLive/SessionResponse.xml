@@ -1,0 +1,545 @@
+<Type Name="SessionResponse" FullName="Azure.AI.VoiceLive.SessionResponse">
+  <TypeSignature Language="C#" Value="public class SessionResponse : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionResponse extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.VoiceLive.SessionResponse&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.VoiceLive.SessionResponse&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.SessionResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionResponse&#xA;Implements IJsonModel(Of SessionResponse), IPersistableModel(Of SessionResponse)" />
+  <TypeSignature Language="F#" Value="type SessionResponse = class&#xA;    interface IJsonModel&lt;SessionResponse&gt;&#xA;    interface IPersistableModel&lt;SessionResponse&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The response resource. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConversationId">
+      <MemberSignature Language="C#" Value="public string ConversationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.ConversationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversationId As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationId : string" Usage="Azure.AI.VoiceLive.SessionResponse.ConversationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Which conversation the response is added to, determined by the `conversation`
+            field in the `response.create` event. If `auto`, the response will be added to
+            the default conversation and the value of `conversation_id` will be an id like
+            `conv_1234`. If `none`, the response will not be added to any conversation and
+            the value of `conversation_id` will be `null`. If responses are being triggered
+            by server VAD, the response will be added to the default conversation, thus
+            the `conversation_id` will be an id like `conv_1234`.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.AI.VoiceLive.SessionResponse.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The unique ID of the response. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.VoiceLive.SessionResponse JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.VoiceLive.SessionResponse JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As SessionResponse" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse" Usage="sessionResponse.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="sessionResponse.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxOutputTokens">
+      <MemberSignature Language="C#" Value="public BinaryData MaxOutputTokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData MaxOutputTokens" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.MaxOutputTokens" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxOutputTokens As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.MaxOutputTokens : BinaryData" Usage="Azure.AI.VoiceLive.SessionResponse.MaxOutputTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of output tokens for a single assistant response,
+            inclusive of tool calls, that was used in this response.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para><remarks>
+            Supported types:
+            <list type="bullet"><item><description><see cref="T:System.Int32" />. </description></item><item><description> "inf". </description></item></list></remarks></para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalitiesInternal">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt; ModalitiesInternal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; ModalitiesInternal" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.ModalitiesInternal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModalitiesInternal As IList(Of InteractionModality)" />
+      <MemberSignature Language="F#" Value="member this.ModalitiesInternal : System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt;" Usage="Azure.AI.VoiceLive.SessionResponse.ModalitiesInternal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.InteractionModality&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The set of modalities the model used to respond. If there are multiple modalities,
+            the model will pick one, for example if `modalities` is `["text", "audio"]`, the model
+            could be responding in either text or audio.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public string Object { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Object" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As String" />
+      <MemberSignature Language="F#" Value="member this.Object : string" Usage="Azure.AI.VoiceLive.SessionResponse.Object" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The object type, must be `realtime.response`. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.SessionResponseItem&gt; Output { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.VoiceLive.SessionResponseItem&gt; Output" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Output" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Output As IList(Of SessionResponseItem)" />
+      <MemberSignature Language="F#" Value="member this.Output : System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.SessionResponseItem&gt;" Usage="Azure.AI.VoiceLive.SessionResponse.Output" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.VoiceLive.SessionResponseItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of output items generated by the response. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputAudioFormat">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.OutputAudioFormat? OutputAudioFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; OutputAudioFormat" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.OutputAudioFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputAudioFormat As Nullable(Of OutputAudioFormat)" />
+      <MemberSignature Language="F#" Value="member this.OutputAudioFormat : Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" Usage="Azure.AI.VoiceLive.SessionResponse.OutputAudioFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The format of output audio. Options are `pcm16`, `g711_ulaw`, or `g711_alaw`. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.VoiceLive.SessionResponse PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.VoiceLive.SessionResponse PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As SessionResponse" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse" Usage="sessionResponse.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="sessionResponse.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.SessionResponseStatus? Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.SessionResponseStatus&gt; Status" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As Nullable(Of SessionResponseStatus)" />
+      <MemberSignature Language="F#" Value="member this.Status : Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt;" Usage="Azure.AI.VoiceLive.SessionResponse.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The final status of the response.
+            One of: `completed`, `cancelled`, `failed`, `incomplete`, or `in_progress`.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusDetails">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.ResponseStatusDetails StatusDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.ResponseStatusDetails StatusDetails" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.StatusDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusDetails As ResponseStatusDetails" />
+      <MemberSignature Language="F#" Value="member this.StatusDetails : Azure.AI.VoiceLive.ResponseStatusDetails" Usage="Azure.AI.VoiceLive.SessionResponse.StatusDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.ResponseStatusDetails</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Additional details about the status. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.VoiceLive.SessionResponse IJsonModel&lt;SessionResponse&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.VoiceLive.SessionResponse System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#VoiceLive#SessionResponse&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As SessionResponse Implements IJsonModel(Of SessionResponse).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse" Usage="sessionResponse.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;SessionResponse&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#VoiceLive#SessionResponse&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of SessionResponse).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="sessionResponse.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.VoiceLive.SessionResponse IPersistableModel&lt;SessionResponse&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.VoiceLive.SessionResponse System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#VoiceLive#SessionResponse&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As SessionResponse Implements IPersistableModel(Of SessionResponse).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.VoiceLive.SessionResponse" Usage="sessionResponse.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;SessionResponse&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#VoiceLive#SessionResponse&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of SessionResponse).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="sessionResponse.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;SessionResponse&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionResponse.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#VoiceLive#SessionResponse&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of SessionResponse).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="sessionResponse.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.VoiceLive.SessionResponse&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Temperature">
+      <MemberSignature Language="C#" Value="public float? Temperature { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; Temperature" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Temperature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Temperature As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.Temperature : Nullable&lt;single&gt;" Usage="Azure.AI.VoiceLive.SessionResponse.Temperature" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Sampling temperature for the model, limited to [0.6, 1.2]. Defaults to 0.8. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Usage">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.ResponseTokenStatistics Usage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.ResponseTokenStatistics Usage" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Usage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Usage As ResponseTokenStatistics" />
+      <MemberSignature Language="F#" Value="member this.Usage : Azure.AI.VoiceLive.ResponseTokenStatistics" Usage="Azure.AI.VoiceLive.SessionResponse.Usage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.ResponseTokenStatistics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Usage statistics for the Response, this will correspond to billing. A
+            VoiceLive API session will maintain a conversation context and append new
+            Items to the Conversation, thus output from previous turns (text and
+            audio tokens) will become the input for later turns.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Voice">
+      <MemberSignature Language="C#" Value="public BinaryData Voice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Voice" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionResponse.Voice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Voice As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Voice : BinaryData" Usage="Azure.AI.VoiceLive.SessionResponse.Voice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            supported voice identifiers and configurations.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para><remarks>
+            Supported types:
+            <list type="bullet"><item><description><see cref="T:Azure.AI.VoiceLive.OAIVoice" />. </description></item><item><description><see cref="T:Azure.AI.VoiceLive.OpenAIVoice" />. </description></item><item><description><see cref="T:Azure.AI.VoiceLive.AzureVoice" />. </description></item></list></remarks></para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

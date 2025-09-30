@@ -1,28 +1,55 @@
 <Type Name="ItemParamStatus" FullName="Azure.AI.VoiceLive.ItemParamStatus">
-  <TypeSignature Language="C#" Value="public enum ItemParamStatus" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemParamStatus extends System.Enum" />
+  <TypeSignature Language="C#" Value="public readonly struct ItemParamStatus : IEquatable&lt;Azure.AI.VoiceLive.ItemParamStatus&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ItemParamStatus extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.AI.VoiceLive.ItemParamStatus&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.ItemParamStatus" />
-  <TypeSignature Language="VB.NET" Value="Public Enum ItemParamStatus" />
-  <TypeSignature Language="F#" Value="type ItemParamStatus = " />
+  <TypeSignature Language="VB.NET" Value="Public Structure ItemParamStatus&#xA;Implements IEquatable(Of ItemParamStatus)" />
+  <TypeSignature Language="F#" Value="type ItemParamStatus = struct" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Enum</BaseTypeName>
+    <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.AI.VoiceLive.ItemParamStatus&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
-    <summary />
+    <summary> Indicates the processing status of an item or parameter. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemParamStatus (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.VoiceLive.ItemParamStatus : string -&gt; Azure.AI.VoiceLive.ItemParamStatus" Usage="new Azure.AI.VoiceLive.ItemParamStatus value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.ItemParamStatus" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="Completed">
-      <MemberSignature Language="C#" Value="Completed" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.VoiceLive.ItemParamStatus Completed = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.VoiceLive.ItemParamStatus.Completed" />
-      <MemberSignature Language="VB.NET" Value="Completed" />
-      <MemberSignature Language="F#" Value="Completed = 0" Usage="Azure.AI.VoiceLive.ItemParamStatus.Completed" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ItemParamStatus Completed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.AI.VoiceLive.ItemParamStatus Completed" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.ItemParamStatus.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Completed As ItemParamStatus" />
+      <MemberSignature Language="F#" Value="static member Completed : Azure.AI.VoiceLive.ItemParamStatus" Usage="Azure.AI.VoiceLive.ItemParamStatus.Completed" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -30,18 +57,105 @@
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.ItemParamStatus</ReturnType>
       </ReturnValue>
-      <MemberValue>0</MemberValue>
       <Docs>
-        <summary> Completed. </summary>
+        <summary> Item or parameter is still being processed. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.AI.VoiceLive.ItemParamStatus other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.AI.VoiceLive.ItemParamStatus other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.Equals(Azure.AI.VoiceLive.ItemParamStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ItemParamStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.AI.VoiceLive.ItemParamStatus -&gt; bool" Usage="itemParamStatus.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.AI.VoiceLive.ItemParamStatus" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="itemParamStatus.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="itemParamStatus.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Incomplete">
-      <MemberSignature Language="C#" Value="Incomplete" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.VoiceLive.ItemParamStatus Incomplete = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.VoiceLive.ItemParamStatus.Incomplete" />
-      <MemberSignature Language="VB.NET" Value="Incomplete" />
-      <MemberSignature Language="F#" Value="Incomplete = 1" Usage="Azure.AI.VoiceLive.ItemParamStatus.Incomplete" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ItemParamStatus Incomplete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.AI.VoiceLive.ItemParamStatus Incomplete" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.ItemParamStatus.Incomplete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Incomplete As ItemParamStatus" />
+      <MemberSignature Language="F#" Value="static member Incomplete : Azure.AI.VoiceLive.ItemParamStatus" Usage="Azure.AI.VoiceLive.ItemParamStatus.Incomplete" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -49,9 +163,131 @@
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.ItemParamStatus</ReturnType>
       </ReturnValue>
-      <MemberValue>1</MemberValue>
       <Docs>
-        <summary> Incomplete. </summary>
+        <summary> Item or parameter is not yet complete. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.AI.VoiceLive.ItemParamStatus left, Azure.AI.VoiceLive.ItemParamStatus right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.AI.VoiceLive.ItemParamStatus left, valuetype Azure.AI.VoiceLive.ItemParamStatus right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.op_Equality(Azure.AI.VoiceLive.ItemParamStatus,Azure.AI.VoiceLive.ItemParamStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ItemParamStatus, right As ItemParamStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.AI.VoiceLive.ItemParamStatus * Azure.AI.VoiceLive.ItemParamStatus -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.AI.VoiceLive.ItemParamStatus" />
+        <Parameter Name="right" Type="Azure.AI.VoiceLive.ItemParamStatus" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.ItemParamStatus" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.ItemParamStatus (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.AI.VoiceLive.ItemParamStatus op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.op_Implicit(System.String)~Azure.AI.VoiceLive.ItemParamStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ItemParamStatus" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.AI.VoiceLive.ItemParamStatus" Usage="Azure.AI.VoiceLive.ItemParamStatus.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.ItemParamStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Converts a string to a <see cref="T:Azure.AI.VoiceLive.ItemParamStatus" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.ItemParamStatus? (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.ItemParamStatus&gt; op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.op_Implicit(System.String)~System.Nullable{Azure.AI.VoiceLive.ItemParamStatus}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As Nullable(Of ItemParamStatus)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Nullable&lt;Azure.AI.VoiceLive.ItemParamStatus&gt;" Usage="Azure.AI.VoiceLive.ItemParamStatus.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.ItemParamStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.AI.VoiceLive.ItemParamStatus left, Azure.AI.VoiceLive.ItemParamStatus right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.AI.VoiceLive.ItemParamStatus left, valuetype Azure.AI.VoiceLive.ItemParamStatus right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.op_Inequality(Azure.AI.VoiceLive.ItemParamStatus,Azure.AI.VoiceLive.ItemParamStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ItemParamStatus, right As ItemParamStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.AI.VoiceLive.ItemParamStatus * Azure.AI.VoiceLive.ItemParamStatus -&gt; bool" Usage="Azure.AI.VoiceLive.ItemParamStatus.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.AI.VoiceLive.ItemParamStatus" />
+        <Parameter Name="right" Type="Azure.AI.VoiceLive.ItemParamStatus" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.ItemParamStatus" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.ItemParamStatus.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="itemParamStatus.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

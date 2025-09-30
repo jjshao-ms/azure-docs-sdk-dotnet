@@ -697,11 +697,11 @@
       </Docs>
     </Member>
     <Member MemberName="Connect">
-      <MemberSignature Language="C#" Value="protected internal virtual void Connect (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Connect(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.Connect(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Connect (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member Connect : System.Threading.CancellationToken -&gt; unit&#xA;override this.Connect : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.Connect cancellationToken" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Connect (System.Collections.Generic.IDictionary&lt;string,string&gt; headers, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Connect(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; headers, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.Connect(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Connect (headers As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing)" />
+      <MemberSignature Language="F#" Value="abstract member Connect : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; unit&#xA;override this.Connect : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.Connect (headers, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -711,10 +711,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">The cancellation token to use.</param>
+        <param name="headers">Headers to send.</param>
         <summary>
             Initializes an underlying <see cref="P:Azure.AI.VoiceLive.VoiceLiveSession.WebSocket" /> instance for communication with the VoiceLive service and
             then connects to the service using this socket.
@@ -723,11 +725,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
-      <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task ConnectAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task ConnectAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ConnectAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ConnectAsync (Optional cancellationToken As CancellationToken = Nothing) As Task" />
-      <MemberSignature Language="F#" Value="abstract member ConnectAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ConnectAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="voiceLiveSession.ConnectAsync cancellationToken" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task ConnectAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; headers, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task ConnectAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; headers, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ConnectAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ConnectAsync (headers As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ConnectAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ConnectAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="voiceLiveSession.ConnectAsync (headers, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -737,10 +739,12 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">The cancellation token to use.</param>
+        <param name="headers">Added header to send.</param>
         <summary>
             Initializes an underlying <see cref="P:Azure.AI.VoiceLive.VoiceLiveSession.WebSocket" /> instance for communication with the VoiceLive service and
             then connects to the service using this socket.

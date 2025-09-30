@@ -48,7 +48,7 @@
         <ReturnType>Azure.ResourceManager.SiteManager.EdgeSiteResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The resource ID of the resource to get. </param>
@@ -57,6 +57,179 @@
             You can use <see cref="M:Azure.ResourceManager.SiteManager.EdgeSiteResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.SiteManager.EdgeSiteResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.SiteManager.EdgeSiteResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGroupEdgeSiteResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource GetResourceGroupEdgeSiteResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource GetResourceGroupEdgeSiteResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetResourceGroupEdgeSiteResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceGroupEdgeSiteResource (id As ResourceIdentifier) As ResourceGroupEdgeSiteResource" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceGroupEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource&#xA;override this.GetResourceGroupEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource" Usage="mockableSiteManagerArmClient.GetResourceGroupEdgeSiteResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.SiteManager.ResourceGroupEdgeSiteResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceGroupEdgeSite">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt; GetServiceGroupEdgeSite (Azure.Core.ResourceIdentifier scope, string siteName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt; GetServiceGroupEdgeSite(class Azure.Core.ResourceIdentifier scope, string siteName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetServiceGroupEdgeSite(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServiceGroupEdgeSite (scope As ResourceIdentifier, siteName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ServiceGroupEdgeSiteResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceGroupEdgeSite : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&#xA;override this.GetServiceGroupEdgeSite : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;" Usage="mockableSiteManagerArmClient.GetServiceGroupEdgeSite (scope, siteName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="siteName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope that the resource will apply against. </param>
+        <param name="siteName"> The name of the Site. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get Site at SG scope
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.Management/serviceGroups/{servicegroupName}/providers/Microsoft.Edge/sites/{siteName}</description></item><item><term>Operation Id</term><description>Site_Get</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceGroupEdgeSiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&gt; GetServiceGroupEdgeSiteAsync (Azure.Core.ResourceIdentifier scope, string siteName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&gt; GetServiceGroupEdgeSiteAsync(class Azure.Core.ResourceIdentifier scope, string siteName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetServiceGroupEdgeSiteAsync(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServiceGroupEdgeSiteAsync (scope As ResourceIdentifier, siteName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ServiceGroupEdgeSiteResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceGroupEdgeSiteAsync : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&gt;&#xA;override this.GetServiceGroupEdgeSiteAsync : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&gt;" Usage="mockableSiteManagerArmClient.GetServiceGroupEdgeSiteAsync (scope, siteName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="siteName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope that the resource will apply against. </param>
+        <param name="siteName"> The name of the Site. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get Site at SG scope
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.Management/serviceGroups/{servicegroupName}/providers/Microsoft.Edge/sites/{siteName}</description></item><item><term>Operation Id</term><description>Site_Get</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceGroupEdgeSiteResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource GetServiceGroupEdgeSiteResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource GetServiceGroupEdgeSiteResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetServiceGroupEdgeSiteResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServiceGroupEdgeSiteResource (id As ResourceIdentifier) As ServiceGroupEdgeSiteResource" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceGroupEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource&#xA;override this.GetServiceGroupEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" Usage="mockableSiteManagerArmClient.GetServiceGroupEdgeSiteResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceGroupEdgeSites">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteCollection GetServiceGroupEdgeSites (Azure.Core.ResourceIdentifier scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteCollection GetServiceGroupEdgeSites(class Azure.Core.ResourceIdentifier scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetServiceGroupEdgeSites(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServiceGroupEdgeSites (scope As ResourceIdentifier) As ServiceGroupEdgeSiteCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceGroupEdgeSites : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteCollection&#xA;override this.GetServiceGroupEdgeSites : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteCollection" Usage="mockableSiteManagerArmClient.GetServiceGroupEdgeSites scope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.SiteManager.ServiceGroupEdgeSiteCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope that the resource will apply against. </param>
+        <summary> Gets a collection of ServiceGroupEdgeSiteResources in the ArmClient. </summary>
+        <returns> An object representing collection of ServiceGroupEdgeSiteResources and their operations over a ServiceGroupEdgeSiteResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionEdgeSiteResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource GetSubscriptionEdgeSiteResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource GetSubscriptionEdgeSiteResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.SiteManager.Mocking.MockableSiteManagerArmClient.GetSubscriptionEdgeSiteResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSubscriptionEdgeSiteResource (id As ResourceIdentifier) As SubscriptionEdgeSiteResource" />
+      <MemberSignature Language="F#" Value="abstract member GetSubscriptionEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource&#xA;override this.GetSubscriptionEdgeSiteResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource" Usage="mockableSiteManagerArmClient.GetSubscriptionEdgeSiteResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.SiteManager</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.SiteManager.SubscriptionEdgeSiteResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
