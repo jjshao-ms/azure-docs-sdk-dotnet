@@ -9,6 +9,7 @@
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.1.0</AssemblyVersion>
     <AssemblyVersion>1.3.2.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
@@ -41,7 +42,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="Azure.Core.AzureLocation" />
@@ -49,6 +50,26 @@
       <Docs>
         <param name="location"> The location. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.StorageCache.StorageCacheImportJobData" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdminStatus">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StorageCache.Models.ImportJobAdminStatus? AdminStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StorageCache.Models.ImportJobAdminStatus&gt; AdminStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.AdminStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdminStatus As Nullable(Of ImportJobAdminStatus)" />
+      <MemberSignature Language="F#" Value="member this.AdminStatus : Nullable&lt;Azure.ResourceManager.StorageCache.Models.ImportJobAdminStatus&gt; with get, set" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.AdminStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StorageCache.Models.ImportJobAdminStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The administrative status of the import job. Possible values: 'Active', 'Cancel'. Passing in a value of 'Cancel' will cancel the current active import job. By default it is set to 'Active'. </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +82,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -81,7 +102,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -101,13 +122,73 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.StorageCache.Models.ConflictResolutionMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> How the import job will handle conflicts. For example, if the import job is trying to bring in a directory, but a file is at that path, how it handles it. Fail indicates that the import job should stop immediately and not do anything with the conflict. Skip indicates that it should pass over the conflict. OverwriteIfDirty causes the import job to delete and re-import the file or directory if it is a conflicting type, is dirty, or was not previously imported. OverwriteAlways extends OverwriteIfDirty to include releasing files that had been restored but were not dirty. Please reference https://learn.microsoft.com/en-us/azure/azure-managed-lustre/ for a thorough explanation of these resolution modes. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportedDirectories">
+      <MemberSignature Language="C#" Value="public long? ImportedDirectories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ImportedDirectories" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedDirectories As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.ImportedDirectories : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedDirectories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> New or modified directories that have been imported into the filesystem. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportedFiles">
+      <MemberSignature Language="C#" Value="public long? ImportedFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ImportedFiles" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedFiles As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.ImportedFiles : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> New or modified files that have been imported into the filesystem. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportedSymlinks">
+      <MemberSignature Language="C#" Value="public long? ImportedSymlinks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ImportedSymlinks" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedSymlinks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedSymlinks As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.ImportedSymlinks : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.ImportedSymlinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Newly added symbolic links into the filesystem. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +202,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
@@ -141,7 +222,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -166,13 +247,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The time of the last completed archive operation. </summary>
+        <summary> The time (in UTC) of the last completed import job. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +267,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The time the latest archive operation started. </summary>
+        <summary> The time (in UTC) the latest import job started. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,13 +287,73 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Total non-conflict oriented errors the import job will tolerate before exiting with failure. -1 means infinite. 0 means exit immediately and is the default. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreexistingDirectories">
+      <MemberSignature Language="C#" Value="public long? PreexistingDirectories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; PreexistingDirectories" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreexistingDirectories As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.PreexistingDirectories : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingDirectories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Directories that already exist in the filesystem and have not been modified. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreexistingFiles">
+      <MemberSignature Language="C#" Value="public long? PreexistingFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; PreexistingFiles" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreexistingFiles As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.PreexistingFiles : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Files that already exist in the filesystem and have not been modified. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreexistingSymlinks">
+      <MemberSignature Language="C#" Value="public long? PreexistingSymlinks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; PreexistingSymlinks" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingSymlinks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreexistingSymlinks As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.PreexistingSymlinks : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.StorageCache.StorageCacheImportJobData.PreexistingSymlinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Symbolic links that already exist in the filesystem and have not been modified. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +367,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.StorageCache.Models.ImportJobProvisioningStateType&gt;</ReturnType>
@@ -246,13 +387,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.StorageCache.Models.ImportStatusType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The state of the import job. InProgress indicates the import is still running. Canceled indicates it has been canceled by the user. Completed indicates import finished, successfully importing all discovered blobs into the Lustre namespace. CompletedPartial indicates the import finished but some blobs either were found to be conflicting and could not be imported or other errors were encountered. Failed means the import was unable to complete due to a fatal error. </summary>
+        <summary> The operational state of the import job. InProgress indicates the import is still running. Canceled indicates it has been canceled by the user. Completed indicates import finished, successfully importing all discovered blobs into the Lustre namespace. CompletedPartial indicates the import finished but some blobs either were found to be conflicting and could not be imported or other errors were encountered. Failed means the import was unable to complete due to a fatal error. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +407,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -289,7 +430,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.StorageCache.StorageCacheImportJobData</ReturnType>
@@ -321,7 +462,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -352,7 +493,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.StorageCache.StorageCacheImportJobData</ReturnType>
@@ -384,7 +525,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -413,7 +554,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -440,7 +581,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -460,7 +601,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -480,7 +621,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -500,7 +641,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StorageCache</AssemblyName>
-        <AssemblyVersion>1.3.2.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>

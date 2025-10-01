@@ -988,38 +988,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RespondingAgentOptions">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.RespondingAgentOptions RespondingAgentOptions (string type = default, string name = default, string description = default, string agentId = default, string threadId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.RespondingAgentOptions RespondingAgentOptions(string type, string name, string description, string agentId, string threadId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.RespondingAgentOptions(System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RespondingAgentOptions (Optional type As String = Nothing, Optional name As String = Nothing, Optional description As String = Nothing, Optional agentId As String = Nothing, Optional threadId As String = Nothing) As RespondingAgentOptions" />
-      <MemberSignature Language="F#" Value="static member RespondingAgentOptions : string * string * string * string * string -&gt; Azure.AI.VoiceLive.RespondingAgentOptions" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.RespondingAgentOptions (type, name, description, agentId, threadId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.RespondingAgentOptions</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="agentId" Type="System.String" />
-        <Parameter Name="threadId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="type"> The type of agent to use. </param>
-        <param name="name"> The name of the agent. </param>
-        <param name="description"> Optional description of the agent. </param>
-        <param name="agentId"> The ID of the agent. </param>
-        <param name="threadId"> The ID of the conversation thread. </param>
-        <summary> Configuration for the agent. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.RespondingAgentOptions" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ResponseAudioContentPart">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.ResponseAudioContentPart ResponseAudioContentPart (string transcript = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.ResponseAudioContentPart ResponseAudioContentPart(string transcript) cil managed" />
@@ -3007,72 +2975,6 @@
         <param name="turnDetection" />
         <summary> Base for session configuration shared between request and response. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveSessionOptions" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VoiceLiveSessionResponse">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, Azure.AI.VoiceLive.VoiceProvider voice = default, string instructions = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.InputAudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionOptions inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, Azure.AI.VoiceLive.ToolChoiceOption toolChoice = default, float? temperature = default, Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxResponseOutputTokens = default, BinaryData turnDetection = default, Azure.AI.VoiceLive.RespondingAgentOptions agent = default, string id = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionResponse VoiceLiveSessionResponse(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, class Azure.AI.VoiceLive.VoiceProvider voice, string instructions, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.InputAudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionOptions inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, class Azure.AI.VoiceLive.ToolChoiceOption toolChoice, valuetype System.Nullable`1&lt;float32&gt; temperature, class Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxResponseOutputTokens, class System.BinaryData turnDetection, class Azure.AI.VoiceLive.RespondingAgentOptions agent, string id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse(System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InteractionModality},Azure.AI.VoiceLive.AnimationOptions,Azure.AI.VoiceLive.VoiceProvider,System.String,System.Nullable{System.Int32},System.Nullable{Azure.AI.VoiceLive.InputAudioFormat},System.Nullable{Azure.AI.VoiceLive.OutputAudioFormat},Azure.AI.VoiceLive.AudioNoiseReduction,Azure.AI.VoiceLive.AudioEchoCancellation,Azure.AI.VoiceLive.AvatarConfiguration,Azure.AI.VoiceLive.AudioInputTranscriptionOptions,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.AudioTimestampType},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveToolDefinition},Azure.AI.VoiceLive.ToolChoiceOption,System.Nullable{System.Single},Azure.AI.VoiceLive.MaxResponseOutputTokensOption,System.BinaryData,Azure.AI.VoiceLive.RespondingAgentOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveSessionResponse (Optional model As String = Nothing, Optional modalities As IEnumerable(Of InteractionModality) = Nothing, Optional animation As AnimationOptions = Nothing, Optional voice As VoiceProvider = Nothing, Optional instructions As String = Nothing, Optional inputAudioSamplingRate As Nullable(Of Integer) = Nothing, Optional inputAudioFormat As Nullable(Of InputAudioFormat) = Nothing, Optional outputAudioFormat As Nullable(Of OutputAudioFormat) = Nothing, Optional inputAudioNoiseReduction As AudioNoiseReduction = Nothing, Optional inputAudioEchoCancellation As AudioEchoCancellation = Nothing, Optional avatar As AvatarConfiguration = Nothing, Optional inputAudioTranscription As AudioInputTranscriptionOptions = Nothing, Optional outputAudioTimestampTypes As IEnumerable(Of AudioTimestampType) = Nothing, Optional tools As IEnumerable(Of VoiceLiveToolDefinition) = Nothing, Optional toolChoice As ToolChoiceOption = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional maxResponseOutputTokens As MaxResponseOutputTokensOption = Nothing, Optional turnDetection As BinaryData = Nothing, Optional agent As RespondingAgentOptions = Nothing, Optional id As String = Nothing) As VoiceLiveSessionResponse" />
-      <MemberSignature Language="F#" Value="static member VoiceLiveSessionResponse : string * seq&lt;Azure.AI.VoiceLive.InteractionModality&gt; * Azure.AI.VoiceLive.AnimationOptions * Azure.AI.VoiceLive.VoiceProvider * string * Nullable&lt;int&gt; * Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt; * Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt; * Azure.AI.VoiceLive.AudioNoiseReduction * Azure.AI.VoiceLive.AudioEchoCancellation * Azure.AI.VoiceLive.AvatarConfiguration * Azure.AI.VoiceLive.AudioInputTranscriptionOptions * seq&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; * seq&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; * Azure.AI.VoiceLive.ToolChoiceOption * Nullable&lt;single&gt; * Azure.AI.VoiceLive.MaxResponseOutputTokensOption * BinaryData * Azure.AI.VoiceLive.RespondingAgentOptions * string -&gt; Azure.AI.VoiceLive.VoiceLiveSessionResponse" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveSessionResponse (model, modalities, animation, voice, instructions, inputAudioSamplingRate, inputAudioFormat, outputAudioFormat, inputAudioNoiseReduction, inputAudioEchoCancellation, avatar, inputAudioTranscription, outputAudioTimestampTypes, tools, toolChoice, temperature, maxResponseOutputTokens, turnDetection, agent, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.VoiceLive.VoiceLiveSessionResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="model" Type="System.String" />
-        <Parameter Name="modalities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt;" />
-        <Parameter Name="animation" Type="Azure.AI.VoiceLive.AnimationOptions" />
-        <Parameter Name="voice" Type="Azure.AI.VoiceLive.VoiceProvider" />
-        <Parameter Name="instructions" Type="System.String" />
-        <Parameter Name="inputAudioSamplingRate" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="inputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.InputAudioFormat&gt;" />
-        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" />
-        <Parameter Name="inputAudioNoiseReduction" Type="Azure.AI.VoiceLive.AudioNoiseReduction" />
-        <Parameter Name="inputAudioEchoCancellation" Type="Azure.AI.VoiceLive.AudioEchoCancellation" />
-        <Parameter Name="avatar" Type="Azure.AI.VoiceLive.AvatarConfiguration" />
-        <Parameter Name="inputAudioTranscription" Type="Azure.AI.VoiceLive.AudioInputTranscriptionOptions" />
-        <Parameter Name="outputAudioTimestampTypes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt;" />
-        <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt;" />
-        <Parameter Name="toolChoice" Type="Azure.AI.VoiceLive.ToolChoiceOption" />
-        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="maxResponseOutputTokens" Type="Azure.AI.VoiceLive.MaxResponseOutputTokensOption" />
-        <Parameter Name="turnDetection" Type="System.BinaryData" />
-        <Parameter Name="agent" Type="Azure.AI.VoiceLive.RespondingAgentOptions" />
-        <Parameter Name="id" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="model"> The model for the session. </param>
-        <param name="modalities"> The modalities to be used in the session. </param>
-        <param name="animation"> The animation configuration for the session. </param>
-        <param name="voice"> Gets or sets the Voice. </param>
-        <param name="instructions"> Optional instructions to guide the model's behavior throughout the session. </param>
-        <param name="inputAudioSamplingRate">
-            Input audio sampling rate in Hz. Available values:
-            - For pcm16: 8000, 16000, 24000
-            - For g711_alaw/g711_ulaw: 8000
-            </param>
-        <param name="inputAudioFormat"> Input audio format. Default is 'pcm16'. </param>
-        <param name="outputAudioFormat"> Output audio format. Default is 'pcm16'. </param>
-        <param name="inputAudioNoiseReduction"> Configuration for input audio noise reduction. </param>
-        <param name="inputAudioEchoCancellation"> Configuration for echo cancellation during server-side audio processing. </param>
-        <param name="avatar"> Configuration for avatar streaming and behavior during the session. </param>
-        <param name="inputAudioTranscription"> Configuration for input audio transcription. </param>
-        <param name="outputAudioTimestampTypes"> Types of timestamps to include in audio response content. </param>
-        <param name="tools"> Configuration for tools to be used during the session, if applicable. </param>
-        <param name="toolChoice"> Gets or sets the tool choice strategy for response generation. </param>
-        <param name="temperature"> Controls the randomness of the model's output. Range: 0.0 to 1.0. Default is 0.7. </param>
-        <param name="maxResponseOutputTokens"> Gets or sets the maximum number of tokens to generate in the response. </param>
-        <param name="turnDetection" />
-        <param name="agent"> The agent configuration for the session, if applicable. </param>
-        <param name="id"> The unique identifier for the session. </param>
-        <summary> Base for session configuration in the response. </summary>
-        <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveSessionResponse" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

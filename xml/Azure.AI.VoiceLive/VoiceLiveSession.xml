@@ -81,64 +81,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddItem">
-      <MemberSignature Language="C#" Value="public virtual void AddItem (Azure.AI.VoiceLive.ConversationRequestItem item, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem(class Azure.AI.VoiceLive.ConversationRequestItem item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.AddItem(Azure.AI.VoiceLive.ConversationRequestItem,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddItem (item As ConversationRequestItem, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member AddItem : Azure.AI.VoiceLive.ConversationRequestItem * System.Threading.CancellationToken -&gt; unit&#xA;override this.AddItem : Azure.AI.VoiceLive.ConversationRequestItem * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.AddItem (item, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Azure.AI.VoiceLive.ConversationRequestItem" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="item">The item to add to the conversation.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Adds an item to the conversation.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="item" /> is null.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="AddItem">
-      <MemberSignature Language="C#" Value="public virtual void AddItem (Azure.AI.VoiceLive.ConversationRequestItem item, string previousItemId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem(class Azure.AI.VoiceLive.ConversationRequestItem item, string previousItemId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.AddItem(Azure.AI.VoiceLive.ConversationRequestItem,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddItem (item As ConversationRequestItem, previousItemId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member AddItem : Azure.AI.VoiceLive.ConversationRequestItem * string * System.Threading.CancellationToken -&gt; unit&#xA;override this.AddItem : Azure.AI.VoiceLive.ConversationRequestItem * string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.AddItem (item, previousItemId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Azure.AI.VoiceLive.ConversationRequestItem" />
-        <Parameter Name="previousItemId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="item">The item to add to the conversation.</param>
-        <param name="previousItemId">The ID of the item after which to insert the new item.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Adds an item to the conversation at a specific position.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="item" /> is null.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="AddItemAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task AddItemAsync (Azure.AI.VoiceLive.ConversationRequestItem item, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AddItemAsync(class Azure.AI.VoiceLive.ConversationRequestItem item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -197,68 +139,6 @@
         <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="item" /> is null.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="AppendAudioToTurn">
-      <MemberSignature Language="C#" Value="public virtual void AppendAudioToTurn (string turnId, BinaryData audio, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendAudioToTurn(string turnId, class System.BinaryData audio, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.AppendAudioToTurn(System.String,System.BinaryData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendAudioToTurn (turnId As String, audio As BinaryData, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member AppendAudioToTurn : string * BinaryData * System.Threading.CancellationToken -&gt; unit&#xA;override this.AppendAudioToTurn : string * BinaryData * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.AppendAudioToTurn (turnId, audio, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnId" Type="System.String" />
-        <Parameter Name="audio" Type="System.BinaryData" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="turnId">The ID of the turn this audio is part of.</param>
-        <param name="audio">The audio data to append.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Appends audio data to an ongoing input turn.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> or <paramref name="audio" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="AppendAudioToTurn">
-      <MemberSignature Language="C#" Value="public virtual void AppendAudioToTurn (string turnId, byte[] audio, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendAudioToTurn(string turnId, unsigned int8[] audio, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.AppendAudioToTurn(System.String,System.Byte[],System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendAudioToTurn (turnId As String, audio As Byte(), Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member AppendAudioToTurn : string * byte[] * System.Threading.CancellationToken -&gt; unit&#xA;override this.AppendAudioToTurn : string * byte[] * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.AppendAudioToTurn (turnId, audio, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnId" Type="System.String" />
-        <Parameter Name="audio" Type="System.Byte[]" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="turnId">The ID of the turn this audio is part of.</param>
-        <param name="audio">The audio data to append.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Appends audio data to an ongoing input turn.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> or <paramref name="audio" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppendAudioToTurnAsync">
@@ -325,35 +205,6 @@
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
       </Docs>
     </Member>
-    <Member MemberName="CancelAudioTurn">
-      <MemberSignature Language="C#" Value="public virtual void CancelAudioTurn (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelAudioTurn(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.CancelAudioTurn(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CancelAudioTurn (turnId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member CancelAudioTurn : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.CancelAudioTurn : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.CancelAudioTurn (turnId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="turnId">The ID of the turn to cancel.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Cancels an in-progress input audio turn.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="CancelAudioTurnAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CancelAudioTurnAsync (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CancelAudioTurnAsync(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -384,31 +235,6 @@
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
       </Docs>
     </Member>
-    <Member MemberName="CancelResponse">
-      <MemberSignature Language="C#" Value="public virtual void CancelResponse (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelResponse(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.CancelResponse(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CancelResponse (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member CancelResponse : System.Threading.CancellationToken -&gt; unit&#xA;override this.CancelResponse : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.CancelResponse cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Cancels the current response generation.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CancelResponseAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CancelResponseAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CancelResponseAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -432,31 +258,6 @@
             Cancels the current response generation.
             </summary>
         <returns>A task that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ClearInputAudio">
-      <MemberSignature Language="C#" Value="public virtual void ClearInputAudio (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearInputAudio(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ClearInputAudio(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearInputAudio (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member ClearInputAudio : System.Threading.CancellationToken -&gt; unit&#xA;override this.ClearInputAudio : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.ClearInputAudio cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Clears the input audio buffer.
-            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,31 +287,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ClearStreamingAudio">
-      <MemberSignature Language="C#" Value="public virtual void ClearStreamingAudio (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearStreamingAudio(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ClearStreamingAudio(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearStreamingAudio (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member ClearStreamingAudio : System.Threading.CancellationToken -&gt; unit&#xA;override this.ClearStreamingAudio : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.ClearStreamingAudio cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Clears all input audio currently being streamed.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ClearStreamingAudioAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task ClearStreamingAudioAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ClearStreamingAudioAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -534,31 +310,6 @@
             Clears all input audio currently being streamed.
             </summary>
         <returns>A task that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Close">
-      <MemberSignature Language="C#" Value="public virtual void Close (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.Close(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member Close : System.Threading.CancellationToken -&gt; unit&#xA;override this.Close : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.Close cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">The cancellation token to use.</param>
-        <summary>
-            Closes the WebSocket connection gracefully.
-            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,31 +339,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CommitInputAudio">
-      <MemberSignature Language="C#" Value="public virtual void CommitInputAudio (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommitInputAudio(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.CommitInputAudio(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CommitInputAudio (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member CommitInputAudio : System.Threading.CancellationToken -&gt; unit&#xA;override this.CommitInputAudio : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.CommitInputAudio cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Commits the input audio buffer.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CommitInputAudioAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CommitInputAudioAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CommitInputAudioAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -637,34 +363,6 @@
             </summary>
         <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConfigureSession">
-      <MemberSignature Language="C#" Value="public virtual void ConfigureSession (Azure.AI.VoiceLive.VoiceLiveSessionOptions sessionOptions, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureSession(class Azure.AI.VoiceLive.VoiceLiveSessionOptions sessionOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ConfigureSession(Azure.AI.VoiceLive.VoiceLiveSessionOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ConfigureSession (sessionOptions As VoiceLiveSessionOptions, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member ConfigureSession : Azure.AI.VoiceLive.VoiceLiveSessionOptions * System.Threading.CancellationToken -&gt; unit&#xA;override this.ConfigureSession : Azure.AI.VoiceLive.VoiceLiveSessionOptions * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.ConfigureSession (sessionOptions, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sessionOptions" Type="Azure.AI.VoiceLive.VoiceLiveSessionOptions" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="sessionOptions">The session configuration options.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Updates the session configuration.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="sessionOptions" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConfigureSessionAsync">
@@ -696,34 +394,6 @@
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="sessionOptions" /> is null.</exception>
       </Docs>
     </Member>
-    <Member MemberName="Connect">
-      <MemberSignature Language="C#" Value="protected internal virtual void Connect (System.Collections.Generic.IDictionary&lt;string,string&gt; headers, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Connect(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; headers, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.Connect(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Connect (headers As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member Connect : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; unit&#xA;override this.Connect : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.Connect (headers, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="headers" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">The cancellation token to use.</param>
-        <param name="headers">Headers to send.</param>
-        <summary>
-            Initializes an underlying <see cref="P:Azure.AI.VoiceLive.VoiceLiveSession.WebSocket" /> instance for communication with the VoiceLive service and
-            then connects to the service using this socket.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ConnectAsync">
       <MemberSignature Language="C#" Value="protected internal virtual System.Threading.Tasks.Task ConnectAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; headers, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task ConnectAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; headers, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -751,35 +421,6 @@
             </summary>
         <returns>A task that represents the asynchronous connection operation.</returns>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConnectAvatar">
-      <MemberSignature Language="C#" Value="public virtual void ConnectAvatar (string clientSdp, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConnectAvatar(string clientSdp, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ConnectAvatar(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ConnectAvatar (clientSdp As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member ConnectAvatar : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.ConnectAvatar : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.ConnectAvatar (clientSdp, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="clientSdp" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="clientSdp">The client's SDP offer.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Connects and provides the client's SDP (Session Description Protocol) for avatar-related media negotiation.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="clientSdp" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="clientSdp" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectAvatarAsync">
@@ -832,35 +473,6 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DeleteItem">
-      <MemberSignature Language="C#" Value="public virtual void DeleteItem (string itemId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteItem(string itemId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.DeleteItem(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteItem (itemId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteItem : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.DeleteItem : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.DeleteItem (itemId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="itemId">The ID of the item to delete.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Deletes an item from the conversation.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="itemId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="itemId" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteItemAsync">
@@ -991,35 +603,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EndAudioTurn">
-      <MemberSignature Language="C#" Value="public virtual void EndAudioTurn (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndAudioTurn(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.EndAudioTurn(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndAudioTurn (turnId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member EndAudioTurn : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.EndAudioTurn : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.EndAudioTurn (turnId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="turnId">The ID of the audio turn being ended.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Marks the end of an audio input turn.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="EndAudioTurnAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task EndAudioTurnAsync (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task EndAudioTurnAsync(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1050,35 +633,6 @@
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
       </Docs>
     </Member>
-    <Member MemberName="GetUpdates">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionUpdate&gt; GetUpdates (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.SessionUpdate&gt; GetUpdates(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.GetUpdates(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUpdates (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of SessionUpdate)" />
-      <MemberSignature Language="F#" Value="member this.GetUpdates : System.Threading.CancellationToken -&gt; seq&lt;Azure.AI.VoiceLive.SessionUpdate&gt;" Usage="voiceLiveSession.GetUpdates cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionUpdate&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">The cancellation token to use.</param>
-        <summary>
-            Gets all server events from the VoiceLive service synchronously.
-            </summary>
-        <returns>An enumerable of VoiceLive server events.</returns>
-        <remarks>
-            This method provides synchronous access to all server events from the service.
-            For better performance and resource utilization, consider using <see cref="M:Azure.AI.VoiceLive.VoiceLiveSession.GetUpdatesAsync(System.Threading.CancellationToken)" /> instead.
-            </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetUpdatesAsync">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IAsyncEnumerable&lt;Azure.AI.VoiceLive.SessionUpdate&gt; GetUpdatesAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IAsyncEnumerable`1&lt;class Azure.AI.VoiceLive.SessionUpdate&gt; GetUpdatesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1092,8 +646,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__84))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__84))&gt;]</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__57))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__57))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1137,8 +691,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__86&lt;&gt;))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__86&lt;&gt;))&gt;]</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__58&lt;&gt;))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;GetUpdatesAsync&gt;d__58&lt;&gt;))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1193,32 +747,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReceiveUpdates">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;BinaryData&gt; ReceiveUpdates (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.BinaryData&gt; ReceiveUpdates(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.ReceiveUpdates(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReceiveUpdates (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of BinaryData)" />
-      <MemberSignature Language="F#" Value="abstract member ReceiveUpdates : System.Threading.CancellationToken -&gt; seq&lt;BinaryData&gt;&#xA;override this.ReceiveUpdates : System.Threading.CancellationToken -&gt; seq&lt;BinaryData&gt;" Usage="voiceLiveSession.ReceiveUpdates cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.BinaryData&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">The cancellation token to use.</param>
-        <summary>
-            Receives updates from the service.
-            </summary>
-        <returns>An enumerable of binary data messages.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReceiveUpdatesAsync">
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IAsyncEnumerable&lt;BinaryData&gt; ReceiveUpdatesAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerable`1&lt;class System.BinaryData&gt; ReceiveUpdatesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1232,8 +760,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;ReceiveUpdatesAsync&gt;d__69))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;ReceiveUpdatesAsync&gt;d__69))&gt;]</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;ReceiveUpdatesAsync&gt;d__45))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AI.VoiceLive.VoiceLiveSession+&lt;ReceiveUpdatesAsync&gt;d__45))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1256,35 +784,6 @@
             </summary>
         <returns>An asynchronous enumerable of binary data messages.</returns>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RequestItemRetrieval">
-      <MemberSignature Language="C#" Value="public virtual void RequestItemRetrieval (string itemId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestItemRetrieval(string itemId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.RequestItemRetrieval(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RequestItemRetrieval (itemId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member RequestItemRetrieval : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.RequestItemRetrieval : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.RequestItemRetrieval (itemId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="itemId">The ID of the item to retrieve.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Retrieves an item from the conversation.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="itemId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="itemId" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequestItemRetrievalAsync">
@@ -1315,34 +814,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="itemId" /> is null.</exception>
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="itemId" /> is empty.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="SendCommand">
-      <MemberSignature Language="C#" Value="public virtual void SendCommand (BinaryData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendCommand(class System.BinaryData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.SendCommand(System.BinaryData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendCommand (data As BinaryData, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member SendCommand : BinaryData * System.Threading.CancellationToken -&gt; unit&#xA;override this.SendCommand : BinaryData * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.SendCommand (data, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="data" Type="System.BinaryData" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="data">The data to send.</param>
-        <param name="cancellationToken">The cancellation token to use.</param>
-        <summary>
-            Sends raw data to the service.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="data" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendCommandAsync">
@@ -1401,93 +872,6 @@
         <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="data" /> is null.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="SendInputAudio">
-      <MemberSignature Language="C#" Value="public virtual void SendInputAudio (BinaryData audio, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendInputAudio(class System.BinaryData audio, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.SendInputAudio(System.BinaryData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendInputAudio (audio As BinaryData, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member SendInputAudio : BinaryData * System.Threading.CancellationToken -&gt; unit&#xA;override this.SendInputAudio : BinaryData * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.SendInputAudio (audio, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="audio" Type="System.BinaryData" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="audio">The audio data to transmit.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Transmits audio data from BinaryData.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="audio" /> is null.</exception>
-        <exception cref="T:System.InvalidOperationException">Thrown when another audio stream is already being sent.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="SendInputAudio">
-      <MemberSignature Language="C#" Value="public virtual void SendInputAudio (byte[] audio, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendInputAudio(unsigned int8[] audio, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.SendInputAudio(System.Byte[],System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendInputAudio (audio As Byte(), Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member SendInputAudio : byte[] * System.Threading.CancellationToken -&gt; unit&#xA;override this.SendInputAudio : byte[] * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.SendInputAudio (audio, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="audio" Type="System.Byte[]" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="audio">The audio data to transmit.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Transmits audio data from a byte array.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="audio" /> is null.</exception>
-        <exception cref="T:System.InvalidOperationException">Thrown when another audio stream is already being sent.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="SendInputAudio">
-      <MemberSignature Language="C#" Value="public virtual void SendInputAudio (System.IO.Stream audio, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendInputAudio(class System.IO.Stream audio, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.SendInputAudio(System.IO.Stream,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendInputAudio (audio As Stream, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member SendInputAudio : System.IO.Stream * System.Threading.CancellationToken -&gt; unit&#xA;override this.SendInputAudio : System.IO.Stream * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.SendInputAudio (audio, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="audio" Type="System.IO.Stream" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="audio">The audio stream to transmit.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Transmits audio data from a stream, ending the client turn once the stream is complete.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="audio" /> is null.</exception>
-        <exception cref="T:System.InvalidOperationException">Thrown when another audio stream is already being sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendInputAudioAsync">
@@ -1580,35 +964,6 @@
         <exception cref="T:System.InvalidOperationException">Thrown when another audio stream is already being sent.</exception>
       </Docs>
     </Member>
-    <Member MemberName="StartAudioTurn">
-      <MemberSignature Language="C#" Value="public virtual void StartAudioTurn (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartAudioTurn(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.StartAudioTurn(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub StartAudioTurn (turnId As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member StartAudioTurn : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.StartAudioTurn : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.StartAudioTurn (turnId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="turnId">Unique identifier for the input audio turn.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Starts a new audio input turn.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="StartAudioTurnAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task StartAudioTurnAsync (string turnId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAudioTurnAsync(string turnId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1637,86 +992,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="turnId" /> is null.</exception>
         <exception cref="T:System.ArgumentException">Thrown when <paramref name="turnId" /> is empty.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="StartResponse">
-      <MemberSignature Language="C#" Value="public virtual void StartResponse (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartResponse(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.StartResponse(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub StartResponse (Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member StartResponse : System.Threading.CancellationToken -&gt; unit&#xA;override this.StartResponse : System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.StartResponse cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Starts a new response generation.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StartResponse">
-      <MemberSignature Language="C#" Value="public virtual void StartResponse (Azure.AI.VoiceLive.VoiceLiveSessionOptions responseOptions, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartResponse(class Azure.AI.VoiceLive.VoiceLiveSessionOptions responseOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.StartResponse(Azure.AI.VoiceLive.VoiceLiveSessionOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub StartResponse (responseOptions As VoiceLiveSessionOptions, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member StartResponse : Azure.AI.VoiceLive.VoiceLiveSessionOptions * System.Threading.CancellationToken -&gt; unit&#xA;override this.StartResponse : Azure.AI.VoiceLive.VoiceLiveSessionOptions * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.StartResponse (responseOptions, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="responseOptions" Type="Azure.AI.VoiceLive.VoiceLiveSessionOptions" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="responseOptions">The options for response generation.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Starts a new response generation with specific options.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StartResponse">
-      <MemberSignature Language="C#" Value="public virtual void StartResponse (string additionalInstructions, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartResponse(string additionalInstructions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.StartResponse(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub StartResponse (additionalInstructions As String, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member StartResponse : string * System.Threading.CancellationToken -&gt; unit&#xA;override this.StartResponse : string * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.StartResponse (additionalInstructions, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="additionalInstructions" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="additionalInstructions">Additional instructions for this response.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <summary>
-            Starts a new response generation with additional instructions.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="additionalInstructions" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartResponseAsync">
@@ -1800,39 +1075,6 @@
         <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="additionalInstructions" /> is null.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="TruncateConversation">
-      <MemberSignature Language="C#" Value="public virtual void TruncateConversation (string itemId, int contentIndex, TimeSpan audioEnd = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TruncateConversation(string itemId, int32 contentIndex, valuetype System.TimeSpan audioEnd, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveSession.TruncateConversation(System.String,System.Int32,System.TimeSpan,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub TruncateConversation (itemId As String, contentIndex As Integer, Optional audioEnd As TimeSpan = Nothing, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member TruncateConversation : string * int * TimeSpan * System.Threading.CancellationToken -&gt; unit&#xA;override this.TruncateConversation : string * int * TimeSpan * System.Threading.CancellationToken -&gt; unit" Usage="voiceLiveSession.TruncateConversation (itemId, contentIndex, audioEnd, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="contentIndex" Type="System.Int32" />
-        <Parameter Name="audioEnd" Type="System.TimeSpan" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="itemId">The ID of the item up to which to truncate the conversation.</param>
-        <param name="contentIndex">The content index within the item to truncate to.</param>
-        <param name="cancellationToken">An optional cancellation token.</param>
-        <param name="audioEnd">Inclusive duration up to which audio is truncated</param>
-        <summary>
-            Truncates the conversation history.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="itemId" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">Thrown when <paramref name="itemId" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="TruncateConversationAsync">

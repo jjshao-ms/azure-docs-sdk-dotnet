@@ -1,0 +1,374 @@
+<Type Name="OracleDBVersionCollection" FullName="Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection">
+  <TypeSignature Language="C#" Value="public class OracleDBVersionCollection : Azure.ResourceManager.ArmCollection, System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OracleDBVersionCollection extends Azure.ResourceManager.ArmCollection implements class System.Collections.Generic.IAsyncEnumerable`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class OracleDBVersionCollection&#xA;Inherits ArmCollection&#xA;Implements IAsyncEnumerable(Of OracleDBVersionResource), IEnumerable(Of OracleDBVersionResource)" />
+  <TypeSignature Language="F#" Value="type OracleDBVersionCollection = class&#xA;    inherit ArmCollection&#xA;    interface seq&lt;OracleDBVersionResource&gt;&#xA;    interface IEnumerable&#xA;    interface IAsyncEnumerable&lt;OracleDBVersionResource&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class representing a collection of <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /> and their operations.
+            Each <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /> in the collection will belong to the same instance of <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />.
+            To get an <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection" /> instance call the GetOracleDBVersions method from an instance of <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected OracleDBVersionCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection" /> class for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; Exists (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; Exists(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.Exists(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Exists (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.Exists : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="oracleDBVersionCollection.Exists (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks to see if the resource exists in azure.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExistsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; ExistsAsync (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; ExistsAsync(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.ExistsAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExistsAsync (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.ExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="oracleDBVersionCollection.ExistsAsync (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Checks to see if the resource exists in azure.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; Get (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; Get(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.Get(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of OracleDBVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.Get : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.Get (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a DbVersion
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAll">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetAll (Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetAll(class Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.GetAll(Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (options As OracleDBVersionCollectionGetAllOptions, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of OracleDBVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.GetAll : Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.GetAll (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="options"> A property bag which contains all the parameters of this method except the LRO qualifier and request context parameter. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List DbVersion resources by SubscriptionLocationResource
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions</description></item><item><term>Operation Id</term><description>DbVersion_ListByLocation</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetAllAsync (Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetAllAsync(class Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.GetAllAsync(Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (options As OracleDBVersionCollectionGetAllOptions, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of OracleDBVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.GetAllAsync : Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.GetAllAsync (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.ResourceManager.OracleDatabase.Models.OracleDBVersionCollectionGetAllOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="options"> A property bag which contains all the parameters of this method except the LRO qualifier and request context parameter. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List DbVersion resources by SubscriptionLocationResource
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions</description></item><item><term>Operation Id</term><description>DbVersion_ListByLocation</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt; GetAsync (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt; GetAsync(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.GetAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of OracleDBVersionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;&#xA;override this.GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;" Usage="oracleDBVersionCollection.GetAsync (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a DbVersion
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIfExists">
+      <MemberSignature Language="C#" Value="public virtual Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetIfExists (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.NullableResponse`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; GetIfExists(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.GetIfExists(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExists (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As NullableResponse(Of OracleDBVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.GetIfExists : string * System.Threading.CancellationToken -&gt; Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.GetIfExists (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Tries to get details for this resource from the service.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIfExistsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt; GetIfExistsAsync (string dbversionsname, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.NullableResponse`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt; GetIfExistsAsync(string dbversionsname, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.GetIfExistsAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIfExistsAsync (dbversionsname As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NullableResponse(Of OracleDBVersionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;&#xA;override this.GetIfExistsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;" Usage="oracleDBVersionCollection.GetIfExistsAsync (dbversionsname, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbversionsname" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbversionsname"> DbVersion name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Tries to get details for this resource from the service.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions/{dbversionsname}</description></item><item><term>Operation Id</term><description>DbVersion_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.OracleDatabase.OracleDBVersionResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dbversionsname" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dbversionsname" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetAsyncEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; IAsyncEnumerable&lt;OracleDBVersionResource&gt;.GetAsyncEnumerator (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerator`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetAsyncEnumerator(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.System#Collections#Generic#IAsyncEnumerable&lt;Azure#ResourceManager#OracleDatabase#OracleDBVersionResource&gt;#GetAsyncEnumerator(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAsyncEnumerator (cancellationToken As CancellationToken) As IAsyncEnumerator(Of OracleDBVersionResource) Implements IAsyncEnumerable(Of OracleDBVersionResource).GetAsyncEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetAsyncEnumerator : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetAsyncEnumerator : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetAsyncEnumerator cancellationToken" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
+        <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; IEnumerable&lt;OracleDBVersionResource&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt; System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.System#Collections#Generic#IEnumerable&lt;Azure#ResourceManager#OracleDatabase#OracleDBVersionResource&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of OracleDBVersionResource) Implements IEnumerable(Of OracleDBVersionResource).GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;&#xA;override this.System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;" Usage="oracleDBVersionCollection.System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.OracleDatabase.OracleDBVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.OracleDatabase.OracleDBVersionCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oracleDBVersionCollection.System.Collections.IEnumerable.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.OracleDatabase</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
