@@ -1,12 +1,12 @@
 ---
 title: Azure Communication Messages client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Communication.Messages, communication
-ms.date: 04/15/2025
+ms.date: 10/02/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication Messages client library for .NET - version 1.3.0-beta.1 
+# Azure Communication Messages client library for .NET - version 1.3.0-beta.2 
 
 
 This package contains a C# SDK for Azure Communication Messages Services.
@@ -61,8 +61,8 @@ To send a notification message, call the `Send` or `SendAsync` function from the
 #### Send a text message
 ```C#
 // Create the recipient list, currently only one recipient is supported 
-var recipient = new List<string> { "<RecipientPhoneNumber>" };
-var textContent = new = new TextNotificationContent(new Guid("<channel-registration-id>"), recipient, "Come on everyone, let's go for lunch together.");
+var recipientList = new List<string> { "<RecipientPhoneNumber>" };
+var textContent = new TextNotificationContent(new Guid("<channel-registration-id>"), recipientList, "Come on everyone, let's go for lunch together.");
 SendMessageResult result = await notificationMessagesClient.SendAsync(textContent);
 Console.WriteLine($"Message id: {result.Receipts[0].MessageId}");
 ```
@@ -70,7 +70,7 @@ Console.WriteLine($"Message id: {result.Receipts[0].MessageId}");
 #### Send a template message
 ```C#
 // Create the recipient list, currently only one recipient is supported 
-var recipient = new List<string> { "<RecipientPhoneNumber>" };
+var recipientList = new List<string> { "<RecipientPhoneNumber>" };
 string templateName = "sample_template";
 string templateLanguage = "en_us";
 var messageTemplate = new MessageTemplate(templateName, templateLanguage);
@@ -82,9 +82,9 @@ Console.WriteLine($"Message id: {result.Receipts[0].MessageId}");
 #### Send a media message
 ```C#
 // Create the recipient list, currently only one recipient is supported 
-var recipient = new List<string> { "<RecipientPhoneNumber>" };
+var recipientList = new List<string> { "<RecipientPhoneNumber>" };
 var uri = new Uri("https://aka.ms/acsicon1");
-var imageContent = new ImageNotificationContent(channelRegistrationId, recipientList, uri);
+var mediaContent = new ImageNotificationContent(channelRegistrationId, recipientList, uri);
 SendMessageResult result = await notificationMessagesClient.SendAsync(mediaContent);
 Console.WriteLine($"Message id: {result.Receipts[0].MessageId}");
 ```
@@ -116,7 +116,7 @@ This project welcomes contributions and suggestions. Most contributions require 
 This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For more information see the [Code of Conduct FAQ][coc_faq] or contact [opencode@microsoft.com][coc_contact] with any additional questions or comments.
 
 <!-- LINKS -->
-[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Messages_1.3.0-beta.1/sdk/communication/Azure.Communication.Messages/src
+[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Messages_1.3.0-beta.2/sdk/communication/Azure.Communication.Messages/src
 [package]: https://www.nuget.org/packages/Azure.Communication.Messages
 [product_docs]: https://learn.microsoft.com/azure/communication-services/overview
 [nuget]: https://www.nuget.org
