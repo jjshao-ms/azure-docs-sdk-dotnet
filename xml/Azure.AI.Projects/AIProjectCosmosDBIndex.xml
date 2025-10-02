@@ -1,0 +1,402 @@
+<Type Name="AIProjectCosmosDBIndex" FullName="Azure.AI.Projects.AIProjectCosmosDBIndex">
+  <TypeSignature Language="C#" Value="public class AIProjectCosmosDBIndex : Azure.AI.Projects.AIProjectIndex, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AIProjectCosmosDBIndex extends Azure.AI.Projects.AIProjectIndex implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.AIProjectCosmosDBIndex&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.AIProjectCosmosDBIndex&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.AIProjectCosmosDBIndex" />
+  <TypeSignature Language="VB.NET" Value="Public Class AIProjectCosmosDBIndex&#xA;Inherits AIProjectIndex&#xA;Implements IJsonModel(Of AIProjectCosmosDBIndex), IPersistableModel(Of AIProjectCosmosDBIndex)" />
+  <TypeSignature Language="F#" Value="type AIProjectCosmosDBIndex = class&#xA;    inherit AIProjectIndex&#xA;    interface IJsonModel&lt;AIProjectCosmosDBIndex&gt;&#xA;    interface IPersistableModel&lt;AIProjectCosmosDBIndex&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Projects</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.AI.Projects.AIProjectIndex</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> CosmosDB Vector Store Index Definition. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AIProjectCosmosDBIndex (string connectionName, string databaseName, string containerName, Azure.AI.Projects.EmbeddingConfiguration embeddingConfiguration, Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionName, string databaseName, string containerName, class Azure.AI.Projects.EmbeddingConfiguration embeddingConfiguration, class Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.#ctor(System.String,System.String,System.String,Azure.AI.Projects.EmbeddingConfiguration,Azure.AI.Projects.AIProjectIndexFieldMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionName As String, databaseName As String, containerName As String, embeddingConfiguration As EmbeddingConfiguration, fieldMapping As AIProjectIndexFieldMapping)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.AIProjectCosmosDBIndex : string * string * string * Azure.AI.Projects.EmbeddingConfiguration * Azure.AI.Projects.AIProjectIndexFieldMapping -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex" Usage="new Azure.AI.Projects.AIProjectCosmosDBIndex (connectionName, databaseName, containerName, embeddingConfiguration, fieldMapping)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="containerName" Type="System.String" />
+        <Parameter Name="embeddingConfiguration" Type="Azure.AI.Projects.EmbeddingConfiguration" />
+        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.AIProjectIndexFieldMapping" />
+      </Parameters>
+      <Docs>
+        <param name="connectionName"> Name of connection to CosmosDB. </param>
+        <param name="databaseName"> Name of the CosmosDB Database. </param>
+        <param name="containerName"> Name of CosmosDB Container. </param>
+        <param name="embeddingConfiguration"> Embedding model configuration. </param>
+        <param name="fieldMapping"> Field mapping configuration. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.AIProjectCosmosDBIndex" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionName" />, <paramref name="databaseName" />, <paramref name="containerName" />, <paramref name="embeddingConfiguration" /> or <paramref name="fieldMapping" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionName">
+      <MemberSignature Language="C#" Value="public string ConnectionName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectCosmosDBIndex.ConnectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionName As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionName : string with get, set" Usage="Azure.AI.Projects.AIProjectCosmosDBIndex.ConnectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Name of connection to CosmosDB. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerName">
+      <MemberSignature Language="C#" Value="public string ContainerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContainerName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectCosmosDBIndex.ContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerName As String" />
+      <MemberSignature Language="F#" Value="member this.ContainerName : string with get, set" Usage="Azure.AI.Projects.AIProjectCosmosDBIndex.ContainerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Name of CosmosDB Container. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectCosmosDBIndex.DatabaseName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseName As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseName : string with get, set" Usage="Azure.AI.Projects.AIProjectCosmosDBIndex.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Name of the CosmosDB Database. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmbeddingConfiguration">
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.EmbeddingConfiguration EmbeddingConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.EmbeddingConfiguration EmbeddingConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectCosmosDBIndex.EmbeddingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmbeddingConfiguration As EmbeddingConfiguration" />
+      <MemberSignature Language="F#" Value="member this.EmbeddingConfiguration : Azure.AI.Projects.EmbeddingConfiguration with get, set" Usage="Azure.AI.Projects.AIProjectCosmosDBIndex.EmbeddingConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.EmbeddingConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Embedding model configuration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldMapping">
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.AIProjectIndexFieldMapping FieldMapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectIndexFieldMapping FieldMapping" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectCosmosDBIndex.FieldMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldMapping As AIProjectIndexFieldMapping" />
+      <MemberSignature Language="F#" Value="member this.FieldMapping : Azure.AI.Projects.AIProjectIndexFieldMapping with get, set" Usage="Azure.AI.Projects.AIProjectCosmosDBIndex.FieldMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectIndexFieldMapping</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Field mapping configuration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.AIProjectIndex JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.AIProjectIndex JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AIProjectIndex" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectIndex" Usage="aIProjectCosmosDBIndex.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="aIProjectCosmosDBIndex.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.AIProjectIndex PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.AIProjectIndex PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As AIProjectIndex" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectIndex" Usage="aIProjectCosmosDBIndex.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="aIProjectCosmosDBIndex.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.AIProjectCosmosDBIndex IJsonModel&lt;AIProjectCosmosDBIndex&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.AIProjectCosmosDBIndex System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#AIProjectCosmosDBIndex&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AIProjectCosmosDBIndex Implements IJsonModel(Of AIProjectCosmosDBIndex).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex" Usage="aIProjectCosmosDBIndex.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectCosmosDBIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;AIProjectCosmosDBIndex&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#AIProjectCosmosDBIndex&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of AIProjectCosmosDBIndex).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="aIProjectCosmosDBIndex.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.AIProjectCosmosDBIndex IPersistableModel&lt;AIProjectCosmosDBIndex&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.AIProjectCosmosDBIndex System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#AIProjectCosmosDBIndex&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As AIProjectCosmosDBIndex Implements IPersistableModel(Of AIProjectCosmosDBIndex).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex" Usage="aIProjectCosmosDBIndex.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectCosmosDBIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;AIProjectCosmosDBIndex&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#AIProjectCosmosDBIndex&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of AIProjectCosmosDBIndex).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="aIProjectCosmosDBIndex.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;AIProjectCosmosDBIndex&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectCosmosDBIndex.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#AIProjectCosmosDBIndex&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of AIProjectCosmosDBIndex).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="aIProjectCosmosDBIndex.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AIProjectCosmosDBIndex&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

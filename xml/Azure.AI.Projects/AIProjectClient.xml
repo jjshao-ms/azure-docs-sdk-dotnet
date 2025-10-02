@@ -45,8 +45,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="endpoint" Type="System.Uri" />
-        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
+        <Parameter Name="endpoint" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="credential" Type="Azure.Core.TokenCredential" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="endpoint">
@@ -78,10 +78,12 @@
         <Parameter Name="tokenProvider" Type="System.ClientModel.AuthenticationTokenProvider" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="tokenProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint"> Service endpoint. </param>
+        <param name="tokenProvider"> A credential provider used to authenticate to the service. </param>
+        <summary> Initializes a new instance of AIProjectClient. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpoint" /> or <paramref name="tokenProvider" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,9 +98,9 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="endpoint" Type="System.Uri" />
-        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
-        <Parameter Name="options" Type="Azure.AI.Projects.AIProjectClientOptions" />
+        <Parameter Name="endpoint" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="credential" Type="Azure.Core.TokenCredential" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.AI.Projects.AIProjectClientOptions" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="endpoint"> Service endpoint. </param>
@@ -127,26 +129,33 @@
         <Parameter Name="options" Type="Azure.AI.Projects.AIProjectClientOptions" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="tokenProvider">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint"> Service endpoint. </param>
+        <param name="tokenProvider"> A credential provider used to authenticate to the service. </param>
+        <param name="options"> The options for configuring the client. </param>
+        <summary> Initializes a new instance of AIProjectClient. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpoint" /> or <paramref name="tokenProvider" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Connections">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.ConnectionsOperations Connections { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.ConnectionsOperations Connections" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectConnectionsOperations Connections { get; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectConnectionsOperations Connections" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Connections" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Connections As ConnectionsOperations" />
-      <MemberSignature Language="F#" Value="member this.Connections : Azure.AI.Projects.ConnectionsOperations" Usage="Azure.AI.Projects.AIProjectClient.Connections" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Connections As AIProjectConnectionsOperations" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Connections : Azure.AI.Projects.AIProjectConnectionsOperations" Usage="Azure.AI.Projects.AIProjectClient.Connections" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.ConnectionsOperations Connections { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.ConnectionsOperations Connections" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Connections As ConnectionsOperations" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Connections : Azure.AI.Projects.ConnectionsOperations" Usage="Azure.AI.Projects.AIProjectClient.Connections" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.ConnectionsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectConnectionsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.ConnectionsOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the client for managing connections. </summary>
@@ -155,18 +164,23 @@
       </Docs>
     </Member>
     <Member MemberName="Datasets">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.DatasetsOperations Datasets { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.DatasetsOperations Datasets" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectDatasetsOperations Datasets { get; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectDatasetsOperations Datasets" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Datasets" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Datasets As DatasetsOperations" />
-      <MemberSignature Language="F#" Value="member this.Datasets : Azure.AI.Projects.DatasetsOperations" Usage="Azure.AI.Projects.AIProjectClient.Datasets" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Datasets As AIProjectDatasetsOperations" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Datasets : Azure.AI.Projects.AIProjectDatasetsOperations" Usage="Azure.AI.Projects.AIProjectClient.Datasets" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.DatasetsOperations Datasets { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.DatasetsOperations Datasets" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Datasets As DatasetsOperations" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Datasets : Azure.AI.Projects.DatasetsOperations" Usage="Azure.AI.Projects.AIProjectClient.Datasets" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.DatasetsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectDatasetsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.DatasetsOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the client for managing datasets. </summary>
@@ -175,18 +189,23 @@
       </Docs>
     </Member>
     <Member MemberName="Deployments">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.DeploymentsOperations Deployments { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.DeploymentsOperations Deployments" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectDeploymentsOperations Deployments { get; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectDeploymentsOperations Deployments" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Deployments" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Deployments As DeploymentsOperations" />
-      <MemberSignature Language="F#" Value="member this.Deployments : Azure.AI.Projects.DeploymentsOperations" Usage="Azure.AI.Projects.AIProjectClient.Deployments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Deployments As AIProjectDeploymentsOperations" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Deployments : Azure.AI.Projects.AIProjectDeploymentsOperations" Usage="Azure.AI.Projects.AIProjectClient.Deployments" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.DeploymentsOperations Deployments { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.DeploymentsOperations Deployments" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Deployments As DeploymentsOperations" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Deployments : Azure.AI.Projects.DeploymentsOperations" Usage="Azure.AI.Projects.AIProjectClient.Deployments" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.DeploymentsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectDeploymentsOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.DeploymentsOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the client for managing deployments. </summary>
@@ -395,8 +414,8 @@
         <ReturnType>OpenAI.OpenAIClient</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="apiVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="connectionName" />
@@ -430,18 +449,23 @@
       </Docs>
     </Member>
     <Member MemberName="Indexes">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.IndexesOperations Indexes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.IndexesOperations Indexes" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectIndexesOperations Indexes { get; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectIndexesOperations Indexes" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Indexes" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Indexes As IndexesOperations" />
-      <MemberSignature Language="F#" Value="member this.Indexes : Azure.AI.Projects.IndexesOperations" Usage="Azure.AI.Projects.AIProjectClient.Indexes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Indexes As AIProjectIndexesOperations" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Indexes : Azure.AI.Projects.AIProjectIndexesOperations" Usage="Azure.AI.Projects.AIProjectClient.Indexes" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.IndexesOperations Indexes { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.IndexesOperations Indexes" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Indexes As IndexesOperations" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Indexes : Azure.AI.Projects.IndexesOperations" Usage="Azure.AI.Projects.AIProjectClient.Indexes" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.IndexesOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectIndexesOperations</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.IndexesOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the client for managing indexes. </summary>
@@ -470,18 +494,23 @@
       </Docs>
     </Member>
     <Member MemberName="Telemetry">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.Telemetry Telemetry { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.Telemetry Telemetry" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectTelemetry Telemetry { get; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectTelemetry Telemetry" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Telemetry" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Telemetry As Telemetry" />
-      <MemberSignature Language="F#" Value="member this.Telemetry : Azure.AI.Projects.Telemetry" Usage="Azure.AI.Projects.AIProjectClient.Telemetry" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Telemetry As AIProjectTelemetry" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Telemetry : Azure.AI.Projects.AIProjectTelemetry" Usage="Azure.AI.Projects.AIProjectClient.Telemetry" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.Telemetry Telemetry { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.Telemetry Telemetry" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Telemetry As Telemetry" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Telemetry : Azure.AI.Projects.Telemetry" Usage="Azure.AI.Projects.AIProjectClient.Telemetry" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.Telemetry</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectTelemetry</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.Telemetry</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the client for telemetry operations. </summary>

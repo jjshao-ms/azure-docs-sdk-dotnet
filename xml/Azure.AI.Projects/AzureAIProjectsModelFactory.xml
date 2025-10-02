@@ -32,10 +32,10 @@
         <ReturnType>Azure.AI.Projects.AgentEvaluation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="status" Type="System.String" />
-        <Parameter Name="error" Type="System.String" />
-        <Parameter Name="result" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.AgentEvaluationResult&gt;" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="error" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="result" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.AgentEvaluationResult&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the agent evaluation run. </param>
@@ -62,7 +62,7 @@
         <ReturnType>Azure.AI.Projects.AgentEvaluationRedactionConfiguration</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="redactScoreProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="redactScoreProperties" Type="System.Nullable&lt;System.Boolean&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="redactScoreProperties"> Redact score properties. If not specified, the default is to redact in production. </param>
@@ -86,12 +86,12 @@
         <ReturnType>Azure.AI.Projects.AgentEvaluationRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="runId" Type="System.String" />
-        <Parameter Name="threadId" Type="System.String" />
-        <Parameter Name="evaluators" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.Projects.EvaluatorConfiguration&gt;" />
-        <Parameter Name="samplingConfiguration" Type="Azure.AI.Projects.AgentEvaluationSamplingConfiguration" />
-        <Parameter Name="redactionConfiguration" Type="Azure.AI.Projects.AgentEvaluationRedactionConfiguration" />
-        <Parameter Name="appInsightsConnectionString" Type="System.String" />
+        <Parameter Name="runId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="threadId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="evaluators" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.Projects.EvaluatorConfiguration&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="samplingConfiguration" Type="Azure.AI.Projects.AgentEvaluationSamplingConfiguration" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="redactionConfiguration" Type="Azure.AI.Projects.AgentEvaluationRedactionConfiguration" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="appInsightsConnectionString" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="runId"> Identifier of the agent run. </param>
@@ -120,16 +120,16 @@
         <ReturnType>Azure.AI.Projects.AgentEvaluationResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="evaluator" Type="System.String" />
-        <Parameter Name="evaluatorId" Type="System.String" />
-        <Parameter Name="score" Type="System.Single" />
-        <Parameter Name="status" Type="System.String" />
-        <Parameter Name="reason" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="threadId" Type="System.String" />
-        <Parameter Name="runId" Type="System.String" />
-        <Parameter Name="error" Type="System.String" />
-        <Parameter Name="additionalDetails" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="evaluator" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="evaluatorId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="score" Type="System.Single" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="reason" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="threadId" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runId" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="error" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="additionalDetails" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="evaluator"> Evaluator's name. This is the name of the evaluator that was used to evaluate the agent's completion. </param>
@@ -162,9 +162,9 @@
         <ReturnType>Azure.AI.Projects.AgentEvaluationSamplingConfiguration</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="samplingPercent" Type="System.Single" />
-        <Parameter Name="maxRequestRate" Type="System.Single" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="samplingPercent" Type="System.Single" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxRequestRate" Type="System.Single" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> Name of the sampling strategy. </param>
@@ -172,6 +172,375 @@
         <param name="maxRequestRate"> Maximum request rate per hour (0 to 1000). </param>
         <summary> Definition for sampling strategy. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AgentEvaluationSamplingConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectBlobReference">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectBlobReference AIProjectBlobReference (Uri blobUri = default, string storageAccountArmId = default, Azure.AI.Projects.BlobReferenceSasCredential credential = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectBlobReference AIProjectBlobReference(class System.Uri blobUri, string storageAccountArmId, class Azure.AI.Projects.BlobReferenceSasCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectBlobReference(System.Uri,System.String,Azure.AI.Projects.BlobReferenceSasCredential)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectBlobReference (Optional blobUri As Uri = Nothing, Optional storageAccountArmId As String = Nothing, Optional credential As BlobReferenceSasCredential = Nothing) As AIProjectBlobReference" />
+      <MemberSignature Language="F#" Value="static member AIProjectBlobReference : Uri * string * Azure.AI.Projects.BlobReferenceSasCredential -&gt; Azure.AI.Projects.AIProjectBlobReference" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectBlobReference (blobUri, storageAccountArmId, credential)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectBlobReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="storageAccountArmId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="credential" Type="Azure.AI.Projects.BlobReferenceSasCredential" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="blobUri" />
+        <param name="storageAccountArmId"> ARM ID of the storage account to use. </param>
+        <param name="credential"> Credential info to access the storage account. </param>
+        <summary> Blob reference details. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectBlobReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnection AIProjectConnection (string name = default, string id = default, Azure.AI.Projects.ConnectionType type = default, string target = default, bool isDefault = false, Azure.AI.Projects.AIProjectConnectionBaseCredential credentials = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnection AIProjectConnection(string name, string id, valuetype Azure.AI.Projects.ConnectionType type, string target, bool isDefault, class Azure.AI.Projects.AIProjectConnectionBaseCredential credentials, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnection(System.String,System.String,Azure.AI.Projects.ConnectionType,System.String,System.Boolean,Azure.AI.Projects.AIProjectConnectionBaseCredential,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnection (Optional name As String = Nothing, Optional id As String = Nothing, Optional type As ConnectionType = Nothing, Optional target As String = Nothing, Optional isDefault As Boolean = false, Optional credentials As AIProjectConnectionBaseCredential = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing) As AIProjectConnection" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnection : string * string * Azure.AI.Projects.ConnectionType * string * bool * Azure.AI.Projects.AIProjectConnectionBaseCredential * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.AIProjectConnection" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnection (name, id, type, target, isDefault, credentials, metadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="type" Type="Azure.AI.Projects.ConnectionType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="target" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="isDefault" Type="System.Boolean" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="credentials" Type="Azure.AI.Projects.AIProjectConnectionBaseCredential" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The friendly name of the connection, provided by the user. </param>
+        <param name="id"> A unique identifier for the connection, generated by the service. </param>
+        <param name="type"> Category of the connection. </param>
+        <param name="target"> The connection URL to be used for this service. </param>
+        <param name="isDefault"> Whether the connection is tagged as the default connection of its type. </param>
+        <param name="credentials"> The credentials used by the connection. </param>
+        <param name="metadata"> Metadata of the connection. </param>
+        <summary> Response from the list and get connections operations. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnectionApiKeyCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnectionApiKeyCredential AIProjectConnectionApiKeyCredential (string apiKey = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnectionApiKeyCredential AIProjectConnectionApiKeyCredential(string apiKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionApiKeyCredential(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnectionApiKeyCredential (Optional apiKey As String = Nothing) As AIProjectConnectionApiKeyCredential" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnectionApiKeyCredential : string -&gt; Azure.AI.Projects.AIProjectConnectionApiKeyCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionApiKeyCredential apiKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnectionApiKeyCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="apiKey" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="apiKey"> API Key. </param>
+        <summary> API Key Credential definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionApiKeyCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnectionBaseCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnectionBaseCredential AIProjectConnectionBaseCredential (string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnectionBaseCredential AIProjectConnectionBaseCredential(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionBaseCredential(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnectionBaseCredential (Optional type As String = Nothing) As AIProjectConnectionBaseCredential" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnectionBaseCredential : string -&gt; Azure.AI.Projects.AIProjectConnectionBaseCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionBaseCredential type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnectionBaseCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of credential used by the connection. </param>
+        <summary>
+            A base class for connection credentials
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionApiKeyCredential(System.String)" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionEntraIdCredential" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionCustomCredential(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionSasCredential(System.String)" />, and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.NoAuthenticationCredentials" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionBaseCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnectionCustomCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnectionCustomCredential AIProjectConnectionCustomCredential (System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; additionalProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnectionCustomCredential AIProjectConnectionCustomCredential(class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionCustomCredential(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnectionCustomCredential (Optional additionalProperties As IReadOnlyDictionary(Of String, String) = Nothing) As AIProjectConnectionCustomCredential" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnectionCustomCredential : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.AIProjectConnectionCustomCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionCustomCredential additionalProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnectionCustomCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="additionalProperties" />
+        <summary> Custom credential definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionCustomCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnectionEntraIdCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnectionEntraIdCredential AIProjectConnectionEntraIdCredential ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnectionEntraIdCredential AIProjectConnectionEntraIdCredential() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionEntraIdCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnectionEntraIdCredential () As AIProjectConnectionEntraIdCredential" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnectionEntraIdCredential : unit -&gt; Azure.AI.Projects.AIProjectConnectionEntraIdCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionEntraIdCredential " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnectionEntraIdCredential</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Entra ID credential definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionEntraIdCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectConnectionSasCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectConnectionSasCredential AIProjectConnectionSasCredential (string sasToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectConnectionSasCredential AIProjectConnectionSasCredential(string sasToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionSasCredential(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectConnectionSasCredential (Optional sasToken As String = Nothing) As AIProjectConnectionSasCredential" />
+      <MemberSignature Language="F#" Value="static member AIProjectConnectionSasCredential : string -&gt; Azure.AI.Projects.AIProjectConnectionSasCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionSasCredential sasToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnectionSasCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sasToken" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="sasToken"> SAS token. </param>
+        <summary> Shared Access Signature (SAS) credential definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionSasCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectCosmosDBIndex">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectCosmosDBIndex AIProjectCosmosDBIndex (string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string connectionName = default, string databaseName = default, string containerName = default, Azure.AI.Projects.EmbeddingConfiguration embeddingConfiguration = default, Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectCosmosDBIndex AIProjectCosmosDBIndex(string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string connectionName, string databaseName, string containerName, class Azure.AI.Projects.EmbeddingConfiguration embeddingConfiguration, class Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectCosmosDBIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.String,Azure.AI.Projects.EmbeddingConfiguration,Azure.AI.Projects.AIProjectIndexFieldMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectCosmosDBIndex (Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional connectionName As String = Nothing, Optional databaseName As String = Nothing, Optional containerName As String = Nothing, Optional embeddingConfiguration As EmbeddingConfiguration = Nothing, Optional fieldMapping As AIProjectIndexFieldMapping = Nothing) As AIProjectCosmosDBIndex" />
+      <MemberSignature Language="F#" Value="static member AIProjectCosmosDBIndex : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * string * Azure.AI.Projects.EmbeddingConfiguration * Azure.AI.Projects.AIProjectIndexFieldMapping -&gt; Azure.AI.Projects.AIProjectCosmosDBIndex" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectCosmosDBIndex (id, name, version, description, tags, connectionName, databaseName, containerName, embeddingConfiguration, fieldMapping)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectCosmosDBIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="databaseName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="containerName" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="embeddingConfiguration" Type="Azure.AI.Projects.EmbeddingConfiguration" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.AIProjectIndexFieldMapping" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <param name="connectionName"> Name of connection to CosmosDB. </param>
+        <param name="databaseName"> Name of the CosmosDB Database. </param>
+        <param name="containerName"> Name of CosmosDB Container. </param>
+        <param name="embeddingConfiguration"> Embedding model configuration. </param>
+        <param name="fieldMapping"> Field mapping configuration. </param>
+        <summary> CosmosDB Vector Store Index Definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectCosmosDBIndex" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectDataset">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectDataset AIProjectDataset (Uri dataUri = default, string type = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectDataset AIProjectDataset(class System.Uri dataUri, string type, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectDataset(System.Uri,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectDataset (Optional dataUri As Uri = Nothing, Optional type As String = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As AIProjectDataset" />
+      <MemberSignature Language="F#" Value="static member AIProjectDataset : Uri * string * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.AIProjectDataset" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectDataset (dataUri, type, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectDataset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="dataUri" />
+        <param name="type"> Dataset type. </param>
+        <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
+        <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <summary>
+            DatasetVersion Definition
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FileDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" /> and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FolderDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectDataset" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectDeployment AIProjectDeployment (string type = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectDeployment AIProjectDeployment(string type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectDeployment(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectDeployment (Optional type As String = Nothing, Optional name As String = Nothing) As AIProjectDeployment" />
+      <MemberSignature Language="F#" Value="static member AIProjectDeployment : string * string -&gt; Azure.AI.Projects.AIProjectDeployment" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectDeployment (type, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectDeployment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of the deployment. </param>
+        <param name="name"> Name of the deployment. </param>
+        <summary>
+            Model Deployment Definition
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ModelDeployment(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},Azure.AI.Projects.ModelDeploymentSku,System.String)" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectDeployment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectIndex">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectIndex AIProjectIndex (string type = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectIndex AIProjectIndex(string type, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectIndex(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectIndex (Optional type As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As AIProjectIndex" />
+      <MemberSignature Language="F#" Value="static member AIProjectIndex : string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.AIProjectIndex" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectIndex (type, id, name, version, description, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Type of index. </param>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <summary>
+            Index resource Definition
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAISearchIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.AI.Projects.AIProjectIndexFieldMapping)" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ManagedAzureAISearchIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />, and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectCosmosDBIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.String,Azure.AI.Projects.EmbeddingConfiguration,Azure.AI.Projects.AIProjectIndexFieldMapping)" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectIndex" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AIProjectIndexFieldMapping">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AIProjectIndexFieldMapping AIProjectIndexFieldMapping (System.Collections.Generic.IEnumerable&lt;string&gt; contentFields = default, string filepathField = default, string titleField = default, string urlField = default, System.Collections.Generic.IEnumerable&lt;string&gt; vectorFields = default, System.Collections.Generic.IEnumerable&lt;string&gt; metadataFields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AIProjectIndexFieldMapping AIProjectIndexFieldMapping(class System.Collections.Generic.IEnumerable`1&lt;string&gt; contentFields, string filepathField, string titleField, string urlField, class System.Collections.Generic.IEnumerable`1&lt;string&gt; vectorFields, class System.Collections.Generic.IEnumerable`1&lt;string&gt; metadataFields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectIndexFieldMapping(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AIProjectIndexFieldMapping (Optional contentFields As IEnumerable(Of String) = Nothing, Optional filepathField As String = Nothing, Optional titleField As String = Nothing, Optional urlField As String = Nothing, Optional vectorFields As IEnumerable(Of String) = Nothing, Optional metadataFields As IEnumerable(Of String) = Nothing) As AIProjectIndexFieldMapping" />
+      <MemberSignature Language="F#" Value="static member AIProjectIndexFieldMapping : seq&lt;string&gt; * string * string * string * seq&lt;string&gt; * seq&lt;string&gt; -&gt; Azure.AI.Projects.AIProjectIndexFieldMapping" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectIndexFieldMapping (contentFields, filepathField, titleField, urlField, vectorFields, metadataFields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectIndexFieldMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="filepathField" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="titleField" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="urlField" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vectorFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="metadataFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="contentFields"> List of fields with text content. </param>
+        <param name="filepathField"> Path of file to be used as a source of text content. </param>
+        <param name="titleField"> Field containing the title of the document. </param>
+        <param name="urlField"> Field containing the url of the document. </param>
+        <param name="vectorFields"> List of fields with vector content. </param>
+        <param name="metadataFields"> List of fields with metadata content. </param>
+        <summary> Field mapping configuration class. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AIProjectIndexFieldMapping" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +559,7 @@
         <ReturnType>Azure.AI.Projects.ApiKeyCredentials</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="apiKey" Type="System.String" />
+        <Parameter Name="apiKey" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="apiKey"> API Key. </param>
@@ -214,8 +583,8 @@
         <ReturnType>Azure.AI.Projects.AssetDeployment</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> The type of the deployment. </param>
@@ -243,12 +612,50 @@
         <ReturnType>Azure.AI.Projects.AssistantMessage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="content" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="content"> Response content generated by the assistant. </param>
         <summary> A message generated by the assistant in response to previous messages. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AssistantMessage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureAISearchIndex">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AzureAISearchIndex AzureAISearchIndex (string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string connectionName = default, string indexName = default, Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AzureAISearchIndex AzureAISearchIndex(string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string connectionName, string indexName, class Azure.AI.Projects.AIProjectIndexFieldMapping fieldMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAISearchIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.AI.Projects.AIProjectIndexFieldMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureAISearchIndex (Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional connectionName As String = Nothing, Optional indexName As String = Nothing, Optional fieldMapping As AIProjectIndexFieldMapping = Nothing) As AzureAISearchIndex" />
+      <MemberSignature Language="F#" Value="static member AzureAISearchIndex : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * Azure.AI.Projects.AIProjectIndexFieldMapping -&gt; Azure.AI.Projects.AzureAISearchIndex" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAISearchIndex (id, name, version, description, tags, connectionName, indexName, fieldMapping)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AzureAISearchIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="indexName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.AIProjectIndexFieldMapping" Index="7" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <param name="connectionName"> Name of connection to Azure AI Search. </param>
+        <param name="indexName"> Name of index in Azure AI Search resource to attach. </param>
+        <param name="fieldMapping"> Field mapping configuration. </param>
+        <summary> Azure AI Search Index Definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AzureAISearchIndex" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,14 +674,14 @@
         <ReturnType>Azure.AI.Projects.AzureAISearchIndex</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="indexName" Type="System.String" />
-        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.FieldMapping" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionName" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="indexName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.FieldMapping" Index="7" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> Asset ID, a unique identifier for the asset. </param>
@@ -305,7 +712,7 @@
         <ReturnType>Azure.AI.Projects.AzureOpenAIModelConfiguration</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="modelDeploymentName" Type="System.String" />
+        <Parameter Name="modelDeploymentName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="modelDeploymentName"> Deployment name for AOAI model. Example: gpt-4o if in AIServices or connection based `connection_name/deployment_name` (e.g. `my-aoai-connection/gpt-4o`). </param>
@@ -329,7 +736,7 @@
         <ReturnType>Azure.AI.Projects.BaseCredentials</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> The type of credential used by the connection. </param>
@@ -356,9 +763,9 @@
         <ReturnType>Azure.AI.Projects.BlobReference</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobUri" Type="System.Uri" />
-        <Parameter Name="storageAccountArmId" Type="System.String" />
-        <Parameter Name="credential" Type="Azure.AI.Projects.BlobReferenceSasCredential" />
+        <Parameter Name="blobUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="storageAccountArmId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="credential" Type="Azure.AI.Projects.BlobReferenceSasCredential" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="blobUri" />
@@ -410,13 +817,13 @@
         <ReturnType>Azure.AI.Projects.ConnectionProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="type" Type="Azure.AI.Projects.ConnectionType" />
-        <Parameter Name="target" Type="System.String" />
-        <Parameter Name="isDefault" Type="System.Boolean" />
-        <Parameter Name="credentials" Type="Azure.AI.Projects.BaseCredentials" />
-        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="Azure.AI.Projects.ConnectionType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="target" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isDefault" Type="System.Boolean" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="credentials" Type="Azure.AI.Projects.BaseCredentials" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> The friendly name of the connection, provided by the user. </param>
@@ -446,16 +853,16 @@
         <ReturnType>Azure.AI.Projects.CosmosDBIndex</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="databaseName" Type="System.String" />
-        <Parameter Name="containerName" Type="System.String" />
-        <Parameter Name="embeddingConfiguration" Type="Azure.AI.Projects.EmbeddingConfiguration" />
-        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.FieldMapping" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionName" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="databaseName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="containerName" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="embeddingConfiguration" Type="Azure.AI.Projects.EmbeddingConfiguration" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fieldMapping" Type="Azure.AI.Projects.FieldMapping" Index="9" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> Asset ID, a unique identifier for the asset. </param>
@@ -488,12 +895,36 @@
         <ReturnType>Azure.AI.Projects.CustomCredential</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="keys" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="keys"> The credential type. </param>
         <summary> Custom credential definition. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.CustomCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatasetCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.DatasetCredential DatasetCredential (Azure.AI.Projects.AIProjectBlobReference blobReference = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.DatasetCredential DatasetCredential(class Azure.AI.Projects.AIProjectBlobReference blobReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.DatasetCredential(Azure.AI.Projects.AIProjectBlobReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DatasetCredential (Optional blobReference As AIProjectBlobReference = Nothing) As DatasetCredential" />
+      <MemberSignature Language="F#" Value="static member DatasetCredential : Azure.AI.Projects.AIProjectBlobReference -&gt; Azure.AI.Projects.DatasetCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.DatasetCredential blobReference" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.DatasetCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReference" Type="Azure.AI.Projects.AIProjectBlobReference" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="blobReference"> Credential info to access the storage account. </param>
+        <summary> Represents a reference to a blob for consumption. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.DatasetCredential" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,7 +943,7 @@
         <ReturnType>Azure.AI.Projects.DatasetCredential</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReference" Type="Azure.AI.Projects.BlobReference" />
+        <Parameter Name="blobReference" Type="Azure.AI.Projects.BlobReference" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="blobReference"> Credential info to access the storage account. </param>
@@ -536,15 +967,15 @@
         <ReturnType>Azure.AI.Projects.DatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.Uri" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionName" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="dataUri" />
@@ -579,7 +1010,7 @@
         <ReturnType>Azure.AI.Projects.DeveloperMessage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="content" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="content"> Content provided by a developer to guide model behavior in an evaluation context. </param>
@@ -650,15 +1081,15 @@
         <ReturnType>Azure.AI.Projects.Evaluation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="data" Type="Azure.AI.Projects.InputData" />
-        <Parameter Name="displayName" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="status" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="evaluators" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.Projects.EvaluatorConfiguration&gt;" />
-        <Parameter Name="target" Type="Azure.AI.Projects.EvaluationTarget" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="data" Type="Azure.AI.Projects.InputData" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="displayName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="evaluators" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.Projects.EvaluatorConfiguration&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="target" Type="Azure.AI.Projects.EvaluationTarget" Index="8" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the evaluation. </param>
@@ -690,7 +1121,7 @@
         <ReturnType>Azure.AI.Projects.EvaluationTarget</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> Discriminator that defines the type of the evaluation target. </param>
@@ -717,9 +1148,9 @@
         <ReturnType>Azure.AI.Projects.EvaluatorConfiguration</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="initParams" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
-        <Parameter Name="dataMapping" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="initParams" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="dataMapping" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the evaluator. </param>
@@ -745,12 +1176,12 @@
         <ReturnType>Azure.AI.Projects.FieldMapping</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contentFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="filepathField" Type="System.String" />
-        <Parameter Name="titleField" Type="System.String" />
-        <Parameter Name="urlField" Type="System.String" />
-        <Parameter Name="vectorFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="metadataFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="contentFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="filepathField" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="titleField" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="urlField" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="vectorFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="metadataFields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="contentFields"> List of fields with text content. </param>
@@ -761,6 +1192,44 @@
         <param name="metadataFields"> List of fields with metadata content. </param>
         <summary> Field mapping configuration class. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.FieldMapping" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDataset">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FileDataset FileDataset (Uri dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FileDataset FileDataset(class System.Uri dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FileDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileDataset (Optional dataUri As Uri = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FileDataset" />
+      <MemberSignature Language="F#" Value="static member FileDataset : Uri * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FileDataset" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.FileDataset (dataUri, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.FileDataset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="dataUri" />
+        <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
+        <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <summary> FileDatasetVersion Definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.FileDataset" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,14 +1248,14 @@
         <ReturnType>Azure.AI.Projects.FileDatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.Uri" />
-        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="dataUri" />
@@ -799,6 +1268,44 @@
         <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
         <summary> FileDatasetVersion Definition. </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.FileDatasetVersion" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderDataset">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.FolderDataset FolderDataset (Uri dataUri = default, bool? isReference = default, string connectionName = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.FolderDataset FolderDataset(class System.Uri dataUri, valuetype System.Nullable`1&lt;bool&gt; isReference, string connectionName, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FolderDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FolderDataset (Optional dataUri As Uri = Nothing, Optional isReference As Nullable(Of Boolean) = Nothing, Optional connectionName As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As FolderDataset" />
+      <MemberSignature Language="F#" Value="static member FolderDataset : Uri * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.FolderDataset" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.FolderDataset (dataUri, isReference, connectionName, id, name, version, description, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.FolderDataset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="dataUri" />
+        <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
+        <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
+        <param name="id"> Asset ID, a unique identifier for the asset. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="version"> The version of the resource. </param>
+        <param name="description"> The asset description text. </param>
+        <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
+        <summary> FileDatasetVersion Definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.FolderDataset" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,14 +1324,14 @@
         <ReturnType>Azure.AI.Projects.FolderDatasetVersion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataUri" Type="System.Uri" />
-        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="connectionName" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dataUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isReference" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="dataUri" />
@@ -855,7 +1362,7 @@
         <ReturnType>Azure.AI.Projects.InputData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> Type of the data. </param>
@@ -882,7 +1389,7 @@
         <ReturnType>Azure.AI.Projects.InputDataset</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> Evaluation input data. </param>
@@ -940,7 +1447,7 @@
         <ReturnType>Azure.AI.Projects.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="role" Type="System.String" />
+        <Parameter Name="role" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="role"> The role of the message author. Known values: 'system', 'assistant', 'developer', 'user'. </param>
@@ -1035,9 +1542,9 @@
         <ReturnType>Azure.AI.Projects.ModelResponseGenerationTarget</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="baseMessages" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Message&gt;" />
-        <Parameter Name="modelDeploymentName" Type="System.String" />
-        <Parameter Name="modelParams" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+        <Parameter Name="baseMessages" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Message&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modelDeploymentName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modelParams" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="baseMessages"> A list of messages comprising the conversation so far. </param>
@@ -1098,6 +1605,36 @@
       </Docs>
     </Member>
     <Member MemberName="PendingUploadResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadResult PendingUploadResult (Azure.AI.Projects.AIProjectBlobReference blobReference = default, string pendingUploadId = default, string version = default, Azure.AI.Projects.PendingUploadType pendingUploadType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadResult PendingUploadResult(class Azure.AI.Projects.AIProjectBlobReference blobReference, string pendingUploadId, string version, valuetype Azure.AI.Projects.PendingUploadType pendingUploadType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult(Azure.AI.Projects.AIProjectBlobReference,System.String,System.String,Azure.AI.Projects.PendingUploadType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadResult (Optional blobReference As AIProjectBlobReference = Nothing, Optional pendingUploadId As String = Nothing, Optional version As String = Nothing, Optional pendingUploadType As PendingUploadType = Nothing) As PendingUploadResult" />
+      <MemberSignature Language="F#" Value="static member PendingUploadResult : Azure.AI.Projects.AIProjectBlobReference * string * string * Azure.AI.Projects.PendingUploadType -&gt; Azure.AI.Projects.PendingUploadResult" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult (blobReference, pendingUploadId, version, pendingUploadType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.PendingUploadResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReference" Type="Azure.AI.Projects.AIProjectBlobReference" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="pendingUploadId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="pendingUploadType" Type="Azure.AI.Projects.PendingUploadType" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="blobReference"> Container-level read, write, list SAS. </param>
+        <param name="pendingUploadId"> ID for this upload request. </param>
+        <param name="version"> Version of asset to be created if user did not specify version when initially creating upload. </param>
+        <param name="pendingUploadType"> BlobReference is the only supported type. </param>
+        <summary> Represents the response for a pending upload request. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.PendingUploadResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingUploadResult">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadResult PendingUploadResult (Azure.AI.Projects.BlobReference blobReference = default, string pendingUploadId = default, string version = default, Azure.AI.Projects.PendingUploadType pendingUploadType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadResult PendingUploadResult(class Azure.AI.Projects.BlobReference blobReference, string pendingUploadId, string version, valuetype Azure.AI.Projects.PendingUploadType pendingUploadType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult(Azure.AI.Projects.BlobReference,System.String,System.String,Azure.AI.Projects.PendingUploadType)" />
@@ -1112,10 +1649,10 @@
         <ReturnType>Azure.AI.Projects.PendingUploadResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReference" Type="Azure.AI.Projects.BlobReference" />
-        <Parameter Name="pendingUploadId" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="pendingUploadType" Type="Azure.AI.Projects.PendingUploadType" />
+        <Parameter Name="blobReference" Type="Azure.AI.Projects.BlobReference" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pendingUploadId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pendingUploadType" Type="Azure.AI.Projects.PendingUploadType" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="blobReference"> Container-level read, write, list SAS. </param>
@@ -1142,17 +1679,17 @@
         <ReturnType>Azure.AI.Projects.RedTeam</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="displayName" Type="System.String" />
-        <Parameter Name="numTurns" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="attackStrategies" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.AttackStrategy&gt;" />
-        <Parameter Name="simulationOnly" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="riskCategories" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.RiskCategory&gt;" />
-        <Parameter Name="applicationScenario" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="status" Type="System.String" />
-        <Parameter Name="target" Type="Azure.AI.Projects.TargetConfig" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="displayName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="numTurns" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="attackStrategies" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.AttackStrategy&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="simulationOnly" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="riskCategories" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.RiskCategory&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="applicationScenario" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="target" Type="Azure.AI.Projects.TargetConfig" Index="10" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the red team run. </param>
@@ -1186,7 +1723,7 @@
         <ReturnType>Azure.AI.Projects.SASCredentials</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sasToken" Type="System.String" />
+        <Parameter Name="sasToken" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="sasToken"> SAS token. </param>
@@ -1210,12 +1747,12 @@
         <ReturnType>Azure.AI.Projects.SearchIndex</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> Type of index. </param>
@@ -1247,7 +1784,7 @@
         <ReturnType>Azure.AI.Projects.SystemMessage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="content" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="content"> Plain text instructions provided by the system to steer model behavior. </param>
@@ -1271,7 +1808,7 @@
         <ReturnType>Azure.AI.Projects.TargetConfig</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="type"> Type of the model configuration. </param>
@@ -1298,7 +1835,7 @@
         <ReturnType>Azure.AI.Projects.UserMessage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="content" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="content"> Input content or question provided by the end user. </param>

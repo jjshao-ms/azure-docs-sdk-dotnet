@@ -1,15 +1,20 @@
 <Type Name="AzureAISearchIndex" FullName="Azure.AI.Projects.AzureAISearchIndex">
-  <TypeSignature Language="C#" Value="public class AzureAISearchIndex : Azure.AI.Projects.SearchIndex, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAISearchIndex extends Azure.AI.Projects.SearchIndex implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;" />
+  <TypeSignature Language="C#" Value="public class AzureAISearchIndex : Azure.AI.Projects.AIProjectIndex, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAISearchIndex extends Azure.AI.Projects.AIProjectIndex implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.AzureAISearchIndex" />
-  <TypeSignature Language="VB.NET" Value="Public Class AzureAISearchIndex&#xA;Inherits SearchIndex&#xA;Implements IJsonModel(Of AzureAISearchIndex), IPersistableModel(Of AzureAISearchIndex)" />
-  <TypeSignature Language="F#" Value="type AzureAISearchIndex = class&#xA;    inherit SearchIndex&#xA;    interface IJsonModel&lt;AzureAISearchIndex&gt;&#xA;    interface IPersistableModel&lt;AzureAISearchIndex&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class AzureAISearchIndex&#xA;Inherits AIProjectIndex&#xA;Implements IJsonModel(Of AzureAISearchIndex), IPersistableModel(Of AzureAISearchIndex)" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type AzureAISearchIndex = class&#xA;    inherit AIProjectIndex&#xA;    interface IJsonModel&lt;AzureAISearchIndex&gt;&#xA;    interface IPersistableModel&lt;AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class AzureAISearchIndex : Azure.AI.Projects.SearchIndex, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAISearchIndex extends Azure.AI.Projects.SearchIndex implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class AzureAISearchIndex&#xA;Inherits SearchIndex&#xA;Implements IJsonModel(Of AzureAISearchIndex), IPersistableModel(Of AzureAISearchIndex)" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type AzureAISearchIndex = class&#xA;    inherit SearchIndex&#xA;    interface IJsonModel&lt;AzureAISearchIndex&gt;&#xA;    interface IPersistableModel&lt;AzureAISearchIndex&gt;" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.AI.Projects.SearchIndex</BaseTypeName>
+    <BaseTypeName>Azure.AI.Projects.AIProjectIndex</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.SearchIndex</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -72,18 +77,23 @@
       </Docs>
     </Member>
     <Member MemberName="FieldMapping">
-      <MemberSignature Language="C#" Value="public Azure.AI.Projects.FieldMapping FieldMapping { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.FieldMapping FieldMapping" />
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.AIProjectIndexFieldMapping FieldMapping { get; set; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectIndexFieldMapping FieldMapping" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AzureAISearchIndex.FieldMapping" />
-      <MemberSignature Language="VB.NET" Value="Public Property FieldMapping As FieldMapping" />
-      <MemberSignature Language="F#" Value="member this.FieldMapping : Azure.AI.Projects.FieldMapping with get, set" Usage="Azure.AI.Projects.AzureAISearchIndex.FieldMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldMapping As AIProjectIndexFieldMapping" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.FieldMapping : Azure.AI.Projects.AIProjectIndexFieldMapping with get, set" Usage="Azure.AI.Projects.AzureAISearchIndex.FieldMapping" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.FieldMapping FieldMapping { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.FieldMapping FieldMapping" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldMapping As FieldMapping" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.FieldMapping : Azure.AI.Projects.FieldMapping with get, set" Usage="Azure.AI.Projects.AzureAISearchIndex.FieldMapping" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.FieldMapping</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectIndexFieldMapping</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.FieldMapping</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Field mapping configuration. </summary>
@@ -112,18 +122,23 @@
       </Docs>
     </Member>
     <Member MemberName="JsonModelCreateCore">
-      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.SearchIndex JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.SearchIndex JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.AIProjectIndex JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.AIProjectIndex JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAISearchIndex.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As SearchIndex" />
-      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.SearchIndex" Usage="azureAISearchIndex.JsonModelCreateCore (reader, options)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AIProjectIndex" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectIndex" Usage="azureAISearchIndex.JsonModelCreateCore (reader, options)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.SearchIndex JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.SearchIndex JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As SearchIndex" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.SearchIndex" Usage="azureAISearchIndex.JsonModelCreateCore (reader, options)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.SearchIndex</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectIndex</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.SearchIndex</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
@@ -163,18 +178,23 @@
       </Docs>
     </Member>
     <Member MemberName="PersistableModelCreateCore">
-      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.SearchIndex PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.SearchIndex PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.AIProjectIndex PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.AIProjectIndex PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAISearchIndex.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As SearchIndex" />
-      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.SearchIndex" Usage="azureAISearchIndex.PersistableModelCreateCore (data, options)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As AIProjectIndex" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.AIProjectIndex" Usage="azureAISearchIndex.PersistableModelCreateCore (data, options)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.SearchIndex PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.SearchIndex PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As SearchIndex" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.SearchIndex" Usage="azureAISearchIndex.PersistableModelCreateCore (data, options)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.SearchIndex</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AI.Projects.AIProjectIndex</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AI.Projects.SearchIndex</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="data" Type="System.BinaryData" />
