@@ -1,7 +1,7 @@
 ---
 title: Azure Disconnectedoperations SDK for .NET
 description: Reference for Azure Disconnectedoperations SDK for .NET
-ms.date: 10/01/2025
+ms.date: 10/02/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: disconnectedoperations
