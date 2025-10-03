@@ -1084,7 +1084,7 @@
       </Parameters>
       <Docs>
         <param name="id" />
-        <param name="object" />
+        <param name="object"> Gets the Object. </param>
         <param name="name" />
         <param name="callId" />
         <param name="arguments" />
@@ -1116,7 +1116,7 @@
       </Parameters>
       <Docs>
         <param name="id" />
-        <param name="object" />
+        <param name="object"> Gets the Object. </param>
         <param name="callId" />
         <param name="output" />
         <summary> A function call output item within a conversation. </summary>
@@ -1268,6 +1268,76 @@
       </Docs>
     </Member>
     <Member MemberName="SessionResponse">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponse SessionResponse (string id = default, string object = default, Azure.AI.VoiceLive.SessionResponseStatus? status = default, Azure.AI.VoiceLive.ResponseStatusDetails statusDetails = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionResponseItem&gt; output = default, Azure.AI.VoiceLive.ResponseTokenStatistics usage = default, string conversationId = default, Azure.AI.VoiceLive.VoiceProvider voice = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt; modalities = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, float? temperature = default, Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxOutputTokens = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponse SessionResponse(string id, string object, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.SessionResponseStatus&gt; status, class Azure.AI.VoiceLive.ResponseStatusDetails statusDetails, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.SessionResponseItem&gt; output, class Azure.AI.VoiceLive.ResponseTokenStatistics usage, string conversationId, class Azure.AI.VoiceLive.VoiceProvider voice, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; modalities, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, valuetype System.Nullable`1&lt;float32&gt; temperature, class Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxOutputTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponse(System.String,System.String,System.Nullable{Azure.AI.VoiceLive.SessionResponseStatus},Azure.AI.VoiceLive.ResponseStatusDetails,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.SessionResponseItem},Azure.AI.VoiceLive.ResponseTokenStatistics,System.String,Azure.AI.VoiceLive.VoiceProvider,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InteractionModality},System.Nullable{Azure.AI.VoiceLive.OutputAudioFormat},System.Nullable{System.Single},Azure.AI.VoiceLive.MaxResponseOutputTokensOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionResponse (Optional id As String = Nothing, Optional object As String = Nothing, Optional status As Nullable(Of SessionResponseStatus) = Nothing, Optional statusDetails As ResponseStatusDetails = Nothing, Optional output As IEnumerable(Of SessionResponseItem) = Nothing, Optional usage As ResponseTokenStatistics = Nothing, Optional conversationId As String = Nothing, Optional voice As VoiceProvider = Nothing, Optional modalities As IEnumerable(Of InteractionModality) = Nothing, Optional outputAudioFormat As Nullable(Of OutputAudioFormat) = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional maxOutputTokens As MaxResponseOutputTokensOption = Nothing) As SessionResponse" />
+      <MemberSignature Language="F#" Value="static member SessionResponse : string * string * Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt; * Azure.AI.VoiceLive.ResponseStatusDetails * seq&lt;Azure.AI.VoiceLive.SessionResponseItem&gt; * Azure.AI.VoiceLive.ResponseTokenStatistics * string * Azure.AI.VoiceLive.VoiceProvider * seq&lt;Azure.AI.VoiceLive.InteractionModality&gt; * Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt; * Nullable&lt;single&gt; * Azure.AI.VoiceLive.MaxResponseOutputTokensOption -&gt; Azure.AI.VoiceLive.SessionResponse" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponse (id, object, status, statusDetails, output, usage, conversationId, voice, modalities, outputAudioFormat, temperature, maxOutputTokens)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="statusDetails" Type="Azure.AI.VoiceLive.ResponseStatusDetails" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="output" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionResponseItem&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="usage" Type="Azure.AI.VoiceLive.ResponseTokenStatistics" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="conversationId" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="voice" Type="Azure.AI.VoiceLive.VoiceProvider" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="modalities" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="maxOutputTokens" Type="Azure.AI.VoiceLive.MaxResponseOutputTokensOption" Index="11" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The unique ID of the response. </param>
+        <param name="object" />
+        <param name="status">
+            The final status of the response.
+            
+            One of: `completed`, `cancelled`, `failed`, `incomplete`, or `in_progress`.
+            </param>
+        <param name="statusDetails"> Additional details about the status. </param>
+        <param name="output"> The list of output items generated by the response. </param>
+        <param name="usage">
+            Usage statistics for the Response, this will correspond to billing. A
+            VoiceLive API session will maintain a conversation context and append new
+            Items to the Conversation, thus output from previous turns (text and
+            audio tokens) will become the input for later turns.
+            </param>
+        <param name="conversationId">
+            Which conversation the response is added to, determined by the `conversation`
+            field in the `response.create` event. If `auto`, the response will be added to
+            the default conversation and the value of `conversation_id` will be an id like
+            `conv_1234`. If `none`, the response will not be added to any conversation and
+            the value of `conversation_id` will be `null`. If responses are being triggered
+            by server VAD, the response will be added to the default conversation, thus
+            the `conversation_id` will be an id like `conv_1234`.
+            </param>
+        <param name="voice"> supported voice identifiers and configurations. </param>
+        <param name="modalities">
+            The set of modalities the model used to respond. If there are multiple modalities,
+            the model will pick one, for example if `modalities` is `["text", "audio"]`, the model
+            could be responding in either text or audio.
+            </param>
+        <param name="outputAudioFormat"> The format of output audio. Options are `pcm16`, `g711_ulaw`, or `g711_alaw`. </param>
+        <param name="temperature"> Sampling temperature for the model, limited to [0.6, 1.2]. Defaults to 0.8. </param>
+        <param name="maxOutputTokens">
+            Maximum number of output tokens for a single assistant response,
+                inclusive of tool calls, that was used in this response.
+            </param>
+        <summary> The response resource. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionResponse">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponse SessionResponse (string id = default, string object = default, Azure.AI.VoiceLive.SessionResponseStatus? status = default, Azure.AI.VoiceLive.ResponseStatusDetails statusDetails = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionResponseItem&gt; output = default, Azure.AI.VoiceLive.ResponseTokenStatistics usage = default, string conversationId = default, BinaryData voice = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt; modalitiesInternal = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, float? temperature = default, BinaryData maxOutputTokens = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponse SessionResponse(string id, string object, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.SessionResponseStatus&gt; status, class Azure.AI.VoiceLive.ResponseStatusDetails statusDetails, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.SessionResponseItem&gt; output, class Azure.AI.VoiceLive.ResponseTokenStatistics usage, string conversationId, class System.BinaryData voice, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; modalitiesInternal, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, valuetype System.Nullable`1&lt;float32&gt; temperature, class System.BinaryData maxOutputTokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponse(System.String,System.String,System.Nullable{Azure.AI.VoiceLive.SessionResponseStatus},Azure.AI.VoiceLive.ResponseStatusDetails,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.SessionResponseItem},Azure.AI.VoiceLive.ResponseTokenStatistics,System.String,System.BinaryData,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.InteractionModality},System.Nullable{Azure.AI.VoiceLive.OutputAudioFormat},System.Nullable{System.Single},System.BinaryData)" />
@@ -1282,18 +1352,18 @@
         <ReturnType>Azure.AI.VoiceLive.SessionResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="object" Type="System.String" />
-        <Parameter Name="status" Type="System.Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt;" />
-        <Parameter Name="statusDetails" Type="Azure.AI.VoiceLive.ResponseStatusDetails" />
-        <Parameter Name="output" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionResponseItem&gt;" />
-        <Parameter Name="usage" Type="Azure.AI.VoiceLive.ResponseTokenStatistics" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="voice" Type="System.BinaryData" />
-        <Parameter Name="modalitiesInternal" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt;" />
-        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" />
-        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="maxOutputTokens" Type="System.BinaryData" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.AI.VoiceLive.SessionResponseStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="statusDetails" Type="Azure.AI.VoiceLive.ResponseStatusDetails" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.SessionResponseItem&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="usage" Type="Azure.AI.VoiceLive.ResponseTokenStatistics" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="conversationId" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="voice" Type="System.BinaryData" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modalitiesInternal" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputAudioFormat" Type="System.Nullable&lt;Azure.AI.VoiceLive.OutputAudioFormat&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="maxOutputTokens" Type="System.BinaryData" Index="11" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id"> The unique ID of the response. </param>
@@ -1358,7 +1428,7 @@
       <Docs>
         <param name="type" />
         <param name="id" />
-        <param name="object" />
+        <param name="object"> Gets the Object. </param>
         <summary>
             Base for any response item; discriminated by `type`.
             Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMessageItem(System.String,System.String,Azure.AI.VoiceLive.ResponseMessageRole,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveContentPart},Azure.AI.VoiceLive.SessionResponseItemStatus)" />, <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ResponseFunctionCallItem(System.String,System.String,System.String,System.String,System.String,Azure.AI.VoiceLive.SessionResponseItemStatus)" />, and <see cref="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.ResponseFunctionCallOutputItem(System.String,System.String,System.String,System.String)" />.
@@ -1390,7 +1460,7 @@
       </Parameters>
       <Docs>
         <param name="id" />
-        <param name="object" />
+        <param name="object"> Gets the Object. </param>
         <param name="role" />
         <param name="content" />
         <param name="status" />
@@ -1482,14 +1552,14 @@
         <param name="item" />
         <summary>
             Returned when a conversation item is created. There are several scenarios that produce this event:
-              - The server is generating a Response, which if successful will produce
-                either one or two Items, which will be of type `message`
-                (role `assistant`) or type `function_call`.
-              - The input audio buffer has been committed, either by the client or the
-                server (in `server_vad` mode). The server will take the content of the
-                input audio buffer and add it to a new user message Item.
-              - The client has sent a `conversation.item.create` event to add a new Item
-                to the Conversation.
+            - The server is generating a Response, which if successful will produce
+            either one or two Items, which will be of type `message`
+            (role `assistant`) or type `function_call`.
+            - The input audio buffer has been committed, either by the client or the
+            server (in `server_vad` mode). The server will take the content of the
+            input audio buffer and add it to a new user message Item.
+            - The client has sent a `conversation.item.create` event to add a new Item
+            to the Conversation.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemCreated" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1556,7 +1626,6 @@
             committed by the client or server (in `server_vad` mode). Transcription runs
             asynchronously with Response creation, so this event may come before or after
             the Response events.
-            
             VoiceLive API models accept audio natively, and thus input transcription is a
             separate process run on a separate ASR (Automatic Speech Recognition) model.
             The transcript may diverge somewhat from the model's interpretation, and
@@ -1687,7 +1756,6 @@
             Returned when an earlier assistant audio message item is truncated by the
             client with a `conversation.item.truncate` event. This event is used to
             synchronize the server's understanding of the audio with the client's playback.
-            
             This action will truncate the audio and remove the server-side text transcript
             to ensure there is no text in the context that hasn't been heard by the user.
             </summary>
@@ -1845,7 +1913,6 @@
             detected in the audio buffer. This can happen any time audio is added to the
             buffer (unless speech is already detected). The client may want to use this
             event to interrupt audio playback or provide visual feedback to the user.
-            
             The client should expect to receive a `input_audio_buffer.speech_stopped` event
             when speech stops. The `item_id` property is the ID of the user message item
             that will be created when speech stops and will also be included in the
@@ -2958,7 +3025,9 @@
         <param name="instructions"> Optional instructions to guide the model's behavior throughout the session. </param>
         <param name="inputAudioSamplingRate">
             Input audio sampling rate in Hz. Available values:
+            
             - For pcm16: 8000, 16000, 24000
+            
             - For g711_alaw/g711_ulaw: 8000
             </param>
         <param name="inputAudioFormat"> Input audio format. Default is 'pcm16'. </param>
