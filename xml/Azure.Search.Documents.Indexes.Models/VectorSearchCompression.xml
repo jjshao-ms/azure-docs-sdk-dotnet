@@ -1,13 +1,9 @@
 <Type Name="VectorSearchCompression" FullName="Azure.Search.Documents.Indexes.Models.VectorSearchCompression">
-  <TypeSignature Language="C#" Value="public abstract class VectorSearchCompression" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VectorSearchCompression extends System.Object" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public abstract class VectorSearchCompression : System.ClientModel.Primitives.IJsonModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VectorSearchCompression extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.Search.Documents.Indexes.Models.VectorSearchCompression" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VectorSearchCompression" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type VectorSearchCompression = class" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public abstract class VectorSearchCompression : System.ClientModel.Primitives.IJsonModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VectorSearchCompression extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VectorSearchCompression&#xA;Implements IJsonModel(Of VectorSearchCompression), IPersistableModel(Of VectorSearchCompression)" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type VectorSearchCompression = class&#xA;    interface IJsonModel&lt;VectorSearchCompression&gt;&#xA;    interface IPersistableModel&lt;VectorSearchCompression&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VectorSearchCompression&#xA;Implements IJsonModel(Of VectorSearchCompression), IPersistableModel(Of VectorSearchCompression)" />
+  <TypeSignature Language="F#" Value="type VectorSearchCompression = class&#xA;    interface IJsonModel&lt;VectorSearchCompression&gt;&#xA;    interface IPersistableModel&lt;VectorSearchCompression&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.Search.Documents</AssemblyName>
     <AssemblyVersion>11.6.0.0</AssemblyVersion>
@@ -18,18 +14,18 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.Search.Documents.Indexes.Models.VectorSearchCompression&gt;</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="azure-dotnet-preview">
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.PersistableModelProxy(typeof(Azure.Search.Documents.Models.UnknownVectorSearchCompression))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.PersistableModelProxy(typeof(Azure.Search.Documents.Models.UnknownVectorSearchCompression))&gt;]</AttributeName>
     </Attribute>
@@ -52,7 +48,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.6.1.0</AssemblyVersion>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,7 +70,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.6.1.0</AssemblyVersion>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,14 +90,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.6.1.0</AssemblyVersion>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Default oversampling factor. Oversampling will internally request more documents (specified by this multiplier) in the initial search. This increases the set of results that will be reranked using recomputed similarity scores from full-precision vectors. Minimum value is 1, meaning no oversampling (1x). This parameter can only be set when rerankWithOriginalVectors is true. Higher values improve recall at the expense of latency. </summary>
+        <summary>
+            Default oversampling factor. Oversampling will internally request more documents (specified by this multiplier) in the initial search. This increases the set of results that will be reranked using recomputed similarity scores from full-precision vectors. Minimum value is 1, meaning no oversampling (1x). This parameter can only be set when rerankWithOriginalVectors is true. Higher values improve recall at the expense of latency.
+            For use with only service version 2024-07-01. If using 2025-09-01 or later, use RescoringOptions.defaultOversampling.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,8 +119,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="writer"> The JSON writer. </param>
@@ -142,14 +138,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.6.1.0</AssemblyVersion>
         <AssemblyVersion>11.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> If set to true, once the ordered set of results calculated using compressed vectors are obtained, they will be reranked again by recalculating the full-precision similarity scores. This will improve recall at the expense of latency. </summary>
+        <summary>
+            If set to true, once the ordered set of results calculated using compressed vectors are obtained, they will be reranked again by recalculating the full-precision similarity scores. This will improve recall at the expense of latency.
+            For use with only service version 2024-07-01. If using 2025-09-01 or later, use RescoringOptions.rescoringEnabled.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,8 +190,8 @@
         <ReturnType>Azure.Search.Documents.Indexes.Models.VectorSearchCompression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
@@ -224,8 +222,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
@@ -255,8 +253,8 @@
         <ReturnType>Azure.Search.Documents.Indexes.Models.VectorSearchCompression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
@@ -287,7 +285,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
@@ -316,7 +314,7 @@
         <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
