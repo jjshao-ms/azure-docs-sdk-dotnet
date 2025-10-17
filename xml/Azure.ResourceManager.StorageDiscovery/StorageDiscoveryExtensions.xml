@@ -37,18 +37,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="storageDiscoveryWorkspaceName"> The name of the StorageDiscoveryWorkspace. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a StorageDiscoveryWorkspace
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces/{storageDiscoveryWorkspaceName}</description></item><item><term>Operation Id</term><description>StorageDiscoveryWorkspace_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoveryResourceGroupResource.GetStorageDiscoveryWorkspace(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a StorageDiscoveryWorkspace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="storageDiscoveryWorkspaceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="storageDiscoveryWorkspaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetStorageDiscoveryWorkspaceAsync">
@@ -71,18 +69,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="storageDiscoveryWorkspaceName"> The name of the StorageDiscoveryWorkspace. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a StorageDiscoveryWorkspace
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces/{storageDiscoveryWorkspaceName}</description></item><item><term>Operation Id</term><description>StorageDiscoveryWorkspace_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoveryResourceGroupResource.GetStorageDiscoveryWorkspaceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a StorageDiscoveryWorkspace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="storageDiscoveryWorkspaceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="storageDiscoveryWorkspaceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetStorageDiscoveryWorkspaceResource">
@@ -104,12 +100,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoveryArmClient.GetStorageDiscoveryWorkspaceResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -134,11 +127,9 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of StorageDiscoveryWorkspaceResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoveryResourceGroupResource.GetStorageDiscoveryWorkspaces" /> instead.</description></item></summary>
-        <returns> An object representing collection of StorageDiscoveryWorkspaceResources and their operations over a StorageDiscoveryWorkspaceResource. </returns>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary> Gets a collection of StorageDiscoveryWorkspaces in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of StorageDiscoveryWorkspaces and their operations over a StorageDiscoveryWorkspaceResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -163,11 +154,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List StorageDiscoveryWorkspace resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces</description></item><item><term>Operation Id</term><description>StorageDiscoveryWorkspace_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoverySubscriptionResource.GetStorageDiscoveryWorkspaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> List StorageDiscoveryWorkspace resources by subscription ID. </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -193,12 +182,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List StorageDiscoveryWorkspace resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces</description></item><item><term>Operation Id</term><description>StorageDiscoveryWorkspace_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.StorageDiscovery.Mocking.MockableStorageDiscoverySubscriptionResource.GetStorageDiscoveryWorkspaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List StorageDiscoveryWorkspace resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>

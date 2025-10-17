@@ -13,10 +13,40 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="StorageDiscoveryScope">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope StorageDiscoveryScope (string displayName = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryResourceKind&gt; resourceTypes = default, System.Collections.Generic.IEnumerable&lt;string&gt; tagKeysOnly = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope StorageDiscoveryScope(string displayName, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryResourceKind&gt; resourceTypes, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagKeysOnly, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryScope(System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryResourceKind},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageDiscoveryScope (Optional displayName As String = Nothing, Optional resourceTypes As IEnumerable(Of StorageDiscoveryResourceKind) = Nothing, Optional tagKeysOnly As IEnumerable(Of String) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As StorageDiscoveryScope" />
+      <MemberSignature Language="F#" Value="static member StorageDiscoveryScope : string * seq&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryResourceKind&gt; * seq&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope" Usage="Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryScope (displayName, resourceTypes, tagKeysOnly, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageDiscovery</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceTypes" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryResourceKind&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tagKeysOnly" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="displayName"> Display name of the collection. </param>
+        <param name="resourceTypes"> Resource types for the collection. </param>
+        <param name="tagKeysOnly"> The storage account tags keys to filter. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary> Storage Discovery Scope. This had added validations. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StorageDiscoveryWorkspaceData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceData StorageDiscoveryWorkspaceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspaceProperties properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceData StorageDiscoveryWorkspaceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspaceProperties properties) cil managed" />
@@ -41,15 +71,71 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspaceProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceData" />. </summary>
+        <summary> A Storage Discovery Workspace resource. This resource configures the collection of storage account metrics. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.StorageDiscovery.StorageDiscoveryWorkspaceData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageDiscoveryWorkspacePatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatch StorageDiscoveryWorkspacePatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatch StorageDiscoveryWorkspacePatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryWorkspacePatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageDiscoveryWorkspacePatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As StorageDiscoveryWorkspacePatchProperties = Nothing) As StorageDiscoveryWorkspacePatch" />
+      <MemberSignature Language="F#" Value="static member StorageDiscoveryWorkspacePatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties -&gt; Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatch" Usage="Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryWorkspacePatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageDiscovery</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <summary> The template for adding updateable properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageDiscoveryWorkspacePatchProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties StorageDiscoveryWorkspacePatchProperties (Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoverySku? sku = default, string description = default, System.Collections.Generic.IEnumerable&lt;Azure.Core.ResourceIdentifier&gt; workspaceRoots = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope&gt; scopes = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties StorageDiscoveryWorkspacePatchProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoverySku&gt; sku, string description, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Core.ResourceIdentifier&gt; workspaceRoots, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope&gt; scopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryWorkspacePatchProperties(System.Nullable{Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoverySku},System.String,System.Collections.Generic.IEnumerable{Azure.Core.ResourceIdentifier},System.Collections.Generic.IEnumerable{Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StorageDiscoveryWorkspacePatchProperties (Optional sku As Nullable(Of StorageDiscoverySku) = Nothing, Optional description As String = Nothing, Optional workspaceRoots As IEnumerable(Of ResourceIdentifier) = Nothing, Optional scopes As IEnumerable(Of StorageDiscoveryScope) = Nothing) As StorageDiscoveryWorkspacePatchProperties" />
+      <MemberSignature Language="F#" Value="static member StorageDiscoveryWorkspacePatchProperties : Nullable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoverySku&gt; * string * seq&lt;Azure.Core.ResourceIdentifier&gt; * seq&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope&gt; -&gt; Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties" Usage="Azure.ResourceManager.StorageDiscovery.Models.ArmStorageDiscoveryModelFactory.StorageDiscoveryWorkspacePatchProperties (sku, description, workspaceRoots, scopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StorageDiscovery</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sku" Type="System.Nullable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoverySku&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="workspaceRoots" Type="System.Collections.Generic.IEnumerable&lt;Azure.Core.ResourceIdentifier&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="scopes" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryScope&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="sku"> The storage discovery sku. </param>
+        <param name="description"> The description of the storage discovery workspace. </param>
+        <param name="workspaceRoots"> The view level storage discovery data estate. </param>
+        <param name="scopes"> The scopes of the storage discovery workspace. </param>
+        <summary> The template for adding updateable properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspacePatchProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +166,7 @@
         <param name="workspaceRoots"> The view level storage discovery data estate. </param>
         <param name="scopes"> The scopes of the storage discovery workspace. </param>
         <param name="provisioningState"> The status of the last operation. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspaceProperties" />. </summary>
+        <summary> Storage Discovery Workspace Properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.StorageDiscovery.Models.StorageDiscoveryWorkspaceProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
