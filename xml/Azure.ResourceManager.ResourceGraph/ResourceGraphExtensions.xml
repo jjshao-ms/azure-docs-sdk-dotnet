@@ -19,6 +19,193 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetResourceGraphQueries">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.ResourceGraphQueryCollection GetResourceGraphQueries (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryCollection GetResourceGraphQueries(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueries(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQueries (resourceGroupResource As ResourceGroupResource) As ResourceGraphQueryCollection" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQueries : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.ResourceGraph.ResourceGraphQueryCollection" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueries resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ResourceGraph.ResourceGraphQueryCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <summary>
+            Gets a collection of ResourceGraphQueryResources in the ResourceGroupResource.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphResourceGroupResource.GetResourceGraphQueries" /> instead.</description></item></summary>
+        <returns> An object representing collection of ResourceGraphQueryResources and their operations over a ResourceGraphQueryResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGraphQueries">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQueries (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQueries(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueries(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQueries (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ResourceGraphQueryResource)" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQueries : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueries (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get all graph queries defined within a specified subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ResourceGraph/queries</description></item><item><term>Operation Id</term><description>GraphQuery_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphSubscriptionResource.GetResourceGraphQueries(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGraphQueriesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQueriesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQueriesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueriesAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQueriesAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ResourceGraphQueryResource)" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQueriesAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueriesAsync (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get all graph queries defined within a specified subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ResourceGraph/queries</description></item><item><term>Operation Id</term><description>GraphQuery_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphSubscriptionResource.GetResourceGraphQueries(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGraphQuery">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQuery (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt; GetResourceGraphQuery(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQuery(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQuery (resourceGroupResource As ResourceGroupResource, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ResourceGraphQueryResource)" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQuery : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQuery (resourceGroupResource, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceName"> The name of the Graph Query resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a single graph query by its resourceName.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ResourceGraph/queries/{resourceName}</description></item><item><term>Operation Id</term><description>GraphQuery_Get</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphResourceGroupResource.GetResourceGraphQuery(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="resourceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGraphQueryAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;&gt; GetResourceGraphQueryAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;&gt; GetResourceGraphQueryAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueryAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQueryAsync (resourceGroupResource As ResourceGroupResource, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ResourceGraphQueryResource))" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQueryAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;&gt;" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueryAsync (resourceGroupResource, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceName"> The name of the Graph Query resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a single graph query by its resourceName.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ResourceGraph/queries/{resourceName}</description></item><item><term>Operation Id</term><description>GraphQuery_Get</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphResourceGroupResource.GetResourceGraphQueryAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="resourceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceGraphQueryResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource GetResourceGraphQueryResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource GetResourceGraphQueryResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueryResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResourceGraphQueryResource (client As ArmClient, id As ResourceIdentifier) As ResourceGraphQueryResource" />
+      <MemberSignature Language="F#" Value="static member GetResourceGraphQueryResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" Usage="Azure.ResourceManager.ResourceGraph.ResourceGraphExtensions.GetResourceGraphQueryResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphArmClient.GetResourceGraphQueryResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetResourceHistory">
       <MemberSignature Language="C#" Value="public static Azure.Response&lt;BinaryData&gt; GetResourceHistory (this Azure.ResourceManager.Resources.TenantResource tenantResource, Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryContent content, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.BinaryData&gt; GetResourceHistory(class Azure.ResourceManager.Resources.TenantResource tenantResource, class Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -28,9 +215,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This method isn't available in the stable SDK version. To use it, please install https://www.nuget.org/packages/Azure.ResourceManager.ResourceGraph/1.1.0-beta.4.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method isn't available in the stable SDK version. To use it, please install https://www.nuget.org/packages/Azure.ResourceManager.ResourceGraph/1.1.0-beta.4.", true)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.BinaryData&gt;</ReturnType>
       </ReturnValue>
@@ -45,7 +241,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all snapshots of a resource for a given time interval.
-            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resourcesHistory</description></item><item><term>Operation Id</term><description>ResourcesHistory</description></item><item><term>Default Api Version</term><description>2021-06-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResourceHistory(Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resourcesHistory</description></item><item><term>Operation Id</term><description>ResourcesHistory</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -61,9 +257,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This method isn't available in the stable SDK version. To use it, please install https://www.nuget.org/packages/Azure.ResourceManager.ResourceGraph/1.1.0-beta.4.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method isn't available in the stable SDK version. To use it, please install https://www.nuget.org/packages/Azure.ResourceManager.ResourceGraph/1.1.0-beta.4.", true)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.BinaryData&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -78,7 +283,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all snapshots of a resource for a given time interval.
-            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resourcesHistory</description></item><item><term>Operation Id</term><description>ResourcesHistory</description></item><item><term>Default Api Version</term><description>2021-06-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResourceHistory(Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resourcesHistory</description></item><item><term>Operation Id</term><description>ResourcesHistory</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -94,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,7 +315,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Queries the resources managed by Azure Resource Manager for scopes specified in the request.
-            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resources</description></item><item><term>Operation Id</term><description>Resources</description></item><item><term>Default Api Version</term><description>2021-06-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResources(Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resources</description></item><item><term>Operation Id</term><description>Resources</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResources(Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -127,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,7 +347,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Queries the resources managed by Azure Resource Manager for scopes specified in the request.
-            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resources</description></item><item><term>Operation Id</term><description>Resources</description></item><item><term>Default Api Version</term><description>2021-06-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResources(Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/providers/Microsoft.ResourceGraph/resources</description></item><item><term>Operation Id</term><description>Resources</description></item><item><term>Default Api Version</term><description>2024-04-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ResourceGraph.Mocking.MockableResourceGraphTenantResource.GetResources(Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

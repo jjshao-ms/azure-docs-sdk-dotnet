@@ -1,0 +1,197 @@
+<Type Name="RulesEngineMatchCondition" FullName="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition">
+  <TypeSignature Language="C#" Value="public class RulesEngineMatchCondition : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RulesEngineMatchCondition extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class RulesEngineMatchCondition&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type RulesEngineMatchCondition = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Define a match condition.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RulesEngineMatchCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new RulesEngineMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="rulesEngineMatchCondition.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of RulesEngineMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNegateCondition">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsNegateCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsNegateCondition" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.IsNegateCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNegateCondition As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsNegateCondition : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.IsNegateCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes if this is negate condition or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RulesEngineMatchValue">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; RulesEngineMatchValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; RulesEngineMatchValue" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineMatchValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property RulesEngineMatchValue As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.RulesEngineMatchValue : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineMatchValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Match values to match against. The operator will apply to each value in
+            here with OR semantics. If any of them match the variable with the
+            given operator this match condition is considered a match.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RulesEngineMatchVariable">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchVariable&gt; RulesEngineMatchVariable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.FrontDoor.RulesEngineMatchVariable&gt; RulesEngineMatchVariable" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineMatchVariable" />
+      <MemberSignature Language="VB.NET" Value="Public Property RulesEngineMatchVariable As BicepValue(Of RulesEngineMatchVariable)" />
+      <MemberSignature Language="F#" Value="member this.RulesEngineMatchVariable : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchVariable&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineMatchVariable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Match Variable.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RulesEngineOperator">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineOperator&gt; RulesEngineOperator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.FrontDoor.RulesEngineOperator&gt; RulesEngineOperator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineOperator" />
+      <MemberSignature Language="VB.NET" Value="Public Property RulesEngineOperator As BicepValue(Of RulesEngineOperator)" />
+      <MemberSignature Language="F#" Value="member this.RulesEngineOperator : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineOperator&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.RulesEngineOperator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.FrontDoor.RulesEngineOperator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes operator to apply to the match condition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selector">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Selector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Selector" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.Selector" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selector As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Selector : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.Selector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of selector in RequestHeader or RequestBody to be matched.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transforms">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchTransform&gt; Transforms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;valuetype Azure.Provisioning.FrontDoor.RulesEngineMatchTransform&gt; Transforms" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.Transforms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transforms As BicepList(Of RulesEngineMatchTransform)" />
+      <MemberSignature Language="F#" Value="member this.Transforms : Azure.Provisioning.BicepList&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchTransform&gt; with get, set" Usage="Azure.Provisioning.FrontDoor.RulesEngineMatchCondition.Transforms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.FrontDoor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.FrontDoor.RulesEngineMatchTransform&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of transforms.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

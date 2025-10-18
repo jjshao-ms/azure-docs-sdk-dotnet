@@ -17,6 +17,32 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="DateTimeInterval">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval DateTimeInterval (DateTimeOffset startOn = default, DateTimeOffset endOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval DateTimeInterval(valuetype System.DateTimeOffset startOn, valuetype System.DateTimeOffset endOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.DateTimeInterval(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateTimeInterval (Optional startOn As DateTimeOffset = Nothing, Optional endOn As DateTimeOffset = Nothing) As DateTimeInterval" />
+      <MemberSignature Language="F#" Value="static member DateTimeInterval : DateTimeOffset * DateTimeOffset -&gt; Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval" Usage="Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.DateTimeInterval (startOn, endOn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startOn" Type="System.DateTimeOffset" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endOn" Type="System.DateTimeOffset" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="startOn"> A datetime indicating the inclusive/closed start of the time interval, i.e. `[`**`start`**`, end)`. Specifying a `start` that occurs chronologically after `end` will result in an error. </param>
+        <param name="endOn"> A datetime indicating the exclusive/open end of the time interval, i.e. `[start, `**`end`**`)`. Specifying an `end` that occurs chronologically before `start` will result in an error. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Facet">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.Models.Facet Facet (string expression = default, string resultType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.Models.Facet Facet(string expression, string resultType) cil managed" />
@@ -153,6 +179,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ResourceGraphQueryData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData ResourceGraphQueryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, DateTimeOffset? modifiedOn = default, string description = default, string query = default, Azure.ResourceManager.ResourceGraph.Models.ResultKind? resultKind = default, Azure.ETag? etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData ResourceGraphQueryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; modifiedOn, string description, string query, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ResourceGraph.Models.ResultKind&gt; resultKind, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.ResourceGraphQueryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Nullable{Azure.ResourceManager.ResourceGraph.Models.ResultKind},System.Nullable{Azure.ETag})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResourceGraphQueryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional modifiedOn As Nullable(Of DateTimeOffset) = Nothing, Optional description As String = Nothing, Optional query As String = Nothing, Optional resultKind As Nullable(Of ResultKind) = Nothing, Optional etag As Nullable(Of ETag) = Nothing) As ResourceGraphQueryData" />
+      <MemberSignature Language="F#" Value="static member ResourceGraphQueryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;DateTimeOffset&gt; * string * string * Nullable&lt;Azure.ResourceManager.ResourceGraph.Models.ResultKind&gt; * Nullable&lt;Azure.ETag&gt; -&gt; Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData" Usage="Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.ResourceGraphQueryData (id, name, resourceType, systemData, tags, location, modifiedOn, description, query, resultKind, etag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="modifiedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="description" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="query" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resultKind" Type="System.Nullable&lt;Azure.ResourceManager.ResourceGraph.Models.ResultKind&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="tags"> The tags. </param>
+        <param name="location"> The location. </param>
+        <param name="modifiedOn"> Date and time in UTC of the last modification that was made to this graph query definition. </param>
+        <param name="description"> The description of a graph query. </param>
+        <param name="query"> KQL query that will be graph. </param>
+        <param name="resultKind"> Enum indicating a type of graph query. </param>
+        <param name="etag"> This will be used to handle Optimistic Concurrency. If not present, it will always overwrite the existing resource without checking conflict. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ResourceGraph.ResourceGraphQueryData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ResourceQueryContent">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent ResourceQueryContent (System.Collections.Generic.IEnumerable&lt;string&gt; subscriptions = default, System.Collections.Generic.IEnumerable&lt;string&gt; managementGroups = default, string query = default, Azure.ResourceManager.ResourceGraph.Models.ResourceQueryRequestOptions options = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ResourceGraph.Models.FacetRequest&gt; facets = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.Models.ResourceQueryContent ResourceQueryContent(class System.Collections.Generic.IEnumerable`1&lt;string&gt; subscriptions, class System.Collections.Generic.IEnumerable`1&lt;string&gt; managementGroups, string query, class Azure.ResourceManager.ResourceGraph.Models.ResourceQueryRequestOptions options, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ResourceGraph.Models.FacetRequest&gt; facets) cil managed" />
@@ -220,6 +290,38 @@
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ResourceGraph.Models.ResourceQueryResult" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ResourceGraph.Models.ResourceQueryResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourcesHistoryRequestOptions">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions ResourcesHistoryRequestOptions (Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval interval = default, int? top = default, int? skip = default, string skipToken = default, Azure.ResourceManager.ResourceGraph.Models.ResultFormat? resultFormat = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions ResourcesHistoryRequestOptions(class Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval interval, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, string skipToken, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ResourceGraph.Models.ResultFormat&gt; resultFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.ResourcesHistoryRequestOptions(Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{Azure.ResourceManager.ResourceGraph.Models.ResultFormat})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResourcesHistoryRequestOptions (Optional interval As DateTimeInterval = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional skipToken As String = Nothing, Optional resultFormat As Nullable(Of ResultFormat) = Nothing) As ResourcesHistoryRequestOptions" />
+      <MemberSignature Language="F#" Value="static member ResourcesHistoryRequestOptions : Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;Azure.ResourceManager.ResourceGraph.Models.ResultFormat&gt; -&gt; Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions" Usage="Azure.ResourceManager.ResourceGraph.Models.ArmResourceGraphModelFactory.ResourcesHistoryRequestOptions (interval, top, skip, skipToken, resultFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ResourceGraph</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="Azure.ResourceManager.ResourceGraph.Models.DateTimeInterval" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="skipToken" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resultFormat" Type="System.Nullable&lt;Azure.ResourceManager.ResourceGraph.Models.ResultFormat&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="interval"> The time interval used to fetch history. </param>
+        <param name="top"> The maximum number of rows that the query should return. Overrides the page size when ```$skipToken``` property is present. </param>
+        <param name="skip"> The number of rows to skip from the beginning of the results. Overrides the next page offset when ```$skipToken``` property is present. </param>
+        <param name="skipToken"> Continuation token for pagination, capturing the next page size and offset, as well as the context of the query. </param>
+        <param name="resultFormat"> Defines in which format query result returned. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ResourceGraph.Models.ResourcesHistoryRequestOptions" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
