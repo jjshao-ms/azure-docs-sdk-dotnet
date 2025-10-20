@@ -1,6 +1,7 @@
 | Reference | Package | Source |
 |---|---|---|
 |[OpenTelemetry LiveMetrics](monitor.opentelemetry.livemetrics-readme.md)|[Azure.Monitor.OpenTelemetry.LiveMetrics](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.LiveMetrics)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/monitor/Azure.Monitor.OpenTelemetry.LiveMetrics)|
+|[Monitor Query](monitor.query-readme.md)|[Azure.Monitor.Query](https://www.nuget.org/packages/Azure.Monitor.Query)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/monitor/Azure.Monitor.Query)|
 |Log Analytics - Query|[Microsoft.Azure.OperationalInsights](https://www.nuget.org/packages/Microsoft.Azure.OperationalInsights)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/)|
 |[OpenTelemetry Exporter](microsoft.opentelemetry.exporter.azuremonitor-readme.md)|[Microsoft.OpenTelemetry.Exporter.AzureMonitor](https://www.nuget.org/packages/Microsoft.OpenTelemetry.Exporter.AzureMonitor)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/)|
 |Management - Monitor|[Microsoft.Azure.Management.Monitor](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/)|
