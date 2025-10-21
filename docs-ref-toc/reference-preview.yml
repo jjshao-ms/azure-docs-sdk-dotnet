@@ -1357,6 +1357,16 @@
         - Azure.ResourceManager.FrontDoor
         - Azure.ResourceManager.FrontDoor.Mocking
         - Azure.ResourceManager.FrontDoor.Models
+  - name: Frontdoor
+    href: ~/api/overview/azure/preview/frontdoor.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Provisioning - Frontdoor
+        href: ~/api/overview/azure/preview/provisioning.frontdoor-readme.md
+        children:
+        - Azure.Provisioning.FrontDoor
   - name: Grafana
     href: ~/api/overview/azure/preview/grafana.md
     landingPageType: Service
@@ -2025,12 +2035,12 @@
       href: ~/api/overview/azure/preview/monitor.opentelemetry.exporter-readme.md
       children:
       - Azure.Monitor.OpenTelemetry.Exporter
-    - name: Monitor Query
-      href: ~/api/overview/azure/preview/monitor.query-readme.md
+    - name: Monitor Query (deprecated)
       children:
       - Azure.Monitor.Query
       - Azure.Monitor.Query.Models
       - Microsoft.Extensions.Azure
+      landingPageType: Service
     - name: Management
       items:
       - name: Resource Management - Monitor
@@ -2124,6 +2134,18 @@
         - Azure.ResourceManager.NetworkFunction
         - Azure.ResourceManager.NetworkFunction.Mocking
         - Azure.ResourceManager.NetworkFunction.Models
+  - name: New Relic Observability
+    href: ~/api/overview/azure/preview/new-relic-observability.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - New Relic Observability
+        href: ~/api/overview/azure/preview/resourcemanager.newrelicobservability-readme.md
+        children:
+        - Azure.ResourceManager.NewRelicObservability
+        - Azure.ResourceManager.NewRelicObservability.Mocking
+        - Azure.ResourceManager.NewRelicObservability.Models
   - name: Nginx
     href: ~/api/overview/azure/preview/nginx.md
     landingPageType: Service
@@ -3266,10 +3288,6 @@
         landingPageType: Service
         items:
         - name: Core
-          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
-        - name: Core
           children:
           - Azure
           - Azure.Core
@@ -3281,6 +3299,10 @@
           - Azure.Core.Serialization
           - Azure.Messaging
           landingPageType: Service
+        - name: Core
+          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/preview/microsoft.azure.core.spatial-readme.md
           children:

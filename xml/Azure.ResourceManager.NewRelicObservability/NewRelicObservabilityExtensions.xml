@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,6 +21,70 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ActivateResourceSaaS">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt; ActivateResourceSaaS (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt; ActivateResourceSaaS(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NewRelicObservability.NewRelicObservabilityExtensions.ActivateResourceSaaS(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ActivateResourceSaaS (subscriptionResource As SubscriptionResource, content As ActivateSaaSParameterContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of NewRelicObservabilitySaaSResourceDetailsResult)" />
+      <MemberSignature Language="F#" Value="static member ActivateResourceSaaS : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;" Usage="Azure.ResourceManager.NewRelicObservability.NewRelicObservabilityExtensions.ActivateResourceSaaS (subscriptionResource, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="content"> The details for ActivateSaaSParameter request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Resolve the token to get the SaaS resource ID and activate the SaaS resource
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/activateSaaS</description></item><item><term>Operation Id</term><description>SaaS_ActivateResource</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.ActivateResourceSaaS(Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateResourceSaaSAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;&gt; ActivateResourceSaaSAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;&gt; ActivateResourceSaaSAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NewRelicObservability.NewRelicObservabilityExtensions.ActivateResourceSaaSAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ActivateResourceSaaSAsync (subscriptionResource As SubscriptionResource, content As ActivateSaaSParameterContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of NewRelicObservabilitySaaSResourceDetailsResult))" />
+      <MemberSignature Language="F#" Value="static member ActivateResourceSaaSAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;&gt;" Usage="Azure.ResourceManager.NewRelicObservability.NewRelicObservabilityExtensions.ActivateResourceSaaSAsync (subscriptionResource, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicObservabilitySaaSResourceDetailsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="content"> The details for ActivateSaaSParameter request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Resolve the token to get the SaaS resource ID and activate the SaaS resource
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/activateSaaS</description></item><item><term>Operation Id</term><description>SaaS_ActivateResource</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.ActivateResourceSaaS(Azure.ResourceManager.NewRelicObservability.Models.ActivateSaaSParameterContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetNewRelicAccounts">
       <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData&gt; GetNewRelicAccounts (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string userEmail, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData&gt; GetNewRelicAccounts(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string userEmail, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -30,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData&gt;</ReturnType>
@@ -46,8 +112,8 @@
         <param name="location"> Location for NewRelic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all the existing accounts
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/accounts</description></item><item><term>Operation Id</term><description>Accounts_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicAccounts(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all the New Relic accounts linked to your email address, helping you understand the existing accounts that have been created
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/accounts</description></item><item><term>Operation Id</term><description>Accounts_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicAccounts(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -64,6 +130,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData&gt;</ReturnType>
@@ -80,8 +147,8 @@
         <param name="location"> Location for NewRelic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all the existing accounts
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/accounts</description></item><item><term>Operation Id</term><description>Accounts_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicAccounts(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all the New Relic accounts linked to your email address, helping you understand the existing accounts that have been created
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/accounts</description></item><item><term>Operation Id</term><description>Accounts_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicAccounts(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicAccountResourceData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -98,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NewRelicObservability.NewRelicMonitoredSubscriptionResource</ReturnType>
@@ -129,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource</ReturnType>
@@ -160,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource&gt;</ReturnType>
@@ -174,8 +244,8 @@
         <param name="monitorName"> Name of the Monitors resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a NewRelicMonitorResource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/NewRelic.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilityResourceGroupResource.GetNewRelicMonitorResource(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Retrieves the properties and configuration details of a specific New Relic monitor resource, providing insight into its setup and status
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/NewRelic.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilityResourceGroupResource.GetNewRelicMonitorResource(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -194,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource&gt;&gt;</ReturnType>
@@ -208,8 +279,8 @@
         <param name="monitorName"> Name of the Monitors resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a NewRelicMonitorResource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/NewRelic.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilityResourceGroupResource.GetNewRelicMonitorResourceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Retrieves the properties and configuration details of a specific New Relic monitor resource, providing insight into its setup and status
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/NewRelic.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilityResourceGroupResource.GetNewRelicMonitorResourceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -228,6 +299,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResourceCollection</ReturnType>
@@ -256,6 +328,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource&gt;</ReturnType>
@@ -268,8 +341,8 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List NewRelicMonitorResource resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicMonitorResources(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all New Relic monitor resources either within a specific subscription
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicMonitorResources(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,6 +359,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource&gt;</ReturnType>
@@ -298,8 +372,8 @@
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List NewRelicMonitorResource resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicMonitorResources(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all New Relic monitor resources either within a specific subscription
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicMonitorResources(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.NewRelicMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -316,6 +390,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NewRelicObservability.NewRelicObservabilityTagRuleResource</ReturnType>
@@ -347,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicOrganizationResourceData&gt;</ReturnType>
@@ -363,8 +439,8 @@
         <param name="location"> Location for NewRelic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all the existing organizations
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/organizations</description></item><item><term>Operation Id</term><description>Organizations_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicOrganizations(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all the New Relic organizations linked to your email address, helping you understand the existing organizations that have been created
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/organizations</description></item><item><term>Operation Id</term><description>Organizations_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicOrganizations(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicOrganizationResourceData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -381,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicOrganizationResourceData&gt;</ReturnType>
@@ -397,8 +474,8 @@
         <param name="location"> Location for NewRelic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all the existing organizations
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/organizations</description></item><item><term>Operation Id</term><description>Organizations_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicOrganizations(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists all the New Relic organizations linked to your email address, helping you understand the existing organizations that have been created
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/organizations</description></item><item><term>Operation Id</term><description>Organizations_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicOrganizations(System.String,Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicOrganizationResourceData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -415,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicPlanData&gt;</ReturnType>
@@ -431,8 +509,8 @@
         <param name="organizationId"> Organization Id. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List plans data
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/plans</description></item><item><term>Operation Id</term><description>Plans_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicPlans(System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists the plans data linked to your organization, providing an overview of the available plans
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/plans</description></item><item><term>Operation Id</term><description>Plans_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicPlans(System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicPlanData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -449,6 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NewRelicObservability</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.NewRelicObservability.Models.NewRelicPlanData&gt;</ReturnType>
@@ -465,8 +544,8 @@
         <param name="organizationId"> Organization Id. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List plans data
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/plans</description></item><item><term>Operation Id</term><description>Plans_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicPlans(System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            Lists the plans data linked to your organization, providing an overview of the available plans
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/NewRelic.Observability/plans</description></item><item><term>Operation Id</term><description>Plans_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.NewRelicObservability.Mocking.MockableNewRelicObservabilitySubscriptionResource.GetNewRelicPlans(System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.NewRelicObservability.Models.NewRelicPlanData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

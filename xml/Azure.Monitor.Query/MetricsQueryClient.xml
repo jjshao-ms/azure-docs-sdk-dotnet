@@ -24,7 +24,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The <see cref="T:Azure.Monitor.Query.MetricsQueryClient" /> allows you to query the Azure Monitor Metrics service for a single Azure resource.
+            The <see cref="T:Azure.Monitor.Query.MetricsQueryClient" /> allows you to query the Azure Monitor Metrics service.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -38,7 +38,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,7 +57,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
@@ -66,9 +64,8 @@
       <Docs>
         <param name="credential">The <see cref="T:Azure.Core.TokenCredential" /> instance to use for authentication.</param>
         <summary>
-            Creates an instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" /> for Azure Public Cloud usage. Uses the default 'https://management.azure.com' endpoint.
-            To access an Azure sovereign cloud, use the following constructor overload:
-            <see cref="M:Azure.Monitor.Query.MetricsQueryClient.#ctor(Azure.Core.TokenCredential,Azure.Monitor.Query.MetricsQueryClientOptions)" /><code snippet="Snippet:CreateMetricsQueryClient" language="csharp">
+            Initializes a new instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" />. Uses the default 'https://management.azure.com' endpoint.
+            <code snippet="Snippet:CreateMetricsClient" language="csharp">
             var client = new MetricsQueryClient(new DefaultAzureCredential());
             </code></summary>
         <remarks>To be added.</remarks>
@@ -84,7 +81,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
@@ -92,9 +88,9 @@
       </Parameters>
       <Docs>
         <param name="credential">The <see cref="T:Azure.Core.TokenCredential" /> instance to use for authentication.</param>
-        <param name="options">The <see cref="T:Azure.Monitor.Query.MetricsQueryClientOptions" /> instance to use as client configuration.</param>
+        <param name="options">The <see cref="T:Azure.Monitor.Query.MetricsQueryClientOptions" /> instance to as client configuration.</param>
         <summary>
-            Creates an instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" /> for Azure Public Cloud usage. Uses the default 'https://management.azure.com' endpoint, unless <see cref="P:Azure.Monitor.Query.MetricsQueryClientOptions.Audience" /> is set to an Azure sovereign cloud.
+            Initializes a new instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" />. Uses the default 'https://management.azure.com' endpoint.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +105,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -117,12 +112,11 @@
         <Parameter Name="options" Type="Azure.Monitor.Query.MetricsQueryClientOptions" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The Azure Resource Manager service endpoint to use. Some examples include:
-            <list type="bullet"><item><description><c>https://management.usgovcloudapi.net</c> for Azure US Government Cloud</description></item><item><description><c>https://management.chinacloudapi.cn</c> for Azure China Cloud</description></item></list></param>
+        <param name="endpoint">The resource manager service endpoint to use. For example <c>https://management.azure.com/</c> for public cloud.</param>
         <param name="credential">The <see cref="T:Azure.Core.TokenCredential" /> instance to use for authentication.</param>
-        <param name="options">The <see cref="T:Azure.Monitor.Query.MetricsQueryClientOptions" /> instance to use as client configuration.</param>
+        <param name="options">The <see cref="T:Azure.Monitor.Query.MetricsQueryClientOptions" /> instance to as client configuration.</param>
         <summary>
-            Creates an instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" /> for the Azure cloud represented by <paramref name="endpoint" />.
+            Initializes a new instance of <see cref="T:Azure.Monitor.Query.MetricsQueryClient" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +131,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -160,7 +153,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.Monitor.Query.Models.MetricDefinition&gt;</ReturnType>
@@ -194,7 +186,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.Monitor.Query.Models.MetricDefinition&gt;</ReturnType>
@@ -229,7 +220,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.Monitor.Query.Models.MetricNamespace&gt;</ReturnType>
@@ -260,7 +250,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.Monitor.Query.Models.MetricNamespace&gt;</ReturnType>
@@ -289,7 +278,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Monitor.Query.Models.MetricsQueryResult&gt;</ReturnType>
@@ -316,7 +304,7 @@
             
              Response&lt;MetricsQueryResult&gt; results = await client.QueryResourceAsync(
                  resourceId,
-                 new[] { "Average_% Free Space", "Average_% Used Space" }
+                 new[] { "AvailabilityRate_Query", "Query Count" }
              );
             
              foreach (MetricResult metric in results.Value.Metrics)
@@ -347,7 +335,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Monitor.Query</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Monitor.Query.Models.MetricsQueryResult&gt;&gt;</ReturnType>
@@ -374,7 +361,7 @@
             
              Response&lt;MetricsQueryResult&gt; results = await client.QueryResourceAsync(
                  resourceId,
-                 new[] { "Average_% Free Space", "Average_% Used Space" }
+                 new[] { "AvailabilityRate_Query", "Query Count" }
              );
             
              foreach (MetricResult metric in results.Value.Metrics)
