@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: mongocluster
 ---
-# Azure Mongo Cluster SDK for .NET - preview
-## Packages - preview
+# Azure Mongo Cluster SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](mongo-cluster-index.md)]
