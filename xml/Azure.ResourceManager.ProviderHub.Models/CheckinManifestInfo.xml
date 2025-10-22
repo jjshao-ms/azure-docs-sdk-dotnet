@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,44 +34,74 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CheckinManifestInfo (bool isCheckedIn, string statusMessage);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isCheckedIn, string statusMessage) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.#ctor(System.Boolean,System.String)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isCheckedIn As Boolean, statusMessage As String)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo : bool * string -&gt; Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo" Usage="new Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo (isCheckedIn, statusMessage)" FrameworkAlternate="azure-dotnet" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isCheckedIn" Type="System.Boolean" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="statusMessage" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="isCheckedIn"> Whether the manifest is checked in. </param>
+        <param name="statusMessage"> The status message. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statusMessage" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="CommitId">
-      <MemberSignature Language="C#" Value="public string CommitId { get; }" />
+      <MemberSignature Language="C#" Value="public string CommitId { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommitId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.CommitId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommitId As String" />
-      <MemberSignature Language="F#" Value="member this.CommitId : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.CommitId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommitId As String" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.CommitId : string with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.CommitId" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public string CommitId { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommitId As String" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.CommitId : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.CommitId" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the commit id. </summary>
+        <summary> The commit id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCheckedIn">
-      <MemberSignature Language="C#" Value="public bool IsCheckedIn { get; }" />
+      <MemberSignature Language="C#" Value="public bool IsCheckedIn { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCheckedIn" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.IsCheckedIn" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCheckedIn As Boolean" />
-      <MemberSignature Language="F#" Value="member this.IsCheckedIn : bool" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.IsCheckedIn" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCheckedIn As Boolean" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.IsCheckedIn : bool with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.IsCheckedIn" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public bool IsCheckedIn { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCheckedIn As Boolean" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.IsCheckedIn : bool" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.IsCheckedIn" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the is checked in. </summary>
+        <summary> Whether the manifest is checked in. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +115,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -101,43 +132,49 @@
       </Docs>
     </Member>
     <Member MemberName="PullRequest">
-      <MemberSignature Language="C#" Value="public string PullRequest { get; }" />
+      <MemberSignature Language="C#" Value="public string PullRequest { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance string PullRequest" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.PullRequest" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PullRequest As String" />
-      <MemberSignature Language="F#" Value="member this.PullRequest : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.PullRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property PullRequest As String" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.PullRequest : string with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.PullRequest" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public string PullRequest { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PullRequest As String" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.PullRequest : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.PullRequest" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the pull request. </summary>
+        <summary> The pull request. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusMessage">
-      <MemberSignature Language="C#" Value="public string StatusMessage { get; }" />
+      <MemberSignature Language="C#" Value="public string StatusMessage { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusMessage" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.StatusMessage" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusMessage As String" />
-      <MemberSignature Language="F#" Value="member this.StatusMessage : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.StatusMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusMessage As String" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.StatusMessage : string with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.StatusMessage" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public string StatusMessage { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusMessage As String" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.StatusMessage : string" Usage="Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo.StatusMessage" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the status message. </summary>
+        <summary> The status message. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +191,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo</ReturnType>
@@ -186,7 +223,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -217,7 +254,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.CheckinManifestInfo</ReturnType>
@@ -249,7 +286,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -262,7 +299,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +315,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

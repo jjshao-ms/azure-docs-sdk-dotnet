@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +35,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomRolloutSpecification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomRolloutSpecification (Azure.ResourceManager.ProviderHub.Models.TrafficRegions canary);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.ProviderHub.Models.TrafficRegions canary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.#ctor(Azure.ResourceManager.ProviderHub.Models.TrafficRegions)" />
@@ -43,7 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="canary" Type="Azure.ResourceManager.ProviderHub.Models.TrafficRegions" />
@@ -56,6 +73,26 @@
           <paramref name="canary" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="AutoProvisionConfig">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ProviderHub.Models.CustomRolloutAutoProvisionConfig AutoProvisionConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ProviderHub.Models.CustomRolloutAutoProvisionConfig AutoProvisionConfig" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.AutoProvisionConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoProvisionConfig As CustomRolloutAutoProvisionConfig" />
+      <MemberSignature Language="F#" Value="member this.AutoProvisionConfig : Azure.ResourceManager.ProviderHub.Models.CustomRolloutAutoProvisionConfig with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.AutoProvisionConfig" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ProviderHub.Models.CustomRolloutAutoProvisionConfig</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The auto provisioning configuration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CanaryRegions">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Core.AzureLocation&gt; CanaryRegions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.Core.AzureLocation&gt; CanaryRegions" />
@@ -66,7 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -86,7 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -112,13 +149,53 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.ProviderRegistrationData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the provider registration. </summary>
+        <summary> The provider registration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSubscriptionRegistration">
+      <MemberSignature Language="C#" Value="public bool? RefreshSubscriptionRegistration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RefreshSubscriptionRegistration" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.RefreshSubscriptionRegistration" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshSubscriptionRegistration As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RefreshSubscriptionRegistration : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.RefreshSubscriptionRegistration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Whether refreshing subscription registration is enabled or disabled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseScopes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; ReleaseScopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ReleaseScopes" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.ReleaseScopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReleaseScopes As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ReleaseScopes : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.ReleaseScopes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of ARM regions scoped for the release. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,13 +210,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ProviderHub.ResourceTypeRegistrationData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the resource type registrations. </summary>
+        <summary> The resource type registrations. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipReleaseScopeValidation">
+      <MemberSignature Language="C#" Value="public bool? SkipReleaseScopeValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SkipReleaseScopeValidation" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.SkipReleaseScopeValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipReleaseScopeValidation As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SkipReleaseScopeValidation : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification.SkipReleaseScopeValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Whether release scope validation should be skipped. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,7 +253,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification</ReturnType>
@@ -188,7 +285,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -219,7 +316,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.CustomRolloutSpecification</ReturnType>
@@ -251,7 +348,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -264,7 +361,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,7 +377,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceProviderEndpoint ();" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.#ctor" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" FrameworkAlternate="azure-dotnet" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ApiVersions">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; ApiVersions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; ApiVersions" />
@@ -43,55 +60,81 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the api versions. </summary>
+        <summary> The api versions. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ProviderHub.Models.ProviderEndpointType? EndpointType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ProviderHub.Models.ProviderEndpointType&gt; EndpointType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointType As Nullable(Of ProviderEndpointType)" />
+      <MemberSignature Language="F#" Value="member this.EndpointType : Nullable&lt;Azure.ResourceManager.ProviderHub.Models.ProviderEndpointType&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ProviderHub.Models.ProviderEndpointType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The endpoint type. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndpointUri">
-      <MemberSignature Language="C#" Value="public Uri EndpointUri { get; }" />
+      <MemberSignature Language="C#" Value="public Uri EndpointUri { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri EndpointUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointUri" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointUri As Uri" />
-      <MemberSignature Language="F#" Value="member this.EndpointUri : Uri" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointUri As Uri" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.EndpointUri : Uri with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointUri" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Uri EndpointUri { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointUri As Uri" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.EndpointUri : Uri" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.EndpointUri" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the endpoint uri. </summary>
+        <summary> The endpoint uri. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
-      <MemberSignature Language="C#" Value="public bool? IsEnabled { get; }" />
+      <MemberSignature Language="C#" Value="public bool? IsEnabled { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsEnabled" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.IsEnabled" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.IsEnabled : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Nullable(Of Boolean)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.IsEnabled" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public bool? IsEnabled { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Nullable(Of Boolean)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.IsEnabled" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the is enabled. </summary>
+        <summary> Whether the endpoint is enabled. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +148,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -131,13 +174,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the locations. </summary>
+        <summary> The locations. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,34 +195,57 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the required features. </summary>
+        <summary> The required features. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiredFeaturesPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy? RequiredFeaturesPolicy { get; }" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy? RequiredFeaturesPolicy { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy&gt; RequiredFeaturesPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.RequiredFeaturesPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredFeaturesPolicy As Nullable(Of FeaturesPolicy)" />
-      <MemberSignature Language="F#" Value="member this.RequiredFeaturesPolicy : Nullable&lt;Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.RequiredFeaturesPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequiredFeaturesPolicy As Nullable(Of FeaturesPolicy)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.RequiredFeaturesPolicy : Nullable&lt;Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.RequiredFeaturesPolicy" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy? RequiredFeaturesPolicy { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredFeaturesPolicy As Nullable(Of FeaturesPolicy)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.RequiredFeaturesPolicy : Nullable&lt;Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.RequiredFeaturesPolicy" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ProviderHub.Models.FeaturesPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the required features policy. </summary>
+        <summary> The required feature policy. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkuLink">
+      <MemberSignature Language="C#" Value="public string SkuLink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkuLink" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.SkuLink" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkuLink As String" />
+      <MemberSignature Language="F#" Value="member this.SkuLink : string with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.SkuLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The sku link. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +262,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint</ReturnType>
@@ -228,7 +294,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -259,7 +325,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint</ReturnType>
@@ -291,7 +357,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -304,7 +370,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,7 +386,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -339,22 +405,25 @@
       </Docs>
     </Member>
     <Member MemberName="Timeout">
-      <MemberSignature Language="C#" Value="public TimeSpan? Timeout { get; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Timeout { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Timeout" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.Timeout" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeout As Nullable(Of TimeSpan)" />
-      <MemberSignature Language="F#" Value="member this.Timeout : Nullable&lt;TimeSpan&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As Nullable(Of TimeSpan)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Timeout : Nullable&lt;TimeSpan&gt; with get, set" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.Timeout" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Timeout { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeout As Nullable(Of TimeSpan)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Timeout : Nullable&lt;TimeSpan&gt;" Usage="Azure.ResourceManager.ProviderHub.Models.ResourceProviderEndpoint.Timeout" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the timeout. </summary>
+        <summary> The timeout. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

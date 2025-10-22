@@ -56,18 +56,47 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pluginId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="pluginId"> Grafana plugin id. </param>
+        <param name="name"> Grafana plugin display name. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GrafanaAvailablePlugin">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin GrafanaAvailablePlugin (string pluginId = default, string name = default, string type = default, string author = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin GrafanaAvailablePlugin(string pluginId, string name, string type, string author) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.GrafanaAvailablePlugin(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GrafanaAvailablePlugin (Optional pluginId As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional author As String = Nothing) As GrafanaAvailablePlugin" />
+      <MemberSignature Language="F#" Value="static member GrafanaAvailablePlugin : string * string * string * string -&gt; Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin" Usage="Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.GrafanaAvailablePlugin (pluginId, name, type, author)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pluginId" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="pluginId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="author" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="pluginId"> Grafana plugin id. </param>
         <param name="name"> Grafana plugin display name. </param>
+        <param name="type"> Grafana plugin type. </param>
+        <param name="author"> Grafana plugin author/publisher name. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Grafana.Models.GrafanaAvailablePlugin" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -279,6 +308,46 @@
       </Docs>
     </Member>
     <Member MemberName="ManagedGrafanaData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Grafana.ManagedGrafanaData ManagedGrafanaData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties properties = default, Azure.ResourceManager.Grafana.Models.ManagedGrafanaSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Grafana.ManagedGrafanaData ManagedGrafanaData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties properties, class Azure.ResourceManager.Grafana.Models.ManagedGrafanaSku sku, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties,Azure.ResourceManager.Grafana.Models.ManagedGrafanaSku,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedGrafanaData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As ManagedGrafanaProperties = Nothing, Optional sku As ManagedGrafanaSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As ManagedGrafanaData" />
+      <MemberSignature Language="F#" Value="static member ManagedGrafanaData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties * Azure.ResourceManager.Grafana.Models.ManagedGrafanaSku * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.Grafana.ManagedGrafanaData" Usage="Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaData (id, name, resourceType, systemData, tags, location, properties, sku, identity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Grafana.ManagedGrafanaData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.Grafana.Models.ManagedGrafanaSku" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="tags"> The tags. </param>
+        <param name="location"> The location. </param>
+        <param name="properties"> Properties specific to the grafana resource. </param>
+        <param name="sku"> The Sku of the grafana resource. </param>
+        <param name="identity"> The managed service identities assigned to this resource. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.ManagedGrafanaData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Grafana.ManagedGrafanaData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedGrafanaData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Grafana.ManagedGrafanaData ManagedGrafanaData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, string skuName = default, Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties properties = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Grafana.ManagedGrafanaData ManagedGrafanaData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, string skuName, class Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties properties, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.String,Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
@@ -288,21 +357,20 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Grafana.ManagedGrafanaData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
-        <Parameter Name="skuName" Type="System.String" />
-        <Parameter Name="properties" Type="Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" />
-        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="skuName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="8" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="id"> The id. </param>
@@ -316,58 +384,6 @@
         <param name="identity"> The managed service identities assigned to this resource. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.ManagedGrafanaData" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Grafana.ManagedGrafanaData" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ManagedGrafanaProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties ManagedGrafanaProperties (Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState? provisioningState = default, string grafanaVersion = default, string endpoint = default, Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess? publicNetworkAccess = default, Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy? zoneRedundancy = default, Azure.ResourceManager.Grafana.Models.GrafanaApiKey? apiKey = default, Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP? deterministicOutboundIP = default, System.Collections.Generic.IEnumerable&lt;string&gt; outboundIPs = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; privateEndpointConnections = default, Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope? autoGeneratedDomainNameLabelScope = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; monitorWorkspaceIntegrations = default, Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations enterpriseConfigurations = default, Azure.ResourceManager.Grafana.Models.GrafanaConfigurations grafanaConfigurations = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; grafanaPlugins = default, string grafanaMajorVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties ManagedGrafanaProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt; provisioningState, string grafanaVersion, string endpoint, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt; publicNetworkAccess, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt; zoneRedundancy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt; apiKey, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt; deterministicOutboundIP, class System.Collections.Generic.IEnumerable`1&lt;string&gt; outboundIPs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; privateEndpointConnections, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt; autoGeneratedDomainNameLabelScope, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; monitorWorkspaceIntegrations, class Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations enterpriseConfigurations, class Azure.ResourceManager.Grafana.Models.GrafanaConfigurations grafanaConfigurations, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; grafanaPlugins, string grafanaMajorVersion) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaProperties(System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState},System.String,System.String,System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess},System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy},System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaApiKey},System.Nullable{Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData},System.Nullable{Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration},Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations,Azure.ResourceManager.Grafana.Models.GrafanaConfigurations,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Grafana.Models.GrafanaPlugin},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedGrafanaProperties (Optional provisioningState As Nullable(Of GrafanaProvisioningState) = Nothing, Optional grafanaVersion As String = Nothing, Optional endpoint As String = Nothing, Optional publicNetworkAccess As Nullable(Of GrafanaPublicNetworkAccess) = Nothing, Optional zoneRedundancy As Nullable(Of GrafanaZoneRedundancy) = Nothing, Optional apiKey As Nullable(Of GrafanaApiKey) = Nothing, Optional deterministicOutboundIP As Nullable(Of DeterministicOutboundIP) = Nothing, Optional outboundIPs As IEnumerable(Of String) = Nothing, Optional privateEndpointConnections As IEnumerable(Of GrafanaPrivateEndpointConnectionData) = Nothing, Optional autoGeneratedDomainNameLabelScope As Nullable(Of AutoGeneratedDomainNameLabelScope) = Nothing, Optional monitorWorkspaceIntegrations As IEnumerable(Of MonitorWorkspaceIntegration) = Nothing, Optional enterpriseConfigurations As EnterpriseConfigurations = Nothing, Optional grafanaConfigurations As GrafanaConfigurations = Nothing, Optional grafanaPlugins As IDictionary(Of String, GrafanaPlugin) = Nothing, Optional grafanaMajorVersion As String = Nothing) As ManagedGrafanaProperties" />
-      <MemberSignature Language="F#" Value="static member ManagedGrafanaProperties : Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt; * string * string * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt; * seq&lt;string&gt; * seq&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt; * seq&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; * Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations * Azure.ResourceManager.Grafana.Models.GrafanaConfigurations * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; * string -&gt; Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" Usage="Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaProperties (provisioningState, grafanaVersion, endpoint, publicNetworkAccess, zoneRedundancy, apiKey, deterministicOutboundIP, outboundIPs, privateEndpointConnections, autoGeneratedDomainNameLabelScope, monitorWorkspaceIntegrations, enterpriseConfigurations, grafanaConfigurations, grafanaPlugins, grafanaMajorVersion)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="grafanaVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="endpoint" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="publicNetworkAccess" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="zoneRedundancy" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="apiKey" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="deterministicOutboundIP" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="outboundIPs" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="privateEndpointConnections" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="autoGeneratedDomainNameLabelScope" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="monitorWorkspaceIntegrations" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="enterpriseConfigurations" Type="Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations" Index="11" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="grafanaConfigurations" Type="Azure.ResourceManager.Grafana.Models.GrafanaConfigurations" Index="12" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="grafanaPlugins" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt;" Index="13" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="grafanaMajorVersion" Type="System.String" Index="14" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="provisioningState"> Provisioning state of the resource. </param>
-        <param name="grafanaVersion"> The Grafana software version. </param>
-        <param name="endpoint"> The endpoint of the Grafana instance. </param>
-        <param name="publicNetworkAccess"> Indicate the state for enable or disable traffic over the public interface. </param>
-        <param name="zoneRedundancy"> The zone redundancy setting of the Grafana instance. </param>
-        <param name="apiKey"> The api key setting of the Grafana instance. </param>
-        <param name="deterministicOutboundIP"> Whether a Grafana instance uses deterministic outbound IPs. </param>
-        <param name="outboundIPs"> List of outbound IPs if deterministicOutboundIP is enabled. </param>
-        <param name="privateEndpointConnections"> The private endpoint connections of the Grafana instance. </param>
-        <param name="autoGeneratedDomainNameLabelScope"> Scope for dns deterministic name hash calculation. </param>
-        <param name="monitorWorkspaceIntegrations"> GrafanaIntegrations is a bundled observability experience (e.g. pre-configured data source, tailored Grafana dashboards, alerting defaults) for common monitoring scenarios. </param>
-        <param name="enterpriseConfigurations"> Enterprise settings of a Grafana instance. </param>
-        <param name="grafanaConfigurations"> Server configurations of a Grafana instance. </param>
-        <param name="grafanaPlugins"> Installed plugin list of the Grafana instance. Key is plugin id, value is plugin definition. </param>
-        <param name="grafanaMajorVersion"> The major Grafana software version to target. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,6 +445,60 @@
         <param name="monitorWorkspaceIntegrations"> GrafanaIntegrations is a bundled observability experience (e.g. pre-configured data source, tailored Grafana dashboards, alerting defaults) for common monitoring scenarios. </param>
         <param name="enterpriseConfigurations"> Enterprise settings of a Grafana instance. </param>
         <param name="grafanaConfigurationsSmtp"> Server configurations of a Grafana instance. </param>
+        <param name="grafanaPlugins"> Installed plugin list of the Grafana instance. Key is plugin id, value is plugin definition. </param>
+        <param name="grafanaMajorVersion"> The major Grafana software version to target. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedGrafanaProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties ManagedGrafanaProperties (Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState? provisioningState = default, string grafanaVersion = default, string endpoint = default, Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess? publicNetworkAccess = default, Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy? zoneRedundancy = default, Azure.ResourceManager.Grafana.Models.GrafanaApiKey? apiKey = default, Azure.ResourceManager.Grafana.Models.GrafanaCreatorCanAdmin? creatorCanAdmin = default, Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP? deterministicOutboundIP = default, System.Collections.Generic.IEnumerable&lt;string&gt; outboundIPs = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; privateEndpointConnections = default, Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope? autoGeneratedDomainNameLabelScope = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; monitorWorkspaceIntegrations = default, Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations enterpriseConfigurations = default, Azure.ResourceManager.Grafana.Models.GrafanaConfigurations grafanaConfigurations = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; grafanaPlugins = default, string grafanaMajorVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties ManagedGrafanaProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt; provisioningState, string grafanaVersion, string endpoint, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt; publicNetworkAccess, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt; zoneRedundancy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt; apiKey, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.GrafanaCreatorCanAdmin&gt; creatorCanAdmin, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt; deterministicOutboundIP, class System.Collections.Generic.IEnumerable`1&lt;string&gt; outboundIPs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; privateEndpointConnections, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt; autoGeneratedDomainNameLabelScope, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; monitorWorkspaceIntegrations, class Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations enterpriseConfigurations, class Azure.ResourceManager.Grafana.Models.GrafanaConfigurations grafanaConfigurations, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; grafanaPlugins, string grafanaMajorVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaProperties(System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState},System.String,System.String,System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess},System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy},System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaApiKey},System.Nullable{Azure.ResourceManager.Grafana.Models.GrafanaCreatorCanAdmin},System.Nullable{Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData},System.Nullable{Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration},Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations,Azure.ResourceManager.Grafana.Models.GrafanaConfigurations,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Grafana.Models.GrafanaPlugin},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedGrafanaProperties (Optional provisioningState As Nullable(Of GrafanaProvisioningState) = Nothing, Optional grafanaVersion As String = Nothing, Optional endpoint As String = Nothing, Optional publicNetworkAccess As Nullable(Of GrafanaPublicNetworkAccess) = Nothing, Optional zoneRedundancy As Nullable(Of GrafanaZoneRedundancy) = Nothing, Optional apiKey As Nullable(Of GrafanaApiKey) = Nothing, Optional creatorCanAdmin As Nullable(Of GrafanaCreatorCanAdmin) = Nothing, Optional deterministicOutboundIP As Nullable(Of DeterministicOutboundIP) = Nothing, Optional outboundIPs As IEnumerable(Of String) = Nothing, Optional privateEndpointConnections As IEnumerable(Of GrafanaPrivateEndpointConnectionData) = Nothing, Optional autoGeneratedDomainNameLabelScope As Nullable(Of AutoGeneratedDomainNameLabelScope) = Nothing, Optional monitorWorkspaceIntegrations As IEnumerable(Of MonitorWorkspaceIntegration) = Nothing, Optional enterpriseConfigurations As EnterpriseConfigurations = Nothing, Optional grafanaConfigurations As GrafanaConfigurations = Nothing, Optional grafanaPlugins As IDictionary(Of String, GrafanaPlugin) = Nothing, Optional grafanaMajorVersion As String = Nothing) As ManagedGrafanaProperties" />
+      <MemberSignature Language="F#" Value="static member ManagedGrafanaProperties : Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt; * string * string * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaCreatorCanAdmin&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt; * seq&lt;string&gt; * seq&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt; * Nullable&lt;Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt; * seq&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt; * Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations * Azure.ResourceManager.Grafana.Models.GrafanaConfigurations * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt; * string -&gt; Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" Usage="Azure.ResourceManager.Grafana.Models.ArmGrafanaModelFactory.ManagedGrafanaProperties (provisioningState, grafanaVersion, endpoint, publicNetworkAccess, zoneRedundancy, apiKey, creatorCanAdmin, deterministicOutboundIP, outboundIPs, privateEndpointConnections, autoGeneratedDomainNameLabelScope, monitorWorkspaceIntegrations, enterpriseConfigurations, grafanaConfigurations, grafanaPlugins, grafanaMajorVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Grafana</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="grafanaVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="endpoint" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="publicNetworkAccess" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaPublicNetworkAccess&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="zoneRedundancy" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaZoneRedundancy&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="apiKey" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaApiKey&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="creatorCanAdmin" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.GrafanaCreatorCanAdmin&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="deterministicOutboundIP" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.DeterministicOutboundIP&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outboundIPs" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="privateEndpointConnections" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.GrafanaPrivateEndpointConnectionData&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="autoGeneratedDomainNameLabelScope" Type="System.Nullable&lt;Azure.ResourceManager.Grafana.Models.AutoGeneratedDomainNameLabelScope&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="monitorWorkspaceIntegrations" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Grafana.Models.MonitorWorkspaceIntegration&gt;" Index="11" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="enterpriseConfigurations" Type="Azure.ResourceManager.Grafana.Models.EnterpriseConfigurations" Index="12" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="grafanaConfigurations" Type="Azure.ResourceManager.Grafana.Models.GrafanaConfigurations" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="grafanaPlugins" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Grafana.Models.GrafanaPlugin&gt;" Index="14" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="grafanaMajorVersion" Type="System.String" Index="15" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> Provisioning state of the resource. </param>
+        <param name="grafanaVersion"> The Grafana software version. </param>
+        <param name="endpoint"> The endpoint of the Grafana instance. </param>
+        <param name="publicNetworkAccess"> Indicate the state for enable or disable traffic over the public interface. </param>
+        <param name="zoneRedundancy"> The zone redundancy setting of the Grafana instance. </param>
+        <param name="apiKey"> The api key setting of the Grafana instance. </param>
+        <param name="creatorCanAdmin"> The creator will have admin access for the Grafana instance. </param>
+        <param name="deterministicOutboundIP"> Whether a Grafana instance uses deterministic outbound IPs. </param>
+        <param name="outboundIPs"> List of outbound IPs if deterministicOutboundIP is enabled. </param>
+        <param name="privateEndpointConnections"> The private endpoint connections of the Grafana instance. </param>
+        <param name="autoGeneratedDomainNameLabelScope"> Scope for dns deterministic name hash calculation. </param>
+        <param name="monitorWorkspaceIntegrations"> GrafanaIntegrations is a bundled observability experience (e.g. pre-configured data source, tailored Grafana dashboards, alerting defaults) for common monitoring scenarios. </param>
+        <param name="enterpriseConfigurations"> Enterprise settings of a Grafana instance. </param>
+        <param name="grafanaConfigurations"> Server configurations of a Grafana instance. </param>
         <param name="grafanaPlugins"> Installed plugin list of the Grafana instance. Key is plugin id, value is plugin definition. </param>
         <param name="grafanaMajorVersion"> The major Grafana software version to target. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Grafana.Models.ManagedGrafanaProperties" />. </summary>

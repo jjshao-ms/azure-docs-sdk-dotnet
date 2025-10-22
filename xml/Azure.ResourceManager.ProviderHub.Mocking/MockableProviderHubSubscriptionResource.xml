@@ -8,6 +8,7 @@
     <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -26,11 +27,63 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.ProviderHub.Mocking.MockableProviderHubSubscriptionResource" /> class for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderMonitorSettings">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt; GetProviderMonitorSettings (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt; GetProviderMonitorSettings(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Mocking.MockableProviderHubSubscriptionResource.GetProviderMonitorSettings(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProviderMonitorSettings (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ProviderMonitorSettingResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetProviderMonitorSettings : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;&#xA;override this.GetProviderMonitorSettings : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;" Usage="mockableProviderHubSubscriptionResource.GetProviderMonitorSettings cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the list of the provider monitor settings in the subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerMonitorSettings</description></item><item><term>Operation Id</term><description>ProviderMonitorSettings_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource" /></description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderMonitorSettingsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt; GetProviderMonitorSettingsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt; GetProviderMonitorSettingsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ProviderHub.Mocking.MockableProviderHubSubscriptionResource.GetProviderMonitorSettingsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProviderMonitorSettingsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ProviderMonitorSettingResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetProviderMonitorSettingsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;&#xA;override this.GetProviderMonitorSettingsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;" Usage="mockableProviderHubSubscriptionResource.GetProviderMonitorSettingsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the list of the provider monitor settings in the subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerMonitorSettings</description></item><item><term>Operation Id</term><description>ProviderMonitorSettings_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource" /></description></item></list></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ProviderHub.ProviderMonitorSettingResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +96,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.ProviderHub.ProviderRegistrationResource&gt;</ReturnType>
@@ -57,7 +110,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the provider registration details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerRegistrations/{providerNamespace}</description></item><item><term>Operation Id</term><description>ProviderRegistrations_Get</description></item><item><term>Default Api Version</term><description>2020-11-20</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderRegistrationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerRegistrations/{providerNamespace}</description></item><item><term>Operation Id</term><description>ProviderRegistrations_Get</description></item><item><term>Default Api Version</term><description>2024-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderRegistrationResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -75,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ProviderHub.ProviderRegistrationResource&gt;&gt;</ReturnType>
@@ -89,7 +142,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the provider registration details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerRegistrations/{providerNamespace}</description></item><item><term>Operation Id</term><description>ProviderRegistrations_Get</description></item><item><term>Default Api Version</term><description>2020-11-20</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderRegistrationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ProviderHub/providerRegistrations/{providerNamespace}</description></item><item><term>Operation Id</term><description>ProviderRegistrations_Get</description></item><item><term>Default Api Version</term><description>2024-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ProviderHub.ProviderRegistrationResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -107,7 +160,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ProviderHub</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ProviderHub.ProviderRegistrationCollection</ReturnType>
