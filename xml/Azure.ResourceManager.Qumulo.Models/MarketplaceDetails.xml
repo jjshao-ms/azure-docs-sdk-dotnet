@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,10 +30,36 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> MarketplaceDetails of Qumulo FileSystem resource. </summary>
+    <summary>
+            Marketplace details used to identify the Marketplace subscription for the Qumulo resource.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MarketplaceDetails (string planId, string offerId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string planId, string offerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (planId As String, offerId As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Qumulo.Models.MarketplaceDetails : string * string -&gt; Azure.ResourceManager.Qumulo.Models.MarketplaceDetails" Usage="new Azure.ResourceManager.Qumulo.Models.MarketplaceDetails (planId, offerId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="planId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="offerId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="planId"> Plan Id. </param>
+        <param name="offerId"> Offer Id. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Qumulo.Models.MarketplaceDetails" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="planId" /> or <paramref name="offerId" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MarketplaceDetails (string planId, string offerId, string publisherId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string planId, string offerId, string publisherId) cil managed" />
@@ -43,8 +70,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="planId" Type="System.String" />
         <Parameter Name="offerId" Type="System.String" />
@@ -69,7 +102,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -95,7 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -116,13 +149,22 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Qumulo.Models.MarketplaceSubscriptionStatus&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Marketplace subscription status. </summary>
+        <summary>
+            Marketplace subscription status.
+            Please use <see cref="P:Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.QumuloMarketplaceSubscriptionStatus" /> instead.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +179,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -158,7 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -179,13 +221,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Publisher Id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QumuloMarketplaceSubscriptionStatus">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Qumulo.Models.QumuloMarketplaceSubscriptionStatus? QumuloMarketplaceSubscriptionStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Qumulo.Models.QumuloMarketplaceSubscriptionStatus&gt; QumuloMarketplaceSubscriptionStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.QumuloMarketplaceSubscriptionStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QumuloMarketplaceSubscriptionStatus As Nullable(Of QumuloMarketplaceSubscriptionStatus)" />
+      <MemberSignature Language="F#" Value="member this.QumuloMarketplaceSubscriptionStatus : Nullable&lt;Azure.ResourceManager.Qumulo.Models.QumuloMarketplaceSubscriptionStatus&gt;" Usage="Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.QumuloMarketplaceSubscriptionStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Qumulo.Models.QumuloMarketplaceSubscriptionStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Marketplace subscription status. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +264,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.Models.MarketplaceDetails</ReturnType>
@@ -234,7 +296,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -265,7 +327,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.Models.MarketplaceDetails</ReturnType>
@@ -297,7 +359,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -310,7 +372,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +388,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -342,6 +404,26 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TermUnit">
+      <MemberSignature Language="C#" Value="public string TermUnit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TermUnit" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.TermUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Property TermUnit As String" />
+      <MemberSignature Language="F#" Value="member this.TermUnit : string with get, set" Usage="Azure.ResourceManager.Qumulo.Models.MarketplaceDetails.TermUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Term Unit. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

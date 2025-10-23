@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
@@ -31,11 +32,31 @@
   <Docs>
     <summary>
             A class representing the QumuloFileSystemResource data model.
-            A FileSystem Resource by Qumulo
+            Concrete tracked resource types can be created by aliasing this type using a specific property type.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QumuloFileSystemResourceData (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.#ctor(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As AzureLocation)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData" Usage="new Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData location" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QumuloFileSystemResourceData (Azure.Core.AzureLocation location, Azure.ResourceManager.Qumulo.Models.MarketplaceDetails marketplaceDetails, Azure.ResourceManager.Qumulo.Models.StorageSku storageSku, Azure.ResourceManager.Qumulo.Models.QumuloUserDetails userDetails, string delegatedSubnetId, string adminPassword, int initialCapacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.Qumulo.Models.MarketplaceDetails marketplaceDetails, valuetype Azure.ResourceManager.Qumulo.Models.StorageSku storageSku, class Azure.ResourceManager.Qumulo.Models.QumuloUserDetails userDetails, string delegatedSubnetId, string adminPassword, int32 initialCapacity) cil managed" />
@@ -46,8 +67,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="marketplaceDetails" Type="Azure.ResourceManager.Qumulo.Models.MarketplaceDetails" />
@@ -81,13 +108,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Initial administrator password of the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArmProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Qumulo.Models.QumuloArmProvisioningState? ArmProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Qumulo.Models.QumuloArmProvisioningState&gt; ArmProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.ArmProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArmProvisioningState As Nullable(Of QumuloArmProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ArmProvisioningState : Nullable&lt;Azure.ResourceManager.Qumulo.Models.QumuloArmProvisioningState&gt;" Usage="Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.ArmProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Qumulo.Models.QumuloArmProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Provisioning State of the resource. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -123,7 +170,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -144,7 +191,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -165,7 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Models.ManagedServiceIdentity</ReturnType>
@@ -186,13 +233,22 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Storage capacity in TB. </summary>
+        <summary>
+            Storage capacity in TB.
+            This property has been removed since api-version 2024-06-19
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +262,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -232,7 +288,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.Models.MarketplaceDetails</ReturnType>
@@ -253,7 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Net.IPAddress&gt;</ReturnType>
@@ -274,13 +330,22 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Qumulo.Models.QumuloProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Provisioning State of the resource. </summary>
+        <summary>
+            Provisioning State of the resource.
+            Please use <see cref="P:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.ArmProvisioningState" /> instead.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,10 +360,39 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.Models.StorageSku</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Storage Sku.
+            This property has been deprecated, please use <see cref="P:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.StorageSkuName" /> instead.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageSkuName">
+      <MemberSignature Language="C#" Value="public string StorageSkuName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StorageSkuName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.StorageSkuName" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageSkuName As String" />
+      <MemberSignature Language="F#" Value="member this.StorageSkuName : string with get, set" Usage="Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData.StorageSkuName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Storage Sku. </summary>
@@ -318,7 +412,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData</ReturnType>
@@ -350,7 +444,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -381,7 +475,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Qumulo.QumuloFileSystemResourceData</ReturnType>
@@ -413,7 +507,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -426,7 +520,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +536,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -470,7 +564,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Qumulo</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

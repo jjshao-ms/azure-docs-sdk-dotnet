@@ -8,6 +8,7 @@
     <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,16 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName="CheckPolicyRestrictionsContent">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent CheckPolicyRestrictionsContent (Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails resourceDetails = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; pendingFields = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent CheckPolicyRestrictionsContent (Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails resourceDetails, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; pendingFields);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent CheckPolicyRestrictionsContent(class Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails resourceDetails, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; pendingFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckPolicyRestrictionsContent(Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails,System.Collections.Generic.IEnumerable{Azure.ResourceManager.PolicyInsights.Models.PendingField})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckPolicyRestrictionsContent (Optional resourceDetails As CheckRestrictionsResourceDetails = Nothing, Optional pendingFields As IEnumerable(Of PendingField) = Nothing) As CheckPolicyRestrictionsContent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckPolicyRestrictionsContent (resourceDetails As CheckRestrictionsResourceDetails, pendingFields As IEnumerable(Of PendingField)) As CheckPolicyRestrictionsContent" />
       <MemberSignature Language="F#" Value="static member CheckPolicyRestrictionsContent : Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails * seq&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; -&gt; Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckPolicyRestrictionsContent (resourceDetails, pendingFields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent</ReturnType>
       </ReturnValue>
@@ -44,6 +51,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CheckPolicyRestrictionsContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent CheckPolicyRestrictionsContent (Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails resourceDetails = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; pendingFields = default, bool? includeAuditEffect = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent CheckPolicyRestrictionsContent(class Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails resourceDetails, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; pendingFields, valuetype System.Nullable`1&lt;bool&gt; includeAuditEffect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckPolicyRestrictionsContent(Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails,System.Collections.Generic.IEnumerable{Azure.ResourceManager.PolicyInsights.Models.PendingField},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckPolicyRestrictionsContent (Optional resourceDetails As CheckRestrictionsResourceDetails = Nothing, Optional pendingFields As IEnumerable(Of PendingField) = Nothing, Optional includeAuditEffect As Nullable(Of Boolean) = Nothing) As CheckPolicyRestrictionsContent" />
+      <MemberSignature Language="F#" Value="static member CheckPolicyRestrictionsContent : Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails * seq&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt; * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckPolicyRestrictionsContent (resourceDetails, pendingFields, includeAuditEffect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceDetails" Type="Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="pendingFields" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.PendingField&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="includeAuditEffect" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceDetails"> The information about the resource that will be evaluated. </param>
+        <param name="pendingFields"> The list of fields and values that should be evaluated for potential restrictions. </param>
+        <param name="includeAuditEffect"> Whether to include policies with the 'audit' effect in the results. Defaults to false. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CheckPolicyRestrictionsResult">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsResult CheckPolicyRestrictionsResult (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.FieldRestrictions&gt; fieldRestrictions = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult&gt; policyEvaluations = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsResult CheckPolicyRestrictionsResult(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.FieldRestrictions&gt; fieldRestrictions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult&gt; policyEvaluations) cil managed" />
@@ -54,7 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.CheckPolicyRestrictionsResult</ReturnType>
@@ -71,6 +106,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CheckRestrictionEvaluationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails CheckRestrictionEvaluationDetails (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails&gt; evaluatedExpressions = default, Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails ifNotExistsDetails = default, string reason = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails CheckRestrictionEvaluationDetails(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails&gt; evaluatedExpressions, class Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails ifNotExistsDetails, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckRestrictionEvaluationDetails(System.Collections.Generic.IEnumerable{Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails},Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckRestrictionEvaluationDetails (Optional evaluatedExpressions As IEnumerable(Of ExpressionEvaluationDetails) = Nothing, Optional ifNotExistsDetails As IfNotExistsEvaluationDetails = Nothing, Optional reason As String = Nothing) As CheckRestrictionEvaluationDetails" />
+      <MemberSignature Language="F#" Value="static member CheckRestrictionEvaluationDetails : seq&lt;Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails&gt; * Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails * string -&gt; Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.CheckRestrictionEvaluationDetails (evaluatedExpressions, ifNotExistsDetails, reason)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evaluatedExpressions" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ifNotExistsDetails" Type="Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="reason" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="evaluatedExpressions"> Details of the evaluated expressions. </param>
+        <param name="ifNotExistsDetails"> Evaluation details of IfNotExists effect. </param>
+        <param name="reason"> The reason for the evaluation result. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CheckRestrictionsResourceDetails">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails CheckRestrictionsResourceDetails (BinaryData resourceContent = default, string apiVersion = default, string scope = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails CheckRestrictionsResourceDetails(class System.BinaryData resourceContent, string apiVersion, string scope) cil managed" />
@@ -80,7 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionsResourceDetails</ReturnType>
@@ -109,7 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComplianceDetail</ReturnType>
@@ -136,7 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComponentEventDetails</ReturnType>
@@ -167,6 +230,156 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ComponentExpressionEvaluationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails ComponentExpressionEvaluationDetails (string result = default, string expression = default, string expressionKind = default, string path = default, BinaryData expressionValue = default, BinaryData targetValue = default, string operator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails ComponentExpressionEvaluationDetails(string result, string expression, string expressionKind, string path, class System.BinaryData expressionValue, class System.BinaryData targetValue, string operator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentExpressionEvaluationDetails(System.String,System.String,System.String,System.String,System.BinaryData,System.BinaryData,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComponentExpressionEvaluationDetails (Optional result As String = Nothing, Optional expression As String = Nothing, Optional expressionKind As String = Nothing, Optional path As String = Nothing, Optional expressionValue As BinaryData = Nothing, Optional targetValue As BinaryData = Nothing, Optional operator As String = Nothing) As ComponentExpressionEvaluationDetails" />
+      <MemberSignature Language="F#" Value="static member ComponentExpressionEvaluationDetails : string * string * string * string * BinaryData * BinaryData * string -&gt; Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentExpressionEvaluationDetails (result, expression, expressionKind, path, expressionValue, targetValue, operator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expression" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expressionKind" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="path" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expressionValue" Type="System.BinaryData" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="targetValue" Type="System.BinaryData" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="operator" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="result"> Evaluation result. </param>
+        <param name="expression"> Expression evaluated. </param>
+        <param name="expressionKind"> The kind of expression that was evaluated. </param>
+        <param name="path"> Property path if the expression is a field or an alias. </param>
+        <param name="expressionValue"> Value of the expression. </param>
+        <param name="targetValue"> Target value to be compared with the expression value. </param>
+        <param name="operator"> Operator to compare the expression value and the target value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentPolicyEvaluationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails ComponentPolicyEvaluationDetails (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails&gt; evaluatedExpressions = default, string reason = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails ComponentPolicyEvaluationDetails(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails&gt; evaluatedExpressions, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentPolicyEvaluationDetails(System.Collections.Generic.IEnumerable{Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComponentPolicyEvaluationDetails (Optional evaluatedExpressions As IEnumerable(Of ComponentExpressionEvaluationDetails) = Nothing, Optional reason As String = Nothing) As ComponentPolicyEvaluationDetails" />
+      <MemberSignature Language="F#" Value="static member ComponentPolicyEvaluationDetails : seq&lt;Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails&gt; * string -&gt; Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentPolicyEvaluationDetails (evaluatedExpressions, reason)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evaluatedExpressions" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.ComponentExpressionEvaluationDetails&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="reason" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="evaluatedExpressions"> Details of the evaluated expressions. </param>
+        <param name="reason"> Additional textual reason for the evaluation outcome. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentPolicyState">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState ComponentPolicyState (string odataId = default, string odataContext = default, DateTimeOffset? timestamp = default, string componentId = default, string componentType = default, string componentName = default, string resourceId = default, string policyAssignmentId = default, string policyDefinitionId = default, string subscriptionId = default, string resourceType = default, string resourceLocation = default, string resourceGroup = default, string policyAssignmentName = default, string policyAssignmentOwner = default, string policyAssignmentParameters = default, string policyAssignmentScope = default, string policyDefinitionName = default, string policyDefinitionAction = default, string policyDefinitionCategory = default, string policySetDefinitionId = default, string policySetDefinitionName = default, string policySetDefinitionOwner = default, string policySetDefinitionCategory = default, string policySetDefinitionParameters = default, string policyDefinitionReferenceId = default, string complianceState = default, Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails policyEvaluationDetails = default, System.Collections.Generic.IEnumerable&lt;string&gt; policyDefinitionGroupNames = default, string policyDefinitionVersion = default, string policySetDefinitionVersion = default, string policyAssignmentVersion = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,BinaryData&gt; additionalProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState ComponentPolicyState(string odataId, string odataContext, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, string componentId, string componentType, string componentName, string resourceId, string policyAssignmentId, string policyDefinitionId, string subscriptionId, string resourceType, string resourceLocation, string resourceGroup, string policyAssignmentName, string policyAssignmentOwner, string policyAssignmentParameters, string policyAssignmentScope, string policyDefinitionName, string policyDefinitionAction, string policyDefinitionCategory, string policySetDefinitionId, string policySetDefinitionName, string policySetDefinitionOwner, string policySetDefinitionCategory, string policySetDefinitionParameters, string policyDefinitionReferenceId, string complianceState, class Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails policyEvaluationDetails, class System.Collections.Generic.IEnumerable`1&lt;string&gt; policyDefinitionGroupNames, string policyDefinitionVersion, string policySetDefinitionVersion, string policyAssignmentVersion, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class System.BinaryData&gt; additionalProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentPolicyState(System.String,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComponentPolicyState (Optional odataId As String = Nothing, Optional odataContext As String = Nothing, Optional timestamp As Nullable(Of DateTimeOffset) = Nothing, Optional componentId As String = Nothing, Optional componentType As String = Nothing, Optional componentName As String = Nothing, Optional resourceId As String = Nothing, Optional policyAssignmentId As String = Nothing, Optional policyDefinitionId As String = Nothing, Optional subscriptionId As String = Nothing, Optional resourceType As String = Nothing, Optional resourceLocation As String = Nothing, Optional resourceGroup As String = Nothing, Optional policyAssignmentName As String = Nothing, Optional policyAssignmentOwner As String = Nothing, Optional policyAssignmentParameters As String = Nothing, Optional policyAssignmentScope As String = Nothing, Optional policyDefinitionName As String = Nothing, Optional policyDefinitionAction As String = Nothing, Optional policyDefinitionCategory As String = Nothing, Optional policySetDefinitionId As String = Nothing, Optional policySetDefinitionName As String = Nothing, Optional policySetDefinitionOwner As String = Nothing, Optional policySetDefinitionCategory As String = Nothing, Optional policySetDefinitionParameters As String = Nothing, Optional policyDefinitionReferenceId As String = Nothing, Optional complianceState As String = Nothing, Optional policyEvaluationDetails As ComponentPolicyEvaluationDetails = Nothing, Optional policyDefinitionGroupNames As IEnumerable(Of String) = Nothing, Optional policyDefinitionVersion As String = Nothing, Optional policySetDefinitionVersion As String = Nothing, Optional policyAssignmentVersion As String = Nothing, Optional additionalProperties As IReadOnlyDictionary(Of String, BinaryData) = Nothing) As ComponentPolicyState" />
+      <MemberSignature Language="F#" Value="static member ComponentPolicyState : string * string * Nullable&lt;DateTimeOffset&gt; * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * string * Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails * seq&lt;string&gt; * string * string * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, BinaryData&gt; -&gt; Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.ComponentPolicyState (odataId, odataContext, timestamp, componentId, componentType, componentName, resourceId, policyAssignmentId, policyDefinitionId, subscriptionId, resourceType, resourceLocation, resourceGroup, policyAssignmentName, policyAssignmentOwner, policyAssignmentParameters, policyAssignmentScope, policyDefinitionName, policyDefinitionAction, policyDefinitionCategory, policySetDefinitionId, policySetDefinitionName, policySetDefinitionOwner, policySetDefinitionCategory, policySetDefinitionParameters, policyDefinitionReferenceId, complianceState, policyEvaluationDetails, policyDefinitionGroupNames, policyDefinitionVersion, policySetDefinitionVersion, policyAssignmentVersion, additionalProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="odataId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="odataContext" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="timestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="componentId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="componentType" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="componentName" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceId" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentId" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionId" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionId" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="System.String" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceLocation" Type="System.String" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceGroup" Type="System.String" Index="12" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentName" Type="System.String" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentOwner" Type="System.String" Index="14" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentParameters" Type="System.String" Index="15" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentScope" Type="System.String" Index="16" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionName" Type="System.String" Index="17" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionAction" Type="System.String" Index="18" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionCategory" Type="System.String" Index="19" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionId" Type="System.String" Index="20" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionName" Type="System.String" Index="21" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionOwner" Type="System.String" Index="22" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionCategory" Type="System.String" Index="23" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionParameters" Type="System.String" Index="24" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionReferenceId" Type="System.String" Index="25" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="complianceState" Type="System.String" Index="26" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyEvaluationDetails" Type="Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyEvaluationDetails" Index="27" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionGroupNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="28" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionVersion" Type="System.String" Index="29" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policySetDefinitionVersion" Type="System.String" Index="30" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentVersion" Type="System.String" Index="31" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.BinaryData&gt;" Index="32" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="odataId"> OData entity ID; always set to null since component policy state records do not have an entity ID. </param>
+        <param name="odataContext"> OData context string; used by OData clients to resolve type information based on metadata. </param>
+        <param name="timestamp"> Timestamp for the component policy state record. </param>
+        <param name="componentId"> Component Id. </param>
+        <param name="componentType"> Component type. </param>
+        <param name="componentName"> Component name. </param>
+        <param name="resourceId"> Resource ID. </param>
+        <param name="policyAssignmentId"> Policy assignment ID. </param>
+        <param name="policyDefinitionId"> Policy definition ID. </param>
+        <param name="subscriptionId"> Subscription ID. </param>
+        <param name="resourceType"> Resource type. </param>
+        <param name="resourceLocation"> Resource location. </param>
+        <param name="resourceGroup"> Resource group name. </param>
+        <param name="policyAssignmentName"> Policy assignment name. </param>
+        <param name="policyAssignmentOwner"> Policy assignment owner. </param>
+        <param name="policyAssignmentParameters"> Policy assignment parameters. </param>
+        <param name="policyAssignmentScope"> Policy assignment scope. </param>
+        <param name="policyDefinitionName"> Policy definition name. </param>
+        <param name="policyDefinitionAction"> Policy definition action, i.e. effect. </param>
+        <param name="policyDefinitionCategory"> Policy definition category. </param>
+        <param name="policySetDefinitionId"> Policy set definition ID, if the policy assignment is for a policy set. </param>
+        <param name="policySetDefinitionName"> Policy set definition name, if the policy assignment is for a policy set. </param>
+        <param name="policySetDefinitionOwner"> Policy set definition owner, if the policy assignment is for a policy set. </param>
+        <param name="policySetDefinitionCategory"> Policy set definition category, if the policy assignment is for a policy set. </param>
+        <param name="policySetDefinitionParameters"> Policy set definition parameters, if the policy assignment is for a policy set. </param>
+        <param name="policyDefinitionReferenceId"> Reference ID for the policy definition inside the policy set, if the policy assignment is for a policy set. </param>
+        <param name="complianceState"> Compliance state of the resource. </param>
+        <param name="policyEvaluationDetails"> Policy evaluation details. This is only included in the response if the request contains $expand=PolicyEvaluationDetails. </param>
+        <param name="policyDefinitionGroupNames"> Policy definition group names. </param>
+        <param name="policyDefinitionVersion"> Evaluated policy definition version. </param>
+        <param name="policySetDefinitionVersion"> Evaluated policy set definition version. </param>
+        <param name="policyAssignmentVersion"> Evaluated policy assignment version. </param>
+        <param name="additionalProperties"> Additional Properties. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.ComponentPolicyState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ComponentStateDetails">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.ComponentStateDetails ComponentStateDetails (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, DateTimeOffset? timestamp = default, string complianceState = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,BinaryData&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.ComponentStateDetails ComponentStateDetails(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, string complianceState, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class System.BinaryData&gt; additionalProperties) cil managed" />
@@ -177,7 +390,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ComponentStateDetails</ReturnType>
@@ -214,7 +427,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.ExpressionEvaluationDetails</ReturnType>
@@ -242,17 +455,25 @@
       </Docs>
     </Member>
     <Member MemberName="FieldRestriction">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction (Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult? result = default, string defaultValue = default, System.Collections.Generic.IEnumerable&lt;string&gt; values = default, Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction (Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult? result, string defaultValue, System.Collections.Generic.IEnumerable&lt;string&gt; values, Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult&gt; result, string defaultValue, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values, class Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.FieldRestriction(System.Nullable{Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.PolicyInsights.Models.PolicyReference)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FieldRestriction (Optional result As Nullable(Of FieldRestrictionResult) = Nothing, Optional defaultValue As String = Nothing, Optional values As IEnumerable(Of String) = Nothing, Optional policy As PolicyReference = Nothing) As FieldRestriction" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FieldRestriction (result As Nullable(Of FieldRestrictionResult), defaultValue As String, values As IEnumerable(Of String), policy As PolicyReference) As FieldRestriction" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member FieldRestriction : Nullable&lt;Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.PolicyInsights.Models.PolicyReference -&gt; Azure.ResourceManager.PolicyInsights.Models.FieldRestriction" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.FieldRestriction (result, defaultValue, values, policy)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction (Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult? result = default, string defaultValue = default, System.Collections.Generic.IEnumerable&lt;string&gt; values = default, Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FieldRestriction (Optional result As Nullable(Of FieldRestrictionResult) = Nothing, Optional defaultValue As String = Nothing, Optional values As IEnumerable(Of String) = Nothing, Optional policy As PolicyReference = Nothing) As FieldRestriction" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.FieldRestriction</ReturnType>
       </ReturnValue>
@@ -272,6 +493,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FieldRestriction">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction (Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult? result = default, string defaultValue = default, System.Collections.Generic.IEnumerable&lt;string&gt; values = default, Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy = default, string policyEffect = default, string reason = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.FieldRestriction FieldRestriction(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult&gt; result, string defaultValue, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values, class Azure.ResourceManager.PolicyInsights.Models.PolicyReference policy, string policyEffect, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.FieldRestriction(System.Nullable{Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.PolicyInsights.Models.PolicyReference,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FieldRestriction (Optional result As Nullable(Of FieldRestrictionResult) = Nothing, Optional defaultValue As String = Nothing, Optional values As IEnumerable(Of String) = Nothing, Optional policy As PolicyReference = Nothing, Optional policyEffect As String = Nothing, Optional reason As String = Nothing) As FieldRestriction" />
+      <MemberSignature Language="F#" Value="static member FieldRestriction : Nullable&lt;Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.PolicyInsights.Models.PolicyReference * string * string -&gt; Azure.ResourceManager.PolicyInsights.Models.FieldRestriction" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.FieldRestriction (result, defaultValue, values, policy, policyEffect, reason)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.FieldRestriction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.Nullable&lt;Azure.ResourceManager.PolicyInsights.Models.FieldRestrictionResult&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="defaultValue" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policy" Type="Azure.ResourceManager.PolicyInsights.Models.PolicyReference" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyEffect" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="reason" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="result"> The type of restriction that is imposed on the field. </param>
+        <param name="defaultValue"> The value that policy will set for the field if the user does not provide a value. </param>
+        <param name="values"> The values that policy either requires or denies for the field. </param>
+        <param name="policy"> The details of the policy that is causing the field restriction. </param>
+        <param name="policyEffect"> The effect of the policy that is causing the field restriction. http://aka.ms/policyeffects. </param>
+        <param name="reason"> The reason for the restriction. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.FieldRestriction" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.FieldRestriction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FieldRestrictions">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.FieldRestrictions FieldRestrictions (string field = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.FieldRestriction&gt; restrictions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.FieldRestrictions FieldRestrictions(string field, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.FieldRestriction&gt; restrictions) cil managed" />
@@ -282,7 +537,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.FieldRestrictions</ReturnType>
@@ -309,7 +564,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.IfNotExistsEvaluationDetails</ReturnType>
@@ -335,7 +590,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PendingField</ReturnType>
@@ -362,7 +617,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyAssignmentSummary</ReturnType>
@@ -395,7 +650,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.PolicyAttestationData</ReturnType>
@@ -448,7 +703,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyDefinitionSummary</ReturnType>
@@ -481,7 +736,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyDetails</ReturnType>
@@ -516,7 +771,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationDetails</ReturnType>
@@ -543,8 +798,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult</ReturnType>
       </ReturnValue>
@@ -562,6 +823,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PolicyEvaluationResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult PolicyEvaluationResult (Azure.ResourceManager.PolicyInsights.Models.PolicyReference policyInfo = default, string evaluationResult = default, Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails checkRestrictionEvaluationDetails = default, string policyEffect = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult PolicyEvaluationResult(class Azure.ResourceManager.PolicyInsights.Models.PolicyReference policyInfo, string evaluationResult, class Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails checkRestrictionEvaluationDetails, string policyEffect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.PolicyEvaluationResult(Azure.ResourceManager.PolicyInsights.Models.PolicyReference,System.String,Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolicyEvaluationResult (Optional policyInfo As PolicyReference = Nothing, Optional evaluationResult As String = Nothing, Optional checkRestrictionEvaluationDetails As CheckRestrictionEvaluationDetails = Nothing, Optional policyEffect As String = Nothing) As PolicyEvaluationResult" />
+      <MemberSignature Language="F#" Value="static member PolicyEvaluationResult : Azure.ResourceManager.PolicyInsights.Models.PolicyReference * string * Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails * string -&gt; Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.PolicyEvaluationResult (policyInfo, evaluationResult, checkRestrictionEvaluationDetails, policyEffect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyInfo" Type="Azure.ResourceManager.PolicyInsights.Models.PolicyReference" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="evaluationResult" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="checkRestrictionEvaluationDetails" Type="Azure.ResourceManager.PolicyInsights.Models.CheckRestrictionEvaluationDetails" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyEffect" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="policyInfo"> The details of the policy that was evaluated. </param>
+        <param name="evaluationResult"> The result of the policy evaluation against the resource. This will typically be 'NonCompliant' but may contain other values if errors were encountered. </param>
+        <param name="checkRestrictionEvaluationDetails"> The detailed results of the policy expressions and values that were evaluated. </param>
+        <param name="policyEffect"> The details of the effect that was applied to the resource. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.Models.PolicyEvaluationResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PolicyEvent">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.Models.PolicyEvent PolicyEvent (string odataId = default, string odataContext = default, DateTimeOffset? timestamp = default, Azure.Core.ResourceIdentifier resourceId = default, Azure.Core.ResourceIdentifier policyAssignmentId = default, Azure.Core.ResourceIdentifier policyDefinitionId = default, string effectiveParameters = default, bool? isCompliant = default, string subscriptionId = default, string resourceTypeString = default, Azure.Core.AzureLocation? resourceLocation = default, string resourceGroup = default, string resourceTags = default, string policyAssignmentName = default, string policyAssignmentOwner = default, string policyAssignmentParameters = default, string policyAssignmentScope = default, string policyDefinitionName = default, string policyDefinitionAction = default, string policyDefinitionCategory = default, Azure.Core.ResourceIdentifier policySetDefinitionId = default, string policySetDefinitionName = default, string policySetDefinitionOwner = default, string policySetDefinitionCategory = default, string policySetDefinitionParameters = default, string managementGroupIds = default, string policyDefinitionReferenceId = default, string complianceState = default, Guid? tenantId = default, string principalOid = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.PolicyInsights.Models.ComponentEventDetails&gt; components = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,BinaryData&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.Models.PolicyEvent PolicyEvent(string odataId, string odataContext, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, class Azure.Core.ResourceIdentifier resourceId, class Azure.Core.ResourceIdentifier policyAssignmentId, class Azure.Core.ResourceIdentifier policyDefinitionId, string effectiveParameters, valuetype System.Nullable`1&lt;bool&gt; isCompliant, string subscriptionId, string resourceTypeString, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; resourceLocation, string resourceGroup, string resourceTags, string policyAssignmentName, string policyAssignmentOwner, string policyAssignmentParameters, string policyAssignmentScope, string policyDefinitionName, string policyDefinitionAction, string policyDefinitionCategory, class Azure.Core.ResourceIdentifier policySetDefinitionId, string policySetDefinitionName, string policySetDefinitionOwner, string policySetDefinitionCategory, string policySetDefinitionParameters, string managementGroupIds, string policyDefinitionReferenceId, string complianceState, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, string principalOid, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.PolicyInsights.Models.ComponentEventDetails&gt; components, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class System.BinaryData&gt; additionalProperties) cil managed" />
@@ -572,7 +863,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyEvent</ReturnType>
@@ -659,7 +950,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyGroupSummary</ReturnType>
@@ -686,7 +977,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.PolicyMetadataData</ReturnType>
@@ -733,7 +1024,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyReference</ReturnType>
@@ -755,6 +1046,62 @@
       </Docs>
     </Member>
     <Member MemberName="PolicyRemediationData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.PolicyRemediationData PolicyRemediationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.ResourceIdentifier policyAssignmentId = default, string policyDefinitionReferenceId = default, Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode? resourceDiscoveryMode = default, string provisioningState = default, DateTimeOffset? createdOn = default, DateTimeOffset? lastUpdatedOn = default, Azure.ResourceManager.PolicyInsights.Models.RemediationFilters filter = default, Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary deploymentStatus = default, string statusMessage = default, string correlationId = default, int? resourceCount = default, int? parallelDeployments = default, float? failureThresholdPercentage = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.PolicyRemediationData PolicyRemediationData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.Core.ResourceIdentifier policyAssignmentId, string policyDefinitionReferenceId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode&gt; resourceDiscoveryMode, string provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedOn, class Azure.ResourceManager.PolicyInsights.Models.RemediationFilters filter, class Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary deploymentStatus, string statusMessage, string correlationId, valuetype System.Nullable`1&lt;int32&gt; resourceCount, valuetype System.Nullable`1&lt;int32&gt; parallelDeployments, valuetype System.Nullable`1&lt;float32&gt; failureThresholdPercentage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.PolicyRemediationData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.Core.ResourceIdentifier,System.String,System.Nullable{Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},Azure.ResourceManager.PolicyInsights.Models.RemediationFilters,Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolicyRemediationData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional policyAssignmentId As ResourceIdentifier = Nothing, Optional policyDefinitionReferenceId As String = Nothing, Optional resourceDiscoveryMode As Nullable(Of ResourceDiscoveryMode) = Nothing, Optional provisioningState As String = Nothing, Optional createdOn As Nullable(Of DateTimeOffset) = Nothing, Optional lastUpdatedOn As Nullable(Of DateTimeOffset) = Nothing, Optional filter As RemediationFilters = Nothing, Optional deploymentStatus As RemediationDeploymentSummary = Nothing, Optional statusMessage As String = Nothing, Optional correlationId As String = Nothing, Optional resourceCount As Nullable(Of Integer) = Nothing, Optional parallelDeployments As Nullable(Of Integer) = Nothing, Optional failureThresholdPercentage As Nullable(Of Single) = Nothing) As PolicyRemediationData" />
+      <MemberSignature Language="F#" Value="static member PolicyRemediationData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.Core.ResourceIdentifier * string * Nullable&lt;Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Azure.ResourceManager.PolicyInsights.Models.RemediationFilters * Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;single&gt; -&gt; Azure.ResourceManager.PolicyInsights.PolicyRemediationData" Usage="Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.PolicyRemediationData (id, name, resourceType, systemData, policyAssignmentId, policyDefinitionReferenceId, resourceDiscoveryMode, provisioningState, createdOn, lastUpdatedOn, filter, deploymentStatus, statusMessage, correlationId, resourceCount, parallelDeployments, failureThresholdPercentage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.PolicyInsights.PolicyRemediationData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyAssignmentId" Type="Azure.Core.ResourceIdentifier" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="policyDefinitionReferenceId" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceDiscoveryMode" Type="System.Nullable&lt;Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="createdOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="lastUpdatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="filter" Type="Azure.ResourceManager.PolicyInsights.Models.RemediationFilters" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deploymentStatus" Type="Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="statusMessage" Type="System.String" Index="12" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="correlationId" Type="System.String" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceCount" Type="System.Nullable&lt;System.Int32&gt;" Index="14" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="parallelDeployments" Type="System.Nullable&lt;System.Int32&gt;" Index="15" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="failureThresholdPercentage" Type="System.Nullable&lt;System.Single&gt;" Index="16" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="policyAssignmentId"> The resource ID of the policy assignment that should be remediated. </param>
+        <param name="policyDefinitionReferenceId"> The policy definition reference ID of the individual definition that should be remediated. Required when the policy assignment being remediated assigns a policy set definition. </param>
+        <param name="resourceDiscoveryMode"> The way resources to remediate are discovered. Defaults to ExistingNonCompliant if not specified. </param>
+        <param name="provisioningState"> The status of the remediation. This refers to the entire remediation task, not individual deployments. Allowed values are Evaluating, Canceled, Cancelling, Failed, Complete, or Succeeded. </param>
+        <param name="createdOn"> The time at which the remediation was created. </param>
+        <param name="lastUpdatedOn"> The time at which the remediation was last updated. </param>
+        <param name="filter"> The filters that will be applied to determine which resources to remediate. </param>
+        <param name="deploymentStatus"> The deployment status summary for all deployments created by the remediation. </param>
+        <param name="statusMessage"> The remediation status message. Provides additional details regarding the state of the remediation. </param>
+        <param name="correlationId"> The remediation correlation Id. Can be used to find events related to the remediation in the activity log. </param>
+        <param name="resourceCount"> Determines the max number of resources that can be remediated by the remediation job. If not provided, the default resource count is used. </param>
+        <param name="parallelDeployments"> Determines how many resources to remediate at any given time. Can be used to increase or reduce the pace of the remediation. If not provided, the default parallel deployments value is used. </param>
+        <param name="failureThresholdPercentage"> The remediation failure threshold settings. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.PolicyInsights.PolicyRemediationData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.PolicyInsights.PolicyRemediationData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyRemediationData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.PolicyInsights.PolicyRemediationData PolicyRemediationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.ResourceIdentifier policyAssignmentId = default, string policyDefinitionReferenceId = default, Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode? resourceDiscoveryMode = default, string provisioningState = default, DateTimeOffset? createdOn = default, DateTimeOffset? lastUpdatedOn = default, System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; filterLocations = default, Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary deploymentStatus = default, string statusMessage = default, string correlationId = default, int? resourceCount = default, int? parallelDeployments = default, float? failureThresholdPercentage = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.PolicyInsights.PolicyRemediationData PolicyRemediationData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.Core.ResourceIdentifier policyAssignmentId, string policyDefinitionReferenceId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode&gt; resourceDiscoveryMode, string provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedOn, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; filterLocations, class Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary deploymentStatus, string statusMessage, string correlationId, valuetype System.Nullable`1&lt;int32&gt; resourceCount, valuetype System.Nullable`1&lt;int32&gt; parallelDeployments, valuetype System.Nullable`1&lt;float32&gt; failureThresholdPercentage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PolicyInsights.Models.ArmPolicyInsightsModelFactory.PolicyRemediationData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.Core.ResourceIdentifier,System.String,System.Nullable{Azure.ResourceManager.PolicyInsights.Models.ResourceDiscoveryMode},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{Azure.Core.AzureLocation},Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Single})" />
@@ -764,8 +1111,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.PolicyRemediationData</ReturnType>
       </ReturnValue>
@@ -821,7 +1174,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyState</ReturnType>
@@ -914,7 +1267,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicySummary</ReturnType>
@@ -945,7 +1298,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicySummaryResults</ReturnType>
@@ -980,7 +1333,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.PolicyTrackedResourceRecord</ReturnType>
@@ -1013,7 +1366,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.RemediationDeployment</ReturnType>
@@ -1050,7 +1403,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.RemediationDeploymentSummary</ReturnType>
@@ -1079,7 +1432,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.SlimPolicyMetadata</ReturnType>
@@ -1122,7 +1475,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.PolicyInsights</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.PolicyInsights.Models.TrackedResourceModificationDetails</ReturnType>
