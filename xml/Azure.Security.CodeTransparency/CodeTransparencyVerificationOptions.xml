@@ -1,0 +1,110 @@
+<Type Name="CodeTransparencyVerificationOptions" FullName="Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions">
+  <TypeSignature Language="C#" Value="public sealed class CodeTransparencyVerificationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeTransparencyVerificationOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeTransparencyVerificationOptions" />
+  <TypeSignature Language="F#" Value="type CodeTransparencyVerificationOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Options controlling <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.VerifyTransparentStatement(System.Byte[],Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions,Azure.Security.CodeTransparency.CodeTransparencyClientOptions)" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTransparencyVerificationOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorizedDomains">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; AuthorizedDomains { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AuthorizedDomains" />
+      <MemberSignature Language="DocId" Value="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthorizedDomains As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AuthorizedDomains : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an authorized list of issuer domains. If provided and not empty, at least one receipt must be issued by one of these domains.
+            Domains are matched case-insensitively.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorizedReceiptBehavior">
+      <MemberSignature Language="C#" Value="public Azure.Security.CodeTransparency.AuthorizedReceiptBehavior AuthorizedReceiptBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Security.CodeTransparency.AuthorizedReceiptBehavior AuthorizedReceiptBehavior" />
+      <MemberSignature Language="DocId" Value="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedReceiptBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthorizedReceiptBehavior As AuthorizedReceiptBehavior" />
+      <MemberSignature Language="F#" Value="member this.AuthorizedReceiptBehavior : Azure.Security.CodeTransparency.AuthorizedReceiptBehavior with get, set" Usage="Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedReceiptBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.AuthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the enforcement behavior for receipts whose issuer domain IS contained in <see cref="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" />.
+            Defaults to <see cref="F:Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.VerifyAllMatching" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnauthorizedReceiptBehavior">
+      <MemberSignature Language="C#" Value="public Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior UnauthorizedReceiptBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior UnauthorizedReceiptBehavior" />
+      <MemberSignature Language="DocId" Value="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.UnauthorizedReceiptBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnauthorizedReceiptBehavior As UnauthorizedReceiptBehavior" />
+      <MemberSignature Language="F#" Value="member this.UnauthorizedReceiptBehavior : Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior with get, set" Usage="Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.UnauthorizedReceiptBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the behavior for receipts whose issuer domain is not in <see cref="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" />.
+            Defaults to <see cref="F:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.VerifyAll" /> to preserve current behavior.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

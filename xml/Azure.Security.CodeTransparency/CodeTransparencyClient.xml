@@ -1030,16 +1030,22 @@ Response<BinaryData> response = await client.GetTransparencyConfigCborAsync();
       </Docs>
     </Member>
     <Member MemberName="RunTransparentStatementVerification">
-      <MemberSignature Language="C#" Value="public void RunTransparentStatementVerification (byte[] transparentStatementCoseSign1Bytes);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunTransparentStatementVerification(unsigned int8[] transparentStatementCoseSign1Bytes) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void RunTransparentStatementVerification (byte[] transparentStatementCoseSign1Bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RunTransparentStatementVerification(unsigned int8[] transparentStatementCoseSign1Bytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.CodeTransparency.CodeTransparencyClient.RunTransparentStatementVerification(System.Byte[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub RunTransparentStatementVerification (transparentStatementCoseSign1Bytes As Byte())" />
-      <MemberSignature Language="F#" Value="member this.RunTransparentStatementVerification : byte[] -&gt; unit" Usage="codeTransparencyClient.RunTransparentStatementVerification transparentStatementCoseSign1Bytes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RunTransparentStatementVerification (transparentStatementCoseSign1Bytes As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member RunTransparentStatementVerification : byte[] -&gt; unit&#xA;override this.RunTransparentStatementVerification : byte[] -&gt; unit" Usage="codeTransparencyClient.RunTransparentStatementVerification transparentStatementCoseSign1Bytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Use the static VerifyTransparentStatement method with options instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the static VerifyTransparentStatement method with options instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1053,8 +1059,93 @@ Response<BinaryData> response = await client.GetTransparencyConfigCborAsync();
             and check if receipt was endorsed by the given service certificate.
             In the case of multiple receipts being embedded in the signature then verify
             all of them.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunTransparentStatementVerification">
+      <MemberSignature Language="C#" Value="public virtual void RunTransparentStatementVerification (byte[] signedStatementCoseSign1Bytes, byte[] receiptCoseSign1Bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RunTransparentStatementVerification(unsigned int8[] signedStatementCoseSign1Bytes, unsigned int8[] receiptCoseSign1Bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.CodeTransparency.CodeTransparencyClient.RunTransparentStatementVerification(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RunTransparentStatementVerification (signedStatementCoseSign1Bytes As Byte(), receiptCoseSign1Bytes As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member RunTransparentStatementVerification : byte[] * byte[] -&gt; unit&#xA;override this.RunTransparentStatementVerification : byte[] * byte[] -&gt; unit" Usage="codeTransparencyClient.RunTransparentStatementVerification (signedStatementCoseSign1Bytes, receiptCoseSign1Bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signedStatementCoseSign1Bytes" Type="System.Byte[]" />
+        <Parameter Name="receiptCoseSign1Bytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="signedStatementCoseSign1Bytes">Signed statement in Cose_Sign1 cbor bytes.</param>
+        <param name="receiptCoseSign1Bytes">Receipt in COSE_Sign1 cbor bytes.</param>
+        <summary>
+            Verify the receipt integrity against the COSE_Sign1 envelope
+            and check if receipt was endorsed by the service public keys.
+            This method expects the issuer in the receipt to match the CodeTransparencyClient client endpoint.
             Calls <!-- see cref="CcfReceiptVerifier.VerifyTransparentStatementReceipt(JsonWebKey, byte[], byte[])"/> for each receipt found in the transparent statement.--></summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when the verification fails.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownIssuerPrefix">
+      <MemberSignature Language="C#" Value="public static readonly string UnknownIssuerPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UnknownIssuerPrefix" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.CodeTransparencyClient.UnknownIssuerPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnknownIssuerPrefix As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable UnknownIssuerPrefix : string" Usage="Azure.Security.CodeTransparency.CodeTransparencyClient.UnknownIssuerPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Prefix for receipts with unknown/unrecognized issuers.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyTransparentStatement">
+      <MemberSignature Language="C#" Value="public static void VerifyTransparentStatement (byte[] transparentStatementCoseSign1Bytes, Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions verificationOptions = default, Azure.Security.CodeTransparency.CodeTransparencyClientOptions clientOptions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyTransparentStatement(unsigned int8[] transparentStatementCoseSign1Bytes, class Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions verificationOptions, class Azure.Security.CodeTransparency.CodeTransparencyClientOptions clientOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.CodeTransparency.CodeTransparencyClient.VerifyTransparentStatement(System.Byte[],Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions,Azure.Security.CodeTransparency.CodeTransparencyClientOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub VerifyTransparentStatement (transparentStatementCoseSign1Bytes As Byte(), Optional verificationOptions As CodeTransparencyVerificationOptions = Nothing, Optional clientOptions As CodeTransparencyClientOptions = Nothing)" />
+      <MemberSignature Language="F#" Value="static member VerifyTransparentStatement : byte[] * Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions * Azure.Security.CodeTransparency.CodeTransparencyClientOptions -&gt; unit" Usage="Azure.Security.CodeTransparency.CodeTransparencyClient.VerifyTransparentStatement (transparentStatementCoseSign1Bytes, verificationOptions, clientOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transparentStatementCoseSign1Bytes" Type="System.Byte[]" />
+        <Parameter Name="verificationOptions" Type="Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions" />
+        <Parameter Name="clientOptions" Type="Azure.Security.CodeTransparency.CodeTransparencyClientOptions" />
+      </Parameters>
+      <Docs>
+        <param name="transparentStatementCoseSign1Bytes">Receipt cbor or Cose_Sign1 (with an embedded receipt) bytes.</param>
+        <param name="verificationOptions">Optional verification options. If null or if <see cref="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" /> is empty, all receipts are verified (original behavior).</param>
+        <param name="clientOptions"> The options for configuring the client instances that download public keys required for verification. </param>
+        <summary>
+            Verify the receipt integrity against the COSE_Sign1 envelope and (optionally) enforce issuer domain authorized-list rules.
+            It will create an instance of CodeTransparencyClient for each issuer domain encountered in the verification process.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+            Thrown when: no receipts exist; authorized-list is provided and no receipt matches any authorized domain; a unauthorized receipt exists while <see cref="F:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.FailIfPresent" /> is selected.
+            </exception>
+        <exception cref="T:System.AggregateException">Thrown containing individual failures encountered during verification.</exception>
       </Docs>
     </Member>
   </Members>

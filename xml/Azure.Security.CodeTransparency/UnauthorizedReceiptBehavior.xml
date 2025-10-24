@@ -1,0 +1,85 @@
+<Type Name="UnauthorizedReceiptBehavior" FullName="Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior">
+  <TypeSignature Language="C#" Value="public enum UnauthorizedReceiptBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnauthorizedReceiptBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UnauthorizedReceiptBehavior" />
+  <TypeSignature Language="F#" Value="type UnauthorizedReceiptBehavior = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Specifies behaviors for receipts whose issuer domains are not contained in <see cref="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.AuthorizedDomains" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FailIfPresent">
+      <MemberSignature Language="C#" Value="FailIfPresent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior FailIfPresent = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.FailIfPresent" />
+      <MemberSignature Language="VB.NET" Value="FailIfPresent" />
+      <MemberSignature Language="F#" Value="FailIfPresent = 2" Usage="Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.FailIfPresent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Fail verification immediately if any receipt exists whose issuer domain is not in the authorized list.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreAll">
+      <MemberSignature Language="C#" Value="IgnoreAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior IgnoreAll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.IgnoreAll" />
+      <MemberSignature Language="VB.NET" Value="IgnoreAll" />
+      <MemberSignature Language="F#" Value="IgnoreAll = 1" Usage="Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.IgnoreAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Ignore (skip verifying) receipts whose issuer domain is not in the authorized list.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyAll">
+      <MemberSignature Language="C#" Value="VerifyAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior VerifyAll = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.VerifyAll" />
+      <MemberSignature Language="VB.NET" Value="VerifyAll" />
+      <MemberSignature Language="F#" Value="VerifyAll = 0" Usage="Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior.VerifyAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.UnauthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Verify receipts even if their issuer domain is not in the authorized list.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

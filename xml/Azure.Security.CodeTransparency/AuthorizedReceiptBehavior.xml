@@ -1,0 +1,85 @@
+<Type Name="AuthorizedReceiptBehavior" FullName="Azure.Security.CodeTransparency.AuthorizedReceiptBehavior">
+  <TypeSignature Language="C#" Value="public enum AuthorizedReceiptBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthorizedReceiptBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Security.CodeTransparency.AuthorizedReceiptBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthorizedReceiptBehavior" />
+  <TypeSignature Language="F#" Value="type AuthorizedReceiptBehavior = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Specifies how receipts whose issuer domains ARE in the authorized list should be enforced.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RequireAll">
+      <MemberSignature Language="C#" Value="RequireAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.AuthorizedReceiptBehavior RequireAll = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.RequireAll" />
+      <MemberSignature Language="VB.NET" Value="RequireAll" />
+      <MemberSignature Language="F#" Value="RequireAll = 2" Usage="Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.RequireAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.AuthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            There MUST be at least one valid receipt for EACH domain in the authorized list (coverage requirement). If a domain has no receipt or only invalid receipts, verification fails.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyAllMatching">
+      <MemberSignature Language="C#" Value="VerifyAllMatching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.AuthorizedReceiptBehavior VerifyAllMatching = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.VerifyAllMatching" />
+      <MemberSignature Language="VB.NET" Value="VerifyAllMatching" />
+      <MemberSignature Language="F#" Value="VerifyAllMatching = 1" Usage="Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.VerifyAllMatching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.AuthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            ALL receipts whose issuer is in the authorized list MUST pass verification. Receipts not in the authorized list are treated according to <see cref="P:Azure.Security.CodeTransparency.CodeTransparencyVerificationOptions.UnauthorizedReceiptBehavior" />.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyAnyMatching">
+      <MemberSignature Language="C#" Value="VerifyAnyMatching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Security.CodeTransparency.AuthorizedReceiptBehavior VerifyAnyMatching = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.VerifyAnyMatching" />
+      <MemberSignature Language="VB.NET" Value="VerifyAnyMatching" />
+      <MemberSignature Language="F#" Value="VerifyAnyMatching = 0" Usage="Azure.Security.CodeTransparency.AuthorizedReceiptBehavior.VerifyAnyMatching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.CodeTransparency</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Security.CodeTransparency.AuthorizedReceiptBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            At least one receipt from any authorized domain must be present and valid.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
