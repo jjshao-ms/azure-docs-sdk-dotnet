@@ -1,7 +1,7 @@
 ---
 title: Azure Arizeaiobservabilityeval SDK for .NET
 description: Reference for Azure Arizeaiobservabilityeval SDK for .NET
-ms.date: 10/23/2025
+ms.date: 10/24/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: arizeaiobservabilityeval
