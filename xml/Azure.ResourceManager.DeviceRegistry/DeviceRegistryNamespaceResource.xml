@@ -1,0 +1,1000 @@
+<Type Name="DeviceRegistryNamespaceResource" FullName="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource">
+  <TypeSignature Language="C#" Value="public class DeviceRegistryNamespaceResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceRegistryNamespaceResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeviceRegistryNamespaceResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of DeviceRegistryNamespaceData), IPersistableModel(Of DeviceRegistryNamespaceData)" />
+  <TypeSignature Language="F#" Value="type DeviceRegistryNamespaceResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;DeviceRegistryNamespaceData&gt;&#xA;    interface IPersistableModel&lt;DeviceRegistryNamespaceData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class representing a DeviceRegistryNamespace along with the instance operations that can be performed on it.
+            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" /> from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetResource method.
+            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> using the GetDeviceRegistryNamespaces method.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeviceRegistryNamespaceResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of DeviceRegistryNamespaceResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; AddTag (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; AddTag(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.AddTag(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTag (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="abstract member AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&#xA;override this.AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="deviceRegistryNamespaceResource.AddTag (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Add a tag to the current resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; AddTagAsync (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; AddTagAsync(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.AddTagAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTagAsync (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="abstract member AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;&#xA;override this.AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.AddTagAsync (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Add a tag to the current resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResourceIdentifier">
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string namespaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string namespaceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.CreateResourceIdentifier(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, namespaceName As String) As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.CreateResourceIdentifier (subscriptionId, resourceGroupName, namespaceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="namespaceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"> The subscriptionId. </param>
+        <param name="resourceGroupName"> The resourceGroupName. </param>
+        <param name="namespaceName"> The namespaceName. </param>
+        <summary> Generate the resource identifier for this resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData Data" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As DeviceRegistryNamespaceData" />
+      <MemberSignature Language="F#" Value="member this.Data : Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the data representing this Feature. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Delete(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="deviceRegistryNamespaceResource.Delete (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Delete a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.DeleteAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="deviceRegistryNamespaceResource.DeleteAsync (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Delete a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; Get (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; Get(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Get(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="abstract member Get : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&#xA;override this.Get : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="deviceRegistryNamespaceResource.Get cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; GetAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; GetAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;&#xA;override this.GetAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceAsset">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt; GetDeviceRegistryNamespaceAsset (string assetName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt; GetDeviceRegistryNamespaceAsset(string assetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAsset(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceAsset (assetName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceAssetResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceAsset : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&#xA;override this.GetDeviceRegistryNamespaceAsset : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAsset (assetName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="assetName"> The name of the asset. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceAsset. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assetName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceAssetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&gt; GetDeviceRegistryNamespaceAssetAsync (string assetName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&gt; GetDeviceRegistryNamespaceAssetAsync(string assetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAssetAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceAssetAsync (assetName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceAssetResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceAssetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&gt;&#xA;override this.GetDeviceRegistryNamespaceAssetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAssetAsync (assetName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="assetName"> The name of the asset. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceAsset. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assetName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceAssets">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetCollection GetDeviceRegistryNamespaceAssets ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetCollection GetDeviceRegistryNamespaceAssets() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAssets" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceAssets () As DeviceRegistryNamespaceAssetCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceAssets : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetCollection&#xA;override this.GetDeviceRegistryNamespaceAssets : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetCollection" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceAssets " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DeviceRegistryNamespaceAssets in the <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryNamespaceAssets and their operations over a DeviceRegistryNamespaceAssetResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDevice">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt; GetDeviceRegistryNamespaceDevice (string deviceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt; GetDeviceRegistryNamespaceDevice(string deviceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDevice(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDevice (deviceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceDeviceResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDevice : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&#xA;override this.GetDeviceRegistryNamespaceDevice : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDevice (deviceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="deviceName"> The name of the device. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDevice. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deviceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDeviceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&gt; GetDeviceRegistryNamespaceDeviceAsync (string deviceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&gt; GetDeviceRegistryNamespaceDeviceAsync(string deviceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDeviceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDeviceAsync (deviceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceDeviceResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDeviceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&gt;&#xA;override this.GetDeviceRegistryNamespaceDeviceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDeviceAsync (deviceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="deviceName"> The name of the device. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDevice. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deviceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDevices">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceCollection GetDeviceRegistryNamespaceDevices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceCollection GetDeviceRegistryNamespaceDevices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDevices" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDevices () As DeviceRegistryNamespaceDeviceCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDevices : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceCollection&#xA;override this.GetDeviceRegistryNamespaceDevices : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceCollection" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDevices " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DeviceRegistryNamespaceDevices in the <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryNamespaceDevices and their operations over a DeviceRegistryNamespaceDeviceResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredAsset">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt; GetDeviceRegistryNamespaceDiscoveredAsset (string discoveredAssetName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt; GetDeviceRegistryNamespaceDiscoveredAsset(string discoveredAssetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAsset(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredAsset (discoveredAssetName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceDiscoveredAssetResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredAsset : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&#xA;override this.GetDeviceRegistryNamespaceDiscoveredAsset : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAsset (discoveredAssetName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="discoveredAssetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="discoveredAssetName"> The name of the discovered asset. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDiscoveredAsset. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="discoveredAssetName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="discoveredAssetName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredAssetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&gt; GetDeviceRegistryNamespaceDiscoveredAssetAsync (string discoveredAssetName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&gt; GetDeviceRegistryNamespaceDiscoveredAssetAsync(string discoveredAssetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAssetAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredAssetAsync (discoveredAssetName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceDiscoveredAssetResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredAssetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&gt;&#xA;override this.GetDeviceRegistryNamespaceDiscoveredAssetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAssetAsync (discoveredAssetName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="discoveredAssetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="discoveredAssetName"> The name of the discovered asset. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDiscoveredAsset. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="discoveredAssetName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="discoveredAssetName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredAssets">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetCollection GetDeviceRegistryNamespaceDiscoveredAssets ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetCollection GetDeviceRegistryNamespaceDiscoveredAssets() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAssets" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredAssets () As DeviceRegistryNamespaceDiscoveredAssetCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredAssets : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetCollection&#xA;override this.GetDeviceRegistryNamespaceDiscoveredAssets : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetCollection" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredAssets " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DeviceRegistryNamespaceDiscoveredAssets in the <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryNamespaceDiscoveredAssets and their operations over a DeviceRegistryNamespaceDiscoveredAssetResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredDevice">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt; GetDeviceRegistryNamespaceDiscoveredDevice (string discoveredDeviceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt; GetDeviceRegistryNamespaceDiscoveredDevice(string discoveredDeviceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDevice(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredDevice (discoveredDeviceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceDiscoveredDeviceResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredDevice : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&#xA;override this.GetDeviceRegistryNamespaceDiscoveredDevice : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDevice (discoveredDeviceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="discoveredDeviceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="discoveredDeviceName"> The name of the discovered device. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDiscoveredDevice. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="discoveredDeviceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="discoveredDeviceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredDeviceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&gt; GetDeviceRegistryNamespaceDiscoveredDeviceAsync (string discoveredDeviceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&gt; GetDeviceRegistryNamespaceDiscoveredDeviceAsync(string discoveredDeviceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDeviceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredDeviceAsync (discoveredDeviceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceDiscoveredDeviceResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredDeviceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&gt;&#xA;override this.GetDeviceRegistryNamespaceDiscoveredDeviceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDeviceAsync (discoveredDeviceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="discoveredDeviceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="discoveredDeviceName"> The name of the discovered device. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a NamespaceDiscoveredDevice. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="discoveredDeviceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="discoveredDeviceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredDevices">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection GetDeviceRegistryNamespaceDiscoveredDevices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection GetDeviceRegistryNamespaceDiscoveredDevices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDevices" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeviceRegistryNamespaceDiscoveredDevices () As DeviceRegistryNamespaceDiscoveredDeviceCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDeviceRegistryNamespaceDiscoveredDevices : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection&#xA;override this.GetDeviceRegistryNamespaceDiscoveredDevices : unit -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection" Usage="deviceRegistryNamespaceResource.GetDeviceRegistryNamespaceDiscoveredDevices " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DeviceRegistryNamespaceDiscoveredDevices in the <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryNamespaceDiscoveredDevices and their operations over a DeviceRegistryNamespaceDiscoveredDeviceResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasData">
+      <MemberSignature Language="C#" Value="public virtual bool HasData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasData" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.HasData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasData As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasData : bool" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.HasData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets whether or not the current instance has data. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Migrate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Migrate (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Migrate(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Migrate(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Migrate (waitUntil As WaitUntil, body As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="deviceRegistryNamespaceResource.Migrate (waitUntil, body, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="body" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="body"> The content of the action request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Migrate the resources into Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="body" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MigrateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; MigrateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; MigrateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.MigrateAsync(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateAsync (waitUntil As WaitUntil, body As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="deviceRegistryNamespaceResource.MigrateAsync (waitUntil, body, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="body" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="body"> The content of the action request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Migrate the resources into Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="body" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; RemoveTag (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; RemoveTag(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.RemoveTag(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTag (key As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&#xA;override this.RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="deviceRegistryNamespaceResource.RemoveTag (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Removes a tag by key from the resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; RemoveTagAsync (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; RemoveTagAsync(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.RemoveTagAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTagAsync (key As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;&#xA;override this.RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.RemoveTagAsync (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Removes a tag by key from the resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.ResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.ResourceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the resource type for the operations. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTags">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; SetTags (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; SetTags(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.SetTags(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTags (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="abstract member SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&#xA;override this.SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="deviceRegistryNamespaceResource.SetTags (tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags to set on the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Replace the tags on the resource with the given set. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTagsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; SetTagsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; SetTagsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.SetTagsAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTagsAsync (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="abstract member SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;&#xA;override this.SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.SetTagsAsync (tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags to set on the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Replace the tags on the resource with the given set. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData IJsonModel&lt;DeviceRegistryNamespaceData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DeviceRegistry#DeviceRegistryNamespaceData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DeviceRegistryNamespaceData Implements IJsonModel(Of DeviceRegistryNamespaceData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData" Usage="deviceRegistryNamespaceResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The reader for deserializing the model. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;DeviceRegistryNamespaceData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DeviceRegistry#DeviceRegistryNamespaceData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of DeviceRegistryNamespaceData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="deviceRegistryNamespaceResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The writer to serialize the model to. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData IPersistableModel&lt;DeviceRegistryNamespaceData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DeviceRegistry#DeviceRegistryNamespaceData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As DeviceRegistryNamespaceData Implements IPersistableModel(Of DeviceRegistryNamespaceData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData" Usage="deviceRegistryNamespaceResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The binary data to be processed. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;DeviceRegistryNamespaceData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DeviceRegistry#DeviceRegistryNamespaceData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of DeviceRegistryNamespaceData).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="deviceRegistryNamespaceResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;DeviceRegistryNamespaceData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DeviceRegistry#DeviceRegistryNamespaceData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of DeviceRegistryNamespaceData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="deviceRegistryNamespaceResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceData&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Update(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, patch As DeviceRegistryNamespacePatch, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="deviceRegistryNamespaceResource.Update (waitUntil, patch, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="patch"> The resource properties to be updated. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Update a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="patch" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, patch As DeviceRegistryNamespacePatch, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.UpdateAsync (waitUntil, patch, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.DeviceRegistry.Models.DeviceRegistryNamespacePatch" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="patch"> The resource properties to be updated. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Update a Namespace. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="patch" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

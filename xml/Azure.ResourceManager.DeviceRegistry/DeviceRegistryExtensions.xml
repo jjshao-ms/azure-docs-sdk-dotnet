@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource&gt;</ReturnType>
@@ -37,18 +39,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="assetName"> Asset name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a Asset
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assets/{assetName}</description></item><item><term>Operation Id</term><description>Asset_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAsset(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a Asset. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="assetName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryAssetAsync">
@@ -61,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource&gt;&gt;</ReturnType>
@@ -71,18 +72,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="assetName"> Asset name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a Asset
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assets/{assetName}</description></item><item><term>Operation Id</term><description>Asset_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAssetAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a Asset. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="assetName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryAssetEndpointProfile">
@@ -95,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource&gt;</ReturnType>
@@ -105,18 +105,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="assetEndpointProfileName"> Asset Endpoint Profile name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a AssetEndpointProfile
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assetEndpointProfiles/{assetEndpointProfileName}</description></item><item><term>Operation Id</term><description>AssetEndpointProfile_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAssetEndpointProfile(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a AssetEndpointProfile. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="assetEndpointProfileName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="assetEndpointProfileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryAssetEndpointProfileAsync">
@@ -129,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource&gt;&gt;</ReturnType>
@@ -139,18 +138,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="assetEndpointProfileName"> Asset Endpoint Profile name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a AssetEndpointProfile
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assetEndpointProfiles/{assetEndpointProfileName}</description></item><item><term>Operation Id</term><description>AssetEndpointProfile_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAssetEndpointProfileAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a AssetEndpointProfile. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="assetEndpointProfileName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="assetEndpointProfileName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryAssetEndpointProfileResource">
@@ -163,6 +160,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource</ReturnType>
@@ -172,12 +170,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistryAssetEndpointProfileResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -194,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileCollection</ReturnType>
@@ -202,11 +198,9 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistryAssetEndpointProfileResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAssetEndpointProfiles" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistryAssetEndpointProfileResources and their operations over a DeviceRegistryAssetEndpointProfileResource. </returns>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary> Gets a collection of DeviceRegistryAssetEndpointProfiles in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryAssetEndpointProfiles and their operations over a DeviceRegistryAssetEndpointProfileResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -222,6 +216,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource&gt;</ReturnType>
@@ -231,11 +226,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List AssetEndpointProfile resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/assetEndpointProfiles</description></item><item><term>Operation Id</term><description>AssetEndpointProfile_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryAssetEndpointProfiles(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> List AssetEndpointProfile resources by subscription ID. </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -252,6 +245,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource&gt;</ReturnType>
@@ -261,12 +255,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List AssetEndpointProfile resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/assetEndpointProfiles</description></item><item><term>Operation Id</term><description>AssetEndpointProfile_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryAssetEndpointProfiles(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List AssetEndpointProfile resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetEndpointProfileResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -282,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource</ReturnType>
@@ -291,12 +284,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistryAssetResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -313,6 +303,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetCollection</ReturnType>
@@ -321,11 +312,9 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistryAssetResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryAssets" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistryAssetResources and their operations over a DeviceRegistryAssetResource. </returns>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary> Gets a collection of DeviceRegistryAssets in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryAssets and their operations over a DeviceRegistryAssetResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -341,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource&gt;</ReturnType>
@@ -350,11 +340,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List Asset resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/assets</description></item><item><term>Operation Id</term><description>Asset_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryAssets(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> List Asset resources by subscription ID. </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -371,6 +359,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource&gt;</ReturnType>
@@ -380,12 +369,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List Asset resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/assets</description></item><item><term>Operation Id</term><description>Asset_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryAssets(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List Asset resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryAssetResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -401,6 +388,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource&gt;</ReturnType>
@@ -411,18 +399,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="billingContainerName"> Name of the billing container. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a BillingContainer
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/billingContainers/{billingContainerName}</description></item><item><term>Operation Id</term><description>BillingContainer_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryBillingContainer(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a BillingContainer. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="billingContainerName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="billingContainerName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryBillingContainerAsync">
@@ -435,6 +421,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource&gt;&gt;</ReturnType>
@@ -445,18 +432,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="billingContainerName"> Name of the billing container. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a BillingContainer
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/billingContainers/{billingContainerName}</description></item><item><term>Operation Id</term><description>BillingContainer_Get</description></item><item><term>Default Api Version</term><description>2024-11-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryBillingContainerAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a BillingContainer. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="billingContainerName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="billingContainerName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistryBillingContainerResource">
@@ -469,6 +454,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource</ReturnType>
@@ -478,12 +464,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistryBillingContainerResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -500,6 +483,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryBillingContainerCollection</ReturnType>
@@ -508,385 +492,291 @@
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistryBillingContainerResources in the SubscriptionResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryBillingContainers" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistryBillingContainerResources and their operations over a DeviceRegistryBillingContainerResource. </returns>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <summary> Gets a collection of DeviceRegistryBillingContainers in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryBillingContainers and their operations over a DeviceRegistryBillingContainerResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAsset">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAsset (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAsset(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAsset(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAsset (resourceGroupResource As ResourceGroupResource, discoveredAssetName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryDiscoveredAssetResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAsset : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAsset (resourceGroupResource, discoveredAssetName, cancellationToken)" />
+    <Member MemberName="GetDeviceRegistryNamespace">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespace (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespace(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespace(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespace (resourceGroupResource As ResourceGroupResource, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespace : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespace (resourceGroupResource, namespaceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="discoveredAssetName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <param name="discoveredAssetName"> Discovered Asset name parameter. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="namespaceName"> The name of the namespace. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a DiscoveredAsset
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/discoveredAssets/{discoveredAssetName}</description></item><item><term>Operation Id</term><description>DiscoveredAsset_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAsset(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a Namespace. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="discoveredAssetName" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="discoveredAssetName" /> is an empty string, and was expected to be non-empty. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;&gt; GetDeviceRegistryDiscoveredAssetAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;&gt; GetDeviceRegistryDiscoveredAssetAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetAsync (resourceGroupResource As ResourceGroupResource, discoveredAssetName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryDiscoveredAssetResource))" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetAsync (resourceGroupResource, discoveredAssetName, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="discoveredAssetName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <param name="discoveredAssetName"> Discovered Asset name parameter. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a DiscoveredAsset
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/discoveredAssets/{discoveredAssetName}</description></item><item><term>Operation Id</term><description>DiscoveredAsset_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAssetAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="discoveredAssetName" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="discoveredAssetName" /> is an empty string, and was expected to be non-empty. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfile">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfile (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetEndpointProfileName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfile(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetEndpointProfileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfile(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfile (resourceGroupResource As ResourceGroupResource, discoveredAssetEndpointProfileName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistryDiscoveredAssetEndpointProfileResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfile : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfile (resourceGroupResource, discoveredAssetEndpointProfileName, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="discoveredAssetEndpointProfileName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <param name="discoveredAssetEndpointProfileName"> Discovered Asset Endpoint Profile name parameter. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a DiscoveredAssetEndpointProfile
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/{discoveredAssetEndpointProfileName}</description></item><item><term>Operation Id</term><description>DiscoveredAssetEndpointProfile_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAssetEndpointProfile(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="discoveredAssetEndpointProfileName" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="discoveredAssetEndpointProfileName" /> is an empty string, and was expected to be non-empty. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfileAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;&gt; GetDeviceRegistryDiscoveredAssetEndpointProfileAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetEndpointProfileName, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;&gt; GetDeviceRegistryDiscoveredAssetEndpointProfileAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string discoveredAssetEndpointProfileName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfileAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfileAsync (resourceGroupResource As ResourceGroupResource, discoveredAssetEndpointProfileName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryDiscoveredAssetEndpointProfileResource))" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfileAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfileAsync (resourceGroupResource, discoveredAssetEndpointProfileName, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="discoveredAssetEndpointProfileName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <param name="discoveredAssetEndpointProfileName"> Discovered Asset Endpoint Profile name parameter. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a DiscoveredAssetEndpointProfile
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/{discoveredAssetEndpointProfileName}</description></item><item><term>Operation Id</term><description>DiscoveredAssetEndpointProfile_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAssetEndpointProfileAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="discoveredAssetEndpointProfileName" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="discoveredAssetEndpointProfileName" /> is an empty string, and was expected to be non-empty. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfileResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource GetDeviceRegistryDiscoveredAssetEndpointProfileResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource GetDeviceRegistryDiscoveredAssetEndpointProfileResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfileResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfileResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryDiscoveredAssetEndpointProfileResource" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfileResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfileResource (client, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistryDiscoveredAssetEndpointProfileResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="client" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfiles">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileCollection GetDeviceRegistryDiscoveredAssetEndpointProfiles (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileCollection GetDeviceRegistryDiscoveredAssetEndpointProfiles(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfiles(Azure.ResourceManager.Resources.ResourceGroupResource)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfiles (resourceGroupResource As ResourceGroupResource) As DeviceRegistryDiscoveredAssetEndpointProfileCollection" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfiles : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileCollection" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfiles resourceGroupResource" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileCollection</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistryDiscoveredAssetEndpointProfileResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAssetEndpointProfiles" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistryDiscoveredAssetEndpointProfileResources and their operations over a DeviceRegistryDiscoveredAssetEndpointProfileResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfiles">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfiles (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfiles(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfiles(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfiles (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DeviceRegistryDiscoveredAssetEndpointProfileResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfiles : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfiles (subscriptionResource, cancellationToken)" />
+    <Member MemberName="GetDeviceRegistryNamespaceAssetResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource GetDeviceRegistryNamespaceAssetResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource GetDeviceRegistryNamespaceAssetResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceAssetResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceAssetResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryNamespaceAssetResource" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceAssetResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceAssetResource (client, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;</ReturnType>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List DiscoveredAssetEndpointProfile resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles</description></item><item><term>Operation Id</term><description>DiscoveredAssetEndpointProfile_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryDiscoveredAssetEndpointProfiles(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt; GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DeviceRegistryDiscoveredAssetEndpointProfileResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetEndpointProfilesAsync (subscriptionResource, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List DiscoveredAssetEndpointProfile resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles</description></item><item><term>Operation Id</term><description>DiscoveredAssetEndpointProfile_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryDiscoveredAssetEndpointProfiles(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetEndpointProfileResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetResource">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource GetDeviceRegistryDiscoveredAssetResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource GetDeviceRegistryDiscoveredAssetResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryDiscoveredAssetResource" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetResource (client, id)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistryDiscoveredAssetResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /> object. </returns>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceAssetResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssets">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetCollection GetDeviceRegistryDiscoveredAssets (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetCollection GetDeviceRegistryDiscoveredAssets(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssets(Azure.ResourceManager.Resources.ResourceGroupResource)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssets (resourceGroupResource As ResourceGroupResource) As DeviceRegistryDiscoveredAssetCollection" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssets : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetCollection" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssets resourceGroupResource" />
+    <Member MemberName="GetDeviceRegistryNamespaceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; GetDeviceRegistryNamespaceAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string namespaceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt; GetDeviceRegistryNamespaceAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string namespaceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceAsync (resourceGroupResource As ResourceGroupResource, namespaceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistryNamespaceResource))" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceAsync (resourceGroupResource, namespaceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetCollection</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="namespaceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistryDiscoveredAssetResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistryDiscoveredAssets" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistryDiscoveredAssetResources and their operations over a DeviceRegistryDiscoveredAssetResource. </returns>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="namespaceName"> The name of the namespace. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a Namespace. </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssets">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAssets (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAssets(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssets(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssets (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DeviceRegistryDiscoveredAssetResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssets : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssets (subscriptionResource, cancellationToken)" />
+    <Member MemberName="GetDeviceRegistryNamespaceDeviceResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource GetDeviceRegistryNamespaceDeviceResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource GetDeviceRegistryNamespaceDeviceResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDeviceResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceDeviceResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryNamespaceDeviceResource" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceDeviceResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDeviceResource (client, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;</ReturnType>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDeviceResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredAssetResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource GetDeviceRegistryNamespaceDiscoveredAssetResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource GetDeviceRegistryNamespaceDiscoveredAssetResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDiscoveredAssetResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceDiscoveredAssetResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryNamespaceDiscoveredAssetResource" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceDiscoveredAssetResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDiscoveredAssetResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredAssetResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceDiscoveredDeviceResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource GetDeviceRegistryNamespaceDiscoveredDeviceResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource GetDeviceRegistryNamespaceDiscoveredDeviceResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDiscoveredDeviceResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceDiscoveredDeviceResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryNamespaceDiscoveredDeviceResource" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceDiscoveredDeviceResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceDiscoveredDeviceResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaceResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource GetDeviceRegistryNamespaceResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource GetDeviceRegistryNamespaceResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaceResource (client As ArmClient, id As ResourceIdentifier) As DeviceRegistryNamespaceResource" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaceResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaceResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaces">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceCollection GetDeviceRegistryNamespaces (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceCollection GetDeviceRegistryNamespaces(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaces(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaces (resourceGroupResource As ResourceGroupResource) As DeviceRegistryNamespaceCollection" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaces : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceCollection" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaces resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary> Gets a collection of DeviceRegistryNamespaces in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistryNamespaces and their operations over a DeviceRegistryNamespaceResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceRegistryNamespaces">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespaces (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespaces(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaces(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespaces (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespaces : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespaces (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List DiscoveredAsset resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/discoveredAssets</description></item><item><term>Operation Id</term><description>DiscoveredAsset_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryDiscoveredAssets(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List Namespace resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetDeviceRegistryDiscoveredAssetsAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAssetsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt; GetDeviceRegistryDiscoveredAssetsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryDiscoveredAssetsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DeviceRegistryDiscoveredAssetResource)" />
-      <MemberSignature Language="F#" Value="static member GetDeviceRegistryDiscoveredAssetsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryDiscoveredAssetsAsync (subscriptionResource, cancellationToken)" />
+    <Member MemberName="GetDeviceRegistryNamespacesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespacesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt; GetDeviceRegistryNamespacesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespacesAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceRegistryNamespacesAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DeviceRegistryNamespaceResource)" />
+      <MemberSignature Language="F#" Value="static member GetDeviceRegistryNamespacesAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;" Usage="Azure.ResourceManager.DeviceRegistry.DeviceRegistryExtensions.GetDeviceRegistryNamespacesAsync (subscriptionResource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet-preview" RefType="this" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List DiscoveredAsset resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/discoveredAssets</description></item><item><term>Operation Id</term><description>DiscoveredAsset_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistryDiscoveredAssets(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryDiscoveredAssetResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List Namespace resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -901,7 +791,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryCollection</ReturnType>
@@ -910,11 +800,9 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
-        <summary>
-            Gets a collection of DeviceRegistrySchemaRegistryResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistrySchemaRegistries" /> instead.</description></item></summary>
-        <returns> An object representing collection of DeviceRegistrySchemaRegistryResources and their operations over a DeviceRegistrySchemaRegistryResource. </returns>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary> Gets a collection of DeviceRegistrySchemaRegistries in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of DeviceRegistrySchemaRegistries and their operations over a DeviceRegistrySchemaRegistryResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -929,7 +817,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource&gt;</ReturnType>
@@ -939,11 +827,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List SchemaRegistry resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/schemaRegistries</description></item><item><term>Operation Id</term><description>SchemaRegistry_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistrySchemaRegistries(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> List SchemaRegistry resources by subscription ID. </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -959,7 +845,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource&gt;</ReturnType>
@@ -969,12 +855,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            List SchemaRegistry resources by subscription ID
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DeviceRegistry/schemaRegistries</description></item><item><term>Operation Id</term><description>SchemaRegistry_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistrySubscriptionResource.GetDeviceRegistrySchemaRegistries(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> that may take multiple service requests to iterate over. </returns>
+        <summary> List SchemaRegistry resources by subscription ID. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -989,7 +873,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource&gt;</ReturnType>
@@ -1000,18 +884,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="schemaRegistryName"> Schema registry name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a SchemaRegistry
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}</description></item><item><term>Operation Id</term><description>SchemaRegistry_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistrySchemaRegistry(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a SchemaRegistry. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="schemaRegistryName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="schemaRegistryName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistrySchemaRegistryAsync">
@@ -1023,7 +905,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource&gt;&gt;</ReturnType>
@@ -1034,18 +916,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="schemaRegistryName"> Schema registry name parameter. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get a SchemaRegistry
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}</description></item><item><term>Operation Id</term><description>SchemaRegistry_Get</description></item><item><term>Default Api Version</term><description>2024-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryResourceGroupResource.GetDeviceRegistrySchemaRegistryAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <summary> Get a SchemaRegistry. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="schemaRegistryName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="schemaRegistryName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceRegistrySchemaRegistryResource">
@@ -1057,7 +937,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource</ReturnType>
@@ -1067,12 +947,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistrySchemaRegistryResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaRegistryResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1088,7 +965,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource</ReturnType>
@@ -1098,12 +975,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistrySchemaResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1119,7 +993,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource</ReturnType>
@@ -1129,12 +1003,9 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DeviceRegistry.Mocking.MockableDeviceRegistryArmClient.GetDeviceRegistrySchemaVersionResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaVersionResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
