@@ -1,7 +1,7 @@
 ---
 title: Azure Cloudhealth SDK for .NET
 description: Reference for Azure Cloudhealth SDK for .NET
-ms.date: 10/24/2025
+ms.date: 10/27/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: cloudhealth
