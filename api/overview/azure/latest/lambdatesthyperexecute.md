@@ -1,7 +1,7 @@
 ---
 title: Azure Lambdatesthyperexecute SDK for .NET
 description: Reference for Azure Lambdatesthyperexecute SDK for .NET
-ms.date: 10/28/2025
+ms.date: 10/29/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: lambdatesthyperexecute
