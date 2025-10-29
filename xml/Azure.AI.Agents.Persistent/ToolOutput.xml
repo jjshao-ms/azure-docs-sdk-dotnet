@@ -1,9 +1,13 @@
 <Type Name="ToolOutput" FullName="Azure.AI.Agents.Persistent.ToolOutput">
-  <TypeSignature Language="C#" Value="public class ToolOutput : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolOutput extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;" />
+  <TypeSignature Language="C#" Value="public class ToolOutput : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolOutput extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.Agents.Persistent.ToolOutput" />
-  <TypeSignature Language="VB.NET" Value="Public Class ToolOutput&#xA;Implements IJsonModel(Of ToolOutput), IPersistableModel(Of ToolOutput)" />
-  <TypeSignature Language="F#" Value="type ToolOutput = class&#xA;    interface IJsonModel&lt;ToolOutput&gt;&#xA;    interface IPersistableModel&lt;ToolOutput&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolOutput&#xA;Implements IJsonModel(Of ToolOutput), IPersistableModel(Of ToolOutput)" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type ToolOutput = class&#xA;    interface IJsonModel&lt;ToolOutput&gt;&#xA;    interface IPersistableModel&lt;ToolOutput&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class ToolOutput : Azure.AI.Agents.Persistent.StructuredToolOutput, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Agents.Persistent.ToolOutput&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolOutput extends Azure.AI.Agents.Persistent.StructuredToolOutput implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Agents.Persistent.ToolOutput&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolOutput&#xA;Inherits StructuredToolOutput&#xA;Implements IJsonModel(Of ToolOutput), IPersistableModel(Of ToolOutput)" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type ToolOutput = class&#xA;    inherit StructuredToolOutput&#xA;    interface IJsonModel&lt;ToolOutput&gt;&#xA;    interface IPersistableModel&lt;ToolOutput&gt;" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -12,6 +16,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.AI.Agents.Persistent.StructuredToolOutput</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -25,7 +30,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> The data provided during a tool outputs submission to resolve pending tool calls and allow the model to continue. </summary>
+    <summary> The output from a function tool to be submitted. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -141,11 +146,15 @@
       </Docs>
     </Member>
     <Member MemberName="JsonModelWriteCore">
-      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.ToolOutput.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
-      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="toolOutput.JsonModelWriteCore (writer, options)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="toolOutput.JsonModelWriteCore (writer, options)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="toolOutput.JsonModelWriteCore (writer, options)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
@@ -182,7 +191,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The output from the tool to be submitted. </summary>
+        <summary> The output from the function tool to be submitted. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,7 +365,6 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -221,6 +221,166 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ClickAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ClickAction ClickAction (int x = 0, int y = 0, Azure.AI.Agents.Persistent.MouseButton button = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ClickAction ClickAction(int32 x, int32 y, valuetype Azure.AI.Agents.Persistent.MouseButton button) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ClickAction(System.Int32,System.Int32,Azure.AI.Agents.Persistent.MouseButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ClickAction (Optional x As Integer = 0, Optional y As Integer = 0, Optional button As MouseButton = Nothing) As ClickAction" />
+      <MemberSignature Language="F#" Value="static member ClickAction : int * int * Azure.AI.Agents.Persistent.MouseButton -&gt; Azure.AI.Agents.Persistent.ClickAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ClickAction (x, y, button)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ClickAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="y" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="button" Type="Azure.AI.Agents.Persistent.MouseButton" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="x"> The x-coordinate where the click occurred. </param>
+        <param name="y"> The y-coordinate where the click occurred. </param>
+        <param name="button"> Indicates which mouse button was pressed during the click. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ClickAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ClickAction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputerScreenshot">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ComputerScreenshot ComputerScreenshot (Azure.AI.Agents.Persistent.ComputerScreenshotType type = default, string fileId = default, string imageUrl = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ComputerScreenshot ComputerScreenshot(valuetype Azure.AI.Agents.Persistent.ComputerScreenshotType type, string fileId, string imageUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ComputerScreenshot(Azure.AI.Agents.Persistent.ComputerScreenshotType,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputerScreenshot (Optional type As ComputerScreenshotType = Nothing, Optional fileId As String = Nothing, Optional imageUrl As String = Nothing) As ComputerScreenshot" />
+      <MemberSignature Language="F#" Value="static member ComputerScreenshot : Azure.AI.Agents.Persistent.ComputerScreenshotType * string * string -&gt; Azure.AI.Agents.Persistent.ComputerScreenshot" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ComputerScreenshot (type, fileId, imageUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ComputerScreenshot</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Azure.AI.Agents.Persistent.ComputerScreenshotType" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fileId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="imageUrl" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Specifies the event type. For a computer screenshot, this property is always set to computer_screenshot. </param>
+        <param name="fileId"> The identifier of an uploaded file that contains the screenshot. </param>
+        <param name="imageUrl"> The URL of the screenshot image. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ComputerScreenshot" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ComputerScreenshot" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputerToolOutput">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ComputerToolOutput ComputerToolOutput (string toolCallId = default, Azure.AI.Agents.Persistent.ComputerScreenshot output = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ComputerToolOutput ComputerToolOutput(string toolCallId, class Azure.AI.Agents.Persistent.ComputerScreenshot output, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ComputerToolOutput(System.String,Azure.AI.Agents.Persistent.ComputerScreenshot,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputerToolOutput (Optional toolCallId As String = Nothing, Optional output As ComputerScreenshot = Nothing, Optional acknowledgedSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing) As ComputerToolOutput" />
+      <MemberSignature Language="F#" Value="static member ComputerToolOutput : string * Azure.AI.Agents.Persistent.ComputerScreenshot * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; -&gt; Azure.AI.Agents.Persistent.ComputerToolOutput" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ComputerToolOutput (toolCallId, output, acknowledgedSafetyChecks)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ComputerToolOutput</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolCallId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="Azure.AI.Agents.Persistent.ComputerScreenshot" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="acknowledgedSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="toolCallId"> The ID of the tool call being resolved, as provided in the tool calls of a required action from a run. </param>
+        <param name="output"> The output from the computer use tool. </param>
+        <param name="acknowledgedSafetyChecks"> Safety checks that have been acknowledged by the developer. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ComputerToolOutput" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ComputerToolOutput" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoordinatePoint">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.CoordinatePoint CoordinatePoint (int x = 0, int y = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.CoordinatePoint CoordinatePoint(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.CoordinatePoint(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CoordinatePoint (Optional x As Integer = 0, Optional y As Integer = 0) As CoordinatePoint" />
+      <MemberSignature Language="F#" Value="static member CoordinatePoint : int * int -&gt; Azure.AI.Agents.Persistent.CoordinatePoint" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.CoordinatePoint (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.CoordinatePoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="y" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="x"> The x-coordinate. </param>
+        <param name="y"> The y-coordinate. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.CoordinatePoint" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.CoordinatePoint" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleClickAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.DoubleClickAction DoubleClickAction (int x = 0, int y = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.DoubleClickAction DoubleClickAction(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.DoubleClickAction(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DoubleClickAction (Optional x As Integer = 0, Optional y As Integer = 0) As DoubleClickAction" />
+      <MemberSignature Language="F#" Value="static member DoubleClickAction : int * int -&gt; Azure.AI.Agents.Persistent.DoubleClickAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.DoubleClickAction (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.DoubleClickAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="y" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="x"> The x-coordinate where the double click occurred. </param>
+        <param name="y"> The y-coordinate where the double click occurred. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.DoubleClickAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.DoubleClickAction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.DragAction DragAction (System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.CoordinatePoint&gt; path = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.DragAction DragAction(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.CoordinatePoint&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.DragAction(System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.CoordinatePoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DragAction (Optional path As IEnumerable(Of CoordinatePoint) = Nothing) As DragAction" />
+      <MemberSignature Language="F#" Value="static member DragAction : seq&lt;Azure.AI.Agents.Persistent.CoordinatePoint&gt; -&gt; Azure.AI.Agents.Persistent.DragAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.DragAction path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.DragAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.CoordinatePoint&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="path"> An array of coordinates representing the path of the drag action. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.DragAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.DragAction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FileSearchToolCallContent">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.FileSearchToolCallContent FileSearchToolCallContent (Azure.AI.Agents.Persistent.FileSearchToolCallContentType type = default, string text = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.FileSearchToolCallContent FileSearchToolCallContent(valuetype Azure.AI.Agents.Persistent.FileSearchToolCallContentType type, string text) cil managed" />
@@ -296,6 +456,30 @@
         <param name="reason"> The reason why the run is incomplete. This indicates which specific token limit was reached during the run. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.IncompleteRunDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.IncompleteRunDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPressAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.KeyPressAction KeyPressAction (System.Collections.Generic.IEnumerable&lt;string&gt; keys = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.KeyPressAction KeyPressAction(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.KeyPressAction(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyPressAction (Optional keys As IEnumerable(Of String) = Nothing) As KeyPressAction" />
+      <MemberSignature Language="F#" Value="static member KeyPressAction : seq&lt;string&gt; -&gt; Azure.AI.Agents.Persistent.KeyPressAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.KeyPressAction keys" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.KeyPressAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="keys"> The combination of keys the model is requesting to be pressed. This is an array of strings, each representing a key. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.KeyPressAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.KeyPressAction" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1054,6 +1238,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MoveAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.MoveAction MoveAction (int x = 0, int y = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.MoveAction MoveAction(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.MoveAction(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveAction (Optional x As Integer = 0, Optional y As Integer = 0) As MoveAction" />
+      <MemberSignature Language="F#" Value="static member MoveAction : int * int -&gt; Azure.AI.Agents.Persistent.MoveAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.MoveAction (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.MoveAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="y" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="x"> The x-coordinate to move to. </param>
+        <param name="y"> The y-coordinate to move to. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.MoveAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.MoveAction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PersistentAgent">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.PersistentAgent PersistentAgent (string id = default, DateTimeOffset createdAt = default, string name = default, string description = default, string model = default, string instructions = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.ToolDefinition&gt; tools = default, Azure.AI.Agents.Persistent.ToolResources toolResources = default, float? temperature = default, float? topP = default, BinaryData responseFormat = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.PersistentAgent PersistentAgent(string id, valuetype System.DateTimeOffset createdAt, string name, string description, string model, string instructions, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.ToolDefinition&gt; tools, class Azure.AI.Agents.Persistent.ToolResources toolResources, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype System.Nullable`1&lt;float32&gt; topP, class System.BinaryData responseFormat, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata) cil managed" />
@@ -1226,6 +1436,62 @@
         <param name="metadata"> A set of up to 16 key/value pairs that can be attached to an object, used for storing additional information about that object in a structured format. Keys may be up to 64 characters in length and values may be up to 512 characters in length. </param>
         <summary> Initializes a new instance of <see cref="o:PersistentAgentThread" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.PersistentAgentThread" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredComputerUseToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RequiredComputerUseToolCall RequiredComputerUseToolCall (string id = default, Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails computerUsePreview = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RequiredComputerUseToolCall RequiredComputerUseToolCall(string id, class Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails computerUsePreview) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RequiredComputerUseToolCall(System.String,Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RequiredComputerUseToolCall (Optional id As String = Nothing, Optional computerUsePreview As RequiredComputerUseToolCallDetails = Nothing) As RequiredComputerUseToolCall" />
+      <MemberSignature Language="F#" Value="static member RequiredComputerUseToolCall : string * Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails -&gt; Azure.AI.Agents.Persistent.RequiredComputerUseToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RequiredComputerUseToolCall (id, computerUsePreview)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RequiredComputerUseToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="computerUsePreview" Type="Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the tool call. This ID must be referenced when submitting tool outputs. </param>
+        <param name="computerUsePreview"> Detailed information about the computer use action to be executed. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RequiredComputerUseToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RequiredComputerUseToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredComputerUseToolCallDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails RequiredComputerUseToolCallDetails (Azure.AI.Agents.Persistent.ComputerUseAction action = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails RequiredComputerUseToolCallDetails(class Azure.AI.Agents.Persistent.ComputerUseAction action, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RequiredComputerUseToolCallDetails(Azure.AI.Agents.Persistent.ComputerUseAction,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RequiredComputerUseToolCallDetails (Optional action As ComputerUseAction = Nothing, Optional pendingSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing) As RequiredComputerUseToolCallDetails" />
+      <MemberSignature Language="F#" Value="static member RequiredComputerUseToolCallDetails : Azure.AI.Agents.Persistent.ComputerUseAction * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; -&gt; Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RequiredComputerUseToolCallDetails (action, pendingSafetyChecks)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Azure.AI.Agents.Persistent.ComputerUseAction" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pendingSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="action">
+            The action to be performed by the computer use tool.
+            Please note <see cref="T:Azure.AI.Agents.Persistent.ComputerUseAction" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.ClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DoubleClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DragAction" />, <see cref="T:Azure.AI.Agents.Persistent.KeyPressAction" />, <see cref="T:Azure.AI.Agents.Persistent.MoveAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScreenshotAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScrollAction" />, <see cref="T:Azure.AI.Agents.Persistent.TypeAction" /> and <see cref="T:Azure.AI.Agents.Persistent.WaitAction" />.
+            </param>
+        <param name="pendingSafetyChecks"> Safety checks that are pending acknowledgment by the developer. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RequiredComputerUseToolCallDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1740,6 +2006,66 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunStepComputerUseToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepComputerUseToolCall RunStepComputerUseToolCall (string id = default, Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails computerUsePreview = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepComputerUseToolCall RunStepComputerUseToolCall(string id, class Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails computerUsePreview) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepComputerUseToolCall(System.String,Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepComputerUseToolCall (Optional id As String = Nothing, Optional computerUsePreview As RunStepComputerUseToolCallDetails = Nothing) As RunStepComputerUseToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepComputerUseToolCall : string * Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails -&gt; Azure.AI.Agents.Persistent.RunStepComputerUseToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepComputerUseToolCall (id, computerUsePreview)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepComputerUseToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="computerUsePreview" Type="Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ID of the tool call. This ID must be referenced when you submit tool outputs. </param>
+        <param name="computerUsePreview"> The detailed information about the computer use tool call. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepComputerUseToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepComputerUseToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepComputerUseToolCallDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails RunStepComputerUseToolCallDetails (Azure.AI.Agents.Persistent.ComputerUseAction action = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks = default, Azure.AI.Agents.Persistent.ComputerScreenshot output = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails RunStepComputerUseToolCallDetails(class Azure.AI.Agents.Persistent.ComputerUseAction action, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks, class Azure.AI.Agents.Persistent.ComputerScreenshot output, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepComputerUseToolCallDetails(Azure.AI.Agents.Persistent.ComputerUseAction,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck},Azure.AI.Agents.Persistent.ComputerScreenshot,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepComputerUseToolCallDetails (Optional action As ComputerUseAction = Nothing, Optional pendingSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing, Optional output As ComputerScreenshot = Nothing, Optional acknowledgedSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing) As RunStepComputerUseToolCallDetails" />
+      <MemberSignature Language="F#" Value="static member RunStepComputerUseToolCallDetails : Azure.AI.Agents.Persistent.ComputerUseAction * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; * Azure.AI.Agents.Persistent.ComputerScreenshot * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; -&gt; Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepComputerUseToolCallDetails (action, pendingSafetyChecks, output, acknowledgedSafetyChecks)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Azure.AI.Agents.Persistent.ComputerUseAction" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pendingSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="Azure.AI.Agents.Persistent.ComputerScreenshot" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="acknowledgedSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="action">
+            The action to be performed by the computer use tool.
+            Please note <see cref="T:Azure.AI.Agents.Persistent.ComputerUseAction" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.ClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DoubleClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DragAction" />, <see cref="T:Azure.AI.Agents.Persistent.KeyPressAction" />, <see cref="T:Azure.AI.Agents.Persistent.MoveAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScreenshotAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScrollAction" />, <see cref="T:Azure.AI.Agents.Persistent.TypeAction" /> and <see cref="T:Azure.AI.Agents.Persistent.WaitAction" />.
+            </param>
+        <param name="pendingSafetyChecks"> Safety checks that are pending acknowledgment by the developer. </param>
+        <param name="output"> The output from the computer use tool. </param>
+        <param name="acknowledgedSafetyChecks"> Safety checks that have been acknowledged by the developer. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepComputerUseToolCallDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunStepConnectedAgent">
       <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepConnectedAgent RunStepConnectedAgent (string name = default, string arguments = default, string output = default, string runId = default, string threadId = default, string agentId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepConnectedAgent RunStepConnectedAgent(string name, string arguments, string output, string runId, string threadId, string agentId) cil managed" />
@@ -2159,6 +2485,68 @@
         <param name="codeInterpreter"> The Code Interpreter data for the tool call. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaComputerUseDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails RunStepDeltaComputerUseDetails (Azure.AI.Agents.Persistent.ComputerUseAction action = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks = default, Azure.AI.Agents.Persistent.ComputerScreenshot output = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails RunStepDeltaComputerUseDetails(class Azure.AI.Agents.Persistent.ComputerUseAction action, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; pendingSafetyChecks, class Azure.AI.Agents.Persistent.ComputerScreenshot output, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Agents.Persistent.SafetyCheck&gt; acknowledgedSafetyChecks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaComputerUseDetails(Azure.AI.Agents.Persistent.ComputerUseAction,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck},Azure.AI.Agents.Persistent.ComputerScreenshot,System.Collections.Generic.IEnumerable{Azure.AI.Agents.Persistent.SafetyCheck})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaComputerUseDetails (Optional action As ComputerUseAction = Nothing, Optional pendingSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing, Optional output As ComputerScreenshot = Nothing, Optional acknowledgedSafetyChecks As IEnumerable(Of SafetyCheck) = Nothing) As RunStepDeltaComputerUseDetails" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaComputerUseDetails : Azure.AI.Agents.Persistent.ComputerUseAction * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; * Azure.AI.Agents.Persistent.ComputerScreenshot * seq&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt; -&gt; Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaComputerUseDetails (action, pendingSafetyChecks, output, acknowledgedSafetyChecks)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Azure.AI.Agents.Persistent.ComputerUseAction" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pendingSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="Azure.AI.Agents.Persistent.ComputerScreenshot" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="acknowledgedSafetyChecks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Agents.Persistent.SafetyCheck&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="action">
+            The action to be performed by the computer use tool.
+            Please note <see cref="T:Azure.AI.Agents.Persistent.ComputerUseAction" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.ClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DoubleClickAction" />, <see cref="T:Azure.AI.Agents.Persistent.DragAction" />, <see cref="T:Azure.AI.Agents.Persistent.KeyPressAction" />, <see cref="T:Azure.AI.Agents.Persistent.MoveAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScreenshotAction" />, <see cref="T:Azure.AI.Agents.Persistent.ScrollAction" />, <see cref="T:Azure.AI.Agents.Persistent.TypeAction" /> and <see cref="T:Azure.AI.Agents.Persistent.WaitAction" />.
+            </param>
+        <param name="pendingSafetyChecks"> Safety checks that are pending acknowledgment by the developer. </param>
+        <param name="output"> The output from the computer use tool, null if outputs have not yet been submitted. </param>
+        <param name="acknowledgedSafetyChecks"> Safety checks that have been acknowledged by the developer, null if outputs have not yet been submitted. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepDeltaComputerUseToolCall">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall RunStepDeltaComputerUseToolCall (int index = 0, string id = default, Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails computerUsePreview = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall RunStepDeltaComputerUseToolCall(int32 index, string id, class Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails computerUsePreview) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaComputerUseToolCall(System.Int32,System.String,Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunStepDeltaComputerUseToolCall (Optional index As Integer = 0, Optional id As String = Nothing, Optional computerUsePreview As RunStepDeltaComputerUseDetails = Nothing) As RunStepDeltaComputerUseToolCall" />
+      <MemberSignature Language="F#" Value="static member RunStepDeltaComputerUseToolCall : int * string * Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails -&gt; Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.RunStepDeltaComputerUseToolCall (index, id, computerUsePreview)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="computerUsePreview" Type="Azure.AI.Agents.Persistent.RunStepDeltaComputerUseDetails" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="index"> The index of the tool call detail in the run step's tool_calls array. </param>
+        <param name="id"> The ID of the tool call, used when submitting outputs to the run. </param>
+        <param name="computerUsePreview"> The computer use data for the tool call. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2594,7 +2982,7 @@
         <param name="toolCalls">
             The collection of tool calls for the tool call detail item.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCall" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCustomBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaSharepointToolCall" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaAzureFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCustomBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaComputerUseToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaSharepointToolCall" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepDeltaToolCallObject" /> instance for mocking. </returns>
@@ -2982,10 +3370,40 @@
         <param name="toolCalls">
             A list of tool call details for this run step.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCall" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingCustomSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepSharepointToolCall" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureAISearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepAzureFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingCustomSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBingGroundingToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepBrowserAutomationToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepCodeInterpreterToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepComputerUseToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepConnectedAgentToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepDeepResearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMicrosoftFabricToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFileSearchToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepFunctionToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepMcpToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RunStepOpenAPIToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RunStepSharepointToolCall" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCallDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.RunStepToolCallDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.ScrollAction ScrollAction (int x = 0, int y = 0, int scrollX = 0, int scrollY = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.ScrollAction ScrollAction(int32 x, int32 y, int32 scrollX, int32 scrollY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ScrollAction(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ScrollAction (Optional x As Integer = 0, Optional y As Integer = 0, Optional scrollX As Integer = 0, Optional scrollY As Integer = 0) As ScrollAction" />
+      <MemberSignature Language="F#" Value="static member ScrollAction : int * int * int * int -&gt; Azure.AI.Agents.Persistent.ScrollAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.ScrollAction (x, y, scrollX, scrollY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.ScrollAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="y" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="scrollX" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="scrollY" Type="System.Int32" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="x"> The x-coordinate where the scroll occurred. </param>
+        <param name="y"> The y-coordinate where the scroll occurred. </param>
+        <param name="scrollX"> The horizontal scroll distance. </param>
+        <param name="scrollY"> The vertical scroll distance. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ScrollAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ScrollAction" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3034,7 +3452,7 @@
         <param name="toolCalls">
             The list of tool calls that must be approved for the agent thread run to continue.
             Please note <see cref="T:Azure.AI.Agents.Persistent.RequiredToolCall" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RequiredFunctionToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RequiredMcpToolCall" />.
+            The available derived classes include <see cref="T:Azure.AI.Agents.Persistent.RequiredComputerUseToolCall" />, <see cref="T:Azure.AI.Agents.Persistent.RequiredFunctionToolCall" /> and <see cref="T:Azure.AI.Agents.Persistent.RequiredMcpToolCall" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.SubmitToolApprovalDetails" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.SubmitToolApprovalDetails" /> instance for mocking. </returns>
@@ -3268,6 +3686,30 @@
         <param name="headers"> Headers to be attached to the approval. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.ToolApproval" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Agents.Persistent.ToolApproval" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Agents.Persistent.TypeAction TypeAction (string text = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Agents.Persistent.TypeAction TypeAction(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.TypeAction(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeAction (Optional text As String = Nothing) As TypeAction" />
+      <MemberSignature Language="F#" Value="static member TypeAction : string -&gt; Azure.AI.Agents.Persistent.TypeAction" Usage="Azure.AI.Agents.Persistent.PersistentAgentsModelFactory.TypeAction text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Agents.Persistent.TypeAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="text"> The text to type. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Agents.Persistent.TypeAction" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Agents.Persistent.TypeAction" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

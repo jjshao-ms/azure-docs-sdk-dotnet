@@ -20,6 +20,45 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AsAITool">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.AI.AITool AsAITool (this Azure.AI.Agents.Persistent.ToolDefinition tool);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.AI.AITool AsAITool(class Azure.AI.Agents.Persistent.ToolDefinition tool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsAITool(Azure.AI.Agents.Persistent.ToolDefinition)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsAITool (tool As ToolDefinition) As AITool" />
+      <MemberSignature Language="F#" Value="static member AsAITool : Azure.AI.Agents.Persistent.ToolDefinition -&gt; Microsoft.Extensions.AI.AITool" Usage="Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsAITool tool" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.AI.AITool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tool" Type="Azure.AI.Agents.Persistent.ToolDefinition" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="tool">The tool to wrap as an <see cref="T:Microsoft.Extensions.AI.AITool" />.</param>
+        <summary>Creates an <see cref="T:Microsoft.Extensions.AI.AITool" /> to represent a <see cref="T:Azure.AI.Agents.Persistent.ToolDefinition" />.</summary>
+        <returns>The <paramref name="tool" /> wrapped as an <see cref="T:Microsoft.Extensions.AI.AITool" />.</returns>
+        <remarks>
+          <para>
+            The returned tool is only suitable for use with the <see cref="T:Microsoft.Extensions.AI.IChatClient" /> returned by
+            <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String)" /> (or <see cref="T:Microsoft.Extensions.AI.IChatClient" />s that delegate
+            to such an instance). It is likely to be ignored by any other <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementation.
+            </para>
+          <para>
+            When a tool has a corresponding <see cref="T:Microsoft.Extensions.AI.AITool" />-derived type already defined in Microsoft.Extensions.AI,
+            such as <see cref="T:Microsoft.Extensions.AI.AIFunction" />, <see cref="T:Microsoft.Extensions.AI.HostedWebSearchTool" />, or <see cref="T:Microsoft.Extensions.AI.HostedFileSearchTool" />,
+            those types should be preferred instead of this method, as they are more portable,
+            capable of being respected by any <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementation. This method does not attempt to
+            map the supplied <see cref="T:Azure.AI.Agents.Persistent.ToolDefinition" /> to any of those types, it simply wraps it as-is:
+            the <see cref="T:Microsoft.Extensions.AI.IChatClient" /> returned by <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String)" /> will be able to unwrap the
+            <see cref="T:Azure.AI.Agents.Persistent.ToolDefinition" /> when it processes the list of tools.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsIChatClient">
       <MemberSignature Language="C#" Value="public static Microsoft.Extensions.AI.IChatClient AsIChatClient (this Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string? defaultThreadId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.AI.IChatClient AsIChatClient(class Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string defaultThreadId) cil managed" />
