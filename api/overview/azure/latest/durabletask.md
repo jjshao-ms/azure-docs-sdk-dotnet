@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: durabletask
 ---
-# Azure Durabletask SDK for .NET - preview
-## Packages - preview
+# Azure Durabletask SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](durabletask-index.md)]
