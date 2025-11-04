@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,12 +39,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskHubProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskHubData" />. </summary>
+        <summary> A Task Hub resource belonging to the scheduler. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskHubData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,7 +70,7 @@
       <Docs>
         <param name="provisioningState"> The status of the last operation. </param>
         <param name="dashboardUri"> URL of the durable task scheduler dashboard. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskHubProperties" />. </summary>
+        <summary> The properties of Task Hub. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskHubProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,12 +97,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyData" />. </summary>
+        <summary> A retention policy resource belonging to the scheduler. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +128,7 @@
       <Docs>
         <param name="provisioningState"> The status of the last operation. </param>
         <param name="retentionPolicies"> The orchestration retention policies. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties" />. </summary>
+        <summary> The retention policy settings for the resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,15 +157,41 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerData" />. </summary>
+        <summary> A Durable Task Scheduler resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskSchedulerPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch DurableTaskSchedulerPatch (Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties properties = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch DurableTaskSchedulerPatch(class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties properties, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatch(Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPatch (Optional properties As DurableTaskSchedulerPatchProperties = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DurableTaskSchedulerPatch" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerPatch : Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatch (properties, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary> The update request model for the Scheduler resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +220,7 @@
         <param name="endpoint"> URL of the durable task scheduler. </param>
         <param name="ipAllowlist"> IP allow list for durable task scheduler. Values can be IPv4, IPv6 or CIDR. </param>
         <param name="sku"> SKU of the durable task scheduler. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" />. </summary>
+        <summary> The Scheduler resource properties to be updated. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,8 +250,36 @@
         <param name="endpoint"> URL of the durable task scheduler. </param>
         <param name="ipAllowlist"> IP allow list for durable task scheduler. Values can be IPv4, IPv6 or CIDR. </param>
         <param name="sku"> SKU of the durable task scheduler. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" />. </summary>
+        <summary> Details of the Scheduler. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskSchedulerSku">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku DurableTaskSchedulerSku (Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName name = default, int? capacity = default, Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState? redundancyState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku DurableTaskSchedulerSku(valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName name, valuetype System.Nullable`1&lt;int32&gt; capacity, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt; redundancyState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerSku(Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName,System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerSku (Optional name As DurableTaskSchedulerSkuName = Nothing, Optional capacity As Nullable(Of Integer) = Nothing, Optional redundancyState As Nullable(Of DurableTaskResourceRedundancyState) = Nothing) As DurableTaskSchedulerSku" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerSku : Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerSku (name, capacity, redundancyState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the SKU. </param>
+        <param name="capacity"> The SKU capacity. This allows scale out/in for the resource and impacts zone redundancy. </param>
+        <param name="redundancyState"> Indicates whether the current SKU configuration is zone redundant. </param>
+        <summary> The SKU (Stock Keeping Unit) assigned to this durable task scheduler. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +298,9 @@
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> The name of the SKU. </param>
@@ -254,6 +308,34 @@
         <param name="redundancyState"> Indicates whether the current SKU configuration is zone redundant. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskSchedulerSkuUpdate">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate DurableTaskSchedulerSkuUpdate (Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName? name = default, int? capacity = default, Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState? redundancyState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate DurableTaskSchedulerSkuUpdate(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName&gt; name, valuetype System.Nullable`1&lt;int32&gt; capacity, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt; redundancyState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerSkuUpdate(System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerSkuUpdate (Optional name As Nullable(Of DurableTaskSchedulerSkuName) = Nothing, Optional capacity As Nullable(Of Integer) = Nothing, Optional redundancyState As Nullable(Of DurableTaskResourceRedundancyState) = Nothing) As DurableTaskSchedulerSkuUpdate" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerSkuUpdate : Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerSkuUpdate (name, capacity, redundancyState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the SKU. </param>
+        <param name="capacity"> The SKU capacity. This allows scale out/in for the resource and impacts zone redundancy. </param>
+        <param name="redundancyState"> Indicates whether the current SKU configuration is zone redundant. </param>
+        <summary> The SKU (Stock Keeping Unit) properties to be updated. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +354,9 @@
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="redundancyState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name"> The name of the SKU. </param>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.MySql</AssemblyName>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ClientModel.Primitives.ModelReaderWriterContext</BaseTypeName>
@@ -14,12 +15,20 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerData))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnection))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnection))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.ManagedServiceIdentity))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.ManagedServiceIdentity))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlAdvisorData))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlAdvisorData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlAdvisorListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlAdvisorListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlAdvisorResource))]</AttributeName>
@@ -34,8 +43,16 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlConfigurationResource))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlConfigurations))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlConfigurations))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlDatabaseData))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlDatabaseData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlDatabaseListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlDatabaseListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlDatabaseResource))]</AttributeName>
@@ -46,412 +63,12 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlFirewallRuleData))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlFirewallRuleResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlFirewallRuleResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResourceData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResourceData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Data))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Data))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Resource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Resource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityData))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityData))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionPatch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionPatch))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.CapabilitySetsList))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.CapabilitySetsList))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.HighAvailabilityValidationEstimation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.HighAvailabilityValidationEstimation))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ImportSourceProperties))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ImportSourceProperties))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenanceListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenanceListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerAadAdministratorListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerAadAdministratorListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportContent))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportContent))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupContentBase))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupContentBase))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupProperties))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupProperties))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupSettings))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupSettings))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupStoreDetails))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupStoreDetails))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilitiesListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilitiesListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilityProperties))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilityProperties))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationForBatchUpdate))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationForBatchUpdate))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListForBatchUpdate))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListForBatchUpdate))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurations))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurations))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDatabaseListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDatabaseListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDataEncryption))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDataEncryption))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDelegatedSubnetUsage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDelegatedSubnetUsage))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerEditionCapability))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerEditionCapability))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFirewallRuleListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFirewallRuleListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFullBackupStoreDetails))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFullBackupStoreDetails))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerGtidSetContent))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerGtidSetContent))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerHighAvailability))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerHighAvailability))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFile))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFile))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFileListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFileListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenancePatch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenancePatch))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenanceWindow))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenanceWindow))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityContent))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityContent))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNetwork))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNetwork))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPatch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPatch))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPrivateDnsZoneSuffixResponse))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPrivateDnsZoneSuffixResponse))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerRestartParameter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerRestartParameter))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerServerVersionCapability))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerServerVersionCapability))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSku))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSku))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSkuCapability))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSkuCapability))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnection))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnection))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateLinkServiceConnectionState))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateLinkServiceConnectionState))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorage))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorageEditionCapability))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorageEditionCapability))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerValidateBackupResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerValidateBackupResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageParameter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageParameter))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.OperationStatusExtendedResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.OperationStatusExtendedResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.OperationStatusResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.OperationStatusResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerBackupV2ListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerBackupV2ListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerEditionCapabilityV2))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerEditionCapabilityV2))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerVersionCapabilityV2))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerVersionCapabilityV2))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.SkuCapabilityV2))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.SkuCapabilityV2))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.UnknownBackupStoreDetails))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.UnknownBackupStoreDetails))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlAdvisorListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlAdvisorListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlConfigurations))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlConfigurations))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlDatabaseListResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlDatabaseListResult))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlFirewallRuleListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlFirewallRuleListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlFirewallRuleResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlFirewallRuleResource))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlLogFile))]</AttributeName>
@@ -482,12 +99,28 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPerformanceTierServiceLevelObjectives))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPrivateEndpointConnectionListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPrivateEndpointConnectionListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPrivateEndpointConnectionPatch))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPrivateEndpointConnectionPatch))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateEndpointConnectionResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResourceData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlPrivateLinkResourceData))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlPrivateLinkResourceListResult))]</AttributeName>
@@ -506,28 +139,72 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlQueryPerformanceInsightResetDataResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryStatisticResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlQueryTextListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlQueryTextListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlQueryTextResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionData))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlRecommendationActionListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlRecommendationActionListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlRecommendationActionResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlRecoverableServerResourceData))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlRecoverableServerResourceData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorData))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerAdministratorListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerAdministratorListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerAdministratorResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerCreateOrUpdateContent))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerCreateOrUpdateContent))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerKeyListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerKeyListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerKeyResource))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerListResult))]</AttributeName>
@@ -570,8 +247,20 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerPropertiesForRestore))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerSecurityAlertPolicyListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerSecurityAlertPolicyListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlServerSecurityAlertPolicyResource))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlServerUpgradeContent))]</AttributeName>
@@ -594,8 +283,24 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlTopQueryStatisticsListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlVirtualNetworkRuleListResult))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlVirtualNetworkRuleListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlVirtualNetworkRuleResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.MySqlWaitStatisticResource))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlWaitStatisticsInput))]</AttributeName>
@@ -606,12 +311,340 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.MySqlWaitStatisticsListResult))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.UnknownServerPropertiesForCreate))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.UnknownServerPropertiesForCreate))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResponseError))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResponseError))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.SystemData))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.SystemData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.UnknownServerPropertiesForCreate))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.Models.UnknownServerPropertiesForCreate))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Resources.Models.WritableSubResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Resources.Models.WritableSubResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionPatch))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.AdvancedThreatProtectionPatch))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.AdvancedThreatProtectionResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.CapabilitySetsList))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.CapabilitySetsList))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.HighAvailabilityValidationEstimation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.HighAvailabilityValidationEstimation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ImportSourceProperties))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ImportSourceProperties))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenanceListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenanceListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenancePolicy))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MaintenancePolicy))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerAadAdministratorListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerAadAdministratorListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerAadAdministratorResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupAndExportResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupContentBase))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupContentBase))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupProperties))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupProperties))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupSettings))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupSettings))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupStoreDetails))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerBackupStoreDetails))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Data))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Data))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Resource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerBackupV2Resource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilitiesListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilitiesListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilityProperties))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerCapabilityProperties))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationForBatchUpdate))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationForBatchUpdate))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListForBatchUpdate))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurationListForBatchUpdate))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerConfigurationResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurations))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerConfigurations))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDatabaseListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDatabaseListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerDatabaseResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDataEncryption))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDataEncryption))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDelegatedSubnetUsage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDelegatedSubnetUsage))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDetachVnetContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerDetachVnetContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerEditionCapability))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerEditionCapability))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFeatureProperty))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFeatureProperty))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFirewallRuleListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFirewallRuleListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerFirewallRuleResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFullBackupStoreDetails))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerFullBackupStoreDetails))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerGtidSetContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerGtidSetContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerHighAvailability))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerHighAvailability))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFile))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFile))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFileListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerLogFileListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenancePatch))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenancePatch))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerMaintenanceResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenanceWindow))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerMaintenanceWindow))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNameAvailabilityResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNetwork))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerNetwork))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPatch))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPatch))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPrivateDnsZoneSuffixResponse))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerPrivateDnsZoneSuffixResponse))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServerResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerRestartParameter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerRestartParameter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersCapabilityResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerServerVersionCapability))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerServerVersionCapability))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSku))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSku))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSkuCapability))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerSkuCapability))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersPrivateEndpointConnectionData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersPrivateEndpointConnectionData))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnectionListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateEndpointConnectionListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersPrivateEndpointConnectionResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.MySqlFlexibleServersPrivateEndpointConnectionResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateLinkServiceConnectionState))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServersPrivateLinkServiceConnectionState))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorage))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorageEditionCapability))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerStorageEditionCapability))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerValidateBackupResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerValidateBackupResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageParameter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageParameter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.MySqlFlexibleServerVirtualNetworkSubnetUsageResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerBackupV2ListResult))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerBackupV2ListResult))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerEditionCapabilityV2))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerEditionCapabilityV2))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerVersionCapabilityV2))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.ServerVersionCapabilityV2))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.SkuCapabilityV2))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.SkuCapabilityV2))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Resources.Models.SubResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Resources.Models.SubResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.UnknownBackupStoreDetails))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.MySql.FlexibleServers.Models.UnknownBackupStoreDetails))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.UserAssignedIdentity))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.ResourceManager.Models.UserAssignedIdentity))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -631,7 +664,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.MySql</AssemblyName>
-        <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.MySql.AzureResourceManagerMySqlContext</ReturnType>
@@ -651,7 +684,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.MySql</AssemblyName>
-        <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

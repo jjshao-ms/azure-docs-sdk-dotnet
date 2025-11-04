@@ -94,11 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="Generate">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt; Generate (Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent spotPlacementScoresInput, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt; Generate(class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent spotPlacementScoresInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt; Generate (Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt; Generate(class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource.Generate(Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Generate (spotPlacementScoresInput As ComputeRecommenderGenerateContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ComputeRecommenderGenerateResult)" />
-      <MemberSignature Language="F#" Value="abstract member Generate : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&#xA;override this.Generate : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;" Usage="computeRecommenderDiagnosticResource.Generate (spotPlacementScoresInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Generate (content As ComputeRecommenderGenerateContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ComputeRecommenderGenerateResult)" />
+      <MemberSignature Language="F#" Value="abstract member Generate : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&#xA;override this.Generate : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;" Usage="computeRecommenderDiagnosticResource.Generate (content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute.Recommender</AssemblyName>
@@ -108,25 +108,27 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="spotPlacementScoresInput" Type="Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="spotPlacementScoresInput"> SpotPlacementScores object supplied in the body of the Post spot placement scores operation. </param>
+        <param name="content"> SpotPlacementScores object supplied in the body of the Post spot placement scores operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Generates placement scores for Spot VM skus. </summary>
+        <summary>
+            Generates placement scores for Spot VM skus.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/placementScores/spot/generate. </description></item><item><term> Operation Id. </term><description> ComputeDiagnosticBases_Post. </description></item><item><term> Default Api Version. </term><description> 2025-06-05. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spotPlacementScoresInput" /> is null. </exception>
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt; GenerateAsync (Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent spotPlacementScoresInput, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt; GenerateAsync(class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent spotPlacementScoresInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt; GenerateAsync (Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt; GenerateAsync(class Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource.GenerateAsync(Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateAsync (spotPlacementScoresInput As ComputeRecommenderGenerateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ComputeRecommenderGenerateResult))" />
-      <MemberSignature Language="F#" Value="abstract member GenerateAsync : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt;&#xA;override this.GenerateAsync : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt;" Usage="computeRecommenderDiagnosticResource.GenerateAsync (spotPlacementScoresInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateAsync (content As ComputeRecommenderGenerateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ComputeRecommenderGenerateResult))" />
+      <MemberSignature Language="F#" Value="abstract member GenerateAsync : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt;&#xA;override this.GenerateAsync : Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt;" Usage="computeRecommenderDiagnosticResource.GenerateAsync (content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute.Recommender</AssemblyName>
@@ -136,17 +138,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="spotPlacementScoresInput" Type="Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Compute.Recommender.Models.ComputeRecommenderGenerateContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="spotPlacementScoresInput"> SpotPlacementScores object supplied in the body of the Post spot placement scores operation. </param>
+        <param name="content"> SpotPlacementScores object supplied in the body of the Post spot placement scores operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Generates placement scores for Spot VM skus. </summary>
+        <summary>
+            Generates placement scores for Spot VM skus.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/placementScores/spot/generate. </description></item><item><term> Operation Id. </term><description> ComputeDiagnosticBases_Post. </description></item><item><term> Default Api Version. </term><description> 2025-06-05. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spotPlacementScoresInput" /> is null. </exception>
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -168,7 +172,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets Spot Placement Scores metadata. </summary>
+        <summary>
+            Gets Spot Placement Scores metadata.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/placementScores/spot. </description></item><item><term> Operation Id. </term><description> ComputeDiagnosticBases_Get. </description></item><item><term> Default Api Version. </term><description> 2025-06-05. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +198,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets Spot Placement Scores metadata. </summary>
+        <summary>
+            Gets Spot Placement Scores metadata.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/placementScores/spot. </description></item><item><term> Operation Id. </term><description> ComputeDiagnosticBases_Get. </description></item><item><term> Default Api Version. </term><description> 2025-06-05. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Compute.Recommender.ComputeRecommenderDiagnosticResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
