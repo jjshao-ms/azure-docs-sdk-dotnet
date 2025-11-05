@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -184,7 +185,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectBlobReference</ReturnType>
@@ -195,7 +196,7 @@
         <Parameter Name="credential" Type="Azure.AI.Projects.BlobReferenceSasCredential" Index="2" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="blobUri" />
+        <param name="blobUri"> Blob URI path for client to upload data. Example: https://blob.windows.core.net/Container/Path. </param>
         <param name="storageAccountArmId"> ARM ID of the storage account to use. </param>
         <param name="credential"> Credential info to access the storage account. </param>
         <summary> Blob reference details. </summary>
@@ -212,7 +213,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
@@ -248,7 +249,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionApiKeyCredential</ReturnType>
@@ -272,7 +273,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionBaseCredential</ReturnType>
@@ -284,7 +285,7 @@
         <param name="type"> The type of credential used by the connection. </param>
         <summary>
             A base class for connection credentials
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionApiKeyCredential(System.String)" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionEntraIdCredential" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionCustomCredential(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectConnectionSasCredential(System.String)" />, and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.NoAuthenticationCredentials" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AIProjectConnectionApiKeyCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionEntraIdCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionCustomCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionSasCredential" />, and <see cref="T:Azure.AI.Projects.NoAuthenticationCredentials" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionBaseCredential" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -299,7 +300,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionCustomCredential</ReturnType>
@@ -323,7 +324,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionEntraIdCredential</ReturnType>
@@ -344,7 +345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionSasCredential</ReturnType>
@@ -368,7 +369,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectCosmosDBIndex</ReturnType>
@@ -410,7 +411,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectDataset</ReturnType>
@@ -427,7 +428,7 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="dataUri" />
+        <param name="dataUri"> URI of the data. Example: https://go.microsoft.com/fwlink/?linkid=2202330. </param>
         <param name="type"> Dataset type. </param>
         <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
         <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
@@ -438,7 +439,7 @@
         <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
         <summary>
             DatasetVersion Definition
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FileDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" /> and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.FolderDataset(System.Uri,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.FileDataset" /> and <see cref="T:Azure.AI.Projects.FolderDataset" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AIProjectDataset" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -453,7 +454,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectDeployment</ReturnType>
@@ -467,7 +468,7 @@
         <param name="name"> Name of the deployment. </param>
         <summary>
             Model Deployment Definition
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ModelDeployment(System.String,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},Azure.AI.Projects.ModelDeploymentSku,System.String)" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.ModelDeployment" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AIProjectDeployment" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -482,7 +483,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectIndex</ReturnType>
@@ -504,7 +505,7 @@
         <param name="tags"> Tag dictionary. Tags can be added, removed, and updated. </param>
         <summary>
             Index resource Definition
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAISearchIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.AI.Projects.AIProjectIndexFieldMapping)" />, <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ManagedAzureAISearchIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />, and <see cref="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AIProjectCosmosDBIndex(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.String,Azure.AI.Projects.EmbeddingConfiguration,Azure.AI.Projects.AIProjectIndexFieldMapping)" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AzureAISearchIndex" />, <see cref="T:Azure.AI.Projects.ManagedAzureAISearchIndex" />, and <see cref="T:Azure.AI.Projects.AIProjectCosmosDBIndex" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AIProjectIndex" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -519,7 +520,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectIndexFieldMapping</ReturnType>
@@ -630,7 +631,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAISearchIndex</ReturnType>
@@ -777,16 +778,49 @@
       </Docs>
     </Member>
     <Member MemberName="BlobReferenceSasCredential">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential (Uri sasUri = default, string type = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential (Uri sasUri = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential(class System.Uri sasUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.BlobReferenceSasCredential(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReferenceSasCredential (Optional sasUri As Uri = Nothing) As BlobReferenceSasCredential" />
+      <MemberSignature Language="F#" Value="static member BlobReferenceSasCredential : Uri -&gt; Azure.AI.Projects.BlobReferenceSasCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.BlobReferenceSasCredential sasUri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.BlobReferenceSasCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sasUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="sasUri"> SAS uri. </param>
+        <summary> SAS Credential definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.BlobReferenceSasCredential" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlobReferenceSasCredential">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential (Uri sasUri, string type);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential(class System.Uri sasUri, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.BlobReferenceSasCredential(System.Uri,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReferenceSasCredential (Optional sasUri As Uri = Nothing, Optional type As String = Nothing) As BlobReferenceSasCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReferenceSasCredential (sasUri As Uri, type As String) As BlobReferenceSasCredential" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member BlobReferenceSasCredential : Uri * string -&gt; Azure.AI.Projects.BlobReferenceSasCredential" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.BlobReferenceSasCredential (sasUri, type)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.BlobReferenceSasCredential BlobReferenceSasCredential (Uri sasUri = default, string type = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BlobReferenceSasCredential (Optional sasUri As Uri = Nothing, Optional type As String = Nothing) As BlobReferenceSasCredential" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.BlobReferenceSasCredential</ReturnType>
       </ReturnValue>
@@ -913,7 +947,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.DatasetCredential</ReturnType>
@@ -1029,6 +1063,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EmbeddingConfiguration</ReturnType>
@@ -1204,7 +1239,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.FileDataset</ReturnType>
@@ -1220,7 +1255,7 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="dataUri" />
+        <param name="dataUri"> URI of the data. Example: https://go.microsoft.com/fwlink/?linkid=2202330. </param>
         <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
         <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
         <param name="id"> Asset ID, a unique identifier for the asset. </param>
@@ -1280,7 +1315,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.FolderDataset</ReturnType>
@@ -1296,7 +1331,7 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="dataUri" />
+        <param name="dataUri"> URI of the data. Example: https://go.microsoft.com/fwlink/?linkid=2202330. </param>
         <param name="isReference"> Indicates if the dataset holds a reference to the storage, or the dataset manages storage itself. If true, the underlying data will not be deleted when the dataset version is deleted. </param>
         <param name="connectionName"> The Azure Storage Account connection name. Required if startPendingUploadVersion was not called before creating the Dataset. </param>
         <param name="id"> Asset ID, a unique identifier for the asset. </param>
@@ -1408,6 +1443,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ManagedAzureAISearchIndex</ReturnType>
@@ -1469,6 +1505,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelDeployment</ReturnType>
@@ -1505,6 +1542,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelDeploymentSku</ReturnType>
@@ -1565,6 +1603,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.NoAuthenticationCredentials</ReturnType>
@@ -1577,16 +1616,51 @@
       </Docs>
     </Member>
     <Member MemberName="PendingUploadConfiguration">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration (string pendingUploadId = default, string connectionName = default, Azure.AI.Projects.PendingUploadType pendingUploadType = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration (string pendingUploadId = default, string connectionName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration(string pendingUploadId, string connectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadConfiguration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadConfiguration (Optional pendingUploadId As String = Nothing, Optional connectionName As String = Nothing) As PendingUploadConfiguration" />
+      <MemberSignature Language="F#" Value="static member PendingUploadConfiguration : string * string -&gt; Azure.AI.Projects.PendingUploadConfiguration" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadConfiguration (pendingUploadId, connectionName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.PendingUploadConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pendingUploadId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="pendingUploadId"> If PendingUploadId is not provided, a random GUID will be used. </param>
+        <param name="connectionName"> Azure Storage Account connection name to use for generating temporary SAS token. </param>
+        <summary> Represents a request for a pending upload. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.PendingUploadConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingUploadConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration (string pendingUploadId, string connectionName, Azure.AI.Projects.PendingUploadType pendingUploadType);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration(string pendingUploadId, string connectionName, valuetype Azure.AI.Projects.PendingUploadType pendingUploadType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadConfiguration(System.String,System.String,Azure.AI.Projects.PendingUploadType)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadConfiguration (Optional pendingUploadId As String = Nothing, Optional connectionName As String = Nothing, Optional pendingUploadType As PendingUploadType = Nothing) As PendingUploadConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadConfiguration (pendingUploadId As String, connectionName As String, pendingUploadType As PendingUploadType) As PendingUploadConfiguration" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member PendingUploadConfiguration : string * string * Azure.AI.Projects.PendingUploadType -&gt; Azure.AI.Projects.PendingUploadConfiguration" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadConfiguration (pendingUploadId, connectionName, pendingUploadType)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadConfiguration PendingUploadConfiguration (string pendingUploadId = default, string connectionName = default, Azure.AI.Projects.PendingUploadType pendingUploadType = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadConfiguration (Optional pendingUploadId As String = Nothing, Optional connectionName As String = Nothing, Optional pendingUploadType As PendingUploadType = Nothing) As PendingUploadConfiguration" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.PendingUploadConfiguration</ReturnType>
       </ReturnValue>
@@ -1605,16 +1679,50 @@
       </Docs>
     </Member>
     <Member MemberName="PendingUploadResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadResult PendingUploadResult (Azure.AI.Projects.AIProjectBlobReference blobReference = default, string pendingUploadId = default, string version = default, Azure.AI.Projects.PendingUploadType pendingUploadType = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadResult PendingUploadResult (Azure.AI.Projects.AIProjectBlobReference blobReference = default, string pendingUploadId = default, string version = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadResult PendingUploadResult(class Azure.AI.Projects.AIProjectBlobReference blobReference, string pendingUploadId, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult(Azure.AI.Projects.AIProjectBlobReference,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadResult (Optional blobReference As AIProjectBlobReference = Nothing, Optional pendingUploadId As String = Nothing, Optional version As String = Nothing) As PendingUploadResult" />
+      <MemberSignature Language="F#" Value="static member PendingUploadResult : Azure.AI.Projects.AIProjectBlobReference * string * string -&gt; Azure.AI.Projects.PendingUploadResult" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult (blobReference, pendingUploadId, version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.PendingUploadResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReference" Type="Azure.AI.Projects.AIProjectBlobReference" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="pendingUploadId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="blobReference"> Container-level read, write, list SAS. </param>
+        <param name="pendingUploadId"> ID for this upload request. </param>
+        <param name="version"> Version of asset to be created if user did not specify version when initially creating upload. </param>
+        <summary> Represents the response for a pending upload request. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.PendingUploadResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingUploadResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.PendingUploadResult PendingUploadResult (Azure.AI.Projects.AIProjectBlobReference blobReference, string pendingUploadId, string version, Azure.AI.Projects.PendingUploadType pendingUploadType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.PendingUploadResult PendingUploadResult(class Azure.AI.Projects.AIProjectBlobReference blobReference, string pendingUploadId, string version, valuetype Azure.AI.Projects.PendingUploadType pendingUploadType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult(Azure.AI.Projects.AIProjectBlobReference,System.String,System.String,Azure.AI.Projects.PendingUploadType)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadResult (Optional blobReference As AIProjectBlobReference = Nothing, Optional pendingUploadId As String = Nothing, Optional version As String = Nothing, Optional pendingUploadType As PendingUploadType = Nothing) As PendingUploadResult" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PendingUploadResult (blobReference As AIProjectBlobReference, pendingUploadId As String, version As String, pendingUploadType As PendingUploadType) As PendingUploadResult" />
       <MemberSignature Language="F#" Value="static member PendingUploadResult : Azure.AI.Projects.AIProjectBlobReference * string * string * Azure.AI.Projects.PendingUploadType -&gt; Azure.AI.Projects.PendingUploadResult" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.PendingUploadResult (blobReference, pendingUploadId, version, pendingUploadType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.PendingUploadResult</ReturnType>
       </ReturnValue>

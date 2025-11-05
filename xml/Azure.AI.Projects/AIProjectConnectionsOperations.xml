@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,16 +35,57 @@
       </Docs>
     </Member>
     <Member MemberName="GetConnection">
-      <MemberSignature Language="C#" Value="public Azure.AI.Projects.AIProjectConnection GetConnection (string connectionName, bool includeCredentials = false, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.AIProjectConnection GetConnection (string connectionName, bool includeCredentials = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.AI.Projects.AIProjectConnection GetConnection(string connectionName, bool includeCredentials, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnection(System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnection (connectionName As String, Optional includeCredentials As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As AIProjectConnection" />
+      <MemberSignature Language="F#" Value="member this.GetConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.AI.Projects.AIProjectConnection" Usage="aIProjectConnectionsOperations.GetConnection (connectionName, includeCredentials, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="includeCredentials" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionName">The name of the connection. Required.</param>
+        <param name="includeCredentials">Whether to include credentials in the response. Default is false.</param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary>
+            Get a connection by name.
+            </summary>
+        <returns>A <see cref="T:Azure.AI.Projects.AIProjectConnection" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">Thrown when the request fails.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnection">
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.AIProjectConnection GetConnection (string connectionName, bool includeCredentials, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.AI.Projects.AIProjectConnection GetConnection(string connectionName, bool includeCredentials, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnection(System.String,System.Boolean,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetConnection (connectionName As String, Optional includeCredentials As Boolean = false, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AIProjectConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnection (connectionName As String, includeCredentials As Boolean, clientRequestId As String, cancellationToken As CancellationToken) As AIProjectConnection" />
       <MemberSignature Language="F#" Value="member this.GetConnection : string * bool * string * System.Threading.CancellationToken -&gt; Azure.AI.Projects.AIProjectConnection" Usage="aIProjectConnectionsOperations.GetConnection (connectionName, includeCredentials, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnection(string connectionName, bool includeCredentials, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnection(string connectionName, bool includeCredentials, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
       </ReturnValue>
@@ -67,16 +109,57 @@
       </Docs>
     </Member>
     <Member MemberName="GetConnectionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt; GetConnectionAsync (string connectionName, bool includeCredentials = false, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt; GetConnectionAsync (string connectionName, bool includeCredentials = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt;&gt; GetConnectionAsync(string connectionName, bool includeCredentials, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionAsync (connectionName As String, Optional includeCredentials As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AIProjectConnection))" />
+      <MemberSignature Language="F#" Value="member this.GetConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt;" Usage="aIProjectConnectionsOperations.GetConnectionAsync (connectionName, includeCredentials, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="includeCredentials" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionName">The name of the connection. Required.</param>
+        <param name="includeCredentials">Whether to include credentials in the response. Default is false.</param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary>
+            Get a connection by name.
+            </summary>
+        <returns>A <see cref="T:Azure.AI.Projects.AIProjectConnection" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">Thrown when the request fails.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt; GetConnectionAsync (string connectionName, bool includeCredentials, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt;&gt; GetConnectionAsync(string connectionName, bool includeCredentials, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnectionAsync(System.String,System.Boolean,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionAsync (connectionName As String, Optional includeCredentials As Boolean = false, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AIProjectConnection))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionAsync (connectionName As String, includeCredentials As Boolean, clientRequestId As String, cancellationToken As CancellationToken) As Task(Of ClientResult(Of AIProjectConnection))" />
       <MemberSignature Language="F#" Value="member this.GetConnectionAsync : string * bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt;" Usage="aIProjectConnectionsOperations.GetConnectionAsync (connectionName, includeCredentials, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionAsync(string connectionName, bool includeCredentials, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionAsync(string connectionName, bool includeCredentials, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -100,16 +183,86 @@
       </Docs>
     </Member>
     <Member MemberName="GetConnections">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnections (Azure.AI.Projects.ConnectionType? connectionType = default, bool? defaultConnection = default, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnections (Azure.AI.Projects.ConnectionType? connectionType = default, bool? defaultConnection = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt; GetConnections(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ConnectionType&gt; connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnections(System.Nullable{Azure.AI.Projects.ConnectionType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnections (Optional connectionType As Nullable(Of ConnectionType) = Nothing, Optional defaultConnection As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of AIProjectConnection)" />
+      <MemberSignature Language="F#" Value="abstract member GetConnections : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&#xA;override this.GetConnections : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;" Usage="aIProjectConnectionsOperations.GetConnections (connectionType, defaultConnection, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.Nullable&lt;Azure.AI.Projects.ConnectionType&gt;" />
+        <Parameter Name="defaultConnection" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType"> List connections of this specific type. </param>
+        <param name="defaultConnection"> List connections that are default connections. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> List all connections in the project, without populating connection credentials. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnections">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetConnections (string connectionType, bool? defaultConnection, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetConnections(string connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnections(System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnections (connectionType As String, defaultConnection As Nullable(Of Boolean), options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetConnections : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetConnections : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="aIProjectConnectionsOperations.GetConnections (connectionType, defaultConnection, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.String" />
+        <Parameter Name="defaultConnection" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType"> List connections of this specific type. </param>
+        <param name="defaultConnection"> List connections that are default connections. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all connections in the project, without populating connection credentials
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnections">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnections (Azure.AI.Projects.ConnectionType? connectionType, bool? defaultConnection, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt; GetConnections(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ConnectionType&gt; connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnections(System.Nullable{Azure.AI.Projects.ConnectionType},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnections (Optional connectionType As Nullable(Of ConnectionType) = Nothing, Optional defaultConnection As Nullable(Of Boolean) = Nothing, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of AIProjectConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnections (connectionType As Nullable(Of ConnectionType), defaultConnection As Nullable(Of Boolean), clientRequestId As String, cancellationToken As CancellationToken) As CollectionResult(Of AIProjectConnection)" />
       <MemberSignature Language="F#" Value="abstract member GetConnections : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&#xA;override this.GetConnections : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;" Usage="aIProjectConnectionsOperations.GetConnections (connectionType, defaultConnection, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnections(ConnectionType? connectionType, bool? defaultConnection, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnections(ConnectionType? connectionType, bool? defaultConnection, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;</ReturnType>
       </ReturnValue>
@@ -139,8 +292,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnections(string connectionType, bool? defaultConnection, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnections(string connectionType, bool? defaultConnection, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
       </ReturnValue>
@@ -164,16 +327,86 @@
       </Docs>
     </Member>
     <Member MemberName="GetConnectionsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnectionsAsync (Azure.AI.Projects.ConnectionType? connectionType = default, bool? defaultConnection = default, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnectionsAsync (Azure.AI.Projects.ConnectionType? connectionType = default, bool? defaultConnection = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt; GetConnectionsAsync(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ConnectionType&gt; connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnectionsAsync(System.Nullable{Azure.AI.Projects.ConnectionType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionsAsync (Optional connectionType As Nullable(Of ConnectionType) = Nothing, Optional defaultConnection As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of AIProjectConnection)" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionsAsync : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&#xA;override this.GetConnectionsAsync : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;" Usage="aIProjectConnectionsOperations.GetConnectionsAsync (connectionType, defaultConnection, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.Nullable&lt;Azure.AI.Projects.ConnectionType&gt;" />
+        <Parameter Name="defaultConnection" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType"> List connections of this specific type. </param>
+        <param name="defaultConnection"> List connections that are default connections. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> List all connections in the project, without populating connection credentials. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetConnectionsAsync (string connectionType, bool? defaultConnection, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetConnectionsAsync(string connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnectionsAsync(System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionsAsync (connectionType As String, defaultConnection As Nullable(Of Boolean), options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionsAsync : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetConnectionsAsync : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="aIProjectConnectionsOperations.GetConnectionsAsync (connectionType, defaultConnection, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.String" />
+        <Parameter Name="defaultConnection" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType"> List connections of this specific type. </param>
+        <param name="defaultConnection"> List connections that are default connections. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all connections in the project, without populating connection credentials
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt; GetConnectionsAsync (Azure.AI.Projects.ConnectionType? connectionType, bool? defaultConnection, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.AIProjectConnection&gt; GetConnectionsAsync(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ConnectionType&gt; connectionType, valuetype System.Nullable`1&lt;bool&gt; defaultConnection, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectConnectionsOperations.GetConnectionsAsync(System.Nullable{Azure.AI.Projects.ConnectionType},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionsAsync (Optional connectionType As Nullable(Of ConnectionType) = Nothing, Optional defaultConnection As Nullable(Of Boolean) = Nothing, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of AIProjectConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionsAsync (connectionType As Nullable(Of ConnectionType), defaultConnection As Nullable(Of Boolean), clientRequestId As String, cancellationToken As CancellationToken) As AsyncCollectionResult(Of AIProjectConnection)" />
       <MemberSignature Language="F#" Value="abstract member GetConnectionsAsync : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;&#xA;override this.GetConnectionsAsync : Nullable&lt;Azure.AI.Projects.ConnectionType&gt; * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;" Usage="aIProjectConnectionsOperations.GetConnectionsAsync (connectionType, defaultConnection, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionsAsync(ConnectionType? connectionType, bool? defaultConnection, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionsAsync(ConnectionType? connectionType, bool? defaultConnection, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectConnection&gt;</ReturnType>
       </ReturnValue>
@@ -203,8 +436,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionsAsync(string connectionType, bool? defaultConnection, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetConnectionsAsync(string connectionType, bool? defaultConnection, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
       </ReturnValue>
@@ -236,7 +479,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
@@ -265,7 +508,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.Projects.AIProjectConnection&gt;</ReturnType>
@@ -294,7 +537,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>

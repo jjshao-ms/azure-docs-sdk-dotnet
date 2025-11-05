@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,12 +26,76 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary> Initializes a new instance of AIProjectDeploymentsOperations for mocking. </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployment">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult GetDeployment (string name, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult GetDeployment(string name, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployment(System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, options As RequestOptions) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployment : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.GetDeployment : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectDeploymentsOperations.GetDeployment (name, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.ClientResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the deployment. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Get a deployed model.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployment">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployment (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeployment(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployment(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployment : string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeployment : string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeployment (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> Get a deployed model. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployment">
@@ -42,8 +107,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeployment(string name, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeployment(string name, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
       </ReturnValue>
@@ -69,16 +144,26 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeployment">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployment (string name, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployment (string name, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeployment(string name, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployment(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployment (name As String, clientRequestId As String, cancellationToken As CancellationToken) As ClientResult(Of AIProjectDeployment)" />
       <MemberSignature Language="F#" Value="abstract member GetDeployment : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeployment : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeployment (name, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
       </ReturnValue>
@@ -102,6 +187,70 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; GetDeploymentAsync (string name, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; GetDeploymentAsync(string name, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentAsync(System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, options As RequestOptions) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.GetDeploymentAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectDeploymentsOperations.GetDeploymentAsync (name, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the deployment. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Get a deployed model.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt; GetDeploymentAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt;&gt; GetDeploymentAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AIProjectDeployment))" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;&#xA;override this.GetDeploymentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;" Usage="aIProjectDeploymentsOperations.GetDeploymentAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the deployment. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> Get a deployed model. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; GetDeploymentAsync (string name, string clientRequestId, System.ClientModel.Primitives.RequestOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; GetDeploymentAsync(string name, string clientRequestId, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentAsync(System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
@@ -110,8 +259,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
       </ReturnValue>
@@ -137,16 +296,26 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt; GetDeploymentAsync (string name, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt; GetDeploymentAsync (string name, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt;&gt; GetDeploymentAsync(string name, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AIProjectDeployment))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentAsync (name As String, clientRequestId As String, cancellationToken As CancellationToken) As Task(Of ClientResult(Of AIProjectDeployment))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;&#xA;override this.GetDeploymentAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;" Usage="aIProjectDeploymentsOperations.GetDeploymentAsync (name, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentAsync(string name, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -170,16 +339,90 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeployments">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployments (string modelPublisher = default, string modelName = default, Azure.AI.Projects.AIProjectDeploymentType? deploymentType = default, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployments (string modelPublisher = default, string modelName = default, Azure.AI.Projects.AIProjectDeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeployments(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AIProjectDeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployments(System.String,System.String,System.Nullable{Azure.AI.Projects.AIProjectDeploymentType},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of AIProjectDeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeployments (modelPublisher, modelName, deploymentType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelPublisher" Type="System.String" />
+        <Parameter Name="modelName" Type="System.String" />
+        <Parameter Name="deploymentType" Type="System.Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="modelPublisher"> Model publisher to filter models by. </param>
+        <param name="modelName"> Model name (the publisher specific name) to filter models by. </param>
+        <param name="deploymentType"> Type of deployment to filter list by. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> List all deployed models in the project. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployments">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetDeployments (string modelPublisher, string modelName, string deploymentType, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetDeployments(string modelPublisher, string modelName, string deploymentType, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployments(System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (modelPublisher As String, modelName As String, deploymentType As String, options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetDeployments : string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetDeployments : string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="aIProjectDeploymentsOperations.GetDeployments (modelPublisher, modelName, deploymentType, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelPublisher" Type="System.String" />
+        <Parameter Name="modelName" Type="System.String" />
+        <Parameter Name="deploymentType" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="modelPublisher"> Model publisher to filter models by. </param>
+        <param name="modelName"> Model name (the publisher specific name) to filter models by. </param>
+        <param name="deploymentType"> Type of deployment to filter list by. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all deployed models in the project
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeployments">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeployments (string modelPublisher, string modelName, Azure.AI.Projects.AIProjectDeploymentType? deploymentType, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeployments(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AIProjectDeploymentType&gt; deploymentType, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeployments(System.String,System.String,System.Nullable{Azure.AI.Projects.AIProjectDeploymentType},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of AIProjectDeploymentType) = Nothing, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeployments (modelPublisher As String, modelName As String, deploymentType As Nullable(Of AIProjectDeploymentType), clientRequestId As String, cancellationToken As CancellationToken) As CollectionResult(Of AIProjectDeployment)" />
       <MemberSignature Language="F#" Value="abstract member GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeployments : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeployments (modelPublisher, modelName, deploymentType, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, AIProjectDeploymentType? deploymentType, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, AIProjectDeploymentType? deploymentType, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
       </ReturnValue>
@@ -211,8 +454,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeployments(string modelPublisher, string modelName, string deploymentType, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeployments(string modelPublisher, string modelName, string deploymentType, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
       </ReturnValue>
@@ -238,16 +491,90 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeploymentsAsync (string modelPublisher = default, string modelName = default, Azure.AI.Projects.AIProjectDeploymentType? deploymentType = default, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeploymentsAsync (string modelPublisher = default, string modelName = default, Azure.AI.Projects.AIProjectDeploymentType? deploymentType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeploymentsAsync(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AIProjectDeploymentType&gt; deploymentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentsAsync(System.String,System.String,System.Nullable{Azure.AI.Projects.AIProjectDeploymentType},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of AIProjectDeploymentType) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeploymentsAsync (modelPublisher, modelName, deploymentType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelPublisher" Type="System.String" />
+        <Parameter Name="modelName" Type="System.String" />
+        <Parameter Name="deploymentType" Type="System.Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="modelPublisher"> Model publisher to filter models by. </param>
+        <param name="modelName"> Model name (the publisher specific name) to filter models by. </param>
+        <param name="deploymentType"> Type of deployment to filter list by. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> List all deployed models in the project. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetDeploymentsAsync (string modelPublisher, string modelName, string deploymentType, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetDeploymentsAsync(string modelPublisher, string modelName, string deploymentType, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentsAsync(System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (modelPublisher As String, modelName As String, deploymentType As String, options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetDeploymentsAsync : string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetDeploymentsAsync : string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="aIProjectDeploymentsOperations.GetDeploymentsAsync (modelPublisher, modelName, deploymentType, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelPublisher" Type="System.String" />
+        <Parameter Name="modelName" Type="System.String" />
+        <Parameter Name="deploymentType" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="modelPublisher"> Model publisher to filter models by. </param>
+        <param name="modelName"> Model name (the publisher specific name) to filter models by. </param>
+        <param name="deploymentType"> Type of deployment to filter list by. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all deployed models in the project
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt; GetDeploymentsAsync (string modelPublisher, string modelName, Azure.AI.Projects.AIProjectDeploymentType? deploymentType, string clientRequestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.AIProjectDeployment&gt; GetDeploymentsAsync(string modelPublisher, string modelName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AIProjectDeploymentType&gt; deploymentType, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectDeploymentsOperations.GetDeploymentsAsync(System.String,System.String,System.Nullable{Azure.AI.Projects.AIProjectDeploymentType},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (Optional modelPublisher As String = Nothing, Optional modelName As String = Nothing, Optional deploymentType As Nullable(Of AIProjectDeploymentType) = Nothing, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of AIProjectDeployment)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentsAsync (modelPublisher As String, modelName As String, deploymentType As Nullable(Of AIProjectDeploymentType), clientRequestId As String, cancellationToken As CancellationToken) As AsyncCollectionResult(Of AIProjectDeployment)" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;&#xA;override this.GetDeploymentsAsync : string * string * Nullable&lt;Azure.AI.Projects.AIProjectDeploymentType&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;" Usage="aIProjectDeploymentsOperations.GetDeploymentsAsync (modelPublisher, modelName, deploymentType, clientRequestId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, AIProjectDeploymentType? deploymentType, CancellationToken cancellationToken) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, AIProjectDeploymentType? deploymentType, CancellationToken cancellationToken) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.AIProjectDeployment&gt;</ReturnType>
       </ReturnValue>
@@ -279,8 +606,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, string deploymentType, RequestOptions options) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the clientRequestId parameter is not used. Please use GetDeploymentsAsync(string modelPublisher, string modelName, string deploymentType, RequestOptions options) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
       </ReturnValue>
@@ -314,7 +651,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>
