@@ -1,12 +1,13 @@
 ---
-title: 
+title: Azure Provisioning AppService client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.AppService, provisioning
-ms.date: 10/05/2024
+ms.date: 11/06/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure.Provisioning.AppService client library for .NET
+# Azure Provisioning AppService client library for .NET - version 1.3.0-beta.1 
+
 
 Azure.Provisioning.AppService simplifies declarative resource provisioning in .NET.
 
@@ -17,7 +18,7 @@ Azure.Provisioning.AppService simplifies declarative resource provisioning in .N
 Install the client library for .NET with [NuGet](https://www.nuget.org/ ):
 
 ```dotnetcli
-dotnet add package Azure.Provisioning.AppService --prerelease
+dotnet add package Azure.Provisioning.AppService
 ```
 
 ### Prerequisites
@@ -29,6 +30,109 @@ dotnet add package Azure.Provisioning.AppService --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create a Basic Function App
+
+This example demonstrates how to create a Function App with required dependencies including storage account and application insights, based on the [Azure quickstart template](https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.web/function-app-create-dynamic/main.bicep).
+
+```C# Snippet:AppServiceBasic
+Infrastructure infra = new();
+
+StorageAccount storage =
+    new(nameof(storage))
+    {
+        Sku = new StorageSku { Name = StorageSkuName.StandardLrs },
+        Kind = StorageKind.Storage,
+        EnableHttpsTrafficOnly = true,
+        IsDefaultToOAuthAuthentication = true
+    };
+infra.Add(storage);
+
+AppServicePlan hostingPlan =
+    new(nameof(hostingPlan), "2021-03-01")
+    {
+        Sku =
+            new AppServiceSkuDescription
+            {
+                Tier = "Dynamic",
+                Name = "Y1"
+            }
+    };
+infra.Add(hostingPlan);
+
+ApplicationInsightsComponent appInsights =
+    new(nameof(appInsights))
+    {
+        Kind = "web",
+        ApplicationType = ApplicationInsightsApplicationType.Web,
+        RequestSource = ComponentRequestSource.Rest
+    };
+infra.Add(appInsights);
+
+ProvisioningVariable funcAppName =
+    new(nameof(funcAppName), typeof(string))
+    {
+        Value = BicepFunction.Concat("functionApp-", BicepFunction.GetUniqueString(BicepFunction.GetResourceGroup().Id))
+    };
+infra.Add(funcAppName);
+
+WebSite functionApp =
+    new(nameof(functionApp), WebSite.ResourceVersions.V2023_12_01)
+    {
+        Name = funcAppName,
+        Kind = "functionapp",
+        Identity = new ManagedServiceIdentity { ManagedServiceIdentityType = ManagedServiceIdentityType.SystemAssigned },
+        AppServicePlanId = hostingPlan.Id,
+        IsHttpsOnly = true,
+        SiteConfig =
+            new SiteConfigProperties
+            {
+                FtpsState = AppServiceFtpsState.FtpsOnly,
+                MinTlsVersion = AppServiceSupportedTlsVersion.Tls1_2,
+                AppSettings =
+                {
+                    new AppServiceNameValuePair
+                    {
+                        Name = "AzureWebJobsStorage",
+                        Value = BicepFunction.Interpolate($"DefaultEndpointsProtocol=https;AccountName={storage.Name};EndpointSuffix=core.windows.net;AccountKey={storage.GetKeys()[0].Unwrap().Value}")
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+                        Value = BicepFunction.Interpolate($"DefaultEndpointsProtocol=https;AccountName={storage.Name};EndpointSuffix=core.windows.net;AccountKey={storage.GetKeys()[0].Unwrap().Value}")
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "WEBSITE_CONTENTSHARE",
+                        Value = BicepFunction.ToLower(funcAppName)
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "FUNCTIONS_EXTENSION_VERSION",
+                        Value = "~4"
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "WEBSITE_NODE_DEFAULT_VERSION",
+                        Value = "~14"
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "FUNCTIONS_WORKER_RUNTIME",
+                        Value = "dotnet"
+                    },
+                    new AppServiceNameValuePair
+                    {
+                        Name = "APPINSIGHTS_INSTRUMENTATIONKEY",
+                        Value = appInsights.InstrumentationKey
+                    }
+                }
+            }
+    };
+infra.Add(functionApp);
+```
 
 ## Troubleshooting
 
@@ -58,7 +162,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.AppService_1.0.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.AppService_1.3.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
