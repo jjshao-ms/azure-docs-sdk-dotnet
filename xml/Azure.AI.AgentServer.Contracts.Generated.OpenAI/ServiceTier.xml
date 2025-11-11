@@ -1,0 +1,123 @@
+<Type Name="ServiceTier" FullName="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier">
+  <TypeSignature Language="C#" Value="public enum ServiceTier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceTier extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ServiceTier" />
+  <TypeSignature Language="F#" Value="type ServiceTier = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+             Specifies the processing type used for serving the request.
+               - If set to 'auto', then the request will be processed with the service tier configured in the Project settings. Unless otherwise configured, the Project will use 'default'.
+               - If set to 'default', then the request will be processed with the standard pricing and performance for the selected model.
+               - If set to '[flex](/docs/guides/flex-processing)' or 'priority', then the request will be processed with the corresponding service tier. [Contact sales](https://openai.com/contact-sales) to learn more about Priority processing.
+               - When not set, the default behavior is 'auto'.
+            
+               When the `service_tier` parameter is set, the response body will include the `service_tier` value based on the processing mode actually used to serve the request. This response value may be different from the value set in the parameter.
+             </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> auto. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> default. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flex">
+      <MemberSignature Language="C#" Value="Flex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier Flex = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Flex" />
+      <MemberSignature Language="VB.NET" Value="Flex" />
+      <MemberSignature Language="F#" Value="Flex = 2" Usage="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Flex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary> flex. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="Priority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier Priority = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Priority" />
+      <MemberSignature Language="VB.NET" Value="Priority" />
+      <MemberSignature Language="F#" Value="Priority = 4" Usage="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Priority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary> priority. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="Scale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier Scale = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Scale" />
+      <MemberSignature Language="VB.NET" Value="Scale" />
+      <MemberSignature Language="F#" Value="Scale = 3" Usage="Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier.Scale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.Contracts</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.AgentServer.Contracts.Generated.OpenAI.ServiceTier</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary> scale. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

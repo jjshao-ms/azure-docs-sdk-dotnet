@@ -1,0 +1,133 @@
+<Type Name="AIAgentExtensions" FullName="Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions">
+  <TypeSignature Language="C#" Value="public static class AIAgentExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AIAgentExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module AIAgentExtensions" />
+  <TypeSignature Language="F#" Value="type AIAgentExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides extension methods for running AI agents in the agent server framework.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RunAIAgentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RunAIAgentAsync (this Microsoft.Agents.AI.AIAgent agent, Microsoft.Extensions.Logging.ILoggerFactory? loggerFactory = default, string telemetrySourceName = &quot;Agents&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RunAIAgentAsync(class Microsoft.Agents.AI.AIAgent agent, class Microsoft.Extensions.Logging.ILoggerFactory loggerFactory, string telemetrySourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync(Microsoft.Agents.AI.AIAgent,Microsoft.Extensions.Logging.ILoggerFactory,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RunAIAgentAsync (agent As AIAgent, Optional loggerFactory As ILoggerFactory = Nothing, Optional telemetrySourceName As String = &quot;Agents&quot;) As Task" />
+      <MemberSignature Language="F#" Value="static member RunAIAgentAsync : Microsoft.Agents.AI.AIAgent * Microsoft.Extensions.Logging.ILoggerFactory * string -&gt; System.Threading.Tasks.Task" Usage="Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync (agent, loggerFactory, telemetrySourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent" RefType="this" />
+        <Parameter Name="loggerFactory" Type="Microsoft.Extensions.Logging.ILoggerFactory">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="telemetrySourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="agent">The AI agent to run.</param>
+        <param name="loggerFactory">Optional logger factory for creating loggers.</param>
+        <param name="telemetrySourceName">The name of the telemetry source. Defaults to "Agents".</param>
+        <summary>
+            Runs an AI agent asynchronously with an optional logger factory.
+            </summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunAIAgentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RunAIAgentAsync (this Microsoft.Agents.AI.AIAgent agent, IServiceProvider sp, string telemetrySourceName = &quot;Agents&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RunAIAgentAsync(class Microsoft.Agents.AI.AIAgent agent, class System.IServiceProvider sp, string telemetrySourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync(Microsoft.Agents.AI.AIAgent,System.IServiceProvider,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RunAIAgentAsync (agent As AIAgent, sp As IServiceProvider, Optional telemetrySourceName As String = &quot;Agents&quot;) As Task" />
+      <MemberSignature Language="F#" Value="static member RunAIAgentAsync : Microsoft.Agents.AI.AIAgent * IServiceProvider * string -&gt; System.Threading.Tasks.Task" Usage="Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync (agent, sp, telemetrySourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent" RefType="this" />
+        <Parameter Name="sp" Type="System.IServiceProvider" />
+        <Parameter Name="telemetrySourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="agent">The AI agent to run.</param>
+        <param name="sp">The service provider for dependency injection.</param>
+        <param name="telemetrySourceName">The name of the telemetry source. Defaults to "Agents".</param>
+        <summary>
+            Runs an AI agent asynchronously using the provided service provider.
+            </summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunAIAgentAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RunAIAgentAsync (this IServiceProvider sp, Microsoft.Agents.AI.AIAgent? agent = default, string telemetrySourceName = &quot;Agents&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RunAIAgentAsync(class System.IServiceProvider sp, class Microsoft.Agents.AI.AIAgent agent, string telemetrySourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync(System.IServiceProvider,Microsoft.Agents.AI.AIAgent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RunAIAgentAsync (sp As IServiceProvider, Optional agent As AIAgent = Nothing, Optional telemetrySourceName As String = &quot;Agents&quot;) As Task" />
+      <MemberSignature Language="F#" Value="static member RunAIAgentAsync : IServiceProvider * Microsoft.Agents.AI.AIAgent * string -&gt; System.Threading.Tasks.Task" Usage="Azure.AI.AgentServer.AgentFramework.Extensions.AIAgentExtensions.RunAIAgentAsync (sp, agent, telemetrySourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sp" Type="System.IServiceProvider" RefType="this" />
+        <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="telemetrySourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sp">The service provider for dependency injection.</param>
+        <param name="agent">Optional AI agent to run. If null, retrieves from service provider.</param>
+        <param name="telemetrySourceName">The name of the telemetry source. Defaults to "Agents".</param>
+        <summary>
+            Runs an AI agent asynchronously using the service provider's dependencies.
+            </summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
