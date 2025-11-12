@@ -1,3 +1,5 @@
 | Reference | Package | Source |
 |---|---|---|
-|[unknown](analytics.onlineexperimentation-readme.md)|[Azure.Analytics.OnlineExperimentation](https://www.nuget.org/packages/Azure.Analytics.OnlineExperimentation)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/onlineexperimentation/Azure.Analytics.OnlineExperimentation)|
+|[unknown](ai.agentserver.agentframework-readme.md)|[Azure.AI.AgentServer.AgentFramework](https://www.nuget.org/packages/Azure.AI.AgentServer.AgentFramework)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.AgentFramework)|
+|[unknown](ai.agentserver.contracts-readme.md)|[Azure.AI.AgentServer.Contracts](https://www.nuget.org/packages/Azure.AI.AgentServer.Contracts)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Contracts)|
+|[unknown](ai.agentserver.core-readme.md)|[Azure.AI.AgentServer.Core](https://www.nuget.org/packages/Azure.AI.AgentServer.Core)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Core)|
