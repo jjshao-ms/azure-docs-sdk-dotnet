@@ -1,9 +1,13 @@
 <Type Name="ConfigurationSettingsFilter" FullName="Azure.Data.AppConfiguration.ConfigurationSettingsFilter">
-  <TypeSignature Language="C#" Value="public class ConfigurationSettingsFilter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationSettingsFilter extends System.Object" />
+  <TypeSignature Language="C#" Value="public class ConfigurationSettingsFilter : System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationSettingsFilter extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Azure.Data.AppConfiguration.ConfigurationSettingsFilter" />
-  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSettingsFilter" />
-  <TypeSignature Language="F#" Value="type ConfigurationSettingsFilter = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSettingsFilter&#xA;Implements IJsonModel(Of ConfigurationSettingsFilter), IPersistableModel(Of ConfigurationSettingsFilter)" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type ConfigurationSettingsFilter = class&#xA;    interface IJsonModel&lt;ConfigurationSettingsFilter&gt;&#xA;    interface IPersistableModel&lt;ConfigurationSettingsFilter&gt;" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class ConfigurationSettingsFilter" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationSettingsFilter extends System.Object" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSettingsFilter" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type ConfigurationSettingsFilter = class" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -12,13 +16,27 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.1.0</AssemblyVersion>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface FrameworkAlternate="azure-dotnet">
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="azure-dotnet">
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="azure-dotnet">
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
-    <summary> Enables filtering of key-values. </summary>
+    <summary>
+            Enables filtering of key-values. Syntax reference:
+            https://aka.ms/azconfig/docs/restapisnapshots
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,17 +50,68 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key"> Filters key-values by their key field. </param>
-        <summary> Initializes a new instance of KeyValueFilter. </summary>
+        <summary> Initializes a new instance of <see cref="T:Azure.Data.AppConfiguration.ConfigurationSettingsFilter" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.Data.AppConfiguration.ConfigurationSettingsFilter JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.Data.AppConfiguration.ConfigurationSettingsFilter JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ConfigurationSettingsFilter" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter" Usage="configurationSettingsFilter.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSettingsFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="configurationSettingsFilter.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -55,7 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,7 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -84,6 +153,196 @@
       <Docs>
         <summary> Filters key-values by their label field. </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.Data.AppConfiguration.ConfigurationSettingsFilter PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.Data.AppConfiguration.ConfigurationSettingsFilter PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As ConfigurationSettingsFilter" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter" Usage="configurationSettingsFilter.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSettingsFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="configurationSettingsFilter.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.Data.AppConfiguration.ConfigurationSettingsFilter IJsonModel&lt;ConfigurationSettingsFilter&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.Data.AppConfiguration.ConfigurationSettingsFilter System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.System#ClientModel#Primitives#IJsonModel&lt;Azure#Data#AppConfiguration#ConfigurationSettingsFilter&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ConfigurationSettingsFilter Implements IJsonModel(Of ConfigurationSettingsFilter).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter" Usage="configurationSettingsFilter.System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSettingsFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;ConfigurationSettingsFilter&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.System#ClientModel#Primitives#IJsonModel&lt;Azure#Data#AppConfiguration#ConfigurationSettingsFilter&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ConfigurationSettingsFilter).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="configurationSettingsFilter.System.ClientModel.Primitives.IJsonModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.Data.AppConfiguration.ConfigurationSettingsFilter IPersistableModel&lt;ConfigurationSettingsFilter&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.Data.AppConfiguration.ConfigurationSettingsFilter System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Data#AppConfiguration#ConfigurationSettingsFilter&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ConfigurationSettingsFilter Implements IPersistableModel(Of ConfigurationSettingsFilter).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter" Usage="configurationSettingsFilter.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSettingsFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ConfigurationSettingsFilter&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Data#AppConfiguration#ConfigurationSettingsFilter&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ConfigurationSettingsFilter).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="configurationSettingsFilter.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ConfigurationSettingsFilter&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSettingsFilter.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Data#AppConfiguration#ConfigurationSettingsFilter&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ConfigurationSettingsFilter).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="configurationSettingsFilter.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,15 +355,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Filters key-values by their tags field.
-            Each tag in the list should be expressed as a string in the format `tag=value`.
-            </summary>
+        <summary> Filters key-values by their tags field. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

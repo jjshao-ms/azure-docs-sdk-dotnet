@@ -17,15 +17,14 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.1.0</AssemblyVersion>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            Configuration Setting model factory that enables mocking for the AppConfiguration client library.
-            </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.AppConfiguration.ConfigurationSetting</ReturnType>
@@ -62,9 +61,94 @@
         <param name="lastModified">The last time a modifying operation was performed on the given configuration setting.</param>
         <param name="isReadOnly">A value indicating whether the configuration setting is read only.</param>
         <summary>
-            Initializes a new instance of the <see cref="M:Azure.Data.AppConfiguration.ConfigurationModelFactory.ConfigurationSetting(System.String,System.String,System.String,System.String,Azure.ETag,System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean})" /> for mocking purposes.
+            Initializes a new instance of the <see cref="T:Azure.Data.AppConfiguration.ConfigurationSetting" /> for mocking purposes.
             </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationSettingsFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Data.AppConfiguration.ConfigurationSettingsFilter ConfigurationSettingsFilter (string key = default, string label = default, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Data.AppConfiguration.ConfigurationSettingsFilter ConfigurationSettingsFilter(string key, string label, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationModelFactory.ConfigurationSettingsFilter(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConfigurationSettingsFilter (Optional key As String = Nothing, Optional label As String = Nothing, Optional tags As IEnumerable(Of String) = Nothing) As ConfigurationSettingsFilter" />
+      <MemberSignature Language="F#" Value="static member ConfigurationSettingsFilter : string * string * seq&lt;string&gt; -&gt; Azure.Data.AppConfiguration.ConfigurationSettingsFilter" Usage="Azure.Data.AppConfiguration.ConfigurationModelFactory.ConfigurationSettingsFilter (key, label, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSettingsFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="label" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="key"> Filters key-values by their key field. </param>
+        <param name="label"> Filters key-values by their label field. </param>
+        <param name="tags"> Filters key-values by their tags field. </param>
+        <summary>
+            Enables filtering of key-values. Syntax reference:
+            https://aka.ms/azconfig/docs/restapisnapshots
+            </summary>
+        <returns> A new <see cref="T:Azure.Data.AppConfiguration.ConfigurationSettingsFilter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationSnapshot">
+      <MemberSignature Language="C#" Value="public static Azure.Data.AppConfiguration.ConfigurationSnapshot ConfigurationSnapshot (string name = default, Azure.Data.AppConfiguration.ConfigurationSnapshotStatus? status = default, System.Collections.Generic.IEnumerable&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt; filters = default, Azure.Data.AppConfiguration.SnapshotComposition? snapshotComposition = default, DateTimeOffset? createdOn = default, DateTimeOffset? expiresOn = default, TimeSpan? retentionPeriod = default, long? sizeInBytes = default, long? itemCount = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ETag eTag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Data.AppConfiguration.ConfigurationSnapshot ConfigurationSnapshot(string name, valuetype System.Nullable`1&lt;valuetype Azure.Data.AppConfiguration.ConfigurationSnapshotStatus&gt; status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt; filters, valuetype System.Nullable`1&lt;valuetype Azure.Data.AppConfiguration.SnapshotComposition&gt; snapshotComposition, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiresOn, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; retentionPeriod, valuetype System.Nullable`1&lt;int64&gt; sizeInBytes, valuetype System.Nullable`1&lt;int64&gt; itemCount, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.ETag eTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationModelFactory.ConfigurationSnapshot(System.String,System.Nullable{Azure.Data.AppConfiguration.ConfigurationSnapshotStatus},System.Collections.Generic.IEnumerable{Azure.Data.AppConfiguration.ConfigurationSettingsFilter},System.Nullable{Azure.Data.AppConfiguration.SnapshotComposition},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Collections.Generic.IDictionary{System.String,System.String},Azure.ETag)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConfigurationSnapshot (Optional name As String = Nothing, Optional status As Nullable(Of ConfigurationSnapshotStatus) = Nothing, Optional filters As IEnumerable(Of ConfigurationSettingsFilter) = Nothing, Optional snapshotComposition As Nullable(Of SnapshotComposition) = Nothing, Optional createdOn As Nullable(Of DateTimeOffset) = Nothing, Optional expiresOn As Nullable(Of DateTimeOffset) = Nothing, Optional retentionPeriod As Nullable(Of TimeSpan) = Nothing, Optional sizeInBytes As Nullable(Of Long) = Nothing, Optional itemCount As Nullable(Of Long) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional eTag As ETag = Nothing) As ConfigurationSnapshot" />
+      <MemberSignature Language="F#" Value="static member ConfigurationSnapshot : string * Nullable&lt;Azure.Data.AppConfiguration.ConfigurationSnapshotStatus&gt; * seq&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt; * Nullable&lt;Azure.Data.AppConfiguration.SnapshotComposition&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ETag -&gt; Azure.Data.AppConfiguration.ConfigurationSnapshot" Usage="Azure.Data.AppConfiguration.ConfigurationModelFactory.ConfigurationSnapshot (name, status, filters, snapshotComposition, createdOn, expiresOn, retentionPeriod, sizeInBytes, itemCount, tags, eTag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.ConfigurationSnapshot</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.Data.AppConfiguration.ConfigurationSnapshotStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="filters" Type="System.Collections.Generic.IEnumerable&lt;Azure.Data.AppConfiguration.ConfigurationSettingsFilter&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="snapshotComposition" Type="System.Nullable&lt;Azure.Data.AppConfiguration.SnapshotComposition&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="createdOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expiresOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="retentionPeriod" Type="System.Nullable&lt;System.TimeSpan&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="itemCount" Type="System.Nullable&lt;System.Int64&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="eTag" Type="Azure.ETag" Index="10" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the snapshot. </param>
+        <param name="status"> The current status of the snapshot. </param>
+        <param name="filters"> A list of filters used to filter the key-values included in the snapshot. </param>
+        <param name="snapshotComposition">
+            The composition type describes how the key-values within the snapshot are
+            composed. The 'key' composition type ensures there are no two key-values
+            containing the same key. The 'key_label' composition type ensures there are no
+            two key-values containing the same key and label.
+            </param>
+        <param name="createdOn"> The time that the snapshot was created. </param>
+        <param name="expiresOn"> The time that the snapshot will expire. </param>
+        <param name="retentionPeriod">
+            The amount of time, in seconds, that a snapshot will remain in the archived
+            state before expiring. This property is only writable during the creation of a
+            snapshot. If not specified, the default lifetime of key-value revisions will be
+            used.
+            </param>
+        <param name="sizeInBytes"> The size in bytes of the snapshot. </param>
+        <param name="itemCount"> The amount of key-values in the snapshot. </param>
+        <param name="tags"> The tags of the snapshot. </param>
+        <param name="eTag"> A value representing the current state of the snapshot. </param>
+        <summary> A snapshot is a named, immutable subset of an App Configuration store's key-values. </summary>
+        <returns> A new <see cref="T:Azure.Data.AppConfiguration.ConfigurationSnapshot" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.AppConfiguration.FeatureFlagConfigurationSetting</ReturnType>
@@ -115,7 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Data.AppConfiguration.SecretReferenceConfigurationSetting</ReturnType>
@@ -139,6 +223,30 @@
             Creates a <see cref="M:Azure.Data.AppConfiguration.ConfigurationModelFactory.SecretReferenceConfigurationSetting(System.String,System.Uri,System.String,Azure.ETag,System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean})" /> for mocking purposes.
             </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingLabel">
+      <MemberSignature Language="C#" Value="public static Azure.Data.AppConfiguration.SettingLabel SettingLabel (string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Data.AppConfiguration.SettingLabel SettingLabel(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationModelFactory.SettingLabel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SettingLabel (Optional name As String = Nothing) As SettingLabel" />
+      <MemberSignature Language="F#" Value="static member SettingLabel : string -&gt; Azure.Data.AppConfiguration.SettingLabel" Usage="Azure.Data.AppConfiguration.ConfigurationModelFactory.SettingLabel name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Data.AppConfiguration</AssemblyName>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Data.AppConfiguration.SettingLabel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the label. </param>
+        <summary> Labels are used to group key-values. </summary>
+        <returns> A new <see cref="T:Azure.Data.AppConfiguration.SettingLabel" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
