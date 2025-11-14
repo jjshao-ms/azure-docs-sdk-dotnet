@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.1 
+# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.2 
 
 
 Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecosystem of models, tools, and capabilities from OpenAI, Microsoft, and other LLM providers.
@@ -115,18 +115,18 @@ The Azure.AI.Projects.OpenAI framework organized in a way that for each call, re
 
 Synchronous call:
 ```C# Snippet:Sample_CreateResponse_Sync
-OpenAIResponseClient responseClient = client.GetProjectResponsesClientForModel(modelDeploymentName);
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
 OpenAIResponse response = responseClient.CreateResponse("What is the size of France in square miles?");
 ```
 
 Asynchronous call:
 
 ```C# Snippet:Sample_CreateResponse_Async
-OpenAIResponseClient responseClient = client.GetProjectResponsesClientForModel(modelDeploymentName);
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
 OpenAIResponse response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
-In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.1/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
+In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
 
 ## Examples
 
@@ -165,19 +165,13 @@ The code above will result in creation of `AgentVersion` object, which is the da
 OpenAI API allows you to get the response without creating an agent by using the response API. In this scenario we first create the response object.
 
 ```C# Snippet:Sample_CreateResponse_Async
-OpenAIResponseClient responseClient = client.GetProjectResponsesClientForModel(modelDeploymentName);
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
 OpenAIResponse response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
 After the response was created we need to wait for it to complete.
 
 ```C# Snippet:Sample_WriteOutput_ResponseBasic_Async
-while (response.Status != ResponseStatus.Incomplete || response.Status != ResponseStatus.Failed || response.Status != ResponseStatus.Completed)
-{
-    await Task.Delay(TimeSpan.FromMilliseconds(500));
-    response = await responseClient.GetResponseAsync(responseId: response.Id);
-}
-
 Console.WriteLine(response.GetOutputText());
 ```
 
@@ -372,17 +366,13 @@ AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
 Now we can ask the agent a question, which requires running python code in the container.
 
 ```C# Snippet:Sample_CreateResponse_CodeInterpreter_Async
-OpenAIResponseClient responseClient = projectClient.OpenAI.GetOpenAIResponseClient(modelDeploymentName);
-ResponseCreationOptions responseOptions = new();
-responseOptions.Agent = agentVersion;
+AgentReference agentReference = new(name: agentVersion.Name, version: agentVersion.Version);
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentReference);
 
-ResponseItem request = ResponseItem.CreateUserMessageItem("I need to solve the equation sin(x) + x^2 = 42");
-OpenAIResponse response = await responseClient.CreateResponseAsync(
-    [request],
-    responseOptions);
+OpenAIResponse response = await responseClient.CreateResponseAsync("I need to solve the equation sin(x) + x^2 = 42");
 ```
 
-### Computer tool
+### Computer use
 
 `ComputerTool` allows Agents to assist customer in computer related tasks. Its constructor is provided with description of an operation system and screen resolution.
 
@@ -424,7 +414,7 @@ int limitIteration = 10;
 OpenAIResponse response;
 do
 {
-    response = await CreateAndWaitForResponseAsync(
+    response = await CreateResponseAsync(
         responseClient,
         inputItems,
         responseOptions
@@ -652,30 +642,22 @@ AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
     options: new(agentDefinition));
 ```
 
-To supply functions outputs, we will need to wait for response multiple times. We will define method `CreateAndWaitForResponseAsync` for brevity.
+To supply functions outputs, we will need to obtain responses multiple times. We will define method `CreateAndWaitForResponseAsync` for brevity.
 
-```C# Snippet:Sample_WaitForResponse_Function_Async
-public static async Task<OpenAIResponse> CreateAndWaitForResponseAsync(OpenAIResponseClient responseClient, IEnumerable<ResponseItem> items, ResponseCreationOptions options)
+```C# Snippet:Sample_CheckResponse_Function_Async
+public static async Task<OpenAIResponse> CreateAndCheckReponseAsync(OpenAIResponseClient responseClient, IEnumerable<ResponseItem> items)
 {
     OpenAIResponse response = await responseClient.CreateResponseAsync(
-        inputItems: items,
-        options: options);
-    while (response.Status != ResponseStatus.Incomplete && response.Status != ResponseStatus.Failed && response.Status != ResponseStatus.Completed)
-    {
-        await Task.Delay(TimeSpan.FromMilliseconds(500));
-        response = await responseClient.GetResponseAsync(responseId: response.Id);
-    }
+        inputItems: items);
     Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
     return response;
 }
 ```
 
-Wait for the response; if the local function call is required, the response item will be of `FunctionCallResponseItem` type and will contain the function name needed by the Agent. In this case we will use our helper method `GetResolvedToolOutput` to get the `FunctionCallOutputResponseItem` with function call result. To provide the right answer, we need to supply all the response items to `CreateResponse` or `CreateResponseAsync` call. At the end we will print out the function response.
+If the local function call is required, the response item will be of `FunctionCallResponseItem` type and will contain the function name needed by the Agent. In this case we will use our helper method `GetResolvedToolOutput` to get the `FunctionCallOutputResponseItem` with function call result. To provide the right answer, we need to supply all the response items to `CreateResponse` or `CreateResponseAsync` call. At the end we will print out the function response.
 
 ```C# Snippet:Sample_CreateResponse_Function_Async
-OpenAIResponseClient responseClient = projectClient.OpenAI.GetOpenAIResponseClient(modelDeploymentName);
-ResponseCreationOptions responseOptions = new();
-responseOptions.Agent = agentVersion;
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
 
 ResponseItem request = ResponseItem.CreateUserMessageItem("What's the weather like in my favorite city?");
 List<ResponseItem> inputItems = [request];
@@ -683,10 +665,9 @@ bool funcionCalled = false;
 OpenAIResponse response;
 do
 {
-    response = await CreateAndWaitForResponseAsync(
+    response = await CreateAndCheckReponseAsync(
         responseClient,
-        inputItems,
-        responseOptions);
+        inputItems);
     funcionCalled = false;
     foreach (ResponseItem responseItem in response.OutputItems)
     {
@@ -726,7 +707,7 @@ For tracing to Azure Monitor from your application, the preferred option is to u
 dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
 ```
 
-More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.1/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
+More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
 
 Another option is to use Azure.Monitor.OpenTelemetry.Exporter package. Install the package with [NuGet](https://www.nuget.org/ )
 ```dotnetcli
@@ -780,7 +761,7 @@ To further diagnose and troubleshoot issues, you can enable logging following th
 
 ## Next steps
 
-Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.1/sdk/ai/Azure.AI.Projects.OpenAI/samples)
+Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/ai/Azure.AI.Projects.OpenAI/samples)
 
 ## Contributing
 
@@ -805,7 +786,7 @@ See the [Azure SDK CONTRIBUTING.md][aiprojects_contrib] for details on building,
 [product_doc]: https://learn.microsoft.com/azure/ai-studio/
 [azure_identity]: https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 [azure_identity_dac]: https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet
-[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.1/CONTRIBUTING.md
+[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.2/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
