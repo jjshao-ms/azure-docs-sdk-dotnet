@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure AI Projects client library for .NET - version 1.2.0-beta.1 
+# Azure AI Projects client library for .NET - version 1.2.0-beta.2 
 
 The AI Projects client library is part of the Azure AI Foundry SDK and provides easy access to resources in your Azure AI Foundry Project. Use it to:
 
@@ -87,7 +87,7 @@ Once the `AIProjectClient` is created, you can use properties such as `.Datasets
 
 ### Performing Classic Agent operations
 
-The `GetPersistentAgentsClient` method on the `AIProjectsClient` gives you access to an authenticated `PersistentAgentsClient` from the `Azure.AI.Agents.Persistent` package. Below we show how to create an Agent and delete it. To see what you can do with the agent you created, see the [many samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.1/sdk/ai/Azure.AI.Agents.Persistent/samples) associated with the `Azure.AI.Agents.Persistent` package.
+The `GetPersistentAgentsClient` method on the `AIProjectsClient` gives you access to an authenticated `PersistentAgentsClient` from the `Azure.AI.Agents.Persistent` package. Below we show how to create an Agent and delete it. To see what you can do with the agent you created, see the [many samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.2/sdk/ai/Azure.AI.Agents.Persistent/samples) associated with the `Azure.AI.Agents.Persistent` package.
 
 The code below assumes `ModelDeploymentName` (a string) is defined. It's the deployment name of an AI model in your Foundry Project, as shown in the "Models + endpoints" tab, under the "Name" column.
 ```C# Snippet:AI_Projects_ExtensionsAgentsBasicsSync
@@ -532,14 +532,14 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 <!-- LINKS -->
 [RequestFailedException]: https://learn.microsoft.com/dotnet/api/azure.requestfailedexception?view=azure-dotnet
-[samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.1/sdk/ai/Azure.AI.Projects/tests/Samples
+[samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.2/sdk/ai/Azure.AI.Projects/tests/Samples
 [api_ref_docs]: https://learn.microsoft.com/dotnet/api/azure.ai.projects?view=azure-dotnet-preview
 [nuget]: https://www.nuget.org/packages/Azure.AI.Projects
-[source_code]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.1/sdk/ai/Azure.AI.Projects
+[source_code]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.2.0-beta.2/sdk/ai/Azure.AI.Projects
 [product_doc]: https://learn.microsoft.com/azure/ai-studio/
 [azure_identity]: https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 [azure_identity_dac]: https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet
-[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects_1.2.0-beta.1/CONTRIBUTING.md
+[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects_1.2.0-beta.2/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
