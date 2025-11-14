@@ -1,7 +1,7 @@
 ---
 title: Azure Hci.Vm SDK for .NET
 description: Reference for Azure Hci.Vm SDK for .NET
-ms.date: 11/13/2025
+ms.date: 11/14/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: hci.vm
