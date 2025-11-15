@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Search.Documents</AssemblyName>
     <AssemblyVersion>11.7.0.0</AssemblyVersion>
+    <AssemblyVersion>11.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,7 +37,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="searchIndexName" Type="System.String" />
@@ -58,7 +59,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -74,6 +75,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SearchFields">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt; SearchFields { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt; SearchFields" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SearchFields" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchFields As IList(Of SearchIndexFieldReference)" />
+      <MemberSignature Language="F#" Value="member this.SearchFields : System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt;" Usage="Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SearchFields" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Used to restrict which fields to search on the search index. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SearchIndexName">
       <MemberSignature Language="C#" Value="public string SearchIndexName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SearchIndexName" />
@@ -83,7 +104,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -94,19 +115,39 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SourceDataSelect">
-      <MemberSignature Language="C#" Value="public string SourceDataSelect { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SourceDataSelect" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SourceDataSelect" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceDataSelect As String" />
-      <MemberSignature Language="F#" Value="member this.SourceDataSelect : string with get, set" Usage="Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SourceDataSelect" />
+    <Member MemberName="SemanticConfigurationName">
+      <MemberSignature Language="C#" Value="public string SemanticConfigurationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SemanticConfigurationName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SemanticConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SemanticConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.SemanticConfigurationName : string with get, set" Usage="Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SemanticConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Used to specify a different semantic configuration on the target search index other than the default one. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceDataFields">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt; SourceDataFields { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt; SourceDataFields" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SourceDataFields" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDataFields As IList(Of SearchIndexFieldReference)" />
+      <MemberSignature Language="F#" Value="member this.SourceDataFields : System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt;" Usage="Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters.SourceDataFields" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.Search.Documents.Indexes.Models.SearchIndexFieldReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Used to request additional fields for referenced source data. </summary>
@@ -126,7 +167,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters</ReturnType>
@@ -158,7 +199,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -189,7 +230,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSourceParameters</ReturnType>
@@ -221,7 +262,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -250,7 +291,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

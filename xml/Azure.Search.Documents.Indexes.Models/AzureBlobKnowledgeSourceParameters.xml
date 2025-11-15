@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Search.Documents</AssemblyName>
     <AssemblyVersion>11.7.0.0</AssemblyVersion>
+    <AssemblyVersion>11.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,7 +37,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -51,30 +52,6 @@
           <paramref name="connectionString" /> or <paramref name="containerName" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="ChatCompletionModel">
-      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel ChatCompletionModel { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel ChatCompletionModel" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.ChatCompletionModel" />
-      <MemberSignature Language="VB.NET" Value="Public Property ChatCompletionModel As KnowledgeAgentModel" />
-      <MemberSignature Language="F#" Value="member this.ChatCompletionModel : Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.ChatCompletionModel" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Optional chat completion model for image verbalization or context extraction.
-            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.KnowledgeAgentModel" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.KnowledgeAgentAzureOpenAIModel" />.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ConnectionString">
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
@@ -84,7 +61,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -104,7 +81,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -124,57 +101,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resources created by the knowledge source. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DisableImageVerbalization">
-      <MemberSignature Language="C#" Value="public bool? DisableImageVerbalization { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DisableImageVerbalization" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.DisableImageVerbalization" />
-      <MemberSignature Language="VB.NET" Value="Public Property DisableImageVerbalization As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.DisableImageVerbalization : Nullable&lt;bool&gt; with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.DisableImageVerbalization" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Indicates whether image verbalization should be disabled. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EmbeddingModel">
-      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer EmbeddingModel { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer EmbeddingModel" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.EmbeddingModel" />
-      <MemberSignature Language="VB.NET" Value="Public Property EmbeddingModel As VectorSearchVectorizer" />
-      <MemberSignature Language="F#" Value="member this.EmbeddingModel : Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.EmbeddingModel" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Optional vectorizer configuration for vectorizing content.
-            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.VectorSearchVectorizer" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.AIServicesVisionVectorizer" />, <see cref="T:Azure.Search.Documents.Indexes.Models.AzureMachineLearningVectorizer" />, <see cref="T:Azure.Search.Documents.Indexes.Models.AzureOpenAIVectorizer" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.WebApiVectorizer" />.
-            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +121,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -199,46 +132,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity Identity" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As SearchIndexerDataIdentity" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.Identity" />
+    <Member MemberName="IngestionParameters">
+      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.KnowledgeSourceIngestionParameters IngestionParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.KnowledgeSourceIngestionParameters IngestionParameters" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IngestionParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property IngestionParameters As KnowledgeSourceIngestionParameters" />
+      <MemberSignature Language="F#" Value="member this.IngestionParameters : Azure.Search.Documents.Indexes.Models.KnowledgeSourceIngestionParameters with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IngestionParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity</ReturnType>
+        <ReturnType>Azure.Search.Documents.Indexes.Models.KnowledgeSourceIngestionParameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            An explicit identity to use for this knowledge source.
-            Please note <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataIdentity" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataNoneIdentity" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexerDataUserAssignedIdentity" />.
-            </summary>
+        <summary> Consolidates all general ingestion settings. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IngestionSchedule">
-      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.IndexingSchedule IngestionSchedule { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.IndexingSchedule IngestionSchedule" />
-      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IngestionSchedule" />
-      <MemberSignature Language="VB.NET" Value="Public Property IngestionSchedule As IndexingSchedule" />
-      <MemberSignature Language="F#" Value="member this.IngestionSchedule : Azure.Search.Documents.Indexes.Models.IndexingSchedule with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IngestionSchedule" />
+    <Member MemberName="IsAdlsGen2">
+      <MemberSignature Language="C#" Value="public bool? IsAdlsGen2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsAdlsGen2" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IsAdlsGen2" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAdlsGen2 As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsAdlsGen2 : Nullable&lt;bool&gt; with get, set" Usage="Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters.IsAdlsGen2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Search.Documents.Indexes.Models.IndexingSchedule</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Optional schedule for data ingestion. </summary>
+        <summary> Set to true if connecting to an ADLS Gen2 storage account. Default is false. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +181,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -280,7 +209,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters</ReturnType>
@@ -312,7 +241,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -343,7 +272,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSourceParameters</ReturnType>
@@ -375,7 +304,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -404,7 +333,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

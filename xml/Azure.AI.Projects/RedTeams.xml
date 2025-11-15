@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +43,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;</ReturnType>
@@ -111,7 +112,7 @@ Response<RedTeam> response = client.Create(redTeam);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -142,7 +143,7 @@ Response<RedTeam> response = client.Create(redTeam);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;</ReturnType>
@@ -211,7 +212,7 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -234,27 +235,25 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult Get (string name, string clientRequestId, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult Get(string name, string clientRequestId, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.Get(System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String, clientRequestId As String, options As RequestOptions) As ClientResult" />
-      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.Get : string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="redTeams.Get (name, clientRequestId, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult Get (string name, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult Get(string name, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.Get(System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String, options As RequestOptions) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.Get : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="redTeams.Get (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the red team run. </param>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get a redteam by name.
@@ -269,27 +268,25 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt; Get (string name, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.RedTeam&gt; Get(string name, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.Get(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of RedTeam)" />
-      <MemberSignature Language="F#" Value="abstract member Get : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.Get : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.Get (name, clientRequestId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt; Get (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.RedTeam&gt; Get(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.Get(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of RedTeam)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.Get : string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.Get (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the red team run. </param>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get a redteam by name. </summary>
         <returns>To be added.</returns>
@@ -302,25 +299,23 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAll">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAll (string clientRequestId, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAll(string clientRequestId, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAll(System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (clientRequestId As String, options As RequestOptions) As CollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetAll : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAll : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="redTeams.GetAll (clientRequestId, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAll (System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAll(class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAll(System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAll : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="redTeams.GetAll options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] List a redteam by name.
@@ -331,25 +326,23 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAll">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt; GetAll (string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.RedTeam&gt; GetAll(string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAll(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of RedTeam)" />
-      <MemberSignature Language="F#" Value="abstract member GetAll : string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.GetAll : string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.GetAll (clientRequestId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt; GetAll (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.RedTeam&gt; GetAll(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAll(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of RedTeam)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.GetAll : System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.GetAll cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.RedTeam&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> List a redteam by name. </summary>
         <returns>To be added.</returns>
@@ -358,25 +351,23 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync (string clientRequestId, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync(string clientRequestId, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAllAsync(System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (clientRequestId As String, options As RequestOptions) As AsyncCollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetAllAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAllAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="redTeams.GetAllAsync (clientRequestId, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync (System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync(class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAllAsync(System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAllAsync : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="redTeams.GetAllAsync options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] List a redteam by name.
@@ -387,25 +378,23 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt; GetAllAsync (string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.RedTeam&gt; GetAllAsync(string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAllAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of RedTeam)" />
-      <MemberSignature Language="F#" Value="abstract member GetAllAsync : string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.GetAllAsync : string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.GetAllAsync (clientRequestId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt; GetAllAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.RedTeam&gt; GetAllAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAllAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of RedTeam)" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt;&#xA;override this.GetAllAsync : System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt;" Usage="redTeams.GetAllAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.RedTeam&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> List a redteam by name. </summary>
         <returns>To be added.</returns>
@@ -414,27 +403,25 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; GetAsync (string name, string clientRequestId, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; GetAsync(string name, string clientRequestId, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAsync(System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (name As String, clientRequestId As String, options As RequestOptions) As Task(Of ClientResult)" />
-      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.GetAsync : string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="redTeams.GetAsync (name, clientRequestId, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; GetAsync (string name, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; GetAsync(string name, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAsync(System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (name As String, options As RequestOptions) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.GetAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="redTeams.GetAsync (name, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the red team run. </param>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get a redteam by name.
@@ -449,27 +436,25 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt; GetAsync (string name, string clientRequestId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.RedTeam&gt;&gt; GetAsync(string name, string clientRequestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (name As String, Optional clientRequestId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of RedTeam))" />
-      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;&#xA;override this.GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;" Usage="redTeams.GetAsync (name, clientRequestId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt; GetAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.RedTeam&gt;&gt; GetAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.RedTeams.GetAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of RedTeam))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;&#xA;override this.GetAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;" Usage="redTeams.GetAsync (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.RedTeam&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="clientRequestId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="name"> Identifier of the red team run. </param>
-        <param name="clientRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get a redteam by name. </summary>
         <returns>To be added.</returns>
@@ -490,7 +475,7 @@ Response<RedTeam> response = await client.CreateAsync(redTeam);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>

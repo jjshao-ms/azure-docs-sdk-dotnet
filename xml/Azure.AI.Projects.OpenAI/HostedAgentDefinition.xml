@@ -1,0 +1,401 @@
+<Type Name="HostedAgentDefinition" FullName="Azure.AI.Projects.OpenAI.HostedAgentDefinition">
+  <TypeSignature Language="C#" Value="public class HostedAgentDefinition : Azure.AI.Projects.OpenAI.AgentDefinition, System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostedAgentDefinition extends Azure.AI.Projects.OpenAI.AgentDefinition implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.OpenAI.HostedAgentDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class HostedAgentDefinition&#xA;Inherits AgentDefinition&#xA;Implements IJsonModel(Of HostedAgentDefinition), IPersistableModel(Of HostedAgentDefinition)" />
+  <TypeSignature Language="F#" Value="type HostedAgentDefinition = class&#xA;    inherit AgentDefinition&#xA;    interface IJsonModel&lt;HostedAgentDefinition&gt;&#xA;    interface IPersistableModel&lt;HostedAgentDefinition&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.AI.Projects.OpenAI.AgentDefinition</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The hosted agent definition. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostedAgentDefinition (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt; containerProtocolVersions, string cpu, string memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt; containerProtocolVersions, string cpu, string memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.#ctor(System.Collections.Generic.IEnumerable{Azure.AI.Projects.OpenAI.ProtocolVersionRecord},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (containerProtocolVersions As IEnumerable(Of ProtocolVersionRecord), cpu As String, memory As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.OpenAI.HostedAgentDefinition : seq&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt; * string * string -&gt; Azure.AI.Projects.OpenAI.HostedAgentDefinition" Usage="new Azure.AI.Projects.OpenAI.HostedAgentDefinition (containerProtocolVersions, cpu, memory)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="containerProtocolVersions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt;" />
+        <Parameter Name="cpu" Type="System.String" />
+        <Parameter Name="memory" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="containerProtocolVersions"> The protocols that the agent supports for ingress communication of the containers. </param>
+        <param name="cpu"> The CPU configuration for the hosted agent. </param>
+        <param name="memory"> The memory configuration for the hosted agent. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.OpenAI.HostedAgentDefinition" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="containerProtocolVersions" />, <paramref name="cpu" /> or <paramref name="memory" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerProtocolVersions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt; ContainerProtocolVersions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt; ContainerProtocolVersions" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.HostedAgentDefinition.ContainerProtocolVersions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerProtocolVersions As IList(Of ProtocolVersionRecord)" />
+      <MemberSignature Language="F#" Value="member this.ContainerProtocolVersions : System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt;" Usage="Azure.AI.Projects.OpenAI.HostedAgentDefinition.ContainerProtocolVersions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.ProtocolVersionRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The protocols that the agent supports for ingress communication of the containers. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cpu">
+      <MemberSignature Language="C#" Value="public string Cpu { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Cpu" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.HostedAgentDefinition.Cpu" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cpu As String" />
+      <MemberSignature Language="F#" Value="member this.Cpu : string with get, set" Usage="Azure.AI.Projects.OpenAI.HostedAgentDefinition.Cpu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The CPU configuration for the hosted agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvironmentVariables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; EnvironmentVariables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; EnvironmentVariables" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.HostedAgentDefinition.EnvironmentVariables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvironmentVariables As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentVariables : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.AI.Projects.OpenAI.HostedAgentDefinition.EnvironmentVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Environment variables to set in the hosted agent container. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.OpenAI.AgentDefinition JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.OpenAI.AgentDefinition JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AgentDefinition" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentDefinition" Usage="hostedAgentDefinition.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="hostedAgentDefinition.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Memory">
+      <MemberSignature Language="C#" Value="public string Memory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Memory" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.HostedAgentDefinition.Memory" />
+      <MemberSignature Language="VB.NET" Value="Public Property Memory As String" />
+      <MemberSignature Language="F#" Value="member this.Memory : string with get, set" Usage="Azure.AI.Projects.OpenAI.HostedAgentDefinition.Memory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The memory configuration for the hosted agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.OpenAI.AgentDefinition PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.OpenAI.AgentDefinition PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As AgentDefinition" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentDefinition" Usage="hostedAgentDefinition.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="hostedAgentDefinition.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.OpenAI.HostedAgentDefinition IJsonModel&lt;HostedAgentDefinition&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.HostedAgentDefinition System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#OpenAI#HostedAgentDefinition&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As HostedAgentDefinition Implements IJsonModel(Of HostedAgentDefinition).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.HostedAgentDefinition&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.HostedAgentDefinition" Usage="hostedAgentDefinition.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.HostedAgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;HostedAgentDefinition&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#OpenAI#HostedAgentDefinition&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of HostedAgentDefinition).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="hostedAgentDefinition.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.OpenAI.HostedAgentDefinition IPersistableModel&lt;HostedAgentDefinition&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.HostedAgentDefinition System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#HostedAgentDefinition&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As HostedAgentDefinition Implements IPersistableModel(Of HostedAgentDefinition).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.HostedAgentDefinition&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.HostedAgentDefinition" Usage="hostedAgentDefinition.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.HostedAgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;HostedAgentDefinition&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#HostedAgentDefinition&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of HostedAgentDefinition).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="hostedAgentDefinition.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;HostedAgentDefinition&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.HostedAgentDefinition.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#HostedAgentDefinition&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of HostedAgentDefinition).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="hostedAgentDefinition.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.HostedAgentDefinition&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tools">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.AgentTool&gt; Tools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Projects.OpenAI.AgentTool&gt; Tools" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.HostedAgentDefinition.Tools" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tools As IList(Of AgentTool)" />
+      <MemberSignature Language="F#" Value="member this.Tools : System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;" Usage="Azure.AI.Projects.OpenAI.HostedAgentDefinition.Tools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An array of tools the hosted agent's model may call while generating a response. You
+            can specify which tool to use by setting the `tool_choice` parameter.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

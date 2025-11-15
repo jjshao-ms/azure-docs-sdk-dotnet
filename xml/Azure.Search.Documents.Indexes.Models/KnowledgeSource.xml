@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Search.Documents</AssemblyName>
     <AssemblyVersion>11.7.0.0</AssemblyVersion>
+    <AssemblyVersion>11.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +33,7 @@
     <summary>
             Represents a knowledge source definition.
             Please note <see cref="T:Azure.Search.Documents.Indexes.Models.KnowledgeSource" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSource" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSource" />.
+            The available derived classes include <see cref="T:Azure.Search.Documents.Indexes.Models.AzureBlobKnowledgeSource" />, <see cref="T:Azure.Search.Documents.Indexes.Models.IndexedOneLakeKnowledgeSource" />, <see cref="T:Azure.Search.Documents.Indexes.Models.IndexedSharePointKnowledgeSource" />, <see cref="T:Azure.Search.Documents.Indexes.Models.RemoteSharePointKnowledgeSource" />, <see cref="T:Azure.Search.Documents.Indexes.Models.SearchIndexKnowledgeSource" /> and <see cref="T:Azure.Search.Documents.Indexes.Models.WebKnowledgeSource" />.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -46,7 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -68,7 +69,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -88,13 +89,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.SearchResourceEncryptionKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> A description of an encryption key that you create in Azure Key Vault. This key is used to provide an additional level of encryption-at-rest for your agent definition when you want full assurance that no one, not even Microsoft, can decrypt them. Once you have encrypted your agent definition, it will always remain encrypted. The search service will ignore attempts to set this property to null. You can change this property as needed if you want to rotate your encryption key; Your agent definition will be unaffected. Encryption with customer-managed keys is not available for free search services, and is only available for paid services created on or after January 1, 2019. </summary>
+        <summary> A description of an encryption key that you create in Azure Key Vault. This key is used to provide an additional level of encryption-at-rest for your knowledge base definition when you want full assurance that no one, not even Microsoft, can decrypt them. Once you have encrypted your knowledge base definition, it will always remain encrypted. The search service will ignore attempts to set this property to null. You can change this property as needed if you want to rotate your encryption key; Your knowledge base definition will be unaffected. Encryption with customer-managed keys is not available for free search services, and is only available for paid services created on or after January 1, 2019. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +109,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
@@ -130,7 +131,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -155,7 +156,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -178,7 +179,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.KnowledgeSource</ReturnType>
@@ -210,7 +211,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -241,7 +242,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Search.Documents.Indexes.Models.KnowledgeSource</ReturnType>
@@ -273,7 +274,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -302,7 +303,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.Search.Documents</AssemblyName>
-        <AssemblyVersion>11.7.0.0</AssemblyVersion>
+        <AssemblyVersion>11.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

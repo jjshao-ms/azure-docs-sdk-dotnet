@@ -1,0 +1,544 @@
+<Type Name="AgentTool" FullName="Azure.AI.Projects.OpenAI.AgentTool">
+  <TypeSignature Language="C#" Value="public abstract class AgentTool : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AgentTool extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Projects.OpenAI.AgentTool&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Projects.OpenAI.AgentTool&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.OpenAI.AgentTool" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AgentTool&#xA;Implements IJsonModel(Of AgentTool), IPersistableModel(Of AgentTool)" />
+  <TypeSignature Language="F#" Value="type AgentTool = class&#xA;    interface IJsonModel&lt;AgentTool&gt;&#xA;    interface IPersistableModel&lt;AgentTool&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.PersistableModelProxy(typeof(OpenAI.UnknownTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.PersistableModelProxy(typeof(OpenAI.UnknownTool))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The AgentTool.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.OpenAI.LocalShellAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.BingGroundingAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.SharepointAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.AzureAISearchAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.OpenAPIAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.AzureFunctionAgentTool" />, <see cref="T:Azure.AI.Projects.OpenAI.CaptureStructuredOutputsTool" />, <see cref="T:Azure.AI.Projects.OpenAI.A2ATool" />, and <see cref="T:Azure.AI.Projects.OpenAI.MemorySearchTool" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateA2ATool">
+      <MemberSignature Language="C#" Value="public static OpenAI.Responses.ResponseTool CreateA2ATool (Uri baseUri, string agentCardPath = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class OpenAI.Responses.ResponseTool CreateA2ATool(class System.Uri baseUri, string agentCardPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateA2ATool(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateA2ATool (baseUri As Uri, Optional agentCardPath As String = Nothing) As ResponseTool" />
+      <MemberSignature Language="F#" Value="static member CreateA2ATool : Uri * string -&gt; OpenAI.Responses.ResponseTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateA2ATool (baseUri, agentCardPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>OpenAI.Responses.ResponseTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseUri" Type="System.Uri" />
+        <Parameter Name="agentCardPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseUri">To be added.</param>
+        <param name="agentCardPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAzureAISearchTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.AzureAISearchAgentTool CreateAzureAISearchTool (Azure.AI.Projects.OpenAI.AzureAISearchToolOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.AzureAISearchAgentTool CreateAzureAISearchTool(class Azure.AI.Projects.OpenAI.AzureAISearchToolOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateAzureAISearchTool(Azure.AI.Projects.OpenAI.AzureAISearchToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAzureAISearchTool (Optional options As AzureAISearchToolOptions = Nothing) As AzureAISearchAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateAzureAISearchTool : Azure.AI.Projects.OpenAI.AzureAISearchToolOptions -&gt; Azure.AI.Projects.OpenAI.AzureAISearchAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateAzureAISearchTool options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AzureAISearchAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.AI.Projects.OpenAI.AzureAISearchToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBingCustomSearchTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool CreateBingCustomSearchTool (Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool CreateBingCustomSearchTool(class Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateBingCustomSearchTool(Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBingCustomSearchTool (parameters As BingCustomSearchToolParameters) As BingCustomSearchAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateBingCustomSearchTool : Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters -&gt; Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateBingCustomSearchTool parameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBingGroundingTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.BingGroundingAgentTool CreateBingGroundingTool (Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.BingGroundingAgentTool CreateBingGroundingTool(class Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateBingGroundingTool(Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBingGroundingTool (options As BingGroundingSearchToolOptions) As BingGroundingAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateBingGroundingTool : Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions -&gt; Azure.AI.Projects.OpenAI.BingGroundingAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateBingGroundingTool options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.BingGroundingAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBrowserAutomationTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool CreateBrowserAutomationTool (Azure.AI.Projects.OpenAI.BrowserAutomationToolParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool CreateBrowserAutomationTool(class Azure.AI.Projects.OpenAI.BrowserAutomationToolParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateBrowserAutomationTool(Azure.AI.Projects.OpenAI.BrowserAutomationToolParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBrowserAutomationTool (parameters As BrowserAutomationToolParameters) As BrowserAutomationAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateBrowserAutomationTool : Azure.AI.Projects.OpenAI.BrowserAutomationToolParameters -&gt; Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateBrowserAutomationTool parameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="Azure.AI.Projects.OpenAI.BrowserAutomationToolParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLocalShellTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.LocalShellAgentTool CreateLocalShellTool ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.LocalShellAgentTool CreateLocalShellTool() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateLocalShellTool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateLocalShellTool () As LocalShellAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateLocalShellTool : unit -&gt; Azure.AI.Projects.OpenAI.LocalShellAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateLocalShellTool " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.LocalShellAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMicrosoftFabricTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool CreateMicrosoftFabricTool (Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool CreateMicrosoftFabricTool(class Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateMicrosoftFabricTool(Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMicrosoftFabricTool (options As FabricDataAgentToolOptions) As MicrosoftFabricAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateMicrosoftFabricTool : Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions -&gt; Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateMicrosoftFabricTool options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOpenApiTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.OpenAPIAgentTool CreateOpenApiTool (Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition definition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.OpenAPIAgentTool CreateOpenApiTool(class Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateOpenApiTool(Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOpenApiTool (definition As OpenAPIFunctionDefinition) As OpenAPIAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateOpenApiTool : Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition -&gt; Azure.AI.Projects.OpenAI.OpenAPIAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateOpenApiTool definition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definition" Type="Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="definition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSharepointTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.SharepointAgentTool CreateSharepointTool (Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.SharepointAgentTool CreateSharepointTool(class Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateSharepointTool(Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharepointTool (options As SharePointGroundingToolOptions) As SharepointAgentTool" />
+      <MemberSignature Language="F#" Value="static member CreateSharepointTool : Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions -&gt; Azure.AI.Projects.OpenAI.SharepointAgentTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateSharepointTool options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.SharepointAgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStructuredOutputsTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.CaptureStructuredOutputsTool CreateStructuredOutputsTool (Azure.AI.Projects.OpenAI.StructuredOutputDefinition outputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.CaptureStructuredOutputsTool CreateStructuredOutputsTool(class Azure.AI.Projects.OpenAI.StructuredOutputDefinition outputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.CreateStructuredOutputsTool(Azure.AI.Projects.OpenAI.StructuredOutputDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStructuredOutputsTool (outputs As StructuredOutputDefinition) As CaptureStructuredOutputsTool" />
+      <MemberSignature Language="F#" Value="static member CreateStructuredOutputsTool : Azure.AI.Projects.OpenAI.StructuredOutputDefinition -&gt; Azure.AI.Projects.OpenAI.CaptureStructuredOutputsTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.CreateStructuredOutputsTool outputs" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.CaptureStructuredOutputsTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputs" Type="Azure.AI.Projects.OpenAI.StructuredOutputDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="outputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Projects.OpenAI.AgentTool JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.AgentTool JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AgentTool" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool" Usage="agentTool.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="agentTool.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator OpenAI.Responses.ResponseTool (Azure.AI.Projects.OpenAI.AgentTool agentTool);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class OpenAI.Responses.ResponseTool op_Implicit(class Azure.AI.Projects.OpenAI.AgentTool agentTool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.op_Implicit(Azure.AI.Projects.OpenAI.AgentTool)~OpenAI.Responses.ResponseTool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (agentTool As AgentTool) As ResponseTool" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Azure.AI.Projects.OpenAI.AgentTool -&gt; OpenAI.Responses.ResponseTool" Usage="Azure.AI.Projects.OpenAI.AgentTool.op_Implicit agentTool" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>OpenAI.Responses.ResponseTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentTool" Type="Azure.AI.Projects.OpenAI.AgentTool" />
+      </Parameters>
+      <Docs>
+        <param name="agentTool">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Projects.OpenAI.AgentTool PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.AgentTool PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As AgentTool" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool" Usage="agentTool.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="agentTool.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.OpenAI.AgentTool IJsonModel&lt;AgentTool&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.AgentTool System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#OpenAI#AgentTool&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AgentTool Implements IJsonModel(Of AgentTool).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool" Usage="agentTool.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;AgentTool&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Projects#OpenAI#AgentTool&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of AgentTool).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="agentTool.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Projects.OpenAI.AgentTool IPersistableModel&lt;AgentTool&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Projects.OpenAI.AgentTool System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#AgentTool&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As AgentTool Implements IPersistableModel(Of AgentTool).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Projects.OpenAI.AgentTool" Usage="agentTool.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.OpenAI.AgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;AgentTool&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#AgentTool&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of AgentTool).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="agentTool.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;AgentTool&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.AgentTool.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Projects#OpenAI#AgentTool&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of AgentTool).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="agentTool.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Projects.OpenAI.AgentTool&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
