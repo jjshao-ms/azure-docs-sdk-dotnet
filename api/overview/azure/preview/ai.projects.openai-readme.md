@@ -1,12 +1,12 @@
 ---
 title: Azure AI Projects OpenAI client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.Projects.OpenAI, ai
-ms.date: 11/14/2025
+ms.date: 11/16/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.2 
+# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.3 
 
 
 Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecosystem of models, tools, and capabilities from OpenAI, Microsoft, and other LLM providers.
@@ -33,7 +33,7 @@ Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecos
   - [Prompt Agents](#prompt-agents)
     - [Agents](#agents)
     - [Responses](#responses)
-    - [Coversations](#coversations)
+    - [Conversations](#conversations)
   - [Container App](#container-app)
   - [File search](#file-search)
   - [Code interpreter](#code-interpreter)
@@ -126,7 +126,7 @@ ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponses
 OpenAIResponse response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
-In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
+In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
 
 ## Examples
 
@@ -239,7 +239,17 @@ Finally, we can delete Agent.
 await projectClient.Agents.DeleteAgentAsync(agentName: "myAgent");
 ```
 
-#### Coversations
+Previously created responses can also be listed, typically to find all responses associated with a particular agent or conversation.
+
+```C# Snippet:Sample_ListResponses_Async
+await foreach (OpenAIResponse response
+    in projectClient.OpenAI.Responses.GetProjectResponsesAsync(agent: new AgentReference(agentName), conversationId: conversationId))
+{
+    Console.WriteLine($"Matching response: {response.Id}");
+}
+```
+
+#### Conversations
 
 Conversations may be used to store the history of interaction with the agent. To add the responses to a conversation,
 set the conversation parameter while calling `GetProjectResponsesClientForAgent`.
@@ -707,7 +717,7 @@ For tracing to Azure Monitor from your application, the preferred option is to u
 dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
 ```
 
-More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
+More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.3/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
 
 Another option is to use Azure.Monitor.OpenTelemetry.Exporter package. Install the package with [NuGet](https://www.nuget.org/ )
 ```dotnetcli
@@ -761,7 +771,7 @@ To further diagnose and troubleshoot issues, you can enable logging following th
 
 ## Next steps
 
-Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects.OpenAI_1.0.0-beta.2/sdk/ai/Azure.AI.Projects.OpenAI/samples)
+Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples](https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples)
 
 ## Contributing
 
@@ -786,7 +796,7 @@ See the [Azure SDK CONTRIBUTING.md][aiprojects_contrib] for details on building,
 [product_doc]: https://learn.microsoft.com/azure/ai-studio/
 [azure_identity]: https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 [azure_identity_dac]: https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet
-[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.2/CONTRIBUTING.md
+[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.3/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
