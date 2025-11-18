@@ -1,7 +1,7 @@
 ---
 title: Azure Provisioning SDK for .NET
 description: Reference for Azure Provisioning SDK for .NET
-ms.date: 11/17/2025
+ms.date: 11/18/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
