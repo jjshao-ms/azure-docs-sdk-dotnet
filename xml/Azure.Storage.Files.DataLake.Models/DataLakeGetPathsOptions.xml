@@ -1,0 +1,138 @@
+<Type Name="DataLakeGetPathsOptions" FullName="Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions">
+  <TypeSignature Language="C#" Value="public class DataLakeGetPathsOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataLakeGetPathsOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataLakeGetPathsOptions" />
+  <TypeSignature Language="F#" Value="type DataLakeGetPathsOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+    <AssemblyVersion>12.25.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Optional parameters for <see cref="M:Azure.Storage.Files.DataLake.DataLakeFileSystemClient.GetPathsAsync(Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions,System.Threading.CancellationToken)" />
+            and <see cref="M:Azure.Storage.Files.DataLake.DataLakeDirectoryClient.GetPathsAsync(Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions,System.Threading.CancellationToken)" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataLakeGetPathsOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Filters results to paths within the specified directory.
+            Not applicable for <see cref="M:Azure.Storage.Files.DataLake.DataLakeDirectoryClient.GetPathsAsync(Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions,System.Threading.CancellationToken)" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recursive">
+      <MemberSignature Language="C#" Value="public bool Recursive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Recursive" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.Recursive" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recursive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Recursive : bool with get, set" Usage="Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.Recursive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If true, all paths are listed; otherwise, only paths at the root of the filesystem are listed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFrom">
+      <MemberSignature Language="C#" Value="public string StartFrom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartFrom" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.StartFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartFrom As String" />
+      <MemberSignature Language="F#" Value="member this.StartFrom : string with get, set" Usage="Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.StartFrom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optional. A relative path within the specified directory where the listing will start from.
+            For example, a recursive listing under directory folder1/folder2 with beginFrom as folder3/readmefile.txt
+            will start listing from folder1/folder2/folder3/readmefile.txt. Please note that, multiple entity levels
+            are supported for recursive listing. Non-recursive listing supports only one entity level.
+            An error will appear if multiple entity levels are specified for non-recursive listing.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPrincipalName">
+      <MemberSignature Language="C#" Value="public bool UserPrincipalName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UserPrincipalName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.UserPrincipalName" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserPrincipalName As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserPrincipalName : bool with get, set" Usage="Azure.Storage.Files.DataLake.Models.DataLakeGetPathsOptions.UserPrincipalName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optional. Valid only when Hierarchical Namespace is enabled for the account. If
+            "true", the user identity values returned in the owner and group fields of each list
+            entry will be transformed from Azure Active Directory Object IDs to User Principal
+            Names. If "false", the values will be returned as Azure Active Directory Object IDs.
+            The default value is false. Note that group and application Object IDs are not translated
+            because they do not have unique friendly names.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

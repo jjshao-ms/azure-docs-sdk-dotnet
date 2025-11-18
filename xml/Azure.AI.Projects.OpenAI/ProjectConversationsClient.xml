@@ -372,11 +372,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectConversations">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversations (int? limit = default, string order = default, string after = default, string before = default, string agentName = default, string agentId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversations(valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, string agentName, string agentId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectConversationsClient.GetProjectConversations(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectConversations (Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional agentName As String = Nothing, Optional agentId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of ProjectConversation)" />
-      <MemberSignature Language="F#" Value="abstract member GetProjectConversations : Nullable&lt;int&gt; * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;&#xA;override this.GetProjectConversations : Nullable&lt;int&gt; * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;" Usage="projectConversationsClient.GetProjectConversations (limit, order, after, before, agentName, agentId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversations (Azure.AI.Projects.OpenAI.AgentReference agent = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversations(class Azure.AI.Projects.OpenAI.AgentReference agent, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectConversationsClient.GetProjectConversations(Azure.AI.Projects.OpenAI.AgentReference,System.Nullable{System.Int32},System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectConversations (Optional agent As AgentReference = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of ProjectConversation)" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectConversations : Azure.AI.Projects.OpenAI.AgentReference * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;&#xA;override this.GetProjectConversations : Azure.AI.Projects.OpenAI.AgentReference * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;" Usage="projectConversationsClient.GetProjectConversations (agent, limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -386,15 +386,17 @@
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="agent" Type="Azure.AI.Projects.OpenAI.AgentReference" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="order" Type="System.String" />
         <Parameter Name="after" Type="System.String" />
         <Parameter Name="before" Type="System.String" />
-        <Parameter Name="agentName" Type="System.String" />
-        <Parameter Name="agentId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="agent">
+            If provided, only conversations associated with the referenced agent will be retrieved.
+            </param>
         <param name="limit">
             A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
             default is 20.
@@ -413,8 +415,6 @@
             For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
             subsequent call can include before=obj_foo in order to fetch the previous page of the list.
             </param>
-        <param name="agentName"> Filter by agent name. If provided, only items associated with the specified agent will be returned. </param>
-        <param name="agentId"> Filter by agent ID in the format `name:version`. If provided, only items associated with the specified agent ID will be returned. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Returns the list of all conversations. </summary>
         <returns>To be added.</returns>
@@ -423,11 +423,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectConversationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversationsAsync (int? limit = default, string order = default, string after = default, string before = default, string agentName = default, string agentId = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversationsAsync(valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, string agentName, string agentId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectConversationsClient.GetProjectConversationsAsync(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectConversationsAsync (Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional agentName As String = Nothing, Optional agentId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of ProjectConversation)" />
-      <MemberSignature Language="F#" Value="abstract member GetProjectConversationsAsync : Nullable&lt;int&gt; * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;&#xA;override this.GetProjectConversationsAsync : Nullable&lt;int&gt; * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;" Usage="projectConversationsClient.GetProjectConversationsAsync (limit, order, after, before, agentName, agentId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversationsAsync (Azure.AI.Projects.OpenAI.AgentReference agent = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.OpenAI.ProjectConversation&gt; GetProjectConversationsAsync(class Azure.AI.Projects.OpenAI.AgentReference agent, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectConversationsClient.GetProjectConversationsAsync(Azure.AI.Projects.OpenAI.AgentReference,System.Nullable{System.Int32},System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectConversationsAsync (Optional agent As AgentReference = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of ProjectConversation)" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectConversationsAsync : Azure.AI.Projects.OpenAI.AgentReference * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;&#xA;override this.GetProjectConversationsAsync : Azure.AI.Projects.OpenAI.AgentReference * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;" Usage="projectConversationsClient.GetProjectConversationsAsync (agent, limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -437,15 +437,17 @@
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.ProjectConversation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="agent" Type="Azure.AI.Projects.OpenAI.AgentReference" />
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="order" Type="System.String" />
         <Parameter Name="after" Type="System.String" />
         <Parameter Name="before" Type="System.String" />
-        <Parameter Name="agentName" Type="System.String" />
-        <Parameter Name="agentId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="agent">
+            If provided, only conversations associated with the referenced agent will be retrieved.
+            </param>
         <param name="limit">
             A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
             default is 20.
@@ -464,8 +466,6 @@
             For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
             subsequent call can include before=obj_foo in order to fetch the previous page of the list.
             </param>
-        <param name="agentName"> Filter by agent name. If provided, only items associated with the specified agent will be returned. </param>
-        <param name="agentId"> Filter by agent ID in the format `name:version`. If provided, only items associated with the specified agent ID will be returned. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Returns the list of all conversations. </summary>
         <returns>To be added.</returns>

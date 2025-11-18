@@ -21,6 +21,7 @@
     <AssemblyVersion>1.10.0.0</AssemblyVersion>
     <AssemblyVersion>1.11.0.0</AssemblyVersion>
     <AssemblyVersion>1.12.0.0</AssemblyVersion>
+    <AssemblyVersion>1.13.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -51,7 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lun" Type="System.Int32" />
@@ -74,7 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Compute.Models.CachingType&gt;</ReturnType>
@@ -95,7 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Compute.Models.DiskCreateOptionType</ReturnType>
@@ -116,7 +117,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Compute.Models.DiskDeleteOptionType&gt;</ReturnType>
@@ -137,7 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Compute.Models.DiskDetachOptionType&gt;</ReturnType>
@@ -149,43 +150,49 @@
       </Docs>
     </Member>
     <Member MemberName="DiskIopsReadWrite">
-      <MemberSignature Language="C#" Value="public long? DiskIopsReadWrite { get; }" />
+      <MemberSignature Language="C#" Value="public long? DiskIopsReadWrite { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskIopsReadWrite" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskIopsReadWrite" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiskIopsReadWrite As Nullable(Of Long)" />
-      <MemberSignature Language="F#" Value="member this.DiskIopsReadWrite : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskIopsReadWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskIopsReadWrite As Nullable(Of Long)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.DiskIopsReadWrite : Nullable&lt;int64&gt; with get, set" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskIopsReadWrite" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public long? DiskIopsReadWrite { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiskIopsReadWrite As Nullable(Of Long)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.DiskIopsReadWrite : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskIopsReadWrite" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Specifies the Read-Write IOPS for the managed disk when StorageAccountType is UltraSSD_LRS. Returned only for VirtualMachine ScaleSet VM disks. Can be updated only via updates to the VirtualMachine Scale Set. </summary>
+        <summary> Specifies the Read-Write IOPS for the managed disk when StorageAccountType is UltraSSD_LRS. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DiskMBpsReadWrite">
-      <MemberSignature Language="C#" Value="public long? DiskMBpsReadWrite { get; }" />
+      <MemberSignature Language="C#" Value="public long? DiskMBpsReadWrite { get; set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskMBpsReadWrite" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskMBpsReadWrite" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiskMBpsReadWrite As Nullable(Of Long)" />
-      <MemberSignature Language="F#" Value="member this.DiskMBpsReadWrite : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskMBpsReadWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskMBpsReadWrite As Nullable(Of Long)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.DiskMBpsReadWrite : Nullable&lt;int64&gt; with get, set" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskMBpsReadWrite" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public long? DiskMBpsReadWrite { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiskMBpsReadWrite As Nullable(Of Long)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.DiskMBpsReadWrite : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk.DiskMBpsReadWrite" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Specifies the bandwidth in MB per second for the managed disk when StorageAccountType is UltraSSD_LRS. Returned only for VirtualMachine ScaleSet VM disks. Can be updated only via updates to the VirtualMachine Scale Set. </summary>
+        <summary> Specifies the bandwidth in MB per second for the managed disk when StorageAccountType is UltraSSD_LRS. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,7 +207,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -221,7 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -242,7 +249,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -268,7 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -289,7 +296,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineManagedDisk</ReturnType>
@@ -310,7 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -331,7 +338,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -355,7 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk</ReturnType>
@@ -388,7 +395,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -420,7 +427,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineDataDisk</ReturnType>
@@ -453,7 +460,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -483,7 +490,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -511,7 +518,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -532,7 +539,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -553,7 +560,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.9.0.0</AssemblyVersion>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
+        <AssemblyVersion>1.13.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
