@@ -56,9 +56,9 @@
       <Docs>
         <param name="name"> Name of the criteria. </param>
         <param name="metricName"> Name of the metric. </param>
-        <param name="timeAggregation"> the criteria time aggregation types. </param>
-        <param name="operator"> The operator used to compare the metric value against the threshold. </param>
-        <param name="alertSensitivity"> The extent of deviation required to trigger an alert. This will affect how tight the threshold is to the metric series pattern. </param>
+        <param name="timeAggregation"> The criteria time aggregation types. Previously undocumented values might be returned. </param>
+        <param name="operator"> The operator used to compare the metric value against the threshold. Previously undocumented values might be returned. </param>
+        <param name="alertSensitivity"> The extent of deviation required to trigger an alert. This will affect how tight the threshold is to the metric series pattern. Previously undocumented values might be returned. </param>
         <param name="failingPeriods"> The minimum number of violations required within the selected lookback time window required to raise an alert. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Monitor.Models.DynamicMetricCriteria" />. </summary>
         <remarks>To be added.</remarks>
@@ -82,7 +82,7 @@
         <ReturnType>Azure.ResourceManager.Monitor.Models.DynamicThresholdSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The extent of deviation required to trigger an alert. This will affect how tight the threshold is to the metric series pattern. </summary>
+        <summary> The extent of deviation required to trigger an alert. This will affect how tight the threshold is to the metric series pattern. Previously undocumented values might be returned. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +170,7 @@
         <ReturnType>Azure.ResourceManager.Monitor.Models.DynamicThresholdOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The operator used to compare the metric value against the threshold. </summary>
+        <summary> The operator used to compare the metric value against the threshold. Previously undocumented values might be returned. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +299,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

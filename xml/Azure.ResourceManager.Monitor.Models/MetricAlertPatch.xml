@@ -50,6 +50,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ActionProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; ActionProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; ActionProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.MetricAlertPatch.ActionProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionProperties As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.ActionProperties : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.ResourceManager.Monitor.Models.MetricAlertPatch.ActionProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The properties of an action properties. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Actions">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.Monitor.Models.MetricAlertAction&gt; Actions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.Monitor.Models.MetricAlertAction&gt; Actions" />
@@ -66,7 +86,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Monitor.Models.MetricAlertAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the array of actions that are performed when the alert rule becomes active, and when an alert condition is resolved. </summary>
+        <summary> The array of actions that are performed when the alert rule becomes active, and when an alert condition is resolved. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,10 +108,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-            defines the specific alert criteria information.
+            Defines the specific alert criteria information.
             Please note <see cref="T:Azure.ResourceManager.Monitor.Models.MetricAlertCriteria" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.ResourceManager.Monitor.Models.MetricAlertMultipleResourceMultipleMetricCriteria" />, <see cref="T:Azure.ResourceManager.Monitor.Models.MetricAlertSingleResourceMultipleMetricCriteria" /> and <see cref="T:Azure.ResourceManager.Monitor.Models.WebtestLocationAvailabilityCriteria" />.
+            The available derived classes include <see cref="T:Azure.ResourceManager.Monitor.Models.MetricAlertMultipleResourceMultipleMetricCriteria" />, <see cref="T:Azure.ResourceManager.Monitor.Models.PromQLCriteria" />, <see cref="T:Azure.ResourceManager.Monitor.Models.MetricAlertSingleResourceMultipleMetricCriteria" /> and <see cref="T:Azure.ResourceManager.Monitor.Models.WebtestLocationAvailabilityCriteria" />.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; CustomProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; CustomProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.MetricAlertPatch.CustomProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomProperties As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.CustomProperties : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.ResourceManager.Monitor.Models.MetricAlertPatch.CustomProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The properties of an alert payload. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +152,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the description of the metric alert that will be included in the alert email. </summary>
+        <summary> The description of the metric alert that will be included in the alert email. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +173,27 @@
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> how often the metric alert is evaluated represented in ISO 8601 duration format. </summary>
+        <summary> How often the metric alert is evaluated represented in ISO 8601 duration format. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.ManagedServiceIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.MetricAlertPatch.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.ResourceManager.Models.ManagedServiceIdentity with get, set" Usage="Azure.ResourceManager.Monitor.Models.MetricAlertPatch.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Models.ManagedServiceIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The identity of the resource. Current supported identity types: None, SystemAssigned, UserAssigned. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +214,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the flag that indicates whether the alert should be auto resolved or not. The default is true. </summary>
+        <summary> The flag that indicates whether the alert should be auto resolved or not. The default is true. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +235,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the flag that indicates whether the metric alert is enabled. </summary>
+        <summary> The flag that indicates whether the metric alert is enabled. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +256,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the value indicating whether this alert rule is migrated. </summary>
+        <summary> The value indicating whether this alert rule is migrated. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,6 +307,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ResolveConfiguration">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Monitor.Models.ResolveConfiguration ResolveConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Monitor.Models.ResolveConfiguration ResolveConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.MetricAlertPatch.ResolveConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResolveConfiguration As ResolveConfiguration" />
+      <MemberSignature Language="F#" Value="member this.ResolveConfiguration : Azure.ResourceManager.Monitor.Models.ResolveConfiguration with get, set" Usage="Azure.ResourceManager.Monitor.Models.MetricAlertPatch.ResolveConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.Models.ResolveConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The configuration for how the alert is resolved. Applicable for PromQLCriteria. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Scopes">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Scopes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Scopes" />
@@ -263,7 +343,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the list of resource id's that this metric alert is scoped to. </summary>
+        <summary> The list of resource id's that this metric alert is scoped to. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,7 +493,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +565,7 @@
         <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the region of the target resource(s) on which the alert is created/updated. Mandatory for MultipleResourceMultipleMetricCriteria. </summary>
+        <summary> The region of the target resource(s) on which the alert is created/updated. Mandatory for MultipleResourceMultipleMetricCriteria. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,7 +586,7 @@
         <ReturnType>System.Nullable&lt;Azure.Core.ResourceType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the resource type of the target resource(s) on which the alert is created/updated. Mandatory for MultipleResourceMultipleMetricCriteria. </summary>
+        <summary> The resource type of the target resource(s) on which the alert is created/updated. Mandatory for MultipleResourceMultipleMetricCriteria. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,7 +607,7 @@
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> the period of time (in ISO 8601 duration format) that is used to monitor alert activity based on the threshold. </summary>
+        <summary> The period of time (in ISO 8601 duration format) that is used to monitor alert activity based on the threshold. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

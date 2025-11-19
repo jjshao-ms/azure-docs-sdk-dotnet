@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -52,7 +53,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceInfo</ReturnType>
@@ -68,16 +69,22 @@
       </Docs>
     </Member>
     <Member MemberName="ConnectedPartnerResourceProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties ConnectedPartnerResourceProperties (string partnerDeploymentName = default, Uri partnerDeploymentUri = default, Azure.Core.ResourceIdentifier azureResourceId = default, Azure.Core.AzureLocation? location = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties ConnectedPartnerResourceProperties (string partnerDeploymentName, Uri partnerDeploymentUri, Azure.Core.ResourceIdentifier azureResourceId, Azure.Core.AzureLocation? location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties ConnectedPartnerResourceProperties(string partnerDeploymentName, class System.Uri partnerDeploymentUri, class Azure.Core.ResourceIdentifier azureResourceId, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ConnectedPartnerResourceProperties(System.String,System.Uri,Azure.Core.ResourceIdentifier,System.Nullable{Azure.Core.AzureLocation})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConnectedPartnerResourceProperties (Optional partnerDeploymentName As String = Nothing, Optional partnerDeploymentUri As Uri = Nothing, Optional azureResourceId As ResourceIdentifier = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing) As ConnectedPartnerResourceProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConnectedPartnerResourceProperties (partnerDeploymentName As String, partnerDeploymentUri As Uri, azureResourceId As ResourceIdentifier, location As Nullable(Of AzureLocation)) As ConnectedPartnerResourceProperties" />
       <MemberSignature Language="F#" Value="static member ConnectedPartnerResourceProperties : string * Uri * Azure.Core.ResourceIdentifier * Nullable&lt;Azure.Core.AzureLocation&gt; -&gt; Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ConnectedPartnerResourceProperties (partnerDeploymentName, partnerDeploymentUri, azureResourceId, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties</ReturnType>
       </ReturnValue>
@@ -122,6 +129,38 @@
         <param name="partnerDeploymentUri"> Deployment URL of the elasticsearch in Elastic cloud deployment. </param>
         <param name="azureResourceId"> The azure resource Id of the deployment. </param>
         <param name="location"> The location of the deployment. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectedPartnerResourceProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties ConnectedPartnerResourceProperties (string partnerDeploymentName = default, Uri partnerDeploymentUri = default, Azure.Core.ResourceIdentifier azureResourceId = default, Azure.Core.AzureLocation? location = default, string connectedPartnerResourcePropertiesType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties ConnectedPartnerResourceProperties(string partnerDeploymentName, class System.Uri partnerDeploymentUri, class Azure.Core.ResourceIdentifier azureResourceId, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, string connectedPartnerResourcePropertiesType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ConnectedPartnerResourceProperties(System.String,System.Uri,Azure.Core.ResourceIdentifier,System.Nullable{Azure.Core.AzureLocation},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConnectedPartnerResourceProperties (Optional partnerDeploymentName As String = Nothing, Optional partnerDeploymentUri As Uri = Nothing, Optional azureResourceId As ResourceIdentifier = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional connectedPartnerResourcePropertiesType As String = Nothing) As ConnectedPartnerResourceProperties" />
+      <MemberSignature Language="F#" Value="static member ConnectedPartnerResourceProperties : string * Uri * Azure.Core.ResourceIdentifier * Nullable&lt;Azure.Core.AzureLocation&gt; * string -&gt; Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ConnectedPartnerResourceProperties (partnerDeploymentName, partnerDeploymentUri, azureResourceId, location, connectedPartnerResourcePropertiesType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partnerDeploymentName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="partnerDeploymentUri" Type="System.Uri" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="azureResourceId" Type="Azure.Core.ResourceIdentifier" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectedPartnerResourcePropertiesType" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="partnerDeploymentName"> Elastic resource name. </param>
+        <param name="partnerDeploymentUri"> URL of the resource in Elastic cloud. </param>
+        <param name="azureResourceId"> The azure resource Id of the resource. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="connectedPartnerResourcePropertiesType"> The hosting type of the resource. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ConnectedPartnerResourceProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -196,7 +235,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticBillingInfoResult</ReturnType>
@@ -223,6 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticCloudDeployment</ReturnType>
@@ -259,6 +299,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticCloudUser</ReturnType>
@@ -278,16 +319,22 @@
       </Docs>
     </Member>
     <Member MemberName="ElasticDeploymentInfoResult">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult ElasticDeploymentInfoResult (Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus? status = default, string version = default, string memoryCapacity = default, string diskCapacity = default, string elasticsearchEndPoint = default, Uri deploymentUri = default, Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo marketplaceSaasInfo = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult ElasticDeploymentInfoResult (Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus? status, string version, string memoryCapacity, string diskCapacity, string elasticsearchEndPoint, Uri deploymentUri, Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo marketplaceSaasInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult ElasticDeploymentInfoResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus&gt; status, string version, string memoryCapacity, string diskCapacity, string elasticsearchEndPoint, class System.Uri deploymentUri, class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo marketplaceSaasInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticDeploymentInfoResult(System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus},System.String,System.String,System.String,System.String,System.Uri,Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticDeploymentInfoResult (Optional status As Nullable(Of ElasticDeploymentStatus) = Nothing, Optional version As String = Nothing, Optional memoryCapacity As String = Nothing, Optional diskCapacity As String = Nothing, Optional elasticsearchEndPoint As String = Nothing, Optional deploymentUri As Uri = Nothing, Optional marketplaceSaasInfo As MarketplaceSaaSInfo = Nothing) As ElasticDeploymentInfoResult" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticDeploymentInfoResult (status As Nullable(Of ElasticDeploymentStatus), version As String, memoryCapacity As String, diskCapacity As String, elasticsearchEndPoint As String, deploymentUri As Uri, marketplaceSaasInfo As MarketplaceSaaSInfo) As ElasticDeploymentInfoResult" />
       <MemberSignature Language="F#" Value="static member ElasticDeploymentInfoResult : Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus&gt; * string * string * string * string * Uri * Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo -&gt; Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticDeploymentInfoResult (status, version, memoryCapacity, diskCapacity, elasticsearchEndPoint, deploymentUri, marketplaceSaasInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult</ReturnType>
       </ReturnValue>
@@ -313,6 +360,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ElasticDeploymentInfoResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult ElasticDeploymentInfoResult (Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus? status = default, string version = default, string memoryCapacity = default, string diskCapacity = default, string elasticsearchEndPoint = default, Uri deploymentUri = default, Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo marketplaceSaasInfo = default, string projectType = default, string configurationType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult ElasticDeploymentInfoResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus&gt; status, string version, string memoryCapacity, string diskCapacity, string elasticsearchEndPoint, class System.Uri deploymentUri, class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo marketplaceSaasInfo, string projectType, string configurationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticDeploymentInfoResult(System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus},System.String,System.String,System.String,System.String,System.Uri,Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticDeploymentInfoResult (Optional status As Nullable(Of ElasticDeploymentStatus) = Nothing, Optional version As String = Nothing, Optional memoryCapacity As String = Nothing, Optional diskCapacity As String = Nothing, Optional elasticsearchEndPoint As String = Nothing, Optional deploymentUri As Uri = Nothing, Optional marketplaceSaasInfo As MarketplaceSaaSInfo = Nothing, Optional projectType As String = Nothing, Optional configurationType As String = Nothing) As ElasticDeploymentInfoResult" />
+      <MemberSignature Language="F#" Value="static member ElasticDeploymentInfoResult : Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus&gt; * string * string * string * string * Uri * Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo * string * string -&gt; Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticDeploymentInfoResult (status, version, memoryCapacity, diskCapacity, elasticsearchEndPoint, deploymentUri, marketplaceSaasInfo, projectType, configurationType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticDeploymentStatus&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="memoryCapacity" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="diskCapacity" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="elasticsearchEndPoint" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deploymentUri" Type="System.Uri" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="marketplaceSaasInfo" Type="Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="projectType" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="configurationType" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="status"> The Elastic deployment status. </param>
+        <param name="version"> Version of the elasticsearch in Elastic cloud deployment. </param>
+        <param name="memoryCapacity"> RAM capacity of the elasticsearch in Elastic cloud deployment. </param>
+        <param name="diskCapacity"> Disk capacity of the elasticsearch in Elastic cloud deployment. </param>
+        <param name="elasticsearchEndPoint"> Elasticsearch endpoint in Elastic cloud deployment. This is either the aliased_endpoint if available, or the service_url otherwise. </param>
+        <param name="deploymentUri"> Deployment URL of the elasticsearch in Elastic cloud deployment. </param>
+        <param name="marketplaceSaasInfo"> Marketplace SaaS Info of the resource. </param>
+        <param name="projectType"> Project Type - Applicable for Serverless only. </param>
+        <param name="configurationType"> ConfigurationType Type - Applicable for Serverless only. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticDeploymentInfoResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ElasticExternalUserCreationResult">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticExternalUserCreationResult ElasticExternalUserCreationResult (bool? isCreated = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticExternalUserCreationResult ElasticExternalUserCreationResult(valuetype System.Nullable`1&lt;bool&gt; isCreated) cil managed" />
@@ -322,7 +409,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticExternalUserCreationResult</ReturnType>
@@ -366,16 +453,22 @@
       </Docs>
     </Member>
     <Member MemberName="ElasticMonitorData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.ElasticMonitorData ElasticMonitorData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, string skuName = default, Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties properties = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.ElasticMonitorData ElasticMonitorData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, string skuName, Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties properties, Azure.ResourceManager.Models.ManagedServiceIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.ElasticMonitorData ElasticMonitorData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, string skuName, class Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties properties, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.String,Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional skuName As String = Nothing, Optional properties As ElasticMonitorProperties = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As ElasticMonitorData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, skuName As String, properties As ElasticMonitorProperties, identity As ManagedServiceIdentity) As ElasticMonitorData" />
       <MemberSignature Language="F#" Value="static member ElasticMonitorData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * string * Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.Elastic.ElasticMonitorData" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorData (id, name, resourceType, systemData, tags, location, skuName, properties, identity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticMonitorData</ReturnType>
       </ReturnValue>
@@ -405,17 +498,125 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ElasticMonitorData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.ElasticMonitorData ElasticMonitorData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties properties = default, string kind = default, string skuName = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.ElasticMonitorData ElasticMonitorData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties properties, string kind, string skuName, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties,System.String,System.String,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As ElasticMonitorProperties = Nothing, Optional kind As String = Nothing, Optional skuName As String = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As ElasticMonitorData" />
+      <MemberSignature Language="F#" Value="static member ElasticMonitorData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties * string * string * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.Elastic.ElasticMonitorData" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorData (id, name, resourceType, systemData, tags, location, properties, kind, skuName, identity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.ElasticMonitorData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="kind" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="skuName" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="tags"> The tags. </param>
+        <param name="location"> The location. </param>
+        <param name="properties"> Properties of the monitor resource. </param>
+        <param name="kind"> The kind of the Elastic resource - observability, security, search etc. </param>
+        <param name="skuName"> SKU of the monitor resource. </param>
+        <param name="identity"> Identity properties of the monitor resource. Current supported identity types: SystemAssigned. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticMonitoredSubscriptionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData ElasticMonitoredSubscriptionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData ElasticMonitoredSubscriptionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitoredSubscriptionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitoredSubscriptionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As ElasticMonitoredSubscriptionProperties = Nothing) As ElasticMonitoredSubscriptionData" />
+      <MemberSignature Language="F#" Value="static member ElasticMonitoredSubscriptionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties -&gt; Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitoredSubscriptionData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="properties"> The request to update subscriptions needed to be monitored by the Elastic monitor resource. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitoredSubscriptionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticMonitoredSubscriptionProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties ElasticMonitoredSubscriptionProperties (Azure.ResourceManager.Elastic.Models.ResourcePatchOperation? operation = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Elastic.Models.MonitoredSubscription&gt; monitoredSubscriptionList = default, Azure.ResourceManager.Elastic.Models.ElasticProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties ElasticMonitoredSubscriptionProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ResourcePatchOperation&gt; operation, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Elastic.Models.MonitoredSubscription&gt; monitoredSubscriptionList, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitoredSubscriptionProperties(System.Nullable{Azure.ResourceManager.Elastic.Models.ResourcePatchOperation},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Elastic.Models.MonitoredSubscription},System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitoredSubscriptionProperties (Optional operation As Nullable(Of ResourcePatchOperation) = Nothing, Optional monitoredSubscriptionList As IEnumerable(Of MonitoredSubscription) = Nothing, Optional provisioningState As Nullable(Of ElasticProvisioningState) = Nothing) As ElasticMonitoredSubscriptionProperties" />
+      <MemberSignature Language="F#" Value="static member ElasticMonitoredSubscriptionProperties : Nullable&lt;Azure.ResourceManager.Elastic.Models.ResourcePatchOperation&gt; * seq&lt;Azure.ResourceManager.Elastic.Models.MonitoredSubscription&gt; * Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; -&gt; Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitoredSubscriptionProperties (operation, monitoredSubscriptionList, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ResourcePatchOperation&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="monitoredSubscriptionList" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Elastic.Models.MonitoredSubscription&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="operation"> The operation for the patch on the resource. </param>
+        <param name="monitoredSubscriptionList"> List of subscriptions and the state of the monitoring. </param>
+        <param name="provisioningState"> Provisioning State of the resource. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitoredSubscriptionProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ElasticMonitorProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties ElasticMonitorProperties (Azure.ResourceManager.Elastic.Models.ElasticProvisioningState? provisioningState = default, Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus? monitoringStatus = default, Azure.ResourceManager.Elastic.Models.ElasticCloudProperties elasticProperties = default, Azure.ResourceManager.Elastic.Models.ElasticUserInfo userInfo = default, Azure.ResourceManager.Elastic.Models.ElasticPlanDetails planDetails = default, string version = default, string subscriptionState = default, string saaSAzureSubscriptionStatus = default, string sourceCampaignName = default, string sourceCampaignId = default, Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory? liftrResourceCategory = default, int? liftrResourcePreference = default, bool? isApiKeyGenerated = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties ElasticMonitorProperties (Azure.ResourceManager.Elastic.Models.ElasticProvisioningState? provisioningState, Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus? monitoringStatus, Azure.ResourceManager.Elastic.Models.ElasticCloudProperties elasticProperties, Azure.ResourceManager.Elastic.Models.ElasticUserInfo userInfo, Azure.ResourceManager.Elastic.Models.ElasticPlanDetails planDetails, string version, string subscriptionState, string saaSAzureSubscriptionStatus, string sourceCampaignName, string sourceCampaignId, Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory? liftrResourceCategory, int? liftrResourcePreference, bool? isApiKeyGenerated);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties ElasticMonitorProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus&gt; monitoringStatus, class Azure.ResourceManager.Elastic.Models.ElasticCloudProperties elasticProperties, class Azure.ResourceManager.Elastic.Models.ElasticUserInfo userInfo, class Azure.ResourceManager.Elastic.Models.ElasticPlanDetails planDetails, string version, string subscriptionState, string saaSAzureSubscriptionStatus, string sourceCampaignName, string sourceCampaignId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory&gt; liftrResourceCategory, valuetype System.Nullable`1&lt;int32&gt; liftrResourcePreference, valuetype System.Nullable`1&lt;bool&gt; isApiKeyGenerated) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorProperties(System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticProvisioningState},System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus},Azure.ResourceManager.Elastic.Models.ElasticCloudProperties,Azure.ResourceManager.Elastic.Models.ElasticUserInfo,Azure.ResourceManager.Elastic.Models.ElasticPlanDetails,System.String,System.String,System.String,System.String,System.String,System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory},System.Nullable{System.Int32},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorProperties (Optional provisioningState As Nullable(Of ElasticProvisioningState) = Nothing, Optional monitoringStatus As Nullable(Of ElasticMonitoringStatus) = Nothing, Optional elasticProperties As ElasticCloudProperties = Nothing, Optional userInfo As ElasticUserInfo = Nothing, Optional planDetails As ElasticPlanDetails = Nothing, Optional version As String = Nothing, Optional subscriptionState As String = Nothing, Optional saaSAzureSubscriptionStatus As String = Nothing, Optional sourceCampaignName As String = Nothing, Optional sourceCampaignId As String = Nothing, Optional liftrResourceCategory As Nullable(Of ElasticLiftrResourceCategory) = Nothing, Optional liftrResourcePreference As Nullable(Of Integer) = Nothing, Optional isApiKeyGenerated As Nullable(Of Boolean) = Nothing) As ElasticMonitorProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorProperties (provisioningState As Nullable(Of ElasticProvisioningState), monitoringStatus As Nullable(Of ElasticMonitoringStatus), elasticProperties As ElasticCloudProperties, userInfo As ElasticUserInfo, planDetails As ElasticPlanDetails, version As String, subscriptionState As String, saaSAzureSubscriptionStatus As String, sourceCampaignName As String, sourceCampaignId As String, liftrResourceCategory As Nullable(Of ElasticLiftrResourceCategory), liftrResourcePreference As Nullable(Of Integer), isApiKeyGenerated As Nullable(Of Boolean)) As ElasticMonitorProperties" />
       <MemberSignature Language="F#" Value="static member ElasticMonitorProperties : Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; * Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus&gt; * Azure.ResourceManager.Elastic.Models.ElasticCloudProperties * Azure.ResourceManager.Elastic.Models.ElasticUserInfo * Azure.ResourceManager.Elastic.Models.ElasticPlanDetails * string * string * string * string * string * Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorProperties (provisioningState, monitoringStatus, elasticProperties, userInfo, planDetails, version, subscriptionState, saaSAzureSubscriptionStatus, sourceCampaignName, sourceCampaignId, liftrResourceCategory, liftrResourcePreference, isApiKeyGenerated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties</ReturnType>
       </ReturnValue>
@@ -448,6 +649,58 @@
         <param name="liftrResourceCategory" />
         <param name="liftrResourcePreference"> The priority of the resource. </param>
         <param name="isApiKeyGenerated"> Flag to determine if User API Key has to be generated and shared. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElasticMonitorProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties ElasticMonitorProperties (Azure.ResourceManager.Elastic.Models.ElasticProvisioningState? provisioningState = default, Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus? monitoringStatus = default, Azure.ResourceManager.Elastic.Models.ElasticCloudProperties elasticProperties = default, Azure.ResourceManager.Elastic.Models.ElasticUserInfo userInfo = default, Azure.ResourceManager.Elastic.Models.ElasticPlanDetails planDetails = default, string version = default, string subscriptionState = default, string saaSAzureSubscriptionStatus = default, string sourceCampaignName = default, string sourceCampaignId = default, Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory? liftrResourceCategory = default, int? liftrResourcePreference = default, bool? isApiKeyGenerated = default, Azure.ResourceManager.Elastic.Models.MonitorResourceHostingType? hostingType = default, Azure.ResourceManager.Elastic.Models.MonitorResourceProjectDetails projectDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties ElasticMonitorProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus&gt; monitoringStatus, class Azure.ResourceManager.Elastic.Models.ElasticCloudProperties elasticProperties, class Azure.ResourceManager.Elastic.Models.ElasticUserInfo userInfo, class Azure.ResourceManager.Elastic.Models.ElasticPlanDetails planDetails, string version, string subscriptionState, string saaSAzureSubscriptionStatus, string sourceCampaignName, string sourceCampaignId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory&gt; liftrResourceCategory, valuetype System.Nullable`1&lt;int32&gt; liftrResourcePreference, valuetype System.Nullable`1&lt;bool&gt; isApiKeyGenerated, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.MonitorResourceHostingType&gt; hostingType, class Azure.ResourceManager.Elastic.Models.MonitorResourceProjectDetails projectDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorProperties(System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticProvisioningState},System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus},Azure.ResourceManager.Elastic.Models.ElasticCloudProperties,Azure.ResourceManager.Elastic.Models.ElasticUserInfo,Azure.ResourceManager.Elastic.Models.ElasticPlanDetails,System.String,System.String,System.String,System.String,System.String,System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Elastic.Models.MonitorResourceHostingType},Azure.ResourceManager.Elastic.Models.MonitorResourceProjectDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticMonitorProperties (Optional provisioningState As Nullable(Of ElasticProvisioningState) = Nothing, Optional monitoringStatus As Nullable(Of ElasticMonitoringStatus) = Nothing, Optional elasticProperties As ElasticCloudProperties = Nothing, Optional userInfo As ElasticUserInfo = Nothing, Optional planDetails As ElasticPlanDetails = Nothing, Optional version As String = Nothing, Optional subscriptionState As String = Nothing, Optional saaSAzureSubscriptionStatus As String = Nothing, Optional sourceCampaignName As String = Nothing, Optional sourceCampaignId As String = Nothing, Optional liftrResourceCategory As Nullable(Of ElasticLiftrResourceCategory) = Nothing, Optional liftrResourcePreference As Nullable(Of Integer) = Nothing, Optional isApiKeyGenerated As Nullable(Of Boolean) = Nothing, Optional hostingType As Nullable(Of MonitorResourceHostingType) = Nothing, Optional projectDetails As MonitorResourceProjectDetails = Nothing) As ElasticMonitorProperties" />
+      <MemberSignature Language="F#" Value="static member ElasticMonitorProperties : Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; * Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus&gt; * Azure.ResourceManager.Elastic.Models.ElasticCloudProperties * Azure.ResourceManager.Elastic.Models.ElasticUserInfo * Azure.ResourceManager.Elastic.Models.ElasticPlanDetails * string * string * string * string * string * Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Elastic.Models.MonitorResourceHostingType&gt; * Azure.ResourceManager.Elastic.Models.MonitorResourceProjectDetails -&gt; Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticMonitorProperties (provisioningState, monitoringStatus, elasticProperties, userInfo, planDetails, version, subscriptionState, saaSAzureSubscriptionStatus, sourceCampaignName, sourceCampaignId, liftrResourceCategory, liftrResourcePreference, isApiKeyGenerated, hostingType, projectDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="monitoringStatus" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticMonitoringStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="elasticProperties" Type="Azure.ResourceManager.Elastic.Models.ElasticCloudProperties" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="userInfo" Type="Azure.ResourceManager.Elastic.Models.ElasticUserInfo" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="planDetails" Type="Azure.ResourceManager.Elastic.Models.ElasticPlanDetails" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionState" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="saaSAzureSubscriptionStatus" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sourceCampaignName" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sourceCampaignId" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="liftrResourceCategory" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticLiftrResourceCategory&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="liftrResourcePreference" Type="System.Nullable&lt;System.Int32&gt;" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="isApiKeyGenerated" Type="System.Nullable&lt;System.Boolean&gt;" Index="12" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="hostingType" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.MonitorResourceHostingType&gt;" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="projectDetails" Type="Azure.ResourceManager.Elastic.Models.MonitorResourceProjectDetails" Index="14" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> Provisioning state of the monitor resource. </param>
+        <param name="monitoringStatus"> Flag specifying if the resource monitoring is enabled or disabled. </param>
+        <param name="elasticProperties"> Elastic cloud properties. </param>
+        <param name="userInfo"> User information. </param>
+        <param name="planDetails"> Plan details of the monitor resource. </param>
+        <param name="version"> Version of elastic of the monitor resource. </param>
+        <param name="subscriptionState"> State of the Azure Subscription containing the monitor resource. </param>
+        <param name="saaSAzureSubscriptionStatus"> Status of Azure Subscription where Marketplace SaaS is located. </param>
+        <param name="sourceCampaignName"> Name of the marketing campaign. </param>
+        <param name="sourceCampaignId"> A unique identifier associated with the campaign. </param>
+        <param name="liftrResourceCategory" />
+        <param name="liftrResourcePreference"> The priority of the resource. </param>
+        <param name="isApiKeyGenerated"> Flag to determine if User API Key has to be generated and shared. </param>
+        <param name="hostingType"> Hosting type of the monitor resource - either Hosted deployments OR Serverless Projects. </param>
+        <param name="projectDetails"> Project details of the monitor resource IF it belongs to Serverless offer kind. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticMonitorProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -502,7 +755,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticOpenAIIntegrationData</ReturnType>
@@ -526,16 +779,22 @@
       </Docs>
     </Member>
     <Member MemberName="ElasticOpenAIIntegrationProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties ElasticOpenAIIntegrationProperties (Azure.Core.ResourceIdentifier openAIResourceId = default, string openAIResourceEndpoint = default, string key = default, DateTimeOffset? lastRefreshOn = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties ElasticOpenAIIntegrationProperties (Azure.Core.ResourceIdentifier openAIResourceId, string openAIResourceEndpoint, string key, DateTimeOffset? lastRefreshOn);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties ElasticOpenAIIntegrationProperties(class Azure.Core.ResourceIdentifier openAIResourceId, string openAIResourceEndpoint, string key, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastRefreshOn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticOpenAIIntegrationProperties(Azure.Core.ResourceIdentifier,System.String,System.String,System.Nullable{System.DateTimeOffset})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticOpenAIIntegrationProperties (Optional openAIResourceId As ResourceIdentifier = Nothing, Optional openAIResourceEndpoint As String = Nothing, Optional key As String = Nothing, Optional lastRefreshOn As Nullable(Of DateTimeOffset) = Nothing) As ElasticOpenAIIntegrationProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticOpenAIIntegrationProperties (openAIResourceId As ResourceIdentifier, openAIResourceEndpoint As String, key As String, lastRefreshOn As Nullable(Of DateTimeOffset)) As ElasticOpenAIIntegrationProperties" />
       <MemberSignature Language="F#" Value="static member ElasticOpenAIIntegrationProperties : Azure.Core.ResourceIdentifier * string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticOpenAIIntegrationProperties (openAIResourceId, openAIResourceEndpoint, key, lastRefreshOn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties</ReturnType>
       </ReturnValue>
@@ -555,6 +814,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ElasticOpenAIIntegrationProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties ElasticOpenAIIntegrationProperties (Azure.Core.ResourceIdentifier openAIResourceId = default, string openAIResourceEndpoint = default, string openAIConnectorId = default, string key = default, DateTimeOffset? lastRefreshOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties ElasticOpenAIIntegrationProperties(class Azure.Core.ResourceIdentifier openAIResourceId, string openAIResourceEndpoint, string openAIConnectorId, string key, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastRefreshOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticOpenAIIntegrationProperties(Azure.Core.ResourceIdentifier,System.String,System.String,System.String,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticOpenAIIntegrationProperties (Optional openAIResourceId As ResourceIdentifier = Nothing, Optional openAIResourceEndpoint As String = Nothing, Optional openAIConnectorId As String = Nothing, Optional key As String = Nothing, Optional lastRefreshOn As Nullable(Of DateTimeOffset) = Nothing) As ElasticOpenAIIntegrationProperties" />
+      <MemberSignature Language="F#" Value="static member ElasticOpenAIIntegrationProperties : Azure.Core.ResourceIdentifier * string * string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticOpenAIIntegrationProperties (openAIResourceId, openAIResourceEndpoint, openAIConnectorId, key, lastRefreshOn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="openAIResourceId" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="openAIResourceEndpoint" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="openAIConnectorId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="key" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="lastRefreshOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="openAIResourceId"> The resource name of Open AI resource. </param>
+        <param name="openAIResourceEndpoint"> The API endpoint for Open AI resource. </param>
+        <param name="openAIConnectorId"> The connector id of Open AI resource. </param>
+        <param name="key"> Value of API key for Open AI resource. </param>
+        <param name="lastRefreshOn"> Last Update Timestamp for key updation. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ElasticOpenAIIntegrationStatusResult">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationStatusResult ElasticOpenAIIntegrationStatusResult (string elasticOpenAIIntegrationStatus = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationStatusResult ElasticOpenAIIntegrationStatusResult(string elasticOpenAIIntegrationStatus) cil managed" />
@@ -564,7 +855,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticOpenAIIntegrationStatusResult</ReturnType>
@@ -588,7 +879,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticOrganizationToAzureSubscriptionMappingProperties</ReturnType>
@@ -672,7 +963,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticOrganizationToAzureSubscriptionMappingResult</ReturnType>
@@ -696,7 +987,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticTagRuleData</ReturnType>
@@ -719,6 +1010,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ElasticTagRuleProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties ElasticTagRuleProperties (Azure.ResourceManager.Elastic.Models.ElasticProvisioningState? provisioningState = default, Azure.ResourceManager.Elastic.Models.ElasticLogRules logRules = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties ElasticTagRuleProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; provisioningState, class Azure.ResourceManager.Elastic.Models.ElasticLogRules logRules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticTagRuleProperties(System.Nullable{Azure.ResourceManager.Elastic.Models.ElasticProvisioningState},Azure.ResourceManager.Elastic.Models.ElasticLogRules)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ElasticTagRuleProperties (Optional provisioningState As Nullable(Of ElasticProvisioningState) = Nothing, Optional logRules As ElasticLogRules = Nothing) As ElasticTagRuleProperties" />
+      <MemberSignature Language="F#" Value="static member ElasticTagRuleProperties : Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt; * Azure.ResourceManager.Elastic.Models.ElasticLogRules -&gt; Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.ElasticTagRuleProperties (provisioningState, logRules)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Elastic.Models.ElasticProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="logRules" Type="Azure.ResourceManager.Elastic.Models.ElasticLogRules" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> Provisioning state of the monitoring tag rules. </param>
+        <param name="logRules"> Rules for sending logs. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticTagRuleProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ElasticTrafficFilter">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.ElasticTrafficFilter ElasticTrafficFilter (string id = default, string name = default, string description = default, string region = default, Azure.ResourceManager.Elastic.Models.ElasticFilterType? filterType = default, bool? doesIncludeByDefault = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Elastic.Models.ElasticTrafficFilterRule&gt; rules = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.ElasticTrafficFilter ElasticTrafficFilter(string id, string name, string description, string region, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Elastic.Models.ElasticFilterType&gt; filterType, valuetype System.Nullable`1&lt;bool&gt; doesIncludeByDefault, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Elastic.Models.ElasticTrafficFilterRule&gt; rules) cil managed" />
@@ -728,7 +1045,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticTrafficFilter</ReturnType>
@@ -800,7 +1117,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticTrafficFilterListResult</ReturnType>
@@ -849,6 +1166,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticTrafficFilterRule</ReturnType>
@@ -880,7 +1198,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticUserApiKeyResult</ReturnType>
@@ -904,7 +1222,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticVersion</ReturnType>
@@ -952,7 +1270,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.ElasticVmResourceInfo</ReturnType>
@@ -1000,8 +1318,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo</ReturnType>
       </ReturnValue>
@@ -1026,25 +1350,31 @@
       </Docs>
     </Member>
     <Member MemberName="MarketplaceSaaSInfo">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo (Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription = default, string marketplaceName = default, string marketplaceResourceId = default, string marketplaceStatus = default, string billedAzureSubscriptionId = default, bool? subscribed = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo(class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription, string marketplaceName, string marketplaceResourceId, string marketplaceStatus, string billedAzureSubscriptionId, valuetype System.Nullable`1&lt;bool&gt; subscribed) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo (Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription = default, string marketplaceName = default, string marketplaceResourceId = default, string marketplaceStatus = default, string billedAzureSubscriptionId = default, bool? isSubscribed = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo(class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription, string marketplaceName, string marketplaceResourceId, string marketplaceStatus, string billedAzureSubscriptionId, valuetype System.Nullable`1&lt;bool&gt; isSubscribed) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfo(Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSInfo (Optional marketplaceSubscription As MarketplaceSaaSInfoMarketplaceSubscription = Nothing, Optional marketplaceName As String = Nothing, Optional marketplaceResourceId As String = Nothing, Optional marketplaceStatus As String = Nothing, Optional billedAzureSubscriptionId As String = Nothing, Optional subscribed As Nullable(Of Boolean) = Nothing) As MarketplaceSaaSInfo" />
-      <MemberSignature Language="F#" Value="static member MarketplaceSaaSInfo : Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription * string * string * string * string * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfo (marketplaceSubscription, marketplaceName, marketplaceResourceId, marketplaceStatus, billedAzureSubscriptionId, subscribed)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSInfo (Optional marketplaceSubscription As MarketplaceSaaSInfoMarketplaceSubscription = Nothing, Optional marketplaceName As String = Nothing, Optional marketplaceResourceId As String = Nothing, Optional marketplaceStatus As String = Nothing, Optional billedAzureSubscriptionId As String = Nothing, Optional isSubscribed As Nullable(Of Boolean) = Nothing) As MarketplaceSaaSInfo" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member MarketplaceSaaSInfo : Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription * string * string * string * string * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfo (marketplaceSubscription, marketplaceName, marketplaceResourceId, marketplaceStatus, billedAzureSubscriptionId, isSubscribed)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo (Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription = default, string marketplaceName = default, string marketplaceResourceId = default, string marketplaceStatus = default, string billedAzureSubscriptionId = default, bool? subscribed = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo MarketplaceSaaSInfo(class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription marketplaceSubscription, string marketplaceName, string marketplaceResourceId, string marketplaceStatus, string billedAzureSubscriptionId, valuetype System.Nullable`1&lt;bool&gt; subscribed) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSInfo (Optional marketplaceSubscription As MarketplaceSaaSInfoMarketplaceSubscription = Nothing, Optional marketplaceName As String = Nothing, Optional marketplaceResourceId As String = Nothing, Optional marketplaceStatus As String = Nothing, Optional billedAzureSubscriptionId As String = Nothing, Optional subscribed As Nullable(Of Boolean) = Nothing) As MarketplaceSaaSInfo" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member MarketplaceSaaSInfo : Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription * string * string * string * string * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfo (marketplaceSubscription, marketplaceName, marketplaceResourceId, marketplaceStatus, billedAzureSubscriptionId, subscribed)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="marketplaceSubscription" Type="Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="marketplaceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="marketplaceResourceId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="marketplaceStatus" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="billedAzureSubscriptionId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="marketplaceSubscription" Type="Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription" Index="0" />
+        <Parameter Name="marketplaceName" Type="System.String" Index="1" />
+        <Parameter Name="marketplaceResourceId" Type="System.String" Index="2" />
+        <Parameter Name="marketplaceStatus" Type="System.String" Index="3" />
+        <Parameter Name="billedAzureSubscriptionId" Type="System.String" Index="4" />
+        <Parameter Name="isSubscribed" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
         <Parameter Name="subscribed" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
@@ -1053,9 +1383,38 @@
         <param name="marketplaceResourceId"> Marketplace Subscription Details: Resource URI. </param>
         <param name="marketplaceStatus"> Marketplace Subscription Details: SaaS Subscription Status. </param>
         <param name="billedAzureSubscriptionId"> The Azure Subscription ID to which the Marketplace Subscription belongs and gets billed into. </param>
+        <param name="isSubscribed"> Flag specifying if the Marketplace status is subscribed or not. </param>
         <param name="subscribed"> Flag specifying if the Marketplace status is subscribed or not. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfo" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarketplaceSaaSInfoMarketplaceSubscription">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription MarketplaceSaaSInfoMarketplaceSubscription (Azure.Core.ResourceIdentifier id = default, string publisherId = default, string offerId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription MarketplaceSaaSInfoMarketplaceSubscription(class Azure.Core.ResourceIdentifier id, string publisherId, string offerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfoMarketplaceSubscription(Azure.Core.ResourceIdentifier,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSInfoMarketplaceSubscription (Optional id As ResourceIdentifier = Nothing, Optional publisherId As String = Nothing, Optional offerId As String = Nothing) As MarketplaceSaaSInfoMarketplaceSubscription" />
+      <MemberSignature Language="F#" Value="static member MarketplaceSaaSInfoMarketplaceSubscription : Azure.Core.ResourceIdentifier * string * string -&gt; Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription" Usage="Azure.ResourceManager.Elastic.Models.ArmElasticModelFactory.MarketplaceSaaSInfoMarketplaceSubscription (id, publisherId, offerId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="publisherId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="offerId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Marketplace Subscription Id. This is a GUID-formatted string. </param>
+        <param name="publisherId"> Publisher Id of the Marketplace offer. </param>
+        <param name="offerId"> Offer Id of the Marketplace offer,. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Elastic.Models.MarketplaceSaaSInfoMarketplaceSubscription" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,7 +1483,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.MonitoredResourceInfo</ReturnType>
@@ -1379,6 +1738,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.PartnerBillingEntity</ReturnType>
@@ -1406,7 +1766,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.UpgradableVersionListResult</ReturnType>
@@ -1508,7 +1868,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.Models.VmIngestionDetailsResult</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -40,7 +41,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,7 +58,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -87,7 +88,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticTagRuleData</ReturnType>
@@ -108,7 +109,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -122,8 +123,8 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Delete a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_Delete</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Delete a tag rule set for a given Elastic monitor resource, removing fine-grained control over observability based on resource tags.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_Delete</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +138,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -151,8 +152,8 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Delete a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_Delete</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Delete a tag rule set for a given Elastic monitor resource, removing fine-grained control over observability based on resource tags.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_Delete</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +167,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Elastic.ElasticTagRuleResource&gt;</ReturnType>
@@ -177,8 +178,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_Get</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Get detailed information about a tag rule set for a given Elastic monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_Get</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +193,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Elastic.ElasticTagRuleResource&gt;&gt;</ReturnType>
@@ -203,8 +204,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_Get</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Get detailed information about a tag rule set for a given Elastic monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_Get</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +219,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -238,7 +239,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -260,7 +261,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticTagRuleData</ReturnType>
@@ -292,7 +293,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -323,7 +324,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Elastic.ElasticTagRuleData</ReturnType>
@@ -355,7 +356,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -368,7 +369,7 @@
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +385,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -411,7 +412,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Elastic.ElasticTagRuleResource&gt;</ReturnType>
@@ -427,8 +428,8 @@
         <param name="data"> request body of MonitoringTagRules. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Create or update a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Create or update a tag rule set for a given Elastic monitor resource, enabling fine-grained control over observability based on resource tags.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -444,7 +445,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Elastic.ElasticTagRuleResource&gt;&gt;</ReturnType>
@@ -460,8 +461,8 @@
         <param name="data"> request body of MonitoringTagRules. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Create or update a tag rule set for a given monitor resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>TagRules_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
+            Create or update a tag rule set for a given Elastic monitor resource, enabling fine-grained control over observability based on resource tags.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Elastic/monitors/{monitorName}/tagRules/{ruleSetName}</description></item><item><term>Operation Id</term><description>MonitoringTagRules_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticTagRuleResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

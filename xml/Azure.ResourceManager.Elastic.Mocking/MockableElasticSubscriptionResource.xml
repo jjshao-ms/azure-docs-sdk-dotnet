@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Elastic.Models.ElasticUserApiKeyResult&gt;</ReturnType>
@@ -52,11 +54,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="body"> Email Id parameter of the User Organization, of which the API Key must be returned. </param>
+        <param name="body"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Fetch User API Key from internal database, if it was generated and stored while creating the Elasticsearch Organization.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getOrganizationApiKey</description></item><item><term>Operation Id</term><description>Organizations_GetApiKey</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            Fetch the User API Key from the internal database, if it was generated and stored during the creation of the Elasticsearch Organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getOrganizationApiKey</description></item><item><term>Operation Id</term><description>OrganizationsOperationGroup_GetApiKey</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,7 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Elastic.Models.ElasticUserApiKeyResult&gt;&gt;</ReturnType>
@@ -80,11 +82,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="body"> Email Id parameter of the User Organization, of which the API Key must be returned. </param>
+        <param name="body"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Fetch User API Key from internal database, if it was generated and stored while creating the Elasticsearch Organization.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getOrganizationApiKey</description></item><item><term>Operation Id</term><description>Organizations_GetApiKey</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            Fetch the User API Key from the internal database, if it was generated and stored during the creation of the Elasticsearch Organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getOrganizationApiKey</description></item><item><term>Operation Id</term><description>OrganizationsOperationGroup_GetApiKey</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +208,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Elastic.ElasticMonitorResource&gt;</ReturnType>
@@ -217,8 +219,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all monitors under the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/monitors</description></item><item><term>Operation Id</term><description>Monitors_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /></description></item></list></summary>
+            List all Elastic monitor resources within a specified subscription, helping you audit and manage your monitoring setup.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/monitors</description></item><item><term>Operation Id</term><description>ElasticMonitorResource_List</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /></description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,7 +234,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Elastic.ElasticMonitorResource&gt;</ReturnType>
@@ -243,8 +245,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List all monitors under the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/monitors</description></item><item><term>Operation Id</term><description>Monitors_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /></description></item></list></summary>
+            List all Elastic monitor resources within a specified subscription, helping you audit and manage your monitoring setup.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/monitors</description></item><item><term>Operation Id</term><description>ElasticMonitorResource_List</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /></description></item></list></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Elastic.ElasticMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +260,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Elastic.Models.ElasticOrganizationToAzureSubscriptionMappingResult&gt;</ReturnType>
@@ -269,8 +271,10 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get Elastic Organization To Azure Subscription Mapping details for the logged-in user.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getElasticOrganizationToAzureSubscriptionMapping</description></item><item><term>Operation Id</term><description>Organizations_GetElasticToAzureSubscriptionMapping</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            &gt;;
+              /**
+            Retrieve mapping details between the Elastic Organization and Azure Subscription for the logged-in user.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getElasticOrganizationToAzureSubscriptionMapping</description></item><item><term>Operation Id</term><description>OrganizationsOperationGroup_GetElasticToAzureSubscriptionMapping</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +288,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Elastic.Models.ElasticOrganizationToAzureSubscriptionMappingResult&gt;&gt;</ReturnType>
@@ -295,8 +299,10 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get Elastic Organization To Azure Subscription Mapping details for the logged-in user.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getElasticOrganizationToAzureSubscriptionMapping</description></item><item><term>Operation Id</term><description>Organizations_GetElasticToAzureSubscriptionMapping</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            &gt;;
+              /**
+            Retrieve mapping details between the Elastic Organization and Azure Subscription for the logged-in user.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/getElasticOrganizationToAzureSubscriptionMapping</description></item><item><term>Operation Id</term><description>OrganizationsOperationGroup_GetElasticToAzureSubscriptionMapping</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -367,6 +373,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="azure-dotnet">Azure.Pageable&lt;Azure.ResourceManager.Elastic.Models.ElasticVersion&gt;</ReturnType>
@@ -380,8 +387,8 @@
         <param name="region"> Region where elastic deployment will take place. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a list of available versions for a region.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/elasticVersions</description></item><item><term>Operation Id</term><description>ElasticVersions_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            Retrieve a list of all available Elastic versions for a specified region, helping you choose the best version for your deployment.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/elasticVersions</description></item><item><term>Operation Id</term><description>ElasticVersionsOperationGroup_GetElasticVersions</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -402,6 +409,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Elastic</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="azure-dotnet">Azure.AsyncPageable&lt;Azure.ResourceManager.Elastic.Models.ElasticVersion&gt;</ReturnType>
@@ -415,8 +423,8 @@
         <param name="region"> Region where elastic deployment will take place. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Get a list of available versions for a region.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/elasticVersions</description></item><item><term>Operation Id</term><description>ElasticVersions_List</description></item><item><term>Default Api Version</term><description>2024-03-01</description></item></list></summary>
+            Retrieve a list of all available Elastic versions for a specified region, helping you choose the best version for your deployment.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Elastic/elasticVersions</description></item><item><term>Operation Id</term><description>ElasticVersionsOperationGroup_GetElasticVersions</description></item><item><term>Default Api Version</term><description>2025-06-01</description></item></list></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Elastic.Models.ElasticVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
