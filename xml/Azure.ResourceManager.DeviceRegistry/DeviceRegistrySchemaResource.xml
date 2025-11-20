@@ -121,7 +121,9 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete a Schema. </summary>
+        <summary>
+            Delete a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +150,9 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete a Schema. </summary>
+        <summary>
+            Delete a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +176,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Schema. </summary>
+        <summary>
+            Get a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +202,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Schema. </summary>
+        <summary>
+            Get a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,27 +484,32 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt; Update (Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt; Update(class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource.Update(Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (data As DeviceRegistrySchemaData, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeviceRegistrySchemaResource)" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&#xA;override this.Update : Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;" Usage="deviceRegistrySchemaResource.Update (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource.Update(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, data As DeviceRegistrySchemaData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DeviceRegistrySchemaResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;" Usage="deviceRegistrySchemaResource.Update (waitUntil, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="data" Type="Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create a Schema. </summary>
+        <summary>
+            Create a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_CreateOrReplace. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -504,27 +517,32 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt; UpdateAsync (Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource.UpdateAsync(Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (data As DeviceRegistrySchemaData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeviceRegistrySchemaResource))" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;" Usage="deviceRegistrySchemaResource.UpdateAsync (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, data As DeviceRegistrySchemaData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DeviceRegistrySchemaResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;" Usage="deviceRegistrySchemaResource.UpdateAsync (waitUntil, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
         <Parameter Name="data" Type="Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create a Schema. </summary>
+        <summary>
+            Create a Schema
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}/schemas/{schemaName}. </description></item><item><term> Operation Id. </term><description> Schemas_CreateOrReplace. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistrySchemaResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

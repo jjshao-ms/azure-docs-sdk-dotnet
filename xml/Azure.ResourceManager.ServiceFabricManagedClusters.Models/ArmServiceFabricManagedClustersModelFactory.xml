@@ -208,6 +208,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ManagedServiceRestartReplicaContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent ManagedServiceRestartReplicaContent (string partitionId = default, System.Collections.Generic.IEnumerable&lt;long&gt; replicaIds = default, Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartKind restartKind = default, bool? forceRestart = default, long? timeoutInSeconds = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent ManagedServiceRestartReplicaContent(string partitionId, class System.Collections.Generic.IEnumerable`1&lt;int64&gt; replicaIds, valuetype Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartKind restartKind, valuetype System.Nullable`1&lt;bool&gt; forceRestart, valuetype System.Nullable`1&lt;int64&gt; timeoutInSeconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ArmServiceFabricManagedClustersModelFactory.ManagedServiceRestartReplicaContent(System.String,System.Collections.Generic.IEnumerable{System.Int64},Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartKind,System.Nullable{System.Boolean},System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedServiceRestartReplicaContent (Optional partitionId As String = Nothing, Optional replicaIds As IEnumerable(Of Long) = Nothing, Optional restartKind As ManagedServiceRestartKind = Nothing, Optional forceRestart As Nullable(Of Boolean) = Nothing, Optional timeoutInSeconds As Nullable(Of Long) = Nothing) As ManagedServiceRestartReplicaContent" />
+      <MemberSignature Language="F#" Value="static member ManagedServiceRestartReplicaContent : string * seq&lt;int64&gt; * Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartKind * Nullable&lt;bool&gt; * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent" Usage="Azure.ResourceManager.ServiceFabricManagedClusters.Models.ArmServiceFabricManagedClustersModelFactory.ManagedServiceRestartReplicaContent (partitionId, replicaIds, restartKind, forceRestart, timeoutInSeconds)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceFabricManagedClusters</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partitionId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="replicaIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int64&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="restartKind" Type="Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartKind" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="forceRestart" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int64&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="partitionId"> The ID of the partition. </param>
+        <param name="replicaIds"> The IDs of the replicas to be restarted. </param>
+        <param name="restartKind"> The kind of restart to perform. </param>
+        <param name="forceRestart"> If true, the restart operation will be forced. Use this option with care, as it may cause data loss. </param>
+        <param name="timeoutInSeconds"> The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ManagedServiceRestartReplicaContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NodeTypeAvailableSku">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeAvailableSku NodeTypeAvailableSku (Azure.Core.ResourceType? resourceType = default, Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSupportedSku sku = default, Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSkuCapacity capacity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeAvailableSku NodeTypeAvailableSku(valuetype System.Nullable`1&lt;valuetype Azure.Core.ResourceType&gt; resourceType, class Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSupportedSku sku, class Azure.ResourceManager.ServiceFabricManagedClusters.Models.NodeTypeSkuCapacity capacity) cil managed" />
@@ -400,6 +432,38 @@
         <param name="details"> Zone resiliency status details for the resource. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ResourceAzStatus" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ResourceAzStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartDeployedCodePackageContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent RestartDeployedCodePackageContent (string nodeName = default, string serviceManifestName = default, string codePackageName = default, string codePackageInstanceId = default, string servicePackageActivationId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent RestartDeployedCodePackageContent(string nodeName, string serviceManifestName, string codePackageName, string codePackageInstanceId, string servicePackageActivationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceFabricManagedClusters.Models.ArmServiceFabricManagedClustersModelFactory.RestartDeployedCodePackageContent(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RestartDeployedCodePackageContent (Optional nodeName As String = Nothing, Optional serviceManifestName As String = Nothing, Optional codePackageName As String = Nothing, Optional codePackageInstanceId As String = Nothing, Optional servicePackageActivationId As String = Nothing) As RestartDeployedCodePackageContent" />
+      <MemberSignature Language="F#" Value="static member RestartDeployedCodePackageContent : string * string * string * string * string -&gt; Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent" Usage="Azure.ResourceManager.ServiceFabricManagedClusters.Models.ArmServiceFabricManagedClustersModelFactory.RestartDeployedCodePackageContent (nodeName, serviceManifestName, codePackageName, codePackageInstanceId, servicePackageActivationId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceFabricManagedClusters</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serviceManifestName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="codePackageName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="codePackageInstanceId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="servicePackageActivationId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName"> The name of the node where the code package needs to be restarted. Use '*' to restart on all nodes where the code package is running. </param>
+        <param name="serviceManifestName"> The name of the service manifest as specified in the code package. </param>
+        <param name="codePackageName"> The name of the code package as specified in the service manifest. </param>
+        <param name="codePackageInstanceId"> The instance ID for currently running entry point. For a code package setup entry point (if specified) runs first and after it finishes main entry point is started. Each time entry point executable is run, its instance ID will change. If 0 is passed in as the code package instance ID, the API will restart the code package with whatever instance ID it is currently running. If an instance ID other than 0 is passed in, the API will restart the code package only if the current Instance ID matches the passed in instance ID. Note, passing in the exact instance ID (not 0) in the API is safer, because if ensures at most one restart of the code package. </param>
+        <param name="servicePackageActivationId"> The activation id of a deployed service package. If ServicePackageActivationMode specified at the time of creating the service is 'SharedProcess' (or if it is not specified, in which case it defaults to 'SharedProcess'), then value of ServicePackageActivationId is always an empty string. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ServiceFabricManagedClusters.Models.RestartDeployedCodePackageContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

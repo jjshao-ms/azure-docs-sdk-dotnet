@@ -177,7 +177,9 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete a Namespace. </summary>
+        <summary>
+            Delete a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +206,9 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Delete a Namespace. </summary>
+        <summary>
+            Delete a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +232,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Namespace. </summary>
+        <summary>
+            Get a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,8 +258,79 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Namespace. </summary>
+        <summary>
+            Get a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCredential">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt; GetCredential (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.CredentialResource&gt; GetCredential(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetCredential(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCredential (Optional cancellationToken As CancellationToken = Nothing) As Response(Of CredentialResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetCredential : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&#xA;override this.GetCredential : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;" Usage="deviceRegistryNamespaceResource.GetCredential cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a Credential. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCredentialAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&gt; GetCredentialAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&gt; GetCredentialAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetCredentialAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCredentialAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CredentialResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetCredentialAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&gt;&#xA;override this.GetCredentialAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&gt;" Usage="deviceRegistryNamespaceResource.GetCredentialAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DeviceRegistry.CredentialResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get a Credential. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCredentials">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceRegistry.CredentialCollection GetCredentials ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceRegistry.CredentialCollection GetCredentials() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.GetCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCredentials () As CredentialCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetCredentials : unit -&gt; Azure.ResourceManager.DeviceRegistry.CredentialCollection&#xA;override this.GetCredentials : unit -&gt; Azure.ResourceManager.DeviceRegistry.CredentialCollection" Usage="deviceRegistryNamespaceResource.GetCredentials " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DeviceRegistry.CredentialCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of Credentials in the <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </summary>
+        <returns> An object representing collection of Credentials and their operations over a CredentialResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,11 +679,11 @@
       </Docs>
     </Member>
     <Member MemberName="Migrate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Migrate (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Migrate(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Migrate (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Migrate(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.Migrate(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Migrate (waitUntil As WaitUntil, body As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
-      <MemberSignature Language="F#" Value="abstract member Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="deviceRegistryNamespaceResource.Migrate (waitUntil, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Migrate (waitUntil As WaitUntil, content As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Migrate : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="deviceRegistryNamespaceResource.Migrate (waitUntil, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
@@ -617,27 +694,29 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
-        <Parameter Name="body" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
+        <Parameter Name="content" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="body"> The content of the action request. </param>
+        <param name="content"> The content of the action request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate the resources into Namespace. </summary>
+        <summary>
+            Migrate the resources into Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/migrate. </description></item><item><term> Operation Id. </term><description> Namespaces_Migrate. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="body" /> is null. </exception>
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="MigrateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; MigrateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; MigrateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; MigrateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; MigrateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource.MigrateAsync(Azure.WaitUntil,Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateAsync (waitUntil As WaitUntil, body As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
-      <MemberSignature Language="F#" Value="abstract member MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="deviceRegistryNamespaceResource.MigrateAsync (waitUntil, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateAsync (waitUntil As WaitUntil, content As NamespaceMigrateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.MigrateAsync : Azure.WaitUntil * Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="deviceRegistryNamespaceResource.MigrateAsync (waitUntil, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceRegistry</AssemblyName>
@@ -648,19 +727,21 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
-        <Parameter Name="body" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
+        <Parameter Name="content" Type="Azure.ResourceManager.DeviceRegistry.Models.NamespaceMigrateContent" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="body"> The content of the action request. </param>
+        <param name="content"> The content of the action request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate the resources into Namespace. </summary>
+        <summary>
+            Migrate the resources into Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/migrate. </description></item><item><term> Operation Id. </term><description> Namespaces_Migrate. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="body" /> is null. </exception>
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTag">
@@ -958,7 +1039,9 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="patch"> The resource properties to be updated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update a Namespace. </summary>
+        <summary>
+            Update a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Update. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -989,7 +1072,9 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="patch"> The resource properties to be updated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update a Namespace. </summary>
+        <summary>
+            Update a Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}. </description></item><item><term> Operation Id. </term><description> Namespaces_Update. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

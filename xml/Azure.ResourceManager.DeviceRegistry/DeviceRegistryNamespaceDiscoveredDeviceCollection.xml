@@ -25,8 +25,8 @@
   <Docs>
     <summary>
             A class representing a collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> and their operations.
-            Each <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> in the collection will belong to the same instance of a parent resource (TODO: add parent resource information).
-            To get a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection" /> instance call the GetDeviceRegistryNamespaceDiscoveredDevices method from an instance of the parent resource.
+            Each <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> in the collection will belong to the same instance of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />.
+            To get a <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceCollection" /> instance call the GetDeviceRegistryNamespaceDiscoveredDevices method from an instance of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceResource" />.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -73,7 +73,9 @@
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create a NamespaceDiscoveredDevice. </summary>
+        <summary>
+            Create a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_CreateOrReplace. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -108,7 +110,9 @@
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create a NamespaceDiscoveredDevice. </summary>
+        <summary>
+            Create a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_CreateOrReplace. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -138,7 +142,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks to see if the resource exists in azure. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -168,7 +174,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks to see if the resource exists in azure. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -198,7 +206,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a NamespaceDiscoveredDevice. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -226,7 +236,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List NamespaceDiscoveredDevice resources by Namespace. </summary>
+        <summary>
+            List NamespaceDiscoveredDevice resources by Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_ListByResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +262,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List NamespaceDiscoveredDevice resources by Namespace. </summary>
+        <summary>
+            List NamespaceDiscoveredDevice resources by Namespace
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_ListByResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DeviceRegistry.DeviceRegistryNamespaceDiscoveredDeviceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +290,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a NamespaceDiscoveredDevice. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -306,7 +322,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -336,7 +354,9 @@
       <Docs>
         <param name="discoveredDeviceName"> The name of the discovered device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Get a NamespaceDiscoveredDevice
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}. </description></item><item><term> Operation Id. </term><description> NamespaceDiscoveredDevices_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
