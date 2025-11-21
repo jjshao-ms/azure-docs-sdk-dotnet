@@ -1,12 +1,12 @@
 ---
 title: Azure Batch client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Compute.Batch, batch
-ms.date: 06/27/2025
+ms.date: 11/21/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: batch
 ---
-# Azure Batch client library for .NET - version 1.0.0-beta.3 
+# Azure Batch client library for .NET - version 1.0.0-beta.4 
 
 
 `Azure.Compute.Batch` allows users to run large-scale parallel and high-performance computing (HPC) batch jobs efficiently in Azure.  
@@ -16,9 +16,9 @@ Use the client library for to:
 * Create and manage Batch jobs and tasks
 * View and perform operations on nodes in a Batch pool
 
-  [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/batch/Azure.Compute.Batch/src) | [Package (NuGet)](https://www.nuget.org/packages) | [API reference documentation](https://learn.microsoft.com/dotnet/api/overview/azure/batch?view=azure-dotnet) | [Product documentation](https://learn.microsoft.com/azure/batch/)
+  [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/batch/Azure.Compute.Batch/src) | [Package (NuGet)](https://www.nuget.org/packages) | [API reference documentation](https://learn.microsoft.com/dotnet/api/overview/azure/batch?view=azure-dotnet) | [Product documentation](https://learn.microsoft.com/azure/batch/)
 
->Note: `Azure.Compute.Batch` replaces 'Microsoft.Azure.Batch`, see the [Migration Guide](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/batch/Azure.Compute.Batch/MigrationGuide.md) for migration guidance.
+>Note: `Azure.Compute.Batch` replaces 'Microsoft.Azure.Batch`, see the [Migration Guide](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/batch/Azure.Compute.Batch/MigrationGuide.md) for migration guidance.
 
 ## Getting started
 
@@ -46,7 +46,7 @@ We strongly recommend using Microsoft Entra ID for Batch account authentication.
 
 #### Authenticate using Microsoft Entra ID
 
-Azure Batch provides integration with Microsoft Entra ID for identity-based authentication of requests. With Azure AD, you can use role-based access control (RBAC) to grant access to your Azure Batch resources to users, groups, or applications. The [Azure Identity library](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Compute.Batch_1.0.0-beta.3/sdk/identity/Azure.Identity/README.md) provides easy Microsoft Entra ID support for authentication.
+Azure Batch provides integration with Microsoft Entra ID for identity-based authentication of requests. With Azure AD, you can use role-based access control (RBAC) to grant access to your Azure Batch resources to users, groups, or applications. The [Azure Identity library](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Compute.Batch_1.0.0-beta.4/sdk/identity/Azure.Identity/README.md) provides easy Microsoft Entra ID support for authentication.
 
 
 ```C# Snippet:Batch_Readme_EntraIDCredential
@@ -80,11 +80,11 @@ We guarantee that all client instance methods are thread-safe and independent of
 
 ### Additional concepts
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/core/Azure.Core/samples/Diagnostics.md) |
 [Mocking](https://learn.microsoft.com/dotnet/azure/sdk/unit-testing-mocking?tabs=csharp) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
@@ -156,12 +156,6 @@ The following section provides several synchronous code snippets covering some o
   * [Node File Properties](#get-node-file-properties)
   * [Get Remote Login Settings](#getremoteloginsettings)
   * [Upload Compute Node BatchService Logs](#uploadcomputenodebatchservicelogs)
-* [Certificate Operations](#certificate-operations)
-  * [Create a Certificate](#createcertificate)
-  * [Get a Certificatec](#getcertificate)
-  * [List Certificates](#listcertificates)
-  * [Delete Certificate](#deletecertificate)
-  * [Cancel Delete Certificate](#canceldeletecertificate)
 * [Application Operations](#application-operations)
   * [Get Application](#get-application)
   * [List Applications](#list-application)
@@ -339,15 +333,7 @@ BatchApplicationPackageReference[] batchApplicationPackageReferences = new Batch
         }
     };
 
-BatchCertificateReference[] certificateReferences = new BatchCertificateReference[] {
-        new BatchCertificateReference("thumbprint","thumbprintAlgorithm")
-        {
-            StoreLocation = "storeLocation",
-            StoreName = "storeName"
-        }
-};
-
-BatchPoolReplaceOptions replaceOptions = new BatchPoolReplaceOptions(certificateReferences, batchApplicationPackageReferences, metadataItems);
+BatchPoolReplaceOptions replaceOptions = new BatchPoolReplaceOptions(batchApplicationPackageReferences, metadataItems);
 batchClient.ReplacePoolProperties("poolID", replaceOptions);
 ```
 #### Resize Pool
@@ -826,7 +812,7 @@ BatchTaskGroup taskCollection = new BatchTaskGroup(
 
 BatchCreateTaskCollectionResult batchCreateTaskCollectionResult = batchClient.CreateTaskCollection("jobID", taskCollection);
 ```
-Lastly you can call `CreateTasks` which has no limit to the number of tasks.  This method will package up the list of `BatchTaskCreateOptions` tasks passed in and repeatly call the `batchClient.CreateTaskCollection()` with groups of tasks bundled into `BatchTaskGroup` objects.  This utility method allows you to select the number of parallel calls to `batchClient.CreateTaskCollection()`. See [Creating multiple Task](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/batch/Azure.Compute.Batch/samples/Sample2_Creating_Multiple_Tasks.md)
+Lastly you can call `CreateTasks` which has no limit to the number of tasks.  This method will package up the list of `BatchTaskCreateOptions` tasks passed in and repeatly call the `batchClient.CreateTaskCollection()` with groups of tasks bundled into `BatchTaskGroup` objects.  This utility method allows you to select the number of parallel calls to `batchClient.CreateTaskCollection()`. See [Creating multiple Task](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/batch/Azure.Compute.Batch/samples/Sample2_Creating_Multiple_Tasks.md)
 
 ```C# Snippet:Batch_Sample02_CreateTasks_Default
 int tasksCount = 1000;
@@ -1168,85 +1154,6 @@ UploadBatchServiceLogsOptions uploadBatchServiceLogsOptions = new UploadBatchSer
 UploadBatchServiceLogsResult uploadBatchServiceLogsResult = batchClient.UploadNodeLogs("poolId", "computeNodeId", uploadBatchServiceLogsOptions);
 ```
 
-### Certificate Operations
-
-> Note: Certificates has been [deprecated].
-
-#### CreateCertificate
-
-Call `CreateCertificate` with a `BatchCertificate` param to create a Certificate.
-
-```C# Snippet:Batch_Migration_CreateCerCertificate
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-byte[] certData = File.ReadAllBytes("certPath");
-BatchCertificate cerCertificate = new BatchCertificate("Thumbprint", "ThumbprintAlgorithm", BinaryData.FromBytes(certData))
-{
-    CertificateFormat = BatchCertificateFormat.Cer,
-    Password = "",
-};
-
-Response response = batchClient.CreateCertificate(cerCertificate);
-```
-
-#### GetCertificate
-
-Call `GetCertificate` to get the certificate which will return a `GetCertificateResponse`.
-
-```C# Snippet:Batch_Migration_GetCertificate
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-
-BatchCertificate cerCertificateResponse = batchClient.GetCertificate("ThumbprintAlgorithm", "Thumbprint");
-```
-
-#### ListCertificates
-
-Call `GetCertificates` to get a list of certificates.
-
-```C# Snippet:Batch_Migration_ListCertificate
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-
-foreach (BatchCertificate item in batchClient.GetCertificates())
-{
-    // do something
-}
-```
-
-#### DeleteCertificate
-
-Call `DeleteCertificate` to delete a Certificate.
-
-```C# Snippet:Batch_Migration_DeleteCertificate
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-
-batchClient.DeleteCertificate("ThumbprintAlgorithm", "Thumbprint");
-```
-Optionally you can use the returned `DeleteCertificateOperation` object to wait for the operation to complete.
-
-```C# Snippet:Batch_Migration_DeleteCertificate_Operation
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-
-DeleteCertificateOperation operation = batchClient.DeleteCertificate("ThumbprintAlgorithm", "Thumbprint");
-
-// Optional, wait for operation to complete
-operation.WaitForCompletion();
-```
-
-#### CancelDeleteCertificate
-
-Call `CancelCertificateDeletion` to cancel a delete of a certificate.
-
-```C# Snippet:Batch_Migration_CancelDeleteCertificate
-BatchClient batchClient = new BatchClient(
-new Uri("https://<your account>.eastus.batch.azure.com"), new DefaultAzureCredential());
-
-batchClient.CancelCertificateDeletion("ThumbprintAlgorithm", "Thumbprint");
-```
-
 ### Application Operations
 
 #### Get Application
@@ -1306,7 +1213,7 @@ Please see [Troubleshooting common batch issues](https://learn.microsoft.com/tro
 
 ## Next steps
 
-View more https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/batch/Azure.Compute.Batch/samples here for common usages of the Batch client library: [Batch Samples](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.3/sdk/batch/Azure.Compute.Batch/samples).
+View more https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/batch/Azure.Compute.Batch/samples here for common usages of the Batch client library: [Batch Samples](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Compute.Batch_1.0.0-beta.4/sdk/batch/Azure.Compute.Batch/samples).
 
 ## Contributing
 
