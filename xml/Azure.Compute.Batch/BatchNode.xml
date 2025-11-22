@@ -48,46 +48,21 @@
       </Docs>
     </Member>
     <Member MemberName="AllocationTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? AllocationTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; AllocationTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset AllocationTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset AllocationTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.AllocationTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.AllocationTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchNode.AllocationTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.AllocationTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchNode.AllocationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The time at which this Compute Node was allocated to the Pool. This is the time when the Compute Node was initially allocated and doesn't change once set. It is not updated when the Compute Node is service healed or preempted. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CertificateReferences">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.CertificateReferences" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateReferences As IReadOnlyList(Of BatchCertificateReference)" />
-      <MemberSignature Language="F#" Value="member this.CertificateReferences : System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;" Usage="Azure.Compute.Batch.BatchNode.CertificateReferences" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.
-            For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.
-            For Certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.
-            Warning: This property is deprecated and will be removed after February, 2024. Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,6 +147,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Ipv6Address">
+      <MemberSignature Language="C#" Value="public System.Net.IPAddress Ipv6Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress Ipv6Address" />
+      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.Ipv6Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ipv6Address As IPAddress" />
+      <MemberSignature Language="F#" Value="member this.Ipv6Address : System.Net.IPAddress" Usage="Azure.Compute.Batch.BatchNode.Ipv6Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Compute.Batch</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The IPv6 address that other Nodes can use to communicate with this Compute Node. Every Compute Node that is added to a Pool is assigned a unique IP address. Whenever a Compute Node is removed from a Pool, all of its local files are deleted, and the IP address is reclaimed and could be reused for new Compute Nodes. This property will not be present if the Pool is not configured for IPv6. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsDedicated">
       <MemberSignature Language="C#" Value="public bool? IsDedicated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsDedicated" />
@@ -218,18 +213,18 @@
       </Docs>
     </Member>
     <Member MemberName="LastBootTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? LastBootTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastBootTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastBootTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastBootTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.LastBootTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastBootTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.LastBootTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchNode.LastBootTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastBootTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastBootTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchNode.LastBootTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The last time at which the Compute Node was started. This property may not be present if the Compute Node state is unusable. </summary>
@@ -378,18 +373,18 @@
       </Docs>
     </Member>
     <Member MemberName="State">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeState? State { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchNodeState&gt; State" />
+      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Compute.Batch.BatchNodeState State" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.State" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of BatchNodeState)" />
-      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.Compute.Batch.BatchNodeState&gt;" Usage="Azure.Compute.Batch.BatchNode.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As BatchNodeState" />
+      <MemberSignature Language="F#" Value="member this.State : Azure.Compute.Batch.BatchNodeState" Usage="Azure.Compute.Batch.BatchNode.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchNodeState&gt;</ReturnType>
+        <ReturnType>Azure.Compute.Batch.BatchNodeState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The current state of the Compute Node. The Spot/Low-priority Compute Node has been preempted. Tasks which were running on the Compute Node when it was preempted will be rescheduled when another Compute Node becomes available. </summary>
@@ -398,18 +393,18 @@
       </Docs>
     </Member>
     <Member MemberName="StateTransitionTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? StateTransitionTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StateTransitionTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset StateTransitionTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset StateTransitionTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.StateTransitionTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.StateTransitionTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchNode.StateTransitionTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.StateTransitionTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchNode.StateTransitionTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The time at which the Compute Node entered its current state. </summary>
@@ -572,18 +567,18 @@
       </Docs>
     </Member>
     <Member MemberName="TotalTasksRun">
-      <MemberSignature Language="C#" Value="public int? TotalTasksRun { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TotalTasksRun" />
+      <MemberSignature Language="C#" Value="public int TotalTasksRun { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalTasksRun" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchNode.TotalTasksRun" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalTasksRun As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.TotalTasksRun : Nullable&lt;int&gt;" Usage="Azure.Compute.Batch.BatchNode.TotalTasksRun" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalTasksRun As Integer" />
+      <MemberSignature Language="F#" Value="member this.TotalTasksRun : int" Usage="Azure.Compute.Batch.BatchNode.TotalTasksRun" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The total number of Job Tasks completed on the Compute Node. This includes Job Manager Tasks and normal Tasks, but not Job Preparation, Job Release or Start Tasks. </summary>

@@ -109,30 +109,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CertificateReferences">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPoolSpecification.CertificateReferences" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateReferences As IList(Of BatchCertificateReference)" />
-      <MemberSignature Language="F#" Value="member this.CertificateReferences : System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;" Usage="Azure.Compute.Batch.BatchPoolSpecification.CertificateReferences" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location. For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location. For Certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.
-            Warning: This property is deprecated and will be removed after February, 2024.
-            Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="DisplayName">
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
@@ -294,26 +270,6 @@
       </ReturnValue>
       <Docs>
         <summary> The timeout for allocation of Compute Nodes to the Pool. This timeout applies only to manual scaling; it has no effect when enableAutoScale is set to true. The default value is 15 minutes. The minimum value is 5 minutes. If you specify a value less than 5 minutes, the Batch service rejects the request with an error; if you are calling the REST API directly, the HTTP status code is 400 (Bad Request). </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ResourceTags">
-      <MemberSignature Language="C#" Value="public string ResourceTags { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ResourceTags" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPoolSpecification.ResourceTags" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceTags As String" />
-      <MemberSignature Language="F#" Value="member this.ResourceTags : string with get, set" Usage="Azure.Compute.Batch.BatchPoolSpecification.ResourceTags" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The user-specified tags associated with the pool.The user-defined tags to be associated with the Azure Batch Pool. When specified, these tags are propagated to the backing Azure resources associated with the pool. This property can only be specified when the Batch account was created with the poolAllocationMode property set to 'UserSubscription'. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,26 +484,6 @@
       </ReturnValue>
       <Docs>
         <summary> The desired number of Spot/Low-priority Compute Nodes in the Pool. This property must not be specified if enableAutoScale is set to true. If enableAutoScale is set to false, then you must set either targetDedicatedNodes, targetLowPriorityNodes, or both. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TargetNodeCommunicationMode">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeCommunicationMode? TargetNodeCommunicationMode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchNodeCommunicationMode&gt; TargetNodeCommunicationMode" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPoolSpecification.TargetNodeCommunicationMode" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetNodeCommunicationMode As Nullable(Of BatchNodeCommunicationMode)" />
-      <MemberSignature Language="F#" Value="member this.TargetNodeCommunicationMode : Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt; with get, set" Usage="Azure.Compute.Batch.BatchPoolSpecification.TargetNodeCommunicationMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The desired node communication mode for the pool. If omitted, the default value is Default. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

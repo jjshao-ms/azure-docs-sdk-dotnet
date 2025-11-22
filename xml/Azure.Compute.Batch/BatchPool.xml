@@ -147,44 +147,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CertificateReferences">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.CertificateReferences" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateReferences As IReadOnlyList(Of BatchCertificateReference)" />
-      <MemberSignature Language="F#" Value="member this.CertificateReferences : System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;" Usage="Azure.Compute.Batch.BatchPool.CertificateReferences" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.
-            For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.
-            For Certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.
-            Warning: This property is deprecated and will be removed after February, 2024. Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CreationTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? CreationTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreationTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset CreationTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset CreationTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.CreationTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchPool.CreationTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchPool.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The creation time of the Pool. </summary>
@@ -193,18 +168,18 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentDedicatedNodes">
-      <MemberSignature Language="C#" Value="public int? CurrentDedicatedNodes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentDedicatedNodes" />
+      <MemberSignature Language="C#" Value="public int CurrentDedicatedNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentDedicatedNodes" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.CurrentDedicatedNodes" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentDedicatedNodes As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.CurrentDedicatedNodes : Nullable&lt;int&gt;" Usage="Azure.Compute.Batch.BatchPool.CurrentDedicatedNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentDedicatedNodes As Integer" />
+      <MemberSignature Language="F#" Value="member this.CurrentDedicatedNodes : int" Usage="Azure.Compute.Batch.BatchPool.CurrentDedicatedNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The number of dedicated Compute Nodes currently in the Pool. </summary>
@@ -213,41 +188,21 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentLowPriorityNodes">
-      <MemberSignature Language="C#" Value="public int? CurrentLowPriorityNodes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentLowPriorityNodes" />
+      <MemberSignature Language="C#" Value="public int CurrentLowPriorityNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentLowPriorityNodes" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.CurrentLowPriorityNodes" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentLowPriorityNodes As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.CurrentLowPriorityNodes : Nullable&lt;int&gt;" Usage="Azure.Compute.Batch.BatchPool.CurrentLowPriorityNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentLowPriorityNodes As Integer" />
+      <MemberSignature Language="F#" Value="member this.CurrentLowPriorityNodes : int" Usage="Azure.Compute.Batch.BatchPool.CurrentLowPriorityNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The number of Spot/Low-priority Compute Nodes currently in the Pool. Spot/Low-priority Compute Nodes which have been preempted are included in this count. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CurrentNodeCommunicationMode">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeCommunicationMode? CurrentNodeCommunicationMode { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchNodeCommunicationMode&gt; CurrentNodeCommunicationMode" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.CurrentNodeCommunicationMode" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentNodeCommunicationMode As Nullable(Of BatchNodeCommunicationMode)" />
-      <MemberSignature Language="F#" Value="member this.CurrentNodeCommunicationMode : Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;" Usage="Azure.Compute.Batch.BatchPool.CurrentNodeCommunicationMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The current state of the pool communication mode. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,7 +222,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The display name for the Pool. The display name need not be unique and can contain any Unicode characters up to a maximum length of 1024. </summary>
+        <summary> The display name need not be unique and can contain any Unicode characters up to a maximum length of 1024. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,24 +262,24 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Whether the Pool permits direct communication between Compute Nodes. This imposes restrictions on which Compute Nodes can be assigned to the Pool. Specifying this value can reduce the chance of the requested number of Compute Nodes to be allocated in the Pool. </summary>
+        <summary> Whether the Pool permits direct communication between Compute Nodes. Enabling inter-node communication limits the maximum size of the Pool due to deployment restrictions on the Compute Nodes of the Pool. This may result in the Pool not reaching its desired size. The default value is false. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ETag">
-      <MemberSignature Language="C#" Value="public Azure.ETag? ETag { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="C#" Value="public Azure.ETag ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ETag ETag" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.ETag" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As Nullable(Of ETag)" />
-      <MemberSignature Language="F#" Value="member this.ETag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.Compute.Batch.BatchPool.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As ETag" />
+      <MemberSignature Language="F#" Value="member this.ETag : Azure.ETag" Usage="Azure.Compute.Batch.BatchPool.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
+        <ReturnType>Azure.ETag</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The ETag of the Pool. This is an opaque string. You can use it to detect whether the Pool has changed between requests. In particular, you can be pass the ETag when updating a Pool to specify that your changes should take effect only if nobody else has modified the Pool in the meantime. </summary>
@@ -398,18 +353,18 @@
       </Docs>
     </Member>
     <Member MemberName="LastModified">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? LastModified { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModified" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.LastModified" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchPool.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="Azure.Compute.Batch.BatchPool.LastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The last modified time of the Pool. This is the last time at which the Pool level data, such as the targetDedicatedNodes or enableAutoscale settings, changed. It does not factor in node-level changes such as a Compute Node changing state. </summary>
@@ -452,7 +407,7 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Compute.Batch.MountConfiguration&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> A list of file systems to mount on each node in the pool. This supports Azure Files, NFS, CIFS/SMB, and Blobfuse. </summary>
+        <summary> Mount storage using specified file system for the entire lifetime of the pool. Mount the storage using Azure fileshare, NFS, CIFS or Blobfuse based file system. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,26 +492,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ResourceTags">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; ResourceTags { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; ResourceTags" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.ResourceTags" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceTags As IReadOnlyDictionary(Of String, String)" />
-      <MemberSignature Language="F#" Value="member this.ResourceTags : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt;" Usage="Azure.Compute.Batch.BatchPool.ResourceTags" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The user-specified tags associated with the pool. The user-defined tags to be associated with the Azure Batch Pool. When specified, these tags are propagated to the backing Azure resources associated with the pool. This property can only be specified when the Batch account was created with the poolAllocationMode property set to 'UserSubscription'. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="StartTask">
       <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchStartTask StartTask { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Compute.Batch.BatchStartTask StartTask" />
@@ -578,18 +513,18 @@
       </Docs>
     </Member>
     <Member MemberName="State">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchPoolState? State { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchPoolState&gt; State" />
+      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchPoolState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Compute.Batch.BatchPoolState State" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.State" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of BatchPoolState)" />
-      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.Compute.Batch.BatchPoolState&gt;" Usage="Azure.Compute.Batch.BatchPool.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As BatchPoolState" />
+      <MemberSignature Language="F#" Value="member this.State : Azure.Compute.Batch.BatchPoolState" Usage="Azure.Compute.Batch.BatchPool.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchPoolState&gt;</ReturnType>
+        <ReturnType>Azure.Compute.Batch.BatchPoolState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The current state of the Pool. </summary>
@@ -598,18 +533,18 @@
       </Docs>
     </Member>
     <Member MemberName="StateTransitionTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? StateTransitionTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StateTransitionTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset StateTransitionTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset StateTransitionTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.StateTransitionTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.StateTransitionTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchPool.StateTransitionTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.StateTransitionTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchPool.StateTransitionTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The time at which the Pool entered its current state. </summary>
@@ -811,26 +746,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TargetNodeCommunicationMode">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeCommunicationMode? TargetNodeCommunicationMode { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchNodeCommunicationMode&gt; TargetNodeCommunicationMode" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPool.TargetNodeCommunicationMode" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetNodeCommunicationMode As Nullable(Of BatchNodeCommunicationMode)" />
-      <MemberSignature Language="F#" Value="member this.TargetNodeCommunicationMode : Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;" Usage="Azure.Compute.Batch.BatchPool.TargetNodeCommunicationMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The desired node communication mode for the pool. If omitted, the default value is Default. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TaskSchedulingPolicy">
       <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchTaskSchedulingPolicy TaskSchedulingPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Compute.Batch.BatchTaskSchedulingPolicy TaskSchedulingPolicy" />
@@ -966,7 +881,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The size of virtual machines in the Pool. All virtual machines in a Pool are the same size. For information about available VM sizes, see Sizes for Virtual Machines in Azure (https://learn.microsoft.com/azure/virtual-machines/sizes/overview). Batch supports all Azure VM sizes except STANDARD_A0 and those with premium storage (STANDARD_GS, STANDARD_DS, and STANDARD_DSV2 series). </summary>
+        <summary> The size of virtual machines in the Pool. All virtual machines in a Pool are the same size. For information about available sizes of virtual machines in Pools, see Choose a VM size for Compute Nodes in an Azure Batch Pool (https://learn.microsoft.com/azure/batch/batch-pool-vm-sizes). </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

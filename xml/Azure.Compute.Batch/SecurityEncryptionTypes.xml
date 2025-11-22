@@ -43,6 +43,26 @@
           <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="DiskWithVMGuestState">
+      <MemberSignature Language="C#" Value="public static Azure.Compute.Batch.SecurityEncryptionTypes DiskWithVMGuestState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Compute.Batch.SecurityEncryptionTypes DiskWithVMGuestState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.SecurityEncryptionTypes.DiskWithVMGuestState" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DiskWithVMGuestState As SecurityEncryptionTypes" />
+      <MemberSignature Language="F#" Value="static member DiskWithVMGuestState : Azure.Compute.Batch.SecurityEncryptionTypes" Usage="Azure.Compute.Batch.SecurityEncryptionTypes.DiskWithVMGuestState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Compute.Batch</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Compute.Batch.SecurityEncryptionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> EncryptionType of the managed disk is set to DiskWithVMGuestState for encryption of the managed disk along with VMGuestState blob. It is not supported in data disks. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (Azure.Compute.Batch.SecurityEncryptionTypes other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.Compute.Batch.SecurityEncryptionTypes other) cil managed" />
@@ -144,7 +164,7 @@
         <ReturnType>Azure.Compute.Batch.SecurityEncryptionTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> NonPersistedTPM. </summary>
+        <summary> EncryptionType of the managed disk is set to NonPersistedTPM for not persisting firmware state in the VMGuestState blob. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +281,7 @@
         <ReturnType>Azure.Compute.Batch.SecurityEncryptionTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> VMGuestStateOnly. </summary>
+        <summary> EncryptionType of the managed disk is set to VMGuestStateOnly for encryption of just the VMGuestState blob. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

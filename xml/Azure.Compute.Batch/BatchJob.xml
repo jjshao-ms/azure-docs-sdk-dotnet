@@ -64,7 +64,7 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Whether Tasks in this job can be preempted by other high priority jobs. If the value is set to True, other high priority jobs submitted to the system will take precedence and will be able requeue tasks from this job. You can update a job's allowTaskPreemption after it has been created using the update job API. </summary>
+        <summary> Whether Tasks in this job can be preempted by other high priority jobs. (This property is not available by default. Please contact support for more information) If the value is set to True, other high priority jobs submitted to the system will take precedence and will be able requeue tasks from this job. You can update a job's allowTaskPreemption after it has been created using the update job API. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,18 +130,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? CreationTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreationTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset CreationTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset CreationTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchJob.CreationTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchJob.CreationTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchJob.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The creation time of the Job. </summary>
@@ -170,18 +170,18 @@
       </Docs>
     </Member>
     <Member MemberName="ETag">
-      <MemberSignature Language="C#" Value="public Azure.ETag? ETag { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="C#" Value="public Azure.ETag ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ETag ETag" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchJob.ETag" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As Nullable(Of ETag)" />
-      <MemberSignature Language="F#" Value="member this.ETag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.Compute.Batch.BatchJob.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As ETag" />
+      <MemberSignature Language="F#" Value="member this.ETag : Azure.ETag" Usage="Azure.Compute.Batch.BatchJob.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
+        <ReturnType>Azure.ETag</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The ETag of the Job. This is an opaque string. You can use it to detect whether the Job has changed between requests. In particular, you can be pass the ETag when updating a Job to specify that your changes should take effect only if nobody else has modified the Job in the meantime. </summary>
@@ -335,18 +335,18 @@
       </Docs>
     </Member>
     <Member MemberName="LastModified">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? LastModified { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModified" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchJob.LastModified" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchJob.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="Azure.Compute.Batch.BatchJob.LastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The last modified time of the Job. This is the last time at which the Job level data, such as the Job state or priority, changed. It does not factor in task-level changes such as adding new Tasks or Tasks changing state. </summary>
@@ -369,7 +369,7 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The maximum number of tasks that can be executed in parallel for the job. The value of maxParallelTasks must be -1 or greater than 0 if specified. If not specified, the default value is -1, which means there's no limit to the number of tasks that can be run at once. You can update a job's maxParallelTasks after it has been created using the update job API. </summary>
+        <summary> The maximum number of tasks that can be executed in parallel for the job. (This property is not available by default. Please contact support for more information) The value of maxParallelTasks must be -1 or greater than 0 if specified. If not specified, the default value is -1, which means there's no limit to the number of tasks that can be run at once. You can update a job's maxParallelTasks after it has been created using the update job API. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,7 +409,7 @@
         <ReturnType>Azure.Compute.Batch.BatchJobNetworkConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The network configuration for the Job. </summary>
+        <summary> (This property is not available by default. Please contact support for more information) The network configuration for the Job. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,18 +495,18 @@
       </Docs>
     </Member>
     <Member MemberName="State">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchJobState? State { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchJobState&gt; State" />
+      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchJobState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Compute.Batch.BatchJobState State" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchJob.State" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Nullable(Of BatchJobState)" />
-      <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Azure.Compute.Batch.BatchJobState&gt;" Usage="Azure.Compute.Batch.BatchJob.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As BatchJobState" />
+      <MemberSignature Language="F#" Value="member this.State : Azure.Compute.Batch.BatchJobState" Usage="Azure.Compute.Batch.BatchJob.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchJobState&gt;</ReturnType>
+        <ReturnType>Azure.Compute.Batch.BatchJobState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The current state of the Job. </summary>
@@ -515,18 +515,18 @@
       </Docs>
     </Member>
     <Member MemberName="StateTransitionTime">
-      <MemberSignature Language="C#" Value="public DateTimeOffset? StateTransitionTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StateTransitionTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset StateTransitionTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset StateTransitionTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchJob.StateTransitionTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As Nullable(Of DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="member this.StateTransitionTime : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.Compute.Batch.BatchJob.StateTransitionTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateTransitionTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.StateTransitionTime : DateTimeOffset" Usage="Azure.Compute.Batch.BatchJob.StateTransitionTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The time at which the Job entered its current state. </summary>

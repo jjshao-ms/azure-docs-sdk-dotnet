@@ -28,36 +28,27 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BatchPoolReplaceOptions (System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchCertificateReference&gt; certificateReferences, System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchApplicationPackageReference&gt; applicationPackageReferences, System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchMetadataItem&gt; metadata);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Compute.Batch.BatchCertificateReference&gt; certificateReferences, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Compute.Batch.BatchApplicationPackageReference&gt; applicationPackageReferences, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Compute.Batch.BatchMetadataItem&gt; metadata) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Compute.Batch.BatchPoolReplaceOptions.#ctor(System.Collections.Generic.IEnumerable{Azure.Compute.Batch.BatchCertificateReference},System.Collections.Generic.IEnumerable{Azure.Compute.Batch.BatchApplicationPackageReference},System.Collections.Generic.IEnumerable{Azure.Compute.Batch.BatchMetadataItem})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (certificateReferences As IEnumerable(Of BatchCertificateReference), applicationPackageReferences As IEnumerable(Of BatchApplicationPackageReference), metadata As IEnumerable(Of BatchMetadataItem))" />
-      <MemberSignature Language="F#" Value="new Azure.Compute.Batch.BatchPoolReplaceOptions : seq&lt;Azure.Compute.Batch.BatchCertificateReference&gt; * seq&lt;Azure.Compute.Batch.BatchApplicationPackageReference&gt; * seq&lt;Azure.Compute.Batch.BatchMetadataItem&gt; -&gt; Azure.Compute.Batch.BatchPoolReplaceOptions" Usage="new Azure.Compute.Batch.BatchPoolReplaceOptions (certificateReferences, applicationPackageReferences, metadata)" />
+      <MemberSignature Language="C#" Value="public BatchPoolReplaceOptions (System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchApplicationPackageReference&gt; applicationPackageReferences, System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchMetadataItem&gt; metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Compute.Batch.BatchApplicationPackageReference&gt; applicationPackageReferences, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Compute.Batch.BatchMetadataItem&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Compute.Batch.BatchPoolReplaceOptions.#ctor(System.Collections.Generic.IEnumerable{Azure.Compute.Batch.BatchApplicationPackageReference},System.Collections.Generic.IEnumerable{Azure.Compute.Batch.BatchMetadataItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (applicationPackageReferences As IEnumerable(Of BatchApplicationPackageReference), metadata As IEnumerable(Of BatchMetadataItem))" />
+      <MemberSignature Language="F#" Value="new Azure.Compute.Batch.BatchPoolReplaceOptions : seq&lt;Azure.Compute.Batch.BatchApplicationPackageReference&gt; * seq&lt;Azure.Compute.Batch.BatchMetadataItem&gt; -&gt; Azure.Compute.Batch.BatchPoolReplaceOptions" Usage="new Azure.Compute.Batch.BatchPoolReplaceOptions (applicationPackageReferences, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Compute.Batch</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="certificateReferences" Type="System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchCertificateReference&gt;" />
         <Parameter Name="applicationPackageReferences" Type="System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchApplicationPackageReference&gt;" />
         <Parameter Name="metadata" Type="System.Collections.Generic.IEnumerable&lt;Azure.Compute.Batch.BatchMetadataItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="certificateReferences">
-            This list replaces any existing Certificate references configured on the Pool.
-            If you specify an empty collection, any existing Certificate references are removed from the Pool.
-            For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.
-            For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.
-            For Certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.
-            Warning: This property is deprecated and will be removed after February, 2024. Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-            </param>
         <param name="applicationPackageReferences"> The list of Application Packages to be installed on each Compute Node in the Pool. The list replaces any existing Application Package references on the Pool. Changes to Application Package references affect all new Compute Nodes joining the Pool, but do not affect Compute Nodes that are already in the Pool until they are rebooted or reimaged. There is a maximum of 10 Application Package references on any given Pool. If omitted, or if you specify an empty collection, any existing Application Packages references are removed from the Pool. A maximum of 10 references may be specified on a given Pool. </param>
         <param name="metadata"> A list of name-value pairs associated with the Pool as metadata. This list replaces any existing metadata configured on the Pool. If omitted, or if you specify an empty collection, any existing metadata is removed from the Pool. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.Compute.Batch.BatchPoolReplaceOptions" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificateReferences" />, <paramref name="applicationPackageReferences" /> or <paramref name="metadata" /> is null. </exception>
+          <paramref name="applicationPackageReferences" /> or <paramref name="metadata" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ApplicationPackageReferences">
@@ -76,33 +67,6 @@
       </ReturnValue>
       <Docs>
         <summary> The list of Application Packages to be installed on each Compute Node in the Pool. The list replaces any existing Application Package references on the Pool. Changes to Application Package references affect all new Compute Nodes joining the Pool, but do not affect Compute Nodes that are already in the Pool until they are rebooted or reimaged. There is a maximum of 10 Application Package references on any given Pool. If omitted, or if you specify an empty collection, any existing Application Packages references are removed from the Pool. A maximum of 10 references may be specified on a given Pool. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CertificateReferences">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Compute.Batch.BatchCertificateReference&gt; CertificateReferences" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPoolReplaceOptions.CertificateReferences" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateReferences As IList(Of BatchCertificateReference)" />
-      <MemberSignature Language="F#" Value="member this.CertificateReferences : System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;" Usage="Azure.Compute.Batch.BatchPoolReplaceOptions.CertificateReferences" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.Compute.Batch.BatchCertificateReference&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            This list replaces any existing Certificate references configured on the Pool.
-            If you specify an empty collection, any existing Certificate references are removed from the Pool.
-            For Windows Nodes, the Batch service installs the Certificates to the specified Certificate store and location.
-            For Linux Compute Nodes, the Certificates are stored in a directory inside the Task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the Task to query for this location.
-            For Certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and Certificates are placed in that directory.
-            Warning: This property is deprecated and will be removed after February, 2024. Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,26 +288,6 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="TargetNodeCommunicationMode">
-      <MemberSignature Language="C#" Value="public Azure.Compute.Batch.BatchNodeCommunicationMode? TargetNodeCommunicationMode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Compute.Batch.BatchNodeCommunicationMode&gt; TargetNodeCommunicationMode" />
-      <MemberSignature Language="DocId" Value="P:Azure.Compute.Batch.BatchPoolReplaceOptions.TargetNodeCommunicationMode" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetNodeCommunicationMode As Nullable(Of BatchNodeCommunicationMode)" />
-      <MemberSignature Language="F#" Value="member this.TargetNodeCommunicationMode : Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt; with get, set" Usage="Azure.Compute.Batch.BatchPoolReplaceOptions.TargetNodeCommunicationMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Compute.Batch</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.Compute.Batch.BatchNodeCommunicationMode&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The desired node communication mode for the pool. This setting replaces any existing targetNodeCommunication setting on the Pool. If omitted, the existing setting is default. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>
