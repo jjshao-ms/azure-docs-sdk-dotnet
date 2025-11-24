@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: datadog
 ---
-# Azure Datadog SDK for .NET - preview
-## Packages - preview
+# Azure Datadog SDK for .NET - latest
+## Packages - latest
 [!INCLUDE [packages](datadog-index.md)]
