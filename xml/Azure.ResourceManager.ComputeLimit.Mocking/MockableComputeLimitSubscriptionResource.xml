@@ -1,0 +1,221 @@
+<Type Name="MockableComputeLimitSubscriptionResource" FullName="Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource">
+  <TypeSignature Language="C#" Value="public class MockableComputeLimitSubscriptionResource : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableComputeLimitSubscriptionResource extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableComputeLimitSubscriptionResource&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableComputeLimitSubscriptionResource = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableComputeLimitSubscriptionResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableComputeLimitSubscriptionResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitGuestSubscription">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt; GetComputeLimitGuestSubscription (Azure.Core.AzureLocation location, string guestSubscriptionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt; GetComputeLimitGuestSubscription(valuetype Azure.Core.AzureLocation location, string guestSubscriptionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscription(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitGuestSubscription (location As AzureLocation, guestSubscriptionId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ComputeLimitGuestSubscriptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitGuestSubscription : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&#xA;override this.GetComputeLimitGuestSubscription : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscription (location, guestSubscriptionId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="guestSubscriptionId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="guestSubscriptionId"> The name of the GuestSubscription. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the properties of a guest subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ComputeLimit/locations/{location}/guestSubscriptions/{guestSubscriptionId}. </description></item><item><term> Operation Id. </term><description> GuestSubscriptions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-15. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="guestSubscriptionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="guestSubscriptionId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitGuestSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&gt; GetComputeLimitGuestSubscriptionAsync (Azure.Core.AzureLocation location, string guestSubscriptionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&gt; GetComputeLimitGuestSubscriptionAsync(valuetype Azure.Core.AzureLocation location, string guestSubscriptionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscriptionAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitGuestSubscriptionAsync (location As AzureLocation, guestSubscriptionId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ComputeLimitGuestSubscriptionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitGuestSubscriptionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&gt;&#xA;override this.GetComputeLimitGuestSubscriptionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&gt;" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscriptionAsync (location, guestSubscriptionId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="guestSubscriptionId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="guestSubscriptionId"> The name of the GuestSubscription. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the properties of a guest subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ComputeLimit/locations/{location}/guestSubscriptions/{guestSubscriptionId}. </description></item><item><term> Operation Id. </term><description> GuestSubscriptions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-15. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="guestSubscriptionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="guestSubscriptionId" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitGuestSubscriptions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionCollection GetComputeLimitGuestSubscriptions (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionCollection GetComputeLimitGuestSubscriptions(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscriptions(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitGuestSubscriptions (location As AzureLocation) As ComputeLimitGuestSubscriptionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitGuestSubscriptions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionCollection&#xA;override this.GetComputeLimitGuestSubscriptions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionCollection" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitGuestSubscriptions location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ComputeLimit.ComputeLimitGuestSubscriptionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of ComputeLimitGuestSubscriptions in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of ComputeLimitGuestSubscriptions and their operations over a ComputeLimitGuestSubscriptionResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitSharedLimit">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt; GetComputeLimitSharedLimit (Azure.Core.AzureLocation location, string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt; GetComputeLimitSharedLimit(valuetype Azure.Core.AzureLocation location, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimit(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitSharedLimit (location As AzureLocation, name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ComputeLimitSharedLimitResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitSharedLimit : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&#xA;override this.GetComputeLimitSharedLimit : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimit (location, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="name"> The name of the SharedLimit. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the properties of a compute limit shared by the host subscription with its guest subscriptions.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ComputeLimit/locations/{location}/sharedLimits/{name}. </description></item><item><term> Operation Id. </term><description> SharedLimits_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-15. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitSharedLimitAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&gt; GetComputeLimitSharedLimitAsync (Azure.Core.AzureLocation location, string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&gt; GetComputeLimitSharedLimitAsync(valuetype Azure.Core.AzureLocation location, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimitAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitSharedLimitAsync (location As AzureLocation, name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ComputeLimitSharedLimitResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitSharedLimitAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&gt;&#xA;override this.GetComputeLimitSharedLimitAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&gt;" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimitAsync (location, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="name"> The name of the SharedLimit. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the properties of a compute limit shared by the host subscription with its guest subscriptions.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ComputeLimit/locations/{location}/sharedLimits/{name}. </description></item><item><term> Operation Id. </term><description> SharedLimits_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-15. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputeLimitSharedLimits">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitCollection GetComputeLimitSharedLimits (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitCollection GetComputeLimitSharedLimits(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeLimit.Mocking.MockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimits(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComputeLimitSharedLimits (location As AzureLocation) As ComputeLimitSharedLimitCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetComputeLimitSharedLimits : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitCollection&#xA;override this.GetComputeLimitSharedLimits : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitCollection" Usage="mockableComputeLimitSubscriptionResource.GetComputeLimitSharedLimits location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeLimit</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ComputeLimit.ComputeLimitSharedLimitCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of ComputeLimitSharedLimits in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of ComputeLimitSharedLimits and their operations over a ComputeLimitSharedLimitResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

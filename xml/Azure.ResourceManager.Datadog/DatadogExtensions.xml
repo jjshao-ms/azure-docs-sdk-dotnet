@@ -18,6 +18,38 @@
   </Docs>
   <Members>
     <Member MemberName="CreateOrUpdateMarketplaceAgreement">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; CreateOrUpdateMarketplaceAgreement (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Datadog.Models.DatadogAgreement body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; CreateOrUpdateMarketplaceAgreement(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Datadog.Models.DatadogAgreement body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.CreateOrUpdateMarketplaceAgreement(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Datadog.Models.DatadogAgreement,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdateMarketplaceAgreement (subscriptionResource As SubscriptionResource, Optional body As DatadogAgreement = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatadogAgreement)" />
+      <MemberSignature Language="F#" Value="static member CreateOrUpdateMarketplaceAgreement : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Datadog.Models.DatadogAgreement * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.CreateOrUpdateMarketplaceAgreement (subscriptionResource, body, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreement" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="body"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Create Datadog marketplace agreement in the subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements/default</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.CreateOrUpdateMarketplaceAgreement(Azure.ResourceManager.Datadog.Models.DatadogAgreement,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateMarketplaceAgreement">
       <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; CreateOrUpdateMarketplaceAgreement (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties body = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; CreateOrUpdateMarketplaceAgreement(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.CreateOrUpdateMarketplaceAgreement(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties,System.Threading.CancellationToken)" />
@@ -32,9 +64,9 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
-        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -43,6 +75,38 @@
         <summary>
             Create Datadog marketplace agreement in the subscription.
             <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements/default</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2021-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.CreateOrUpdateMarketplaceAgreement(Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateMarketplaceAgreementAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;&gt; CreateOrUpdateMarketplaceAgreementAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Datadog.Models.DatadogAgreement body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;&gt; CreateOrUpdateMarketplaceAgreementAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Datadog.Models.DatadogAgreement body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.CreateOrUpdateMarketplaceAgreementAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Datadog.Models.DatadogAgreement,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdateMarketplaceAgreementAsync (subscriptionResource As SubscriptionResource, Optional body As DatadogAgreement = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatadogAgreement))" />
+      <MemberSignature Language="F#" Value="static member CreateOrUpdateMarketplaceAgreementAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Datadog.Models.DatadogAgreement * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.CreateOrUpdateMarketplaceAgreementAsync (subscriptionResource, body, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreement" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="body"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Create Datadog marketplace agreement in the subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements/default</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.CreateOrUpdateMarketplaceAgreement(Azure.ResourceManager.Datadog.Models.DatadogAgreement,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -64,9 +128,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
-        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="body" Type="Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -79,6 +143,105 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitor">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitor (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string monitorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitor(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string monitorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitor(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitor (resourceGroupResource As ResourceGroupResource, monitorName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatadogMonitorResource)" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitor : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitor (resourceGroupResource, monitorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="monitorName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="monitorName"> Monitor resource name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitor(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="monitorName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitorAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt; GetDatadogMonitorAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string monitorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt; GetDatadogMonitorAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string monitorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitorAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitorAsync (resourceGroupResource As ResourceGroupResource, monitorName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatadogMonitorResource))" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitorAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitorAsync (resourceGroupResource, monitorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="monitorName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="monitorName"> Monitor resource name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitorAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> or <paramref name="monitorName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitoredSubscriptionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource GetDatadogMonitoredSubscriptionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource GetDatadogMonitoredSubscriptionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitoredSubscriptionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitoredSubscriptionResource (client As ArmClient, id As ResourceIdentifier) As DatadogMonitoredSubscriptionResource" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitoredSubscriptionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitoredSubscriptionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogArmClient.GetDatadogMonitoredSubscriptionResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitoredSubscriptionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDatadogMonitorResource">
@@ -127,9 +290,9 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
-        <Parameter Name="monitorName" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="monitorName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -161,9 +324,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
-        <Parameter Name="monitorName" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="monitorName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -195,7 +358,7 @@
         <ReturnType>Azure.ResourceManager.Datadog.DatadogMonitorResourceCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -223,8 +386,8 @@
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -253,8 +416,8 @@
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -262,6 +425,94 @@
         <summary>
             List all monitors under the specified subscription.
             <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/monitors</description></item><item><term>Operation Id</term><description>Monitors_List</description></item><item><term>Default Api Version</term><description>2021-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetDatadogMonitorResources(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitors">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Datadog.DatadogMonitorCollection GetDatadogMonitors (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Datadog.DatadogMonitorCollection GetDatadogMonitors(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitors(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitors (resourceGroupResource As ResourceGroupResource) As DatadogMonitorCollection" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitors : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.Datadog.DatadogMonitorCollection" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitors resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Datadog.DatadogMonitorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <summary>
+            Gets a collection of DatadogMonitorResources in the ResourceGroupResource.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitors" /> instead.</description></item></summary>
+        <returns> An object representing collection of DatadogMonitorResources and their operations over a DatadogMonitorResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitors">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitors (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitors(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitors(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitors (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatadogMonitorResource)" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitors : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitors (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all monitors under the specified subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/monitors</description></item><item><term>Operation Id</term><description>Monitors_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetDatadogMonitors(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitorsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitorsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitorsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitorsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDatadogMonitorsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatadogMonitorResource)" />
+      <MemberSignature Language="F#" Value="static member GetDatadogMonitorsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDatadogMonitorsAsync (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List all monitors under the specified subscription.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/monitors</description></item><item><term>Operation Id</term><description>Monitors_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetDatadogMonitors(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -299,19 +550,55 @@
           <paramref name="client" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetMarketplaceAgreements">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreements (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreements(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreements(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreements (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatadogAgreementResourceProperties)" />
-      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreements : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreements (subscriptionResource, cancellationToken)" />
+    <Member MemberName="GetDataMonitoringTagRuleResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource GetDataMonitoringTagRuleResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource GetDataMonitoringTagRuleResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetDataMonitoringTagRuleResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataMonitoringTagRuleResource (client As ArmClient, id As ResourceIdentifier) As DataMonitoringTagRuleResource" />
+      <MemberSignature Language="F#" Value="static member GetDataMonitoringTagRuleResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetDataMonitoringTagRuleResource (client, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;</ReturnType>
+        <ReturnType>Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogArmClient.GetDataMonitoringTagRuleResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Datadog.DataMonitoringTagRuleResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMarketplaceAgreements">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; GetMarketplaceAgreements (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; GetMarketplaceAgreements(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreements(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreements (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatadogAgreement)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreements : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreements (subscriptionResource, cancellationToken)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreements (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreements(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreements (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatadogAgreementResourceProperties)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreements : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreements (subscriptionResource, cancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -322,26 +609,31 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List Datadog marketplace agreements in the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_List</description></item><item><term>Default Api Version</term><description>2021-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetMarketplaceAgreements(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetMarketplaceAgreements(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogAgreement" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetMarketplaceAgreementsAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreementsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreementsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; GetMarketplaceAgreementsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt; GetMarketplaceAgreementsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreementsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreementsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatadogAgreementResourceProperties)" />
-      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreementsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreementsAsync (subscriptionResource, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreementsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatadogAgreement)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreementsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreementsAsync (subscriptionResource, cancellationToken)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreementsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt; GetMarketplaceAgreementsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceAgreementsAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatadogAgreementResourceProperties)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceAgreementsAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetMarketplaceAgreementsAsync (subscriptionResource, cancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet">Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreement&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -352,8 +644,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List Datadog marketplace agreements in the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_List</description></item><item><term>Default Api Version</term><description>2021-03-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetMarketplaceAgreements(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogAgreementResourceProperties" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/agreements</description></item><item><term>Operation Id</term><description>MarketplaceAgreements_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetMarketplaceAgreements(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogAgreement" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -374,8 +666,8 @@
         <ReturnType>Azure.ResourceManager.Datadog.MonitoringTagRuleResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -388,6 +680,134 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionStatus">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatus (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatus(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatus(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSubscriptionStatus (subscriptionResource As SubscriptionResource, datadogOrganizationId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatadogSubscriptionStatusResult)" />
+      <MemberSignature Language="F#" Value="static member GetSubscriptionStatus : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatus (subscriptionResource, datadogOrganizationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="datadogOrganizationId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="datadogOrganizationId"> Datadog Organization Id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Informs if the current subscription is being already monitored for selected Datadog organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses/default</description></item><item><term>Operation Id</term><description>CreationSupported_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetSubscriptionStatus(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="datadogOrganizationId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionStatusAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;&gt; GetSubscriptionStatusAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;&gt; GetSubscriptionStatusAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatusAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSubscriptionStatusAsync (subscriptionResource As SubscriptionResource, datadogOrganizationId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatadogSubscriptionStatusResult))" />
+      <MemberSignature Language="F#" Value="static member GetSubscriptionStatusAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatusAsync (subscriptionResource, datadogOrganizationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="datadogOrganizationId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="datadogOrganizationId"> Datadog Organization Id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Informs if the current subscription is being already monitored for selected Datadog organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses/default</description></item><item><term>Operation Id</term><description>CreationSupported_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetSubscriptionStatus(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="datadogOrganizationId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionStatuses">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatuses (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatuses(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatuses(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSubscriptionStatuses (subscriptionResource As SubscriptionResource, datadogOrganizationId As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatadogSubscriptionStatusResult)" />
+      <MemberSignature Language="F#" Value="static member GetSubscriptionStatuses : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatuses (subscriptionResource, datadogOrganizationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="datadogOrganizationId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="datadogOrganizationId"> Datadog Organization Id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Informs if the current subscription is being already monitored for selected Datadog organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses</description></item><item><term>Operation Id</term><description>CreationSupported_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetSubscriptionStatuses(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="datadogOrganizationId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionStatusesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatusesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt; GetSubscriptionStatusesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string datadogOrganizationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatusesAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSubscriptionStatusesAsync (subscriptionResource As SubscriptionResource, datadogOrganizationId As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatadogSubscriptionStatusResult)" />
+      <MemberSignature Language="F#" Value="static member GetSubscriptionStatusesAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;" Usage="Azure.ResourceManager.Datadog.DatadogExtensions.GetSubscriptionStatusesAsync (subscriptionResource, datadogOrganizationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="datadogOrganizationId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="datadogOrganizationId"> Datadog Organization Id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Informs if the current subscription is being already monitored for selected Datadog organization.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses</description></item><item><term>Operation Id</term><description>CreationSupported_List</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogSubscriptionResource.GetSubscriptionStatuses(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Datadog.Models.DatadogSubscriptionStatusResult" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> or <paramref name="datadogOrganizationId" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

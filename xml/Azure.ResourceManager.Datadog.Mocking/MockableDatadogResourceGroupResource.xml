@@ -33,6 +33,70 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetDatadogMonitor">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitor (string monitorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitor(string monitorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitor(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatadogMonitor (monitorName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DatadogMonitorResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatadogMonitor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&#xA;override this.GetDatadogMonitor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;" Usage="mockableDatadogResourceGroupResource.GetDatadogMonitor (monitorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="monitorName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="monitorName"> Monitor resource name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="monitorName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitorAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt; GetDatadogMonitorAsync (string monitorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt; GetDatadogMonitorAsync(string monitorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitorAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatadogMonitorAsync (monitorName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DatadogMonitorResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDatadogMonitorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;&#xA;override this.GetDatadogMonitorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;" Usage="mockableDatadogResourceGroupResource.GetDatadogMonitorAsync (monitorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="monitorName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="monitorName"> Monitor resource name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specific monitor resource.
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2025-06-11</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Datadog.DatadogMonitorResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="monitorName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetDatadogMonitorResource">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitorResource (string monitorName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Datadog.DatadogMonitorResource&gt; GetDatadogMonitorResource(string monitorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -48,8 +112,8 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="monitorName" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="monitorName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="monitorName"> Monitor resource name. </param>
@@ -80,8 +144,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Datadog.DatadogMonitorResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="monitorName" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="monitorName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="monitorName"> Monitor resource name. </param>
@@ -110,6 +174,27 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Datadog.DatadogMonitorResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DatadogMonitorResources in the ResourceGroupResource. </summary>
+        <returns> An object representing collection of DatadogMonitorResources and their operations over a DatadogMonitorResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatadogMonitors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Datadog.DatadogMonitorCollection GetDatadogMonitors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Datadog.DatadogMonitorCollection GetDatadogMonitors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Datadog.Mocking.MockableDatadogResourceGroupResource.GetDatadogMonitors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatadogMonitors () As DatadogMonitorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDatadogMonitors : unit -&gt; Azure.ResourceManager.Datadog.DatadogMonitorCollection&#xA;override this.GetDatadogMonitors : unit -&gt; Azure.ResourceManager.Datadog.DatadogMonitorCollection" Usage="mockableDatadogResourceGroupResource.GetDatadogMonitors " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Datadog</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Datadog.DatadogMonitorCollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
