@@ -135,6 +135,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddressMetadata">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.AddressMetadata AddressMetadata (string formatedAddress = default, System.Collections.Generic.IEnumerable&lt;string&gt; addressLines = default, string city = default, string state = default, string postalCode = default, string countryOrRegion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.AddressMetadata AddressMetadata(string formatedAddress, class System.Collections.Generic.IEnumerable`1&lt;string&gt; addressLines, string city, string state, string postalCode, string countryOrRegion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisModelFactory.AddressMetadata(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddressMetadata (Optional formatedAddress As String = Nothing, Optional addressLines As IEnumerable(Of String) = Nothing, Optional city As String = Nothing, Optional state As String = Nothing, Optional postalCode As String = Nothing, Optional countryOrRegion As String = Nothing) As AddressMetadata" />
+      <MemberSignature Language="F#" Value="static member AddressMetadata : string * seq&lt;string&gt; * string * string * string * string -&gt; Azure.AI.Language.Text.AddressMetadata" Usage="Azure.AI.Language.Text.TextAnalysisModelFactory.AddressMetadata (formatedAddress, addressLines, city, state, postalCode, countryOrRegion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Text</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Text.AddressMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatedAddress" Type="System.String" />
+        <Parameter Name="addressLines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="city" Type="System.String" />
+        <Parameter Name="state" Type="System.String" />
+        <Parameter Name="postalCode" Type="System.String" />
+        <Parameter Name="countryOrRegion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formatedAddress"> The fully formatted address string following postal conventions for the address's country/region. </param>
+        <param name="addressLines"> The full address string as recognized from the input text. </param>
+        <param name="city"> The city name of the address. </param>
+        <param name="state"> The state or province name of the address. </param>
+        <param name="postalCode"> The postal or ZIP code of the address. </param>
+        <param name="countryOrRegion"> The country or region name of the address. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.AddressMetadata" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Text.AddressMetadata" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AgeMetadata">
       <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.AgeMetadata AgeMetadata (double value = 0, Azure.AI.Language.Text.AgeUnit unit = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.AgeMetadata AgeMetadata(float64 value, valuetype Azure.AI.Language.Text.AgeUnit unit) cil managed" />
@@ -490,6 +524,60 @@
         <param name="confidenceScore"> Confidence score between 0 and 1 of the recognized class. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.ClassificationResult" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Text.ClassificationResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfidenceScoreThreshold">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.ConfidenceScoreThreshold ConfidenceScoreThreshold (float default = 0, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.ConfidenceScoreThresholdOverride&gt; overrides = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.ConfidenceScoreThreshold ConfidenceScoreThreshold(float32 default, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.Text.ConfidenceScoreThresholdOverride&gt; overrides) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisModelFactory.ConfidenceScoreThreshold(System.Single,System.Collections.Generic.IEnumerable{Azure.AI.Language.Text.ConfidenceScoreThresholdOverride})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConfidenceScoreThreshold (Optional default As Single = 0, Optional overrides As IEnumerable(Of ConfidenceScoreThresholdOverride) = Nothing) As ConfidenceScoreThreshold" />
+      <MemberSignature Language="F#" Value="static member ConfidenceScoreThreshold : single * seq&lt;Azure.AI.Language.Text.ConfidenceScoreThresholdOverride&gt; -&gt; Azure.AI.Language.Text.ConfidenceScoreThreshold" Usage="Azure.AI.Language.Text.TextAnalysisModelFactory.ConfidenceScoreThreshold (default, overrides)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Text</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Text.ConfidenceScoreThreshold</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="default" Type="System.Single" />
+        <Parameter Name="overrides" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.Text.ConfidenceScoreThresholdOverride&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="default"> Minimum confidence score threshold for the PII entities to be returned in the response. Entities with a confidence score below this threshold will be filtered out. Value should be between 0.0 and 1.0. </param>
+        <param name="overrides"> List of confidence score threshold overrides for specific PII categories. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.ConfidenceScoreThreshold" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Text.ConfidenceScoreThreshold" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfidenceScoreThresholdOverride">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.ConfidenceScoreThresholdOverride ConfidenceScoreThresholdOverride (Azure.AI.Language.Text.PiiCategoriesExclude entity = default, float value = 0, string language = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.ConfidenceScoreThresholdOverride ConfidenceScoreThresholdOverride(valuetype Azure.AI.Language.Text.PiiCategoriesExclude entity, float32 value, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisModelFactory.ConfidenceScoreThresholdOverride(Azure.AI.Language.Text.PiiCategoriesExclude,System.Single,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConfidenceScoreThresholdOverride (Optional entity As PiiCategoriesExclude = Nothing, Optional value As Single = 0, Optional language As String = Nothing) As ConfidenceScoreThresholdOverride" />
+      <MemberSignature Language="F#" Value="static member ConfidenceScoreThresholdOverride : Azure.AI.Language.Text.PiiCategoriesExclude * single * string -&gt; Azure.AI.Language.Text.ConfidenceScoreThresholdOverride" Usage="Azure.AI.Language.Text.TextAnalysisModelFactory.ConfidenceScoreThresholdOverride (entity, value, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Text</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Text.ConfidenceScoreThresholdOverride</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="Azure.AI.Language.Text.PiiCategoriesExclude" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="entity"> The PII category for which to override the confidence score threshold. </param>
+        <param name="value"> The confidence score threshold for the specified PII category. </param>
+        <param name="language"> The 2 letter ISO 639-1 language for which the override applies. If not specified, the override applies to all languages. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.ConfidenceScoreThresholdOverride" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Text.ConfidenceScoreThresholdOverride" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2098,7 +2186,7 @@
         <param name="metadata">
             The entity metadata object.
             Please note <see cref="T:Azure.AI.Language.Text.BaseMetadata" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Language.Text.AgeMetadata" />, <see cref="T:Azure.AI.Language.Text.AreaMetadata" />, <see cref="T:Azure.AI.Language.Text.CurrencyMetadata" />, <see cref="T:Azure.AI.Language.Text.DateMetadata" />, <see cref="T:Azure.AI.Language.Text.DateTimeMetadata" />, <see cref="T:Azure.AI.Language.Text.InformationMetadata" />, <see cref="T:Azure.AI.Language.Text.LengthMetadata" />, <see cref="T:Azure.AI.Language.Text.NumberMetadata" />, <see cref="T:Azure.AI.Language.Text.NumericRangeMetadata" />, <see cref="T:Azure.AI.Language.Text.OrdinalMetadata" />, <see cref="T:Azure.AI.Language.Text.SpeedMetadata" />, <see cref="T:Azure.AI.Language.Text.TemperatureMetadata" />, <see cref="T:Azure.AI.Language.Text.TemporalSetMetadata" />, <see cref="T:Azure.AI.Language.Text.TemporalSpanMetadata" />, <see cref="T:Azure.AI.Language.Text.TimeMetadata" />, <see cref="T:Azure.AI.Language.Text.VolumeMetadata" /> and <see cref="T:Azure.AI.Language.Text.WeightMetadata" />.
+            The available derived classes include <see cref="T:Azure.AI.Language.Text.AddressMetadata" />, <see cref="T:Azure.AI.Language.Text.AgeMetadata" />, <see cref="T:Azure.AI.Language.Text.AreaMetadata" />, <see cref="T:Azure.AI.Language.Text.CurrencyMetadata" />, <see cref="T:Azure.AI.Language.Text.DateMetadata" />, <see cref="T:Azure.AI.Language.Text.DateTimeMetadata" />, <see cref="T:Azure.AI.Language.Text.InformationMetadata" />, <see cref="T:Azure.AI.Language.Text.LengthMetadata" />, <see cref="T:Azure.AI.Language.Text.NumberMetadata" />, <see cref="T:Azure.AI.Language.Text.NumericRangeMetadata" />, <see cref="T:Azure.AI.Language.Text.OrdinalMetadata" />, <see cref="T:Azure.AI.Language.Text.SpeedMetadata" />, <see cref="T:Azure.AI.Language.Text.TemperatureMetadata" />, <see cref="T:Azure.AI.Language.Text.TemporalSetMetadata" />, <see cref="T:Azure.AI.Language.Text.TemporalSpanMetadata" />, <see cref="T:Azure.AI.Language.Text.TimeMetadata" />, <see cref="T:Azure.AI.Language.Text.VolumeMetadata" /> and <see cref="T:Azure.AI.Language.Text.WeightMetadata" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.NamedEntityWithMetadata" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Text.NamedEntityWithMetadata" /> instance for mocking. </returns>
@@ -2525,19 +2613,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SentimentOperationResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.SentimentOperationResult SentimentOperationResult (DateTimeOffset lastUpdateDateTime = default, Azure.AI.Language.Text.TextActionState status = default, string name = default, Azure.AI.Language.Text.SentimentResult results = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.SentimentOperationResult SentimentOperationResult(valuetype System.DateTimeOffset lastUpdateDateTime, valuetype Azure.AI.Language.Text.TextActionState status, string name, class Azure.AI.Language.Text.SentimentResult results) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisModelFactory.SentimentOperationResult(System.DateTimeOffset,Azure.AI.Language.Text.TextActionState,System.String,Azure.AI.Language.Text.SentimentResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SentimentOperationResult (Optional lastUpdateDateTime As DateTimeOffset = Nothing, Optional status As TextActionState = Nothing, Optional name As String = Nothing, Optional results As SentimentResult = Nothing) As SentimentOperationResult" />
-      <MemberSignature Language="F#" Value="static member SentimentOperationResult : DateTimeOffset * Azure.AI.Language.Text.TextActionState * string * Azure.AI.Language.Text.SentimentResult -&gt; Azure.AI.Language.Text.SentimentOperationResult" Usage="Azure.AI.Language.Text.TextAnalysisModelFactory.SentimentOperationResult (lastUpdateDateTime, status, name, results)" />
+    <Member MemberName="SentimentLROResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Text.SentimentLROResult SentimentLROResult (DateTimeOffset lastUpdateDateTime = default, Azure.AI.Language.Text.TextActionState status = default, string name = default, Azure.AI.Language.Text.SentimentResult results = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Text.SentimentLROResult SentimentLROResult(valuetype System.DateTimeOffset lastUpdateDateTime, valuetype Azure.AI.Language.Text.TextActionState status, string name, class Azure.AI.Language.Text.SentimentResult results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Text.TextAnalysisModelFactory.SentimentLROResult(System.DateTimeOffset,Azure.AI.Language.Text.TextActionState,System.String,Azure.AI.Language.Text.SentimentResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SentimentLROResult (Optional lastUpdateDateTime As DateTimeOffset = Nothing, Optional status As TextActionState = Nothing, Optional name As String = Nothing, Optional results As SentimentResult = Nothing) As SentimentLROResult" />
+      <MemberSignature Language="F#" Value="static member SentimentLROResult : DateTimeOffset * Azure.AI.Language.Text.TextActionState * string * Azure.AI.Language.Text.SentimentResult -&gt; Azure.AI.Language.Text.SentimentLROResult" Usage="Azure.AI.Language.Text.TextAnalysisModelFactory.SentimentLROResult (lastUpdateDateTime, status, name, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Text</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Language.Text.SentimentOperationResult</ReturnType>
+        <ReturnType>Azure.AI.Language.Text.SentimentLROResult</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="lastUpdateDateTime" Type="System.DateTimeOffset" />
@@ -2550,8 +2638,8 @@
         <param name="status"> The status of the task at the mentioned last update time. </param>
         <param name="name"> task name. </param>
         <param name="results"> The sentiment analysis results. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.SentimentOperationResult" />. </summary>
-        <returns> A new <see cref="T:Azure.AI.Language.Text.SentimentOperationResult" /> instance for mocking. </returns>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.SentimentLROResult" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.Text.SentimentLROResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2824,7 +2912,7 @@
         <param name="items">
             Enumerable of Analyze text job results.
             Please note <see cref="T:Azure.AI.Language.Text.AnalyzeTextOperationResult" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Language.Text.AbstractiveSummarizationOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomEntityRecognitionOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomMultiLabelClassificationOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomSingleLabelClassificationOperationResult" />, <see cref="T:Azure.AI.Language.Text.EntityLinkingOperationResult" />, <see cref="T:Azure.AI.Language.Text.EntityRecognitionOperationResult" />, <see cref="T:Azure.AI.Language.Text.ExtractiveSummarizationOperationResult" />, <see cref="T:Azure.AI.Language.Text.HealthcareOperationResult" />, <see cref="T:Azure.AI.Language.Text.KeyPhraseExtractionOperationResult" />, <see cref="T:Azure.AI.Language.Text.PiiEntityRecognitionOperationResult" /> and <see cref="T:Azure.AI.Language.Text.SentimentOperationResult" />.
+            The available derived classes include <see cref="T:Azure.AI.Language.Text.AbstractiveSummarizationOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomEntityRecognitionOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomMultiLabelClassificationOperationResult" />, <see cref="T:Azure.AI.Language.Text.CustomSingleLabelClassificationOperationResult" />, <see cref="T:Azure.AI.Language.Text.EntityLinkingOperationResult" />, <see cref="T:Azure.AI.Language.Text.EntityRecognitionOperationResult" />, <see cref="T:Azure.AI.Language.Text.ExtractiveSummarizationOperationResult" />, <see cref="T:Azure.AI.Language.Text.HealthcareOperationResult" />, <see cref="T:Azure.AI.Language.Text.KeyPhraseExtractionOperationResult" />, <see cref="T:Azure.AI.Language.Text.PiiEntityRecognitionOperationResult" /> and <see cref="T:Azure.AI.Language.Text.SentimentLROResult" />.
             </param>
         <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.Text.TextActions" />. </summary>
         <returns> A new <see cref="T:Azure.AI.Language.Text.TextActions" /> instance for mocking. </returns>

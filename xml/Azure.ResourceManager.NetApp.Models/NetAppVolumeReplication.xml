@@ -23,6 +23,7 @@
     <AssemblyVersion>1.11.0.0</AssemblyVersion>
     <AssemblyVersion>1.12.0.0</AssemblyVersion>
     <AssemblyVersion>1.13.0.0</AssemblyVersion>
+    <AssemblyVersion>1.14.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -52,8 +53,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppEndpointType&gt;</ReturnType>
@@ -73,8 +74,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -90,6 +91,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MirrorState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.ReplicationMirrorState? MirrorState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.ReplicationMirrorState&gt; MirrorState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.MirrorState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MirrorState As Nullable(Of ReplicationMirrorState)" />
+      <MemberSignature Language="F#" Value="member this.MirrorState : Nullable&lt;Azure.ResourceManager.NetApp.Models.ReplicationMirrorState&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.MirrorState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.ReplicationMirrorState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The status of the replication. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RemoteVolumeRegion">
       <MemberSignature Language="C#" Value="public string RemoteVolumeRegion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RemoteVolumeRegion" />
@@ -99,8 +120,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -120,14 +141,54 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource ID of the remote volume. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationCreationOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ReplicationCreationOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ReplicationCreationOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.ReplicationCreationOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplicationCreationOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ReplicationCreationOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.ReplicationCreationOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Replication creation time. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationDeletionOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ReplicationDeletionOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ReplicationDeletionOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.ReplicationDeletionOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplicationDeletionOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ReplicationDeletionOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication.ReplicationDeletionOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Replication deletion time. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,8 +202,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -162,8 +223,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppReplicationSchedule&gt;</ReturnType>
@@ -186,8 +247,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication</ReturnType>
@@ -219,8 +280,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -251,8 +312,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeReplication</ReturnType>
@@ -284,8 +345,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -314,8 +375,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.12.0.0</AssemblyVersion>
         <AssemblyVersion>1.13.0.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

@@ -415,7 +415,7 @@ AnalyzeTextInput analyzeTextInput = new TextPiiEntitiesRecognitionInput
     ActionContent = new PiiActionContent
     {
         ModelVersion = "latest",
-        RedactionPolicy = new EntityMaskPolicyType(),
+        RedactionPolicies = { new EntityMaskPolicyType() },
     },
 };
 Response<AnalyzeTextResult> response = client.AnalyzeText(analyzeTextInput);
@@ -444,10 +444,10 @@ AnalyzeTextInput analyzeTextInput = new TextPiiEntitiesRecognitionInput
     ActionContent = new PiiActionContent
     {
         ModelVersion = "latest",
-        RedactionPolicy = new CharacterMaskPolicyType
+        RedactionPolicies = {new CharacterMaskPolicyType
         {
             RedactionCharacter = RedactionCharacter.Minus,
-        },
+        }},
     },
 };
 Response<AnalyzeTextResult> response = client.AnalyzeText(analyzeTextInput);
@@ -933,9 +933,12 @@ using RequestContent content = RequestContent.Create(new
     parameters = new
     {
         modelVersion = "latest",
-        redactionPolicy = new
+        redactionPolicies = new object[]
         {
-            policyKind = "entityMask",
+            new
+            {
+                policyKind = "entityMask",
+            }
         },
     },
     analysisInput = new
@@ -968,10 +971,13 @@ using RequestContent content = RequestContent.Create(new
     parameters = new
     {
         modelVersion = "latest",
-        redactionPolicy = new
+        redactionPolicies = new object[]
         {
-            policyKind = "characterMask",
-            redactionCharacter = "-",
+            new
+            {
+                policyKind = "characterMask",
+                redactionCharacter = "-",
+            }
         },
     },
     analysisInput = new
@@ -1362,7 +1368,7 @@ AnalyzeTextInput analyzeTextInput = new TextPiiEntitiesRecognitionInput
     ActionContent = new PiiActionContent
     {
         ModelVersion = "latest",
-        RedactionPolicy = new EntityMaskPolicyType(),
+        RedactionPolicies = { new EntityMaskPolicyType() },
     },
 };
 Response<AnalyzeTextResult> response = await client.AnalyzeTextAsync(analyzeTextInput);
@@ -1391,10 +1397,10 @@ AnalyzeTextInput analyzeTextInput = new TextPiiEntitiesRecognitionInput
     ActionContent = new PiiActionContent
     {
         ModelVersion = "latest",
-        RedactionPolicy = new CharacterMaskPolicyType
+        RedactionPolicies = {new CharacterMaskPolicyType
         {
             RedactionCharacter = RedactionCharacter.Minus,
-        },
+        }},
     },
 };
 Response<AnalyzeTextResult> response = await client.AnalyzeTextAsync(analyzeTextInput);
@@ -1880,9 +1886,12 @@ using RequestContent content = RequestContent.Create(new
     parameters = new
     {
         modelVersion = "latest",
-        redactionPolicy = new
+        redactionPolicies = new object[]
         {
-            policyKind = "entityMask",
+            new
+            {
+                policyKind = "entityMask",
+            }
         },
     },
     analysisInput = new
@@ -1915,10 +1924,13 @@ using RequestContent content = RequestContent.Create(new
     parameters = new
     {
         modelVersion = "latest",
-        redactionPolicy = new
+        redactionPolicies = new object[]
         {
-            policyKind = "characterMask",
-            redactionCharacter = "-",
+            new
+            {
+                policyKind = "characterMask",
+                redactionCharacter = "-",
+            }
         },
     },
     analysisInput = new

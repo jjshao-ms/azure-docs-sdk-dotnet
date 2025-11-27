@@ -43,6 +43,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ConfidenceScoreThreshold">
+      <MemberSignature Language="C#" Value="public Azure.AI.Language.Text.ConfidenceScoreThreshold ConfidenceScoreThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Language.Text.ConfidenceScoreThreshold ConfidenceScoreThreshold" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Text.PiiActionContent.ConfidenceScoreThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfidenceScoreThreshold As ConfidenceScoreThreshold" />
+      <MemberSignature Language="F#" Value="member this.ConfidenceScoreThreshold : Azure.AI.Language.Text.ConfidenceScoreThreshold with get, set" Usage="Azure.AI.Language.Text.PiiActionContent.ConfidenceScoreThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Text</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.Text.ConfidenceScoreThreshold</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Confidence score threshold configuration for PII entity recognition. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableEntityValidation">
+      <MemberSignature Language="C#" Value="public bool? DisableEntityValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DisableEntityValidation" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Text.PiiActionContent.DisableEntityValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableEntityValidation As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DisableEntityValidation : Nullable&lt;bool&gt; with get, set" Usage="Azure.AI.Language.Text.PiiActionContent.DisableEntityValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Text</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Disable entity validation for PII entity recognition. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Domain">
       <MemberSignature Language="C#" Value="public Azure.AI.Language.Text.PiiDomain? Domain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.Text.PiiDomain&gt; Domain" />
@@ -188,25 +228,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RedactionPolicy">
-      <MemberSignature Language="C#" Value="public Azure.AI.Language.Text.BaseRedactionPolicy RedactionPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Language.Text.BaseRedactionPolicy RedactionPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Text.PiiActionContent.RedactionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property RedactionPolicy As BaseRedactionPolicy" />
-      <MemberSignature Language="F#" Value="member this.RedactionPolicy : Azure.AI.Language.Text.BaseRedactionPolicy with get, set" Usage="Azure.AI.Language.Text.PiiActionContent.RedactionPolicy" />
+    <Member MemberName="RedactionPolicies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Language.Text.BaseRedactionPolicy&gt; RedactionPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Language.Text.BaseRedactionPolicy&gt; RedactionPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Text.PiiActionContent.RedactionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RedactionPolicies As IList(Of BaseRedactionPolicy)" />
+      <MemberSignature Language="F#" Value="member this.RedactionPolicies : System.Collections.Generic.IList&lt;Azure.AI.Language.Text.BaseRedactionPolicy&gt;" Usage="Azure.AI.Language.Text.PiiActionContent.RedactionPolicies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Text</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Language.Text.BaseRedactionPolicy</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Language.Text.BaseRedactionPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            RedactionPolicy to be used on the input.
+            List of RedactionPolicies to be used on the input.
             Please note <see cref="T:Azure.AI.Language.Text.BaseRedactionPolicy" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.AI.Language.Text.CharacterMaskPolicyType" />, <see cref="T:Azure.AI.Language.Text.EntityMaskPolicyType" /> and <see cref="T:Azure.AI.Language.Text.NoMaskPolicyType" />.
+            The available derived classes include <see cref="T:Azure.AI.Language.Text.CharacterMaskPolicyType" />, <see cref="T:Azure.AI.Language.Text.EntityMaskPolicyType" />, <see cref="T:Azure.AI.Language.Text.NoMaskPolicyType" /> and <see cref="T:Azure.AI.Language.Text.SyntheticReplacementPolicyType" />.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
