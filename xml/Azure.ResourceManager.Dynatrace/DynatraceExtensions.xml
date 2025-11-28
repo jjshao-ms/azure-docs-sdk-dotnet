@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;</ReturnType>
@@ -41,18 +42,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="monitorName"> Monitor resource name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get a MonitorResource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Dynatrace.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitor(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitor(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="monitorName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDynatraceMonitorAsync">
@@ -65,7 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;&gt;</ReturnType>
@@ -76,18 +77,48 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="monitorName"> Monitor resource name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get a MonitorResource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Dynatrace.Observability/monitors/{monitorName}</description></item><item><term>Operation Id</term><description>Monitors_Get</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitorAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitorAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="monitorName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="monitorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDynatraceMonitoredSubscriptionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource GetDynatraceMonitoredSubscriptionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource GetDynatraceMonitoredSubscriptionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetDynatraceMonitoredSubscriptionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDynatraceMonitoredSubscriptionResource (client As ArmClient, id As ResourceIdentifier) As DynatraceMonitoredSubscriptionResource" />
+      <MemberSignature Language="F#" Value="static member GetDynatraceMonitoredSubscriptionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource" Usage="Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetDynatraceMonitoredSubscriptionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceMonitoredSubscriptionResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDynatraceMonitorResource">
@@ -100,7 +131,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceMonitorResource</ReturnType>
@@ -110,12 +141,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceMonitorResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceMonitorResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -132,7 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceMonitorCollection</ReturnType>
@@ -141,11 +171,10 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <summary>
-            Gets a collection of DynatraceMonitorResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitors" /> instead.</description></item></summary>
-        <returns> An object representing collection of DynatraceMonitorResources and their operations over a DynatraceMonitorResource. </returns>
+            Gets a collection of DynatraceMonitors in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceResourceGroupResource.GetDynatraceMonitors" /> instead. </description></item></summary>
+        <returns> An object representing collection of DynatraceMonitors and their operations over a DynatraceMonitorResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -161,7 +190,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;</ReturnType>
@@ -171,11 +200,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all MonitorResource by subscriptionId
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscriptionId</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetDynatraceMonitors(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetDynatraceMonitors(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -192,7 +221,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;</ReturnType>
@@ -202,12 +231,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all MonitorResource by subscriptionId
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscriptionId</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetDynatraceMonitors(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetDynatraceMonitorsAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -223,7 +252,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnResource</ReturnType>
@@ -233,12 +262,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceSingleSignOnResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceSingleSignOnResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -255,7 +283,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceTagRuleResource</ReturnType>
@@ -265,16 +293,79 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceTagRuleResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Dynatrace.DynatraceTagRuleResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceTagRuleResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceTagRuleResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceArmClient.GetDynatraceTagRuleResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceTagRuleResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMarketplaceSaaSResourceDetailsResult">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt; GetMarketplaceSaaSResourceDetailsResult (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt; GetMarketplaceSaaSResourceDetailsResult(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetMarketplaceSaaSResourceDetailsResult(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceSaaSResourceDetailsResult (subscriptionResource As SubscriptionResource, content As MarketplaceSaaSResourceDetailsContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of MarketplaceSaaSResourceDetailsResult)" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceSaaSResourceDetailsResult : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;" Usage="Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetMarketplaceSaaSResourceDetailsResult (subscriptionResource, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get Marketplace SaaS resource details
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResult(Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMarketplaceSaaSResourceDetailsResultAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt; GetMarketplaceSaaSResourceDetailsResultAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt; GetMarketplaceSaaSResourceDetailsResultAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetMarketplaceSaaSResourceDetailsResultAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMarketplaceSaaSResourceDetailsResultAsync (subscriptionResource As SubscriptionResource, content As MarketplaceSaaSResourceDetailsContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of MarketplaceSaaSResourceDetailsResult))" />
+      <MemberSignature Language="F#" Value="static member GetMarketplaceSaaSResourceDetailsResultAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt;" Usage="Azure.ResourceManager.Dynatrace.DynatraceExtensions.GetMarketplaceSaaSResourceDetailsResultAsync (subscriptionResource, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get Marketplace SaaS resource details
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResultAsync(Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

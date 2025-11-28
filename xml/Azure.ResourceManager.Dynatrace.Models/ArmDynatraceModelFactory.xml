@@ -8,13 +8,14 @@
     <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceAccountCredentialsInfo</ReturnType>
@@ -47,6 +48,132 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DynatraceMetricsStatusResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMetricsStatusResult DynatraceMetricsStatusResult (System.Collections.Generic.IEnumerable&lt;Azure.Core.ResourceIdentifier&gt; azureResourceIds = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMetricsStatusResult DynatraceMetricsStatusResult(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Core.ResourceIdentifier&gt; azureResourceIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMetricsStatusResult(System.Collections.Generic.IEnumerable{Azure.Core.ResourceIdentifier})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMetricsStatusResult (Optional azureResourceIds As IEnumerable(Of ResourceIdentifier) = Nothing) As DynatraceMetricsStatusResult" />
+      <MemberSignature Language="F#" Value="static member DynatraceMetricsStatusResult : seq&lt;Azure.Core.ResourceIdentifier&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMetricsStatusResult" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMetricsStatusResult azureResourceIds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMetricsStatusResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="azureResourceIds" Type="System.Collections.Generic.IEnumerable&lt;Azure.Core.ResourceIdentifier&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="azureResourceIds"> Azure resource IDs. </param>
+        <summary> Response of get metrics status operation. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMetricsStatusResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMetricStatusContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMetricStatusContent DynatraceMetricStatusContent (System.Collections.Generic.IEnumerable&lt;string&gt; monitoredResourceIds = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMetricStatusContent DynatraceMetricStatusContent(class System.Collections.Generic.IEnumerable`1&lt;string&gt; monitoredResourceIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMetricStatusContent(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMetricStatusContent (Optional monitoredResourceIds As IEnumerable(Of String) = Nothing) As DynatraceMetricStatusContent" />
+      <MemberSignature Language="F#" Value="static member DynatraceMetricStatusContent : seq&lt;string&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMetricStatusContent" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMetricStatusContent monitoredResourceIds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMetricStatusContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="monitoredResourceIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="monitoredResourceIds"> List of azure resource Id of monitored resources for which we get the metric status. </param>
+        <summary> Request for getting metric status for given monitored resource Ids. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMetricStatusContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitorData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceMonitorData DynatraceMonitorData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoringStatus? monitoringStatus = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus? marketplaceSubscriptionStatus = default, Azure.ResourceManager.Dynatrace.Models.MarketplaceSaasAutoRenew? marketplaceSaasAutoRenew = default, Azure.ResourceManager.Dynatrace.Models.DynatraceEnvironmentProperties dynatraceEnvironmentProperties = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorUserInfo userInfo = default, Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo planData = default, Azure.ResourceManager.Dynatrace.Models.LiftrResourceCategory? liftrResourceCategory = default, int? liftrResourcePreference = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.DynatraceMonitorData DynatraceMonitorData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoringStatus&gt; monitoringStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt; marketplaceSubscriptionStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.MarketplaceSaasAutoRenew&gt; marketplaceSaasAutoRenew, class Azure.ResourceManager.Dynatrace.Models.DynatraceEnvironmentProperties dynatraceEnvironmentProperties, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorUserInfo userInfo, class Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo planData, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.LiftrResourceCategory&gt; liftrResourceCategory, valuetype System.Nullable`1&lt;int32&gt; liftrResourcePreference, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; provisioningState, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoringStatus},System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus},System.Nullable{Azure.ResourceManager.Dynatrace.Models.MarketplaceSaasAutoRenew},Azure.ResourceManager.Dynatrace.Models.DynatraceEnvironmentProperties,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorUserInfo,Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo,System.Nullable{Azure.ResourceManager.Dynatrace.Models.LiftrResourceCategory},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState},Azure.ResourceManager.Models.ManagedServiceIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitorData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional monitoringStatus As Nullable(Of DynatraceMonitoringStatus) = Nothing, Optional marketplaceSubscriptionStatus As Nullable(Of DynatraceMonitorMarketplaceSubscriptionStatus) = Nothing, Optional marketplaceSaasAutoRenew As Nullable(Of MarketplaceSaasAutoRenew) = Nothing, Optional dynatraceEnvironmentProperties As DynatraceEnvironmentProperties = Nothing, Optional userInfo As DynatraceMonitorUserInfo = Nothing, Optional planData As DynatraceBillingPlanInfo = Nothing, Optional liftrResourceCategory As Nullable(Of LiftrResourceCategory) = Nothing, Optional liftrResourcePreference As Nullable(Of Integer) = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As DynatraceMonitorData" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitorData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoringStatus&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaasAutoRenew&gt; * Azure.ResourceManager.Dynatrace.Models.DynatraceEnvironmentProperties * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorUserInfo * Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.LiftrResourceCategory&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.Dynatrace.DynatraceMonitorData" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorData (id, name, resourceType, systemData, tags, location, monitoringStatus, marketplaceSubscriptionStatus, marketplaceSaasAutoRenew, dynatraceEnvironmentProperties, userInfo, planData, liftrResourceCategory, liftrResourcePreference, provisioningState, identity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceMonitorData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="monitoringStatus" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoringStatus&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="marketplaceSubscriptionStatus" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="marketplaceSaasAutoRenew" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaasAutoRenew&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="dynatraceEnvironmentProperties" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceEnvironmentProperties" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="userInfo" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorUserInfo" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="planData" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="liftrResourceCategory" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.LiftrResourceCategory&gt;" Index="12" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="liftrResourcePreference" Type="System.Nullable&lt;System.Int32&gt;" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt;" Index="14" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="15" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="monitoringStatus"> Status of the monitor. </param>
+        <param name="marketplaceSubscriptionStatus"> Marketplace subscription status. </param>
+        <param name="marketplaceSaasAutoRenew"> Marketplace resource autorenew flag. </param>
+        <param name="dynatraceEnvironmentProperties"> Properties of the Dynatrace environment. </param>
+        <param name="userInfo"> User info. </param>
+        <param name="planData"> Billing plan information. </param>
+        <param name="liftrResourceCategory"> Liftr Resource category. </param>
+        <param name="liftrResourcePreference"> The priority of the resource. </param>
+        <param name="provisioningState"> Provisioning state of the resource. </param>
+        <param name="identity"> The managed service identities assigned to this resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitoredResourceContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceContent DynatraceMonitoredResourceContent (System.Collections.Generic.IEnumerable&lt;string&gt; monitoredResourceIds = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceContent DynatraceMonitoredResourceContent(class System.Collections.Generic.IEnumerable`1&lt;string&gt; monitoredResourceIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredResourceContent(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitoredResourceContent (Optional monitoredResourceIds As IEnumerable(Of String) = Nothing) As DynatraceMonitoredResourceContent" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitoredResourceContent : seq&lt;string&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceContent" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredResourceContent monitoredResourceIds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="monitoredResourceIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="monitoredResourceIds"> List of azure resource Id of monitored resources for which we get the log status. </param>
+        <summary> Request for getting log status for given monitored resource Ids. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DynatraceMonitoredResourceDetails">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceDetails DynatraceMonitoredResourceDetails (Azure.Core.ResourceIdentifier id = default, Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus? sendingMetricsStatus = default, string reasonForMetricsStatus = default, Azure.ResourceManager.Dynatrace.Models.LogsSendingStatus? sendingLogsStatus = default, string reasonForLogsStatus = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceDetails DynatraceMonitoredResourceDetails(class Azure.Core.ResourceIdentifier id, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus&gt; sendingMetricsStatus, string reasonForMetricsStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.LogsSendingStatus&gt; sendingLogsStatus, string reasonForLogsStatus) cil managed" />
@@ -57,7 +184,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceDetails</ReturnType>
@@ -75,8 +202,155 @@
         <param name="reasonForMetricsStatus"> Reason for why the resource is sending metrics (or why it is not sending). </param>
         <param name="sendingLogsStatus"> Flag indicating if resource is sending logs to Dynatrace. </param>
         <param name="reasonForLogsStatus"> Reason for why the resource is sending logs (or why it is not sending). </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceDetails" />. </summary>
+        <summary> Details of resource being monitored by Dynatrace monitor resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredResourceDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitoredSubscriptionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionData DynatraceMonitoredSubscriptionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionData DynatraceMonitoredSubscriptionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredSubscriptionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitoredSubscriptionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As DynatraceMonitoredSubscriptionProperties = Nothing) As DynatraceMonitoredSubscriptionData" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitoredSubscriptionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties -&gt; Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionData" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredSubscriptionData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> The request to update subscriptions needed to be monitored by the Dynatrace monitor resource. </param>
+        <summary> The request to update subscriptions needed to be monitored by the Dynatrace monitor resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitoredSubscriptionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitoredSubscriptionProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties DynatraceMonitoredSubscriptionProperties (Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionOperation? operation = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionStatus&gt; monitoredSubscriptionList = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties DynatraceMonitoredSubscriptionProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionOperation&gt; operation, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionStatus&gt; monitoredSubscriptionList, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredSubscriptionProperties(System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionOperation},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionStatus},System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitoredSubscriptionProperties (Optional operation As Nullable(Of DynatraceMonitoredSubscriptionOperation) = Nothing, Optional monitoredSubscriptionList As IEnumerable(Of DynatraceMonitoredSubscriptionStatus) = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceMonitoredSubscriptionProperties" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitoredSubscriptionProperties : Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionOperation&gt; * seq&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionStatus&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitoredSubscriptionProperties (operation, monitoredSubscriptionList, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionOperation&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="monitoredSubscriptionList" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="operation"> The operation for the patch on the resource. </param>
+        <param name="monitoredSubscriptionList"> List of subscriptions and the state of the monitoring. </param>
+        <param name="provisioningState"> Provisioning State of the resource. </param>
+        <summary> The request to update subscriptions needed to be monitored by the Dynatrace monitor resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitoredSubscriptionProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitorPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorPatch DynatraceMonitorPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo monitorUpdatePlanData = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorPatch DynatraceMonitorPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo monitorUpdatePlanData, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitorPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional monitorUpdatePlanData As DynatraceBillingPlanInfo = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As DynatraceMonitorPatch" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitorPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorPatch" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorPatch (tags, monitorUpdatePlanData, identity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="monitorUpdatePlanData" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceBillingPlanInfo" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="monitorUpdatePlanData"> The new Billing plan information. </param>
+        <param name="identity"> The managed service identities assigned to this resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitorResourceLogRules">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules DynatraceMonitorResourceLogRules (Azure.ResourceManager.Dynatrace.Models.AadLogsSendingStatus? sendAadLogs = default, Azure.ResourceManager.Dynatrace.Models.SubscriptionLogsSendingStatus? sendSubscriptionLogs = default, Azure.ResourceManager.Dynatrace.Models.ActivityLogsSendingStatus? sendActivityLogs = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; filteringTags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules DynatraceMonitorResourceLogRules(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.AadLogsSendingStatus&gt; sendAadLogs, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.SubscriptionLogsSendingStatus&gt; sendSubscriptionLogs, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.ActivityLogsSendingStatus&gt; sendActivityLogs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; filteringTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorResourceLogRules(System.Nullable{Azure.ResourceManager.Dynatrace.Models.AadLogsSendingStatus},System.Nullable{Azure.ResourceManager.Dynatrace.Models.SubscriptionLogsSendingStatus},System.Nullable{Azure.ResourceManager.Dynatrace.Models.ActivityLogsSendingStatus},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitorResourceLogRules (Optional sendAadLogs As Nullable(Of AadLogsSendingStatus) = Nothing, Optional sendSubscriptionLogs As Nullable(Of SubscriptionLogsSendingStatus) = Nothing, Optional sendActivityLogs As Nullable(Of ActivityLogsSendingStatus) = Nothing, Optional filteringTags As IEnumerable(Of DynatraceMonitorResourceFilteringTag) = Nothing) As DynatraceMonitorResourceLogRules" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitorResourceLogRules : Nullable&lt;Azure.ResourceManager.Dynatrace.Models.AadLogsSendingStatus&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.SubscriptionLogsSendingStatus&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.ActivityLogsSendingStatus&gt; * seq&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorResourceLogRules (sendAadLogs, sendSubscriptionLogs, sendActivityLogs, filteringTags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sendAadLogs" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.AadLogsSendingStatus&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sendSubscriptionLogs" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.SubscriptionLogsSendingStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sendActivityLogs" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.ActivityLogsSendingStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="filteringTags" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="sendAadLogs"> Flag specifying if AAD logs should be sent for the Monitor resource. </param>
+        <param name="sendSubscriptionLogs"> Flag specifying if subscription logs should be sent for the Monitor resource. </param>
+        <param name="sendActivityLogs"> Flag specifying if activity logs from Azure resources should be sent for the Monitor resource. </param>
+        <param name="filteringTags">
+            List of filtering tags to be used for capturing logs. This only takes effect if SendActivityLogs flag is enabled. If empty, all resources will be captured.
+            If only Exclude action is specified, the rules will apply to the list of all available resources. If Include actions are specified, the rules will only include resources with the associated tags.
+            </param>
+        <summary> Set of rules for sending logs for the Monitor resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceMonitorResourceMetricRules">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules DynatraceMonitorResourceMetricRules (Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus? sendingMetrics = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; filteringTags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules DynatraceMonitorResourceMetricRules(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus&gt; sendingMetrics, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; filteringTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorResourceMetricRules(System.Nullable{Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceMonitorResourceMetricRules (Optional sendingMetrics As Nullable(Of MetricsSendingStatus) = Nothing, Optional filteringTags As IEnumerable(Of DynatraceMonitorResourceFilteringTag) = Nothing) As DynatraceMonitorResourceMetricRules" />
+      <MemberSignature Language="F#" Value="static member DynatraceMonitorResourceMetricRules : Nullable&lt;Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus&gt; * seq&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceMonitorResourceMetricRules (sendingMetrics, filteringTags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sendingMetrics" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.MetricsSendingStatus&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="filteringTags" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="sendingMetrics"> Flag specifying if metrics from Azure resources should be sent for the Monitor resource. </param>
+        <param name="filteringTags"> List of filtering tags to be used for capturing metrics. If empty, all resources will be captured. If only Exclude action is specified, the rules will apply to the list of all available resources. If Include actions are specified, the rules will only include resources with the associated tags. </param>
+        <summary> Set of rules for sending metrics for the Monitor resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +364,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorVmInfo</ReturnType>
@@ -116,7 +390,7 @@
         <param name="logModule"> Tells whether log modules are enabled or not. </param>
         <param name="hostGroup"> The name of the host group. </param>
         <param name="hostName"> The name of the host. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorVmInfo" />. </summary>
+        <summary> Details of VM Resource having Dynatrace OneAgent installed. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorVmInfo" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +405,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceOneAgentEnabledAppServiceInfo</ReturnType>
@@ -157,7 +431,7 @@
         <param name="logModule"> Tells whether log modules are enabled or not. </param>
         <param name="hostGroup"> The name of the host group. </param>
         <param name="hostName"> The name of the host. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceOneAgentEnabledAppServiceInfo" />. </summary>
+        <summary> Details of App Services having Dynatrace OneAgent installed. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceOneAgentEnabledAppServiceInfo" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceSingleSignOnData</ReturnType>
@@ -189,10 +463,10 @@
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt;" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="singleSignOnState"> State of Single Sign On. </param>
         <param name="enterpriseAppId"> Version of the Dynatrace agent installed on the VM. </param>
         <param name="singleSignOnUri"> The login URL specific to this Dynatrace Environment. </param>
@@ -213,7 +487,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceSingleSignOnProperties</ReturnType>
@@ -231,7 +505,7 @@
         <param name="singleSignOnUri"> The login URL specific to this Dynatrace Environment. </param>
         <param name="aadDomains"> array of Aad(azure active directory) domains. </param>
         <param name="provisioningState"> Provisioning state of the resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceSingleSignOnProperties" />. </summary>
+        <summary> The details of a Dynatrace single sign-on. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceSingleSignOnProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,7 +520,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceSsoDetailsResult</ReturnType>
@@ -264,23 +538,67 @@
         <param name="singleSignOnUri"> The login URL specific to this Dynatrace Environment. </param>
         <param name="aadDomains"> array of Aad(azure active directory) domains. </param>
         <param name="adminUsers"> Array of admin user emails. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceSsoDetailsResult" />. </summary>
+        <summary> SSO details from the Dynatrace partner. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceSsoDetailsResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DynatraceTagRuleData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; metricRulesFilteringTags = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules metricRules = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules metricRules, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules,System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceTagRuleData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional logRules As DynatraceMonitorResourceLogRules = Nothing, Optional metricRules As DynatraceMonitorResourceMetricRules = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceTagRuleData" />
+      <MemberSignature Language="F#" Value="static member DynatraceTagRuleData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; -&gt; Azure.ResourceManager.Dynatrace.DynatraceTagRuleData" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleData (id, name, resourceType, systemData, logRules, metricRules, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceTagRuleData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="logRules" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="metricRules" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="logRules"> Set of rules for sending logs for the Monitor resource. </param>
+        <param name="metricRules"> Set of rules for sending metrics for the Monitor resource. </param>
+        <param name="provisioningState"> Provisioning state of the resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceTagRuleData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynatraceTagRuleData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; metricRulesFilteringTags, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; metricRulesFilteringTags, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag},System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceTagRuleData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional logRules As DynatraceMonitorResourceLogRules = Nothing, Optional metricRulesFilteringTags As IEnumerable(Of DynatraceMonitorResourceFilteringTag) = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceTagRuleData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceTagRuleData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, logRules As DynatraceMonitorResourceLogRules, metricRulesFilteringTags As IEnumerable(Of DynatraceMonitorResourceFilteringTag), Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceTagRuleData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member DynatraceTagRuleData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules * seq&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; -&gt; Azure.ResourceManager.Dynatrace.DynatraceTagRuleData" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleData (id, name, resourceType, systemData, logRules, metricRulesFilteringTags, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.DynatraceTagRuleData DynatraceTagRuleData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceFilteringTag&gt; metricRulesFilteringTags = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceTagRuleData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional logRules As DynatraceMonitorResourceLogRules = Nothing, Optional metricRulesFilteringTags As IEnumerable(Of DynatraceMonitorResourceFilteringTag) = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceTagRuleData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.DynatraceTagRuleData</ReturnType>
       </ReturnValue>
@@ -306,6 +624,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DynatraceTagRuleProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceTagRuleProperties DynatraceTagRuleProperties (Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules metricRules = default, Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceTagRuleProperties DynatraceTagRuleProperties(class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules logRules, class Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules metricRules, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleProperties(Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules,Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules,System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DynatraceTagRuleProperties (Optional logRules As DynatraceMonitorResourceLogRules = Nothing, Optional metricRules As DynatraceMonitorResourceMetricRules = Nothing, Optional provisioningState As Nullable(Of DynatraceProvisioningState) = Nothing) As DynatraceTagRuleProperties" />
+      <MemberSignature Language="F#" Value="static member DynatraceTagRuleProperties : Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules * Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.DynatraceTagRuleProperties" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.DynatraceTagRuleProperties (logRules, metricRules, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceTagRuleProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logRules" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceLogRules" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="metricRules" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorResourceMetricRules" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceProvisioningState&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="logRules"> Set of rules for sending logs for the Monitor resource. </param>
+        <param name="metricRules"> Set of rules for sending metrics for the Monitor resource. </param>
+        <param name="provisioningState"> Provisioning state of the resource. </param>
+        <summary> Properties for the Tag rules resource of a Monitor account. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceTagRuleProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DynatraceVmExtensionPayload">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.DynatraceVmExtensionPayload DynatraceVmExtensionPayload (string ingestionKey = default, string environmentId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.DynatraceVmExtensionPayload DynatraceVmExtensionPayload(string ingestionKey, string environmentId) cil managed" />
@@ -316,7 +662,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.DynatraceVmExtensionPayload</ReturnType>
@@ -328,7 +674,7 @@
       <Docs>
         <param name="ingestionKey"> Ingestion key of the environment. </param>
         <param name="environmentId"> Id of the environment created. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceVmExtensionPayload" />. </summary>
+        <summary> Response of payload to be passed while installing VM agent. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.DynatraceVmExtensionPayload" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +689,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentResult</ReturnType>
@@ -357,8 +703,88 @@
         <param name="environmentId"> environment id for which user is an admin. </param>
         <param name="environmentName"> Name of the environment. </param>
         <param name="planData"> Billing plan information. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentResult" />. </summary>
+        <summary> Response for getting all the linkable environments. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManageAgentInstallationContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.ManageAgentInstallationContent ManageAgentInstallationContent (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceManageAgentDetails&gt; manageAgentInstallationList = default, Azure.ResourceManager.Dynatrace.Models.DynatraceAgentAction action = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.ManageAgentInstallationContent ManageAgentInstallationContent(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Dynatrace.Models.DynatraceManageAgentDetails&gt; manageAgentInstallationList, valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceAgentAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.ManageAgentInstallationContent(System.Collections.Generic.IEnumerable{Azure.ResourceManager.Dynatrace.Models.DynatraceManageAgentDetails},Azure.ResourceManager.Dynatrace.Models.DynatraceAgentAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManageAgentInstallationContent (Optional manageAgentInstallationList As IEnumerable(Of DynatraceManageAgentDetails) = Nothing, Optional action As DynatraceAgentAction = Nothing) As ManageAgentInstallationContent" />
+      <MemberSignature Language="F#" Value="static member ManageAgentInstallationContent : seq&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceManageAgentDetails&gt; * Azure.ResourceManager.Dynatrace.Models.DynatraceAgentAction -&gt; Azure.ResourceManager.Dynatrace.Models.ManageAgentInstallationContent" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.ManageAgentInstallationContent (manageAgentInstallationList, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.ManageAgentInstallationContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manageAgentInstallationList" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceManageAgentDetails&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="action" Type="Azure.ResourceManager.Dynatrace.Models.DynatraceAgentAction" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="manageAgentInstallationList"> The list of resources. </param>
+        <param name="action"> Install/Uninstall action. </param>
+        <summary> Request for performing Dynatrace agent install/uninstall action through the Azure Dynatrace resource on the provided list of agent resources. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.ManageAgentInstallationContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarketplaceSaaSResourceDetailsContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent MarketplaceSaaSResourceDetailsContent (Guid tenantId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent MarketplaceSaaSResourceDetailsContent(valuetype System.Guid tenantId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.MarketplaceSaaSResourceDetailsContent(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSResourceDetailsContent (Optional tenantId As Guid = Nothing) As MarketplaceSaaSResourceDetailsContent" />
+      <MemberSignature Language="F#" Value="static member MarketplaceSaaSResourceDetailsContent : Guid -&gt; Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.MarketplaceSaaSResourceDetailsContent tenantId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenantId" Type="System.Guid" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tenantId"> Tenant Id. </param>
+        <summary> Request for getting Marketplace SaaS resource details for a tenant Id. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarketplaceSaaSResourceDetailsResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult MarketplaceSaaSResourceDetailsResult (Azure.Core.ResourceIdentifier marketplaceSaaSResourceId = default, string planId = default, Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus? marketplaceSubscriptionStatus = default, string marketplaceSaaSResourceName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult MarketplaceSaaSResourceDetailsResult(class Azure.Core.ResourceIdentifier marketplaceSaaSResourceId, string planId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt; marketplaceSubscriptionStatus, string marketplaceSaaSResourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.MarketplaceSaaSResourceDetailsResult(Azure.Core.ResourceIdentifier,System.String,System.Nullable{Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MarketplaceSaaSResourceDetailsResult (Optional marketplaceSaaSResourceId As ResourceIdentifier = Nothing, Optional planId As String = Nothing, Optional marketplaceSubscriptionStatus As Nullable(Of DynatraceMonitorMarketplaceSubscriptionStatus) = Nothing, Optional marketplaceSaaSResourceName As String = Nothing) As MarketplaceSaaSResourceDetailsResult" />
+      <MemberSignature Language="F#" Value="static member MarketplaceSaaSResourceDetailsResult : Azure.Core.ResourceIdentifier * string * Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt; * string -&gt; Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult" Usage="Azure.ResourceManager.Dynatrace.Models.ArmDynatraceModelFactory.MarketplaceSaaSResourceDetailsResult (marketplaceSaaSResourceId, planId, marketplaceSubscriptionStatus, marketplaceSaaSResourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="marketplaceSaaSResourceId" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="planId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="marketplaceSubscriptionStatus" Type="System.Nullable&lt;Azure.ResourceManager.Dynatrace.Models.DynatraceMonitorMarketplaceSubscriptionStatus&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="marketplaceSaaSResourceName" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="marketplaceSaaSResourceId"> Id of the Marketplace SaaS Resource. </param>
+        <param name="planId"> Id of the plan. </param>
+        <param name="marketplaceSubscriptionStatus"> Marketplace subscription status. </param>
+        <param name="marketplaceSaaSResourceName"> Name of the Marketplace SaaS Resource. </param>
+        <summary> Marketplace SaaS resource details linked to the given tenant Id. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -14,6 +14,7 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,11 +44,63 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinkableEnvironmentContent (Guid? tenantId, string userPrincipal, Azure.Core.AzureLocation? region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, string userPrincipal, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent.#ctor(System.Nullable{System.Guid},System.String,System.Nullable{Azure.Core.AzureLocation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tenantId As Nullable(Of Guid), userPrincipal As String, region As Nullable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent : Nullable&lt;Guid&gt; * string * Nullable&lt;Azure.Core.AzureLocation&gt; -&gt; Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent" Usage="new Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent (tenantId, userPrincipal, region)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tenantId" Type="System.Nullable&lt;System.Guid&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="userPrincipal" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="region" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tenantId"> Tenant Id of the user in which they want to link the environment. </param>
+        <param name="userPrincipal"> user principal id of the user. </param>
+        <param name="region"> Azure region in which we want to link the environment. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userPrincipal" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As LinkableEnvironmentContent" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent" Usage="linkableEnvironmentContent.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +113,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,6 +129,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As LinkableEnvironmentContent" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent" Usage="linkableEnvironmentContent.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="linkableEnvironmentContent.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Region">
       <MemberSignature Language="C#" Value="public Azure.Core.AzureLocation? Region { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; Region" />
@@ -86,7 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -109,7 +212,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent</ReturnType>
@@ -119,8 +222,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Reads one JSON value (including objects or arrays) from the provided reader and converts it to a model.
             </summary>
@@ -141,7 +244,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -151,8 +254,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model to the provided <see cref="T:System.Text.Json.Utf8JsonWriter" />.
             </summary>
@@ -172,7 +275,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Dynatrace.Models.LinkableEnvironmentContent</ReturnType>
@@ -182,8 +285,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Converts the provided <see cref="T:System.BinaryData" /> into a model.
             </summary>
@@ -204,7 +307,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -213,7 +316,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
@@ -233,7 +336,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -242,7 +345,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model into a <see cref="T:System.BinaryData" />.
             </summary>
@@ -261,7 +364,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
@@ -282,7 +385,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -8,13 +8,14 @@
     <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class to add extension methods to SubscriptionResource. </summary>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,11 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableDynatraceSubscriptionResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;</ReturnType>
@@ -55,7 +56,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all MonitorResource by subscriptionId
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscriptionId</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors. </description></item><item><term> Operation Id. </term><description> MonitorResources_ListBySubscriptionId. </description></item><item><term> Default Api Version. </term><description> 2024-04-24. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,7 +70,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Dynatrace.DynatraceMonitorResource&gt;</ReturnType>
@@ -81,9 +82,65 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all MonitorResource by subscriptionId
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors</description></item><item><term>Operation Id</term><description>Monitors_ListBySubscriptionId</description></item><item><term>Default Api Version</term><description>2021-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Dynatrace.Observability/monitors. </description></item><item><term> Operation Id. </term><description> MonitorResources_ListBySubscriptionId. </description></item><item><term> Default Api Version. </term><description> 2024-04-24. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Dynatrace.DynatraceMonitorResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMarketplaceSaaSResourceDetailsResult">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt; GetMarketplaceSaaSResourceDetailsResult (Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt; GetMarketplaceSaaSResourceDetailsResult(class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResult(Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMarketplaceSaaSResourceDetailsResult (content As MarketplaceSaaSResourceDetailsContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of MarketplaceSaaSResourceDetailsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetMarketplaceSaaSResourceDetailsResult : Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&#xA;override this.GetMarketplaceSaaSResourceDetailsResult : Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;" Usage="mockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResult (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get Marketplace SaaS resource details. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMarketplaceSaaSResourceDetailsResultAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt; GetMarketplaceSaaSResourceDetailsResultAsync (Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt; GetMarketplaceSaaSResourceDetailsResultAsync(class Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Dynatrace.Mocking.MockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResultAsync(Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMarketplaceSaaSResourceDetailsResultAsync (content As MarketplaceSaaSResourceDetailsContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of MarketplaceSaaSResourceDetailsResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetMarketplaceSaaSResourceDetailsResultAsync : Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt;&#xA;override this.GetMarketplaceSaaSResourceDetailsResultAsync : Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt;" Usage="mockableDynatraceSubscriptionResource.GetMarketplaceSaaSResourceDetailsResultAsync (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Dynatrace</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Dynatrace.Models.MarketplaceSaaSResourceDetailsContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get Marketplace SaaS resource details. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
   </Members>
