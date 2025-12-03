@@ -44,7 +44,7 @@
         <remarks>
           <para>
             The returned tool is only suitable for use with the <see cref="T:Microsoft.Extensions.AI.IChatClient" /> returned by
-            <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String)" /> (or <see cref="T:Microsoft.Extensions.AI.IChatClient" />s that delegate
+            <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String,System.Boolean)" /> (or <see cref="T:Microsoft.Extensions.AI.IChatClient" />s that delegate
             to such an instance). It is likely to be ignored by any other <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementation.
             </para>
           <para>
@@ -53,18 +53,18 @@
             those types should be preferred instead of this method, as they are more portable,
             capable of being respected by any <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementation. This method does not attempt to
             map the supplied <see cref="T:Azure.AI.Agents.Persistent.ToolDefinition" /> to any of those types, it simply wraps it as-is:
-            the <see cref="T:Microsoft.Extensions.AI.IChatClient" /> returned by <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String)" /> will be able to unwrap the
+            the <see cref="T:Microsoft.Extensions.AI.IChatClient" /> returned by <see cref="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String,System.Boolean)" /> will be able to unwrap the
             <see cref="T:Azure.AI.Agents.Persistent.ToolDefinition" /> when it processes the list of tools.
             </para>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsIChatClient">
-      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.AI.IChatClient AsIChatClient (this Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string? defaultThreadId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.AI.IChatClient AsIChatClient(class Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string defaultThreadId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsIChatClient (client As PersistentAgentsClient, agentId As String, Optional defaultThreadId As String = Nothing) As IChatClient" />
-      <MemberSignature Language="F#" Value="static member AsIChatClient : Azure.AI.Agents.Persistent.PersistentAgentsClient * string * string -&gt; Microsoft.Extensions.AI.IChatClient" Usage="Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient (client, agentId, defaultThreadId)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.AI.IChatClient AsIChatClient (this Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string? defaultThreadId = default, bool throwOnContentErrors = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.AI.IChatClient AsIChatClient(class Azure.AI.Agents.Persistent.PersistentAgentsClient client, string agentId, string defaultThreadId, bool throwOnContentErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient(Azure.AI.Agents.Persistent.PersistentAgentsClient,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsIChatClient (client As PersistentAgentsClient, agentId As String, Optional defaultThreadId As String = Nothing, Optional throwOnContentErrors As Boolean = true) As IChatClient" />
+      <MemberSignature Language="F#" Value="static member AsIChatClient : Azure.AI.Agents.Persistent.PersistentAgentsClient * string * string * bool -&gt; Microsoft.Extensions.AI.IChatClient" Usage="Azure.AI.Agents.Persistent.PersistentAgentsClientExtensions.AsIChatClient (client, agentId, defaultThreadId, throwOnContentErrors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Agents.Persistent</AssemblyName>
@@ -77,6 +77,7 @@
         <Parameter Name="client" Type="Azure.AI.Agents.Persistent.PersistentAgentsClient" RefType="this" />
         <Parameter Name="agentId" Type="System.String" />
         <Parameter Name="defaultThreadId" Type="System.String" />
+        <Parameter Name="throwOnContentErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="client">The <see cref="T:Azure.AI.Agents.Persistent.PersistentAgentsClient" /> instance to be accessed as an <see cref="T:Microsoft.Extensions.AI.IChatClient" />.</param>
@@ -86,6 +87,7 @@
             <see cref="M:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)" /> or <see cref="M:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)" /> via the <see cref="P:Microsoft.Extensions.AI.ChatOptions.ConversationId" />
             property. If no thread ID is provided via either mechanism, a new thread will be created for the request.
             </param>
+        <param name="throwOnContentErrors">Throws an exception if content errors are returned from the service. Default is <c>true</c>. This is useful to detect errors when tools are misconfigured that otherwise would be unnoticed because those come as a streaming data update.</param>
         <summary>
             Creates an <see cref="T:Microsoft.Extensions.AI.IChatClient" /> for a <see cref="T:Azure.AI.Agents.Persistent.PersistentAgentsClient" /> client for interacting with a specific agent.
             </summary>
