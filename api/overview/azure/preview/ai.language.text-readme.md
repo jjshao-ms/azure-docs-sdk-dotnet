@@ -1,7 +1,7 @@
 ---
 title: Azure Cognitive Language Services Text client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.Language.Text, cognitivelanguage
-ms.date: 11/26/2025
+ms.date: 12/04/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: cognitivelanguage
@@ -40,7 +40,7 @@ dotnet add package Azure.AI.Language.Text --prerelease
 
 |SDK version  |Supported API version of service
 |-------------|------------------------------------------------------------------------------------------------
-|1.0.0-beta.4 | 2022-05-01, 2023-04-01, 2024-11-01, 2025-05-15-preview, 2025-11-15-preview (default)
+|1.0.0-beta.4 | 2022-05-01, 2023-04-01, 2024-11-01, 2025-11-01, 2025-11-15-preview (default)
 |1.0.0-beta.3 | 2022-05-01, 2023-04-01, 2024-11-01, 2024-11-15-preview, 2025-05-15-preview (default)
 |1.0.0-beta.2 | 2022-05-01, 2023-04-01, 2024-11-01, 2024-11-15-preview (default)
 |1.0.0-beta.1 | 2022-05-01, 2023-04-01, 2023-11-15-preview (default)
