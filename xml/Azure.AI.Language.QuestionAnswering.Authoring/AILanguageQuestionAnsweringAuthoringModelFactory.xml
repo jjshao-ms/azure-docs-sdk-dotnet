@@ -1,0 +1,546 @@
+<Type Name="AILanguageQuestionAnsweringAuthoringModelFactory" FullName="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory">
+  <TypeSignature Language="C#" Value="public static class AILanguageQuestionAnsweringAuthoringModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AILanguageQuestionAnsweringAuthoringModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class AILanguageQuestionAnsweringAuthoringModelFactory" />
+  <TypeSignature Language="F#" Value="type AILanguageQuestionAnsweringAuthoringModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Model factory for models. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImportQnaRecord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord ImportQnaRecord (int id = 0, string answer = default, string source = default, System.Collections.Generic.IEnumerable&lt;string&gt; questions = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog dialog = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; activeLearningSuggestionClusters = default, DateTimeOffset? lastUpdated = default, string sourceDisplayName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord ImportQnaRecord(int32 id, string answer, string source, class System.Collections.Generic.IEnumerable`1&lt;string&gt; questions, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog dialog, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; activeLearningSuggestionClusters, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdated, string sourceDisplayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ImportQnaRecord(System.Int32,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{System.String,System.String},Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster},System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ImportQnaRecord (Optional id As Integer = 0, Optional answer As String = Nothing, Optional source As String = Nothing, Optional questions As IEnumerable(Of String) = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional dialog As QuestionAnsweringAuthoringDialog = Nothing, Optional activeLearningSuggestionClusters As IEnumerable(Of SuggestedQuestionsCluster) = Nothing, Optional lastUpdated As Nullable(Of DateTimeOffset) = Nothing, Optional sourceDisplayName As String = Nothing) As ImportQnaRecord" />
+      <MemberSignature Language="F#" Value="static member ImportQnaRecord : int * string * string * seq&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ImportQnaRecord (id, answer, source, questions, metadata, dialog, activeLearningSuggestionClusters, lastUpdated, sourceDisplayName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="answer" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="questions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dialog" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog" />
+        <Parameter Name="activeLearningSuggestionClusters" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt;" />
+        <Parameter Name="lastUpdated" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="sourceDisplayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Unique ID for the QnA. </param>
+        <param name="answer"> Answer text. </param>
+        <param name="source">
+            Source from which QnA was indexed e.g.
+            https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/FAQs .
+            </param>
+        <param name="questions"> List of questions associated with the answer. </param>
+        <param name="metadata">
+            Metadata associated with the answer, useful to categorize or filter question
+            answers.
+            </param>
+        <param name="dialog"> Context of a QnA. </param>
+        <param name="activeLearningSuggestionClusters"> List of Active Learning suggestions for the QnA. </param>
+        <param name="lastUpdated"> Date-time when the QnA was last updated. </param>
+        <param name="sourceDisplayName"> Friendly name of the Source. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ImportQnaRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeBaseFile">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile KnowledgeBaseFile (string contentType = default, string filename = default, BinaryData contents = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile KnowledgeBaseFile(string contentType, string filename, class System.BinaryData contents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.KnowledgeBaseFile(System.String,System.String,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeBaseFile (Optional contentType As String = Nothing, Optional filename As String = Nothing, Optional contents As BinaryData = Nothing) As KnowledgeBaseFile" />
+      <MemberSignature Language="F#" Value="static member KnowledgeBaseFile : string * string * BinaryData -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.KnowledgeBaseFile (contentType, filename, contents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="contents" Type="System.BinaryData" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">
+             The allowed media (MIME) types of the file contents.
+            
+             In file bodies, this value comes from the `Content-Type` header of the request or response. In JSON bodies,
+             this value is serialized as a field in the response.
+            
+             NOTE: this is not _necessarily_ the same as the `Content-Type` header of the request or response, but
+             it will be for file bodies. It may be different if the file is serialized as a JSON object. It always refers to the
+             _contents_ of the file, and not necessarily the way the file itself is transmitted or serialized.
+             </param>
+        <param name="filename">
+             The name of the file, if any.
+            
+             In file bodies, this value comes from the `filename` parameter of the `Content-Disposition` header of the response
+             or multipart payload. In JSON bodies, this value is serialized as a field in the response.
+            
+             NOTE: By default, `filename` cannot be sent in request payloads and can only be sent in responses and multipart
+             payloads, as the `Content-Disposition` header is not valid in requests. If you want to send the `filename` in a request,
+             you must extend the `File` model and override the `filename` property with a different location defined by HTTP metadata
+             decorators.
+             </param>
+        <param name="contents">
+             The contents of the file.
+            
+             In file bodies, this value comes from the body of the request, response, or multipart payload. In JSON bodies,
+             this value is serialized as a field in the response.
+             </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectDeployment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment ProjectDeployment (string deploymentName = default, DateTimeOffset? lastDeployed = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment ProjectDeployment(string deploymentName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastDeployed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ProjectDeployment(System.String,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProjectDeployment (Optional deploymentName As String = Nothing, Optional lastDeployed As Nullable(Of DateTimeOffset) = Nothing) As ProjectDeployment" />
+      <MemberSignature Language="F#" Value="static member ProjectDeployment : string * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ProjectDeployment (deploymentName, lastDeployed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="lastDeployed" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentName"> Name of the deployment. </param>
+        <param name="lastDeployed"> Represents the project last deployment date-time. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeployment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectDeploymentJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState ProjectDeploymentJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdatedDateTime = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState ProjectDeploymentJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdatedDateTime, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ProjectDeploymentJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProjectDeploymentJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdatedDateTime As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing) As ProjectDeploymentJobState" />
+      <MemberSignature Language="F#" Value="static member ProjectDeploymentJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.ProjectDeploymentJobState (createdDateTime, expirationDateTime, jobId, lastUpdatedDateTime, status, errors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdatedDateTime"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.ProjectDeploymentJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringError">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError QuestionAnsweringAuthoringError (Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringErrorCode code = default, string message = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; details = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel innerError = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError QuestionAnsweringAuthoringError(valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringErrorCode code, string message, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; details, class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel innerError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringError(Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringErrorCode,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError},Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringError (Optional code As QuestionAnsweringAuthoringErrorCode = Nothing, Optional message As String = Nothing, Optional target As String = Nothing, Optional details As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing, Optional innerError As QuestionAnsweringAuthoringInnerErrorModel = Nothing) As QuestionAnsweringAuthoringError" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringError : Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringErrorCode * string * string * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringError (code, message, target, details, innerError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringErrorCode" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="details" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+        <Parameter Name="innerError" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel" />
+      </Parameters>
+      <Docs>
+        <param name="code"> One of a server-defined set of error codes. </param>
+        <param name="message"> A human-readable representation of the error. </param>
+        <param name="target"> The target of the error. </param>
+        <param name="details"> An array of details about specific errors that led to this reported error. </param>
+        <param name="innerError">
+            An object containing more specific information than the current object about
+            the error.
+            </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringExportJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState QuestionAnsweringAuthoringExportJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdated = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default, string resultUrl = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState QuestionAnsweringAuthoringExportJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdated, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors, string resultUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringExportJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringExportJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdated As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing, Optional resultUrl As String = Nothing) As QuestionAnsweringAuthoringExportJobState" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringExportJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; * string -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringExportJobState (createdDateTime, expirationDateTime, jobId, lastUpdated, status, errors, resultUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdated" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+        <Parameter Name="resultUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdated"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <param name="resultUrl"> URL to download the result of the Export Job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringExportJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringImportJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState QuestionAnsweringAuthoringImportJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdatedDateTime = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState QuestionAnsweringAuthoringImportJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdatedDateTime, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringImportJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringImportJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdatedDateTime As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing) As QuestionAnsweringAuthoringImportJobState" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringImportJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringImportJobState (createdDateTime, expirationDateTime, jobId, lastUpdatedDateTime, status, errors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdatedDateTime"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringImportJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringInnerErrorModel">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel QuestionAnsweringAuthoringInnerErrorModel (Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorCode code = default, string message = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; details = default, string target = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel innererror = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel QuestionAnsweringAuthoringInnerErrorModel(valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorCode code, string message, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; details, string target, class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel innererror) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringInnerErrorModel(Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorCode,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringInnerErrorModel (Optional code As QuestionAnsweringAuthoringInnerErrorCode = Nothing, Optional message As String = Nothing, Optional details As IReadOnlyDictionary(Of String, String) = Nothing, Optional target As String = Nothing, Optional innererror As QuestionAnsweringAuthoringInnerErrorModel = Nothing) As QuestionAnsweringAuthoringInnerErrorModel" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringInnerErrorModel : Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorCode * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringInnerErrorModel (code, message, details, target, innererror)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorCode" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="details" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="innererror" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel" />
+      </Parameters>
+      <Docs>
+        <param name="code"> One of a server-defined set of error codes. </param>
+        <param name="message"> Error message. </param>
+        <param name="details"> Error details. </param>
+        <param name="target"> Error target. </param>
+        <param name="innererror">
+            An object containing more specific information than the current object about
+            the error.
+            </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringInnerErrorModel" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringProjectDeletionJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState QuestionAnsweringAuthoringProjectDeletionJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdatedDateTime = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState QuestionAnsweringAuthoringProjectDeletionJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdatedDateTime, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringProjectDeletionJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringProjectDeletionJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdatedDateTime As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing) As QuestionAnsweringAuthoringProjectDeletionJobState" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringProjectDeletionJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringProjectDeletionJobState (createdDateTime, expirationDateTime, jobId, lastUpdatedDateTime, status, errors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdatedDateTime"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringProjectDeletionJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringSourceRecord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord QuestionAnsweringAuthoringSourceRecord (string displayName = default, string source = default, Uri sourceUri = default, Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseSourceKind sourceKind = default, Azure.AI.Language.QuestionAnswering.Authoring.SourceContentStructureKind? contentStructureKind = default, DateTimeOffset? lastUpdatedDateTime = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord QuestionAnsweringAuthoringSourceRecord(string displayName, string source, class System.Uri sourceUri, valuetype Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseSourceKind sourceKind, valuetype System.Nullable`1&lt;valuetype Azure.AI.Language.QuestionAnswering.Authoring.SourceContentStructureKind&gt; contentStructureKind, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedDateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringSourceRecord(System.String,System.String,System.Uri,Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseSourceKind,System.Nullable{Azure.AI.Language.QuestionAnswering.Authoring.SourceContentStructureKind},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringSourceRecord (Optional displayName As String = Nothing, Optional source As String = Nothing, Optional sourceUri As Uri = Nothing, Optional sourceKind As KnowledgeBaseSourceKind = Nothing, Optional contentStructureKind As Nullable(Of SourceContentStructureKind) = Nothing, Optional lastUpdatedDateTime As Nullable(Of DateTimeOffset) = Nothing) As QuestionAnsweringAuthoringSourceRecord" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringSourceRecord : string * string * Uri * Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseSourceKind * Nullable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SourceContentStructureKind&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringSourceRecord (displayName, source, sourceUri, sourceKind, contentStructureKind, lastUpdatedDateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="sourceUri" Type="System.Uri" />
+        <Parameter Name="sourceKind" Type="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseSourceKind" />
+        <Parameter Name="contentStructureKind" Type="System.Nullable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SourceContentStructureKind&gt;" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="displayName"> Friendly name of the Source. </param>
+        <param name="source">
+            Unique source identifier. Name of the file if it's a 'file' source; otherwise,
+            the complete URL if it's a 'url' source.
+            </param>
+        <param name="sourceUri"> URI location for the file or url. </param>
+        <param name="sourceKind"> Supported source types. </param>
+        <param name="contentStructureKind"> Content structure type for sources. </param>
+        <param name="lastUpdatedDateTime"> Date-time when the QnA was last updated. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringSourceRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringUpdateQnasJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState QuestionAnsweringAuthoringUpdateQnasJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdatedDateTime = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState QuestionAnsweringAuthoringUpdateQnasJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdatedDateTime, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringUpdateQnasJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringUpdateQnasJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdatedDateTime As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing) As QuestionAnsweringAuthoringUpdateQnasJobState" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringUpdateQnasJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringUpdateQnasJobState (createdDateTime, expirationDateTime, jobId, lastUpdatedDateTime, status, errors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdatedDateTime"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateQnasJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringAuthoringUpdateSourcesJobState">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState QuestionAnsweringAuthoringUpdateSourcesJobState (DateTimeOffset createdDateTime = default, DateTimeOffset? expirationDateTime = default, string jobId = default, DateTimeOffset lastUpdatedDateTime = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState QuestionAnsweringAuthoringUpdateSourcesJobState(valuetype System.DateTimeOffset createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expirationDateTime, string jobId, valuetype System.DateTimeOffset lastUpdatedDateTime, valuetype Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus status, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringUpdateSourcesJobState(System.DateTimeOffset,System.Nullable{System.DateTimeOffset},System.String,System.DateTimeOffset,Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringAuthoringUpdateSourcesJobState (Optional createdDateTime As DateTimeOffset = Nothing, Optional expirationDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional jobId As String = Nothing, Optional lastUpdatedDateTime As DateTimeOffset = Nothing, Optional status As QuestionAnsweringAuthoringJobStatus = Nothing, Optional errors As IEnumerable(Of QuestionAnsweringAuthoringError) = Nothing) As QuestionAnsweringAuthoringUpdateSourcesJobState" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringAuthoringUpdateSourcesJobState : DateTimeOffset * Nullable&lt;DateTimeOffset&gt; * string * DateTimeOffset * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringAuthoringUpdateSourcesJobState (createdDateTime, expirationDateTime, jobId, lastUpdatedDateTime, status, errors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createdDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expirationDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="status" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringJobStatus" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createdDateTime"> The creation date time of the job. </param>
+        <param name="expirationDateTime"> The expiration date time of the job. </param>
+        <param name="jobId"> The job ID. </param>
+        <param name="lastUpdatedDateTime"> The last date time the job was updated. </param>
+        <param name="status"> Job Status. </param>
+        <param name="errors"> The errors encountered while executing the job. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringUpdateSourcesJobState" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionAnsweringProject">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject QuestionAnsweringProject (string projectName = default, string description = default, string language = default, bool? isMultilingualResource = default, Azure.AI.Language.QuestionAnswering.Authoring.ProjectSettings settings = default, DateTimeOffset? createdDateTime = default, DateTimeOffset? lastModifiedDateTime = default, DateTimeOffset? lastDeployedDateTime = default, bool? isConfiguredSemanticRankingEnabled = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject QuestionAnsweringProject(string projectName, string description, string language, valuetype System.Nullable`1&lt;bool&gt; isMultilingualResource, class Azure.AI.Language.QuestionAnswering.Authoring.ProjectSettings settings, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastDeployedDateTime, valuetype System.Nullable`1&lt;bool&gt; isConfiguredSemanticRankingEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringProject(System.String,System.String,System.String,System.Nullable{System.Boolean},Azure.AI.Language.QuestionAnswering.Authoring.ProjectSettings,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringProject (Optional projectName As String = Nothing, Optional description As String = Nothing, Optional language As String = Nothing, Optional isMultilingualResource As Nullable(Of Boolean) = Nothing, Optional settings As ProjectSettings = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastDeployedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional isConfiguredSemanticRankingEnabled As Nullable(Of Boolean) = Nothing) As QuestionAnsweringProject" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringProject : string * string * string * Nullable&lt;bool&gt; * Azure.AI.Language.QuestionAnswering.Authoring.ProjectSettings * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.QuestionAnsweringProject (projectName, description, language, isMultilingualResource, settings, createdDateTime, lastModifiedDateTime, lastDeployedDateTime, isConfiguredSemanticRankingEnabled)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectName" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="isMultilingualResource" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="settings" Type="Azure.AI.Language.QuestionAnswering.Authoring.ProjectSettings" />
+        <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastDeployedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="isConfiguredSemanticRankingEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectName"> Name of the project. </param>
+        <param name="description"> Description of the project. </param>
+        <param name="language">
+            Language of the text records. This is BCP-47 representation of a language. For
+            example, use "en" for English; "es" for Spanish etc. If not set, use "en" for
+            English as default.
+            </param>
+        <param name="isMultilingualResource"> Resource enabled for multiple languages across projects or not. </param>
+        <param name="settings"> Configurable settings of the Project. </param>
+        <param name="createdDateTime"> Project creation date-time. </param>
+        <param name="lastModifiedDateTime"> Represents the project last modified date-time. </param>
+        <param name="lastDeployedDateTime"> Represents the project last deployment date-time. </param>
+        <param name="isConfiguredSemanticRankingEnabled"> Represents if semantic ranking is configured. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringProject" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveQnaRecord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord RetrieveQnaRecord (int id = 0, string answer = default, string source = default, System.Collections.Generic.IEnumerable&lt;string&gt; questions = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; metadata = default, Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog dialog = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; activeLearningSuggestionClusters = default, DateTimeOffset? lastUpdatedDateTime = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord RetrieveQnaRecord(int32 id, string answer, string source, class System.Collections.Generic.IEnumerable`1&lt;string&gt; questions, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; metadata, class Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog dialog, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; activeLearningSuggestionClusters, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedDateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.RetrieveQnaRecord(System.Int32,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog,System.Collections.Generic.IEnumerable{Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RetrieveQnaRecord (Optional id As Integer = 0, Optional answer As String = Nothing, Optional source As String = Nothing, Optional questions As IEnumerable(Of String) = Nothing, Optional metadata As IReadOnlyDictionary(Of String, String) = Nothing, Optional dialog As QuestionAnsweringAuthoringDialog = Nothing, Optional activeLearningSuggestionClusters As IEnumerable(Of SuggestedQuestionsCluster) = Nothing, Optional lastUpdatedDateTime As Nullable(Of DateTimeOffset) = Nothing) As RetrieveQnaRecord" />
+      <MemberSignature Language="F#" Value="static member RetrieveQnaRecord : int * string * string * seq&lt;string&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog * seq&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord" Usage="Azure.AI.Language.QuestionAnswering.Authoring.AILanguageQuestionAnsweringAuthoringModelFactory.RetrieveQnaRecord (id, answer, source, questions, metadata, dialog, activeLearningSuggestionClusters, lastUpdatedDateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="answer" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="questions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dialog" Type="Azure.AI.Language.QuestionAnswering.Authoring.QuestionAnsweringAuthoringDialog" />
+        <Parameter Name="activeLearningSuggestionClusters" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Language.QuestionAnswering.Authoring.SuggestedQuestionsCluster&gt;" />
+        <Parameter Name="lastUpdatedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Unique ID for the QnA. </param>
+        <param name="answer"> Answer text. </param>
+        <param name="source">
+            Source from which QnA was indexed e.g.
+            https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/FAQs .
+            </param>
+        <param name="questions"> List of questions associated with the answer. </param>
+        <param name="metadata">
+            Metadata associated with the answer, useful to categorize or filter question
+            answers.
+            </param>
+        <param name="dialog"> Context of a QnA. </param>
+        <param name="activeLearningSuggestionClusters"> List of Active Learning suggestions for the QnA. </param>
+        <param name="lastUpdatedDateTime"> Date-time when the QnA was last updated. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord" />. </summary>
+        <returns> A new <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.RetrieveQnaRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

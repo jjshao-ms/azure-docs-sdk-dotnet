@@ -1,0 +1,361 @@
+<Type Name="KnowledgeBaseFile" FullName="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile">
+  <TypeSignature Language="C#" Value="public class KnowledgeBaseFile : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KnowledgeBaseFile extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class KnowledgeBaseFile&#xA;Implements IJsonModel(Of KnowledgeBaseFile), IPersistableModel(Of KnowledgeBaseFile)" />
+  <TypeSignature Language="F#" Value="type KnowledgeBaseFile = class&#xA;    interface IJsonModel&lt;KnowledgeBaseFile&gt;&#xA;    interface IPersistableModel&lt;KnowledgeBaseFile&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+             A file in an HTTP request, response, or multipart payload.
+            
+             Files have a special meaning that the HTTP library understands. When the body of an HTTP request, response,
+             or multipart payload is _effectively_ an instance of `TypeSpec.Http.File` or any type that extends it, the
+             operation is treated as a file upload or download.
+            
+             When using file bodies, the fields of the file model are defined to come from particular locations by default:
+            
+             - `contentType`: The `Content-Type` header of the request, response, or multipart payload (CANNOT be overridden or changed).
+             - `contents`: The body of the request, response, or multipart payload (CANNOT be overridden or changed).
+             - `filename`: The `filename` parameter value of the `Content-Disposition` header of the response or multipart payload
+             (MAY be overridden or changed).
+            
+             A File may be used as a normal structured JSON object in a request or response, if the request specifies an explicit
+             `Content-Type` header. In this case, the entire File model is serialized as if it were any other model. In a JSON payload,
+             it will have a structure like:
+            
+             ```
+             {
+               "contentType": &lt;string?&gt;,
+               "filename": &lt;string?&gt;,
+               "contents": &lt;string, base64&gt;
+             }
+             ```
+            
+             The `contentType` _within_ the file defines what media types the data inside the file can be, but if the specification
+             defines a `Content-Type` for the payload as HTTP metadata, that `Content-Type` metadata defines _how the file is
+             serialized_. See the examples below for more information.
+            
+             NOTE: The `filename` and `contentType` fields are optional. Furthermore, the default location of `filename`
+             (`Content-Disposition: &lt;disposition&gt;; filename=&lt;filename&gt;`) is only valid in HTTP responses and multipart payloads. If
+             you wish to send the `filename` in a request, you must use HTTP metadata decorators to describe the location of the
+             `filename` field. You can combine the metadata decorators with `@visibility` to control when the `filename` location
+             is overridden, as shown in the examples below.
+             </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KnowledgeBaseFile (BinaryData contents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.BinaryData contents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.#ctor(System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contents As BinaryData)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile : BinaryData -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" Usage="new Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile contents" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contents" Type="System.BinaryData" />
+      </Parameters>
+      <Docs>
+        <param name="contents">
+             The contents of the file.
+            
+             In file bodies, this value comes from the body of the request, response, or multipart payload. In JSON bodies,
+             this value is serialized as a field in the response.
+             </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contents" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contents">
+      <MemberSignature Language="C#" Value="public BinaryData Contents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Contents" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.Contents" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contents As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Contents : BinaryData" Usage="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.Contents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             The contents of the file.
+            
+             In file bodies, this value comes from the body of the request, response, or multipart payload. In JSON bodies,
+             this value is serialized as a field in the response.
+             <para>
+             To assign a byte[] to this property use <see cref="M:System.BinaryData.FromBytes(System.Byte[])" />.
+             The byte[] will be serialized to a Base64 encoded string.
+             </para><para>
+             Examples:
+             <list type="bullet"><item><term>BinaryData.FromBytes(new byte[] { 1, 2, 3 })</term><description>Creates a payload of "AQID".</description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             The allowed media (MIME) types of the file contents.
+            
+             In file bodies, this value comes from the `Content-Type` header of the request or response. In JSON bodies,
+             this value is serialized as a field in the response.
+            
+             NOTE: this is not _necessarily_ the same as the `Content-Type` header of the request or response, but
+             it will be for file bodies. It may be different if the file is serialized as a JSON object. It always refers to the
+             _contents_ of the file, and not necessarily the way the file itself is transmitted or serialized.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filename">
+      <MemberSignature Language="C#" Value="public string Filename { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.Filename" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filename As String" />
+      <MemberSignature Language="F#" Value="member this.Filename : string with get, set" Usage="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.Filename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             The name of the file, if any.
+            
+             In file bodies, this value comes from the `filename` parameter of the `Content-Disposition` header of the response
+             or multipart payload. In JSON bodies, this value is serialized as a field in the response.
+            
+             NOTE: By default, `filename` cannot be sent in request payloads and can only be sent in responses and multipart
+             payloads, as the `Content-Disposition` header is not valid in requests. If you want to send the `filename` in a request,
+             you must extend the `File` model and override the `filename` property with a different location defined by HTTP metadata
+             decorators.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="knowledgeBaseFile.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile IJsonModel&lt;KnowledgeBaseFile&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Language#QuestionAnswering#Authoring#KnowledgeBaseFile&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As KnowledgeBaseFile Implements IJsonModel(Of KnowledgeBaseFile).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" Usage="knowledgeBaseFile.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <summary>
+            Reads one JSON value (including objects or arrays) from the provided reader and converts it to a model.
+            </summary>
+        <returns>A <typeparamref name="T" /> representation of the JSON value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;KnowledgeBaseFile&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Language#QuestionAnswering#Authoring#KnowledgeBaseFile&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of KnowledgeBaseFile).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="knowledgeBaseFile.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <summary>
+            Writes the model to the provided <see cref="T:System.Text.Json.Utf8JsonWriter" />.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile IPersistableModel&lt;KnowledgeBaseFile&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Language#QuestionAnswering#Authoring#KnowledgeBaseFile&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As KnowledgeBaseFile Implements IPersistableModel(Of KnowledgeBaseFile).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile" Usage="knowledgeBaseFile.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <summary>
+            Converts the provided <see cref="T:System.BinaryData" /> into a model.
+            </summary>
+        <returns>A <typeparamref name="T" /> representation of the data.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;KnowledgeBaseFile&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Language#QuestionAnswering#Authoring#KnowledgeBaseFile&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of KnowledgeBaseFile).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="knowledgeBaseFile.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
+        <summary>
+            Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
+            </summary>
+        <returns>The format that the model uses when communicating with the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;KnowledgeBaseFile&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Language#QuestionAnswering#Authoring#KnowledgeBaseFile&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of KnowledgeBaseFile).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="knowledgeBaseFile.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Language.QuestionAnswering.Authoring.KnowledgeBaseFile&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.QuestionAnswering.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <summary>
+            Writes the model into a <see cref="T:System.BinaryData" />.
+            </summary>
+        <returns>A binary representation of the written model.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
