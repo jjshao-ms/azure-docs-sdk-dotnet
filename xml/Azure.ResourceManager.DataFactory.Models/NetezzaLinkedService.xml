@@ -20,6 +20,7 @@
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.0.0</AssemblyVersion>
+    <AssemblyVersion>1.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.DataFactory.Models.DataFactoryLinkedServiceProperties</BaseTypeName>
@@ -49,7 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,13 +68,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> An ODBC connection string. Type: string, SecureString or AzureKeyVaultSecretReference. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; Database { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Expressions.DataFactory.DataFactoryElement`1&lt;string&gt; Database" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Database" />
+      <MemberSignature Language="VB.NET" Value="Public Property Database As DataFactoryElement(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Database : Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Database name for connection. Type: string. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,7 +129,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -138,7 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="azure-dotnet">Azure.Core.Expressions.DataFactory.DataFactoryKeyVaultSecret</ReturnType>
@@ -146,6 +167,66 @@
       </ReturnValue>
       <Docs>
         <summary> The Azure key vault secret reference of password in connection string. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;int&gt; Port { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Expressions.DataFactory.DataFactoryElement`1&lt;int32&gt; Port" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Port" />
+      <MemberSignature Language="VB.NET" Value="Public Property Port As DataFactoryElement(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Port : Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;int&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The port for the connection. Type: integer. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityLevel">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataFactory.Models.NetezzaSecurityLevelType? SecurityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DataFactory.Models.NetezzaSecurityLevelType&gt; SecurityLevel" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.SecurityLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityLevel As Nullable(Of NetezzaSecurityLevelType)" />
+      <MemberSignature Language="F#" Value="member this.SecurityLevel : Nullable&lt;Azure.ResourceManager.DataFactory.Models.NetezzaSecurityLevelType&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.SecurityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.DataFactory.Models.NetezzaSecurityLevelType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the security level for the driver connection to the data store. PreferredUnSecured : prefer unsecured, allow fallback to secured connection if required. OnlyUnSecured : strictly unsecured, no fallback. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; Server { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Expressions.DataFactory.DataFactoryElement`1&lt;string&gt; Server" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Server" />
+      <MemberSignature Language="VB.NET" Value="Public Property Server As DataFactoryElement(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Server : Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Server name for connection. Type: string. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +243,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService</ReturnType>
@@ -194,7 +275,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -225,7 +306,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService</ReturnType>
@@ -257,7 +338,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -286,7 +367,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -302,6 +383,26 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Uid">
+      <MemberSignature Language="C#" Value="public Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; Uid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Expressions.DataFactory.DataFactoryElement`1&lt;string&gt; Uid" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Uid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uid As DataFactoryElement(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Uid : Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.NetezzaLinkedService.Uid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Username for authentication. Type: string. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

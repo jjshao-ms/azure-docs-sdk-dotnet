@@ -11,6 +11,7 @@
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,8 +31,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityResult&gt;</ReturnType>
@@ -43,11 +44,11 @@
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
-        <param name="content"> Parameters to check availability of the given Namespace name. </param>
+        <param name="content"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Check the give Namespace name availability.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/checkNameAvailability</description></item><item><term>Operation Id</term><description>Namespaces_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.CheckEventHubsNamespaceNameAvailability(Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/checkNameAvailability</description></item><item><term>Operation Id</term><description>Namespaces_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.CheckEventHubsNamespaceNameAvailability(Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -63,8 +64,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityResult&gt;&gt;</ReturnType>
@@ -76,11 +77,11 @@
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
-        <param name="content"> Parameters to check availability of the given Namespace name. </param>
+        <param name="content"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Check the give Namespace name availability.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/checkNameAvailability</description></item><item><term>Operation Id</term><description>Namespaces_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.CheckEventHubsNamespaceNameAvailability(Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/checkNameAvailability</description></item><item><term>Operation Id</term><description>Namespaces_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.CheckEventHubsNamespaceNameAvailability(Azure.ResourceManager.EventHubs.Models.EventHubsNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -96,8 +97,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.EventHubs.Models.AvailableCluster&gt;</ReturnType>
@@ -111,7 +112,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List the quantity of available pre-provisioned Event Hubs Clusters, indexed by Azure region.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/availableClusterRegions</description></item><item><term>Operation Id</term><description>Clusters_ListAvailableClusterRegion</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetAvailableClusterRegionClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/availableClusterRegions</description></item><item><term>Operation Id</term><description>Clusters_ListAvailableClusterRegion</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetAvailableClusterRegionClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.EventHubs.Models.AvailableCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -127,8 +128,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.EventHubs.Models.AvailableCluster&gt;</ReturnType>
@@ -142,7 +143,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List the quantity of available pre-provisioned Event Hubs Clusters, indexed by Azure region.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/availableClusterRegions</description></item><item><term>Operation Id</term><description>Clusters_ListAvailableClusterRegion</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetAvailableClusterRegionClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/availableClusterRegions</description></item><item><term>Operation Id</term><description>Clusters_ListAvailableClusterRegion</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetAvailableClusterRegionClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.EventHubs.Models.AvailableCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -158,8 +159,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubAuthorizationRuleResource</ReturnType>
@@ -190,8 +191,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubResource</ReturnType>
@@ -222,8 +223,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsApplicationGroupResource</ReturnType>
@@ -254,8 +255,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubsClusterResource&gt;</ReturnType>
@@ -271,7 +272,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the resource description of the specified Event Hubs Cluster.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}</description></item><item><term>Operation Id</term><description>Clusters_Get</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsCluster(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}</description></item><item><term>Operation Id</term><description>Clusters_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsCluster(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -289,8 +290,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubsClusterResource&gt;&gt;</ReturnType>
@@ -306,7 +307,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the resource description of the specified Event Hubs Cluster.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}</description></item><item><term>Operation Id</term><description>Clusters_Get</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsClusterAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/clusters/{clusterName}</description></item><item><term>Operation Id</term><description>Clusters_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsClusterAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -324,8 +325,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsClusterResource</ReturnType>
@@ -356,8 +357,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsClusterCollection</ReturnType>
@@ -385,8 +386,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.EventHubs.EventHubsClusterResource&gt;</ReturnType>
@@ -400,7 +401,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Lists the available Event Hubs Clusters within an ARM resource group
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/clusters</description></item><item><term>Operation Id</term><description>Clusters_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/clusters</description></item><item><term>Operation Id</term><description>Clusters_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -416,8 +417,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.EventHubs.EventHubsClusterResource&gt;</ReturnType>
@@ -431,7 +432,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Lists the available Event Hubs Clusters within an ARM resource group
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/clusters</description></item><item><term>Operation Id</term><description>Clusters_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/clusters</description></item><item><term>Operation Id</term><description>Clusters_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsClusters(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.EventHubs.EventHubsClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -447,8 +448,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsConsumerGroupResource</ReturnType>
@@ -479,8 +480,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsDisasterRecoveryAuthorizationRuleResource</ReturnType>
@@ -511,8 +512,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsDisasterRecoveryResource</ReturnType>
@@ -543,8 +544,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubsNamespaceResource&gt;</ReturnType>
@@ -560,7 +561,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the description of the specified namespace.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}</description></item><item><term>Operation Id</term><description>Namespaces_Get</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsNamespace(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}</description></item><item><term>Operation Id</term><description>Namespaces_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsNamespace(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -578,8 +579,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.EventHubs.EventHubsNamespaceResource&gt;&gt;</ReturnType>
@@ -595,7 +596,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the description of the specified namespace.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}</description></item><item><term>Operation Id</term><description>Namespaces_Get</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsNamespaceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}</description></item><item><term>Operation Id</term><description>Namespaces_Get</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsResourceGroupResource.GetEventHubsNamespaceAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -613,8 +614,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsNamespaceAuthorizationRuleResource</ReturnType>
@@ -645,8 +646,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsNamespaceResource</ReturnType>
@@ -677,8 +678,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsNamespaceCollection</ReturnType>
@@ -706,8 +707,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.EventHubs.EventHubsNamespaceResource&gt;</ReturnType>
@@ -721,7 +722,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Lists all the available Namespaces within a subscription, irrespective of the resource groups.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/namespaces</description></item><item><term>Operation Id</term><description>Namespaces_List</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsNamespaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/namespaces</description></item><item><term>Operation Id</term><description>Namespaces_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsNamespaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -737,8 +738,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.EventHubs.EventHubsNamespaceResource&gt;</ReturnType>
@@ -752,7 +753,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Lists all the available Namespaces within a subscription, irrespective of the resource groups.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/namespaces</description></item><item><term>Operation Id</term><description>Namespaces_List</description></item><item><term>Default Api Version</term><description>2024-01-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsNamespaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.EventHub/namespaces</description></item><item><term>Operation Id</term><description>Namespaces_List</description></item><item><term>Default Api Version</term><description>2025-05-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.EventHubs.Mocking.MockableEventHubsSubscriptionResource.GetEventHubsNamespaces(System.Threading.CancellationToken)" /> instead.</description></item></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.EventHubs.EventHubsNamespaceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -768,8 +769,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsNetworkRuleSetResource</ReturnType>
@@ -800,8 +801,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsPrivateEndpointConnectionResource</ReturnType>
@@ -832,8 +833,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.EventHubs.EventHubsSchemaGroupResource</ReturnType>

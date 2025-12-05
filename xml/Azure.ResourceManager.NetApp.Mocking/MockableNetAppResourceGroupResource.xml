@@ -18,6 +18,7 @@
     <AssemblyVersion>1.12.0.0</AssemblyVersion>
     <AssemblyVersion>1.13.0.0</AssemblyVersion>
     <AssemblyVersion>1.14.0.0</AssemblyVersion>
+    <AssemblyVersion>1.15.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -36,12 +37,182 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.13.0.0</AssemblyVersion>
         <AssemblyVersion>1.14.0.0</AssemblyVersion>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource" /> class for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveDirectoryConfig">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt; GetActiveDirectoryConfig (string activeDirectoryConfigName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt; GetActiveDirectoryConfig(string activeDirectoryConfigName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetActiveDirectoryConfig(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetActiveDirectoryConfig (activeDirectoryConfigName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ActiveDirectoryConfigResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetActiveDirectoryConfig : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&#xA;override this.GetActiveDirectoryConfig : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;" Usage="mockableNetAppResourceGroupResource.GetActiveDirectoryConfig (activeDirectoryConfigName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeDirectoryConfigName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="activeDirectoryConfigName"> The name of the ActiveDirectoryConfig. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the details of the specified active directory configuration
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/activeDirectoryConfigs/{activeDirectoryConfigName}</description></item><item><term>Operation Id</term><description>ActiveDirectoryConfigs_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activeDirectoryConfigName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="activeDirectoryConfigName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveDirectoryConfigAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&gt; GetActiveDirectoryConfigAsync (string activeDirectoryConfigName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&gt; GetActiveDirectoryConfigAsync(string activeDirectoryConfigName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetActiveDirectoryConfigAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetActiveDirectoryConfigAsync (activeDirectoryConfigName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ActiveDirectoryConfigResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetActiveDirectoryConfigAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&gt;&#xA;override this.GetActiveDirectoryConfigAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&gt;" Usage="mockableNetAppResourceGroupResource.GetActiveDirectoryConfigAsync (activeDirectoryConfigName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeDirectoryConfigName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="activeDirectoryConfigName"> The name of the ActiveDirectoryConfig. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the details of the specified active directory configuration
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/activeDirectoryConfigs/{activeDirectoryConfigName}</description></item><item><term>Operation Id</term><description>ActiveDirectoryConfigs_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.ActiveDirectoryConfigResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activeDirectoryConfigName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="activeDirectoryConfigName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveDirectoryConfigs">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.NetApp.ActiveDirectoryConfigCollection GetActiveDirectoryConfigs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.ActiveDirectoryConfigCollection GetActiveDirectoryConfigs() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetActiveDirectoryConfigs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetActiveDirectoryConfigs () As ActiveDirectoryConfigCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetActiveDirectoryConfigs : unit -&gt; Azure.ResourceManager.NetApp.ActiveDirectoryConfigCollection&#xA;override this.GetActiveDirectoryConfigs : unit -&gt; Azure.ResourceManager.NetApp.ActiveDirectoryConfigCollection" Usage="mockableNetAppResourceGroupResource.GetActiveDirectoryConfigs " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.ActiveDirectoryConfigCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of ActiveDirectoryConfigResources in the ResourceGroupResource. </summary>
+        <returns> An object representing collection of ActiveDirectoryConfigResources and their operations over a ActiveDirectoryConfigResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElasticAccount">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt; GetElasticAccount (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.NetApp.ElasticAccountResource&gt; GetElasticAccount(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetElasticAccount(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElasticAccount (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ElasticAccountResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetElasticAccount : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&#xA;override this.GetElasticAccount : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;" Usage="mockableNetAppResourceGroupResource.GetElasticAccount (accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="accountName"> The name of the ElasticAccount. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the NetApp Elastic Account
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/elasticAccounts/{accountName}</description></item><item><term>Operation Id</term><description>ElasticAccounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.ElasticAccountResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElasticAccountAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&gt; GetElasticAccountAsync (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&gt; GetElasticAccountAsync(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetElasticAccountAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElasticAccountAsync (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ElasticAccountResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetElasticAccountAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&gt;&#xA;override this.GetElasticAccountAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&gt;" Usage="mockableNetAppResourceGroupResource.GetElasticAccountAsync (accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.ElasticAccountResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="accountName"> The name of the ElasticAccount. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the NetApp Elastic Account
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/elasticAccounts/{accountName}</description></item><item><term>Operation Id</term><description>ElasticAccounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.ElasticAccountResource" /></description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElasticAccounts">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.NetApp.ElasticAccountCollection GetElasticAccounts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.ElasticAccountCollection GetElasticAccounts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Mocking.MockableNetAppResourceGroupResource.GetElasticAccounts" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElasticAccounts () As ElasticAccountCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetElasticAccounts : unit -&gt; Azure.ResourceManager.NetApp.ElasticAccountCollection&#xA;override this.GetElasticAccounts : unit -&gt; Azure.ResourceManager.NetApp.ElasticAccountCollection" Usage="mockableNetAppResourceGroupResource.GetElasticAccounts " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.ElasticAccountCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of ElasticAccountResources in the ResourceGroupResource. </summary>
+        <returns> An object representing collection of ElasticAccountResources and their operations over a ElasticAccountResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +225,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.13.0.0</AssemblyVersion>
         <AssemblyVersion>1.14.0.0</AssemblyVersion>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.NetApp.NetAppAccountResource&gt;</ReturnType>
@@ -69,7 +240,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the NetApp account
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}</description></item><item><term>Operation Id</term><description>Accounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.NetAppAccountResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}</description></item><item><term>Operation Id</term><description>Accounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.NetAppAccountResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -87,8 +258,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.13.0.0</AssemblyVersion>
         <AssemblyVersion>1.14.0.0</AssemblyVersion>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.NetApp.NetAppAccountResource&gt;&gt;</ReturnType>
@@ -102,7 +273,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the NetApp account
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}</description></item><item><term>Operation Id</term><description>Accounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.NetAppAccountResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}</description></item><item><term>Operation Id</term><description>Accounts_Get</description></item><item><term>Default Api Version</term><description>2025-09-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.NetApp.NetAppAccountResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,8 +291,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.13.0.0</AssemblyVersion>
         <AssemblyVersion>1.14.0.0</AssemblyVersion>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.NetAppAccountCollection</ReturnType>

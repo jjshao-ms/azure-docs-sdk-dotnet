@@ -20,6 +20,7 @@
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <AssemblyVersion>1.9.0.0</AssemblyVersion>
+    <AssemblyVersion>1.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.DataFactory.Models.DataFactoryLinkedServiceProperties</BaseTypeName>
@@ -50,7 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clusterUri" Type="Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;" />
@@ -63,6 +64,26 @@
           <paramref name="clusterUri" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="ClusterAuthType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataFactory.Models.HDInsightClusterAuthenticationType? ClusterAuthType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DataFactory.Models.HDInsightClusterAuthenticationType&gt; ClusterAuthType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService.ClusterAuthType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClusterAuthType As Nullable(Of HDInsightClusterAuthenticationType)" />
+      <MemberSignature Language="F#" Value="member this.ClusterAuthType : Nullable&lt;Azure.ResourceManager.DataFactory.Models.HDInsightClusterAuthenticationType&gt; with get, set" Usage="Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService.ClusterAuthType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.DataFactory.Models.HDInsightClusterAuthenticationType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> HDInsight cluster authentication type. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ClusterUri">
       <MemberSignature Language="C#" Value="public Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;string&gt; ClusterUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Expressions.DataFactory.DataFactoryElement`1&lt;string&gt; ClusterUri" />
@@ -73,13 +94,33 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> HDInsight cluster URI. Type: string (or Expression with resultType string). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credential">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DataFactory.Models.DataFactoryCredentialReference Credential { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DataFactory.Models.DataFactoryCredentialReference Credential" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService.Credential" />
+      <MemberSignature Language="VB.NET" Value="Public Property Credential As DataFactoryCredentialReference" />
+      <MemberSignature Language="F#" Value="member this.Credential : Azure.ResourceManager.DataFactory.Models.DataFactoryCredentialReference with get, set" Usage="Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService.Credential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataFactory.Models.DataFactoryCredentialReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The credential reference containing MI authentication information for the HDInsight cluster. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -115,7 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
@@ -136,7 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryLinkedServiceReference</ReturnType>
@@ -157,7 +198,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.Boolean&gt;</ReturnType>
@@ -177,7 +218,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -203,7 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryLinkedServiceReference</ReturnType>
@@ -228,7 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="azure-dotnet">Azure.Core.Expressions.DataFactory.DataFactorySecret</ReturnType>
@@ -252,7 +293,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService</ReturnType>
@@ -284,7 +325,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -315,7 +356,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataFactory.Models.HDInsightLinkedService</ReturnType>
@@ -347,7 +388,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -376,7 +417,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -404,7 +445,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Expressions.DataFactory.DataFactoryElement&lt;System.String&gt;</ReturnType>
