@@ -7,14 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.RedisEnterprise</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Clustering policy - default is OSSCluster. This property must be chosen at
-            create time, and cannot be changed without deleting the database.
+            Clustering policy - default is OSSCluster. This property can be updated
+            only if the current value is NoCluster. If the value is OSSCluster or
+            EnterpriseCluster, it cannot be updated without deleting the database.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -29,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.RedisEnterprise</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.RedisEnterprise.RedisEnterpriseClusteringPolicy</ReturnType>
@@ -38,6 +41,28 @@
         <summary>
             Enterprise clustering policy uses only the classic redis protocol,
             which does not support redis cluster commands.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCluster">
+      <MemberSignature Language="C#" Value="NoCluster" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.RedisEnterprise.RedisEnterpriseClusteringPolicy NoCluster = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.RedisEnterprise.RedisEnterpriseClusteringPolicy.NoCluster" />
+      <MemberSignature Language="VB.NET" Value="NoCluster" />
+      <MemberSignature Language="F#" Value="NoCluster = 2" Usage="Azure.Provisioning.RedisEnterprise.RedisEnterpriseClusteringPolicy.NoCluster" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.RedisEnterprise</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.RedisEnterprise.RedisEnterpriseClusteringPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The NoCluster policy is used for non-clustered Redis instances that do
+            not require clustering features.
             </summary>
       </Docs>
     </Member>
@@ -51,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.RedisEnterprise</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

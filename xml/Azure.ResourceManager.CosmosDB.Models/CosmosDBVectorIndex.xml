@@ -51,6 +51,26 @@
           <paramref name="path" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="IndexingSearchListSize">
+      <MemberSignature Language="C#" Value="public long? IndexingSearchListSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; IndexingSearchListSize" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.IndexingSearchListSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexingSearchListSize As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.IndexingSearchListSize : Nullable&lt;int64&gt; with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.IndexingSearchListSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> This is the size of the candidate list of approximate neighbors stored while building the DiskANN index as part of the optimization processes. Large values may improve recall at the expense of latency. This is only applicable for the diskANN vector index type. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IndexType">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndexType IndexType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndexType IndexType" />
@@ -112,6 +132,26 @@
       </ReturnValue>
       <Docs>
         <summary> The path to the vector field in the document. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuantizationByteSize">
+      <MemberSignature Language="C#" Value="public long? QuantizationByteSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; QuantizationByteSize" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.QuantizationByteSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuantizationByteSize As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.QuantizationByteSize : Nullable&lt;int64&gt; with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.QuantizationByteSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The number of bytes used in product quantization of the vectors. A larger value may result in better recall for vector searches at the expense of latency. This is only applicable for the quantizedFlat and diskANN vector index types. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,6 +308,26 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VectorIndexShardKey">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; VectorIndexShardKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; VectorIndexShardKey" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.VectorIndexShardKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VectorIndexShardKey As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.VectorIndexShardKey : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.CosmosDB.Models.CosmosDBVectorIndex.VectorIndexShardKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Array of shard keys for the vector index. This is only applicable for the quantizedFlat and diskANN vector index types. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>
