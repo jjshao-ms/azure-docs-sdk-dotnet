@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
     <AssemblyVersion>2.5.1.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute</BaseTypeName>
@@ -28,7 +30,7 @@
   </Attributes>
   <Docs>
     <summary>
-            An attribute that can be placed on MVC controllers, controller actions, or Razor pages to require all or any of a set of feature flags to be enabled.
+            An attribute that can be placed on MVC controllers, controller actions, or Razor pages to require all or any of a set of features to be enabled.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -42,8 +44,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="features" Type="System.Object[]">
@@ -56,41 +58,29 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="features">A set of enums representing the feature flags that the attribute will represent.</param>
+        <param name="features">A set of enums representing the features that the attribute will represent.</param>
         <summary>
-            Creates an attribute that will gate actions or pages unless all the provided feature flag(s) are enabled.
+            Creates an attribute that will gate actions or pages unless all the provided feature(s) are enabled.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (params string[] features);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] features) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] features) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray features As String())" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute features" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (params string[] featureFlags);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] featureFlags) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray featureFlags As String())" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute featureFlags" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray features As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute features" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="features" Type="System.String[]" Index="0" FrameworkAlternate="azure-dotnet">
+        <Parameter Name="features" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet">
-              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
-              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="featureFlags" Type="System.String[]" Index="0" FrameworkAlternate="azure-dotnet-preview">
-          <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet-preview">
+            <Attribute>
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -99,42 +89,92 @@
       </Parameters>
       <Docs>
         <param name="features">The names of the features that the attribute will represent.</param>
-        <param name="featureFlags">The names of the feature flags that the attribute will represent.</param>
         <summary>
-            Creates an attribute that will gate actions or pages unless all the provided feature flag(s) are enabled.
+            Creates an attribute that will gate actions or pages unless all the provided feature(s) are enabled.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params object[] features);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, object[] features) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params object[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, object[] features) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(Microsoft.FeatureManagement.RequirementType,System.Object[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray features As Object())" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * obj[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, features)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params object[] featureFlags);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, object[] featureFlags) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray featureFlags As Object())" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * obj[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, featureFlags)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray features As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * obj[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, features)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" Index="0" />
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" />
+        <Parameter Name="features" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="features">A set of enums representing the features that the attribute will represent.</param>
+        <summary>
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature(s) to pass.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(Microsoft.FeatureManagement.RequirementType,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray features As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, features)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" />
+        <Parameter Name="features" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="features">The names of the features that the attribute will represent.</param>
+        <summary>
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature(s) to pass.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (bool negate, params object[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool negate, object[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(System.Boolean,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (negate As Boolean, ParamArray features As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : bool * obj[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (negate, features)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="negate" Type="System.Boolean" Index="0" FrameworkAlternate="azure-dotnet" />
         <Parameter Name="features" Type="System.Object[]" Index="1" FrameworkAlternate="azure-dotnet">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet">
-              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
-              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="featureFlags" Type="System.Object[]" Index="1" FrameworkAlternate="azure-dotnet-preview">
-          <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet-preview">
+            <Attribute>
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -142,44 +182,30 @@
         </Parameter>
       </Parameters>
       <Docs>
+        <param name="negate">Specifies the evaluation for the provided features gate should be negated.</param>
         <param name="features">A set of enums representing the features that the attribute will represent.</param>
-        <param name="requirementType">Specifies whether all or any of the provided feature flags should be enabled in order to pass.</param>
-        <param name="featureFlags">A set of enums representing the feature flags that the attribute will represent.</param>
         <summary>
-            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature flag(s) to pass.
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to negate the evaluation result.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params string[] features);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, string[] features) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(Microsoft.FeatureManagement.RequirementType,System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray features As String())" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, features)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, params string[] featureFlags);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, string[] featureFlags) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, ParamArray featureFlags As String())" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, featureFlags)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (bool negate, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool negate, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(System.Boolean,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (negate As Boolean, ParamArray features As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : bool * string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (negate, features)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" Index="0" />
+        <Parameter Name="negate" Type="System.Boolean" Index="0" FrameworkAlternate="azure-dotnet" />
         <Parameter Name="features" Type="System.String[]" Index="1" FrameworkAlternate="azure-dotnet">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet">
-              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
-              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="featureFlags" Type="System.String[]" Index="1" FrameworkAlternate="azure-dotnet-preview">
-          <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet-preview">
+            <Attribute>
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -187,34 +213,77 @@
         </Parameter>
       </Parameters>
       <Docs>
+        <param name="negate">Specifies the evaluation for the provided features gate should be negated.</param>
         <param name="features">The names of the features that the attribute will represent.</param>
-        <param name="requirementType">Specifies whether all or any of the provided feature flags should be enabled in order to pass.</param>
-        <param name="featureFlags">The names of the feature flags that the attribute will represent.</param>
         <summary>
-            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature flag(s) to pass.
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to negate the evaluation result.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FeatureFlags">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; FeatureFlags { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; FeatureFlags" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.FeatureFlags" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FeatureFlags As IEnumerable(Of String)" />
-      <MemberSignature Language="F#" Value="member this.FeatureFlags : seq&lt;string&gt;" Usage="Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.FeatureFlags" />
-      <MemberType>Property</MemberType>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, bool negate, params object[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, bool negate, object[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(Microsoft.FeatureManagement.RequirementType,System.Boolean,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, negate As Boolean, ParamArray features As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * bool * obj[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, negate, features)" />
+      <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="negate" Type="System.Boolean" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="features" Type="System.Object[]" Index="2" FrameworkAlternate="azure-dotnet">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
       <Docs>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="negate">Specifies the evaluation for the provided features gate should be negated.</param>
+        <param name="features">A set of enums representing the features that the attribute will represent.</param>
         <summary>
-            The name of the feature flags that the feature gate attribute will activate for.
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature(s) to pass or negate the evaluation result.
             </summary>
-        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeatureGateAttribute (Microsoft.FeatureManagement.RequirementType requirementType, bool negate, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.FeatureManagement.RequirementType requirementType, bool negate, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.#ctor(Microsoft.FeatureManagement.RequirementType,System.Boolean,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requirementType As RequirementType, negate As Boolean, ParamArray features As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute : Microsoft.FeatureManagement.RequirementType * bool * string[] -&gt; Microsoft.FeatureManagement.Mvc.FeatureGateAttribute" Usage="new Microsoft.FeatureManagement.Mvc.FeatureGateAttribute (requirementType, negate, features)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="negate" Type="System.Boolean" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="features" Type="System.String[]" Index="2" FrameworkAlternate="azure-dotnet">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="negate">Specifies the evaluation for the provided features gate should be negated.</param>
+        <param name="features">The names of the features that the attribute will represent.</param>
+        <summary>
+            Creates an attribute that can be used to gate actions or pages. The gate can be configured to require all or any of the provided feature(s) to pass or negate the evaluation result.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,7 +296,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -235,6 +305,28 @@
       <Docs>
         <summary>
             The name of the features that the feature attribute will activate for.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negate">
+      <MemberSignature Language="C#" Value="public bool Negate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Negate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.Negate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Negate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Negate : bool" Usage="Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.Negate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Negates the evaluation for whether or not a feature gate should activate.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -249,8 +341,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -263,7 +355,7 @@
         <param name="context">The context of the MVC action.</param>
         <param name="next">The action delegate.</param>
         <summary>
-            Performs controller action pre-procesing to ensure that at least one of the specified feature flags are enabled.
+            Performs controller action pre-processing to ensure that any or all of the specified features are enabled.
             </summary>
         <returns>Returns a task representing the action execution unit of work.</returns>
         <remarks>To be added.</remarks>
@@ -281,8 +373,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -313,8 +405,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -340,15 +432,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.FeatureManagement.RequirementType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Controls whether any or all feature flags in <see cref="P:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.FeatureFlags" /> should be enabled to pass.
+            Controls whether any or all features in <see cref="P:Microsoft.FeatureManagement.Mvc.FeatureGateAttribute.Features" /> should be enabled to pass.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

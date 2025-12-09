@@ -9,6 +9,8 @@
     <AssemblyVersion>2.5.1.0</AssemblyVersion>
     <AssemblyVersion>2.6.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,21 +35,22 @@
   <Docs>
     <summary>
             A feature filter that can be used to activate a feature based on a time window.
+            The time window can be configured to recur periodically.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TimeWindowFilter (Microsoft.Extensions.Logging.ILoggerFactory loggerFactory);" />
+      <MemberSignature Language="C#" Value="public TimeWindowFilter (Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (loggerFactory As ILoggerFactory)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional loggerFactory As ILoggerFactory = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter : Microsoft.Extensions.Logging.ILoggerFactory -&gt; Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter" Usage="new Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter loggerFactory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="loggerFactory" Type="Microsoft.Extensions.Logging.ILoggerFactory" />
@@ -72,8 +75,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -91,6 +94,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Cache">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Caching.Memory.IMemoryCache Cache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Caching.Memory.IMemoryCache Cache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter.Cache" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cache As IMemoryCache" />
+      <MemberSignature Language="F#" Value="member this.Cache : Microsoft.Extensions.Caching.Memory.IMemoryCache with get, set" Usage="Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilter.Cache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Caching.Memory.IMemoryCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The application memory cache to store the start time of the closest active time window. By caching this time, the time window can minimize redundant computations when evaluating recurrence.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EvaluateAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; EvaluateAsync (Microsoft.FeatureManagement.FeatureFilterEvaluationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; EvaluateAsync(class Microsoft.FeatureManagement.FeatureFilterEvaluationContext context) cil managed" />
@@ -103,8 +129,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -115,7 +141,7 @@
       <Docs>
         <param name="context">The feature evaluation context.</param>
         <summary>
-            Evaluates whether a feature is enabled based on a configurable time window.
+            Evaluates whether a feature is enabled based on the <see cref="T:Microsoft.FeatureManagement.FeatureFilters.TimeWindowFilterSettings" /> specified in the configuration.
             </summary>
         <returns>True if the feature is enabled, false otherwise.</returns>
         <remarks>To be added.</remarks>

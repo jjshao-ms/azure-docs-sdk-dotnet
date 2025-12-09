@@ -1,0 +1,172 @@
+<Type Name="FeatureGateEndpointFilterExtensions" FullName="Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions">
+  <TypeSignature Language="C#" Value="public static class FeatureGateEndpointFilterExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FeatureGateEndpointFilterExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module FeatureGateEndpointFilterExtensions" />
+  <TypeSignature Language="F#" Value="type FeatureGateEndpointFilterExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods that provide feature management integration for ASP.NET Core endpoint building.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WithFeatureGate">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate (this Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate(class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate(Microsoft.AspNetCore.Builder.IEndpointConventionBuilder,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithFeatureGate (builder As IEndpointConventionBuilder, ParamArray features As String()) As IEndpointConventionBuilder" />
+      <MemberSignature Language="F#" Value="static member WithFeatureGate : Microsoft.AspNetCore.Builder.IEndpointConventionBuilder * string[] -&gt; Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" Usage="Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate (builder, features)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Builder.IEndpointConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" RefType="this" />
+        <Parameter Name="features" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="builder">The endpoint convention builder.</param>
+        <param name="features">The collection of feature flags to evaluate.</param>
+        <summary>
+            Adds a filter to the endpoint that gates access based on whether one or more features are enabled.
+            All features must be enabled for access to be granted.
+            </summary>
+        <returns>The endpoint convention builder for chaining.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithFeatureGate">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate (this Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, Microsoft.FeatureManagement.RequirementType requirementType, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate(class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, valuetype Microsoft.FeatureManagement.RequirementType requirementType, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate(Microsoft.AspNetCore.Builder.IEndpointConventionBuilder,Microsoft.FeatureManagement.RequirementType,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithFeatureGate (builder As IEndpointConventionBuilder, requirementType As RequirementType, ParamArray features As String()) As IEndpointConventionBuilder" />
+      <MemberSignature Language="F#" Value="static member WithFeatureGate : Microsoft.AspNetCore.Builder.IEndpointConventionBuilder * Microsoft.FeatureManagement.RequirementType * string[] -&gt; Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" Usage="Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate (builder, requirementType, features)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Builder.IEndpointConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" RefType="this" />
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" />
+        <Parameter Name="features" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="builder">The endpoint convention builder.</param>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="features">The collection of feature flags to evaluate.</param>
+        <summary>
+            Adds a filter to the endpoint with specified requirement type for multiple features.
+            </summary>
+        <returns>The endpoint convention builder for chaining.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithFeatureGate">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate (this Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, bool negate, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate(class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, bool negate, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate(Microsoft.AspNetCore.Builder.IEndpointConventionBuilder,System.Boolean,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithFeatureGate (builder As IEndpointConventionBuilder, negate As Boolean, ParamArray features As String()) As IEndpointConventionBuilder" />
+      <MemberSignature Language="F#" Value="static member WithFeatureGate : Microsoft.AspNetCore.Builder.IEndpointConventionBuilder * bool * string[] -&gt; Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" Usage="Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate (builder, negate, features)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Builder.IEndpointConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" RefType="this" />
+        <Parameter Name="negate" Type="System.Boolean" />
+        <Parameter Name="features" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="builder">The endpoint convention builder.</param>
+        <param name="negate">Specifies whether the feature evaluation result should be negated.</param>
+        <param name="features">The collection of feature flags to evaluate.</param>
+        <summary>
+            Adds a filter to the endpoint with negation capability for multiple features.
+            </summary>
+        <returns>The endpoint convention builder for chaining.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithFeatureGate">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate (this Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, Microsoft.FeatureManagement.RequirementType requirementType, bool negate, params string[] features);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder WithFeatureGate(class Microsoft.AspNetCore.Builder.IEndpointConventionBuilder builder, valuetype Microsoft.FeatureManagement.RequirementType requirementType, bool negate, string[] features) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate(Microsoft.AspNetCore.Builder.IEndpointConventionBuilder,Microsoft.FeatureManagement.RequirementType,System.Boolean,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithFeatureGate (builder As IEndpointConventionBuilder, requirementType As RequirementType, negate As Boolean, ParamArray features As String()) As IEndpointConventionBuilder" />
+      <MemberSignature Language="F#" Value="static member WithFeatureGate : Microsoft.AspNetCore.Builder.IEndpointConventionBuilder * Microsoft.FeatureManagement.RequirementType * bool * string[] -&gt; Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" Usage="Microsoft.FeatureManagement.AspNetCore.FeatureGateEndpointFilterExtensions.WithFeatureGate (builder, requirementType, negate, features)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement.AspNetCore</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Builder.IEndpointConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Builder.IEndpointConventionBuilder" RefType="this" />
+        <Parameter Name="requirementType" Type="Microsoft.FeatureManagement.RequirementType" />
+        <Parameter Name="negate" Type="System.Boolean" />
+        <Parameter Name="features" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="builder">The endpoint convention builder.</param>
+        <param name="requirementType">Specifies whether all or any of the provided features should be enabled in order to pass.</param>
+        <param name="negate">Specifies whether the feature evaluation result should be negated.</param>
+        <param name="features">The collection of feature flags to evaluate.</param>
+        <summary>
+            Adds a filter to the endpoint with full control over requirement type and negation.
+            </summary>
+        <returns>The endpoint convention builder for chaining.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

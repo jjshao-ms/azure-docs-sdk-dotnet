@@ -1,0 +1,57 @@
+<Type Name="VariantFeatureManagerExtensions" FullName="Microsoft.FeatureManagement.VariantFeatureManagerExtensions">
+  <TypeSignature Language="C#" Value="public static class VariantFeatureManagerExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VariantFeatureManagerExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FeatureManagement.VariantFeatureManagerExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module VariantFeatureManagerExtensions" />
+  <TypeSignature Language="F#" Value="type VariantFeatureManagerExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extensions for <see cref="T:Microsoft.FeatureManagement.IVariantFeatureManager" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetVariantAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt; GetVariantAsync (this Microsoft.FeatureManagement.IVariantFeatureManager variantFeatureManager, string feature, Microsoft.FeatureManagement.FeatureFilters.TargetingContext context, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ValueTask`1&lt;class Microsoft.FeatureManagement.Variant&gt; GetVariantAsync(class Microsoft.FeatureManagement.IVariantFeatureManager variantFeatureManager, string feature, class Microsoft.FeatureManagement.FeatureFilters.TargetingContext context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.VariantFeatureManagerExtensions.GetVariantAsync(Microsoft.FeatureManagement.IVariantFeatureManager,System.String,Microsoft.FeatureManagement.FeatureFilters.TargetingContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVariantAsync (variantFeatureManager As IVariantFeatureManager, feature As String, context As TargetingContext, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Variant)" />
+      <MemberSignature Language="F#" Value="static member GetVariantAsync : Microsoft.FeatureManagement.IVariantFeatureManager * string * Microsoft.FeatureManagement.FeatureFilters.TargetingContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;" Usage="Microsoft.FeatureManagement.VariantFeatureManagerExtensions.GetVariantAsync (variantFeatureManager, feature, context, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variantFeatureManager" Type="Microsoft.FeatureManagement.IVariantFeatureManager" RefType="this" />
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="context" Type="Microsoft.FeatureManagement.FeatureFilters.TargetingContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="variantFeatureManager">The <see cref="T:Microsoft.FeatureManagement.IVariantFeatureManager" /> instance.</param>
+        <param name="feature">The name of the feature to evaluate.</param>
+        <param name="context">An instance of <see cref="T:Microsoft.FeatureManagement.FeatureFilters.TargetingContext" /> used to evaluate which variant the user will be assigned.</param>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Gets the assigned variant for a specific feature.
+            </summary>
+        <returns>A variant assigned to the user based on the feature's configured allocation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

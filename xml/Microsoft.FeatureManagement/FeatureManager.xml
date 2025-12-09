@@ -1,0 +1,474 @@
+<Type Name="FeatureManager" FullName="Microsoft.FeatureManagement.FeatureManager">
+  <TypeSignature Language="C#" Value="public sealed class FeatureManager : Microsoft.FeatureManagement.IFeatureManager, Microsoft.FeatureManagement.IVariantFeatureManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FeatureManager extends System.Object implements class Microsoft.FeatureManagement.IFeatureManager, class Microsoft.FeatureManagement.IVariantFeatureManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FeatureManagement.FeatureManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FeatureManager&#xA;Implements IFeatureManager, IVariantFeatureManager" />
+  <TypeSignature Language="F#" Value="type FeatureManager = class&#xA;    interface IFeatureManager&#xA;    interface IVariantFeatureManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.FeatureManagement.IFeatureManager</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.FeatureManagement.IVariantFeatureManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Used to evaluate the enabled state of a feature and/or get the assigned variant of a feature, if any.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeatureManager (Microsoft.FeatureManagement.IFeatureDefinitionProvider featureDefinitionProvider, Microsoft.FeatureManagement.FeatureManagementOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.FeatureManagement.IFeatureDefinitionProvider featureDefinitionProvider, class Microsoft.FeatureManagement.FeatureManagementOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.#ctor(Microsoft.FeatureManagement.IFeatureDefinitionProvider,Microsoft.FeatureManagement.FeatureManagementOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (featureDefinitionProvider As IFeatureDefinitionProvider, Optional options As FeatureManagementOptions = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.FeatureManager : Microsoft.FeatureManagement.IFeatureDefinitionProvider * Microsoft.FeatureManagement.FeatureManagementOptions -&gt; Microsoft.FeatureManagement.FeatureManager" Usage="new Microsoft.FeatureManagement.FeatureManager (featureDefinitionProvider, options)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="featureDefinitionProvider" Type="Microsoft.FeatureManagement.IFeatureDefinitionProvider" />
+        <Parameter Name="options" Type="Microsoft.FeatureManagement.FeatureManagementOptions" />
+      </Parameters>
+      <Docs>
+        <param name="featureDefinitionProvider">The provider of feature flag definitions.</param>
+        <param name="options">Options controlling the behavior of the feature manager.</param>
+        <summary>
+            Creates a feature manager.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="featureDefinitionProvider" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignerOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions AssignerOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions AssignerOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.AssignerOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssignerOptions As TargetingEvaluationOptions" />
+      <MemberSignature Language="F#" Value="member this.AssignerOptions : Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.AssignerOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Options controlling the targeting behavior for feature variant allocation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if it is set to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cache">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Caching.Memory.IMemoryCache Cache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Caching.Memory.IMemoryCache Cache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.Cache" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cache As IMemoryCache" />
+      <MemberSignature Language="F#" Value="member this.Cache : Microsoft.Extensions.Caching.Memory.IMemoryCache with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.Cache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Caching.Memory.IMemoryCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The application memory cache to store feature filter settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeatureFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.IFeatureFilterMetadata&gt; FeatureFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FeatureManagement.IFeatureFilterMetadata&gt; FeatureFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.FeatureFilters" />
+      <MemberSignature Language="VB.NET" Value="Public Property FeatureFilters As IEnumerable(Of IFeatureFilterMetadata)" />
+      <MemberSignature Language="F#" Value="member this.FeatureFilters : seq&lt;Microsoft.FeatureManagement.IFeatureFilterMetadata&gt; with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.FeatureFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.IFeatureFilterMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The collection of feature filter metadata.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if it is set to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeatureNamesAsync">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IAsyncEnumerable&lt;string&gt; GetFeatureNamesAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerable`1&lt;string&gt; GetFeatureNamesAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.GetFeatureNamesAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeatureNamesAsync () As IAsyncEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetFeatureNamesAsync : unit -&gt; System.Collections.Generic.IAsyncEnumerable&lt;string&gt;&#xA;override this.GetFeatureNamesAsync : unit -&gt; System.Collections.Generic.IAsyncEnumerable&lt;string&gt;" Usage="featureManager.GetFeatureNamesAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IFeatureManager.GetFeatureNamesAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Retrieves a list of feature names registered in the feature manager.
+            </summary>
+        <returns>An enumerator which provides asynchronous iteration over the feature names registered in the feature manager.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeatureNamesAsync">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IAsyncEnumerable&lt;string&gt; GetFeatureNamesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerable`1&lt;string&gt; GetFeatureNamesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.GetFeatureNamesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeatureNamesAsync (Optional cancellationToken As CancellationToken = Nothing) As IAsyncEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetFeatureNamesAsync : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerable&lt;string&gt;&#xA;override this.GetFeatureNamesAsync : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerable&lt;string&gt;" Usage="featureManager.GetFeatureNamesAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IVariantFeatureManager.GetFeatureNamesAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Microsoft.FeatureManagement.FeatureManager+&lt;GetFeatureNamesAsync&gt;d__43))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Microsoft.FeatureManagement.FeatureManager+&lt;GetFeatureNamesAsync&gt;d__43))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Microsoft.FeatureManagement.FeatureManager+&lt;GetFeatureNamesAsync&gt;d__38))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Microsoft.FeatureManagement.FeatureManager+&lt;GetFeatureNamesAsync&gt;d__38))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.EnumeratorCancellation]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.EnumeratorCancellation&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            Retrieves a list of feature names registered in the feature manager.
+            </summary>
+        <returns>An enumerator which provides asynchronous iteration over the feature names registered in the feature manager.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariantAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt; GetVariantAsync (string feature, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Microsoft.FeatureManagement.Variant&gt; GetVariantAsync(string feature, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.GetVariantAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVariantAsync (feature As String, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Variant)" />
+      <MemberSignature Language="F#" Value="abstract member GetVariantAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;&#xA;override this.GetVariantAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;" Usage="featureManager.GetVariantAsync (feature, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IVariantFeatureManager.GetVariantAsync(System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The name of the feature to evaluate.</param>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Gets the assigned variant for a specific feature.
+            </summary>
+        <returns>A variant assigned to the user based on the feature's configured allocation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariantAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt; GetVariantAsync (string feature, Microsoft.FeatureManagement.FeatureFilters.ITargetingContext context, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Microsoft.FeatureManagement.Variant&gt; GetVariantAsync(string feature, class Microsoft.FeatureManagement.FeatureFilters.ITargetingContext context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.GetVariantAsync(System.String,Microsoft.FeatureManagement.FeatureFilters.ITargetingContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVariantAsync (feature As String, context As ITargetingContext, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Variant)" />
+      <MemberSignature Language="F#" Value="abstract member GetVariantAsync : string * Microsoft.FeatureManagement.FeatureFilters.ITargetingContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;&#xA;override this.GetVariantAsync : string * Microsoft.FeatureManagement.FeatureFilters.ITargetingContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;" Usage="featureManager.GetVariantAsync (feature, context, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IVariantFeatureManager.GetVariantAsync(System.String,Microsoft.FeatureManagement.FeatureFilters.ITargetingContext,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Microsoft.FeatureManagement.Variant&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="context" Type="Microsoft.FeatureManagement.FeatureFilters.ITargetingContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The name of the feature to evaluate.</param>
+        <param name="context">A context that provides information to evaluate which variant will be assigned to the user.</param>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Gets the assigned variant for a specific feature.
+            </summary>
+        <returns>A variant assigned to the user based on the feature's configured allocation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; IsEnabledAsync (string feature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsEnabledAsync(string feature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.IsEnabledAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabledAsync (feature As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabledAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.IsEnabledAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="featureManager.IsEnabledAsync feature" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IFeatureManager.IsEnabledAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The name of the feature to check.</param>
+        <summary>
+            Checks whether a given feature is enabled.
+            </summary>
+        <returns>True if the feature is enabled, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;bool&gt; IsEnabledAsync (string feature, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;bool&gt; IsEnabledAsync(string feature, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.IsEnabledAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabledAsync (feature As String, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabledAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;&#xA;override this.IsEnabledAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;" Usage="featureManager.IsEnabledAsync (feature, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IVariantFeatureManager.IsEnabledAsync(System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The name of the feature to check.</param>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Checks whether a given feature is enabled.
+            </summary>
+        <returns>True if the feature is enabled, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledAsync&lt;TContext&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; IsEnabledAsync&lt;TContext&gt; (string feature, TContext appContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsEnabledAsync&lt;TContext&gt;(string feature, !!TContext appContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.IsEnabledAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabledAsync(Of TContext) (feature As String, appContext As TContext) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabledAsync : string * 'Context -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.IsEnabledAsync : string * 'Context -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="featureManager.IsEnabledAsync (feature, appContext)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IFeatureManager.IsEnabledAsync``1(System.String,``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContext" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="appContext" Type="TContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContext">To be added.</typeparam>
+        <param name="feature">The name of the feature to check.</param>
+        <param name="appContext">A context that provides information to evaluate whether a feature should be on or off.</param>
+        <summary>
+            Checks whether a given feature is enabled.
+            </summary>
+        <returns>True if the feature is enabled, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledAsync&lt;TContext&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;bool&gt; IsEnabledAsync&lt;TContext&gt; (string feature, TContext appContext, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;bool&gt; IsEnabledAsync&lt;TContext&gt;(string feature, !!TContext appContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManager.IsEnabledAsync``1(System.String,``0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabledAsync(Of TContext) (feature As String, appContext As TContext, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabledAsync : string * 'Context * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;&#xA;override this.IsEnabledAsync : string * 'Context * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;" Usage="featureManager.IsEnabledAsync (feature, appContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.FeatureManagement.IVariantFeatureManager.IsEnabledAsync``1(System.String,``0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContext" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="appContext" Type="TContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContext">To be added.</typeparam>
+        <param name="feature">The name of the feature to check.</param>
+        <param name="appContext">A context that provides information to evaluate whether a feature should be on or off.</param>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Checks whether a given feature is enabled.
+            </summary>
+        <returns>True if the feature is enabled, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logger">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Logging.ILogger Logger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Logging.ILogger Logger" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.Logger" />
+      <MemberSignature Language="VB.NET" Value="Public Property Logger As ILogger" />
+      <MemberSignature Language="F#" Value="member this.Logger : Microsoft.Extensions.Logging.ILogger with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.Logger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Logging.ILogger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The logger for the feature manager.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionManagers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.ISessionManager&gt; SessionManagers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FeatureManagement.ISessionManager&gt; SessionManagers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.SessionManagers" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionManagers As IEnumerable(Of ISessionManager)" />
+      <MemberSignature Language="F#" Value="member this.SessionManagers : seq&lt;Microsoft.FeatureManagement.ISessionManager&gt; with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.SessionManagers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.ISessionManager&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The collection of session managers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if it is set to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetingContextAccessor">
+      <MemberSignature Language="C#" Value="public Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor TargetingContextAccessor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor TargetingContextAccessor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureManager.TargetingContextAccessor" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetingContextAccessor As ITargetingContextAccessor" />
+      <MemberSignature Language="F#" Value="member this.TargetingContextAccessor : Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor with get, set" Usage="Microsoft.FeatureManagement.FeatureManager.TargetingContextAccessor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The targeting context accessor for feature variant allocation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

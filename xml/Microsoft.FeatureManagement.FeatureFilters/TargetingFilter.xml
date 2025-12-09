@@ -9,6 +9,8 @@
     <AssemblyVersion>2.5.1.0</AssemblyVersion>
     <AssemblyVersion>2.6.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,25 +40,25 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TargetingFilter (Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; options, Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor contextAccessor, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Options.IOptions`1&lt;class Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; options, class Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor contextAccessor, class Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureFilters.TargetingFilter.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions},Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor,Microsoft.Extensions.Logging.ILoggerFactory)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (options As IOptions(Of TargetingEvaluationOptions), contextAccessor As ITargetingContextAccessor, loggerFactory As ILoggerFactory)" />
-      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.FeatureFilters.TargetingFilter : Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; * Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor * Microsoft.Extensions.Logging.ILoggerFactory -&gt; Microsoft.FeatureManagement.FeatureFilters.TargetingFilter" Usage="new Microsoft.FeatureManagement.FeatureFilters.TargetingFilter (options, contextAccessor, loggerFactory)" />
+      <MemberSignature Language="C#" Value="public TargetingFilter (Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor contextAccessor, Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; options = default, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor contextAccessor, class Microsoft.Extensions.Options.IOptions`1&lt;class Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; options, class Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureFilters.TargetingFilter.#ctor(Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor,Microsoft.Extensions.Options.IOptions{Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions},Microsoft.Extensions.Logging.ILoggerFactory)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextAccessor As ITargetingContextAccessor, Optional options As IOptions(Of TargetingEvaluationOptions) = Nothing, Optional loggerFactory As ILoggerFactory = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FeatureManagement.FeatureFilters.TargetingFilter : Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor * Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt; * Microsoft.Extensions.Logging.ILoggerFactory -&gt; Microsoft.FeatureManagement.FeatureFilters.TargetingFilter" Usage="new Microsoft.FeatureManagement.FeatureFilters.TargetingFilter (contextAccessor, options, loggerFactory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="options" Type="Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt;" />
         <Parameter Name="contextAccessor" Type="Microsoft.FeatureManagement.FeatureFilters.ITargetingContextAccessor" />
+        <Parameter Name="options" Type="Microsoft.Extensions.Options.IOptions&lt;Microsoft.FeatureManagement.FeatureFilters.TargetingEvaluationOptions&gt;" />
         <Parameter Name="loggerFactory" Type="Microsoft.Extensions.Logging.ILoggerFactory" />
       </Parameters>
       <Docs>
-        <param name="options">Options controlling the behavior of the targeting evaluation performed by the filter.</param>
         <param name="contextAccessor">An accessor used to acquire the targeting context for use in feature evaluation.</param>
+        <param name="options">Options controlling the behavior of the targeting evaluation performed by the filter.</param>
         <param name="loggerFactory">A logger factory for creating loggers.</param>
         <summary>
             Creates a targeting feature filter.
@@ -76,8 +78,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -107,8 +109,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>

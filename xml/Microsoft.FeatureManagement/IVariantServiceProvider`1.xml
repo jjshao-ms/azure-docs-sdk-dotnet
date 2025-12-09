@@ -1,0 +1,56 @@
+<Type Name="IVariantServiceProvider&lt;TService&gt;" FullName="Microsoft.FeatureManagement.IVariantServiceProvider&lt;TService&gt;">
+  <TypeSignature Language="C#" Value="public interface IVariantServiceProvider&lt;TService&gt; where TService : class" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IVariantServiceProvider`1&lt;class TService&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FeatureManagement.IVariantServiceProvider`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVariantServiceProvider(Of TService)" />
+  <TypeSignature Language="F#" Value="type IVariantServiceProvider&lt;'Service (requires 'Service : null)&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TService">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TService">To be added.</typeparam>
+    <summary>
+            Used to get different implementation variants of TService.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetServiceAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;TService&gt; GetServiceAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;!TService&gt; GetServiceAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.IVariantServiceProvider`1.GetServiceAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetServiceAsync (cancellationToken As CancellationToken) As ValueTask(Of TService)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;'Service (requires 'Service : null)&gt;" Usage="iVariantServiceProvider.GetServiceAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;TService&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        <summary>
+            Gets an implementation variant of TService.
+            </summary>
+        <returns>An implementation of TService.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

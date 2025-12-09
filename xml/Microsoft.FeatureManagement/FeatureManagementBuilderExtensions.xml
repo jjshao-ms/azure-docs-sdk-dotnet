@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +30,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.FeatureManagement.IFeatureManagementBuilder</ReturnType>
@@ -51,6 +54,45 @@
             </summary>
         <returns>A <see cref="T:Microsoft.FeatureManagement.IFeatureManagementBuilder" /> that can be used to customize feature management functionality.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithVariantService&lt;TService&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FeatureManagement.IFeatureManagementBuilder WithVariantService&lt;TService&gt; (this Microsoft.FeatureManagement.IFeatureManagementBuilder builder, string featureName) where TService : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.FeatureManagement.IFeatureManagementBuilder WithVariantService&lt;class TService&gt;(class Microsoft.FeatureManagement.IFeatureManagementBuilder builder, string featureName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.FeatureManagementBuilderExtensions.WithVariantService``1(Microsoft.FeatureManagement.IFeatureManagementBuilder,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithVariantService(Of TService As Class) (builder As IFeatureManagementBuilder, featureName As String) As IFeatureManagementBuilder" />
+      <MemberSignature Language="F#" Value="static member WithVariantService : Microsoft.FeatureManagement.IFeatureManagementBuilder * string -&gt; Microsoft.FeatureManagement.IFeatureManagementBuilder (requires 'Service : null)" Usage="Microsoft.FeatureManagement.FeatureManagementBuilderExtensions.WithVariantService (builder, featureName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.IFeatureManagementBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TService">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.FeatureManagement.IFeatureManagementBuilder" RefType="this" />
+        <Parameter Name="featureName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TService">To be added.</typeparam>
+        <param name="builder">The <see cref="T:Microsoft.FeatureManagement.IFeatureManagementBuilder" /> used to customize feature management functionality.</param>
+        <param name="featureName">The feature flag that should be used to determine which variant of the service should be used. The <see cref="T:Microsoft.FeatureManagement.VariantServiceProvider`1" /> will return different implementations of TService according to the assigned variant.</param>
+        <summary>
+            Adds a <see cref="T:Microsoft.FeatureManagement.VariantServiceProvider`1" /> to the feature management system.
+            </summary>
+        <returns>A <see cref="T:Microsoft.FeatureManagement.IFeatureManagementBuilder" /> that can be used to customize feature management functionality.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if feature name parameter is null.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if a variant service of the type has already been added.</exception>
       </Docs>
     </Member>
   </Members>

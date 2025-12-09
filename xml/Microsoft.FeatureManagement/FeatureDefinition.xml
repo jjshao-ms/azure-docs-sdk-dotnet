@@ -9,6 +9,8 @@
     <AssemblyVersion>2.5.1.0</AssemblyVersion>
     <AssemblyVersion>2.6.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,12 +31,35 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocation">
+      <MemberSignature Language="C#" Value="public Microsoft.FeatureManagement.Allocation Allocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FeatureManagement.Allocation Allocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureDefinition.Allocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Allocation As Allocation" />
+      <MemberSignature Language="F#" Value="member this.Allocation : Microsoft.FeatureManagement.Allocation with get, set" Usage="Microsoft.FeatureManagement.FeatureDefinition.Allocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.Allocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes how variants should be allocated.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +72,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.FeatureFilterConfiguration&gt;</ReturnType>
@@ -70,8 +95,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,16 +118,86 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.FeatureManagement.RequirementType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Determines whether any or all registered feature filters must be enabled for the feature to be considered enabled
+            Determines whether any or all registered feature filters must be enabled for the feature to be considered enabled.
             The default value is <see cref="F:Microsoft.FeatureManagement.RequirementType.Any" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.FeatureManagement.FeatureStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.FeatureManagement.FeatureStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureDefinition.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As FeatureStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.FeatureManagement.FeatureStatus with get, set" Usage="Microsoft.FeatureManagement.FeatureDefinition.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.FeatureStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When set to <see cref="F:Microsoft.FeatureManagement.FeatureStatus.Disabled" />, this feature will always be considered disabled regardless of the rest of the feature definition.
+            The default value is <see cref="F:Microsoft.FeatureManagement.FeatureStatus.Conditional" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Telemetry">
+      <MemberSignature Language="C#" Value="public Microsoft.FeatureManagement.TelemetryConfiguration Telemetry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FeatureManagement.TelemetryConfiguration Telemetry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureDefinition.Telemetry" />
+      <MemberSignature Language="VB.NET" Value="Public Property Telemetry As TelemetryConfiguration" />
+      <MemberSignature Language="F#" Value="member this.Telemetry : Microsoft.FeatureManagement.TelemetryConfiguration with get, set" Usage="Microsoft.FeatureManagement.FeatureDefinition.Telemetry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FeatureManagement.TelemetryConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Telemetry related configuration of the feature.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variants">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.VariantDefinition&gt; Variants { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FeatureManagement.VariantDefinition&gt; Variants" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.FeatureDefinition.Variants" />
+      <MemberSignature Language="VB.NET" Value="Public Property Variants As IEnumerable(Of VariantDefinition)" />
+      <MemberSignature Language="F#" Value="member this.Variants : seq&lt;Microsoft.FeatureManagement.VariantDefinition&gt; with get, set" Usage="Microsoft.FeatureManagement.FeatureDefinition.Variants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.FeatureManagement.VariantDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of variant definitions that specify a configuration to return when assigned.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

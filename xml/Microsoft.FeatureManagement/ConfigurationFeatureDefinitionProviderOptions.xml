@@ -1,0 +1,104 @@
+<Type Name="ConfigurationFeatureDefinitionProviderOptions" FullName="Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProviderOptions">
+  <TypeSignature Language="C#" Value="public class ConfigurationFeatureDefinitionProviderOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationFeatureDefinitionProviderOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProviderOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurationFeatureDefinitionProviderOptions" />
+  <TypeSignature Language="F#" Value="type ConfigurationFeatureDefinitionProviderOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Options that control the behavior of the <see cref="T:Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProvider" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationFeatureDefinitionProviderOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProviderOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomConfigurationMergingEnabled">
+      <MemberSignature Language="C#" Value="public bool CustomConfigurationMergingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CustomConfigurationMergingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProviderOptions.CustomConfigurationMergingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomConfigurationMergingEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CustomConfigurationMergingEnabled : bool with get, set" Usage="Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProviderOptions.CustomConfigurationMergingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.FeatureManagement</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Controls whether to enable the custom configuration merging logic for Microsoft schema feature flags or fall back to .NET's native configuration merging behavior.
+             </summary>
+        <value>To be added.</value>
+        <remarks>
+             This option only affects Microsoft schema feature flags (e.g. feature_management:feature_flags arrays). .NET schema feature flags are not affected by this setting.
+             
+             The <see cref="T:Microsoft.FeatureManagement.ConfigurationFeatureDefinitionProvider" /> uses custom configuration merging logic for Microsoft schema feature flags to ensure that
+             feature flags with the same ID from different configuration sources are merged correctly based on their logical identity rather than array position.
+             By default, the provider bypasses .NET's native array merging behavior which merges arrays by index position and can lead to unexpected results when feature flags are defined across multiple configuration sources.
+            
+             Consider the following configuration sources:
+             Configuration Source 1:
+             {
+               "feature_management": {
+                 "feature_flags": [
+                   {
+                     "id": "feature1",
+                     "enabled": true
+                   },
+                   {
+                     "id": "feature2", 
+                     "enabled": false
+                   }
+                 ]
+               }
+             }
+             
+             Configuration Source 2:
+             {
+               "feature_management": {
+                 "feature_flags": [
+                   {
+                     "id": "feature2",
+                     "enabled": true
+                   }
+                 ]
+               }
+             }
+             
+             With custom merging:
+             - feature1: enabled = true
+             - feature2: enabled = true (last declaration wins)
+             
+             With native .NET merging:
+             - feature1 would be overwritten by feature2 from source 2 (index-based merging, e.g. feature_flags:0:id)
+             - feature2: enabled = false (from source 1, index 1)
+             </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
