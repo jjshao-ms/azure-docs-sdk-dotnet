@@ -8,6 +8,7 @@
     <AssemblyName>System.Fabric</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,7 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -78,7 +79,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,6 +100,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateArchive">
+      <MemberSignature Language="C#" Value="public static void CreateArchive (string path, string archivePath, uint compressionLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateArchive(string path, string archivePath, unsigned int32 compressionLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.ImageStore.ImageStoreUtility.CreateArchive(System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateArchive (path As String, archivePath As String, compressionLevel As UInteger)" />
+      <MemberSignature Language="F#" Value="static member CreateArchive : string * string * uint32 -&gt; unit" Usage="System.Fabric.ImageStore.ImageStoreUtility.CreateArchive (path, archivePath, compressionLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="archivePath" Type="System.String" />
+        <Parameter Name="compressionLevel" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="archivePath">To be added.</param>
+        <param name="compressionLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExpandSfpkg">
       <MemberSignature Language="C#" Value="public static void ExpandSfpkg (string sfpkgFilePath, string appPackageRootDirectory);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExpandSfpkg(string sfpkgFilePath, string appPackageRootDirectory) cil managed" />
@@ -108,7 +136,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -138,6 +166,31 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ExtractArchive">
+      <MemberSignature Language="C#" Value="public static void ExtractArchive (string archivePath, string extractPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractArchive(string archivePath, string extractPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.ImageStore.ImageStoreUtility.ExtractArchive(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractArchive (archivePath As String, extractPath As String)" />
+      <MemberSignature Language="F#" Value="static member ExtractArchive : string * string -&gt; unit" Usage="System.Fabric.ImageStore.ImageStoreUtility.ExtractArchive (archivePath, extractPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="archivePath" Type="System.String" />
+        <Parameter Name="extractPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="archivePath">To be added.</param>
+        <param name="extractPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GenerateApplicationPackageChecksumFiles">
       <MemberSignature Language="C#" Value="public static void GenerateApplicationPackageChecksumFiles (string appPackageRootDirectory, System.Fabric.IImageStoreProgressHandler progressHandler, bool isImageStoreServiceEnabled = true);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateApplicationPackageChecksumFiles(string appPackageRootDirectory, class System.Fabric.IImageStoreProgressHandler progressHandler, bool isImageStoreServiceEnabled) cil managed" />
@@ -147,7 +200,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -180,7 +233,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -198,15 +251,15 @@
         <param name="destinationDirectory">
           <para>The folder where the sfpkg file is placed. If it doesn't exist, it is created.</para>
         </param>
-        <param name="sfpkgName">
-          <para>The name of the sfpkg file.</para>
-        </param>
         <param name="applyCompression">
           <para>If true, the package is
             <see href="https://docs.microsoft.com/azure/service-fabric/service-fabric-package-apps#compress-a-package">compressed</see>
             before generating the sfpkg, inside <paramref name="appPackageRootDirectory" />.
             If the package is already compressed, no changes are made. To compress, the appPackageRootDirectory must allow write access.
             If false, the sfpkg is generated using the application package as it is, either compressed or uncompressed. Default: true.</para>
+        </param>
+        <param name="sfpkgName">
+          <para>The name of the sfpkg file.</para>
         </param>
         <summary>
           <para>
@@ -237,7 +290,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -263,7 +316,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -284,7 +337,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -305,7 +358,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,18 +1,22 @@
 <Type Name="ApplicationManifestType" FullName="System.Fabric.Management.ServiceModel.ApplicationManifestType">
-  <TypeSignature Language="C#" Value="public class ApplicationManifestType" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationManifestType extends System.Object" />
+  <TypeSignature Language="C#" Value="public class ApplicationManifestType : System.Fabric.Management.ServiceModel.IXmlValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationManifestType extends System.Object implements class System.Fabric.Management.ServiceModel.IXmlValidator" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Management.ServiceModel.ApplicationManifestType" />
-  <TypeSignature Language="VB.NET" Value="Public Class ApplicationManifestType" />
-  <TypeSignature Language="F#" Value="type ApplicationManifestType = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationManifestType&#xA;Implements IXmlValidator" />
+  <TypeSignature Language="F#" Value="type ApplicationManifestType = class&#xA;    interface IXmlValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Fabric.Management.ServiceModel.IXmlValidator</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -45,7 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -62,7 +66,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,6 +83,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ApplicationRoles">
+      <MemberSignature Language="C#" Value="public System.Fabric.Management.ServiceModel.RoleType[] ApplicationRoles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Fabric.Management.ServiceModel.RoleType[] ApplicationRoles" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.ApplicationManifestType.ApplicationRoles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationRoles As RoleType()" />
+      <MemberSignature Language="F#" Value="member this.ApplicationRoles : System.Fabric.Management.ServiceModel.RoleType[] with get, set" Usage="System.Fabric.Management.ServiceModel.ApplicationManifestType.ApplicationRoles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlArrayItem("Role", IsNullable=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlArrayItem("Role", IsNullable=false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Fabric.Management.ServiceModel.RoleType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ApplicationTypeName">
       <MemberSignature Language="C#" Value="public string ApplicationTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationTypeName" />
@@ -88,7 +118,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -114,7 +144,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,7 +170,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Management.ServiceModel.ApplicationManifestTypeCertificates</ReturnType>
@@ -160,7 +190,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Management.ServiceModel.DefaultServicesType</ReturnType>
@@ -180,7 +210,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -200,7 +230,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Management.ServiceModel.DiagnosticsType</ReturnType>
@@ -220,7 +250,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -250,7 +280,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -276,7 +306,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Management.ServiceModel.ApplicationPoliciesType</ReturnType>
@@ -296,7 +326,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Management.ServiceModel.SecurityPrincipalsType</ReturnType>
@@ -316,7 +346,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -342,9 +372,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlArrayItem("SelfReconfiguringService", typeof(System.Fabric.Management.ServiceModel.SelfReconfiguringServiceType), IsNullable=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlArrayItem("SelfReconfiguringService", typeof(System.Fabric.Management.ServiceModel.SelfReconfiguringServiceType), IsNullable=false)&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName Language="C#">[System.Xml.Serialization.XmlArrayItem("StatefulService", typeof(System.Fabric.Management.ServiceModel.StatefulServiceType), IsNullable=false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlArrayItem("StatefulService", typeof(System.Fabric.Management.ServiceModel.StatefulServiceType), IsNullable=false)&gt;]</AttributeName>
@@ -368,6 +402,29 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.Management.ServiceModel.ApplicationManifestType.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="applicationManifestType.Validate " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Fabric.Management.ServiceModel.IXmlValidator.Validate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

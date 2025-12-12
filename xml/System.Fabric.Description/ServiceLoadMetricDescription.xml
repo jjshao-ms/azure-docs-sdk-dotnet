@@ -8,6 +8,7 @@
     <AssemblyName>System.Fabric</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,7 +51,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -71,6 +72,32 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaximumLoad">
+      <MemberSignature Language="C#" Value="public int MaximumLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumLoad" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.ServiceLoadMetricDescription.MaximumLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumLoad As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumLoad : int with get, set" Usage="System.Fabric.Description.ServiceLoadMetricDescription.MaximumLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("MaximumLoad in ServiceLoadMetricDescription is deprecated, please use StatefulServiceLoadMetricDescription instead.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("MaximumLoad in ServiceLoadMetricDescription is deprecated, please use StatefulServiceLoadMetricDescription instead.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
@@ -80,7 +107,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -109,7 +136,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,7 +167,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -163,30 +190,23 @@
       </Docs>
     </Member>
     <Member MemberName="ToString">
-      <MemberSignature Language="C#" Value="public string ToString (bool isStateful);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool isStateful) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Fabric.Description.ServiceLoadMetricDescription.ToString(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ToString (isStateful As Boolean) As String" />
-      <MemberSignature Language="F#" Value="override this.ToString : bool -&gt; string" Usage="serviceLoadMetricDescription.ToString isStateful" />
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.Description.ServiceLoadMetricDescription.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="serviceLoadMetricDescription.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="isStateful" Type="System.Boolean" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="isStateful">To be added.</param>
-        <summary>
-            Pretty print out details of <see cref="T:System.Fabric.Description.StatefulServiceLoadMetricDescription" />
-            or <see cref="T:System.Fabric.Description.StatelessServiceLoadMetricDescription" />.
-            </summary>
-        <returns>A string representation of <see cref="T:System.Fabric.Description.StatefulServiceLoadMetricDescription" />
-            or <see cref="T:System.Fabric.Description.StatelessServiceLoadMetricDescription" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +219,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Description.ServiceLoadMetricWeight</ReturnType>
