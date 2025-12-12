@@ -1,7 +1,7 @@
 ---
 title: Azure Resource Mover SDK for .NET
 description: Reference for Azure Resource Mover SDK for .NET
-ms.date: 12/11/2025
+ms.date: 12/12/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: resourcemover
