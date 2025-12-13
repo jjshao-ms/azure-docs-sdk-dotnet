@@ -1,12 +1,12 @@
 ---
 title: Azure AI Projects OpenAI client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.Projects.OpenAI, ai
-ms.date: 11/18/2025
+ms.date: 12/13/2025
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.4 
+# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.5 
 
 
 Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecosystem of models, tools, and capabilities from OpenAI, Microsoft, and other LLM providers.
@@ -34,11 +34,36 @@ Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecos
     - [Agents](#agents)
     - [Responses](#responses)
     - [Conversations](#conversations)
+  - [Published Agents](#published-agents)
   - [Container App](#container-app)
+    - 
   - [File search](#file-search)
   - [Code interpreter](#code-interpreter)
   - [Computer use](#computer-use)
   - [Function call](#function-call)
+  - [Web Search](#web-search)
+  - [Bing Grounding](#bing-grounding)
+  - [Bing Custom Search](#bing-custom-search)
+  - [MCP tool](#mcp-tool)
+  - [MCP tool with project connection](#mcp-tool-with-project-connection)
+  - [OpenAPI tool](#openapi-tool)
+  - [OpenAPI tool with project connection](#openapi-tool-project-connection)
+  - [Browser automation](#browser-automation)
+    - [Create Azure Playwright workspace](#create-azure-playwright-workspace)
+    - [Configure Microsoft Foundry](#configure-microsoft-foundry)
+    - [Using Browser automation tool](#using-browser-automation-tool)
+  - [SharePoint tool](#sharepoint-tool)
+  - [Fabric Data Agent tool](#fabric-data-agent-tool)
+    - [Create a Fabric Capacity](#create-a-fabric-capacity)
+    - [Create a Lakehouse data repository](#create-a-lakehouse-data-repository)
+    - [Add a data agent to the Fabric](#add-a-data-agent-to-the-fabric)
+    - [Create a Fabric connection in Microsoft Foundry](#create-a-fabric-connection-in-microsoft-foundry)
+    - [Using Microsoft Fabric tool](#using-microsoft-fabric-tool)
+  - [A2ATool](#a2atool)
+    - [Create a connection to A2A agent](#create-a-connection-to-a2a-agent)
+      - [Classic Microsoft Foundry](#classic-microsoft-foundry)
+      - [New Microsoft Foundry](#new-microsoft-foundry)
+    - [Using A2A Tool](#using-a2a-tool)
 - [Tracing](#tracing)
   - [Tracing to Azure Monitor](#tracing-to-azure-monitor)
   - [Tracing to Console](#tracing-to-console)
@@ -82,7 +107,7 @@ AIProjectClient projectClient = new(
 ProjectOpenAIClient agentClient = projectClient.OpenAI;
 ```
 
-For operations based on OpenAI APIs like `/responses`, `/files`, and `/vector_stores`, you can retrieve `OpenAIResponseClient`, `OpenAIFileClient` and `VectorStoreClient` through the appropriate helper methods:
+For operations based on OpenAI APIs like `/responses`, `/files`, and `/vector_stores`, you can retrieve `ResponsesClient`, `OpenAIFileClient` and `VectorStoreClient` through the appropriate helper methods:
 
 ```C# Snippet:GetOpenAIClientsFromProjects
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent("AGENT_NAME");
@@ -111,19 +136,19 @@ ProjectOpenAIClient projectClient = new(
 ```
 
 ### Additional concepts
-The Azure.AI.Projects.OpenAI framework organized in a way that for each call, requiring the REST API request, there are synchronous and asynchronous counterparts where the letter has the "Async" suffix. For example, the following code demonstrates the creation of a `OpenAIResponse` object.
+The Azure.AI.Projects.OpenAI framework organized in a way that for each call, requiring the REST API request, there are synchronous and asynchronous counterparts where the letter has the "Async" suffix. For example, the following code demonstrates the creation of a `ResponseResult` object.
 
 Synchronous call:
 ```C# Snippet:Sample_CreateResponse_Sync
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
-OpenAIResponse response = responseClient.CreateResponse("What is the size of France in square miles?");
+ResponseResult response = responseClient.CreateResponse("What is the size of France in square miles?");
 ```
 
 Asynchronous call:
 
 ```C# Snippet:Sample_CreateResponse_Async
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
-OpenAIResponse response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
+ResponseResult response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
 In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
@@ -166,7 +191,7 @@ OpenAI API allows you to get the response without creating an agent by using the
 
 ```C# Snippet:Sample_CreateResponse_Async
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForModel(modelDeploymentName);
-OpenAIResponse response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
+ResponseResult response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
 After the response was created we need to wait for it to complete.
@@ -216,20 +241,20 @@ To associate the Response with the Agent the agent reference needs to be created
 ```C# Snippet:CreateResponseBasic_Async
 var agentReference = new AgentReference(name: agentVersion.Name);
 ProjectResponsesClient responseClient = openaiClient.GetProjectResponsesClientForAgent(agentReference);
-ResponseCreationOptions responseCreationOptions = new();
-OpenAIResponse response = await responseClient.CreateResponseAsync(
-    [ResponseItem.CreateUserMessageItem("Write Maxwell's equation in LaTeX format.")],
-    responseCreationOptions);
+CreateResponseOptions responseOptions = new([ResponseItem.CreateUserMessageItem("Write Maxwell's equation in LaTeX format.")]);
+ResponseResult response = await responseClient.CreateResponseAsync(responseOptions);
 Console.WriteLine(response.GetOutputText());
 ```
 
-Previous Response ID may be used to ask follow up questions. In this case we need to set `PreviousResponseId` property on `ResponseCreationOptions` object.
+Previous Response ID may be used to ask follow up questions. In this case we need to set `PreviousResponseId` property on `CreateResponseOptions` object.
 
 ```C# Snippet:FollowUp_Basic_Async
-responseCreationOptions.PreviousResponseId = response.Id;
-response = await responseClient.CreateResponseAsync(
-    [ResponseItem.CreateUserMessageItem("What was the previous question?")],
-    responseCreationOptions);
+CreateResponseOptions followupOptions = new()
+{
+    PreviousResponseId = response.Id,
+    InputItems = { ResponseItem.CreateUserMessageItem("What was the previous question?") },
+};
+response = await responseClient.CreateResponseAsync(followupOptions);
 Console.WriteLine(response.GetOutputText());
 ```
 
@@ -242,7 +267,7 @@ await projectClient.Agents.DeleteAgentAsync(agentName: "myAgent");
 Previously created responses can also be listed, typically to find all responses associated with a particular agent or conversation.
 
 ```C# Snippet:Sample_ListResponses_Async
-await foreach (OpenAIResponse response
+await foreach (ResponseResult response
     in projectClient.OpenAI.Responses.GetProjectResponsesAsync(agent: new AgentReference(agentName), conversationId: conversationId))
 {
     Console.WriteLine($"Matching response: {response.Id}");
@@ -255,7 +280,7 @@ Conversations may be used to store the history of interaction with the agent. To
 set the conversation parameter while calling `GetProjectResponsesClientForAgent`.
 
 ```C# Snippet:ConversationClient
-ResponseCreationOptions responseCreationOptions = new();
+CreateResponseOptions CreateResponseOptions = new();
 // Optionally, use a conversation to automatically maintain state between calls.
 ProjectConversation conversation = await projectClient.OpenAI.Conversations.CreateProjectConversationAsync();
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(AGENT_NAME, conversation);
@@ -289,14 +314,51 @@ _ = await projectClient.OpenAI.Conversations.CreateProjectConversationItemsAsync
 // Use the agent and conversation in a response
 //
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(AGENT_NAME);
-ResponseCreationOptions responseCreationOptions = new()
+CreateResponseOptions responseOptions = new()
 {
     AgentConversationId = EXISTING_CONVERSATION_ID,
+    InputItems =
+    {
+        ResponseItem.CreateUserMessageItem("Tell me a one-line story."),
+    },
 };
 
-List<ResponseItem> items = [ResponseItem.CreateUserMessageItem("Tell me a one-line story.")];
-OpenAIResponse response = await responseClient.CreateResponseAsync(items, responseCreationOptions);
+List<ResponseItem> items = [];
+ResponseResult response = await responseClient.CreateResponseAsync(responseOptions);
 ```
+
+### Published Agents
+
+Published Agents are available outside the Microsoft Foundry and can be used by external applications.
+
+#### Publish Agent
+
+1. Click **New foundry** switch at the top of Microsoft Foundry UI.
+2. Click **Build** at the upper right.
+3. Click **Create agent** button and name your Agent.
+4. Select the created Agent at the central panel and click **Publish** at the upper right corner.
+
+After the Agent is published, you will be provided with two URLs
+- `https://<Account name>.services.ai.azure.com/api/projects/<Project Name>/applications/<Agent Name>/protocols/activityprotocol?api-version=2025-11-15-preview`
+- `https://<Account name>.services.ai.azure.com/api/projects/<Project Name>/applications/<Agent Name>/protocols/openai/responses?=2025-11-15-preview`
+
+The second URL can be usedto call responses API, we will use it to run sample.
+
+### Use the published Agent
+The URL, returned during Agent publishing contains `/openai/responses` path and query parameter, setting `api-version`. These parts need to be removed.
+
+Create a `ProjectResponsesClient`, get the response from Agent and print the output.
+
+Synchronous sample:
+```C# Snippet:Sample_CreateResponse_ReadEndpoint_Sync
+ProjectResponsesClient responseClient = new(
+    projectEndpoint: endpoint,
+    tokenProvider: new DefaultAzureCredential()
+);
+ResponseResult response = responseClient.CreateResponse("What is the size of France in square miles?");
+Console.WriteLine(response.GetOutputText());
+```
+
 
 ### Container App
 
@@ -379,7 +441,7 @@ Now we can ask the agent a question, which requires running python code in the c
 AgentReference agentReference = new(name: agentVersion.Name, version: agentVersion.Version);
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentReference);
 
-OpenAIResponse response = await responseClient.CreateResponseAsync("I need to solve the equation sin(x) + x^2 = 42");
+ResponseResult response = await responseClient.CreateResponseAsync("I need to solve the equation sin(x) + x^2 = 42");
 ```
 
 ### Computer use
@@ -409,36 +471,38 @@ Users can create a message to the Agent, which contains text and screenshots.
 
 ```C# Snippet:Sample_CreateResponse_ComputerUse_Async
 ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
-ResponseCreationOptions responseOptions = new();
-responseOptions.TruncationMode = ResponseTruncationMode.Auto;
-ResponseItem request = ResponseItem.CreateUserMessageItem(
-    [
-        ResponseContentPart.CreateInputTextPart("I need you to help me search for 'OpenAI news'. Please type 'OpenAI news' and submit the search. Once you see search results, the task is complete."),
-        ResponseContentPart.CreateInputImagePart(imageBytes: screenshots["browser_search"], imageBytesMediaType: "image/png", imageDetailLevel: ResponseImageDetailLevel.High)
-    ]
-);
-List<ResponseItem> inputItems = [request];
+CreateResponseOptions responseOptions = new()
+{
+    TruncationMode = ResponseTruncationMode.Auto,
+    InputItems =
+    {
+        ResponseItem.CreateUserMessageItem(
+        [
+            ResponseContentPart.CreateInputTextPart("I need you to help me search for 'OpenAI news'. Please type 'OpenAI news' and submit the search. Once you see search results, the task is complete."),
+            ResponseContentPart.CreateInputImagePart(imageBytes: screenshots["browser_search"], imageBytesMediaType: "image/png", imageDetailLevel: ResponseImageDetailLevel.High)
+        ]),
+    },
+};
 bool computerUseCalled = false;
 string currentScreenshot = "browser_search";
 int limitIteration = 10;
-OpenAIResponse response;
+ResponseResult response;
 do
 {
     response = await CreateResponseAsync(
         responseClient,
-        inputItems,
         responseOptions
     );
     computerUseCalled = false;
     responseOptions.PreviousResponseId = response.Id;
-    inputItems.Clear();
+    responseOptions.InputItems.Clear();
     foreach (ResponseItem responseItem in response.OutputItems)
     {
-        inputItems.Add(responseItem);
+        responseOptions.InputItems.Add(responseItem);
         if (responseItem is ComputerCallResponseItem computerCall)
         {
             currentScreenshot = ProcessComputerUseCall(computerCall, currentScreenshot);
-            inputItems.Add(ResponseItem.CreateComputerCallOutputItem(callId: computerCall.CallId, output: ComputerCallOutput.CreateScreenshotOutput(screenshotImageBytes: screenshots[currentScreenshot], screenshotImageBytesMediaType: "image/png")));
+            responseOptions.InputItems.Add(ResponseItem.CreateComputerCallOutputItem(callId: computerCall.CallId, output: ComputerCallOutput.CreateScreenshotOutput(screenshotImageBytes: screenshots[currentScreenshot], screenshotImageBytesMediaType: "image/png")));
             computerUseCalled = true;
         }
     }
@@ -655,9 +719,9 @@ AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
 To supply functions outputs, we will need to obtain responses multiple times. We will define method `CreateAndWaitForResponseAsync` for brevity.
 
 ```C# Snippet:Sample_CheckResponse_Function_Async
-public static async Task<OpenAIResponse> CreateAndCheckResponseAsync(OpenAIResponseClient responseClient, IEnumerable<ResponseItem> items)
+public static async Task<ResponseResult> CreateAndCheckResponseAsync(ResponsesClient responseClient, IEnumerable<ResponseItem> items)
 {
-    OpenAIResponse response = await responseClient.CreateResponseAsync(
+    ResponseResult response = await responseClient.CreateResponseAsync(
         inputItems: items);
     Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
     return response;
@@ -672,7 +736,7 @@ ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponses
 ResponseItem request = ResponseItem.CreateUserMessageItem("What's the weather like in my favorite city?");
 List<ResponseItem> inputItems = [request];
 bool funcionCalled = false;
-OpenAIResponse response;
+ResponseResult response;
 do
 {
     response = await CreateAndCheckResponseAsync(
@@ -691,6 +755,659 @@ do
     }
 } while (funcionCalled);
 Console.WriteLine(response.GetOutputText());
+```
+
+### Web Search
+
+The `WebSearchTool` allows the agent to perform web search. To improve the results we can set up the search location. After the agent was created, it can be used as usual. When needed it will use web search to answer the question.
+
+```C# Snippet:Sample_CreateAgent_WebSearch_Async
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant that can search the web",
+    Tools = { ResponseTool.CreateWebSearchTool(userLocation: WebSearchToolLocation.CreateApproximateLocation(country: "GB", city: "London", region: "London")), }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+### Azure AI Search
+
+Azure AI Search is an enterprise search system for high-performance applications.
+It integrates with Azure OpenAI Service and Azure Machine Learning, offering advanced
+search technologies like vector search and full-text search. Ideal for knowledge base
+insights, information discovery, and automation. Creating an Agent with Azure AI
+Search requires an existing Azure AI Search Index. For more information and setup
+guides, see [Azure AI Search Tool Guide](https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/azure-ai-search).
+
+```C# Snippet:Sample_CreateAgent_AzureAISearch_Async
+AzureAISearchToolIndex index = new()
+{
+    ProjectConnectionId = aiSearchConnectionName,
+    IndexName = "sample_index",
+    TopK = 5,
+    Filter = "category eq 'sleeping bag'",
+    QueryType = AzureAISearchQueryType.Simple
+};
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant. You must always provide citations for answers using the tool and render them as: `\u3010message_idx:search_idx\u2020source\u3011`.",
+    Tools = { new AzureAISearchAgentTool(new AzureAISearchToolOptions(indexes: [index])) }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+If the agent has found the relevant information in the index, the reference
+and annotation will be provided in the response. In this example, we add the reference and url to the end of the response. Please note that to
+get sensible result, the index needs to have fields "title" and "url" in the search index.
+We have created a helper method to format the reference.
+
+```C# Snippet:Sample_FormatReference_AzureAISearch
+private static string GetFormattedAnnotation(ResponseResult response)
+{
+    foreach (ResponseItem item in response.OutputItems)
+    {
+        if (item is MessageResponseItem messageItem)
+        {
+            foreach (ResponseContentPart content in messageItem.Content)
+            {
+                foreach (ResponseMessageAnnotation annotation in content.OutputTextAnnotations)
+                {
+                    if (annotation is UriCitationMessageAnnotation uriAnnotation)
+                    {
+                        return $" [{uriAnnotation.Title}]({uriAnnotation.Uri})";
+                    }
+                }
+            }
+        }
+    }
+    return "";
+}
+```
+
+Use the helper method to output the result.
+
+```C# Snippet:Sample_WaitForResponse_AzureAISearch
+Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
+Console.WriteLine($"{response.GetOutputText()}{GetFormattedAnnotation(response)}");
+```
+
+The same can be done in the streaming scenarios, however in this case the helper method takes response item.
+
+```C# Snippet:Sample_FormatReference_AzureAISearchStreaming
+private static string GetFormattedAnnotation(ResponseItem item)
+{
+    if (item is MessageResponseItem messageItem)
+    {
+        foreach (ResponseContentPart content in messageItem.Content)
+        {
+            foreach (ResponseMessageAnnotation annotation in content.OutputTextAnnotations)
+            {
+                if (annotation is UriCitationMessageAnnotation uriAnnotation)
+                {
+                    return $" [{uriAnnotation.Title}]({uriAnnotation.Uri})";
+                }
+            }
+        }
+    }
+    return "";
+}
+```
+
+Read the input in streaming mode.
+
+```C# Snippet:Sample_StreamResponse_AzureAISearchStreaming_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+
+string annotation = "";
+string text = "";
+await foreach (StreamingResponseUpdate streamResponse in responseClient.CreateResponseStreamingAsync("What is the temperature rating of the cozynights sleeping bag?"))
+{
+    if (streamResponse is StreamingResponseCreatedUpdate createUpdate)
+    {
+        Console.WriteLine($"Stream response created with ID: {createUpdate.Response.Id}");
+    }
+    else if (streamResponse is StreamingResponseOutputTextDeltaUpdate textDelta)
+    {
+        Console.WriteLine($"Delta: {textDelta.Delta}");
+    }
+    else if (streamResponse is StreamingResponseOutputTextDoneUpdate textDoneUpdate)
+    {
+        text = textDoneUpdate.Text;
+    }
+    else if (streamResponse is StreamingResponseOutputItemDoneUpdate itemDoneUpdate)
+    {
+        if (annotation.Length == 0)
+        {
+            annotation = GetFormattedAnnotation(itemDoneUpdate.Item);
+        }
+    }
+    else if (streamResponse is StreamingResponseErrorUpdate errorUpdate)
+    {
+        throw new InvalidOperationException($"The stream has failed: {errorUpdate.Message}");
+    }
+}
+Console.WriteLine($"{text}{annotation}");
+```
+
+### Bing Grounding
+
+To support the response returned by the Agent, Bing grounding can be used. To implement it,
+create the `BingGroundingAgentTool` and use it in `PromptAgentDefinition` object.
+
+```C# Snippet:Sample_CreateAgent_BingGrounding_Sync
+AIProjectConnection bingConnectionName = projectClient.Connections.GetConnection(connectionName: connectionName);
+BingGroundingAgentTool bingGroundingAgentTool = new(new BingGroundingSearchToolOptions(
+    searchConfigurations: [new BingGroundingSearchConfiguration(projectConnectionId: bingConnectionName.Id)]
+    )
+);
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful agent.",
+    Tools = { bingGroundingAgentTool, }
+};
+AgentVersion agentVersion = projectClient.Agents.CreateAgentVersion(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+If the Bing search returned the result, we can get the URL annotation
+using the same methods we used for AI Search result.
+
+
+Getting the result of Bing grounding in non-streaming scenarios:
+```C# Snippet:Sample_WaitForResponse_BingGrounding
+Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
+Console.WriteLine($"{response.GetOutputText()}{GetFormattedAnnotation(response)}");
+```
+
+Streaming the results:
+```C# Snippet:Sample_StreamResponse_BingGroundingStreaming_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+
+string annotation = "";
+string text = "";
+await foreach (StreamingResponseUpdate streamResponse in responseClient.CreateResponseStreamingAsync("How does wikipedia explain Euler's Identity?"))
+{
+    if (streamResponse is StreamingResponseCreatedUpdate createUpdate)
+    {
+        Console.WriteLine($"Stream response created with ID: {createUpdate.Response.Id}");
+    }
+    else if (streamResponse is StreamingResponseOutputTextDeltaUpdate textDelta)
+    {
+        Console.WriteLine($"Delta: {textDelta.Delta}");
+    }
+    else if (streamResponse is StreamingResponseOutputTextDoneUpdate textDoneUpdate)
+    {
+        text = textDoneUpdate.Text;
+    }
+    else if (streamResponse is StreamingResponseOutputItemDoneUpdate itemDoneUpdate)
+    {
+        if (annotation.Length == 0)
+        {
+            annotation = GetFormattedAnnotation(itemDoneUpdate.Item);
+        }
+    }
+    else if (streamResponse is StreamingResponseErrorUpdate errorUpdate)
+    {
+        throw new InvalidOperationException($"The stream has failed: {errorUpdate.Message}");
+    }
+}
+Console.WriteLine($"{text}{annotation}");
+```
+
+### Bing Custom Search
+
+Along with bing grounding, Agents can use the custom search. To implement it,
+create the `BingCustomSearchAgentTool` and use it in `PromptAgentDefinition` object. The
+use of this tool is like Bing Grounding, however it requires ID of Grounding with Bing
+Custom Search and the name of a search configuration. In this scenario, we use Bing to search
+en.wikipedia.org. This configuration is called "wikipedia" its search URL is configured through Azure.
+
+```C# Snippet:Sample_CreateAgent_CustomBingSearch_Async
+AIProjectConnection bingConnectionName = await projectClient.Connections.GetConnectionAsync(connectionName: connectionName);
+BingCustomSearchAgentTool customBingSearchAgentTool = new(new BingCustomSearchToolParameters(
+    searchConfigurations: [new BingCustomSearchConfiguration(projectConnectionId: bingConnectionName.Id, instanceName: customInstanceName)]
+    )
+);
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful agent.",
+    Tools = { customBingSearchAgentTool, }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+Sending request and formatting the response is done the same way as in Bing Grounding.
+
+### MCP tool
+The `MCPTool` allows Agent to communicate with third party services using [Model Context Protocol (MCP)](https://learn.microsoft.com/windows/ai/mcp/overview).
+To use MCP we need to create agent definition with the `MCPTool`.
+
+```C# Snippet:Sample_CreateAgent_MCPTool_Async
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful agent that can use MCP tools to assist users. Use the available MCP tools to answer questions and perform tasks.",
+    Tools = { ResponseTool.CreateMcpTool(
+        serverLabel: "api-specs",
+        serverUri: new Uri("https://gitmcp.io/Azure/azure-rest-api-specs"),
+        toolCallApprovalPolicy: new McpToolCallApprovalPolicy(GlobalMcpToolCallApprovalPolicy.AlwaysRequireApproval
+    )) }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+Note that in this scenario we are using `GlobalMcpToolCallApprovalPolicy.AlwaysRequireApproval`, which means that any calls to the MCP server need to be approved.
+Because of this setup we will need to get the response and check if we need to approve the call. If no calls were made, we are safe to output the Agent result.
+
+```C# Snippet:Sample_CreateResponse_MCPTool_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+
+CreateResponseOptions nextResponseOptions = new([ResponseItem.CreateUserMessageItem("Please summarize the Azure REST API specifications Readme")]);
+ResponseResult latestResponse = null;
+
+while (nextResponseOptions is not null)
+{
+    latestResponse = await responseClient.CreateResponseAsync(nextResponseOptions);
+    nextResponseOptions = null;
+
+    foreach (ResponseItem responseItem in latestResponse.OutputItems)
+    {
+        if (responseItem is McpToolCallApprovalRequestItem mcpToolCall)
+        {
+            nextResponseOptions = new CreateResponseOptions()
+            {
+                PreviousResponseId = latestResponse.PreviousResponseId,
+            };
+            if (string.Equals(mcpToolCall.ServerLabel, "api-specs"))
+            {
+                Console.WriteLine($"Approving {mcpToolCall.ServerLabel}...");
+                // Automatically approve the MCP request to allow the agent to proceed
+                // In production, you might want to implement more sophisticated approval logic
+                nextResponseOptions.InputItems.Add(ResponseItem.CreateMcpApprovalResponseItem(approvalRequestId: mcpToolCall.Id, approved: true));
+            }
+            else
+            {
+                Console.WriteLine($"Rejecting unknown call {mcpToolCall.ServerLabel}...");
+                nextResponseOptions.InputItems.Add(ResponseItem.CreateMcpApprovalResponseItem(approvalRequestId: mcpToolCall.Id, approved: false));
+            }
+        }
+    }
+}
+Console.WriteLine(latestResponse.GetOutputText());
+```
+
+### MCP tool with project connection
+Running MCP tool with project connection allows you to connect to an MCP server that requires authentication. The only difference from
+the previous example is that we need to provide the connection name. To create connection valid for GitHub please log in to your GitHub profile, click on the profile picture at the upper right corner and select "Settings". At the left panel click "Developer Settings", select "Personal access tokens > Tokens (classic)". At the top choose "Generate new token" and enter password and create a token, which can read public repositories. **Save the token, or keep the page open as once the page is closed, token cannot be shown again!**
+In the Azure portal open Microsoft Foundry you are using, at the left panel select "Management center" and then select "Connected resources". Create new connection of "Custom keys" type; name it and add a key value pair. Set the key name `Authorization` and the value should have a form of `Bearer your_github_token`.
+When the connection is created, we can set it on the MCPTool and use it in `PromptAgentDefinition`.
+
+```C# Snippet:Sample_CreateAgent_MCPTool_ProjectConnection_Async
+McpTool tool = ResponseTool.CreateMcpTool(
+        serverLabel: "api-specs",
+        serverUri: new Uri("https://api.githubcopilot.com/mcp"),
+        toolCallApprovalPolicy: new McpToolCallApprovalPolicy(GlobalMcpToolCallApprovalPolicy.AlwaysRequireApproval
+    ));
+tool.ProjectConnectionId = mcpProjectConnectionName;
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful agent that can use MCP tools to assist users. Use the available MCP tools to answer questions and perform tasks.",
+    Tools = { tool }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+In this scenario the agent can be asked questions about GitHub profile, the token is attributed to. The responses from Agent with project connection should be
+handled the same way as described in the MCP tool section.
+
+### OpenAPI tool
+OpenAPI tool allows Agent to get information from Web services using [OpenAPI Specification](https://en.wikipedia.org/wiki/OpenAPI_Specification).
+To use the OpenAPI tool, we need to Create the `OpenAPIFunctionDefinition` object and provide the specification file to its constructor. `OpenAPIAgentTool` contains a `Description` property, serving as a hint when this tool should be used.
+
+```C# Snippet:Sample_CreateAgent_OpenAPI_Async
+string filePath = GetFile();
+OpenAPIFunctionDefinition toolDefinition = new(
+    name: "get_weather",
+    spec: BinaryData.FromBytes(BinaryData.FromBytes(File.ReadAllBytes(filePath))),
+    auth: new OpenAPIAnonymousAuthenticationDetails()
+);
+toolDefinition.Description = "Retrieve weather information for a location.";
+OpenAPIAgentTool openapiTool = new(toolDefinition);
+
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant.",
+    Tools = {openapiTool}
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+The Agent created this way can be asked questions, specific to the Web service.
+
+```C# Snippet:Sample_CreateResponse_OpenAPI_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+ResponseResult response = await responseClient.CreateResponseAsync(
+        userInputText: "Use the OpenAPI tool to print out, what is the weather in Seattle, WA today."
+    );
+Console.WriteLine(response.GetOutputText());
+```
+
+### OpenAPI tool with project connection
+Some Web services, using OpenAPI specification, may require authentication, which can be done through the Microsoft Foundry project connection.
+In our example we are using TripAdvisor  specification, which use key authentication.
+To create a connection, in the Azure portal open Microsoft Foundry you are using, at the left panel select "Management center" and then select "Connected resources", and, finally, create new connection of "Custom keys" type; name it and add a key value pair.
+Add key called "Key" and value with the actual TripAdvisor key.
+Contrary to OpenAPI tool without authentication, in this scenario we need to provide tool constructor with `OpenAPIProjectConnectionAuthenticationDetails` initialized with `OpenAPIProjectConnectionSecurityScheme`.
+
+```C# Snippet:Sample_CreateAgent_OpenAPIProjectConnection_Sync
+string filePath = GetFile();
+AIProjectConnection tripadvisorConnection = projectClient.Connections.GetConnection("tripadvisor");
+OpenAPIFunctionDefinition toolDefinition = new(
+    name: "tripadvisor",
+    spec: BinaryData.FromBytes(BinaryData.FromBytes(File.ReadAllBytes(filePath))),
+    auth: new OpenAPIProjectConnectionAuthenticationDetails(new OpenAPIProjectConnectionSecurityScheme(
+        projectConnectionId: tripadvisorConnection.Id
+    ))
+);
+toolDefinition.Description = "Trip Advisor API to get travel information.";
+OpenAPIAgentTool openapiTool = new(toolDefinition);
+
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant.",
+    Tools = { openapiTool }
+};
+AgentVersion agentVersion = projectClient.Agents.CreateAgentVersion(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+We recommend testing the Web service access before running production scenarios. It can be done by setting
+`ToolChoice = ResponseToolChoice.CreateRequiredChoice()` in the `CreateResponseOptions`. This setting will
+force Agent to use tool and will trigger the error if it is not accessible.
+
+```C# Snippet:Sample_CreateResponse_OpenAPIProjectConnection_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+CreateResponseOptions responseOptions = new()
+{
+    ToolChoice = ResponseToolChoice.CreateRequiredChoice(),
+    InputItems =
+    {
+        ResponseItem.CreateUserMessageItem("Recommend me 5 top hotels in paris, France."),
+    }
+};
+ResponseResult response = await responseClient.CreateResponseAsync(responseOptions);
+Console.WriteLine(response.GetOutputText());
+```
+
+### Browser automation
+
+Playwright is a Node.js library for browser automation. Microsoft provides the [Azure Playwright workspace](https://learn.microsoft.com/javascript/api/overview/azure/playwright-readme), which can execute Playwright-based tasks triggered by an Agent using the BrowserAutomationAgentTool.
+
+#### Create Azure Playwright workspace
+
+1. Deploy an Azure Playwright workspace.
+2. In the **Get started** section, open **2. Set up authentication**.
+3. **Select Service Access Token**, then choose **Generate Token**. **Save the token immediately-once you close the page, it cannot be viewed again.**
+
+#### Configure Microsoft Foundry
+
+1. Open the left navigation and select **Management center**.
+2. Choose **Connected resources**.
+3. Create a new connection of type **Serverless Model**.
+4. Provide a name, then paste your Access Token into the **Key** field.
+5. Set the Playwright Workspace Browser endpoint as the **Target URI**. You can find this endpoint on the Workspace **Overview page**. It begins with `wss://`.
+
+#### Using Browser automation tool
+
+Please note that Browser automation operations may take longer than typical calls to process. Using background mode for Responses or applying a network timeout of at least five minutes for non-background calls is highly recommended.
+
+```C# Snippet:Sample_CreateProjectClient_BrowserAutomotion
+var projectEndpoint = System.Environment.GetEnvironmentVariable("PROJECT_ENDPOINT");
+var modelDeploymentName = System.Environment.GetEnvironmentVariable("MODEL_DEPLOYMENT_NAME");
+var playwrightConnectionName = System.Environment.GetEnvironmentVariable("PLAYWRIGHT_CONNECTION_NAME");
+AIProjectClientOptions options = new()
+{
+    NetworkTimeout = TimeSpan.FromMinutes(5)
+};
+AIProjectClient projectClient = new(endpoint: new Uri(projectEndpoint), tokenProvider: new DefaultAzureCredential(), options: options);
+```
+
+To use Azure Playwright workspace we need to create agent with `BrowserAutomationAgentTool`.
+
+```C# Snippet:Sample_CreateAgent_BrowserAutomotion_Async
+AIProjectConnection playwrightConnection = await projectClient.Connections.GetConnectionAsync(playwrightConnectionName);
+BrowserAutomationAgentTool playwrightTool = new(
+    new BrowserAutomationToolParameters(
+        new BrowserAutomationToolConnectionParameters(playwrightConnection.Id)
+    ));
+
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are an Agent helping with browser automation tasks.\n" +
+    "You can answer questions, provide information, and assist with various tasks\n" +
+    "related to web browsing using the Browser Automation tool available to you.",
+    Tools = {playwrightTool}
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+Streaming response outputs with browser automation provides incremental updates as the automation is processed. This is advised for interactive scenarios, as browser automation can require several minutes to fully complete.
+
+```C# Snippet:Sample_CreateResponse_BrowserAutomotion_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+CreateResponseOptions responseOptions = new()
+{
+    ToolChoice = ResponseToolChoice.CreateRequiredChoice(),
+    StreamingEnabled = true,
+    InputItems =
+    {
+        ResponseItem.CreateUserMessageItem("Your goal is to report the percent of Microsoft year-to-date stock price change.\n" +
+            "To do that, go to the website finance.yahoo.com.\n" +
+            "At the top of the page, you will find a search bar.\n" +
+            "Enter the value 'MSFT', to get information about the Microsoft stock price.\n" +
+            "At the top of the resulting page you will see a default chart of Microsoft stock price.\n" +
+            "Click on 'YTD' at the top of that chart, and report the percent value that shows up just below it.")
+    }
+};
+await foreach (StreamingResponseUpdate update in responseClient.CreateResponseStreamingAsync(responseOptions))
+{
+    ParseResponse(update);
+}
+```
+
+### SharePoint tool
+`SharepointAgentTool` allows Agent to access SharePoint pages to get the data context. Use the SharePoint connection name as it is shown in the connections section of Microsoft Foundry to get the connection. Get the connection ID to initialize the `SharePointGroundingToolOptions`, which will be used to create `SharepointAgentTool`.
+
+```C# Snippet:Sample_CreateAgent_Sharepoint_Async
+AIProjectConnection sharepointConnection = await projectClient.Connections.GetConnectionAsync(sharepointConnectionName);
+SharePointGroundingToolOptions sharepointToolOption = new()
+{
+    ProjectConnections = { new ToolProjectConnection(projectConnectionId: sharepointConnection.Id) }
+};
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant.",
+    Tools = { new SharepointAgentTool(sharepointToolOption), }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+Create the response and make sure we are always using tool.
+
+```C# Snippet:Sample_CreateResponse_Sharepoint_Async
+ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponsesClientForAgent(agentVersion.Name);
+CreateResponseOptions responseOptions = new()
+{
+    ToolChoice = ResponseToolChoice.CreateRequiredChoice(),
+    InputItems = { ResponseItem.CreateUserMessageItem("What is Contoso whistleblower policy") },
+};
+ResponseResult response = await responseClient.CreateResponseAsync(responseOptions);
+```
+
+SharePoint tool can create the reference to the page, grounding the data. We will create the `GetFormattedAnnotation` method to get the URI annotation.
+
+```C# Snippet:Sample_FormatReference_Sharepoint
+private static string GetFormattedAnnotation(ResponseResult response)
+{
+    foreach (ResponseItem item in response.OutputItems)
+    {
+        if (item is MessageResponseItem messageItem)
+        {
+            foreach (ResponseContentPart content in messageItem.Content)
+            {
+                foreach (ResponseMessageAnnotation annotation in content.OutputTextAnnotations)
+                {
+                    if (annotation is UriCitationMessageAnnotation uriAnnotation)
+                    {
+                        return $" [{uriAnnotation.Title}]({uriAnnotation.Uri})";
+                    }
+                }
+            }
+        }
+    }
+    return "";
+}
+```
+
+Print the Agent output and add the annotation at the end.
+
+```C# Snippet:Sample_WaitForResponse_Sharepoint
+Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
+Console.WriteLine($"{response.GetOutputText()}{GetFormattedAnnotation(response)}");
+```
+
+### Fabric Data Agent tool
+
+As a prerequisite to this example, we will need to create Microsoft Fabric with Lakehouse data repository. Please see the end-to end tutorials on using Microsoft Fabric [here](https://learn.microsoft.com/fabric/fundamentals/end-to-end-tutorials) for more information.
+
+#### Create a Fabric Capacity
+
+1. Create a **Fabric Capacity** resource in the Azure Portal **(attention, the rate is being applied!)**.
+2. Create the workspace in [Power BI portal](https://msit.powerbi.com/home) by clicking **Workspaces** icon on the left panel.
+3. At the bottom click **+ New workspace**.
+4. At the right panel populate the name of a workspace, select **Fabric capacity** as a **License mode**; in the **Capacity** dropdown select Fabric Capacity resource we have just created.
+5. Click **Apply**.
+
+#### Create a Lakehouse data repository
+
+1. Click a **Lakehouse** icon in **Other items you can create with Microsoft Fabric** section and name the new data repository.
+2. Download the [public holidays data set](https://github.com/microsoft/fabric-samples/raw/refs/heads/main/docs-samples/data-engineering/Lakehouse/PublicholidaysSample/publicHolidays.parquet).
+3. At the Lakehouse menu select **Get data > Upload files** and upload the `publicHolidays.parquet`.
+4. In the **Files** section, click on three dots next to uploaded file and click **Load to Tables > new table** and then **Load** in the opened window.
+5. Delete the uploaded file, by clicking three dots and selecting **Delete**.
+
+#### Add a data agent to the Fabric
+
+1. At the top panel select **Add to data agent > New data agent** and name the newly created Agent.
+2. In the open view on the left panel select the Lakehouse "publicholidays" table and set a checkbox next to it.
+4. Ask the question we will further use in the Requests API. "What was the number of public holidays in Norway in 2024?"
+5. The Agent should show a table containing one column called "NumberOfPublicHolidays" with the single row, containing number 62.
+6. Click **Publish** and in the description add "Agent has data about public holidays." If this stage was omitted the error, saying "Stage configuration not found." will be returned during sample run.
+
+#### Create a Fabric connection in Microsoft Foundry.
+
+After we have created the Fabric data Agent, we can connect fabric to our Microsoft Foundry.
+1. Open the [Power BI](https://msit.powerbi.com/home) and select the workspace we have created.
+2. In the open view select the Agent we have created.
+3. The URL of the opened page will look like `https://msit.powerbi.com/groups/%workspace_id%/aiskills/%artifact_id%?experience=power-bi`, where `workspace_id` and `artifact_id` are GUIDs in a form like `811acded-d5f7-11f0-90a4-04d3b0c6010a`.
+4. In the **Microsoft Foundry** you are using for the experimentation, on the left panel select **Management center**.
+5. Choose **Connected resources**.
+6. Create a new connection of type **Microsoft Fabric**.
+7. Populate **workspace-id** and **artifact-id** fields with GUIDs found in the Microsoft Data Agent URL and name the new connection.
+
+#### Using Microsoft Fabric tool
+
+To use the Agent with Microsoft Fabric tool, we need to include `MicrosoftFabricAgentTool` into `PromptAgentDefinition`.
+
+```C# Snippet:Sample_CreateAgent_Fabric_Async
+AIProjectConnection fabricConnection = await projectClient.Connections.GetConnectionAsync(fabricConnectionName);
+FabricDataAgentToolOptions fabricToolOption = new()
+{
+    ProjectConnections = { new ToolProjectConnection(projectConnectionId: fabricConnection.Id) }
+};
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant.",
+    Tools = { new MicrosoftFabricAgentTool(fabricToolOption), }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
+```
+
+### A2ATool
+
+The [A2A or Agent2Agent](https://a2a-protocol.org/latest/) protocol is designed to enable seamless communication between agents. In the scenario below we assume that we have the application endpoint, which complies  with A2A; the authentication is happening through header `x-api-key` value.
+
+#### Create a connection to A2A agent
+
+The connection to A2A service can be created in two ways. In classic Microsoft Foundry, we need to create Custom keys connection, however in the new version of Microsoft Foundry we can create the specialized A2A connection.
+
+##### Classic Microsoft Foundry
+
+1. In the **Microsoft Foundry** you are using for the experimentation, on the left panel select **Management center**.
+2. Choose **Connected resources**.
+3. Create a new connection of type **Custom keys**.
+4. Add two key-value pairs:
+   * x-api-key: \<your key\>
+   * type: custom_A2A
+5. Name and save the connection.
+
+##### New Microsoft Foundry
+
+If we are using the Agent2agent connection, we do not need to provide the endpoint as it already contains it.
+
+1. Click **New foundry** switch at the top of Microsoft Foundry UI.
+2. Click **Tools** on the left panel.
+3. Click **Connect tool** at the upper right corner.
+4. In the open window select **Custom** tab.
+5. Select **Agent2agent(A2A)** and click **Create**.
+6. Populate **Name** and **A2A Agent Endpoint**, leave **Authentication** being "Key-based".
+7. In the **Credential** Section set key "x-api-key" with the value being your secret key.
+
+#### Using A2A Tool
+
+To use the Agent with A2A tool, we need to include `A2ATool` into `PromptAgentDefinition`.
+
+```C# Snippet:Sample_CreateAgent_AgentToAgent_Async
+AIProjectConnection a2aConnection = projectClient.Connections.GetConnection(a2aConnectionName);
+A2ATool a2aTool = new()
+{
+    ProjectConnectionId = a2aConnection.Id
+};
+if (!string.Equals(a2aConnection.Type.ToString(), "RemoteA2A"))
+{
+    if (a2aBaseUri is null)
+    {
+        throw new InvalidOperationException($"The connection {a2aConnection.Name} is of {a2aConnection.Type.ToString()} type and does not carry the A2A service base URI. Please provide this value through A2A_BASE_URI environment variable.");
+    }
+    a2aTool.BaseUri = new Uri(a2aBaseUri);
+}
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful assistant.",
+    Tools = { a2aTool }
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
 ```
 
 ## Tracing
@@ -717,7 +1434,7 @@ For tracing to Azure Monitor from your application, the preferred option is to u
 dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
 ```
 
-More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.4/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
+More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.5/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
 
 Another option is to use Azure.Monitor.OpenTelemetry.Exporter package. Install the package with [NuGet](https://www.nuget.org/ )
 ```shell
@@ -731,6 +1448,7 @@ var tracerProvider = Sdk.CreateTracerProviderBuilder()
     .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("AgentTracingSample"))
     .AddAzureMonitorTraceExporter().Build();
 ```
+
 
 ### Tracing to Console
 
@@ -793,10 +1511,10 @@ See the [Azure SDK CONTRIBUTING.md][aiprojects_contrib] for details on building,
 [nuget]: https://dev.azure.com/azure-sdk/public/_artifacts/feed/azure-sdk-for-net/NuGet/Azure.AI.Projects.OpenAI
 <!-- replace  feature/ai-foundry/agents-v2 -> main -->
 [source_code]: https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI
-[product_doc]: https://learn.microsoft.com/azure/ai-studio/
+[product_doc]: https://learn.microsoft.com//azure/ai-foundry/
 [azure_identity]: https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 [azure_identity_dac]: https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet
-[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.4/CONTRIBUTING.md
+[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.5/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
