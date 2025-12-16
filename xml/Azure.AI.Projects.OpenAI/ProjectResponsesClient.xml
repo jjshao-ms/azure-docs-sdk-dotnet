@@ -1,15 +1,15 @@
 <Type Name="ProjectResponsesClient" FullName="Azure.AI.Projects.OpenAI.ProjectResponsesClient">
-  <TypeSignature Language="C#" Value="public class ProjectResponsesClient : OpenAI.Responses.OpenAIResponseClient" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectResponsesClient extends OpenAI.Responses.OpenAIResponseClient" />
+  <TypeSignature Language="C#" Value="public class ProjectResponsesClient : OpenAI.Responses.ResponsesClient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectResponsesClient extends OpenAI.Responses.ResponsesClient" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.OpenAI.ProjectResponsesClient" />
-  <TypeSignature Language="VB.NET" Value="Public Class ProjectResponsesClient&#xA;Inherits OpenAIResponseClient" />
-  <TypeSignature Language="F#" Value="type ProjectResponsesClient = class&#xA;    inherit OpenAIResponseClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectResponsesClient&#xA;Inherits ResponsesClient" />
+  <TypeSignature Language="F#" Value="type ProjectResponsesClient = class&#xA;    inherit ResponsesClient" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>OpenAI.Responses.OpenAIResponseClient</BaseTypeName>
+    <BaseTypeName>OpenAI.Responses.ResponsesClient</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -147,26 +147,24 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponse">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt; CreateResponse (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt; CreateResponse(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponse(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponse (inputItems As IEnumerable(Of ResponseItem), Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of OpenAIResponse)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponse : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&#xA;override this.CreateResponse : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;" Usage="projectResponsesClient.CreateResponse (inputItems, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt; CreateResponse (OpenAI.Responses.CreateResponseOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt; CreateResponse(class OpenAI.Responses.CreateResponseOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponse(OpenAI.Responses.CreateResponseOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponse (options As CreateResponseOptions, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponse : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&#xA;override this.CreateResponse : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="projectResponsesClient.CreateResponse (options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;</ReturnType>
+        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="inputItems" Type="System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt;" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="options" Type="OpenAI.Responses.CreateResponseOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="inputItems">To be added.</param>
         <param name="options">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
@@ -175,54 +173,80 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponse">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt; CreateResponse (string userInputText, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt; CreateResponse(string userInputText, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponse(System.String,OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponse (userInputText As String, Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of OpenAIResponse)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponse : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&#xA;override this.CreateResponse : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;" Usage="projectResponsesClient.CreateResponse (userInputText, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt; CreateResponse (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt; CreateResponse(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponse(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponse (inputItems As IEnumerable(Of ResponseItem), Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponse : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&#xA;override this.CreateResponse : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="projectResponsesClient.CreateResponse (inputItems, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="userInputText" Type="System.String" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="userInputText">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateResponseAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt; CreateResponseAsync (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt;&gt; CreateResponseAsync(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseAsync(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseAsync (inputItems As IEnumerable(Of ResponseItem), Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of OpenAIResponse))" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;&#xA;override this.CreateResponseAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;" Usage="projectResponsesClient.CreateResponseAsync (inputItems, options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="inputItems" Type="System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt;" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="inputItems">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponse">
+      <MemberSignature Language="C#" Value="public override System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt; CreateResponse (string userInputText, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt; CreateResponse(string userInputText, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponse(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponse (userInputText As String, Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponse : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&#xA;override this.CreateResponse : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="projectResponsesClient.CreateResponse (userInputText, previousResponseId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userInputText" Type="System.String" />
+        <Parameter Name="previousResponseId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userInputText">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponseAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync (OpenAI.Responses.CreateResponseOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync(class OpenAI.Responses.CreateResponseOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseAsync(OpenAI.Responses.CreateResponseOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseAsync (options As CreateResponseOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of ResponseResult))" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseAsync : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;&#xA;override this.CreateResponseAsync : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;" Usage="projectResponsesClient.CreateResponseAsync (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="OpenAI.Responses.CreateResponseOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
         <param name="options">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
@@ -231,26 +255,80 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponseAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt; CreateResponseAsync (string userInputText, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt;&gt; CreateResponseAsync(string userInputText, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseAsync(System.String,OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseAsync (userInputText As String, Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of OpenAIResponse))" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseAsync : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;&#xA;override this.CreateResponseAsync : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;" Usage="projectResponsesClient.CreateResponseAsync (userInputText, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseAsync(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseAsync (inputItems As IEnumerable(Of ResponseItem), Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of ResponseResult))" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;&#xA;override this.CreateResponseAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;" Usage="projectResponsesClient.CreateResponseAsync (inputItems, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.OpenAIResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputItems" Type="System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt;" />
+        <Parameter Name="previousResponseId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="inputItems">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponseAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync (string userInputText, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync(string userInputText, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseAsync (userInputText As String, Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of ResponseResult))" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;&#xA;override this.CreateResponseAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;" Usage="projectResponsesClient.CreateResponseAsync (userInputText, previousResponseId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="userInputText" Type="System.String" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="userInputText">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponseStreaming">
+      <MemberSignature Language="C#" Value="public override System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming (OpenAI.Responses.CreateResponseOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming(class OpenAI.Responses.CreateResponseOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreaming(OpenAI.Responses.CreateResponseOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreaming (options As CreateResponseOptions, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreaming : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreaming : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreaming (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="OpenAI.Responses.CreateResponseOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
         <param name="options">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
@@ -259,11 +337,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponseStreaming">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreaming(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreaming (inputItems As IEnumerable(Of ResponseItem), Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingResponseUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseStreaming : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreaming : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreaming (inputItems, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreaming(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreaming (inputItems As IEnumerable(Of ResponseItem), Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreaming : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreaming : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreaming (inputItems, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -274,12 +352,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="inputItems" Type="System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt;" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="inputItems">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -287,11 +365,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponseStreaming">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming (string userInputText, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming(string userInputText, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreaming(System.String,OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreaming (userInputText As String, Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingResponseUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseStreaming : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreaming : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreaming (userInputText, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming (string userInputText, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreaming(string userInputText, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreaming(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreaming (userInputText As String, Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreaming : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreaming : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreaming (userInputText, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -302,11 +380,37 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="userInputText" Type="System.String" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="userInputText">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponseStreamingAsync">
+      <MemberSignature Language="C#" Value="public override System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync (OpenAI.Responses.CreateResponseOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync(class OpenAI.Responses.CreateResponseOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreamingAsync(OpenAI.Responses.CreateResponseOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreamingAsync (options As CreateResponseOptions, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreamingAsync : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreamingAsync : OpenAI.Responses.CreateResponseOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreamingAsync (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="OpenAI.Responses.CreateResponseOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
         <param name="options">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
@@ -315,11 +419,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponseStreamingAsync">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreamingAsync(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreamingAsync (inputItems As IEnumerable(Of ResponseItem), Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingResponseUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseStreamingAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreamingAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreamingAsync (inputItems, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync (System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync(class System.Collections.Generic.IEnumerable`1&lt;class OpenAI.Responses.ResponseItem&gt; inputItems, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreamingAsync(System.Collections.Generic.IEnumerable{OpenAI.Responses.ResponseItem},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreamingAsync (inputItems As IEnumerable(Of ResponseItem), Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreamingAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreamingAsync : seq&lt;OpenAI.Responses.ResponseItem&gt; * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreamingAsync (inputItems, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -330,12 +434,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="inputItems" Type="System.Collections.Generic.IEnumerable&lt;OpenAI.Responses.ResponseItem&gt;" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="inputItems">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -343,11 +447,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponseStreamingAsync">
-      <MemberSignature Language="C#" Value="public override System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync (string userInputText, OpenAI.Responses.ResponseCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync(string userInputText, class OpenAI.Responses.ResponseCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreamingAsync(System.String,OpenAI.Responses.ResponseCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreamingAsync (userInputText As String, Optional options As ResponseCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingResponseUpdate)" />
-      <MemberSignature Language="F#" Value="abstract member CreateResponseStreamingAsync : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreamingAsync : string * OpenAI.Responses.ResponseCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreamingAsync (userInputText, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public override System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync (string userInputText, string previousResponseId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.StreamingResponseUpdate&gt; CreateResponseStreamingAsync(string userInputText, string previousResponseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.CreateResponseStreamingAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResponseStreamingAsync (userInputText As String, Optional previousResponseId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of StreamingResponseUpdate)" />
+      <MemberSignature Language="F#" Value="abstract member CreateResponseStreamingAsync : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;&#xA;override this.CreateResponseStreamingAsync : string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.StreamingResponseUpdate&gt;" Usage="projectResponsesClient.CreateResponseStreamingAsync (userInputText, previousResponseId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
@@ -358,12 +462,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="userInputText" Type="System.String" />
-        <Parameter Name="options" Type="OpenAI.Responses.ResponseCreationOptions" />
+        <Parameter Name="previousResponseId" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="userInputText">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="previousResponseId">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -371,18 +475,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectResponses">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt; GetProjectResponses (Azure.AI.Projects.OpenAI.AgentReference agent = default, string conversationId = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt; GetProjectResponses(class Azure.AI.Projects.OpenAI.AgentReference agent, string conversationId, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;OpenAI.Responses.ResponseResult&gt; GetProjectResponses (Azure.AI.Projects.OpenAI.AgentReference agent = default, string conversationId = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class OpenAI.Responses.ResponseResult&gt; GetProjectResponses(class Azure.AI.Projects.OpenAI.AgentReference agent, string conversationId, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.GetProjectResponses(Azure.AI.Projects.OpenAI.AgentReference,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectResponses (Optional agent As AgentReference = Nothing, Optional conversationId As String = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of OpenAIResponse)" />
-      <MemberSignature Language="F#" Value="abstract member GetProjectResponses : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;&#xA;override this.GetProjectResponses : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;" Usage="projectResponsesClient.GetProjectResponses (agent, conversationId, limit, order, after, before, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectResponses (Optional agent As AgentReference = Nothing, Optional conversationId As String = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectResponses : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.ResponseResult&gt;&#xA;override this.GetProjectResponses : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="projectResponsesClient.GetProjectResponses (agent, conversationId, limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.CollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;</ReturnType>
+        <ReturnType>System.ClientModel.CollectionResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="agent" Type="Azure.AI.Projects.OpenAI.AgentReference" />
@@ -407,18 +511,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectResponsesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt; GetProjectResponsesAsync (Azure.AI.Projects.OpenAI.AgentReference agent = default, string conversationId = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.OpenAIResponse&gt; GetProjectResponsesAsync(class Azure.AI.Projects.OpenAI.AgentReference agent, string conversationId, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.ResponseResult&gt; GetProjectResponsesAsync (Azure.AI.Projects.OpenAI.AgentReference agent = default, string conversationId = default, int? limit = default, string order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class OpenAI.Responses.ResponseResult&gt; GetProjectResponsesAsync(class Azure.AI.Projects.OpenAI.AgentReference agent, string conversationId, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ProjectResponsesClient.GetProjectResponsesAsync(Azure.AI.Projects.OpenAI.AgentReference,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectResponsesAsync (Optional agent As AgentReference = Nothing, Optional conversationId As String = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of OpenAIResponse)" />
-      <MemberSignature Language="F#" Value="abstract member GetProjectResponsesAsync : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;&#xA;override this.GetProjectResponsesAsync : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;" Usage="projectResponsesClient.GetProjectResponsesAsync (agent, conversationId, limit, order, after, before, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectResponsesAsync (Optional agent As AgentReference = Nothing, Optional conversationId As String = Nothing, Optional limit As Nullable(Of Integer) = Nothing, Optional order As String = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectResponsesAsync : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.ResponseResult&gt;&#xA;override this.GetProjectResponsesAsync : Azure.AI.Projects.OpenAI.AgentReference * string * Nullable&lt;int&gt; * string * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="projectResponsesClient.GetProjectResponsesAsync (agent, conversationId, limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.OpenAIResponse&gt;</ReturnType>
+        <ReturnType>System.ClientModel.AsyncCollectionResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="agent" Type="Azure.AI.Projects.OpenAI.AgentReference" />
