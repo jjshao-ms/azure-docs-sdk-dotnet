@@ -1,6 +1,6 @@
 {
   "Name": "Azure.ResourceManager.Nginx",
-  "Version": "1.1.0-beta.3",
+  "Version": "1.1.0-beta.4",
   "DevVersion": null,
   "DirectoryPath": "sdk/nginx/Azure.ResourceManager.Nginx",
   "ServiceDirectory": "nginx",
@@ -10,16 +10,23 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.ResourceManager.Nginx",
-  "ReleaseStatus": "2025-02-14",
+  "ReleaseStatus": "2025-12-16",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "safeName": "AzureResourceManagerNginx",
-    "name": "Azure.ResourceManager.Nginx"
+    "name": "Azure.ResourceManager.Nginx",
+    "triggeringPaths": [
+      "/sdk/nginx/ci.mgmt.yml"
+    ],
+    "safeName": "AzureResourceManagerNginx"
   },
   "CIParameters": {
-    "CIMatrixConfigs": []
+    "BuildSnippets": true,
+    "CIMatrixConfigs": [],
+    "AOTTestInputs": [],
+    "CheckAOTCompat": true
   },
+  "SpecProjectPath": "specification/nginx/Nginx.Management",
   "Namespaces": [
     "Azure.ResourceManager.Nginx",
     "Azure.ResourceManager.Nginx.Mocking",
