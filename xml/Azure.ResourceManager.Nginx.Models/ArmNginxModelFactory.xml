@@ -14,10 +14,64 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="NginxAnalysisConfig">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig NginxAnalysisConfig (string rootFile = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; protectedFiles = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig NginxAnalysisConfig(string rootFile, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; protectedFiles, class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxAnalysisConfig(System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationFile},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile},Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxAnalysisConfig (Optional rootFile As String = Nothing, Optional files As IEnumerable(Of NginxConfigurationFile) = Nothing, Optional protectedFiles As IEnumerable(Of NginxConfigurationContentProtectedFile) = Nothing, Optional package As NginxConfigurationPackage = Nothing) As NginxAnalysisConfig" />
+      <MemberSignature Language="F#" Value="static member NginxAnalysisConfig : string * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; * Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage -&gt; Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxAnalysisConfig (rootFile, files, protectedFiles, package)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootFile" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="files" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="package" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="rootFile"> The root file of the NGINX config file(s). It must match one of the files' filepath. </param>
+        <param name="files" />
+        <param name="protectedFiles" />
+        <param name="package"> Nginx Configuration Package. </param>
+        <summary> The NginxAnalysisConfig. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxAnalysisContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxAnalysisContent NginxAnalysisContent (Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig config = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxAnalysisContent NginxAnalysisContent(class Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxAnalysisContent(Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxAnalysisContent (Optional config As NginxAnalysisConfig = Nothing) As NginxAnalysisContent" />
+      <MemberSignature Language="F#" Value="static member NginxAnalysisContent : Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig -&gt; Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxAnalysisContent config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxAnalysisContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Azure.ResourceManager.Nginx.Models.NginxAnalysisConfig" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="config" />
+        <summary> The request body for creating an analysis for an NGINX configuration. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NginxAnalysisDiagnostic">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxAnalysisDiagnostic NginxAnalysisDiagnostic (string id = default, string directive = default, string description = default, string file = default, float line = 0, string message = default, string rule = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxAnalysisDiagnostic NginxAnalysisDiagnostic(string id, string directive, string description, string file, float32 line, string message, string rule) cil managed" />
@@ -49,7 +103,7 @@
         <param name="line" />
         <param name="message" />
         <param name="rule" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisDiagnostic" />. </summary>
+        <summary> An error object found during the analysis of an NGINX configuration. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisDiagnostic" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +129,7 @@
       <Docs>
         <param name="status"> The status of the analysis. </param>
         <param name="data" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisResult" />. </summary>
+        <summary> The response body for an analysis request. Contains the status of the analysis and any errors. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +155,7 @@
       <Docs>
         <param name="errors" />
         <param name="diagnostics" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisResultDetails" />. </summary>
+        <summary> The NginxAnalysisResultDetails. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxAnalysisResultDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,36 +184,39 @@
         <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties" />
-        <param name="location" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.NginxCertificateData" />. </summary>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> Nginx Certificate Properties. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <summary> Nginx Certificate. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.NginxCertificateData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxCertificateProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxCertificateProperties NginxCertificateProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, string keyVirtualPath = default, string certificateVirtualPath = default, string keyVaultSecretId = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxCertificateProperties NginxCertificateProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, string keyVirtualPath = default, string certificateVirtualPath = default, string keyVaultSecretId = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxCertificateProperties NginxCertificateProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, string keyVirtualPath, string certificateVirtualPath, string keyVaultSecretId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxCertificateProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxCertificateProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional keyVirtualPath As String = Nothing, Optional certificateVirtualPath As String = Nothing, Optional keyVaultSecretId As String = Nothing) As NginxCertificateProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxCertificateProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional keyVirtualPath As String = Nothing, Optional certificateVirtualPath As String = Nothing, Optional keyVaultSecretId As String = Nothing) As NginxCertificateProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NginxCertificateProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * string * string * string -&gt; Azure.ResourceManager.Nginx.Models.NginxCertificateProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxCertificateProperties (provisioningState, keyVirtualPath, certificateVirtualPath, keyVaultSecretId)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxCertificateProperties NginxCertificateProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState, string keyVirtualPath, string certificateVirtualPath, string keyVaultSecretId);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxCertificateProperties (provisioningState As Nullable(Of NginxProvisioningState), keyVirtualPath As String, certificateVirtualPath As String, keyVaultSecretId As String) As NginxCertificateProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Nginx.Models.NginxCertificateProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="keyVirtualPath" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="certificateVirtualPath" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="keyVaultSecretId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" />
+        <Parameter Name="keyVirtualPath" Type="System.String" />
+        <Parameter Name="certificateVirtualPath" Type="System.String" />
+        <Parameter Name="keyVaultSecretId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="provisioningState" />
@@ -196,25 +253,25 @@
         <Parameter Name="certificateError" Type="Azure.ResourceManager.Nginx.Models.NginxCertificateError" Index="7" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="provisioningState" />
+        <param name="provisioningState"> Provisioning State. </param>
         <param name="keyVirtualPath" />
         <param name="certificateVirtualPath" />
         <param name="keyVaultSecretId" />
         <param name="sha1Thumbprint" />
         <param name="keyVaultSecretVersion" />
         <param name="keyVaultSecretCreated" />
-        <param name="certificateError" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxCertificateProperties" />. </summary>
+        <param name="certificateError"> Nginx Certificate Error Response Body. </param>
+        <summary> Nginx Certificate Properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxCertificateProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxConfigurationCreateOrUpdateContent">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent NginxConfigurationCreateOrUpdateContent (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties properties = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent NginxConfigurationCreateOrUpdateContent(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties properties) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateContent(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationCreateOrUpdateContent (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As NginxConfigurationCreateOrUpdateProperties = Nothing) As NginxConfigurationCreateOrUpdateContent" />
-      <MemberSignature Language="F#" Value="static member NginxConfigurationCreateOrUpdateContent : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateContent (id, name, resourceType, systemData, properties)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent NginxConfigurationCreateOrUpdateContent (string id = default, string name = default, string resourceType = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties properties = default, Azure.ResourceManager.Models.SystemData systemData = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent NginxConfigurationCreateOrUpdateContent(string id, string name, string resourceType, class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties properties, class Azure.ResourceManager.Models.SystemData systemData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateContent(System.String,System.String,System.String,Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties,Azure.ResourceManager.Models.SystemData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationCreateOrUpdateContent (Optional id As String = Nothing, Optional name As String = Nothing, Optional resourceType As String = Nothing, Optional properties As NginxConfigurationCreateOrUpdateProperties = Nothing, Optional systemData As SystemData = Nothing) As NginxConfigurationCreateOrUpdateContent" />
+      <MemberSignature Language="F#" Value="static member NginxConfigurationCreateOrUpdateContent : string * string * string * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties * Azure.ResourceManager.Models.SystemData -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateContent (id, name, resourceType, properties, systemData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -224,29 +281,29 @@
         <ReturnType>Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" />. </summary>
+        <param name="id" />
+        <param name="name" />
+        <param name="resourceType" />
+        <param name="properties"> Nginx Configuration Request Properties. </param>
+        <param name="systemData"> Metadata pertaining to creation and last modification of the resource. </param>
+        <summary> Nginx Configuration Request. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxConfigurationCreateOrUpdateProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties NginxConfigurationCreateOrUpdateProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileContent&gt; protectedFiles = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package = default, string rootFile = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties NginxConfigurationCreateOrUpdateProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileContent&gt; protectedFiles, class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package, string rootFile) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationFile},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileContent},Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationCreateOrUpdateProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional files As IEnumerable(Of NginxConfigurationFile) = Nothing, Optional protectedFiles As IEnumerable(Of NginxConfigurationProtectedFileContent) = Nothing, Optional package As NginxConfigurationPackage = Nothing, Optional rootFile As String = Nothing) As NginxConfigurationCreateOrUpdateProperties" />
-      <MemberSignature Language="F#" Value="static member NginxConfigurationCreateOrUpdateProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileContent&gt; * Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage * string -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateProperties (provisioningState, files, protectedFiles, package, rootFile)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties NginxConfigurationCreateOrUpdateProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; protectedFiles = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package = default, string rootFile = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties NginxConfigurationCreateOrUpdateProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; protectedFiles, class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package, string rootFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationFile},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile},Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationCreateOrUpdateProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional files As IEnumerable(Of NginxConfigurationFile) = Nothing, Optional protectedFiles As IEnumerable(Of NginxConfigurationContentProtectedFile) = Nothing, Optional package As NginxConfigurationPackage = Nothing, Optional rootFile As String = Nothing) As NginxConfigurationCreateOrUpdateProperties" />
+      <MemberSignature Language="F#" Value="static member NginxConfigurationCreateOrUpdateProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt; * Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage * string -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationCreateOrUpdateProperties (provisioningState, files, protectedFiles, package, rootFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -258,17 +315,17 @@
       <Parameters>
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="files" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileContent&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationContentProtectedFile&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="package" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" Index="3" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="rootFile" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="provisioningState" />
+        <param name="provisioningState"> Provisioning State. </param>
         <param name="files" />
         <param name="protectedFiles" />
-        <param name="package" />
+        <param name="package"> Nginx Configuration Package. </param>
         <param name="rootFile" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" />. </summary>
+        <summary> Nginx Configuration Request Properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,37 +352,40 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationData" />. </summary>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> Nginx Configuration Response Properties. </param>
+        <summary> Nginx Configuration Response. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxConfigurationData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxConfigurationData NginxConfigurationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties properties = default, Azure.Core.AzureLocation? location = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxConfigurationData NginxConfigurationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties properties = default, Azure.Core.AzureLocation? location = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.NginxConfigurationData NginxConfigurationData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties properties, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties,System.Nullable{Azure.Core.AzureLocation})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As NginxConfigurationProperties = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing) As NginxConfigurationData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As NginxConfigurationProperties = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing) As NginxConfigurationData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NginxConfigurationData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties * Nullable&lt;Azure.Core.AzureLocation&gt; -&gt; Azure.ResourceManager.Nginx.NginxConfigurationData" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationData (id, name, resourceType, systemData, properties, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxConfigurationData NginxConfigurationData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties properties, Azure.Core.AzureLocation? location);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, properties As NginxConfigurationProperties, location As Nullable(Of AzureLocation)) As NginxConfigurationData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Nginx.NginxConfigurationData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
       </Parameters>
       <Docs>
         <param name="id"> The id. </param>
@@ -339,6 +399,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NginxConfigurationPackage">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage NginxConfigurationPackage (string data = default, System.Collections.Generic.IEnumerable&lt;string&gt; protectedFiles = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage NginxConfigurationPackage(string data, class System.Collections.Generic.IEnumerable`1&lt;string&gt; protectedFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationPackage(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationPackage (Optional data As String = Nothing, Optional protectedFiles As IEnumerable(Of String) = Nothing) As NginxConfigurationPackage" />
+      <MemberSignature Language="F#" Value="static member NginxConfigurationPackage : string * seq&lt;string&gt; -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationPackage (data, protectedFiles)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="data" />
+        <param name="protectedFiles" />
+        <summary> Nginx Configuration Package. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NginxConfigurationProperties">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties NginxConfigurationProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; protectedFiles = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package = default, string rootFile = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties NginxConfigurationProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; protectedFiles, class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package, string rootFile) cil managed" />
@@ -349,92 +435,35 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="files" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="package" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="rootFile" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
-      </Parameters>
-      <Docs>
-        <param name="provisioningState" />
-        <param name="files" />
-        <param name="protectedFiles" />
-        <param name="package" />
-        <param name="rootFile" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NginxConfigurationProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties NginxConfigurationProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult&gt; protectedFiles = default, Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package = default, string rootFile = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties NginxConfigurationProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; files, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult&gt; protectedFiles, class Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage package, string rootFile) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationFile},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult},Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional files As IEnumerable(Of NginxConfigurationFile) = Nothing, Optional protectedFiles As IEnumerable(Of NginxConfigurationProtectedFileResult) = Nothing, Optional package As NginxConfigurationPackage = Nothing, Optional rootFile As String = Nothing) As NginxConfigurationProperties" />
-      <MemberSignature Language="F#" Value="static member NginxConfigurationProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult&gt; * Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage * string -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationProperties (provisioningState, files, protectedFiles, package, rootFile)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="files" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="package" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="rootFile" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" />
+        <Parameter Name="files" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" />
+        <Parameter Name="protectedFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxConfigurationFile&gt;" />
+        <Parameter Name="package" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationPackage" />
+        <Parameter Name="rootFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="provisioningState" />
+        <param name="provisioningState"> Provisioning State. </param>
         <param name="files" />
         <param name="protectedFiles" />
-        <param name="package" />
+        <param name="package"> Nginx Configuration Package. </param>
         <param name="rootFile" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" />. </summary>
+        <summary> Nginx Configuration Response Properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProperties" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NginxConfigurationProtectedFileResult">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult NginxConfigurationProtectedFileResult (string virtualPath = default, string contentHash = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult NginxConfigurationProtectedFileResult(string virtualPath, string contentHash) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationProtectedFileResult(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxConfigurationProtectedFileResult (Optional virtualPath As String = Nothing, Optional contentHash As String = Nothing) As NginxConfigurationProtectedFileResult" />
-      <MemberSignature Language="F#" Value="static member NginxConfigurationProtectedFileResult : string * string -&gt; Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxConfigurationProtectedFileResult (virtualPath, contentHash)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="virtualPath" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="contentHash" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="virtualPath"> The virtual path of the protected file. </param>
-        <param name="contentHash"> The hash of the content of the file. This value is used to determine if the file has changed. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxConfigurationProtectedFileResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxDeploymentApiKeyCreateOrUpdateContent">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent NginxDeploymentApiKeyCreateOrUpdateContent (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties properties = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent NginxDeploymentApiKeyCreateOrUpdateContent(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties properties) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentApiKeyCreateOrUpdateContent(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentApiKeyCreateOrUpdateContent (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As NginxDeploymentApiKeyRequestProperties = Nothing) As NginxDeploymentApiKeyCreateOrUpdateContent" />
-      <MemberSignature Language="F#" Value="static member NginxDeploymentApiKeyCreateOrUpdateContent : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentApiKeyCreateOrUpdateContent (id, name, resourceType, systemData, properties)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent NginxDeploymentApiKeyCreateOrUpdateContent (string id = default, string name = default, string resourceType = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties properties = default, Azure.ResourceManager.Models.SystemData systemData = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent NginxDeploymentApiKeyCreateOrUpdateContent(string id, string name, string resourceType, class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties properties, class Azure.ResourceManager.Models.SystemData systemData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentApiKeyCreateOrUpdateContent(System.String,System.String,System.String,Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties,Azure.ResourceManager.Models.SystemData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentApiKeyCreateOrUpdateContent (Optional id As String = Nothing, Optional name As String = Nothing, Optional resourceType As String = Nothing, Optional properties As NginxDeploymentApiKeyRequestProperties = Nothing, Optional systemData As SystemData = Nothing) As NginxDeploymentApiKeyCreateOrUpdateContent" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentApiKeyCreateOrUpdateContent : string * string * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties * Azure.ResourceManager.Models.SystemData -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentApiKeyCreateOrUpdateContent (id, name, resourceType, properties, systemData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -444,19 +473,19 @@
         <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyRequestProperties" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent" />. </summary>
+        <param name="id" />
+        <param name="name" />
+        <param name="resourceType" />
+        <param name="properties"> Nginx Deployment Api Key Request Properties. </param>
+        <param name="systemData"> Metadata pertaining to creation and last modification of the resource. </param>
+        <summary> Nginx Deployment Api Key Request. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -483,12 +512,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties" />
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyData" />. </summary>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> Nginx Deployment Api Key Response Properties. </param>
+        <summary> Nginx Deployment Api Key Response. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,17 +543,19 @@
       <Docs>
         <param name="hint"> The first three characters of the secret text to help identify it in use. This property is read-only. </param>
         <param name="endOn"> The time after which this Dataplane API Key is no longer valid. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyProperties" />. </summary>
+        <summary> Nginx Deployment Api Key Response Properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NginxDeploymentData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties = default, string skuName = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties = default, string skuName = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, class Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties, string skuName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.Models.ManagedServiceIdentity,Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional properties As NginxDeploymentProperties = Nothing, Optional skuName As String = Nothing) As NginxDeploymentData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional properties As NginxDeploymentProperties = Nothing, Optional skuName As String = Nothing) As NginxDeploymentData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NginxDeploymentData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.Models.ManagedServiceIdentity * Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties * string -&gt; Azure.ResourceManager.Nginx.NginxDeploymentData" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentData (id, name, resourceType, systemData, tags, location, identity, properties, skuName)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, Azure.ResourceManager.Models.ManagedServiceIdentity identity, Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties = default, string skuName = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, identity As ManagedServiceIdentity, Optional properties As NginxDeploymentProperties = Nothing, Optional skuName As String = Nothing) As NginxDeploymentData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -560,30 +591,157 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NginxDeploymentData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, string skuName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.NginxDeploymentData NginxDeploymentData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties properties, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, string skuName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties,Azure.ResourceManager.Models.ManagedServiceIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As NginxDeploymentProperties = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional skuName As String = Nothing) As NginxDeploymentData" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties * Azure.ResourceManager.Models.ManagedServiceIdentity * string -&gt; Azure.ResourceManager.Nginx.NginxDeploymentData" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentData (id, name, resourceType, systemData, tags, location, properties, identity, skuName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.NginxDeploymentData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="skuName" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="properties"> Nginx Deployment Properties. </param>
+        <param name="identity"> Identity Properties. </param>
+        <param name="skuName"> Name of the SKU. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentDefaultWafPolicyListResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyListResult NginxDeploymentDefaultWafPolicyListResult (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties&gt; value = default, string nextLink = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyListResult NginxDeploymentDefaultWafPolicyListResult(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties&gt; value, string nextLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentDefaultWafPolicyListResult(System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentDefaultWafPolicyListResult (Optional value As IEnumerable(Of NginxDeploymentDefaultWafPolicyProperties) = Nothing, Optional nextLink As String = Nothing) As NginxDeploymentDefaultWafPolicyListResult" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentDefaultWafPolicyListResult : seq&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties&gt; * string -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyListResult" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentDefaultWafPolicyListResult (value, nextLink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyListResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="nextLink" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="value" />
+        <param name="nextLink" />
+        <summary> Nginx Deployment Default Waf Policy List Response. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyListResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentDefaultWafPolicyProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties NginxDeploymentDefaultWafPolicyProperties (BinaryData content = default, string filepath = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties NginxDeploymentDefaultWafPolicyProperties(class System.BinaryData content, string filepath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentDefaultWafPolicyProperties(System.BinaryData,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentDefaultWafPolicyProperties (Optional content As BinaryData = Nothing, Optional filepath As String = Nothing) As NginxDeploymentDefaultWafPolicyProperties" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentDefaultWafPolicyProperties : BinaryData * string -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentDefaultWafPolicyProperties (content, filepath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="filepath" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="content" />
+        <param name="filepath" />
+        <summary> Nginx Deployment Default Waf Policy Properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentDefaultWafPolicyProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentPatch NginxDeploymentPatch (Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string skuName = default, Azure.Core.AzureLocation? location = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentUpdateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentPatch NginxDeploymentPatch(class Azure.ResourceManager.Models.ManagedServiceIdentity identity, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string skuName, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class Azure.ResourceManager.Nginx.Models.NginxDeploymentUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentPatch(Azure.ResourceManager.Models.ManagedServiceIdentity,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{Azure.Core.AzureLocation},Azure.ResourceManager.Nginx.Models.NginxDeploymentUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentPatch (Optional identity As ManagedServiceIdentity = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional skuName As String = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional properties As NginxDeploymentUpdateProperties = Nothing) As NginxDeploymentPatch" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentPatch : Azure.ResourceManager.Models.ManagedServiceIdentity * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;Azure.Core.AzureLocation&gt; * Azure.ResourceManager.Nginx.Models.NginxDeploymentUpdateProperties -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentPatch" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentPatch (identity, tags, skuName, location, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="skuName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentUpdateProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="identity"> Identity Properties. </param>
+        <param name="tags"> Dictionary of &lt;string&gt;. </param>
+        <param name="skuName"> Name of the SKU. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="properties"> Nginx Deployment Update Properties. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NginxDeploymentProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties NginxDeploymentProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, string nginxVersion = default, string managedResourceGroup = default, Azure.ResourceManager.Nginx.Models.NginxNetworkProfile networkProfile = default, string ipAddress = default, bool? enableDiagnosticsSupport = default, Azure.ResourceManager.Nginx.Models.NginxStorageAccount loggingStorageAccount = default, int? scalingCapacity = default, string userPreferredEmail = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties NginxDeploymentProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, string nginxVersion = default, string managedResourceGroup = default, Azure.ResourceManager.Nginx.Models.NginxNetworkProfile networkProfile = default, string ipAddress = default, bool? enableDiagnosticsSupport = default, Azure.ResourceManager.Nginx.Models.NginxStorageAccount loggingStorageAccount = default, int? scalingCapacity = default, string userPreferredEmail = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties NginxDeploymentProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, string nginxVersion, string managedResourceGroup, class Azure.ResourceManager.Nginx.Models.NginxNetworkProfile networkProfile, string ipAddress, valuetype System.Nullable`1&lt;bool&gt; enableDiagnosticsSupport, class Azure.ResourceManager.Nginx.Models.NginxStorageAccount loggingStorageAccount, valuetype System.Nullable`1&lt;int32&gt; scalingCapacity, string userPreferredEmail) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.String,System.String,Azure.ResourceManager.Nginx.Models.NginxNetworkProfile,System.String,System.Nullable{System.Boolean},Azure.ResourceManager.Nginx.Models.NginxStorageAccount,System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional nginxVersion As String = Nothing, Optional managedResourceGroup As String = Nothing, Optional networkProfile As NginxNetworkProfile = Nothing, Optional ipAddress As String = Nothing, Optional enableDiagnosticsSupport As Nullable(Of Boolean) = Nothing, Optional loggingStorageAccount As NginxStorageAccount = Nothing, Optional scalingCapacity As Nullable(Of Integer) = Nothing, Optional userPreferredEmail As String = Nothing) As NginxDeploymentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional nginxVersion As String = Nothing, Optional managedResourceGroup As String = Nothing, Optional networkProfile As NginxNetworkProfile = Nothing, Optional ipAddress As String = Nothing, Optional enableDiagnosticsSupport As Nullable(Of Boolean) = Nothing, Optional loggingStorageAccount As NginxStorageAccount = Nothing, Optional scalingCapacity As Nullable(Of Integer) = Nothing, Optional userPreferredEmail As String = Nothing) As NginxDeploymentProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NginxDeploymentProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * string * string * Azure.ResourceManager.Nginx.Models.NginxNetworkProfile * string * Nullable&lt;bool&gt; * Azure.ResourceManager.Nginx.Models.NginxStorageAccount * Nullable&lt;int&gt; * string -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentProperties (provisioningState, nginxVersion, managedResourceGroup, networkProfile, ipAddress, enableDiagnosticsSupport, loggingStorageAccount, scalingCapacity, userPreferredEmail)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties NginxDeploymentProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState, string nginxVersion, string managedResourceGroup, Azure.ResourceManager.Nginx.Models.NginxNetworkProfile networkProfile, string ipAddress, bool? enableDiagnosticsSupport, Azure.ResourceManager.Nginx.Models.NginxStorageAccount loggingStorageAccount, int? scalingCapacity, string userPreferredEmail = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentProperties (provisioningState As Nullable(Of NginxProvisioningState), nginxVersion As String, managedResourceGroup As String, networkProfile As NginxNetworkProfile, ipAddress As String, enableDiagnosticsSupport As Nullable(Of Boolean), loggingStorageAccount As NginxStorageAccount, scalingCapacity As Nullable(Of Integer), Optional userPreferredEmail As String = Nothing) As NginxDeploymentProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="nginxVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="managedResourceGroup" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="networkProfile" Type="Azure.ResourceManager.Nginx.Models.NginxNetworkProfile" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="ipAddress" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="enableDiagnosticsSupport" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="loggingStorageAccount" Type="Azure.ResourceManager.Nginx.Models.NginxStorageAccount" Index="6" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="scalingCapacity" Type="System.Nullable&lt;System.Int32&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="userPreferredEmail" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" />
+        <Parameter Name="nginxVersion" Type="System.String" />
+        <Parameter Name="managedResourceGroup" Type="System.String" />
+        <Parameter Name="networkProfile" Type="Azure.ResourceManager.Nginx.Models.NginxNetworkProfile" />
+        <Parameter Name="ipAddress" Type="System.String" />
+        <Parameter Name="enableDiagnosticsSupport" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="loggingStorageAccount" Type="Azure.ResourceManager.Nginx.Models.NginxStorageAccount" />
+        <Parameter Name="scalingCapacity" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userPreferredEmail" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="provisioningState" />
@@ -628,15 +786,15 @@
         <Parameter Name="dataplaneApiEndpoint" Type="System.String" Index="10" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="provisioningState" />
+        <param name="provisioningState"> Provisioning State. </param>
         <param name="nginxVersion" />
-        <param name="networkProfile" />
+        <param name="networkProfile"> Nginx Network Profile. </param>
         <param name="ipAddress"> The IP address of the deployment. </param>
         <param name="enableDiagnosticsSupport" />
-        <param name="loggingStorageAccount" />
+        <param name="loggingStorageAccount"> Nginx Storage Account. </param>
         <param name="scalingProperties"> Information on how the deployment will be scaled. </param>
-        <param name="upgradeChannel"> Autoupgrade settings of a deployment. </param>
-        <param name="userPreferredEmail" />
+        <param name="upgradeChannel"> Channel used for autoupgrade. </param>
+        <param name="userPreferredEmail"> The preferred support contact email address of the user used for sending alerts and notification. Can be an empty string or a valid email address. </param>
         <param name="nginxAppProtect"> Settings for NGINX App Protect (NAP). </param>
         <param name="dataplaneApiEndpoint"> Dataplane API endpoint for the caller to update the NGINX state of the deployment. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentProperties" />. </summary>
@@ -663,10 +821,192 @@
         <Parameter Name="webApplicationFirewallStatus" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="webApplicationFirewallActivationState"> Settings for the NGINX App Protect Web Application Firewall (WAF). </param>
+        <param name="webApplicationFirewallActivationState"> The activation state of the WAF. Use 'Enabled' to enable the WAF and 'Disabled' to disable it. </param>
         <param name="webApplicationFirewallStatus"> The status of the NGINX App Protect Web Application Firewall. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentPropertiesNginxAppProtect" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentPropertiesNginxAppProtect" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyApplyingStatus">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus NginxDeploymentWafPolicyApplyingStatus (Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatusCode? code = default, string displayStatus = default, string time = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus NginxDeploymentWafPolicyApplyingStatus(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatusCode&gt; code, string displayStatus, string time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyApplyingStatus(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatusCode},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyApplyingStatus (Optional code As Nullable(Of NginxDeploymentWafPolicyApplyingStatusCode) = Nothing, Optional displayStatus As String = Nothing, Optional time As String = Nothing) As NginxDeploymentWafPolicyApplyingStatus" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyApplyingStatus : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatusCode&gt; * string * string -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyApplyingStatus (code, displayStatus, time)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatusCode&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="displayStatus" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="time" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="code"> Machine readable code indicating the applying status code of a WAF Policy. </param>
+        <param name="displayStatus"> A readable string of the current status, and sometimes have the reason for the current state. </param>
+        <param name="time"> The date and time in UTC the current applying status was set. </param>
+        <summary> Nginx Deployment Waf Policy Applying Status. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyCompilingStatus">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus NginxDeploymentWafPolicyCompilingStatus (Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatusCode? code = default, string displayStatus = default, string time = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus NginxDeploymentWafPolicyCompilingStatus(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatusCode&gt; code, string displayStatus, string time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyCompilingStatus(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatusCode},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyCompilingStatus (Optional code As Nullable(Of NginxDeploymentWafPolicyCompilingStatusCode) = Nothing, Optional displayStatus As String = Nothing, Optional time As String = Nothing) As NginxDeploymentWafPolicyCompilingStatus" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyCompilingStatus : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatusCode&gt; * string * string -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyCompilingStatus (code, displayStatus, time)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatusCode&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="displayStatus" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="time" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="code"> Machine readable code indicating the compilation status of a WAF Policy. </param>
+        <param name="displayStatus"> A readable string of the current status, and sometimes have the reason for the current state. If the CompilingStatus is Failed the Display Status will be The waf Policy failed to compile. </param>
+        <param name="time"> The date and time the policy was compiled in UTC. </param>
+        <summary> Nginx Deployment Waf Policy Compiling Status. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData NginxDeploymentWafPolicyData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData NginxDeploymentWafPolicyData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As NginxDeploymentWafPolicyProperties = Nothing) As NginxDeploymentWafPolicyData" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties -&gt; Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> Nginx Deployment Waf Policy Properties. </param>
+        <summary> Nginx Deployment Waf Policy. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyMetadata">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadata NginxDeploymentWafPolicyMetadata (string id = default, string name = default, string type = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties properties = default, Azure.ResourceManager.Models.SystemData systemData = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadata NginxDeploymentWafPolicyMetadata(string id, string name, string type, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties properties, class Azure.ResourceManager.Models.SystemData systemData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyMetadata(System.String,System.String,System.String,Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties,Azure.ResourceManager.Models.SystemData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyMetadata (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional properties As NginxDeploymentWafPolicyMetadataProperties = Nothing, Optional systemData As SystemData = Nothing) As NginxDeploymentWafPolicyMetadata" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyMetadata : string * string * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties * Azure.ResourceManager.Models.SystemData -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadata" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyMetadata (id, name, type, properties, systemData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id" />
+        <param name="name" />
+        <param name="type" />
+        <param name="properties"> Nginx Deployment Waf Policy Metadata Properties. </param>
+        <param name="systemData"> Metadata pertaining to creation and last modification of the resource. </param>
+        <summary> Nginx Deployment Waf Policy Metadata. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadata" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyMetadataProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties NginxDeploymentWafPolicyMetadataProperties (string filepath = default, Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus compilingState = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus applyingState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties NginxDeploymentWafPolicyMetadataProperties(string filepath, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus compilingState, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus applyingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyMetadataProperties(System.String,System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus,Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyMetadataProperties (Optional filepath As String = Nothing, Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional compilingState As NginxDeploymentWafPolicyCompilingStatus = Nothing, Optional applyingState As NginxDeploymentWafPolicyApplyingStatus = Nothing) As NginxDeploymentWafPolicyMetadataProperties" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyMetadataProperties : string * Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyMetadataProperties (filepath, provisioningState, compilingState, applyingState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filepath" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="compilingState" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="applyingState" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="filepath" />
+        <param name="provisioningState"> Provisioning State. </param>
+        <param name="compilingState"> Nginx Deployment Waf Policy Compiling Status. </param>
+        <param name="applyingState"> Nginx Deployment Waf Policy Applying Status. </param>
+        <summary> Nginx Deployment Waf Policy Metadata Properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyMetadataProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxDeploymentWafPolicyProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties NginxDeploymentWafPolicyProperties (Azure.ResourceManager.Nginx.Models.NginxProvisioningState? provisioningState = default, BinaryData content = default, string filepath = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus compilingState = default, Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus applyingState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties NginxDeploymentWafPolicyProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; provisioningState, class System.BinaryData content, string filepath, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus compilingState, class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus applyingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyProperties(System.Nullable{Azure.ResourceManager.Nginx.Models.NginxProvisioningState},System.BinaryData,System.String,Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus,Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxDeploymentWafPolicyProperties (Optional provisioningState As Nullable(Of NginxProvisioningState) = Nothing, Optional content As BinaryData = Nothing, Optional filepath As String = Nothing, Optional compilingState As NginxDeploymentWafPolicyCompilingStatus = Nothing, Optional applyingState As NginxDeploymentWafPolicyApplyingStatus = Nothing) As NginxDeploymentWafPolicyProperties" />
+      <MemberSignature Language="F#" Value="static member NginxDeploymentWafPolicyProperties : Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt; * BinaryData * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus * Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus -&gt; Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxDeploymentWafPolicyProperties (provisioningState, content, filepath, compilingState, applyingState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Nginx.Models.NginxProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="content" Type="System.BinaryData" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="filepath" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="compilingState" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyCompilingStatus" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="applyingState" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyApplyingStatus" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> Provisioning State. </param>
+        <param name="content"> The byte content of the Policy. </param>
+        <param name="filepath"> The file path where the Policy is to be saved. </param>
+        <param name="compilingState"> Nginx Deployment Waf Policy Compiling Status. </param>
+        <param name="applyingState"> Nginx Deployment Waf Policy Applying Status. </param>
+        <summary> Nginx Deployment Waf Policy Properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,8 +1045,34 @@
         <param name="rule" />
         <param name="level"> Warning or Info. </param>
         <param name="category"> Category of warning like Best-practices, Recommendation, Security etc. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDiagnosticItem" />. </summary>
+        <summary> A diagnostic is a message associated with an NGINX config. The Analyzer returns diagnostics with a level indicating the importance of the diagnostic with optional category. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxDiagnosticItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NginxFrontendIPConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.NginxFrontendIPConfiguration NginxFrontendIPConfiguration (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.WritableSubResource&gt; publicIPAddresses = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxPrivateIPAddress&gt; privateIPAddresses = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.NginxFrontendIPConfiguration NginxFrontendIPConfiguration(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.Models.WritableSubResource&gt; publicIPAddresses, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Nginx.Models.NginxPrivateIPAddress&gt; privateIPAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxFrontendIPConfiguration(System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.Models.WritableSubResource},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Nginx.Models.NginxPrivateIPAddress})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NginxFrontendIPConfiguration (Optional publicIPAddresses As IEnumerable(Of WritableSubResource) = Nothing, Optional privateIPAddresses As IEnumerable(Of NginxPrivateIPAddress) = Nothing) As NginxFrontendIPConfiguration" />
+      <MemberSignature Language="F#" Value="static member NginxFrontendIPConfiguration : seq&lt;Azure.ResourceManager.Resources.Models.WritableSubResource&gt; * seq&lt;Azure.ResourceManager.Nginx.Models.NginxPrivateIPAddress&gt; -&gt; Azure.ResourceManager.Nginx.Models.NginxFrontendIPConfiguration" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.NginxFrontendIPConfiguration (publicIPAddresses, privateIPAddresses)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Nginx.Models.NginxFrontendIPConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publicIPAddresses" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.WritableSubResource&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="privateIPAddresses" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Nginx.Models.NginxPrivateIPAddress&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="publicIPAddresses" />
+        <param name="privateIPAddresses" />
+        <summary> Nginx Frontend IP Configuration. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.NginxFrontendIPConfiguration" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -731,7 +1097,7 @@
       <Docs>
         <param name="wafEngineVersion"> The version of the NGINX App Protect Web Application Firewall (WAF) engine. </param>
         <param name="wafNginxVersion"> The version of the NGINX App Protect Web Application Firewall (WAF) module for NGINX. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions" />. </summary>
+        <summary> Versions of the NGINX App Protect Web Application Firewall (WAF) components. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -757,17 +1123,17 @@
       <Docs>
         <param name="version"> The version of the NGINX App Protect Web Application Firewall (WAF) package. </param>
         <param name="revisionDatetime"> The date and time of the package revision. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" />. </summary>
+        <summary> NGINX App Protect Web Application Firewall (WAF) Package. Contains the version and revision date of the package. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WebApplicationFirewallStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus WebApplicationFirewallStatus (Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage attackSignaturesPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage botSignaturesPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage threatCampaignsPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions componentVersions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus WebApplicationFirewallStatus(class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage attackSignaturesPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage botSignaturesPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage threatCampaignsPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions componentVersions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.WebApplicationFirewallStatus(Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function WebApplicationFirewallStatus (Optional attackSignaturesPackage As WebApplicationFirewallPackage = Nothing, Optional botSignaturesPackage As WebApplicationFirewallPackage = Nothing, Optional threatCampaignsPackage As WebApplicationFirewallPackage = Nothing, Optional componentVersions As WebApplicationFirewallComponentVersions = Nothing) As WebApplicationFirewallStatus" />
-      <MemberSignature Language="F#" Value="static member WebApplicationFirewallStatus : Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions -&gt; Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.WebApplicationFirewallStatus (attackSignaturesPackage, botSignaturesPackage, threatCampaignsPackage, componentVersions)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus WebApplicationFirewallStatus (string wafRelease = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage attackSignaturesPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage botSignaturesPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage threatCampaignsPackage = default, Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions componentVersions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus WebApplicationFirewallStatus(string wafRelease, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage attackSignaturesPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage botSignaturesPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage threatCampaignsPackage, class Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions componentVersions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.WebApplicationFirewallStatus(System.String,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage,Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WebApplicationFirewallStatus (Optional wafRelease As String = Nothing, Optional attackSignaturesPackage As WebApplicationFirewallPackage = Nothing, Optional botSignaturesPackage As WebApplicationFirewallPackage = Nothing, Optional threatCampaignsPackage As WebApplicationFirewallPackage = Nothing, Optional componentVersions As WebApplicationFirewallComponentVersions = Nothing) As WebApplicationFirewallStatus" />
+      <MemberSignature Language="F#" Value="static member WebApplicationFirewallStatus : string * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage * Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions -&gt; Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus" Usage="Azure.ResourceManager.Nginx.Models.ArmNginxModelFactory.WebApplicationFirewallStatus (wafRelease, attackSignaturesPackage, botSignaturesPackage, threatCampaignsPackage, componentVersions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -777,17 +1143,19 @@
         <ReturnType>Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attackSignaturesPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="botSignaturesPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="threatCampaignsPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="componentVersions" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="wafRelease" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="attackSignaturesPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="botSignaturesPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="threatCampaignsPackage" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallPackage" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="componentVersions" Type="Azure.ResourceManager.Nginx.Models.WebApplicationFirewallComponentVersions" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="wafRelease"> NGINX App Protect WAF release version. </param>
         <param name="attackSignaturesPackage"> Package containing attack signatures for the NGINX App Protect Web Application Firewall (WAF). </param>
         <param name="botSignaturesPackage"> Package containing bot signatures for the NGINX App Protect Web Application Firewall (WAF). </param>
         <param name="threatCampaignsPackage"> Package containing threat campaigns for the NGINX App Protect Web Application Firewall (WAF). </param>
         <param name="componentVersions"> Versions of the NGINX App Protect Web Application Firewall (WAF) components. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus" />. </summary>
+        <summary> The status of the NGINX App Protect Web Application Firewall. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.Nginx.Models.WebApplicationFirewallStatus" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>

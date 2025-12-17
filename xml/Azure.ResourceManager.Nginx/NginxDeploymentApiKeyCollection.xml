@@ -43,15 +43,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyCollection" /> class for mocking. </summary>
+        <summary> Initializes a new instance of NginxDeploymentApiKeyCollection for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string apiKeyName, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string apiKeyName, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string apiKeyName, class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, apiKeyName As String, content As NginxDeploymentApiKeyCreateOrUpdateContent, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxDeploymentApiKeyResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, apiKeyName As String, Optional content As NginxDeploymentApiKeyCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxDeploymentApiKeyResource)" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;" Usage="nginxDeploymentApiKeyCollection.CreateOrUpdate (waitUntil, apiKeyName, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -75,20 +75,20 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Create or update an API Key for the Nginx deployment in order to access the dataplane API endpoint
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="apiKeyName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="apiKeyName" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string apiKeyName, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string apiKeyName, Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string apiKeyName, class Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, apiKeyName As String, content As NginxDeploymentApiKeyCreateOrUpdateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxDeploymentApiKeyResource))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, apiKeyName As String, Optional content As NginxDeploymentApiKeyCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxDeploymentApiKeyResource))" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.Nginx.Models.NginxDeploymentApiKeyCreateOrUpdateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;&gt;" Usage="nginxDeploymentApiKeyCollection.CreateOrUpdateAsync (waitUntil, apiKeyName, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -112,13 +112,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Create or update an API Key for the Nginx deployment in order to access the dataplane API endpoint
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="apiKeyName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="apiKeyName" /> or <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -144,13 +144,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExistsAsync">
@@ -176,13 +176,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -208,13 +208,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the specified API Key of the given Nginx deployment
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -238,7 +238,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all API Keys of the given Nginx deployment
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys</description></item><item><term>Operation Id</term><description>ApiKeys_List</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_List. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,8 +264,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List all API Keys of the given Nginx deployment
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys</description></item><item><term>Operation Id</term><description>ApiKeys_List</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_List. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,13 +292,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the specified API Key of the given Nginx deployment
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExists">
@@ -324,13 +324,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExistsAsync">
@@ -356,13 +356,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}</description></item><item><term>Operation Id</term><description>ApiKeys_Get</description></item><item><term>Default Api Version</term><description>2024-11-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/apiKeys/{apiKeyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentApiKeyResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="apiKeyName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="apiKeyName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Nginx.NginxDeploymentApiKeyResource&gt;.GetAsyncEnumerator">
@@ -386,7 +386,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
         <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
         <remarks>To be added.</remarks>

@@ -49,22 +49,48 @@
           <paramref name="trainedModelLabel" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="AssignedResources">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt; AssignedResources { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt; AssignedResources" />
-      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails.AssignedResources" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedResources As IList(Of ConversationAuthoringDeploymentResource)" />
-      <MemberSignature Language="F#" Value="member this.AssignedResources : System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt;" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails.AssignedResources" />
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationAuthoringCreateDeploymentDetails (string trainedModelLabel, System.Collections.Generic.IList&lt;string&gt; azureResourceIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string trainedModelLabel, class System.Collections.Generic.IList`1&lt;string&gt; azureResourceIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails.#ctor(System.String,System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (trainedModelLabel As String, azureResourceIds As IList(Of String))" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails : string * System.Collections.Generic.IList&lt;string&gt; -&gt; Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" Usage="new Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails (trainedModelLabel, azureResourceIds)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="trainedModelLabel" Type="System.String" />
+        <Parameter Name="azureResourceIds" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="trainedModelLabel">Represents the trained model label.</param>
+        <param name="azureResourceIds">Resource ID strings.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails" />.
+            This overload is for the 2025-11-01 GA shape, where the service expects
+            azureResourceIds as an array of strings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureResourceIds">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringAssignedProjectResource&gt; AzureResourceIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringAssignedProjectResource&gt; AzureResourceIds" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails.AzureResourceIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AzureResourceIds As IList(Of ConversationAuthoringAssignedProjectResource)" />
+      <MemberSignature Language="F#" Value="member this.AzureResourceIds : System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringAssignedProjectResource&gt;" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringCreateDeploymentDetails.AzureResourceIds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringDeploymentResource&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Language.Conversations.Authoring.ConversationAuthoringAssignedProjectResource&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Represents the resources to be assigned to the deployment. If provided, the deployment will be rolled out to the resources provided here as well as the original resource in which the project is created. </summary>
+        <summary> Represents the Language or AIService resource IDs that if provided,\n            the deployment will be rolled out to the resources provided here as well as the original resource in which the project is created. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

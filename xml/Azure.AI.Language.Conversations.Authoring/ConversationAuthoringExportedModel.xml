@@ -33,48 +33,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="_exportedModelName">
-      <MemberSignature Language="C#" Value="public readonly string _exportedModelName;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string _exportedModelName" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel._exportedModelName" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly _exportedModelName As String " />
-      <MemberSignature Language="F#" Value="val mutable _exportedModelName : string" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel._exportedModelName" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Stores the exported model name associated with the client.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="_projectName">
-      <MemberSignature Language="C#" Value="public readonly string _projectName;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string _projectName" />
-      <MemberSignature Language="DocId" Value="F:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel._projectName" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly _projectName As String " />
-      <MemberSignature Language="F#" Value="val mutable _projectName : string" Usage="Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel._projectName" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Stores the project name associated with the client.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CreateOrUpdateExportedModel">
       <MemberSignature Language="C#" Value="public virtual Azure.Operation CreateOrUpdateExportedModel (Azure.WaitUntil waitUntil, Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModelDetails details, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation CreateOrUpdateExportedModel(valuetype Azure.WaitUntil waitUntil, class Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModelDetails details, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -96,12 +54,14 @@
       </Parameters>
       <Docs>
         <param name="waitUntil">
-          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. </param>
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="details"> The exported model info. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a new exported model or replaces an existing one. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="details" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateExportedModel">
@@ -137,6 +97,8 @@
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -161,12 +123,14 @@
       </Parameters>
       <Docs>
         <param name="waitUntil">
-          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. </param>
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="details"> The exported model info. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a new exported model or replaces an existing one. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="details" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateExportedModelAsync">
@@ -202,6 +166,8 @@
             </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -237,33 +203,6 @@
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
-    <Member MemberName="DeleteExportedModel">
-      <MemberSignature Language="C#" Value="public virtual Azure.Operation DeleteExportedModel (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Operation DeleteExportedModel(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel.DeleteExportedModel(Azure.WaitUntil,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteExportedModel (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Operation" />
-      <MemberSignature Language="F#" Value="abstract member DeleteExportedModel : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.Operation&#xA;override this.DeleteExportedModel : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.Operation" Usage="conversationAuthoringExportedModel.DeleteExportedModel (waitUntil, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Operation</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="waitUntil">
-          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an exported model. </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="DeleteExportedModelAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; DeleteExportedModelAsync (Azure.WaitUntil waitUntil, Azure.RequestContext context = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; DeleteExportedModelAsync(valuetype Azure.WaitUntil waitUntil, class Azure.RequestContext context) cil managed" />
@@ -294,33 +233,6 @@
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="DeleteExportedModelAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Operation&gt; DeleteExportedModelAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Operation&gt; DeleteExportedModelAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.Authoring.ConversationAuthoringExportedModel.DeleteExportedModelAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteExportedModelAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Operation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteExportedModelAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;&#xA;override this.DeleteExportedModelAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Operation&gt;" Usage="conversationAuthoringExportedModel.DeleteExportedModelAsync (waitUntil, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Language.Conversations.Authoring</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Operation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="waitUntil">
-          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an exported model. </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExportedModel">
@@ -463,6 +375,10 @@
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -490,6 +406,10 @@
         <summary> Gets the status for an existing job to create or update an exported model. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetExportedModelJobStatusAsync">
@@ -522,6 +442,10 @@
             </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -549,6 +473,10 @@
         <summary> Gets the status for an existing job to create or update an exported model. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
