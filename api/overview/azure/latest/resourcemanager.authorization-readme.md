@@ -4,7 +4,7 @@ keywords: Azure, dotnet, SDK, API, Azure.ResourceManager.Authorization, authoriz
 ms.date: 10/09/2025
 ms.topic: reference
 ms.devlang: dotnet
-ms.service: authorization
+ms.service: azure-authorization
 ---
 # Azure Authorization management client library for .NET - version 1.1.6 
 
