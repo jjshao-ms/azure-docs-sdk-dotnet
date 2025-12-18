@@ -1,10 +1,10 @@
 ---
 title: Azure Authorization SDK for .NET
 description: Reference for Azure Authorization SDK for .NET
-ms.date: 12/16/2025
+ms.date: 12/17/2025
 ms.topic: reference
 ms.devlang: dotnet
-ms.service: authorization
+ms.service: azure-authorization
 ---
 # Azure Authorization SDK for .NET - preview
 ## Packages - preview
