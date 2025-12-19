@@ -17,6 +17,7 @@
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
     <AssemblyVersion>1.2.4.0</AssemblyVersion>
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +34,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> Azure Key Vault key management service settings for the security profile. </summary>
+    <summary>
+            Azure Key Vault key management service settings for the security profile.
+            Serialized Name: AzureKeyVaultKms
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -64,13 +68,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Whether to enable Azure Key Vault key management service. The default is false. </summary>
+        <summary>
+            Whether to enable Azure Key Vault key management service. The default is false.
+            Serialized Name: AzureKeyVaultKms.enabled
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +91,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,13 +117,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Identifier of Azure Key Vault key. See [key identifier format](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates#vault-name-and-object-name) for more details. When Azure Key Vault key management service is enabled, this field is required and must be a valid key identifier. When Azure Key Vault key management service is disabled, leave the field empty. </summary>
+        <summary>
+            Identifier of Azure Key Vault key. See [key identifier format](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates#vault-name-and-object-name) for more details. When Azure Key Vault key management service is enabled, this field is required and must be a valid key identifier. When Azure Key Vault key management service is disabled, leave the field empty.
+            Serialized Name: AzureKeyVaultKms.keyId
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,13 +141,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterKeyVaultNetworkAccessType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Network access of key vault. The possible values are `Public` and `Private`. `Public` means the key vault allows public access from all networks. `Private` means the key vault disables public access and enables private link. The default value is `Public`. </summary>
+        <summary>
+            Network access of the key vault. Network access of key vault. The possible values are `Public` and `Private`. `Public` means the key vault allows public access from all networks. `Private` means the key vault disables public access and enables private link. The default value is `Public`.
+            Serialized Name: AzureKeyVaultKms.keyVaultNetworkAccess
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,13 +165,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Resource ID of key vault. When keyVaultNetworkAccess is `Private`, this field is required and must be a valid resource ID. When keyVaultNetworkAccess is `Public`, leave the field empty. </summary>
+        <summary>
+            Resource ID of key vault. When keyVaultNetworkAccess is `Private`, this field is required and must be a valid resource ID. When keyVaultNetworkAccess is `Public`, leave the field empty.
+            Serialized Name: AzureKeyVaultKms.keyVaultResourceId
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +191,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterSecurityProfileKeyVaultKms</ReturnType>
@@ -207,7 +223,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -238,7 +254,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterSecurityProfileKeyVaultKms</ReturnType>
@@ -270,7 +286,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -299,7 +315,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

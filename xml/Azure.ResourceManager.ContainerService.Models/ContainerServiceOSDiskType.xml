@@ -14,6 +14,7 @@
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
     <AssemblyVersion>1.2.4.0</AssemblyVersion>
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -24,7 +25,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> The default is 'Ephemeral' if the VM supports it and has a cache disk larger than the requested OSDiskSizeGB. Otherwise, defaults to 'Managed'. May not be changed after creation. For more information see [Ephemeral OS](https://docs.microsoft.com/azure/aks/cluster-configuration#ephemeral-os). </summary>
+    <summary>
+            The OS disk type to be used for machines in the agent pool. The default is 'Ephemeral' if the VM supports it and has a cache disk larger than the requested OSDiskSizeGB. Otherwise, defaults to 'Managed'. May not be changed after creation. For more information see [Ephemeral OS](https://docs.microsoft.com/azure/aks/cluster-configuration#ephemeral-os).
+            Serialized Name: OSDiskType
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
@@ -61,13 +65,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceOSDiskType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Ephemeral OS disks are stored only on the host machine, just like a temporary disk. This provides lower read/write latency, along with faster node scaling and cluster upgrades. </summary>
+        <summary>
+            Ephemeral OS disks are stored only on the host machine, just like a temporary disk. This provides lower read/write latency, along with faster node scaling and cluster upgrades.
+            Serialized Name: OSDiskType.Ephemeral
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -111,7 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -143,7 +150,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -171,13 +178,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceOSDiskType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Azure replicates the operating system disk for a virtual machine to Azure storage to avoid data loss should the VM need to be relocated to another host. Since containers aren't designed to have local state persisted, this behavior offers limited value while providing some drawbacks, including slower node provisioning and higher read/write latency. </summary>
+        <summary>
+            Azure replicates the operating system disk for a virtual machine to Azure storage to avoid data loss should the VM need to be relocated to another host. Since containers aren't designed to have local state persisted, this behavior offers limited value while providing some drawbacks, including slower node provisioning and higher read/write latency.
+            Serialized Name: OSDiskType.Managed
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -219,7 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceOSDiskType</ReturnType>
@@ -244,7 +254,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -271,7 +281,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

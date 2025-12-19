@@ -16,6 +16,7 @@
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
     <AssemblyVersion>1.2.4.0</AssemblyVersion>
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +33,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> Maintenance window used to configure scheduled auto-upgrade for a Managed Cluster. </summary>
+    <summary>
+            Maintenance window used to configure scheduled auto-upgrade for a Managed Cluster.
+            Serialized Name: MaintenanceWindow
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="schedule" Type="Azure.ResourceManager.ContainerService.Models.ContainerServiceMaintenanceSchedule" />
@@ -54,9 +58,18 @@
         <Parameter Name="startTime" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="schedule"> Recurrence schedule for the maintenance window. </param>
-        <param name="durationHours"> Length of maintenance window range from 4 to 24 hours. </param>
-        <param name="startTime"> The start time of the maintenance window. Accepted values are from '00:00' to '23:59'. 'utcOffset' applies to this field. For example: '02:00' with 'utcOffset: +02:00' means UTC time '00:00'. </param>
+        <param name="schedule">
+            Recurrence schedule for the maintenance window.
+            Serialized Name: MaintenanceWindow.schedule
+            </param>
+        <param name="durationHours">
+            Length of maintenance window range from 4 to 24 hours.
+            Serialized Name: MaintenanceWindow.durationHours
+            </param>
+        <param name="startTime">
+            The start time of the maintenance window. Accepted values are from '00:00' to '23:59'. 'utcOffset' applies to this field. For example: '02:00' with 'utcOffset: +02:00' means UTC time '00:00'.
+            Serialized Name: MaintenanceWindow.startTime
+            </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceMaintenanceWindow" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -73,13 +86,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Length of maintenance window range from 4 to 24 hours. </summary>
+        <summary>
+            Length of maintenance window range from 4 to 24 hours.
+            Serialized Name: MaintenanceWindow.durationHours
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +109,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -119,13 +135,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceDateSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Date ranges on which upgrade is not allowed. 'utcOffset' applies to this field. For example, with 'utcOffset: +02:00' and 'dateSpan' being '2022-12-23' to '2023-01-03', maintenance will be blocked from '2022-12-22 22:00' to '2023-01-03 22:00' in UTC time. </summary>
+        <summary>
+            Date ranges on which upgrade is not allowed. 'utcOffset' applies to this field. For example, with 'utcOffset: +02:00' and 'dateSpan' being '2022-12-23' to '2023-01-03', maintenance will be blocked from '2022-12-22 22:00' to '2023-01-03 22:00' in UTC time.
+            Serialized Name: MaintenanceWindow.notAllowedDates
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,13 +159,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceMaintenanceSchedule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Recurrence schedule for the maintenance window. </summary>
+        <summary>
+            Recurrence schedule for the maintenance window.
+            Serialized Name: MaintenanceWindow.schedule
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,13 +183,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The date the maintenance window activates. If the current date is before this date, the maintenance window is inactive and will not be used for upgrades. If not specified, the maintenance window will be active right away. </summary>
+        <summary>
+            The date the maintenance window activates. If the current date is before this date, the maintenance window is inactive and will not be used for upgrades. If not specified, the maintenance window will be active right away.
+            Serialized Name: MaintenanceWindow.startDate
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,13 +207,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The start time of the maintenance window. Accepted values are from '00:00' to '23:59'. 'utcOffset' applies to this field. For example: '02:00' with 'utcOffset: +02:00' means UTC time '00:00'. </summary>
+        <summary>
+            The start time of the maintenance window. Accepted values are from '00:00' to '23:59'. 'utcOffset' applies to this field. For example: '02:00' with 'utcOffset: +02:00' means UTC time '00:00'.
+            Serialized Name: MaintenanceWindow.startTime
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +233,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceMaintenanceWindow</ReturnType>
@@ -237,7 +265,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -268,7 +296,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.ContainerServiceMaintenanceWindow</ReturnType>
@@ -300,7 +328,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -329,7 +357,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -357,13 +385,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The UTC offset in format +/-HH:mm. For example, '+05:30' for IST and '-07:00' for PST. If not specified, the default is '+00:00'. </summary>
+        <summary>
+            The UTC offset in format +/-HH:mm. For example, '+05:30' for IST and '-07:00' for PST. If not specified, the default is '+00:00'.
+            Serialized Name: MaintenanceWindow.utcOffset
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

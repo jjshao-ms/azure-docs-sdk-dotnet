@@ -12,6 +12,7 @@
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
     <AssemblyVersion>1.2.4.0</AssemblyVersion>
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +29,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> Settings for upgrading an agentpool. </summary>
+    <summary>
+            Settings for upgrading an agentpool
+            Serialized Name: AgentPoolUpgradeSettings
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +44,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,13 +61,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The amount of time (in minutes) to wait on eviction of pods and graceful termination per node. This eviction wait time honors waiting on pod disruption budgets. If this time is exceeded, the upgrade fails. If not specified, the default is 30 minutes. </summary>
+        <summary>
+            The drain timeout for a node. The amount of time (in minutes) to wait on eviction of pods and graceful termination per node. This eviction wait time honors waiting on pod disruption budgets. If this time is exceeded, the upgrade fails. If not specified, the default is 30 minutes.
+            Serialized Name: AgentPoolUpgradeSettings.drainTimeoutInMinutes
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +84,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -102,13 +109,62 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> This can either be set to an integer (e.g. '5') or a percentage (e.g. '50%'). If a percentage is specified, it is the percentage of the total agent pool size at the time of the upgrade. For percentages, fractional nodes are rounded up. If not specified, the default is 1. For more information, including best practices, see: https://docs.microsoft.com/azure/aks/upgrade-cluster#customize-node-surge-upgrade. </summary>
+        <summary>
+            The maximum number or percentage of nodes that are surged during upgrade. This can either be set to an integer (e.g. '5') or a percentage (e.g. '50%'). If a percentage is specified, it is the percentage of the total agent pool size at the time of the upgrade. For percentages, fractional nodes are rounded up. If not specified, the default is 10%. For more information, including best practices, see: https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster
+            Serialized Name: AgentPoolUpgradeSettings.maxSurge
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxUnavailable">
+      <MemberSignature Language="C#" Value="public string MaxUnavailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MaxUnavailable" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.MaxUnavailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxUnavailable As String" />
+      <MemberSignature Language="F#" Value="member this.MaxUnavailable : string with get, set" Usage="Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.MaxUnavailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The maximum number or percentage of nodes that can be simultaneously unavailable during upgrade. This can either be set to an integer (e.g. '1') or a percentage (e.g. '5%'). If a percentage is specified, it is the percentage of the total agent pool size at the time of the upgrade. For percentages, fractional nodes are rounded up. If not specified, the default is 0. For more information, including best practices, see: https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster
+            Serialized Name: AgentPoolUpgradeSettings.maxUnavailable
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeSoakDurationInMinutes">
+      <MemberSignature Language="C#" Value="public int? NodeSoakDurationInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; NodeSoakDurationInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.NodeSoakDurationInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeSoakDurationInMinutes As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.NodeSoakDurationInMinutes : Nullable&lt;int&gt; with get, set" Usage="Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.NodeSoakDurationInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The soak duration for a node. The amount of time (in minutes) to wait after draining a node and before reimaging it and moving on to next node. If not specified, the default is 0 minutes.
+            Serialized Name: AgentPoolUpgradeSettings.nodeSoakDurationInMinutes
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +181,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings</ReturnType>
@@ -157,7 +213,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -188,7 +244,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings</ReturnType>
@@ -220,7 +276,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -249,7 +305,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -265,6 +321,29 @@
         <returns>A binary representation of the written model.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UndrainableNodeBehavior">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior? UndrainableNodeBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior&gt; UndrainableNodeBehavior" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.UndrainableNodeBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property UndrainableNodeBehavior As Nullable(Of UndrainableNodeBehavior)" />
+      <MemberSignature Language="F#" Value="member this.UndrainableNodeBehavior : Nullable&lt;Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior&gt; with get, set" Usage="Azure.ResourceManager.ContainerService.Models.AgentPoolUpgradeSettings.UndrainableNodeBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the behavior for undrainable nodes during upgrade. The most common cause of undrainable nodes is Pod Disruption Budgets (PDBs), but other issues, such as pod termination grace period is exceeding the remaining per-node drain timeout or pod is still being in a running state, can also cause undrainable nodes.
+            Serialized Name: AgentPoolUpgradeSettings.undrainableNodeBehavior
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

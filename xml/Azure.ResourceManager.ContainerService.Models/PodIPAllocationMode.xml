@@ -1,0 +1,279 @@
+<Type Name="PodIPAllocationMode" FullName="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode">
+  <TypeSignature Language="C#" Value="public readonly struct PodIPAllocationMode : IEquatable&lt;Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PodIPAllocationMode extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PodIPAllocationMode&#xA;Implements IEquatable(Of PodIPAllocationMode)" />
+  <TypeSignature Language="F#" Value="type PodIPAllocationMode = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Pod IP Allocation Mode. The IP allocation mode for pods in the agent pool. Must be used with podSubnetId. The default is 'DynamicIndividual'.
+            Serialized Name: PodIPAllocationMode
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PodIPAllocationMode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode : string -&gt; Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" Usage="new Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicIndividual">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode DynamicIndividual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode DynamicIndividual" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.DynamicIndividual" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DynamicIndividual As PodIPAllocationMode" />
+      <MemberSignature Language="F#" Value="static member DynamicIndividual : Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" Usage="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.DynamicIndividual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Each node gets allocated with a non-contiguous list of IP addresses assignable to pods. This is better for maximizing a small to medium subnet of size /16 or smaller. The Azure CNI cluster with dynamic IP allocation defaults to this mode if the customer does not explicitly specify a podIPAllocationMode
+            Serialized Name: PodIPAllocationMode.DynamicIndividual
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.Equals(Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PodIPAllocationMode) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode -&gt; bool" Usage="podIPAllocationMode.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="podIPAllocationMode.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="podIPAllocationMode.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode left, Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode left, valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.op_Equality(Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode,Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PodIPAllocationMode, right As PodIPAllocationMode) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode * Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+        <Parameter Name="right" Type="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.op_Implicit(System.String)~Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As PodIPAllocationMode" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" Usage="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a <see cref="T:System.String" /> to a <see cref="T:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode left, Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode left, valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.op_Inequality(Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode,Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PodIPAllocationMode, right As PodIPAllocationMode) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode * Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode -&gt; bool" Usage="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+        <Parameter Name="right" Type="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticBlock">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode StaticBlock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode StaticBlock" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.StaticBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StaticBlock As PodIPAllocationMode" />
+      <MemberSignature Language="F#" Value="static member StaticBlock : Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode" Usage="Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.StaticBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Each node is statically allocated CIDR block(s) of size /28 = 16 IPs per block to satisfy the maxPods per node. Number of CIDR blocks &gt;= (maxPods / 16). The block, rather than a single IP, counts against the Azure Vnet Private IP limit of 65K. Therefore block mode is suitable for running larger workloads with more than the current limit of 65K pods in a cluster. This mode is better suited to scale with larger subnets of /15 or bigger
+            Serialized Name: PodIPAllocationMode.StaticBlock
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.PodIPAllocationMode.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="podIPAllocationMode.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
