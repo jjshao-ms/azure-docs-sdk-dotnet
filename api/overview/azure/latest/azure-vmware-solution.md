@@ -1,7 +1,7 @@
 ---
 title: Azure Azure VMware Solution SDK for .NET
 description: Reference for Azure Azure VMware Solution SDK for .NET
-ms.date: 12/31/2025
+ms.date: 01/01/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: azurevmwaresolution
