@@ -1,0 +1,11 @@
+---
+title: Azure Edgeactions SDK for .NET
+description: Reference for Azure Edgeactions SDK for .NET
+ms.date: 01/05/2026
+ms.topic: reference
+ms.devlang: dotnet
+ms.service: edgeactions
+---
+# Azure Edgeactions SDK for .NET - preview
+## Packages - preview
+[!INCLUDE [packages](edgeactions-index.md)]
