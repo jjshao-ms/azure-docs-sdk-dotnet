@@ -1,12 +1,12 @@
 ---
 title: Azure Provisioning Network client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.Network, provisioning
-ms.date: 12/09/2025
+ms.date: 01/07/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure Provisioning Network client library for .NET - version 1.0.0-beta.2 
+# Azure Provisioning Network client library for .NET - version 1.0.0-beta.3 
 
 
 Azure.Provisioning.Network simplifies declarative resource provisioning in .NET.
@@ -422,7 +422,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Network_1.0.0-beta.2/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Network_1.0.0-beta.3/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
