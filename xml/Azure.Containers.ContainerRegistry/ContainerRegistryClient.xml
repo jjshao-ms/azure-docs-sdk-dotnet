@@ -10,6 +10,7 @@
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -72,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -100,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -127,6 +132,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -156,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -185,6 +192,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -214,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -226,6 +235,138 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ExchangeAadAccessTokenForAcrRefreshToken">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt; ExchangeAadAccessTokenForAcrRefreshToken (string service, string tenant = default, string refreshToken = default, string accessToken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Containers.ContainerRegistry.AcrRefreshToken&gt; ExchangeAadAccessTokenForAcrRefreshToken(string service, string tenant, string refreshToken, string accessToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Containers.ContainerRegistry.ContainerRegistryClient.ExchangeAadAccessTokenForAcrRefreshToken(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExchangeAadAccessTokenForAcrRefreshToken (service As String, Optional tenant As String = Nothing, Optional refreshToken As String = Nothing, Optional accessToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AcrRefreshToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExchangeAadAccessTokenForAcrRefreshToken : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&#xA;override this.ExchangeAadAccessTokenForAcrRefreshToken : string * string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;" Usage="containerRegistryClient.ExchangeAadAccessTokenForAcrRefreshToken (service, tenant, refreshToken, accessToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tenant" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="refreshToken" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="accessToken" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="service"> Indicates the name of your Azure container registry. </param>
+        <param name="tenant"> AAD tenant associated to the AAD credentials. </param>
+        <param name="refreshToken"> AAD refresh token. </param>
+        <param name="accessToken"> AAD access token. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Exchange AAD tokens for an ACR refresh Token. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="service" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeAadAccessTokenForAcrRefreshTokenAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&gt; ExchangeAadAccessTokenForAcrRefreshTokenAsync (string service, string tenant = default, string refreshToken = default, string accessToken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&gt; ExchangeAadAccessTokenForAcrRefreshTokenAsync(string service, string tenant, string refreshToken, string accessToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Containers.ContainerRegistry.ContainerRegistryClient.ExchangeAadAccessTokenForAcrRefreshTokenAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExchangeAadAccessTokenForAcrRefreshTokenAsync (service As String, Optional tenant As String = Nothing, Optional refreshToken As String = Nothing, Optional accessToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AcrRefreshToken))" />
+      <MemberSignature Language="F#" Value="abstract member ExchangeAadAccessTokenForAcrRefreshTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&gt;&#xA;override this.ExchangeAadAccessTokenForAcrRefreshTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&gt;" Usage="containerRegistryClient.ExchangeAadAccessTokenForAcrRefreshTokenAsync (service, tenant, refreshToken, accessToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrRefreshToken&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tenant" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="refreshToken" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="accessToken" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="service"> Indicates the name of your Azure container registry. </param>
+        <param name="tenant"> AAD tenant associated to the AAD credentials. </param>
+        <param name="refreshToken"> AAD refresh token. </param>
+        <param name="accessToken"> AAD access token. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Exchange AAD tokens for an ACR refresh Token. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="service" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeAcrRefreshTokenForAcrAccessToken">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt; ExchangeAcrRefreshTokenForAcrAccessToken (string service, string scope, string refreshToken, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Containers.ContainerRegistry.AcrAccessToken&gt; ExchangeAcrRefreshTokenForAcrAccessToken(string service, string scope, string refreshToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Containers.ContainerRegistry.ContainerRegistryClient.ExchangeAcrRefreshTokenForAcrAccessToken(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExchangeAcrRefreshTokenForAcrAccessToken (service As String, scope As String, refreshToken As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AcrAccessToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExchangeAcrRefreshTokenForAcrAccessToken : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&#xA;override this.ExchangeAcrRefreshTokenForAcrAccessToken : string * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;" Usage="containerRegistryClient.ExchangeAcrRefreshTokenForAcrAccessToken (service, scope, refreshToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="scope" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="refreshToken" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="service"> Indicates the name of your Azure container registry. </param>
+        <param name="scope"> Which is expected to be a valid scope, and can be specified more than once for multiple scope requests. You obtained this from the Www-Authenticate response header from the challenge. </param>
+        <param name="refreshToken"> Must be a valid ACR refresh token. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Exchange ACR Refresh token for an ACR Access Token. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="service" />, <paramref name="scope" /> or <paramref name="refreshToken" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeAcrRefreshTokenForAcrAccessTokenAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&gt; ExchangeAcrRefreshTokenForAcrAccessTokenAsync (string service, string scope, string refreshToken, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&gt; ExchangeAcrRefreshTokenForAcrAccessTokenAsync(string service, string scope, string refreshToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Containers.ContainerRegistry.ContainerRegistryClient.ExchangeAcrRefreshTokenForAcrAccessTokenAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExchangeAcrRefreshTokenForAcrAccessTokenAsync (service As String, scope As String, refreshToken As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AcrAccessToken))" />
+      <MemberSignature Language="F#" Value="abstract member ExchangeAcrRefreshTokenForAcrAccessTokenAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&gt;&#xA;override this.ExchangeAcrRefreshTokenForAcrAccessTokenAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&gt;" Usage="containerRegistryClient.ExchangeAcrRefreshTokenForAcrAccessTokenAsync (service, scope, refreshToken, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Containers.ContainerRegistry.AcrAccessToken&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="scope" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="refreshToken" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="service"> Indicates the name of your Azure container registry. </param>
+        <param name="scope"> Which is expected to be a valid scope, and can be specified more than once for multiple scope requests. You obtained this from the Www-Authenticate response header from the challenge. </param>
+        <param name="refreshToken"> Must be a valid ACR refresh token. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Exchange ACR Refresh token for an ACR Access Token. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="service" />, <paramref name="scope" /> or <paramref name="refreshToken" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetArtifact">
       <MemberSignature Language="C#" Value="public virtual Azure.Containers.ContainerRegistry.RegistryArtifact GetArtifact (string repositoryName, string tagOrDigest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Containers.ContainerRegistry.RegistryArtifact GetArtifact(string repositoryName, string tagOrDigest) cil managed" />
@@ -236,6 +377,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Containers.ContainerRegistry.RegistryArtifact</ReturnType>
@@ -266,6 +408,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Containers.ContainerRegistry.ContainerRepository</ReturnType>
@@ -294,6 +437,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;System.String&gt;</ReturnType>
@@ -319,6 +463,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;System.String&gt;</ReturnType>
@@ -344,6 +489,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Containers.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Pipeline.HttpPipeline</ReturnType>

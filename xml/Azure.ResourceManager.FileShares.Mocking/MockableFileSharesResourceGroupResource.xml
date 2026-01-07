@@ -1,0 +1,122 @@
+<Type Name="MockableFileSharesResourceGroupResource" FullName="Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource">
+  <TypeSignature Language="C#" Value="public class MockableFileSharesResourceGroupResource : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableFileSharesResourceGroupResource extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableFileSharesResourceGroupResource&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableFileSharesResourceGroupResource = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableFileSharesResourceGroupResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableFileSharesResourceGroupResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShare">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShare (string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShare(string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShare(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileShare (resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetFileShare : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&#xA;override this.GetFileShare : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;" Usage="mockableFileSharesResourceGroupResource.GetFileShare (resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceName"> The resource name of the file share, as seen by the administrator through Azure Resource Manager. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a FileShare
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}. </description></item><item><term> Operation Id. </term><description> FileShares_Get. </description></item><item><term> Default Api Version. </term><description> 2025-06-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShareAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt; GetFileShareAsync (string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt;&gt; GetFileShareAsync(string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShareAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileShareAsync (resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetFileShareAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt;&#xA;override this.GetFileShareAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt;" Usage="mockableFileSharesResourceGroupResource.GetFileShareAsync (resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceName"> The resource name of the file share, as seen by the administrator through Azure Resource Manager. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a FileShare
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}. </description></item><item><term> Operation Id. </term><description> FileShares_Get. </description></item><item><term> Default Api Version. </term><description> 2025-06-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="resourceName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShares">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.FileShares.FileShareCollection GetFileShares ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.FileShares.FileShareCollection GetFileShares() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShares" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileShares () As FileShareCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetFileShares : unit -&gt; Azure.ResourceManager.FileShares.FileShareCollection&#xA;override this.GetFileShares : unit -&gt; Azure.ResourceManager.FileShares.FileShareCollection" Usage="mockableFileSharesResourceGroupResource.GetFileShares " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.FileShares.FileShareCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of FileShares in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of FileShares and their operations over a FileShareResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

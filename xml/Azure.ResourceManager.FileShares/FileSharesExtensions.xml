@@ -1,0 +1,496 @@
+<Type Name="FileSharesExtensions" FullName="Azure.ResourceManager.FileShares.FileSharesExtensions">
+  <TypeSignature Language="C#" Value="public static class FileSharesExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FileSharesExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.FileShares.FileSharesExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module FileSharesExtensions" />
+  <TypeSignature Language="F#" Value="type FileSharesExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.FileShares. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckFileShareNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt; CheckFileShareNameAvailability (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt; CheckFileShareNameAvailability(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.CheckFileShareNameAvailability(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckFileShareNameAvailability (subscriptionResource As SubscriptionResource, location As AzureLocation, content As FileShareNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareNameAvailabilityResult)" />
+      <MemberSignature Language="F#" Value="static member CheckFileShareNameAvailability : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.CheckFileShareNameAvailability (subscriptionResource, location, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="content" Type="Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="content"> The CheckAvailability request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Implements local CheckNameAvailability operations
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.CheckFileShareNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckFileShareNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;&gt; CheckFileShareNameAvailabilityAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;&gt; CheckFileShareNameAvailabilityAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.CheckFileShareNameAvailabilityAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckFileShareNameAvailabilityAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, content As FileShareNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareNameAvailabilityResult))" />
+      <MemberSignature Language="F#" Value="static member CheckFileShareNameAvailabilityAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.CheckFileShareNameAvailabilityAsync (subscriptionResource, location, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="content" Type="Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="content"> The CheckAvailability request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Implements local CheckNameAvailability operations
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.CheckFileShareNameAvailabilityAsync(Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareNameAvailabilityContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShare">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShare (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShare(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShare(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShare (resourceGroupResource As ResourceGroupResource, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareResource)" />
+      <MemberSignature Language="F#" Value="static member GetFileShare : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShare (resourceGroupResource, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="resourceName"> The resource name of the file share, as seen by the administrator through Azure Resource Manager. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a FileShare
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShare(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShareAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt; GetFileShareAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt;&gt; GetFileShareAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShareAsync (resourceGroupResource As ResourceGroupResource, resourceName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareResource))" />
+      <MemberSignature Language="F#" Value="static member GetFileShareAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareAsync (resourceGroupResource, resourceName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="resourceName"> The resource name of the file share, as seen by the administrator through Azure Resource Manager. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a FileShare
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShareAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShareResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.FileShares.FileShareResource GetFileShareResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.FileShares.FileShareResource GetFileShareResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShareResource (client As ArmClient, id As ResourceIdentifier) As FileShareResource" />
+      <MemberSignature Language="F#" Value="static member GetFileShareResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.FileShares.FileShareResource" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.FileShares.FileShareResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.FileShares.FileShareResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesArmClient.GetFileShareResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.FileShares.FileShareResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShares">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.FileShares.FileShareCollection GetFileShares (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.FileShares.FileShareCollection GetFileShares(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShares(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShares (resourceGroupResource As ResourceGroupResource) As FileShareCollection" />
+      <MemberSignature Language="F#" Value="static member GetFileShares : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.FileShares.FileShareCollection" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShares resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.FileShares.FileShareCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary>
+            Gets a collection of FileShares in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesResourceGroupResource.GetFileShares" /> instead. </description></item></summary>
+        <returns> An object representing collection of FileShares and their operations over a FileShareResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShares">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShares (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileShares(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShares(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShares (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of FileShareResource)" />
+      <MemberSignature Language="F#" Value="static member GetFileShares : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShares (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List FileShare resources by subscription ID
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetFileShares(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.FileShares.FileShareResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileSharesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileSharesAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.FileShares.FileShareResource&gt; GetFileSharesAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileSharesAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileSharesAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of FileShareResource)" />
+      <MemberSignature Language="F#" Value="static member GetFileSharesAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileSharesAsync (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.FileShares.FileShareResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            List FileShare resources by subscription ID
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetFileSharesAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.FileShares.FileShareResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileShareSnapshotResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.FileShares.FileShareSnapshotResource GetFileShareSnapshotResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.FileShares.FileShareSnapshotResource GetFileShareSnapshotResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareSnapshotResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileShareSnapshotResource (client As ArmClient, id As ResourceIdentifier) As FileShareSnapshotResource" />
+      <MemberSignature Language="F#" Value="static member GetFileShareSnapshotResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.FileShares.FileShareSnapshotResource" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetFileShareSnapshotResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.FileShares.FileShareSnapshotResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.FileShares.FileShareSnapshotResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesArmClient.GetFileShareSnapshotResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.FileShares.FileShareSnapshotResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLimits">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt; GetLimits (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt; GetLimits(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetLimits(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLimits (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareLimitsResult)" />
+      <MemberSignature Language="F#" Value="static member GetLimits : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetLimits (subscriptionResource, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares limits.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetLimits(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLimitsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;&gt; GetLimitsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;&gt; GetLimitsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetLimitsAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLimitsAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareLimitsResult))" />
+      <MemberSignature Language="F#" Value="static member GetLimitsAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetLimitsAsync (subscriptionResource, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareLimitsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares limits.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetLimitsAsync(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProvisioningRecommendation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt; GetProvisioningRecommendation (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt; GetProvisioningRecommendation(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetProvisioningRecommendation(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProvisioningRecommendation (subscriptionResource As SubscriptionResource, location As AzureLocation, content As FileShareProvisioningRecommendationContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareProvisioningRecommendationResult)" />
+      <MemberSignature Language="F#" Value="static member GetProvisioningRecommendation : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetProvisioningRecommendation (subscriptionResource, location, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="content" Type="Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares provisioning parameters recommendation.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetProvisioningRecommendation(Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProvisioningRecommendationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;&gt; GetProvisioningRecommendationAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;&gt; GetProvisioningRecommendationAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetProvisioningRecommendationAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProvisioningRecommendationAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, content As FileShareProvisioningRecommendationContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareProvisioningRecommendationResult))" />
+      <MemberSignature Language="F#" Value="static member GetProvisioningRecommendationAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetProvisioningRecommendationAsync (subscriptionResource, location, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="content" Type="Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares provisioning parameters recommendation.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetProvisioningRecommendationAsync(Azure.Core.AzureLocation,Azure.ResourceManager.FileShares.Models.FileShareProvisioningRecommendationContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUsageData">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt; GetUsageData (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt; GetUsageData(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetUsageData(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsageData (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Response(Of FileShareUsageDataResult)" />
+      <MemberSignature Language="F#" Value="static member GetUsageData : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetUsageData (subscriptionResource, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares usage data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetUsageData(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUsageDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;&gt; GetUsageDataAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;&gt; GetUsageDataAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.FileShares.FileSharesExtensions.GetUsageDataAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUsageDataAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of FileShareUsageDataResult))" />
+      <MemberSignature Language="F#" Value="static member GetUsageDataAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;&gt;" Usage="Azure.ResourceManager.FileShares.FileSharesExtensions.GetUsageDataAsync (subscriptionResource, location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.FileShares</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.FileShares.Models.FileShareUsageDataResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get file shares usage data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.FileShares.Mocking.MockableFileSharesSubscriptionResource.GetUsageDataAsync(Azure.Core.AzureLocation,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
