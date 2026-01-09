@@ -1,0 +1,613 @@
+<Type Name="TranslationTarget" FullName="Azure.AI.Translation.Text.TranslationTarget">
+  <TypeSignature Language="C#" Value="public class TranslationTarget : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TranslationTarget extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Translation.Text.TranslationTarget&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Translation.Text.TranslationTarget&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Translation.Text.TranslationTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Class TranslationTarget&#xA;Implements IJsonModel(Of TranslationTarget), IPersistableModel(Of TranslationTarget)" />
+  <TypeSignature Language="F#" Value="type TranslationTarget = class&#xA;    interface IJsonModel&lt;TranslationTarget&gt;&#xA;    interface IPersistableModel&lt;TranslationTarget&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> Translate targets parameters. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationTarget (string language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Translation.Text.TranslationTarget : string -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="new Azure.AI.Translation.Text.TranslationTarget language" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">
+            Specifies the language of the output text. The target language must be one of the supported languages included 
+            in the translation scope. It's possible to translate to multiple languages simultaneously by including 
+            multiple string values in the targetsLanguage array.
+            </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Translation.Text.TranslationTarget" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="language" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationTarget (string language, string script = default, Azure.AI.Translation.Text.ProfanityAction? profanityAction = default, Azure.AI.Translation.Text.ProfanityMarker? profanityMarker = default, string deploymentName = default, bool? allowFallback = default, string grade = default, string tone = default, string gender = default, string adaptiveDatasetId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language, string script, valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityAction&gt; profanityAction, valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityMarker&gt; profanityMarker, string deploymentName, valuetype System.Nullable`1&lt;bool&gt; allowFallback, string grade, string tone, string gender, string adaptiveDatasetId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.#ctor(System.String,System.String,System.Nullable{Azure.AI.Translation.Text.ProfanityAction},System.Nullable{Azure.AI.Translation.Text.ProfanityMarker},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, Optional script As String = Nothing, Optional profanityAction As Nullable(Of ProfanityAction) = Nothing, Optional profanityMarker As Nullable(Of ProfanityMarker) = Nothing, Optional deploymentName As String = Nothing, Optional allowFallback As Nullable(Of Boolean) = Nothing, Optional grade As String = Nothing, Optional tone As String = Nothing, Optional gender As String = Nothing, Optional adaptiveDatasetId As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Translation.Text.TranslationTarget : string * string * Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt; * Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt; * string * Nullable&lt;bool&gt; * string * string * string * string -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="new Azure.AI.Translation.Text.TranslationTarget (language, script, profanityAction, profanityMarker, deploymentName, allowFallback, grade, tone, gender, adaptiveDatasetId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="profanityAction" Type="System.Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt;" />
+        <Parameter Name="profanityMarker" Type="System.Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt;" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="allowFallback" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="grade" Type="System.String" />
+        <Parameter Name="tone" Type="System.String" />
+        <Parameter Name="gender" Type="System.String" />
+        <Parameter Name="adaptiveDatasetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">
+             Specifies the language of the output text. The target language must be one of the supported languages included
+             in the translation scope. It's possible to translate to multiple languages simultaneously by including
+             multiple string values in the targetsLanguage array.
+             </param>
+        <param name="script"> Specifies the script of the translated text. </param>
+        <param name="profanityAction">
+             Specifies how profanities should be treated in translations.
+             Possible values are: NoAction (default), Marked or Deleted.
+             </param>
+        <param name="profanityMarker">
+             Specifies how profanities should be marked in translations.
+             Possible values are: Asterisk (default) or Tag.
+             </param>
+        <param name="deploymentName">
+             Default is 'general', which uses NMT system.
+             'abc-inc-gpt-4o', and 'abc-inc-gpt-4o-mini' are examples of deployment names which use GPT-4o uses or
+             GPT-4o-mini model. 'gpt-4o' uses GPT-4o model.
+            
+             '&lt;custom model id&gt;' uses the custom NMT model tuned by customer.
+             'best' system determines which is the best model to use for the request. This intelligence could be introduced
+             in future. Customer should have deployed it in their resource.
+             </param>
+        <param name="allowFallback">
+             In the case where a custom system is being used, specifies that the service is allowed to fall back to a
+             general system when a custom system doesn't exist.
+             In the case where a Large Language Model is being used, specifies that the service is allowed to fall
+             back to a Small Language Model if an error occurs.
+             Possible values are: true (default) or false.
+             </param>
+        <param name="grade"> Defines complexity of LLM prompts to provide high accuracy translation. </param>
+        <param name="tone"> Desired tone of target translation. </param>
+        <param name="gender"> Desired gender of target translation. </param>
+        <param name="adaptiveDatasetId"> Reference dataset ID having sentence pair to generate adaptive customized translation. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Translation.Text.TranslationTarget" /> with optional parameters. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="language" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AdaptiveDatasetId">
+      <MemberSignature Language="C#" Value="public string AdaptiveDatasetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdaptiveDatasetId" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.AdaptiveDatasetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdaptiveDatasetId As String" />
+      <MemberSignature Language="F#" Value="member this.AdaptiveDatasetId : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.AdaptiveDatasetId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Reference dataset ID having sentence pair to generate adaptive customized translation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowFallback">
+      <MemberSignature Language="C#" Value="public bool? AllowFallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowFallback" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.AllowFallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowFallback As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AllowFallback : Nullable&lt;bool&gt; with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.AllowFallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            In the case where a custom system is being used, specifies that the service is allowed to fall back to a
+            general system when a custom system doesn't exist. 
+            In the case where a Large Language Model is being used, specifies that the service is allowed to fall
+            back to a Small Language Model if an error occurs.
+            Possible values are: true (default) or false.
+            
+            allowFallback=false specifies that the translation should only use systems trained for the category specified 
+            by the request. If a translation for language X to language Y requires chaining through a pivot language E, 
+            then all the systems in the chain (X → E and E → Y) will need to be custom and have the same category. 
+            If no system is found with the specific category, the request will return a 400 status code. allowFallback=true 
+            specifies that the service is allowed to fall back to a general system when a custom system doesn't exist.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentName">
+      <MemberSignature Language="C#" Value="public string DeploymentName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeploymentName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.DeploymentName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentName As String" />
+      <MemberSignature Language="F#" Value="member this.DeploymentName : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.DeploymentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default is 'general', which uses NMT system.
+            'abc-inc-gpt-4o', and 'abc-inc-gpt-4o-mini' are examples of deployment names which use GPT-4o uses or
+            GPT-4o-mini model. 'gpt-4o' uses GPT-4o model.
+            
+            '&lt;custom model id&gt;' uses the custom NMT model tuned by customer.
+            'best' system determines which is the best model to use for the request. This intelligence could be introduced
+            in future. Customer should have deployed it in their resource.
+            
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gender">
+      <MemberSignature Language="C#" Value="public string Gender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Gender" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.Gender" />
+      <MemberSignature Language="VB.NET" Value="Public Property Gender As String" />
+      <MemberSignature Language="F#" Value="member this.Gender : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.Gender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Desired gender of target translation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grade">
+      <MemberSignature Language="C#" Value="public string Grade { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Grade" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.Grade" />
+      <MemberSignature Language="VB.NET" Value="Public Property Grade As String" />
+      <MemberSignature Language="F#" Value="member this.Grade : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.Grade" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Defines complexity of LLM prompts to provide high accuracy translation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Translation.Text.TranslationTarget JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Translation.Text.TranslationTarget JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As TranslationTarget" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="translationTarget.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="translationTarget.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.Language" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Azure.AI.Translation.Text.TranslationTarget.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies the language of the output text. The target language must be one of the supported languages included 
+            in the translation scope. It's possible to translate to multiple languages simultaneously by including 
+            multiple string values in the targetsLanguage array.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Translation.Text.TranslationTarget PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Translation.Text.TranslationTarget PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As TranslationTarget" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="translationTarget.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="translationTarget.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfanityAction">
+      <MemberSignature Language="C#" Value="public Azure.AI.Translation.Text.ProfanityAction? ProfanityAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityAction&gt; ProfanityAction" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.ProfanityAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfanityAction As Nullable(Of ProfanityAction)" />
+      <MemberSignature Language="F#" Value="member this.ProfanityAction : Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt; with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.ProfanityAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies how profanities should be treated in translations.
+            Possible values are: NoAction (default), Marked or Deleted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfanityMarker">
+      <MemberSignature Language="C#" Value="public Azure.AI.Translation.Text.ProfanityMarker? ProfanityMarker { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityMarker&gt; ProfanityMarker" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.ProfanityMarker" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfanityMarker As Nullable(Of ProfanityMarker)" />
+      <MemberSignature Language="F#" Value="member this.ProfanityMarker : Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt; with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.ProfanityMarker" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies how profanities should be marked in translations.
+            Possible values are: Asterisk (default) or Tag. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceTextPairs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt; ReferenceTextPairs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.Translation.Text.ReferenceTextPair&gt; ReferenceTextPairs" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.ReferenceTextPairs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceTextPairs As IList(Of ReferenceTextPair)" />
+      <MemberSignature Language="F#" Value="member this.ReferenceTextPairs : System.Collections.Generic.IList&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt;" Usage="Azure.AI.Translation.Text.TranslationTarget.ReferenceTextPairs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Reference text pairs to generate adaptive customized translation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public string Script { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Script" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.Script" />
+      <MemberSignature Language="VB.NET" Value="Public Property Script As String" />
+      <MemberSignature Language="F#" Value="member this.Script : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.Script" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the script of the translated text. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Translation.Text.TranslationTarget IJsonModel&lt;TranslationTarget&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Translation.Text.TranslationTarget System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Translation#Text#TranslationTarget&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As TranslationTarget Implements IJsonModel(Of TranslationTarget).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="translationTarget.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;TranslationTarget&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Translation#Text#TranslationTarget&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of TranslationTarget).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="translationTarget.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Translation.Text.TranslationTarget IPersistableModel&lt;TranslationTarget&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Translation.Text.TranslationTarget System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Translation#Text#TranslationTarget&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As TranslationTarget Implements IPersistableModel(Of TranslationTarget).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="translationTarget.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;TranslationTarget&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Translation#Text#TranslationTarget&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of TranslationTarget).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="translationTarget.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;TranslationTarget&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTarget.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Translation#Text#TranslationTarget&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of TranslationTarget).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="translationTarget.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Translation.Text.TranslationTarget&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tone">
+      <MemberSignature Language="C#" Value="public string Tone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tone" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Translation.Text.TranslationTarget.Tone" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tone As String" />
+      <MemberSignature Language="F#" Value="member this.Tone : string with get, set" Usage="Azure.AI.Translation.Text.TranslationTarget.Tone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Desired tone of target translation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

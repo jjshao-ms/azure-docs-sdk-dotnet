@@ -1,0 +1,471 @@
+<Type Name="TranslationTextModelFactory" FullName="Azure.AI.Translation.Text.TranslationTextModelFactory">
+  <TypeSignature Language="C#" Value="public static class TranslationTextModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TranslationTextModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Translation.Text.TranslationTextModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class TranslationTextModelFactory" />
+  <TypeSignature Language="F#" Value="type TranslationTextModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DetectedLanguage">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.DetectedLanguage DetectedLanguage (string language = default, float score = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.DetectedLanguage DetectedLanguage(string language, float32 score) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.DetectedLanguage(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DetectedLanguage (Optional language As String = Nothing, Optional score As Single = 0) As DetectedLanguage" />
+      <MemberSignature Language="F#" Value="static member DetectedLanguage : string * single -&gt; Azure.AI.Translation.Text.DetectedLanguage" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.DetectedLanguage (language, score)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.DetectedLanguage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="score" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="language"> A string representing the code of the detected language. </param>
+        <param name="score">
+            A float value indicating the confidence in the result.
+            The score is between zero and one and a low score indicates a low confidence.
+            </param>
+        <summary> An object describing the detected language. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.DetectedLanguage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedLanguagesResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.GetSupportedLanguagesResult GetSupportedLanguagesResult (string requestId = default, Azure.ETag etag = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.AI.Translation.Text.TranslationLanguage&gt; translation = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.AI.Translation.Text.TransliterationLanguage&gt; transliteration = default, System.Collections.Generic.IEnumerable&lt;string&gt; models = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.GetSupportedLanguagesResult GetSupportedLanguagesResult(string requestId, valuetype Azure.ETag etag, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.AI.Translation.Text.TranslationLanguage&gt; translation, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.AI.Translation.Text.TransliterationLanguage&gt; transliteration, class System.Collections.Generic.IEnumerable`1&lt;string&gt; models) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.GetSupportedLanguagesResult(System.String,Azure.ETag,System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.AI.Translation.Text.TranslationLanguage},System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.AI.Translation.Text.TransliterationLanguage},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSupportedLanguagesResult (Optional requestId As String = Nothing, Optional etag As ETag = Nothing, Optional translation As IReadOnlyDictionary(Of String, TranslationLanguage) = Nothing, Optional transliteration As IReadOnlyDictionary(Of String, TransliterationLanguage) = Nothing, Optional models As IEnumerable(Of String) = Nothing) As GetSupportedLanguagesResult" />
+      <MemberSignature Language="F#" Value="static member GetSupportedLanguagesResult : string * Azure.ETag * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.AI.Translation.Text.TranslationLanguage&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.AI.Translation.Text.TransliterationLanguage&gt; * seq&lt;string&gt; -&gt; Azure.AI.Translation.Text.GetSupportedLanguagesResult" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.GetSupportedLanguagesResult (requestId, etag, translation, transliteration, models)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.GetSupportedLanguagesResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestId" Type="System.String" />
+        <Parameter Name="etag" Type="Azure.ETag" />
+        <Parameter Name="translation" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.AI.Translation.Text.TranslationLanguage&gt;" />
+        <Parameter Name="transliteration" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Azure.AI.Translation.Text.TransliterationLanguage&gt;" />
+        <Parameter Name="models" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="requestId"> Value generated by the service to identify the request. It is used for troubleshooting purposes. </param>
+        <param name="etag">
+            Current value of the entity tag for the requested groups of supported languages. 
+            To make subsequent requests more efficient, the client may send the `ETag` value in an 
+            `If-None-Match` header field.
+            </param>
+        <param name="translation"> Languages that support translate API. </param>
+        <param name="transliteration"> Languages that support transliteration API. </param>
+        <param name="models"> LLM models supported. </param>
+        <summary> Response for the languages API. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.GetSupportedLanguagesResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTextItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.InputTextItem InputTextItem (string text = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.InputTextItem InputTextItem(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.InputTextItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTextItem (Optional text As String = Nothing) As InputTextItem" />
+      <MemberSignature Language="F#" Value="static member InputTextItem : string -&gt; Azure.AI.Translation.Text.InputTextItem" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.InputTextItem text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.InputTextItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text"> Text to translate. </param>
+        <summary> Element containing the text for translation. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.InputTextItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageScript">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.LanguageScript LanguageScript (string code = default, string name = default, string nativeName = default, Azure.AI.Translation.Text.LanguageDirectionality directionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.LanguageScript LanguageScript(string code, string name, string nativeName, valuetype Azure.AI.Translation.Text.LanguageDirectionality directionality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.LanguageScript(System.String,System.String,System.String,Azure.AI.Translation.Text.LanguageDirectionality)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LanguageScript (Optional code As String = Nothing, Optional name As String = Nothing, Optional nativeName As String = Nothing, Optional directionality As LanguageDirectionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight) As LanguageScript" />
+      <MemberSignature Language="F#" Value="static member LanguageScript : string * string * string * Azure.AI.Translation.Text.LanguageDirectionality -&gt; Azure.AI.Translation.Text.LanguageScript" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.LanguageScript (code, name, nativeName, directionality)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.LanguageScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="nativeName" Type="System.String" />
+        <Parameter Name="directionality" Type="Azure.AI.Translation.Text.LanguageDirectionality" />
+      </Parameters>
+      <Docs>
+        <param name="code"> Code identifying the script. </param>
+        <param name="name"> Display name of the script in the locale requested via Accept-Language header. </param>
+        <param name="nativeName"> Display name of the language in the locale native for the language. </param>
+        <param name="directionality"> Directionality, which is rtl for right-to-left languages or ltr for left-to-right languages. </param>
+        <summary> Common properties of language script. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.LanguageScript" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceTextPair">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.ReferenceTextPair ReferenceTextPair (string source = default, string target = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.ReferenceTextPair ReferenceTextPair(string source, string target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.ReferenceTextPair(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReferenceTextPair (Optional source As String = Nothing, Optional target As String = Nothing) As ReferenceTextPair" />
+      <MemberSignature Language="F#" Value="static member ReferenceTextPair : string * string -&gt; Azure.AI.Translation.Text.ReferenceTextPair" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.ReferenceTextPair (source, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.ReferenceTextPair</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source"> Source reference sentence. </param>
+        <param name="target"> Target reference sentence. </param>
+        <summary> Reference text pair to generate adaptive customized translation. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.ReferenceTextPair" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslatedTextItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TranslatedTextItem TranslatedTextItem (Azure.AI.Translation.Text.DetectedLanguage detectedLanguage = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TranslationText&gt; translations = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TranslatedTextItem TranslatedTextItem(class Azure.AI.Translation.Text.DetectedLanguage detectedLanguage, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Translation.Text.TranslationText&gt; translations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TranslatedTextItem(Azure.AI.Translation.Text.DetectedLanguage,System.Collections.Generic.IEnumerable{Azure.AI.Translation.Text.TranslationText})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslatedTextItem (Optional detectedLanguage As DetectedLanguage = Nothing, Optional translations As IEnumerable(Of TranslationText) = Nothing) As TranslatedTextItem" />
+      <MemberSignature Language="F#" Value="static member TranslatedTextItem : Azure.AI.Translation.Text.DetectedLanguage * seq&lt;Azure.AI.Translation.Text.TranslationText&gt; -&gt; Azure.AI.Translation.Text.TranslatedTextItem" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TranslatedTextItem (detectedLanguage, translations)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslatedTextItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="detectedLanguage" Type="Azure.AI.Translation.Text.DetectedLanguage" />
+        <Parameter Name="translations" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TranslationText&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="detectedLanguage"> The detectedLanguage property is only present in the result object when language auto-detection is requested. </param>
+        <param name="translations">
+            An array of translation results. The size of the array matches the number of target 
+            languages specified through the to query parameter.
+            </param>
+        <summary> Element containing the translated text. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TranslatedTextItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateInputItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TranslateInputItem TranslateInputItem (string text = default, string script = default, string language = default, Azure.AI.Translation.Text.TextType? textType = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TranslationTarget&gt; translationTargets = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TranslateInputItem TranslateInputItem(string text, string script, string language, valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.TextType&gt; textType, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Translation.Text.TranslationTarget&gt; translationTargets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TranslateInputItem(System.String,System.String,System.String,System.Nullable{Azure.AI.Translation.Text.TextType},System.Collections.Generic.IEnumerable{Azure.AI.Translation.Text.TranslationTarget})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslateInputItem (Optional text As String = Nothing, Optional script As String = Nothing, Optional language As String = Nothing, Optional textType As Nullable(Of TextType) = Nothing, Optional translationTargets As IEnumerable(Of TranslationTarget) = Nothing) As TranslateInputItem" />
+      <MemberSignature Language="F#" Value="static member TranslateInputItem : string * string * string * Nullable&lt;Azure.AI.Translation.Text.TextType&gt; * seq&lt;Azure.AI.Translation.Text.TranslationTarget&gt; -&gt; Azure.AI.Translation.Text.TranslateInputItem" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TranslateInputItem (text, script, language, textType, translationTargets)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslateInputItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="textType" Type="System.Nullable&lt;Azure.AI.Translation.Text.TextType&gt;" />
+        <Parameter Name="translationTargets" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TranslationTarget&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="text"> Text to translate. </param>
+        <param name="script"> Specifies the script of the input text. </param>
+        <param name="language">
+            Specifies the language of the input text. Find which languages are available to translate by 
+            looking up supported languages using the translation scope. If the language parameter isn't 
+            specified, automatic language detection is applied to determine the source language.
+            
+            You must use the language parameter rather than autodetection when using the dynamic dictionary feature. 
+            Note: the dynamic dictionary feature is case-sensitive.
+            </param>
+        <param name="textType">
+            Defines whether the text being translated is plain text or HTML text. Any HTML needs to be a well-formed, 
+            complete element. Possible values are: plain (default) or html.
+            </param>
+        <param name="translationTargets"> Translation target parameters. </param>
+        <summary> Element containing the text for translation. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TranslateInputItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationLanguage">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TranslationLanguage TranslationLanguage (string name = default, string nativeName = default, Azure.AI.Translation.Text.LanguageDirectionality directionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight, System.Collections.Generic.IEnumerable&lt;string&gt; models = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TranslationLanguage TranslationLanguage(string name, string nativeName, valuetype Azure.AI.Translation.Text.LanguageDirectionality directionality, class System.Collections.Generic.IEnumerable`1&lt;string&gt; models) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationLanguage(System.String,System.String,Azure.AI.Translation.Text.LanguageDirectionality,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslationLanguage (Optional name As String = Nothing, Optional nativeName As String = Nothing, Optional directionality As LanguageDirectionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight, Optional models As IEnumerable(Of String) = Nothing) As TranslationLanguage" />
+      <MemberSignature Language="F#" Value="static member TranslationLanguage : string * string * Azure.AI.Translation.Text.LanguageDirectionality * seq&lt;string&gt; -&gt; Azure.AI.Translation.Text.TranslationLanguage" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationLanguage (name, nativeName, directionality, models)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationLanguage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="nativeName" Type="System.String" />
+        <Parameter Name="directionality" Type="Azure.AI.Translation.Text.LanguageDirectionality" />
+        <Parameter Name="models" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Display name of the language in the locale requested via Accept-Language header. </param>
+        <param name="nativeName"> Display name of the language in the locale native for this language. </param>
+        <param name="directionality"> Directionality, which is rtl for right-to-left languages or ltr for left-to-right languages. </param>
+        <param name="models"> LLM models supported for translation. </param>
+        <summary>
+            The value of the translation property is a dictionary of (key, value) pairs. Each key is a BCP 47 language tag.
+            A key identifies a language for which text can be translated to or translated from.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TranslationLanguage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationTarget">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TranslationTarget TranslationTarget (string language = default, string script = default, Azure.AI.Translation.Text.ProfanityAction? profanityAction = default, Azure.AI.Translation.Text.ProfanityMarker? profanityMarker = default, string deploymentName = default, bool? allowFallback = default, string grade = default, string tone = default, string gender = default, string adaptiveDatasetId = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt; referenceTextPairs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TranslationTarget TranslationTarget(string language, string script, valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityAction&gt; profanityAction, valuetype System.Nullable`1&lt;valuetype Azure.AI.Translation.Text.ProfanityMarker&gt; profanityMarker, string deploymentName, valuetype System.Nullable`1&lt;bool&gt; allowFallback, string grade, string tone, string gender, string adaptiveDatasetId, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Translation.Text.ReferenceTextPair&gt; referenceTextPairs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationTarget(System.String,System.String,System.Nullable{Azure.AI.Translation.Text.ProfanityAction},System.Nullable{Azure.AI.Translation.Text.ProfanityMarker},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Translation.Text.ReferenceTextPair})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslationTarget (Optional language As String = Nothing, Optional script As String = Nothing, Optional profanityAction As Nullable(Of ProfanityAction) = Nothing, Optional profanityMarker As Nullable(Of ProfanityMarker) = Nothing, Optional deploymentName As String = Nothing, Optional allowFallback As Nullable(Of Boolean) = Nothing, Optional grade As String = Nothing, Optional tone As String = Nothing, Optional gender As String = Nothing, Optional adaptiveDatasetId As String = Nothing, Optional referenceTextPairs As IEnumerable(Of ReferenceTextPair) = Nothing) As TranslationTarget" />
+      <MemberSignature Language="F#" Value="static member TranslationTarget : string * string * Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt; * Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * seq&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt; -&gt; Azure.AI.Translation.Text.TranslationTarget" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationTarget (language, script, profanityAction, profanityMarker, deploymentName, allowFallback, grade, tone, gender, adaptiveDatasetId, referenceTextPairs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="profanityAction" Type="System.Nullable&lt;Azure.AI.Translation.Text.ProfanityAction&gt;" />
+        <Parameter Name="profanityMarker" Type="System.Nullable&lt;Azure.AI.Translation.Text.ProfanityMarker&gt;" />
+        <Parameter Name="deploymentName" Type="System.String" />
+        <Parameter Name="allowFallback" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="grade" Type="System.String" />
+        <Parameter Name="tone" Type="System.String" />
+        <Parameter Name="gender" Type="System.String" />
+        <Parameter Name="adaptiveDatasetId" Type="System.String" />
+        <Parameter Name="referenceTextPairs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.ReferenceTextPair&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="language">
+            Specifies the language of the output text. The target language must be one of the supported languages included 
+            in the translation scope. It's possible to translate to multiple languages simultaneously by including 
+            multiple string values in the targetsLanguage array.
+            </param>
+        <param name="script"> Specifies the script of the translated text. </param>
+        <param name="profanityAction">
+            Specifies how profanities should be treated in translations.
+            Possible values are: NoAction (default), Marked or Deleted.
+            </param>
+        <param name="profanityMarker">
+            Specifies how profanities should be marked in translations.
+            Possible values are: Asterisk (default) or Tag. 
+            </param>
+        <param name="deploymentName">
+            Default is 'general', which uses NMT system.
+            'abc-inc-gpt-4o', and 'abc-inc-gpt-4o-mini' are examples of deployment names which use GPT-4o uses or
+            GPT-4o-mini model. 'gpt-4o' uses GPT-4o model.
+            
+            '&lt;custom model id&gt;' uses the custom NMT model tuned by customer.
+            'best' system determines which is the best model to use for the request. This intelligence could be introduced
+            in future. Customer should have deployed it in their resource.
+            
+            </param>
+        <param name="allowFallback">
+            In the case where a custom system is being used, specifies that the service is allowed to fall back to a
+            general system when a custom system doesn't exist. 
+            In the case where a Large Language Model is being used, specifies that the service is allowed to fall
+            back to a Small Language Model if an error occurs.
+            Possible values are: true (default) or false.
+            
+            allowFallback=false specifies that the translation should only use systems trained for the category specified 
+            by the request. If a translation for language X to language Y requires chaining through a pivot language E, 
+            then all the systems in the chain (X → E and E → Y) will need to be custom and have the same category. 
+            If no system is found with the specific category, the request will return a 400 status code. allowFallback=true 
+            specifies that the service is allowed to fall back to a general system when a custom system doesn't exist.
+            </param>
+        <param name="grade"> Defines complexity of LLM prompts to provide high accuracy translation. </param>
+        <param name="tone"> Desired tone of target translation. </param>
+        <param name="gender"> Desired gender of target translation. </param>
+        <param name="adaptiveDatasetId"> Reference dataset ID having sentence pair to generate adaptive customized translation. </param>
+        <param name="referenceTextPairs"> Reference text pairs to generate adaptive customized translation. </param>
+        <summary> Target language and translation configuration parameters. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TranslationTarget" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationText">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TranslationText TranslationText (string language = default, int? sourceCharacters = default, int? instructionTokens = default, int? sourceTokens = default, int? responseTokens = default, int? targetTokens = default, string text = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TranslationText TranslationText(string language, valuetype System.Nullable`1&lt;int32&gt; sourceCharacters, valuetype System.Nullable`1&lt;int32&gt; instructionTokens, valuetype System.Nullable`1&lt;int32&gt; sourceTokens, valuetype System.Nullable`1&lt;int32&gt; responseTokens, valuetype System.Nullable`1&lt;int32&gt; targetTokens, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationText(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslationText (Optional language As String = Nothing, Optional sourceCharacters As Nullable(Of Integer) = Nothing, Optional instructionTokens As Nullable(Of Integer) = Nothing, Optional sourceTokens As Nullable(Of Integer) = Nothing, Optional responseTokens As Nullable(Of Integer) = Nothing, Optional targetTokens As Nullable(Of Integer) = Nothing, Optional text As String = Nothing) As TranslationText" />
+      <MemberSignature Language="F#" Value="static member TranslationText : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; Azure.AI.Translation.Text.TranslationText" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TranslationText (language, sourceCharacters, instructionTokens, sourceTokens, responseTokens, targetTokens, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TranslationText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="sourceCharacters" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="instructionTokens" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="sourceTokens" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="responseTokens" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="targetTokens" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language"> A string representing the language code of the target language. </param>
+        <param name="sourceCharacters"> An integer indicating the number of characters in the source text string. </param>
+        <param name="instructionTokens"> An integer indicating the number of tokens used in generating the translated text. </param>
+        <param name="sourceTokens"> An integer indicating the number of tokens used in the source sentence. </param>
+        <param name="responseTokens"> An integer indicating the number of tokens used in the translation response. </param>
+        <param name="targetTokens"> An integer indicating the number of tokens used in the target sentence. </param>
+        <param name="text"> A string giving the translated text. </param>
+        <summary> Translation result. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TranslationText" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransliterableScript">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TransliterableScript TransliterableScript (string code = default, string name = default, string nativeName = default, Azure.AI.Translation.Text.LanguageDirectionality directionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight, System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.LanguageScript&gt; toScripts = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TransliterableScript TransliterableScript(string code, string name, string nativeName, valuetype Azure.AI.Translation.Text.LanguageDirectionality directionality, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Translation.Text.LanguageScript&gt; toScripts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TransliterableScript(System.String,System.String,System.String,Azure.AI.Translation.Text.LanguageDirectionality,System.Collections.Generic.IEnumerable{Azure.AI.Translation.Text.LanguageScript})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransliterableScript (Optional code As String = Nothing, Optional name As String = Nothing, Optional nativeName As String = Nothing, Optional directionality As LanguageDirectionality = Azure.AI.Translation.Text.LanguageDirectionality.LeftToRight, Optional toScripts As IEnumerable(Of LanguageScript) = Nothing) As TransliterableScript" />
+      <MemberSignature Language="F#" Value="static member TransliterableScript : string * string * string * Azure.AI.Translation.Text.LanguageDirectionality * seq&lt;Azure.AI.Translation.Text.LanguageScript&gt; -&gt; Azure.AI.Translation.Text.TransliterableScript" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TransliterableScript (code, name, nativeName, directionality, toScripts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TransliterableScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="nativeName" Type="System.String" />
+        <Parameter Name="directionality" Type="Azure.AI.Translation.Text.LanguageDirectionality" />
+        <Parameter Name="toScripts" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.LanguageScript&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="code"> Code identifying the script. </param>
+        <param name="name"> Display name of the script in the locale requested via Accept-Language header. </param>
+        <param name="nativeName"> Display name of the language in the locale native for the language. </param>
+        <param name="directionality"> Directionality, which is rtl for right-to-left languages or ltr for left-to-right languages. </param>
+        <param name="toScripts"> List of scripts available to convert text to. </param>
+        <summary> Script definition with list of script into which given script can be translitered. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TransliterableScript" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransliteratedText">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TransliteratedText TransliteratedText (string text = default, string script = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TransliteratedText TransliteratedText(string text, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TransliteratedText(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransliteratedText (Optional text As String = Nothing, Optional script As String = Nothing) As TransliteratedText" />
+      <MemberSignature Language="F#" Value="static member TransliteratedText : string * string -&gt; Azure.AI.Translation.Text.TransliteratedText" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TransliteratedText (text, script)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TransliteratedText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text"> A string which is the result of converting the input string to the output script. </param>
+        <param name="script"> A string specifying the script used in the output. </param>
+        <summary> Transliterated text element. </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TransliteratedText" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransliterationLanguage">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Translation.Text.TransliterationLanguage TransliterationLanguage (string name = default, string nativeName = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TransliterableScript&gt; scripts = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Translation.Text.TransliterationLanguage TransliterationLanguage(string name, string nativeName, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Translation.Text.TransliterableScript&gt; scripts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Translation.Text.TranslationTextModelFactory.TransliterationLanguage(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Translation.Text.TransliterableScript})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransliterationLanguage (Optional name As String = Nothing, Optional nativeName As String = Nothing, Optional scripts As IEnumerable(Of TransliterableScript) = Nothing) As TransliterationLanguage" />
+      <MemberSignature Language="F#" Value="static member TransliterationLanguage : string * string * seq&lt;Azure.AI.Translation.Text.TransliterableScript&gt; -&gt; Azure.AI.Translation.Text.TransliterationLanguage" Usage="Azure.AI.Translation.Text.TranslationTextModelFactory.TransliterationLanguage (name, nativeName, scripts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Translation.Text</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Translation.Text.TransliterationLanguage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="nativeName" Type="System.String" />
+        <Parameter Name="scripts" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Translation.Text.TransliterableScript&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Display name of the language in the locale requested via Accept-Language header. </param>
+        <param name="nativeName"> Display name of the language in the locale native for this language. </param>
+        <param name="scripts"> List of scripts to convert from. </param>
+        <summary>
+            The value of the transliteration property is a dictionary of (key, value) pairs. 
+            Each key is a BCP 47 language tag. A key identifies a language for which text can be converted from one script 
+            to another script.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Translation.Text.TransliterationLanguage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
