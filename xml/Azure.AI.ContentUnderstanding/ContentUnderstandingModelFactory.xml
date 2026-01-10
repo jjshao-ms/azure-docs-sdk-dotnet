@@ -1,0 +1,1639 @@
+<Type Name="ContentUnderstandingModelFactory" FullName="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory">
+  <TypeSignature Language="C#" Value="public static class ContentUnderstandingModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContentUnderstandingModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentUnderstandingModelFactory" />
+  <TypeSignature Language="F#" Value="type ContentUnderstandingModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnalyzeInput">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.AnalyzeInput AnalyzeInput (Uri url = default, BinaryData data = default, string name = default, string mimeType = default, string inputRange = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.AnalyzeInput AnalyzeInput(class System.Uri url, class System.BinaryData data, string name, string mimeType, string inputRange) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AnalyzeInput(System.Uri,System.BinaryData,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AnalyzeInput (Optional url As Uri = Nothing, Optional data As BinaryData = Nothing, Optional name As String = Nothing, Optional mimeType As String = Nothing, Optional inputRange As String = Nothing) As AnalyzeInput" />
+      <MemberSignature Language="F#" Value="static member AnalyzeInput : Uri * BinaryData * string * string * string -&gt; Azure.AI.ContentUnderstanding.AnalyzeInput" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AnalyzeInput (url, data, name, mimeType, inputRange)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.AnalyzeInput</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri" />
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="mimeType" Type="System.String" />
+        <Parameter Name="inputRange" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url"> The URL of the input to analyze.  Only one of url or data should be specified. </param>
+        <param name="data"> Raw image bytes. Provide bytes-like object; do not base64-encode. Only one of url or data should be specified. </param>
+        <param name="name"> Name of the input. </param>
+        <param name="mimeType"> The MIME type of the input content.  Ex. application/pdf, image/jpeg, etc. </param>
+        <param name="inputRange"> Range of the input to analyze (ex. `1-3,5,9-`).  Document content uses 1-based page numbers, while audio visual content uses integer milliseconds. </param>
+        <summary> Additional input to analyze. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.AnalyzeInput" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalyzeResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.AnalyzeResult AnalyzeResult (string analyzerId = default, string apiVersion = default, DateTimeOffset? createdAt = default, System.Collections.Generic.IEnumerable&lt;Azure.ResponseError&gt; warnings = default, string stringEncoding = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.MediaContent&gt; contents = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.AnalyzeResult AnalyzeResult(string analyzerId, string apiVersion, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdAt, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResponseError&gt; warnings, string stringEncoding, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.MediaContent&gt; contents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AnalyzeResult(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{Azure.ResponseError},System.String,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.MediaContent})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AnalyzeResult (Optional analyzerId As String = Nothing, Optional apiVersion As String = Nothing, Optional createdAt As Nullable(Of DateTimeOffset) = Nothing, Optional warnings As IEnumerable(Of ResponseError) = Nothing, Optional stringEncoding As String = Nothing, Optional contents As IEnumerable(Of MediaContent) = Nothing) As AnalyzeResult" />
+      <MemberSignature Language="F#" Value="static member AnalyzeResult : string * string * Nullable&lt;DateTimeOffset&gt; * seq&lt;Azure.ResponseError&gt; * string * seq&lt;Azure.AI.ContentUnderstanding.MediaContent&gt; -&gt; Azure.AI.ContentUnderstanding.AnalyzeResult" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AnalyzeResult (analyzerId, apiVersion, createdAt, warnings, stringEncoding, contents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.AnalyzeResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="createdAt" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="warnings" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResponseError&gt;" />
+        <Parameter Name="stringEncoding" Type="System.String" />
+        <Parameter Name="contents" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.MediaContent&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="analyzerId"> The unique identifier of the analyzer. </param>
+        <param name="apiVersion"> The version of the API used to analyze the document. </param>
+        <param name="createdAt"> The date and time when the result was created. </param>
+        <param name="warnings"> Warnings encountered while analyzing the document. </param>
+        <param name="stringEncoding">
+              The string encoding format for content spans in the response.
+              Possible values are 'codePoint', 'utf16', and `utf8`.  Default is `codePoint`.")
+            </param>
+        <param name="contents"> The extracted content. </param>
+        <summary> Analyze operation result. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.AnalyzeResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ArrayField ArrayField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentField&gt; valueArray = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ArrayField ArrayField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentField&gt; valueArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ArrayField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentField})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ArrayField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueArray As IEnumerable(Of ContentField) = Nothing) As ArrayField" />
+      <MemberSignature Language="F#" Value="static member ArrayField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * seq&lt;Azure.AI.ContentUnderstanding.ContentField&gt; -&gt; Azure.AI.ContentUnderstanding.ArrayField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ArrayField (spans, confidence, source, valueArray)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ArrayField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueArray" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentField&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueArray"> Array field value. </param>
+        <summary> Array field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ArrayField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioVisualContent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.AudioVisualContent AudioVisualContent (string mimeType = default, string analyzerId = default, string category = default, string path = default, string markdown = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentField&gt; fields = default, long startTimeMs = 0, long endTimeMs = 0, int? width = default, int? height = default, System.Collections.Generic.IEnumerable&lt;long&gt; cameraShotTimesMs = default, System.Collections.Generic.IEnumerable&lt;long&gt; keyFrameTimesMs = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.TranscriptPhrase&gt; transcriptPhrases = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.AudioVisualContentSegment&gt; segments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.AudioVisualContent AudioVisualContent(string mimeType, string analyzerId, string category, string path, string markdown, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentField&gt; fields, int64 startTimeMs, int64 endTimeMs, valuetype System.Nullable`1&lt;int32&gt; width, valuetype System.Nullable`1&lt;int32&gt; height, class System.Collections.Generic.IEnumerable`1&lt;int64&gt; cameraShotTimesMs, class System.Collections.Generic.IEnumerable`1&lt;int64&gt; keyFrameTimesMs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.TranscriptPhrase&gt; transcriptPhrases, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.AudioVisualContentSegment&gt; segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AudioVisualContent(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentField},System.Int64,System.Int64,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.Int64},System.Collections.Generic.IEnumerable{System.Int64},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.TranscriptPhrase},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.AudioVisualContentSegment})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AudioVisualContent (Optional mimeType As String = Nothing, Optional analyzerId As String = Nothing, Optional category As String = Nothing, Optional path As String = Nothing, Optional markdown As String = Nothing, Optional fields As IDictionary(Of String, ContentField) = Nothing, Optional startTimeMs As Long = 0, Optional endTimeMs As Long = 0, Optional width As Nullable(Of Integer) = Nothing, Optional height As Nullable(Of Integer) = Nothing, Optional cameraShotTimesMs As IEnumerable(Of Long) = Nothing, Optional keyFrameTimesMs As IEnumerable(Of Long) = Nothing, Optional transcriptPhrases As IEnumerable(Of TranscriptPhrase) = Nothing, Optional segments As IEnumerable(Of AudioVisualContentSegment) = Nothing) As AudioVisualContent" />
+      <MemberSignature Language="F#" Value="static member AudioVisualContent : string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentField&gt; * int64 * int64 * Nullable&lt;int&gt; * Nullable&lt;int&gt; * seq&lt;int64&gt; * seq&lt;int64&gt; * seq&lt;Azure.AI.ContentUnderstanding.TranscriptPhrase&gt; * seq&lt;Azure.AI.ContentUnderstanding.AudioVisualContentSegment&gt; -&gt; Azure.AI.ContentUnderstanding.AudioVisualContent" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AudioVisualContent (mimeType, analyzerId, category, path, markdown, fields, startTimeMs, endTimeMs, width, height, cameraShotTimesMs, keyFrameTimesMs, transcriptPhrases, segments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.AudioVisualContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mimeType" Type="System.String" />
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="markdown" Type="System.String" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentField&gt;" />
+        <Parameter Name="startTimeMs" Type="System.Int64" />
+        <Parameter Name="endTimeMs" Type="System.Int64" />
+        <Parameter Name="width" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="height" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cameraShotTimesMs" Type="System.Collections.Generic.IEnumerable&lt;System.Int64&gt;" />
+        <Parameter Name="keyFrameTimesMs" Type="System.Collections.Generic.IEnumerable&lt;System.Int64&gt;" />
+        <Parameter Name="transcriptPhrases" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.TranscriptPhrase&gt;" />
+        <Parameter Name="segments" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.AudioVisualContentSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="mimeType"> Detected MIME type of the content.  Ex. application/pdf, image/jpeg, etc. </param>
+        <param name="analyzerId"> The analyzer that generated this content. </param>
+        <param name="category"> Classified content category. </param>
+        <param name="path"> The path of the content in the input. </param>
+        <param name="markdown"> Markdown representation of the content. </param>
+        <param name="fields"> Extracted fields from the content. </param>
+        <param name="startTimeMs"> Start time of the content in milliseconds. </param>
+        <param name="endTimeMs"> End time of the content in milliseconds. </param>
+        <param name="width"> Width of each video frame in pixels, if applicable. </param>
+        <param name="height"> Height of each video frame in pixels, if applicable. </param>
+        <param name="cameraShotTimesMs"> List of camera shot changes in the video, represented by its timestamp in milliseconds.  Only if returnDetails is true. </param>
+        <param name="keyFrameTimesMs"> List of key frames in the video, represented by its timestamp in milliseconds.  Only if returnDetails is true. </param>
+        <param name="transcriptPhrases"> List of transcript phrases.  Only if returnDetails is true. </param>
+        <param name="segments"> List of detected content segments.  Only if enableSegment is true. </param>
+        <summary> Audio visual content.  Ex. audio/wav, video/mp4. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioVisualContentSegment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.AudioVisualContentSegment AudioVisualContentSegment (string segmentId = default, string category = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, long startTimeMs = 0, long endTimeMs = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.AudioVisualContentSegment AudioVisualContentSegment(string segmentId, string category, class Azure.AI.ContentUnderstanding.ContentSpan span, int64 startTimeMs, int64 endTimeMs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AudioVisualContentSegment(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AudioVisualContentSegment (Optional segmentId As String = Nothing, Optional category As String = Nothing, Optional span As ContentSpan = Nothing, Optional startTimeMs As Long = 0, Optional endTimeMs As Long = 0) As AudioVisualContentSegment" />
+      <MemberSignature Language="F#" Value="static member AudioVisualContentSegment : string * string * Azure.AI.ContentUnderstanding.ContentSpan * int64 * int64 -&gt; Azure.AI.ContentUnderstanding.AudioVisualContentSegment" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.AudioVisualContentSegment (segmentId, category, span, startTimeMs, endTimeMs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.AudioVisualContentSegment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segmentId" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="startTimeMs" Type="System.Int64" />
+        <Parameter Name="endTimeMs" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="segmentId"> Segment identifier. </param>
+        <param name="category"> Classified content category. </param>
+        <param name="span"> Span of the segment in the markdown content. </param>
+        <param name="startTimeMs"> Start time of the segment in milliseconds. </param>
+        <param name="endTimeMs"> End time of the segment in milliseconds. </param>
+        <summary> Detected audio/visual content segment. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualContentSegment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.BooleanField BooleanField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, bool? valueBoolean = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.BooleanField BooleanField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, valuetype System.Nullable`1&lt;bool&gt; valueBoolean) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.BooleanField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BooleanField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueBoolean As Nullable(Of Boolean) = Nothing) As BooleanField" />
+      <MemberSignature Language="F#" Value="static member BooleanField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * Nullable&lt;bool&gt; -&gt; Azure.AI.ContentUnderstanding.BooleanField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.BooleanField (spans, confidence, source, valueBoolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.BooleanField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueBoolean" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueBoolean"> Boolean field value. </param>
+        <summary> Boolean field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.BooleanField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentAnalyzer">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentAnalyzer ContentAnalyzer (string analyzerId = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.AI.ContentUnderstanding.ContentAnalyzerStatus status = default, DateTimeOffset createdAt = default, DateTimeOffset lastModifiedAt = default, System.Collections.Generic.IEnumerable&lt;Azure.ResponseError&gt; warnings = default, string baseAnalyzerId = default, Azure.AI.ContentUnderstanding.ContentAnalyzerConfig config = default, Azure.AI.ContentUnderstanding.ContentFieldSchema fieldSchema = default, bool? dynamicFieldSchema = default, Azure.AI.ContentUnderstanding.ProcessingLocation? processingLocation = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.KnowledgeSource&gt; knowledgeSources = default, System.Collections.Generic.IDictionary&lt;string,string&gt; models = default, Azure.AI.ContentUnderstanding.SupportedModels supportedModels = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentAnalyzer ContentAnalyzer(string analyzerId, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.AI.ContentUnderstanding.ContentAnalyzerStatus status, valuetype System.DateTimeOffset createdAt, valuetype System.DateTimeOffset lastModifiedAt, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResponseError&gt; warnings, string baseAnalyzerId, class Azure.AI.ContentUnderstanding.ContentAnalyzerConfig config, class Azure.AI.ContentUnderstanding.ContentFieldSchema fieldSchema, valuetype System.Nullable`1&lt;bool&gt; dynamicFieldSchema, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.ProcessingLocation&gt; processingLocation, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.KnowledgeSource&gt; knowledgeSources, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; models, class Azure.AI.ContentUnderstanding.SupportedModels supportedModels) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentAnalyzer(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Azure.AI.ContentUnderstanding.ContentAnalyzerStatus,System.DateTimeOffset,System.DateTimeOffset,System.Collections.Generic.IEnumerable{Azure.ResponseError},System.String,Azure.AI.ContentUnderstanding.ContentAnalyzerConfig,Azure.AI.ContentUnderstanding.ContentFieldSchema,System.Nullable{System.Boolean},System.Nullable{Azure.AI.ContentUnderstanding.ProcessingLocation},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.KnowledgeSource},System.Collections.Generic.IDictionary{System.String,System.String},Azure.AI.ContentUnderstanding.SupportedModels)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentAnalyzer (Optional analyzerId As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional status As ContentAnalyzerStatus = Nothing, Optional createdAt As DateTimeOffset = Nothing, Optional lastModifiedAt As DateTimeOffset = Nothing, Optional warnings As IEnumerable(Of ResponseError) = Nothing, Optional baseAnalyzerId As String = Nothing, Optional config As ContentAnalyzerConfig = Nothing, Optional fieldSchema As ContentFieldSchema = Nothing, Optional dynamicFieldSchema As Nullable(Of Boolean) = Nothing, Optional processingLocation As Nullable(Of ProcessingLocation) = Nothing, Optional knowledgeSources As IEnumerable(Of KnowledgeSource) = Nothing, Optional models As IDictionary(Of String, String) = Nothing, Optional supportedModels As SupportedModels = Nothing) As ContentAnalyzer" />
+      <MemberSignature Language="F#" Value="static member ContentAnalyzer : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.AI.ContentUnderstanding.ContentAnalyzerStatus * DateTimeOffset * DateTimeOffset * seq&lt;Azure.ResponseError&gt; * string * Azure.AI.ContentUnderstanding.ContentAnalyzerConfig * Azure.AI.ContentUnderstanding.ContentFieldSchema * Nullable&lt;bool&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.ProcessingLocation&gt; * seq&lt;Azure.AI.ContentUnderstanding.KnowledgeSource&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.AI.ContentUnderstanding.SupportedModels -&gt; Azure.AI.ContentUnderstanding.ContentAnalyzer" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentAnalyzer (analyzerId, description, tags, status, createdAt, lastModifiedAt, warnings, baseAnalyzerId, config, fieldSchema, dynamicFieldSchema, processingLocation, knowledgeSources, models, supportedModels)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentAnalyzer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="status" Type="Azure.AI.ContentUnderstanding.ContentAnalyzerStatus" />
+        <Parameter Name="createdAt" Type="System.DateTimeOffset" />
+        <Parameter Name="lastModifiedAt" Type="System.DateTimeOffset" />
+        <Parameter Name="warnings" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResponseError&gt;" />
+        <Parameter Name="baseAnalyzerId" Type="System.String" />
+        <Parameter Name="config" Type="Azure.AI.ContentUnderstanding.ContentAnalyzerConfig" />
+        <Parameter Name="fieldSchema" Type="Azure.AI.ContentUnderstanding.ContentFieldSchema" />
+        <Parameter Name="dynamicFieldSchema" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="processingLocation" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.ProcessingLocation&gt;" />
+        <Parameter Name="knowledgeSources" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.KnowledgeSource&gt;" />
+        <Parameter Name="models" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="supportedModels" Type="Azure.AI.ContentUnderstanding.SupportedModels" />
+      </Parameters>
+      <Docs>
+        <param name="analyzerId"> The unique identifier of the analyzer. </param>
+        <param name="description"> A description of the analyzer. </param>
+        <param name="tags"> Tags associated with the analyzer. </param>
+        <param name="status"> The status of the analyzer. </param>
+        <param name="createdAt"> The date and time when the analyzer was created. </param>
+        <param name="lastModifiedAt"> The date and time when the analyzer was last modified. </param>
+        <param name="warnings"> Warnings encountered while creating the analyzer. </param>
+        <param name="baseAnalyzerId"> The analyzer to incrementally train from. </param>
+        <param name="config"> Analyzer configuration settings. </param>
+        <param name="fieldSchema"> The schema of fields to extracted. </param>
+        <param name="dynamicFieldSchema"> Indicates whether the result may contain additional fields outside of the defined schema. </param>
+        <param name="processingLocation"> The location where the data may be processed.  Defaults to global. </param>
+        <param name="knowledgeSources"> Additional knowledge sources used to enhance the analyzer. </param>
+        <param name="models">
+            Mapping of model roles to specific model names.
+            Ex. { "completion": "gpt-4.1", "embedding": "text-embedding-3-large" }.
+            </param>
+        <param name="supportedModels"> Chat completion and embedding models supported by the analyzer. </param>
+        <summary> Analyzer that extracts content and fields from multimodal documents. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentAnalyzer" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentAnalyzerConfig">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentAnalyzerConfig ContentAnalyzerConfig (bool? returnDetails = default, System.Collections.Generic.IEnumerable&lt;string&gt; locales = default, bool? enableOcr = default, bool? enableLayout = default, bool? enableFigureDescription = default, bool? enableFigureAnalysis = default, bool? enableFormula = default, Azure.AI.ContentUnderstanding.TableFormat? tableFormat = default, Azure.AI.ContentUnderstanding.ChartFormat? chartFormat = default, Azure.AI.ContentUnderstanding.AnnotationFormat? annotationFormat = default, bool? disableFaceBlurring = default, bool? estimateFieldSourceAndConfidence = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentCategoryDefinition&gt; contentCategories = default, bool? enableSegment = default, bool? segmentPerPage = default, bool? omitContent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentAnalyzerConfig ContentAnalyzerConfig(valuetype System.Nullable`1&lt;bool&gt; returnDetails, class System.Collections.Generic.IEnumerable`1&lt;string&gt; locales, valuetype System.Nullable`1&lt;bool&gt; enableOcr, valuetype System.Nullable`1&lt;bool&gt; enableLayout, valuetype System.Nullable`1&lt;bool&gt; enableFigureDescription, valuetype System.Nullable`1&lt;bool&gt; enableFigureAnalysis, valuetype System.Nullable`1&lt;bool&gt; enableFormula, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.TableFormat&gt; tableFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.ChartFormat&gt; chartFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.AnnotationFormat&gt; annotationFormat, valuetype System.Nullable`1&lt;bool&gt; disableFaceBlurring, valuetype System.Nullable`1&lt;bool&gt; estimateFieldSourceAndConfidence, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentCategoryDefinition&gt; contentCategories, valuetype System.Nullable`1&lt;bool&gt; enableSegment, valuetype System.Nullable`1&lt;bool&gt; segmentPerPage, valuetype System.Nullable`1&lt;bool&gt; omitContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentAnalyzerConfig(System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Azure.AI.ContentUnderstanding.TableFormat},System.Nullable{Azure.AI.ContentUnderstanding.ChartFormat},System.Nullable{Azure.AI.ContentUnderstanding.AnnotationFormat},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentCategoryDefinition},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentAnalyzerConfig (Optional returnDetails As Nullable(Of Boolean) = Nothing, Optional locales As IEnumerable(Of String) = Nothing, Optional enableOcr As Nullable(Of Boolean) = Nothing, Optional enableLayout As Nullable(Of Boolean) = Nothing, Optional enableFigureDescription As Nullable(Of Boolean) = Nothing, Optional enableFigureAnalysis As Nullable(Of Boolean) = Nothing, Optional enableFormula As Nullable(Of Boolean) = Nothing, Optional tableFormat As Nullable(Of TableFormat) = Nothing, Optional chartFormat As Nullable(Of ChartFormat) = Nothing, Optional annotationFormat As Nullable(Of AnnotationFormat) = Nothing, Optional disableFaceBlurring As Nullable(Of Boolean) = Nothing, Optional estimateFieldSourceAndConfidence As Nullable(Of Boolean) = Nothing, Optional contentCategories As IDictionary(Of String, ContentCategoryDefinition) = Nothing, Optional enableSegment As Nullable(Of Boolean) = Nothing, Optional segmentPerPage As Nullable(Of Boolean) = Nothing, Optional omitContent As Nullable(Of Boolean) = Nothing) As ContentAnalyzerConfig" />
+      <MemberSignature Language="F#" Value="static member ContentAnalyzerConfig : Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.TableFormat&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.ChartFormat&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.AnnotationFormat&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentCategoryDefinition&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.ContentUnderstanding.ContentAnalyzerConfig" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentAnalyzerConfig (returnDetails, locales, enableOcr, enableLayout, enableFigureDescription, enableFigureAnalysis, enableFormula, tableFormat, chartFormat, annotationFormat, disableFaceBlurring, estimateFieldSourceAndConfidence, contentCategories, enableSegment, segmentPerPage, omitContent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentAnalyzerConfig</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="returnDetails" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="locales" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="enableOcr" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableLayout" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableFigureDescription" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableFigureAnalysis" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableFormula" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="tableFormat" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.TableFormat&gt;" />
+        <Parameter Name="chartFormat" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.ChartFormat&gt;" />
+        <Parameter Name="annotationFormat" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.AnnotationFormat&gt;" />
+        <Parameter Name="disableFaceBlurring" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="estimateFieldSourceAndConfidence" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="contentCategories" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentCategoryDefinition&gt;" />
+        <Parameter Name="enableSegment" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="segmentPerPage" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="omitContent" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="returnDetails"> Return all content details. </param>
+        <param name="locales"> List of locale hints for speech transcription. </param>
+        <param name="enableOcr"> Enable optical character recognition (OCR). </param>
+        <param name="enableLayout"> Enable layout analysis. </param>
+        <param name="enableFigureDescription"> Enable generation of figure description. </param>
+        <param name="enableFigureAnalysis"> Enable analysis of figures, such as charts and diagrams. </param>
+        <param name="enableFormula"> Enable mathematical formula detection. </param>
+        <param name="tableFormat"> Representation format of tables in analyze result markdown. </param>
+        <param name="chartFormat"> Representation format of charts in analyze result markdown. </param>
+        <param name="annotationFormat"> Representation format of annotations in analyze result markdown. </param>
+        <param name="disableFaceBlurring"> Disable the default blurring of faces for privacy while processing the content. </param>
+        <param name="estimateFieldSourceAndConfidence"> Return field grounding source and confidence. </param>
+        <param name="contentCategories"> Map of categories to classify the input content(s) against. </param>
+        <param name="enableSegment"> Enable segmentation of the input by contentCategories. </param>
+        <param name="segmentPerPage"> Force segmentation of document content by page. </param>
+        <param name="omitContent">
+            Omit the content for this analyzer from analyze result.
+            Only return content(s) from additional analyzers specified in contentCategories, if any.
+            </param>
+        <summary> Configuration settings for an analyzer. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentAnalyzerConfig" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentCategoryDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentCategoryDefinition ContentCategoryDefinition (string description = default, string analyzerId = default, Azure.AI.ContentUnderstanding.ContentAnalyzer analyzer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentCategoryDefinition ContentCategoryDefinition(string description, string analyzerId, class Azure.AI.ContentUnderstanding.ContentAnalyzer analyzer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentCategoryDefinition(System.String,System.String,Azure.AI.ContentUnderstanding.ContentAnalyzer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentCategoryDefinition (Optional description As String = Nothing, Optional analyzerId As String = Nothing, Optional analyzer As ContentAnalyzer = Nothing) As ContentCategoryDefinition" />
+      <MemberSignature Language="F#" Value="static member ContentCategoryDefinition : string * string * Azure.AI.ContentUnderstanding.ContentAnalyzer -&gt; Azure.AI.ContentUnderstanding.ContentCategoryDefinition" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentCategoryDefinition (description, analyzerId, analyzer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentCategoryDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="analyzer" Type="Azure.AI.ContentUnderstanding.ContentAnalyzer" />
+      </Parameters>
+      <Docs>
+        <param name="description"> The description of the category. </param>
+        <param name="analyzerId"> Optional analyzer used to process the content. </param>
+        <param name="analyzer"> Optional inline definition of analyzer used to process the content. </param>
+        <summary> Content category definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentCategoryDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentField ContentField (string type = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentField ContentField(string type, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentField(System.String,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentField (Optional type As String = Nothing, Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing) As ContentField" />
+      <MemberSignature Language="F#" Value="static member ContentField : string * seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string -&gt; Azure.AI.ContentUnderstanding.ContentField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentField (type, spans, confidence, source)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Semantic data type of the field value. </param>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <summary>
+            Field extracted from the content.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.ContentUnderstanding.StringField" />, <see cref="T:Azure.AI.ContentUnderstanding.DateField" />, <see cref="T:Azure.AI.ContentUnderstanding.TimeField" />, <see cref="T:Azure.AI.ContentUnderstanding.NumberField" />, <see cref="T:Azure.AI.ContentUnderstanding.IntegerField" />, <see cref="T:Azure.AI.ContentUnderstanding.BooleanField" />, <see cref="T:Azure.AI.ContentUnderstanding.ArrayField" />, <see cref="T:Azure.AI.ContentUnderstanding.ObjectField" />, and <see cref="T:Azure.AI.ContentUnderstanding.JsonField" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentFieldDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentFieldDefinition ContentFieldDefinition (Azure.AI.ContentUnderstanding.GenerationMethod? method = default, Azure.AI.ContentUnderstanding.ContentFieldType? type = default, string description = default, Azure.AI.ContentUnderstanding.ContentFieldDefinition itemDefinition = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; properties = default, System.Collections.Generic.IEnumerable&lt;string&gt; examples = default, System.Collections.Generic.IEnumerable&lt;string&gt; enum = default, System.Collections.Generic.IDictionary&lt;string,string&gt; enumDescriptions = default, string ref = default, bool? estimateSourceAndConfidence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentFieldDefinition ContentFieldDefinition(valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.GenerationMethod&gt; method, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.ContentFieldType&gt; type, string description, class Azure.AI.ContentUnderstanding.ContentFieldDefinition itemDefinition, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; properties, class System.Collections.Generic.IEnumerable`1&lt;string&gt; examples, class System.Collections.Generic.IEnumerable`1&lt;string&gt; enum, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; enumDescriptions, string ref, valuetype System.Nullable`1&lt;bool&gt; estimateSourceAndConfidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentFieldDefinition(System.Nullable{Azure.AI.ContentUnderstanding.GenerationMethod},System.Nullable{Azure.AI.ContentUnderstanding.ContentFieldType},System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentFieldDefinition (Optional method As Nullable(Of GenerationMethod) = Nothing, Optional type As Nullable(Of ContentFieldType) = Nothing, Optional description As String = Nothing, Optional itemDefinition As ContentFieldDefinition = Nothing, Optional properties As IDictionary(Of String, ContentFieldDefinition) = Nothing, Optional examples As IEnumerable(Of String) = Nothing, Optional enum As IEnumerable(Of String) = Nothing, Optional enumDescriptions As IDictionary(Of String, String) = Nothing, Optional ref As String = Nothing, Optional estimateSourceAndConfidence As Nullable(Of Boolean) = Nothing) As ContentFieldDefinition" />
+      <MemberSignature Language="F#" Value="static member ContentFieldDefinition : Nullable&lt;Azure.AI.ContentUnderstanding.GenerationMethod&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.ContentFieldType&gt; * string * Azure.AI.ContentUnderstanding.ContentFieldDefinition * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; * seq&lt;string&gt; * seq&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;bool&gt; -&gt; Azure.AI.ContentUnderstanding.ContentFieldDefinition" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentFieldDefinition (method, type, description, itemDefinition, properties, examples, enum, enumDescriptions, ref, estimateSourceAndConfidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentFieldDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.GenerationMethod&gt;" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.ContentFieldType&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="itemDefinition" Type="Azure.AI.ContentUnderstanding.ContentFieldDefinition" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt;" />
+        <Parameter Name="examples" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="enum" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="enumDescriptions" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="ref" Type="System.String" />
+        <Parameter Name="estimateSourceAndConfidence" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="method"> Generation method. </param>
+        <param name="type"> Semantic data type of the field value. </param>
+        <param name="description"> Field description. </param>
+        <param name="itemDefinition"> Field type schema of each array element, if type is array. </param>
+        <param name="properties"> Named sub-fields, if type is object. </param>
+        <param name="examples"> Examples of field values. </param>
+        <param name="enum"> Enumeration of possible field values. </param>
+        <param name="enumDescriptions"> Descriptions for each enumeration value. </param>
+        <param name="ref"> Reference to another field definition. </param>
+        <param name="estimateSourceAndConfidence"> Return grounding source and confidence. </param>
+        <summary> Definition of the field using a JSON Schema like syntax. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentFieldDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentFieldSchema">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentFieldSchema ContentFieldSchema (string name = default, string description = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; fields = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; definitions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentFieldSchema ContentFieldSchema(string name, string description, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; fields, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; definitions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentFieldSchema(System.String,System.String,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition},System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentFieldSchema (Optional name As String = Nothing, Optional description As String = Nothing, Optional fields As IDictionary(Of String, ContentFieldDefinition) = Nothing, Optional definitions As IDictionary(Of String, ContentFieldDefinition) = Nothing) As ContentFieldSchema" />
+      <MemberSignature Language="F#" Value="static member ContentFieldSchema : string * string * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt; -&gt; Azure.AI.ContentUnderstanding.ContentFieldSchema" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentFieldSchema (name, description, fields, definitions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentFieldSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt;" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentFieldDefinition&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the field schema. </param>
+        <param name="description"> A description of the field schema. </param>
+        <param name="fields"> The fields defined in the schema. </param>
+        <param name="definitions"> Additional definitions referenced by the fields in the schema. </param>
+        <summary> Schema of fields to be extracted from documents. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentFieldSchema" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentSpan">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentSpan ContentSpan (int offset = 0, int length = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentSpan ContentSpan(int32 offset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentSpan(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentSpan (Optional offset As Integer = 0, Optional length As Integer = 0) As ContentSpan" />
+      <MemberSignature Language="F#" Value="static member ContentSpan : int * int -&gt; Azure.AI.ContentUnderstanding.ContentSpan" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentSpan (offset, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset"> Starting position (0-indexed) of the element in markdown, specified in characters. </param>
+        <param name="length"> Length of the element in markdown, specified in characters. </param>
+        <summary> Position of the element in markdown, specified as a character offset and length. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentSpan" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentUnderstandingDefaults">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentUnderstandingDefaults ContentUnderstandingDefaults (System.Collections.Generic.IDictionary&lt;string,string&gt; modelDeployments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentUnderstandingDefaults ContentUnderstandingDefaults(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; modelDeployments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentUnderstandingDefaults(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentUnderstandingDefaults (Optional modelDeployments As IDictionary(Of String, String) = Nothing) As ContentUnderstandingDefaults" />
+      <MemberSignature Language="F#" Value="static member ContentUnderstandingDefaults : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.ContentUnderstanding.ContentUnderstandingDefaults" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ContentUnderstandingDefaults modelDeployments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentUnderstandingDefaults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelDeployments" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelDeployments">
+            Mapping of model names to deployments.
+            Ex. { "gpt-4.1": "myGpt41Deployment", "text-embedding-3-large": "myTextEmbedding3LargeDeployment" }.
+            </param>
+        <summary> default settings for this Content Understanding resource. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ContentUnderstandingDefaults" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAuthorization">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.CopyAuthorization CopyAuthorization (string source = default, string targetAzureResourceId = default, DateTimeOffset expiresAt = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.CopyAuthorization CopyAuthorization(string source, string targetAzureResourceId, valuetype System.DateTimeOffset expiresAt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.CopyAuthorization(System.String,System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CopyAuthorization (Optional source As String = Nothing, Optional targetAzureResourceId As String = Nothing, Optional expiresAt As DateTimeOffset = Nothing) As CopyAuthorization" />
+      <MemberSignature Language="F#" Value="static member CopyAuthorization : string * string * DateTimeOffset -&gt; Azure.AI.ContentUnderstanding.CopyAuthorization" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.CopyAuthorization (source, targetAzureResourceId, expiresAt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.CopyAuthorization</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="targetAzureResourceId" Type="System.String" />
+        <Parameter Name="expiresAt" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="source"> Full path of the source analyzer. </param>
+        <param name="targetAzureResourceId"> Azure resource ID of the target location to copy to. </param>
+        <param name="expiresAt"> Date/time when the copy authorization expires. </param>
+        <summary> Copy authorization details for cross-resource copy. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.CopyAuthorization" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DateField DateField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, DateTimeOffset? valueDate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DateField DateField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; valueDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DateField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueDate As Nullable(Of DateTimeOffset) = Nothing) As DateField" />
+      <MemberSignature Language="F#" Value="static member DateField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.AI.ContentUnderstanding.DateField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DateField (spans, confidence, source, valueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DateField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueDate"> Date field value, in ISO 8601 (YYYY-MM-DD) format. </param>
+        <summary> Date field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DateField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentAnnotation">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentAnnotation DocumentAnnotation (string id = default, Azure.AI.ContentUnderstanding.DocumentAnnotationKind kind = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, string source = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentAnnotationComment&gt; comments = default, string author = default, DateTimeOffset? createdAt = default, DateTimeOffset? lastModifiedAt = default, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentAnnotation DocumentAnnotation(string id, valuetype Azure.AI.ContentUnderstanding.DocumentAnnotationKind kind, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, string source, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentAnnotationComment&gt; comments, string author, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdAt, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedAt, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentAnnotation(System.String,Azure.AI.ContentUnderstanding.DocumentAnnotationKind,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.String,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentAnnotationComment},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentAnnotation (Optional id As String = Nothing, Optional kind As DocumentAnnotationKind = Nothing, Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional source As String = Nothing, Optional comments As IEnumerable(Of DocumentAnnotationComment) = Nothing, Optional author As String = Nothing, Optional createdAt As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedAt As Nullable(Of DateTimeOffset) = Nothing, Optional tags As IEnumerable(Of String) = Nothing) As DocumentAnnotation" />
+      <MemberSignature Language="F#" Value="static member DocumentAnnotation : string * Azure.AI.ContentUnderstanding.DocumentAnnotationKind * seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * string * seq&lt;Azure.AI.ContentUnderstanding.DocumentAnnotationComment&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentAnnotation" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentAnnotation (id, kind, spans, source, comments, author, createdAt, lastModifiedAt, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentAnnotation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="kind" Type="Azure.AI.ContentUnderstanding.DocumentAnnotationKind" />
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="comments" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentAnnotationComment&gt;" />
+        <Parameter Name="author" Type="System.String" />
+        <Parameter Name="createdAt" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedAt" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Annotation identifier. </param>
+        <param name="kind"> Annotation kind. </param>
+        <param name="spans"> Spans of the content associated with the annotation. </param>
+        <param name="source"> Position of the annotation. </param>
+        <param name="comments"> Comments associated with the annotation. </param>
+        <param name="author"> Annotation author. </param>
+        <param name="createdAt"> Date and time when the annotation was created. </param>
+        <param name="lastModifiedAt"> Date and time when the annotation was last modified. </param>
+        <param name="tags"> Tags associated with the annotation. </param>
+        <summary> Annotation in a document, such as a strikethrough or a comment. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentAnnotation" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentAnnotationComment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentAnnotationComment DocumentAnnotationComment (string message = default, string author = default, DateTimeOffset? createdAt = default, DateTimeOffset? lastModifiedAt = default, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentAnnotationComment DocumentAnnotationComment(string message, string author, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdAt, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedAt, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentAnnotationComment(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentAnnotationComment (Optional message As String = Nothing, Optional author As String = Nothing, Optional createdAt As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedAt As Nullable(Of DateTimeOffset) = Nothing, Optional tags As IEnumerable(Of String) = Nothing) As DocumentAnnotationComment" />
+      <MemberSignature Language="F#" Value="static member DocumentAnnotationComment : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentAnnotationComment" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentAnnotationComment (message, author, createdAt, lastModifiedAt, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentAnnotationComment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="author" Type="System.String" />
+        <Parameter Name="createdAt" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedAt" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message"> Comment message in Markdown. </param>
+        <param name="author"> Author of the comment. </param>
+        <param name="createdAt"> Date and time when the comment was created. </param>
+        <param name="lastModifiedAt"> Date and time when the comment was last modified. </param>
+        <param name="tags"> Tags associated with the comment. </param>
+        <summary> Comment associated with a document annotation. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentAnnotationComment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentBarcode">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentBarcode DocumentBarcode (Azure.AI.ContentUnderstanding.DocumentBarcodeKind kind = default, string value = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, float? confidence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentBarcode DocumentBarcode(valuetype Azure.AI.ContentUnderstanding.DocumentBarcodeKind kind, string value, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, valuetype System.Nullable`1&lt;float32&gt; confidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentBarcode(Azure.AI.ContentUnderstanding.DocumentBarcodeKind,System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentBarcode (Optional kind As DocumentBarcodeKind = Nothing, Optional value As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional confidence As Nullable(Of Single) = Nothing) As DocumentBarcode" />
+      <MemberSignature Language="F#" Value="static member DocumentBarcode : Azure.AI.ContentUnderstanding.DocumentBarcodeKind * string * string * Azure.AI.ContentUnderstanding.ContentSpan * Nullable&lt;single&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentBarcode" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentBarcode (kind, value, source, span, confidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentBarcode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Azure.AI.ContentUnderstanding.DocumentBarcodeKind" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Barcode kind. </param>
+        <param name="value"> Barcode value. </param>
+        <param name="source"> Encoded source that identifies the position of the barcode in the content. </param>
+        <param name="span"> Span of the barcode in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the barcode. </param>
+        <summary> Barcode in a document. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentBarcode" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentCaption">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentCaption DocumentCaption (string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentCaption DocumentCaption(string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentCaption(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentCaption (Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing) As DocumentCaption" />
+      <MemberSignature Language="F#" Value="static member DocumentCaption : string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentCaption" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentCaption (content, source, span, elements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentCaption</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content"> Content of the caption. </param>
+        <param name="source"> Encoded source that identifies the position of the caption in the content. </param>
+        <param name="span"> Span of the caption in the markdown content. </param>
+        <param name="elements"> Child elements of the caption. </param>
+        <summary> Caption of a table or figure. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentCaption" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentChartFigure">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentChartFigure DocumentChartFigure (string id = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default, Azure.AI.ContentUnderstanding.DocumentCaption caption = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes = default, string description = default, Azure.AI.ContentUnderstanding.SemanticRole? role = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; content = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentChartFigure DocumentChartFigure(string id, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, class Azure.AI.ContentUnderstanding.DocumentCaption caption, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes, string description, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.SemanticRole&gt; role, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentChartFigure(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String},Azure.AI.ContentUnderstanding.DocumentCaption,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFootnote},System.String,System.Nullable{Azure.AI.ContentUnderstanding.SemanticRole},System.Collections.Generic.IDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentChartFigure (Optional id As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing, Optional caption As DocumentCaption = Nothing, Optional footnotes As IEnumerable(Of DocumentFootnote) = Nothing, Optional description As String = Nothing, Optional role As Nullable(Of SemanticRole) = Nothing, Optional content As IDictionary(Of String, BinaryData) = Nothing) As DocumentChartFigure" />
+      <MemberSignature Language="F#" Value="static member DocumentChartFigure : string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; * Azure.AI.ContentUnderstanding.DocumentCaption * seq&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; * string * Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt; * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentChartFigure" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentChartFigure (id, source, span, elements, caption, footnotes, description, role, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentChartFigure</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="caption" Type="Azure.AI.ContentUnderstanding.DocumentCaption" />
+        <Parameter Name="footnotes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="role" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt;" />
+        <Parameter Name="content" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Figure identifier. </param>
+        <param name="source"> Encoded source that identifies the position of the figure in the content. </param>
+        <param name="span"> Span of the figure in the markdown content. </param>
+        <param name="elements"> Child elements of the figure, excluding any caption or footnotes. </param>
+        <param name="caption"> Figure caption. </param>
+        <param name="footnotes"> List of figure footnotes. </param>
+        <param name="description"> Description of the figure. </param>
+        <param name="role"> Semantic role of the figure. </param>
+        <param name="content"> Chart content represented using [Chart.js config](https://www.chartjs.org/docs/latest/configuration/). </param>
+        <summary> Figure containing a chart, such as a bar chart, line chart, or pie chart. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentChartFigure" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentContent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentContent DocumentContent (string mimeType = default, string analyzerId = default, string category = default, string path = default, string markdown = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentField&gt; fields = default, int startPageNumber = 0, int endPageNumber = 0, Azure.AI.ContentUnderstanding.LengthUnit? unit = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt; pages = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentParagraph&gt; paragraphs = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentSection&gt; sections = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentTable&gt; tables = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFigure&gt; figures = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentAnnotation&gt; annotations = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentHyperlink&gt; hyperlinks = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentContentSegment&gt; segments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentContent DocumentContent(string mimeType, string analyzerId, string category, string path, string markdown, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentField&gt; fields, int32 startPageNumber, int32 endPageNumber, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.LengthUnit&gt; unit, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentPage&gt; pages, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentParagraph&gt; paragraphs, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentSection&gt; sections, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentTable&gt; tables, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFigure&gt; figures, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentAnnotation&gt; annotations, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentHyperlink&gt; hyperlinks, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentContentSegment&gt; segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentContent(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentField},System.Int32,System.Int32,System.Nullable{Azure.AI.ContentUnderstanding.LengthUnit},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentPage},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentParagraph},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentSection},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentTable},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFigure},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentAnnotation},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentHyperlink},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentContentSegment})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentContent (Optional mimeType As String = Nothing, Optional analyzerId As String = Nothing, Optional category As String = Nothing, Optional path As String = Nothing, Optional markdown As String = Nothing, Optional fields As IDictionary(Of String, ContentField) = Nothing, Optional startPageNumber As Integer = 0, Optional endPageNumber As Integer = 0, Optional unit As Nullable(Of LengthUnit) = Nothing, Optional pages As IEnumerable(Of DocumentPage) = Nothing, Optional paragraphs As IEnumerable(Of DocumentParagraph) = Nothing, Optional sections As IEnumerable(Of DocumentSection) = Nothing, Optional tables As IEnumerable(Of DocumentTable) = Nothing, Optional figures As IEnumerable(Of DocumentFigure) = Nothing, Optional annotations As IEnumerable(Of DocumentAnnotation) = Nothing, Optional hyperlinks As IEnumerable(Of DocumentHyperlink) = Nothing, Optional segments As IEnumerable(Of DocumentContentSegment) = Nothing) As DocumentContent" />
+      <MemberSignature Language="F#" Value="static member DocumentContent : string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentField&gt; * int * int * Nullable&lt;Azure.AI.ContentUnderstanding.LengthUnit&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentParagraph&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentSection&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentTable&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentFigure&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentAnnotation&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentHyperlink&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentContentSegment&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentContent" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentContent (mimeType, analyzerId, category, path, markdown, fields, startPageNumber, endPageNumber, unit, pages, paragraphs, sections, tables, figures, annotations, hyperlinks, segments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mimeType" Type="System.String" />
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="markdown" Type="System.String" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentField&gt;" />
+        <Parameter Name="startPageNumber" Type="System.Int32" />
+        <Parameter Name="endPageNumber" Type="System.Int32" />
+        <Parameter Name="unit" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.LengthUnit&gt;" />
+        <Parameter Name="pages" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;" />
+        <Parameter Name="paragraphs" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentParagraph&gt;" />
+        <Parameter Name="sections" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentSection&gt;" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentTable&gt;" />
+        <Parameter Name="figures" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFigure&gt;" />
+        <Parameter Name="annotations" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentAnnotation&gt;" />
+        <Parameter Name="hyperlinks" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentHyperlink&gt;" />
+        <Parameter Name="segments" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentContentSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="mimeType"> Detected MIME type of the content.  Ex. application/pdf, image/jpeg, etc. </param>
+        <param name="analyzerId"> The analyzer that generated this content. </param>
+        <param name="category"> Classified content category. </param>
+        <param name="path"> The path of the content in the input. </param>
+        <param name="markdown"> Markdown representation of the content. </param>
+        <param name="fields"> Extracted fields from the content. </param>
+        <param name="startPageNumber"> Start page number (1-indexed) of the content. </param>
+        <param name="endPageNumber"> End page number (1-indexed) of the content. </param>
+        <param name="unit">
+            Length unit used by the width, height, and source properties.
+            For images/tiff, the default unit is pixel.  For PDF, the default unit is inch.
+            </param>
+        <param name="pages"> List of pages in the document. </param>
+        <param name="paragraphs"> List of paragraphs in the document.  Only if enableOcr and returnDetails are true. </param>
+        <param name="sections"> List of sections in the document.  Only if enableLayout and returnDetails are true. </param>
+        <param name="tables"> List of tables in the document.  Only if enableLayout and returnDetails are true. </param>
+        <param name="figures"> List of figures in the document.  Only if enableLayout and returnDetails are true. </param>
+        <param name="annotations"> List of annotations in the document.  Only if enableAnnotations and returnDetails are true. </param>
+        <param name="hyperlinks"> List of hyperlinks in the document.  Only if returnDetails are true. </param>
+        <param name="segments"> List of detected content segments.  Only if enableSegment is true. </param>
+        <summary> Document content.  Ex. text/plain, application/pdf, image/jpeg. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentContentSegment">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentContentSegment DocumentContentSegment (string segmentId = default, string category = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, int startPageNumber = 0, int endPageNumber = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentContentSegment DocumentContentSegment(string segmentId, string category, class Azure.AI.ContentUnderstanding.ContentSpan span, int32 startPageNumber, int32 endPageNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentContentSegment(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentContentSegment (Optional segmentId As String = Nothing, Optional category As String = Nothing, Optional span As ContentSpan = Nothing, Optional startPageNumber As Integer = 0, Optional endPageNumber As Integer = 0) As DocumentContentSegment" />
+      <MemberSignature Language="F#" Value="static member DocumentContentSegment : string * string * Azure.AI.ContentUnderstanding.ContentSpan * int * int -&gt; Azure.AI.ContentUnderstanding.DocumentContentSegment" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentContentSegment (segmentId, category, span, startPageNumber, endPageNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentContentSegment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segmentId" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="startPageNumber" Type="System.Int32" />
+        <Parameter Name="endPageNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="segmentId"> Segment identifier. </param>
+        <param name="category"> Classified content category. </param>
+        <param name="span"> Span of the segment in the markdown content. </param>
+        <param name="startPageNumber"> Start page number (1-indexed) of the segment. </param>
+        <param name="endPageNumber"> End page number (1-indexed) of the segment. </param>
+        <summary> Detected document content segment. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentContentSegment" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentFigure">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentFigure DocumentFigure (string kind = default, string id = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default, Azure.AI.ContentUnderstanding.DocumentCaption caption = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes = default, string description = default, Azure.AI.ContentUnderstanding.SemanticRole? role = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentFigure DocumentFigure(string kind, string id, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, class Azure.AI.ContentUnderstanding.DocumentCaption caption, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes, string description, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.SemanticRole&gt; role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFigure(System.String,System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String},Azure.AI.ContentUnderstanding.DocumentCaption,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFootnote},System.String,System.Nullable{Azure.AI.ContentUnderstanding.SemanticRole})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentFigure (Optional kind As String = Nothing, Optional id As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing, Optional caption As DocumentCaption = Nothing, Optional footnotes As IEnumerable(Of DocumentFootnote) = Nothing, Optional description As String = Nothing, Optional role As Nullable(Of SemanticRole) = Nothing) As DocumentFigure" />
+      <MemberSignature Language="F#" Value="static member DocumentFigure : string * string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; * Azure.AI.ContentUnderstanding.DocumentCaption * seq&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; * string * Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentFigure" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFigure (kind, id, source, span, elements, caption, footnotes, description, role)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentFigure</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="caption" Type="Azure.AI.ContentUnderstanding.DocumentCaption" />
+        <Parameter Name="footnotes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="role" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Figure kind. </param>
+        <param name="id"> Figure identifier. </param>
+        <param name="source"> Encoded source that identifies the position of the figure in the content. </param>
+        <param name="span"> Span of the figure in the markdown content. </param>
+        <param name="elements"> Child elements of the figure, excluding any caption or footnotes. </param>
+        <param name="caption"> Figure caption. </param>
+        <param name="footnotes"> List of figure footnotes. </param>
+        <param name="description"> Description of the figure. </param>
+        <param name="role"> Semantic role of the figure. </param>
+        <summary>
+            Figure in a document.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.ContentUnderstanding.DocumentChartFigure" /> and <see cref="T:Azure.AI.ContentUnderstanding.DocumentMermaidFigure" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentFigure" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentFootnote">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentFootnote DocumentFootnote (string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentFootnote DocumentFootnote(string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFootnote(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentFootnote (Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing) As DocumentFootnote" />
+      <MemberSignature Language="F#" Value="static member DocumentFootnote : string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentFootnote" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFootnote (content, source, span, elements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentFootnote</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content"> Content of the footnote. </param>
+        <param name="source"> Encoded source that identifies the position of the footnote in the content. </param>
+        <param name="span"> Span of the footnote in the markdown content. </param>
+        <param name="elements"> Child elements of the footnote. </param>
+        <summary> Footnote of a table or figure. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentFootnote" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentFormula">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentFormula DocumentFormula (Azure.AI.ContentUnderstanding.DocumentFormulaKind kind = default, string value = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, float? confidence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentFormula DocumentFormula(valuetype Azure.AI.ContentUnderstanding.DocumentFormulaKind kind, string value, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, valuetype System.Nullable`1&lt;float32&gt; confidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFormula(Azure.AI.ContentUnderstanding.DocumentFormulaKind,System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentFormula (Optional kind As DocumentFormulaKind = Nothing, Optional value As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional confidence As Nullable(Of Single) = Nothing) As DocumentFormula" />
+      <MemberSignature Language="F#" Value="static member DocumentFormula : Azure.AI.ContentUnderstanding.DocumentFormulaKind * string * string * Azure.AI.ContentUnderstanding.ContentSpan * Nullable&lt;single&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentFormula" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentFormula (kind, value, source, span, confidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentFormula</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Azure.AI.ContentUnderstanding.DocumentFormulaKind" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Formula kind. </param>
+        <param name="value"> LaTex expression describing the formula. </param>
+        <param name="source"> Encoded source that identifies the position of the formula in the content. </param>
+        <param name="span"> Span of the formula in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the formula. </param>
+        <summary> Mathematical formula in a document. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentFormula" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentHyperlink">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentHyperlink DocumentHyperlink (string content = default, string url = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, string source = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentHyperlink DocumentHyperlink(string content, string url, class Azure.AI.ContentUnderstanding.ContentSpan span, string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentHyperlink(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentHyperlink (Optional content As String = Nothing, Optional url As String = Nothing, Optional span As ContentSpan = Nothing, Optional source As String = Nothing) As DocumentHyperlink" />
+      <MemberSignature Language="F#" Value="static member DocumentHyperlink : string * string * Azure.AI.ContentUnderstanding.ContentSpan * string -&gt; Azure.AI.ContentUnderstanding.DocumentHyperlink" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentHyperlink (content, url, span, source)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentHyperlink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="content"> Hyperlinked content. </param>
+        <param name="url"> URL of the hyperlink. </param>
+        <param name="span"> Span of the hyperlink in the markdown content. </param>
+        <param name="source"> Position of the hyperlink. </param>
+        <summary> Hyperlink in a document, such as a link to a web page or an email address. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentHyperlink" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentLine">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentLine DocumentLine (string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentLine DocumentLine(string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentLine(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentLine (Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing) As DocumentLine" />
+      <MemberSignature Language="F#" Value="static member DocumentLine : string * string * Azure.AI.ContentUnderstanding.ContentSpan -&gt; Azure.AI.ContentUnderstanding.DocumentLine" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentLine (content, source, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentLine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+      </Parameters>
+      <Docs>
+        <param name="content"> Line text. </param>
+        <param name="source"> Encoded source that identifies the position of the line in the content. </param>
+        <param name="span"> Span of the line in the markdown content. </param>
+        <summary> Line in a document, consisting of an contiguous sequence of words. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentLine" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentMermaidFigure">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentMermaidFigure DocumentMermaidFigure (string id = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default, Azure.AI.ContentUnderstanding.DocumentCaption caption = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes = default, string description = default, Azure.AI.ContentUnderstanding.SemanticRole? role = default, string content = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentMermaidFigure DocumentMermaidFigure(string id, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, class Azure.AI.ContentUnderstanding.DocumentCaption caption, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes, string description, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.SemanticRole&gt; role, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentMermaidFigure(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String},Azure.AI.ContentUnderstanding.DocumentCaption,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFootnote},System.String,System.Nullable{Azure.AI.ContentUnderstanding.SemanticRole},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentMermaidFigure (Optional id As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing, Optional caption As DocumentCaption = Nothing, Optional footnotes As IEnumerable(Of DocumentFootnote) = Nothing, Optional description As String = Nothing, Optional role As Nullable(Of SemanticRole) = Nothing, Optional content As String = Nothing) As DocumentMermaidFigure" />
+      <MemberSignature Language="F#" Value="static member DocumentMermaidFigure : string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; * Azure.AI.ContentUnderstanding.DocumentCaption * seq&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; * string * Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt; * string -&gt; Azure.AI.ContentUnderstanding.DocumentMermaidFigure" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentMermaidFigure (id, source, span, elements, caption, footnotes, description, role, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentMermaidFigure</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="caption" Type="Azure.AI.ContentUnderstanding.DocumentCaption" />
+        <Parameter Name="footnotes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="role" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt;" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Figure identifier. </param>
+        <param name="source"> Encoded source that identifies the position of the figure in the content. </param>
+        <param name="span"> Span of the figure in the markdown content. </param>
+        <param name="elements"> Child elements of the figure, excluding any caption or footnotes. </param>
+        <param name="caption"> Figure caption. </param>
+        <param name="footnotes"> List of figure footnotes. </param>
+        <param name="description"> Description of the figure. </param>
+        <param name="role"> Semantic role of the figure. </param>
+        <param name="content"> Diagram content represented using [Mermaid syntax](https://mermaid.js.org/intro/). </param>
+        <summary> Figure containing a diagram, such as a flowchart or network diagram. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentMermaidFigure" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentPage">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentPage DocumentPage (int pageNumber = 0, float? width = default, float? height = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? angle = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt; words = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt; lines = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt; barcodes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt; formulas = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentPage DocumentPage(int32 pageNumber, valuetype System.Nullable`1&lt;float32&gt; width, valuetype System.Nullable`1&lt;float32&gt; height, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; angle, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentWord&gt; words, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentLine&gt; lines, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentBarcode&gt; barcodes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFormula&gt; formulas) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentPage(System.Int32,System.Nullable{System.Single},System.Nullable{System.Single},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentWord},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentLine},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentBarcode},System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFormula})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentPage (Optional pageNumber As Integer = 0, Optional width As Nullable(Of Single) = Nothing, Optional height As Nullable(Of Single) = Nothing, Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional angle As Nullable(Of Single) = Nothing, Optional words As IEnumerable(Of DocumentWord) = Nothing, Optional lines As IEnumerable(Of DocumentLine) = Nothing, Optional barcodes As IEnumerable(Of DocumentBarcode) = Nothing, Optional formulas As IEnumerable(Of DocumentFormula) = Nothing) As DocumentPage" />
+      <MemberSignature Language="F#" Value="static member DocumentPage : int * Nullable&lt;single&gt; * Nullable&lt;single&gt; * seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt; * seq&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentPage" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentPage (pageNumber, width, height, spans, angle, words, lines, barcodes, formulas)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageNumber" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="height" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="angle" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="words" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt;" />
+        <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt;" />
+        <Parameter Name="barcodes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt;" />
+        <Parameter Name="formulas" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="pageNumber"> Page number (1-based). </param>
+        <param name="width"> Width of the page. </param>
+        <param name="height"> Height of the page. </param>
+        <param name="spans"> Span(s) associated with the page in the markdown content. </param>
+        <param name="angle">
+            The general orientation of the content in clockwise direction,
+            measured in degrees between (-180, 180].
+            Only if enableOcr is true.
+            </param>
+        <param name="words"> List of words in the page.  Only if enableOcr and returnDetails are true. </param>
+        <param name="lines"> List of lines in the page.  Only if enableOcr and returnDetails are true. </param>
+        <param name="barcodes"> List of barcodes in the page.  Only if enableBarcode and returnDetails are true. </param>
+        <param name="formulas"> List of mathematical formulas in the page.  Only if enableFormula and returnDetails are true. </param>
+        <summary> Content from a document page. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentPage" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentParagraph">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentParagraph DocumentParagraph (Azure.AI.ContentUnderstanding.SemanticRole? role = default, string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentParagraph DocumentParagraph(valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.SemanticRole&gt; role, string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentParagraph(System.Nullable{Azure.AI.ContentUnderstanding.SemanticRole},System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentParagraph (Optional role As Nullable(Of SemanticRole) = Nothing, Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing) As DocumentParagraph" />
+      <MemberSignature Language="F#" Value="static member DocumentParagraph : Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt; * string * string * Azure.AI.ContentUnderstanding.ContentSpan -&gt; Azure.AI.ContentUnderstanding.DocumentParagraph" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentParagraph (role, content, source, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentParagraph</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt;" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+      </Parameters>
+      <Docs>
+        <param name="role"> Semantic role of the paragraph. </param>
+        <param name="content"> Paragraph text. </param>
+        <param name="source"> Encoded source that identifies the position of the paragraph in the content. </param>
+        <param name="span"> Span of the paragraph in the markdown content. </param>
+        <summary>
+            Paragraph in a document, generally consisting of an contiguous sequence of lines
+            with common alignment and spacing.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentParagraph" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentSection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentSection DocumentSection (Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentSection DocumentSection(class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentSection(Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentSection (Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing) As DocumentSection" />
+      <MemberSignature Language="F#" Value="static member DocumentSection : Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentSection" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentSection (span, elements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="span"> Span of the section in the markdown content. </param>
+        <param name="elements"> Child elements of the section. </param>
+        <summary> Section in a document. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentSection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentTable">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentTable DocumentTable (int rowCount = 0, int columnCount = 0, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentTableCell&gt; cells = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, Azure.AI.ContentUnderstanding.DocumentCaption caption = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes = default, Azure.AI.ContentUnderstanding.SemanticRole? role = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentTable DocumentTable(int32 rowCount, int32 columnCount, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentTableCell&gt; cells, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class Azure.AI.ContentUnderstanding.DocumentCaption caption, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.DocumentFootnote&gt; footnotes, valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.SemanticRole&gt; role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentTable(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentTableCell},System.String,Azure.AI.ContentUnderstanding.ContentSpan,Azure.AI.ContentUnderstanding.DocumentCaption,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.DocumentFootnote},System.Nullable{Azure.AI.ContentUnderstanding.SemanticRole})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentTable (Optional rowCount As Integer = 0, Optional columnCount As Integer = 0, Optional cells As IEnumerable(Of DocumentTableCell) = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional caption As DocumentCaption = Nothing, Optional footnotes As IEnumerable(Of DocumentFootnote) = Nothing, Optional role As Nullable(Of SemanticRole) = Nothing) As DocumentTable" />
+      <MemberSignature Language="F#" Value="static member DocumentTable : int * int * seq&lt;Azure.AI.ContentUnderstanding.DocumentTableCell&gt; * string * Azure.AI.ContentUnderstanding.ContentSpan * Azure.AI.ContentUnderstanding.DocumentCaption * seq&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt; * Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentTable" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentTable (rowCount, columnCount, cells, source, span, caption, footnotes, role)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowCount" Type="System.Int32" />
+        <Parameter Name="columnCount" Type="System.Int32" />
+        <Parameter Name="cells" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentTableCell&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="caption" Type="Azure.AI.ContentUnderstanding.DocumentCaption" />
+        <Parameter Name="footnotes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.DocumentFootnote&gt;" />
+        <Parameter Name="role" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.SemanticRole&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rowCount"> Number of rows in the table. </param>
+        <param name="columnCount"> Number of columns in the table. </param>
+        <param name="cells"> Cells contained within the table. </param>
+        <param name="source"> Encoded source that identifies the position of the table in the content. </param>
+        <param name="span"> Span of the table in the markdown content. </param>
+        <param name="caption"> Table caption. </param>
+        <param name="footnotes"> List of table footnotes. </param>
+        <param name="role"> Semantic role of the table. </param>
+        <summary> Table in a document, consisting table cells arranged in a rectangular layout. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentTable" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentTableCell">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentTableCell DocumentTableCell (Azure.AI.ContentUnderstanding.DocumentTableCellKind? kind = default, int rowIndex = 0, int columnIndex = 0, int? rowSpan = default, int? columnSpan = default, string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;string&gt; elements = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentTableCell DocumentTableCell(valuetype System.Nullable`1&lt;valuetype Azure.AI.ContentUnderstanding.DocumentTableCellKind&gt; kind, int32 rowIndex, int32 columnIndex, valuetype System.Nullable`1&lt;int32&gt; rowSpan, valuetype System.Nullable`1&lt;int32&gt; columnSpan, string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentTableCell(System.Nullable{Azure.AI.ContentUnderstanding.DocumentTableCellKind},System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentTableCell (Optional kind As Nullable(Of DocumentTableCellKind) = Nothing, Optional rowIndex As Integer = 0, Optional columnIndex As Integer = 0, Optional rowSpan As Nullable(Of Integer) = Nothing, Optional columnSpan As Nullable(Of Integer) = Nothing, Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional elements As IEnumerable(Of String) = Nothing) As DocumentTableCell" />
+      <MemberSignature Language="F#" Value="static member DocumentTableCell : Nullable&lt;Azure.AI.ContentUnderstanding.DocumentTableCellKind&gt; * int * int * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * string * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentTableCell" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentTableCell (kind, rowIndex, columnIndex, rowSpan, columnSpan, content, source, span, elements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentTableCell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.Nullable&lt;Azure.AI.ContentUnderstanding.DocumentTableCellKind&gt;" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="rowSpan" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="columnSpan" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Table cell kind. </param>
+        <param name="rowIndex"> Row index of the cell. </param>
+        <param name="columnIndex"> Column index of the cell. </param>
+        <param name="rowSpan"> Number of rows spanned by this cell. </param>
+        <param name="columnSpan"> Number of columns spanned by this cell. </param>
+        <param name="content"> Content of the table cell. </param>
+        <param name="source"> Encoded source that identifies the position of the table cell in the content. </param>
+        <param name="span"> Span of the table cell in the markdown content. </param>
+        <param name="elements"> Child elements of the table cell. </param>
+        <summary> Table cell in a document table. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentTableCell" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentWord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.DocumentWord DocumentWord (string content = default, string source = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, float? confidence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.DocumentWord DocumentWord(string content, string source, class Azure.AI.ContentUnderstanding.ContentSpan span, valuetype System.Nullable`1&lt;float32&gt; confidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentWord(System.String,System.String,Azure.AI.ContentUnderstanding.ContentSpan,System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentWord (Optional content As String = Nothing, Optional source As String = Nothing, Optional span As ContentSpan = Nothing, Optional confidence As Nullable(Of Single) = Nothing) As DocumentWord" />
+      <MemberSignature Language="F#" Value="static member DocumentWord : string * string * Azure.AI.ContentUnderstanding.ContentSpan * Nullable&lt;single&gt; -&gt; Azure.AI.ContentUnderstanding.DocumentWord" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.DocumentWord (content, source, span, confidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentWord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content"> Word text. </param>
+        <param name="source"> Encoded source that identifies the position of the word in the content. </param>
+        <param name="span"> Span of the word in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the word. </param>
+        <summary>
+            Word in a document, consisting of a contiguous sequence of characters.
+            For non-space delimited languages, such as Chinese, Japanese, and Korean, 
+            each character is represented as its own word.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.DocumentWord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegerField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.IntegerField IntegerField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, long? valueInteger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.IntegerField IntegerField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, valuetype System.Nullable`1&lt;int64&gt; valueInteger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.IntegerField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IntegerField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueInteger As Nullable(Of Long) = Nothing) As IntegerField" />
+      <MemberSignature Language="F#" Value="static member IntegerField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * Nullable&lt;int64&gt; -&gt; Azure.AI.ContentUnderstanding.IntegerField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.IntegerField (spans, confidence, source, valueInteger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.IntegerField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueInteger" Type="System.Nullable&lt;System.Int64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueInteger"> Integer field value. </param>
+        <summary> Integer field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.IntegerField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.JsonField JsonField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, BinaryData valueJson = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.JsonField JsonField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, class System.BinaryData valueJson) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.JsonField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JsonField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueJson As BinaryData = Nothing) As JsonField" />
+      <MemberSignature Language="F#" Value="static member JsonField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * BinaryData -&gt; Azure.AI.ContentUnderstanding.JsonField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.JsonField (spans, confidence, source, valueJson)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.JsonField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueJson" Type="System.BinaryData" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueJson"> JSON field value. </param>
+        <summary> JSON field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.JsonField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeSource">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.KnowledgeSource KnowledgeSource (string kind = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.KnowledgeSource KnowledgeSource(string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.KnowledgeSource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KnowledgeSource (Optional kind As String = Nothing) As KnowledgeSource" />
+      <MemberSignature Language="F#" Value="static member KnowledgeSource : string -&gt; Azure.AI.ContentUnderstanding.KnowledgeSource" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.KnowledgeSource kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.KnowledgeSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> The kind of knowledge source. </param>
+        <summary>
+            Knowledge source.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.KnowledgeSource" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabeledDataKnowledgeSource">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource LabeledDataKnowledgeSource (Uri containerUrl = default, string prefix = default, string fileListPath = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource LabeledDataKnowledgeSource(class System.Uri containerUrl, string prefix, string fileListPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.LabeledDataKnowledgeSource(System.Uri,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LabeledDataKnowledgeSource (Optional containerUrl As Uri = Nothing, Optional prefix As String = Nothing, Optional fileListPath As String = Nothing) As LabeledDataKnowledgeSource" />
+      <MemberSignature Language="F#" Value="static member LabeledDataKnowledgeSource : Uri * string * string -&gt; Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.LabeledDataKnowledgeSource (containerUrl, prefix, fileListPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containerUrl" Type="System.Uri" />
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="fileListPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="containerUrl"> The URL of the blob container containing labeled data. </param>
+        <param name="prefix"> An optional prefix to filter blobs within the container. </param>
+        <param name="fileListPath"> An optional path to a file listing specific blobs to include. </param>
+        <summary> Labeled data knowledge source. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.LabeledDataKnowledgeSource" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaContent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.MediaContent MediaContent (string kind = default, string mimeType = default, string analyzerId = default, string category = default, string path = default, string markdown = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentField&gt; fields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.MediaContent MediaContent(string kind, string mimeType, string analyzerId, string category, string path, string markdown, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentField&gt; fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.MediaContent(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentField})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MediaContent (Optional kind As String = Nothing, Optional mimeType As String = Nothing, Optional analyzerId As String = Nothing, Optional category As String = Nothing, Optional path As String = Nothing, Optional markdown As String = Nothing, Optional fields As IDictionary(Of String, ContentField) = Nothing) As MediaContent" />
+      <MemberSignature Language="F#" Value="static member MediaContent : string * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentField&gt; -&gt; Azure.AI.ContentUnderstanding.MediaContent" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.MediaContent (kind, mimeType, analyzerId, category, path, markdown, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.MediaContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="mimeType" Type="System.String" />
+        <Parameter Name="analyzerId" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="markdown" Type="System.String" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentField&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Content kind. </param>
+        <param name="mimeType"> Detected MIME type of the content.  Ex. application/pdf, image/jpeg, etc. </param>
+        <param name="analyzerId"> The analyzer that generated this content. </param>
+        <param name="category"> Classified content category. </param>
+        <param name="path"> The path of the content in the input. </param>
+        <param name="markdown"> Markdown representation of the content. </param>
+        <param name="fields"> Extracted fields from the content. </param>
+        <summary>
+            Media content base class.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.ContentUnderstanding.DocumentContent" /> and <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualContent" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.MediaContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.NumberField NumberField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, double? valueNumber = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.NumberField NumberField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, valuetype System.Nullable`1&lt;float64&gt; valueNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.NumberField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NumberField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueNumber As Nullable(Of Double) = Nothing) As NumberField" />
+      <MemberSignature Language="F#" Value="static member NumberField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * Nullable&lt;double&gt; -&gt; Azure.AI.ContentUnderstanding.NumberField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.NumberField (spans, confidence, source, valueNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.NumberField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueNumber" Type="System.Nullable&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueNumber"> Number field value. </param>
+        <summary> Number field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.NumberField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ObjectField ObjectField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentField&gt; valueObject = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ObjectField ObjectField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentField&gt; valueObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ObjectField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentField})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ObjectField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueObject As IDictionary(Of String, ContentField) = Nothing) As ObjectField" />
+      <MemberSignature Language="F#" Value="static member ObjectField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentField&gt; -&gt; Azure.AI.ContentUnderstanding.ObjectField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.ObjectField (spans, confidence, source, valueObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ObjectField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueObject" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentField&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueObject"> Object field value. </param>
+        <summary> Object field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.ObjectField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.StringField StringField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, string valueString = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.StringField StringField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, string valueString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.StringField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueString As String = Nothing) As StringField" />
+      <MemberSignature Language="F#" Value="static member StringField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * string -&gt; Azure.AI.ContentUnderstanding.StringField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.StringField (spans, confidence, source, valueString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.StringField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueString"> String field value. </param>
+        <summary> String field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.StringField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedModels">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.SupportedModels SupportedModels (System.Collections.Generic.IEnumerable&lt;string&gt; completion = default, System.Collections.Generic.IEnumerable&lt;string&gt; embedding = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.SupportedModels SupportedModels(class System.Collections.Generic.IEnumerable`1&lt;string&gt; completion, class System.Collections.Generic.IEnumerable`1&lt;string&gt; embedding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.SupportedModels(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SupportedModels (Optional completion As IEnumerable(Of String) = Nothing, Optional embedding As IEnumerable(Of String) = Nothing) As SupportedModels" />
+      <MemberSignature Language="F#" Value="static member SupportedModels : seq&lt;string&gt; * seq&lt;string&gt; -&gt; Azure.AI.ContentUnderstanding.SupportedModels" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.SupportedModels (completion, embedding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.SupportedModels</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="completion" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="embedding" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="completion"> Chat completion models supported by the analyzer. </param>
+        <param name="embedding"> Embedding models supported by the analyzer. </param>
+        <summary> Chat completion and embedding models supported by the analyzer. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.SupportedModels" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeField">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.TimeField TimeField (System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; spans = default, float? confidence = default, string source = default, TimeSpan? valueTime = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.TimeField TimeField(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; spans, valuetype System.Nullable`1&lt;float32&gt; confidence, string source, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; valueTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TimeField(System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.ContentSpan},System.Nullable{System.Single},System.String,System.Nullable{System.TimeSpan})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TimeField (Optional spans As IEnumerable(Of ContentSpan) = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional source As String = Nothing, Optional valueTime As Nullable(Of TimeSpan) = Nothing) As TimeField" />
+      <MemberSignature Language="F#" Value="static member TimeField : seq&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; * Nullable&lt;single&gt; * string * Nullable&lt;TimeSpan&gt; -&gt; Azure.AI.ContentUnderstanding.TimeField" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TimeField (spans, confidence, source, valueTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.TimeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spans" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="valueTime" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="spans"> Span(s) associated with the field value in the markdown content. </param>
+        <param name="confidence"> Confidence of predicting the field value. </param>
+        <param name="source"> Encoded source that identifies the position of the field value in the content. </param>
+        <param name="valueTime"> Time field value, in ISO 8601 (hh:mm:ss) format. </param>
+        <summary> Time field extracted from the content. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.TimeField" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscriptPhrase">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.TranscriptPhrase TranscriptPhrase (string speaker = default, long startTimeMs = 0, long endTimeMs = 0, string locale = default, string text = default, float? confidence = default, Azure.AI.ContentUnderstanding.ContentSpan span = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.TranscriptWord&gt; words = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.TranscriptPhrase TranscriptPhrase(string speaker, int64 startTimeMs, int64 endTimeMs, string locale, string text, valuetype System.Nullable`1&lt;float32&gt; confidence, class Azure.AI.ContentUnderstanding.ContentSpan span, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.ContentUnderstanding.TranscriptWord&gt; words) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TranscriptPhrase(System.String,System.Int64,System.Int64,System.String,System.String,System.Nullable{System.Single},Azure.AI.ContentUnderstanding.ContentSpan,System.Collections.Generic.IEnumerable{Azure.AI.ContentUnderstanding.TranscriptWord})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscriptPhrase (Optional speaker As String = Nothing, Optional startTimeMs As Long = 0, Optional endTimeMs As Long = 0, Optional locale As String = Nothing, Optional text As String = Nothing, Optional confidence As Nullable(Of Single) = Nothing, Optional span As ContentSpan = Nothing, Optional words As IEnumerable(Of TranscriptWord) = Nothing) As TranscriptPhrase" />
+      <MemberSignature Language="F#" Value="static member TranscriptPhrase : string * int64 * int64 * string * string * Nullable&lt;single&gt; * Azure.AI.ContentUnderstanding.ContentSpan * seq&lt;Azure.AI.ContentUnderstanding.TranscriptWord&gt; -&gt; Azure.AI.ContentUnderstanding.TranscriptPhrase" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TranscriptPhrase (speaker, startTimeMs, endTimeMs, locale, text, confidence, span, words)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.TranscriptPhrase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="speaker" Type="System.String" />
+        <Parameter Name="startTimeMs" Type="System.Int64" />
+        <Parameter Name="endTimeMs" Type="System.Int64" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="confidence" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+        <Parameter Name="words" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.ContentUnderstanding.TranscriptWord&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="speaker"> Speaker index or name. </param>
+        <param name="startTimeMs"> Start time of the phrase in milliseconds. </param>
+        <param name="endTimeMs"> End time of the phrase in milliseconds. </param>
+        <param name="locale"> Detected locale of the phrase.  Ex. en-US. </param>
+        <param name="text"> Transcript text. </param>
+        <param name="confidence"> Confidence of predicting the phrase. </param>
+        <param name="span"> Span of the phrase in the markdown content. </param>
+        <param name="words"> List of words in the phrase. </param>
+        <summary> Transcript phrase. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.TranscriptPhrase" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscriptWord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.TranscriptWord TranscriptWord (long startTimeMs = 0, long endTimeMs = 0, string text = default, Azure.AI.ContentUnderstanding.ContentSpan span = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.TranscriptWord TranscriptWord(int64 startTimeMs, int64 endTimeMs, string text, class Azure.AI.ContentUnderstanding.ContentSpan span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TranscriptWord(System.Int64,System.Int64,System.String,Azure.AI.ContentUnderstanding.ContentSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscriptWord (Optional startTimeMs As Long = 0, Optional endTimeMs As Long = 0, Optional text As String = Nothing, Optional span As ContentSpan = Nothing) As TranscriptWord" />
+      <MemberSignature Language="F#" Value="static member TranscriptWord : int64 * int64 * string * Azure.AI.ContentUnderstanding.ContentSpan -&gt; Azure.AI.ContentUnderstanding.TranscriptWord" Usage="Azure.AI.ContentUnderstanding.ContentUnderstandingModelFactory.TranscriptWord (startTimeMs, endTimeMs, text, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.TranscriptWord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startTimeMs" Type="System.Int64" />
+        <Parameter Name="endTimeMs" Type="System.Int64" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="span" Type="Azure.AI.ContentUnderstanding.ContentSpan" />
+      </Parameters>
+      <Docs>
+        <param name="startTimeMs"> Start time of the word in milliseconds. </param>
+        <param name="endTimeMs"> End time of the word in milliseconds. </param>
+        <param name="text"> Transcript text. </param>
+        <param name="span"> Span of the word in the markdown content. </param>
+        <summary> Transcript word. </summary>
+        <returns> A new <see cref="T:Azure.AI.ContentUnderstanding.TranscriptWord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

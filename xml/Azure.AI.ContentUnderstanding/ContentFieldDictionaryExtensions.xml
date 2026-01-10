@@ -1,0 +1,60 @@
+<Type Name="ContentFieldDictionaryExtensions" FullName="Azure.AI.ContentUnderstanding.ContentFieldDictionaryExtensions">
+  <TypeSignature Language="C#" Value="public static class ContentFieldDictionaryExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContentFieldDictionaryExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.ContentUnderstanding.ContentFieldDictionaryExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ContentFieldDictionaryExtensions" />
+  <TypeSignature Language="F#" Value="type ContentFieldDictionaryExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for <see cref="T:System.Collections.Generic.IDictionary`2" /> where TKey is string and TValue is <see cref="T:Azure.AI.ContentUnderstanding.ContentField" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFieldOrDefault">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentField GetFieldOrDefault (this System.Collections.Generic.IDictionary&lt;string,Azure.AI.ContentUnderstanding.ContentField&gt; fields, string fieldName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentField GetFieldOrDefault(class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.ContentUnderstanding.ContentField&gt; fields, string fieldName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentFieldDictionaryExtensions.GetFieldOrDefault(System.Collections.Generic.IDictionary{System.String,Azure.AI.ContentUnderstanding.ContentField},System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFieldOrDefault (fields As IDictionary(Of String, ContentField), fieldName As String) As ContentField" />
+      <MemberSignature Language="F#" Value="static member GetFieldOrDefault : System.Collections.Generic.IDictionary&lt;string, Azure.AI.ContentUnderstanding.ContentField&gt; * string -&gt; Azure.AI.ContentUnderstanding.ContentField" Usage="Azure.AI.ContentUnderstanding.ContentFieldDictionaryExtensions.GetFieldOrDefault (fields, fieldName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.ContentUnderstanding.ContentField&gt;" RefType="this" />
+        <Parameter Name="fieldName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fields">The dictionary of fields.</param>
+        <param name="fieldName">The name of the field to retrieve.</param>
+        <summary>
+            Gets a field from the dictionary by name, or null if the field does not exist.
+            This method is idiomatic for use with the null-conditional operator.
+            </summary>
+        <returns>The field if found, or null if not found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="fieldName" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when <paramref name="fieldName" /> is an empty string.</exception>
+        <example>
+          <code>
+            var customerName = documentContent.Fields?.GetFieldOrDefault("CustomerName")?.Value?.ToString();
+            var currency = totalAmountObj.ValueObject?.GetFieldOrDefault("CurrencyCode")?.Value?.ToString();
+            </code>
+        </example>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

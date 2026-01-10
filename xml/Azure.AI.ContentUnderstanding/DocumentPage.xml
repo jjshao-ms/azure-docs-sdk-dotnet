@@ -1,0 +1,456 @@
+<Type Name="DocumentPage" FullName="Azure.AI.ContentUnderstanding.DocumentPage">
+  <TypeSignature Language="C#" Value="public class DocumentPage : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentPage extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.ContentUnderstanding.DocumentPage&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.ContentUnderstanding.DocumentPage&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.ContentUnderstanding.DocumentPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class DocumentPage&#xA;Implements IJsonModel(Of DocumentPage), IPersistableModel(Of DocumentPage)" />
+  <TypeSignature Language="F#" Value="type DocumentPage = class&#xA;    interface IJsonModel&lt;DocumentPage&gt;&#xA;    interface IPersistableModel&lt;DocumentPage&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> Content from a document page. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Angle">
+      <MemberSignature Language="C#" Value="public float? Angle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; Angle" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Angle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Angle As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.Angle : Nullable&lt;single&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Angle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The general orientation of the content in clockwise direction,
+            measured in degrees between (-180, 180].
+            Only if enableOcr is true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Barcodes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt; Barcodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.DocumentBarcode&gt; Barcodes" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Barcodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Barcodes As IList(Of DocumentBarcode)" />
+      <MemberSignature Language="F#" Value="member this.Barcodes : System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Barcodes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentBarcode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> List of barcodes in the page.  Only if enableBarcode and returnDetails are true. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formulas">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt; Formulas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.DocumentFormula&gt; Formulas" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Formulas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formulas As IList(Of DocumentFormula)" />
+      <MemberSignature Language="F#" Value="member this.Formulas : System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Formulas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentFormula&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> List of mathematical formulas in the page.  Only if enableFormula and returnDetails are true. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float? Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; Height" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.Height : Nullable&lt;single&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Height of the page. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.ContentUnderstanding.DocumentPage JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.ContentUnderstanding.DocumentPage JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DocumentPage" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage" Usage="documentPage.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="documentPage.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt; Lines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.DocumentLine&gt; Lines" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Lines" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lines As IList(Of DocumentLine)" />
+      <MemberSignature Language="F#" Value="member this.Lines : System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Lines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentLine&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> List of lines in the page.  Only if enableOcr and returnDetails are true. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageNumber">
+      <MemberSignature Language="C#" Value="public int PageNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageNumber" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.PageNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int" Usage="Azure.AI.ContentUnderstanding.DocumentPage.PageNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Page number (1-based). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.ContentUnderstanding.DocumentPage PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.ContentUnderstanding.DocumentPage PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As DocumentPage" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage" Usage="documentPage.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="documentPage.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spans">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; Spans { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; Spans" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Spans" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Spans As IList(Of ContentSpan)" />
+      <MemberSignature Language="F#" Value="member this.Spans : System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Spans" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Span(s) associated with the page in the markdown content. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.ContentUnderstanding.DocumentPage IJsonModel&lt;DocumentPage&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.ContentUnderstanding.DocumentPage System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#ContentUnderstanding#DocumentPage&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DocumentPage Implements IJsonModel(Of DocumentPage).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage" Usage="documentPage.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;DocumentPage&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#ContentUnderstanding#DocumentPage&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of DocumentPage).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="documentPage.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.ContentUnderstanding.DocumentPage IPersistableModel&lt;DocumentPage&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.ContentUnderstanding.DocumentPage System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#ContentUnderstanding#DocumentPage&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As DocumentPage Implements IPersistableModel(Of DocumentPage).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.ContentUnderstanding.DocumentPage" Usage="documentPage.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;DocumentPage&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#ContentUnderstanding#DocumentPage&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of DocumentPage).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="documentPage.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;DocumentPage&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.DocumentPage.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#ContentUnderstanding#DocumentPage&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of DocumentPage).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="documentPage.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.ContentUnderstanding.DocumentPage&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float? Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; Width" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Width" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.Width : Nullable&lt;single&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Width of the page. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Words">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt; Words { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.DocumentWord&gt; Words" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.DocumentPage.Words" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Words As IList(Of DocumentWord)" />
+      <MemberSignature Language="F#" Value="member this.Words : System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt;" Usage="Azure.AI.ContentUnderstanding.DocumentPage.Words" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.DocumentWord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> List of words in the page.  Only if enableOcr and returnDetails are true. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
