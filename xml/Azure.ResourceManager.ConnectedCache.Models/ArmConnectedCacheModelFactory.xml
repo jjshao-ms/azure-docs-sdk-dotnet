@@ -13,10 +13,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ConnectedCachePatchContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.ConnectedCachePatchContent ConnectedCachePatchContent (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.ConnectedCachePatchContent ConnectedCachePatchContent(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.ConnectedCachePatchContent(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConnectedCachePatchContent (Optional tags As IDictionary(Of String, String) = Nothing) As ConnectedCachePatchContent" />
+      <MemberSignature Language="F#" Value="static member ConnectedCachePatchContent : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.ConnectedCache.Models.ConnectedCachePatchContent" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.ConnectedCachePatchContent tags" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ConnectedCache.Models.ConnectedCachePatchContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <summary> Mcc PATCH operation properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.ConnectedCachePatchContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnterpriseMccCacheNodeData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeData EnterpriseMccCacheNodeData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeData EnterpriseMccCacheNodeData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty properties) cil managed" />
@@ -41,14 +65,14 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeData" />. </summary>
+        <summary> Represents the high level Nodes needed to provision cache node resources. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,14 +101,14 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCustomerProperty" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerData" />. </summary>
+        <summary> Represents the high level Nodes needed to provision customer resources. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,14 +137,14 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeData" />. </summary>
+        <summary> Represents the high level Nodes needed to provision cache node resources. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,14 +173,14 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCustomerProperty" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerData" />. </summary>
+        <summary> Represents the high level Nodes needed to provision isp customer resources. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,8 +251,8 @@
         <param name="cacheNodeStateShortText"> Cache node resource short state text. </param>
         <param name="cacheNodeState"> Cache node resource state as integer. </param>
         <param name="driveConfiguration"> Cache node resource drive configurations. </param>
-        <param name="bgpAsnToIPAddressMapping"> Cache node resource Bgp configuration. </param>
-        <param name="proxyUri"> proxyUrl configuration of the cache node. </param>
+        <param name="bgpAsnToIPAddressMapping"> Asn to ip address mapping. </param>
+        <param name="proxyUri"> Host Proxy Address configuration along with port number. This can be a proxy or ip address. ex: xx.xx.xx.xxxx:80 or host name http://exampleproxy.com:80. </param>
         <param name="isProxyRequired"> Cache node resource requires a proxy. </param>
         <param name="osType"> Operating system of the cache node. </param>
         <param name="autoUpdateVersion"> Auto update or fast update version. </param>
@@ -254,11 +278,11 @@
       </Docs>
     </Member>
     <Member MemberName="MccCacheNodeAutoUpdateHistoryData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData MccCacheNodeAutoUpdateHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties properties = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string location = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData MccCacheNodeAutoUpdateHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties properties, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeAutoUpdateHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeAutoUpdateHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As MccCacheNodeAutoUpdateHistoryProperties = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional location As String = Nothing) As MccCacheNodeAutoUpdateHistoryData" />
-      <MemberSignature Language="F#" Value="static member MccCacheNodeAutoUpdateHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeAutoUpdateHistoryData (id, name, resourceType, systemData, properties, tags, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData MccCacheNodeAutoUpdateHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData MccCacheNodeAutoUpdateHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeAutoUpdateHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeAutoUpdateHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As MccCacheNodeAutoUpdateHistoryProperties = Nothing) As MccCacheNodeAutoUpdateHistoryData" />
+      <MemberSignature Language="F#" Value="static member MccCacheNodeAutoUpdateHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeAutoUpdateHistoryData (id, name, resourceType, systemData, tags, location, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
@@ -272,19 +296,19 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
         <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties"> Mcc cache node resource auto update history properties. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="tags"> Resource tags. </param>
         <param name="location"> The geo-location where the resource lives. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData" />. </summary>
+        <param name="properties"> Mcc cache node resource auto update history properties. </param>
+        <summary> Mcc cache node resource auto update history. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +336,7 @@
         <param name="customerId"> Mcc customer resource Id. </param>
         <param name="cacheNodeId"> Mcc cache node resource Id. </param>
         <param name="autoUpdateHistory"> Cache node resource auto update history information. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties" />. </summary>
+        <summary> Mcc cache node resource auto update history properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateHistoryProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,17 +392,17 @@
         <param name="timeToGoLiveDateTime"> Auto update time to go live date time. </param>
         <param name="ruleRequestedMinute"> Auto update rule requested minute. </param>
         <param name="ruleRequestedHour"> Auto update rule requested hour. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateInfo" />. </summary>
+        <summary> Mcc cache node resource auto update properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeAutoUpdateInfo" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MccCacheNodeBgpCidrDetails">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails MccCacheNodeBgpCidrDetails (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IEnumerable&lt;string&gt; mccCacheNodeBgpCidrs = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string location = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails MccCacheNodeBgpCidrDetails(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IEnumerable`1&lt;string&gt; mccCacheNodeBgpCidrs, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeBgpCidrDetails(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeBgpCidrDetails (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional mccCacheNodeBgpCidrs As IEnumerable(Of String) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional location As String = Nothing) As MccCacheNodeBgpCidrDetails" />
-      <MemberSignature Language="F#" Value="static member MccCacheNodeBgpCidrDetails : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * seq&lt;string&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeBgpCidrDetails (id, name, resourceType, systemData, mccCacheNodeBgpCidrs, tags, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails MccCacheNodeBgpCidrDetails (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, System.Collections.Generic.IEnumerable&lt;string&gt; mccCacheNodeBgpCidrs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails MccCacheNodeBgpCidrDetails(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class System.Collections.Generic.IEnumerable`1&lt;string&gt; mccCacheNodeBgpCidrs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeBgpCidrDetails(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeBgpCidrDetails (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional mccCacheNodeBgpCidrs As IEnumerable(Of String) = Nothing) As MccCacheNodeBgpCidrDetails" />
+      <MemberSignature Language="F#" Value="static member MccCacheNodeBgpCidrDetails : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * seq&lt;string&gt; -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeBgpCidrDetails (id, name, resourceType, systemData, tags, location, mccCacheNodeBgpCidrs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
@@ -392,19 +416,19 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
         <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="mccCacheNodeBgpCidrs" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="mccCacheNodeBgpCidrs"> Mcc cache node resource Bgp Cidr properties. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="tags"> Resource tags. </param>
         <param name="location"> The geo-location where the resource lives. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails" />. </summary>
+        <param name="mccCacheNodeBgpCidrs"> Mcc cache node Bgp Cidr details. </param>
+        <summary>To be added.</summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeBgpCidrDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,17 +554,17 @@
         <param name="autoUpdateRequestedWeek"> Customer requested week of month for mcc install of auto update cycle. 0 is default no selection. 1-5 are valid weeks of month, 1 is first week, 2 is second week, etc. </param>
         <param name="autoUpdateRequestedDay"> Customer requested day of week for mcc install of auto update cycle. 0 is default no selection. 1-7 are days of week, 1 is Sunday, 2 is Monday, etc. </param>
         <param name="autoUpdateRequestedTime"> Customer requested time of the day for mcc install of auto update cycle, should be hh:mm. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeEntity" />. </summary>
+        <summary> Model representing Cache Node for ConnectedCache resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeEntity" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MccCacheNodeInstallDetails">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails MccCacheNodeInstallDetails (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties properties = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string location = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails MccCacheNodeInstallDetails(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties properties, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeInstallDetails(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeInstallDetails (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As MccCacheNodeInstallProperties = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional location As String = Nothing) As MccCacheNodeInstallDetails" />
-      <MemberSignature Language="F#" Value="static member MccCacheNodeInstallDetails : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeInstallDetails (id, name, resourceType, systemData, properties, tags, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails MccCacheNodeInstallDetails (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails MccCacheNodeInstallDetails(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeInstallDetails(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeInstallDetails (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As MccCacheNodeInstallProperties = Nothing) As MccCacheNodeInstallDetails" />
+      <MemberSignature Language="F#" Value="static member MccCacheNodeInstallDetails : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeInstallDetails (id, name, resourceType, systemData, tags, location, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
@@ -554,19 +578,19 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
         <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties"> Mcc cache node resource install script details. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="tags"> Resource tags. </param>
         <param name="location"> The geo-location where the resource lives. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails" />. </summary>
+        <param name="properties"> Mcc cache node resource install script details. </param>
+        <summary> Mcc cache node resource all install details. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -603,7 +627,7 @@
         <param name="registrationKey"> Mcc Iot Central temporary device registration key, used once. </param>
         <param name="tlsCertificateProvisioningKey"> Mcc Tls certificate provisioning key. </param>
         <param name="driveConfiguration"> Cache node resource drive configurations. </param>
-        <param name="proxyUri"> proxyUrl configuration of the cache node. </param>
+        <param name="proxyUri"> Host Proxy Address configuration along with port number. This can be a proxy or ip address. ex: xx.xx.xx.xxxx:80 or host name http://exampleproxy.com:80. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeInstallProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -638,17 +662,17 @@
         <param name="helpLink"> Mcc cache node issue related help link. </param>
         <param name="issueStartOn"> Mcc cache node issue start date. </param>
         <param name="issueEndOn"> Mcc cache node issue end date. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssue" />. </summary>
+        <summary> Mcc cache node resource issue properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssue" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MccCacheNodeIssueHistoryData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData MccCacheNodeIssueHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties properties = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string location = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData MccCacheNodeIssueHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties properties, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeIssueHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeIssueHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As MccCacheNodeIssueHistoryProperties = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional location As String = Nothing) As MccCacheNodeIssueHistoryData" />
-      <MemberSignature Language="F#" Value="static member MccCacheNodeIssueHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeIssueHistoryData (id, name, resourceType, systemData, properties, tags, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData MccCacheNodeIssueHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData MccCacheNodeIssueHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeIssueHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeIssueHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As MccCacheNodeIssueHistoryProperties = Nothing) As MccCacheNodeIssueHistoryData" />
+      <MemberSignature Language="F#" Value="static member MccCacheNodeIssueHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeIssueHistoryData (id, name, resourceType, systemData, tags, location, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
@@ -662,19 +686,19 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
         <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties"> Mcc cache node resource issue history properties. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="tags"> Resource tags. </param>
         <param name="location"> The geo-location where the resource lives. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData" />. </summary>
+        <param name="properties"> Mcc cache node resource issue history properties. </param>
+        <summary> Mcc cache node resource issue history. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -702,7 +726,7 @@
         <param name="customerId"> Mcc customer resource Id. </param>
         <param name="cacheNodeId"> Mcc cache node resource Id. </param>
         <param name="mccIssueHistory"> Cache node resource issue details history. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties" />. </summary>
+        <summary> Mcc cache node resource issue history properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeIssueHistoryProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -740,7 +764,7 @@
         <param name="statusDetails"> Mcc response status details for retrieving response inner details. </param>
         <param name="status"> HTTP error status code. </param>
         <param name="error"> Mcc response error details. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty" />. </summary>
+        <summary> Model representing an Mcc cache node connectedCache resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeProperty" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -776,17 +800,17 @@
         <param name="notBeforeOn"> Mcc cache node Tls certificate not before date. </param>
         <param name="subject"> Mcc cache node Tls certificate subject name. </param>
         <param name="subjectAltName"> Mcc cache node Tls certificate subject alternate name. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificate" />. </summary>
+        <summary> Mcc cache node resource Tls certificate details. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificate" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MccCacheNodeTlsCertificateHistoryData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData MccCacheNodeTlsCertificateHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties properties = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string location = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData MccCacheNodeTlsCertificateHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties properties, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeTlsCertificateHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeTlsCertificateHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As MccCacheNodeTlsCertificateProperties = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional location As String = Nothing) As MccCacheNodeTlsCertificateHistoryData" />
-      <MemberSignature Language="F#" Value="static member MccCacheNodeTlsCertificateHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeTlsCertificateHistoryData (id, name, resourceType, systemData, properties, tags, location)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData MccCacheNodeTlsCertificateHistoryData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData MccCacheNodeTlsCertificateHistoryData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeTlsCertificateHistoryData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MccCacheNodeTlsCertificateHistoryData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As MccCacheNodeTlsCertificateProperties = Nothing) As MccCacheNodeTlsCertificateHistoryData" />
+      <MemberSignature Language="F#" Value="static member MccCacheNodeTlsCertificateHistoryData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties -&gt; Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData" Usage="Azure.ResourceManager.ConnectedCache.Models.ArmConnectedCacheModelFactory.MccCacheNodeTlsCertificateHistoryData (id, name, resourceType, systemData, tags, location, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedCache</AssemblyName>
@@ -800,19 +824,19 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
         <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="properties" Type="Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="properties"> Mcc cache node resource Tls certificate details. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="tags"> Resource tags. </param>
         <param name="location"> The geo-location where the resource lives. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData" />. </summary>
+        <param name="properties"> Mcc cache node resource Tls certificate details. </param>
+        <summary> Mcc cache node resource Tls certificate history details. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateHistoryData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -840,7 +864,7 @@
         <param name="customerId"> Mcc customer resource Id. </param>
         <param name="cacheNodeId"> Mcc cache node resource Id. </param>
         <param name="tlsCertificateHistory"> Cache node resource tls certificate history details. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties" />. </summary>
+        <summary> Mcc cache node resource auto update properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCacheNodeTlsCertificateProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -922,7 +946,7 @@
         <param name="optionalProperty3"> Optional property #3 of Mcc response object. </param>
         <param name="optionalProperty4"> Optional property #4 of Mcc response object. </param>
         <param name="optionalProperty5"> Optional property #5 of Mcc response object. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerAdditionalProperties" />. </summary>
+        <summary> Model representing customer for connected cache resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerAdditionalProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -980,7 +1004,7 @@
         <param name="resendSignupCode"> Customer resource flag for resending signup code as boolean. </param>
         <param name="verifySignupCode"> Customer resource flag for requiring verification of signup code as boolean. </param>
         <param name="verifySignupPhrase"> Customer resource phrase for verifying signup. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerEntity" />. </summary>
+        <summary> Model representing Customer resource for ConnectedCache resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerEntity" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,7 +1042,7 @@
         <param name="statusDetails"> Mcc response status details for retrieving response inner details. </param>
         <param name="status"> HTTP error status code. </param>
         <param name="error"> Mcc response error details. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerProperty" />. </summary>
+        <summary> Model representing customer for connectedCache resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.ConnectedCache.Models.MccCustomerProperty" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>

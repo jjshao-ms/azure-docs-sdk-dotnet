@@ -36,12 +36,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
-            Gets an object representing an <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetEnterpriseMccCacheNodeResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetEnterpriseMccCacheNodeResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCacheNodeResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -68,18 +67,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="customerResourceName"> Name of the Customer resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the enterprise mcc customer resource information using this get call
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedCache/enterpriseMccCustomers/{customerResourceName}</description></item><item><term>Operation Id</term><description>EnterpriseMccCustomerResource_Get</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomer(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomer(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="customerResourceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="customerResourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnterpriseMccCustomerAsync">
@@ -102,18 +101,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="customerResourceName"> Name of the Customer resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the enterprise mcc customer resource information using this get call
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedCache/enterpriseMccCustomers/{customerResourceName}</description></item><item><term>Operation Id</term><description>EnterpriseMccCustomerResource_Get</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomerAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomerAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="customerResourceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="customerResourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnterpriseMccCustomerResource">
@@ -135,12 +134,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
-            Gets an object representing an <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetEnterpriseMccCustomerResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetEnterpriseMccCustomerResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -165,11 +163,10 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <summary>
-            Gets a collection of EnterpriseMccCustomerResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomers" /> instead.</description></item></summary>
-        <returns> An object representing collection of EnterpriseMccCustomerResources and their operations over a EnterpriseMccCustomerResource. </returns>
+            Gets a collection of EnterpriseMccCustomers in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetEnterpriseMccCustomers" /> instead. </description></item></summary>
+        <returns> An object representing collection of EnterpriseMccCustomers and their operations over a EnterpriseMccCustomerResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -194,11 +191,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This api gets information about all enterpriseMccCustomer resources under the given subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ConnectedCache/enterpriseMccCustomers</description></item><item><term>Operation Id</term><description>EnterpriseMccCustomerResource_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetEnterpriseMccCustomers(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetEnterpriseMccCustomers(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,12 +221,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This api gets information about all enterpriseMccCustomer resources under the given subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ConnectedCache/enterpriseMccCustomers</description></item><item><term>Operation Id</term><description>EnterpriseMccCustomerResource_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetEnterpriseMccCustomers(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetEnterpriseMccCustomersAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedCache.EnterpriseMccCustomerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -254,12 +251,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
-            Gets an object representing an <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.ConnectedCache.IspCacheNodeResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetIspCacheNodeResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetIspCacheNodeResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedCache.IspCacheNodeResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,18 +282,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="customerResourceName"> Name of the Customer resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the ispCustomer resource information using this get call
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedCache/ispCustomers/{customerResourceName}</description></item><item><term>Operation Id</term><description>IspCustomerResource_Get</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomer(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomer(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="customerResourceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="customerResourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIspCustomerAsync">
@@ -320,18 +316,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="customerResourceName"> Name of the Customer resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the ispCustomer resource information using this get call
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedCache/ispCustomers/{customerResourceName}</description></item><item><term>Operation Id</term><description>IspCustomerResource_Get</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomerAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomerAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="customerResourceName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="customerResourceName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIspCustomerResource">
@@ -353,12 +349,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
-            Gets an object representing an <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.ConnectedCache.IspCustomerResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetIspCustomerResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheArmClient.GetIspCustomerResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -383,11 +378,10 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <summary>
-            Gets a collection of IspCustomerResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomers" /> instead.</description></item></summary>
-        <returns> An object representing collection of IspCustomerResources and their operations over a IspCustomerResource. </returns>
+            Gets a collection of IspCustomers in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheResourceGroupResource.GetIspCustomers" /> instead. </description></item></summary>
+        <returns> An object representing collection of IspCustomers and their operations over a IspCustomerResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -412,11 +406,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This api gets information about all ispCustomer resources under the given subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ConnectedCache/ispCustomers</description></item><item><term>Operation Id</term><description>IspCustomerResource_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetIspCustomers(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetIspCustomers(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -442,12 +436,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This api gets information about all ispCustomer resources under the given subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ConnectedCache/ispCustomers</description></item><item><term>Operation Id</term><description>IspCustomerResource_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-11-30-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetIspCustomers(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ConnectedCache.Mocking.MockableConnectedCacheSubscriptionResource.GetIspCustomersAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedCache.IspCustomerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
